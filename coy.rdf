@@ -1,0 +1,1380 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://schema.coypu.org/#"
+     xml:base="https://schema.coypu.org/"
+     xmlns:gn="https://www.geonames.org/ontology#"
+     xmlns:ns="https://creativecommons.org/ns#"
+     xmlns:coy="https://schema.coypu.org/#"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/spec/#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms"
+     xmlns:eventKG="http://eventKG.l3s.uni-hannover.de/schema/"
+     xmlns:schema1="http://schema.org/">
+    <owl:Ontology rdf:about="https://schema.coypu.org/">
+        <owl:versionIRI rdf:resource="https://schema.coypu.org/"/>
+        <terms:contributor xml:lang="en">Andreas Schaefer</terms:contributor>
+        <terms:created>2021-09-06</terms:created>
+        <terms:creator xml:lang="en">Nils Steinert</terms:creator>
+        <terms:isVersionOf>https://schema.coypu.org/</terms:isVersionOf>
+        <terms:modified>2021-01-26</terms:modified>
+        <terms:rights xml:lang="en">CC BY 4.0 - Implisense GmbH</terms:rights>
+        <terms:title xml:lang="en">Coypu Ontology</terms:title>
+        <vann:preferredNamespacePrefix>coy</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://schema.coypu.org/</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations.</rdfs:comment>
+        <rdfs:isDefinedBy>https://schema.coypu.org/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">coy: Coypu Ontology</rdfs:label>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns:license>https://creativecommons.org/licenses/by/4.0/</ns:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/about -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/about"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/maxValue -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/maxValue"/>
+    
+
+
+    <!-- http://schema.org/minValue -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/minValue"/>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://schema.org/unitCode -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/unitCode"/>
+    
+
+
+    <!-- http://schema.org/unitText -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/unitText"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    
+
+
+    <!-- https://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="https://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.coypu.org/#hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasEmployee">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isEmployeeOf"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:comment xml:lang="en">a person employed by a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEmployee</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/employee</owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasImpactOn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasImpactOn">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isImpactedBy"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">the thing impacted by an event</rdfs:comment>
+        <rdfs:label xml:lang="en">hasImpactOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasLocation">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isLocationOf"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Location"/>
+        <rdfs:comment xml:lang="en">the location an event, company or critical infrastructure is located at</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+        <rdfs:seeAlso>https://schema.org/location</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasProduct">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isProductOf"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:comment xml:lang="en">the material, resource or service a company produces</rdfs:comment>
+        <rdfs:label xml:lang="en">hasProduct</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasSubject">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isSubjectOf"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">the thing an event is about</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSubject</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/about</owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasSupplier -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasSupplier">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isSupplierOf"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company supplying a product, material, resource or service to another company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSupplier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isActiveIn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isActiveIn">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Industry"/>
+        <rdfs:comment xml:lang="en">the sector or industry a company is active in</rdfs:comment>
+        <rdfs:label xml:lang="en">isActiveIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isEmployeeOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isEmployeeOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company employing a person</rdfs:comment>
+        <rdfs:label xml:lang="en">isEmployeeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isImpactedBy -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isImpactedBy">
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">the event impacting a thing</rdfs:comment>
+        <rdfs:label xml:lang="en">isImpactedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isLocationOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Location"/>
+        <rdfs:comment xml:lang="en">the event, company or critical infrastructure at a certain location</rdfs:comment>
+        <rdfs:label xml:lang="en">isLocationOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isPartOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the concern or group a company is part of</rdfs:comment>
+        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isProductOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isProductOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company producing a material, resource or service</rdfs:comment>
+        <rdfs:label xml:lang="en">isProductOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isSubjectOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isSubjectOf">
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">the publisher or subject of an event</rdfs:comment>
+        <rdfs:label xml:lang="en">isSubjectOf</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/subjectOf</owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isSupplierOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isSupplierOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company supplied with a product, material, resource or service by another company</rdfs:comment>
+        <rdfs:label xml:lang="en">isSupplierOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isUsedIn">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:comment xml:lang="en">a product, material or resource used in production of another material, resource or product</rdfs:comment>
+        <rdfs:label xml:lang="en">isUsedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.coypu.org/#hasAdaptiveCapability -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasAdaptiveCapability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the adaptive capability of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAdaptiveCapability</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasAlertScore -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasAlertScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the alert level score of an event (like 0 / 1 / 2 or green / orange / red)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAlertScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasAlternateName -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasAlternateName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">an alternate name of a thing</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">https://schema.org/alternateName</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasAlternateName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasBalanceSheetTotal -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasBalanceSheetTotal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the balance sheet total of a company (at a specified date in a specified currency)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasBalanceSheetTotal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasBirthday -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasBirthday">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the birthday of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasBirthday</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/birthDate</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCapital -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCapital">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the capital of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCapital</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCompanySize -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCompanySize">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the size of a company according to the EU SME definition</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCompanySize</rdfs:label>
+        <rdfs:seeAlso>https://ec.europa.eu/growth/smes/sme-definition_en</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCopingCapability -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCopingCapability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the coping capability of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCopingCapability</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCpaCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCpaCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a product code as defined in CPA</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCpaCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCreationTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCreationTimestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the timestamp of initial creation</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCreationTimestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCurrency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the currency of a country or monetary value</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCurrency</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/currency</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasCyberRiskScore -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasCyberRiskScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the cyber risk score of an event or company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCyberRiskScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the description of a thing</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDescription</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/description</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasDissolutionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasDissolutionDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the dissolution date of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDissolutionDate</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/dissolutionDate</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasEbidCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasEbidCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the European Business Identifier of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEbidCode</rdfs:label>
+        <rdfs:seeAlso>https://www.unternehmensverzeichnis.org</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasEmail">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">an email address</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEmail</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/email</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasEventStatus -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasEventStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the status of an event (current or past)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventStatus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasEventType -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasEventType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Implisense event types:
+situation (crisis, cyber attack), reorganization (dissolution, merger, aquisition), finances (report, funding, investment), market (sentiment, trade), corporate actions (name change, new product), corporate IT actions (erp, crm), marketing (blogs, awards, sponsoring), management (new ceo, board member change), hiring (job openings), fact (politics, infrastructure)</rdfs:comment>
+        <rdfs:comment xml:lang="en">the type of an event (like earthquake or cyber attack)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasExposure -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasExposure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the exposure of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasExposure</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasFamilyName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the family name of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFamilyName</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/familyName</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasFax -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasFax">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a fax number</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFax</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/faxNumber</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasFoundingDate -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasFoundingDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the founding date of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFoundingDate</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/foundingDate</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasGeoFence -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasGeoFence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">the radius (in meters) of a projected circle around the center of an event to estimate its area of impact</rdfs:comment>
+        <rdfs:label xml:lang="en">hasGeoFence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasGivenName -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasGivenName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the given name of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasGivenName</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/givenName</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasHonorificTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasHonorificTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a honorific title of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHonorificTitle</rdfs:label>
+        <rdfs:seeAlso>https://schema.org/honorificPrefix</rdfs:seeAlso>
+        <rdfs:seeAlso>https://schema.org/honorificSuffix</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasHrCourt -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasHrCourt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the German court where a company is registered</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHrCourt</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasHrId -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasHrId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a German company register id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHrId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasHrType -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasHrType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHrType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasHsCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasHsCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a product code as defined in the EU harmonized system</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHsCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasId -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a unique id (the Implisense ID for companies)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasId</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/identifier</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasInfrastructureType -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasInfrastructureType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Infrastructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the type of critical infrastructure (like airport, port or powerplant)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasInfrastructureType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasIsoCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasIsoCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a country code as defined in ISO 3166</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIsoCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasJobTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasJobTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the job description of a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasJobTitle</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/jobTitle</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a language spoken in a country or by a person</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLanguage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLatitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">a latitude as defined in WGS 84</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLatitude</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:seeAlso>
+        <owl:equivalentProperty>https://schema.org/latitude</owl:equivalentProperty>
+        <owl:equivalentProperty>https://www.geonames.org/ontology#lat</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLegalForm -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLegalForm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the legal form of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLegalForm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLegalName -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLegalName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the legal name of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLegalName</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/legalName</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLeiCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLeiCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a legal entity identifier as defined in ISO 17442</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLeiCode</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/leiCode</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasLongitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">a longitude as defined in WGS 84</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLongitude</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:seeAlso>
+        <owl:equivalentProperty>https://schema.org/longitude</owl:equivalentProperty>
+        <owl:equivalentProperty>https://www.geonames.org/ontology#long</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasModificationTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasModificationTimestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the timestamp of the last modification</rdfs:comment>
+        <rdfs:label xml:lang="en">hasModificationTimestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasNaceCode -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasNaceCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">an industrial sector code as defined in the EU NACE standart</rdfs:comment>
+        <rdfs:label xml:lang="en">hasNaceCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the name of a thing</rdfs:comment>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+        <owl:equivalentProperty>http://dbpedia.org/property/name</owl:equivalentProperty>
+        <owl:equivalentProperty>https://schema.org/name</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasNumberOfEmployees -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasNumberOfEmployees">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">the number of employees of a company (in a specified year)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasNumberOfEmployees</rdfs:label>
+        <rdfs:seeAlso>http://dbpedia.org/property/numEmployees</rdfs:seeAlso>
+        <rdfs:seeAlso>https://schema.org/numberOfEmployees</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPercentage -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPercentage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">a percentage value</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPhoneNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a phone number (should be normalized)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPhoneNumber</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/telephone</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPopulation -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPopulation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">the number of people inhabiting a country</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPopulation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">a product price (at a specified date in a specified currency)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasProfit -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasProfit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the profit of a company (for a specified year in a specified currency)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasProfit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPublisher -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPublisher">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the publisher of an event</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPublisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasPurpose -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the stated purpose of an organization</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPurpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasRevenue -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasRevenue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the revenue of a company (for a specified year in a specified currency)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRevenue</rdfs:label>
+        <rdfs:seeAlso>https://schema.org/yearlyRevenue</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasRiskLevel -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasRiskLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the risk level of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskLevel</rdfs:label>
+        <rdfs:seeAlso>https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasRiskScore -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasRiskScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the risk score of an event or company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasSocialMediaUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasSocialMediaUrl">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">a company social media profile url</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSocialMediaUrl</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasStreet -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasStreet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a street address</rdfs:comment>
+        <rdfs:label xml:lang="en">hasStreet</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/streetAddress</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasSusceptibility -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasSusceptibility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the susceptibility of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSusceptibility</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasTag -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasTag">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a tag used for grouping and sorting (like &quot;corona&quot; or &quot;covid-19&quot;)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasTimestamp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the timestamp of an event</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTimestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasUrl -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasUrl">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">the url of a web resource</rdfs:comment>
+        <rdfs:label xml:lang="en">hasUrl</rdfs:label>
+        <owl:equivalentProperty>http://dbpedia.org/property/website</owl:equivalentProperty>
+        <owl:equivalentProperty>https://schema.org/url</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasVat -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasVat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the vat id of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasVat</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/vatID</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasVolatility -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasVolatility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the volatility of a product price (at a specified date)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasVolatility</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasVulnerability -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasVulnerability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">the vulnerability of a country as defined by Weltrisikobericht</rdfs:comment>
+        <rdfs:label xml:lang="en">hasVulnerability</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://weltrisikobericht.de</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#hasZip -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#hasZip">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a zip code</rdfs:comment>
+        <rdfs:label xml:lang="en">hasZip</rdfs:label>
+        <owl:equivalentProperty>https://schema.org/postalCode</owl:equivalentProperty>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isActive -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#isActive">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">the economic status of a company (active or inactive)</rdfs:comment>
+        <rdfs:label xml:lang="en">isActive</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isRare -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.coypu.org/#isRare">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">classifies the production material as rare material</rdfs:comment>
+        <rdfs:label xml:lang="en">isRare</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.coypu.org/#City -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#City">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Location"/>
+        <rdfs:comment xml:lang="en">a city as defined by NUTS or IATA</rdfs:comment>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+        <owl:equivalentClass>https://dbpedia.org/ontology/City</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/City</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Commodity -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Commodity">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:comment xml:lang="en">a commodity good or production material</rdfs:comment>
+        <rdfs:label xml:lang="en">Commodity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Company -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Company">
+        <rdfs:comment xml:lang="en">a company, organization or corporation</rdfs:comment>
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+        <owl:equivalentClass>http://dbpedia.org/ontology/Company</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/Corporation</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Country -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Country">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Location"/>
+        <rdfs:comment xml:lang="en">a country as defined in ISO 3166</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <owl:equivalentClass>https://dbpedia.org/ontology/Country</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/Country</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Cybersecurity -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Cybersecurity">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">a cyber attack or related event</rdfs:comment>
+        <rdfs:label xml:lang="en">Cybersecurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Disaster -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Disaster">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">a natural or technological disaster</rdfs:comment>
+        <rdfs:label xml:lang="en">Disaster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Event -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Event">
+        <rdfs:comment xml:lang="en">an event related to a specific location with a singular occurence</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+        <owl:equivalentClass>http://eventKG.l3s.uni-hannover.de/schema/Event</owl:equivalentClass>
+        <owl:equivalentClass>https://dbpedia.org/ontology/Event</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/Event</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Industry -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Industry">
+        <rdfs:comment xml:lang="en">an industry or economic sector as defined in NACE</rdfs:comment>
+        <rdfs:label xml:lang="en">Industry</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Category:Economic_sectors</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Infrastructure -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Infrastructure">
+        <rdfs:comment xml:lang="en">a facility providing critical infrastructure for production or logistics</rdfs:comment>
+        <rdfs:label xml:lang="en">Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Location -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Location">
+        <rdfs:comment xml:lang="en">a geo-political entity</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <rdfs:seeAlso>https://www.geonames.org/ontology#Feature</rdfs:seeAlso>
+        <owl:equivalentClass>https://dbpedia.org/ontology/Place</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/Place</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Material -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Material">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:comment xml:lang="en">a production material</rdfs:comment>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Category:Goods_(economics)</rdfs:seeAlso>
+        <rdfs:seeAlso>https://dbpedia.org/page/Material</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#News -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#News">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Event"/>
+        <rdfs:comment xml:lang="en">a newspaper article, social media posting or press release</rdfs:comment>
+        <rdfs:label xml:lang="en">News</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Person -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Person">
+        <rdfs:comment xml:lang="en">a natural person</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <owl:equivalentClass>http://xmlns.com/foaf/0.1/Person</owl:equivalentClass>
+        <owl:equivalentClass>https://dbpedia.org/ontology/Person</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/Person</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Product -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Product">
+        <rdfs:comment xml:lang="en">a product, service, production material or refined resource</rdfs:comment>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Category:Goods_(economics)</rdfs:seeAlso>
+        <rdfs:seeAlso>https://dbpedia.org/page/Material</rdfs:seeAlso>
+        <owl:equivalentClass>https://schema.org/Product</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Region -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Region">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Location"/>
+        <rdfs:comment xml:lang="en">an administrative or economic area</rdfs:comment>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <owl:equivalentClass>https://dbpedia.org/ontology/AdministrativeRegion</owl:equivalentClass>
+        <owl:equivalentClass>https://schema.org/AdministrativeArea</owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.coypu.org/#Service -->
+
+    <owl:Class rdf:about="https://schema.coypu.org/#Service">
+        <rdfs:subClassOf rdf:resource="https://schema.coypu.org/#Product"/>
+        <rdfs:comment xml:lang="en">a utility or non-material product</rdfs:comment>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Category:Goods_(economics)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:label xml:lang="en">topDataProperty</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:label xml:lang="en">topObjectProperty</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
