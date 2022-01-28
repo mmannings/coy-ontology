@@ -1,4 +1,4 @@
-@prefix : <https://schema.coypu.org/#> .
+@prefix : <https://schema.coypu.org/> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix coy: <https://schema.coypu.org/#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -127,6 +127,15 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://schema.coypu.org/#hasCustomer
+coy:hasCustomer rdf:type owl:ObjectProperty ;
+                owl:inverseOf coy:isCustomerOf ;
+                rdfs:domain coy:Company ;
+                rdfs:range coy:Company ;
+                rdfs:comment "the company providing a product, material, resource or service to another company"@en ;
+                rdfs:label "hasCustomer"@en .
+
+
 ###  https://schema.coypu.org/#hasEmployee
 coy:hasEmployee rdf:type owl:ObjectProperty ;
                 owl:inverseOf coy:isEmployeeOf ;
@@ -187,6 +196,14 @@ coy:isActiveIn rdf:type owl:ObjectProperty ;
                rdfs:range coy:Industry ;
                rdfs:comment "the sector or industry a company is active in"@en ;
                rdfs:label "isActiveIn"@en .
+
+
+###  https://schema.coypu.org/#isCustomerOf
+coy:isCustomerOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain coy:Company ;
+                 rdfs:range coy:Company ;
+                 rdfs:comment "the company sourcing a product, material, resource or service from another company"@en ;
+                 rdfs:label "isCustomerOf"@en .
 
 
 ###  https://schema.coypu.org/#isEmployeeOf

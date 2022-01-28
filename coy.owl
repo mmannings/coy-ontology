@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://schema.coypu.org/"
      versionIRI="https://schema.coypu.org/">
-    <Prefix name="" IRI="https://schema.coypu.org/#"/>
+    <Prefix name="" IRI="https://schema.coypu.org/"/>
     <Prefix name="gn" IRI="https://www.geonames.org/ontology#"/>
     <Prefix name="coy" IRI="https://schema.coypu.org/#"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
@@ -133,6 +133,9 @@
         <Class IRI="#Service"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCustomer"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasEmployee"/>
     </Declaration>
     <Declaration>
@@ -152,6 +155,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isActiveIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCustomerOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isEmployeeOf"/>
@@ -469,6 +475,10 @@
         <Class IRI="#Product"/>
     </SubClassOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCustomer"/>
+        <ObjectProperty IRI="#isCustomerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasEmployee"/>
         <ObjectProperty IRI="#isEmployeeOf"/>
     </InverseObjectProperties>
@@ -493,6 +503,10 @@
         <ObjectProperty IRI="#isSupplierOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCustomer"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEmployee"/>
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
@@ -514,6 +528,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isActiveIn"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCustomerOf"/>
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -541,6 +559,10 @@
         <Class IRI="#Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCustomer"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEmployee"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
@@ -559,6 +581,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isActiveIn"/>
         <Class IRI="#Industry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCustomerOf"/>
+        <Class IRI="#Company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isEmployeeOf"/>
@@ -1620,6 +1646,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCustomer</IRI>
+        <Literal xml:lang="en">the company providing a product, material, resource or service to another company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCustomer</IRI>
+        <Literal xml:lang="en">hasCustomer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCyberRiskScore</IRI>
         <Literal xml:lang="en">the cyber risk score of an event or company</Literal>
     </AnnotationAssertion>
@@ -2413,6 +2449,16 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isActiveIn</IRI>
         <Literal xml:lang="en">isActiveIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCustomerOf</IRI>
+        <Literal xml:lang="en">the company sourcing a product, material, resource or service from another company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCustomerOf</IRI>
+        <Literal xml:lang="en">isCustomerOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

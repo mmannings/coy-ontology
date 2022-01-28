@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://schema.coypu.org/#"
+<rdf:RDF xmlns="https://schema.coypu.org/"
      xml:base="https://schema.coypu.org/"
      xmlns:gn="https://www.geonames.org/ontology#"
      xmlns:ns="https://creativecommons.org/ns#"
@@ -194,6 +194,18 @@
     
 
 
+    <!-- https://schema.coypu.org/#hasCustomer -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasCustomer">
+        <owl:inverseOf rdf:resource="https://schema.coypu.org/#isCustomerOf"/>
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company providing a product, material, resource or service to another company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCustomer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://schema.coypu.org/#hasEmployee -->
 
     <owl:ObjectProperty rdf:about="https://schema.coypu.org/#hasEmployee">
@@ -273,6 +285,17 @@
         <rdfs:range rdf:resource="https://schema.coypu.org/#Industry"/>
         <rdfs:comment xml:lang="en">the sector or industry a company is active in</rdfs:comment>
         <rdfs:label xml:lang="en">isActiveIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.coypu.org/#isCustomerOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.coypu.org/#isCustomerOf">
+        <rdfs:domain rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:range rdf:resource="https://schema.coypu.org/#Company"/>
+        <rdfs:comment xml:lang="en">the company sourcing a product, material, resource or service from another company</rdfs:comment>
+        <rdfs:label xml:lang="en">isCustomerOf</rdfs:label>
     </owl:ObjectProperty>
     
 
