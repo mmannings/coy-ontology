@@ -23,7 +23,7 @@
                              terms:created "2021-09-06" ;
                              terms:creator "Nils Steinert"@en ;
                              terms:isVersionOf "https://schema.coypu.org/" ;
-                             terms:modified "2021-01-26" ;
+                             terms:modified "2022-02-07" ;
                              terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
                              terms:title "Coypu Ontology"@en ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "coy" ;
@@ -31,8 +31,8 @@
                              rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                              rdfs:isDefinedBy "https://schema.coypu.org/" ;
                              rdfs:label "coy: Coypu Ontology"@en ;
-                             owl:priorVersion 0.9 ;
-                             owl:versionInfo 1.0 ;
+                             owl:priorVersion 1.0 ;
+                             owl:versionInfo 1.1 ;
                              <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
@@ -318,6 +318,15 @@ coy:hasBirthday rdf:type owl:DatatypeProperty ,
                 owl:equivalentProperty "https://schema.org/birthDate" .
 
 
+###  https://schema.coypu.org/#hasCapacity
+coy:hasCapacity rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain coy:Infrastructure ;
+                rdfs:range xsd:positiveInteger ;
+                rdfs:comment "the capacity in tonnes of a facility (like a port or airport)"@en ;
+                rdfs:label "hasCapacity"@en .
+
+
 ###  https://schema.coypu.org/#hasCapital
 coy:hasCapital rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
@@ -376,7 +385,7 @@ coy:hasCurrency rdf:type owl:DatatypeProperty ,
 coy:hasCyberRiskScore rdf:type owl:DatatypeProperty ,
                                owl:FunctionalProperty ;
                       rdfs:range xsd:decimal ;
-                      rdfs:comment "the cyber risk score of an event or company"@en ;
+                      rdfs:comment "the cyber risk score of an event or company - base on Implisense technology profile data?"@en ;
                       rdfs:label "hasCyberRiskScore"@en .
 
 
@@ -874,6 +883,13 @@ coy:isRare rdf:type owl:DatatypeProperty ,
 #    Classes
 #################################################################
 
+###  https://schema.coypu.org/#Airport
+coy:Airport rdf:type owl:Class ;
+            rdfs:subClassOf coy:Infrastructure ;
+            rdfs:comment "a logistics hub for air freight"@en ;
+            rdfs:label "Airport"@en .
+
+
 ###  https://schema.coypu.org/#City
 coy:City rdf:type owl:Class ;
          rdfs:subClassOf coy:Location ;
@@ -930,6 +946,13 @@ coy:Event rdf:type owl:Class ;
                               "https://schema.org/Event" .
 
 
+###  https://schema.coypu.org/#Factory
+coy:Factory rdf:type owl:Class ;
+            rdfs:subClassOf coy:Infrastructure ;
+            rdfs:comment "a factory or production site"@en ;
+            rdfs:label "Factory"@en .
+
+
 ###  https://schema.coypu.org/#Industry
 coy:Industry rdf:type owl:Class ;
              rdfs:comment "an industry or economic sector as defined in NACE"@en ;
@@ -975,6 +998,13 @@ coy:Person rdf:type owl:Class ;
            owl:equivalentClass "http://xmlns.com/foaf/0.1/Person" ,
                                "https://dbpedia.org/ontology/Person" ,
                                "https://schema.org/Person" .
+
+
+###  https://schema.coypu.org/#Port
+coy:Port rdf:type owl:Class ;
+         rdfs:subClassOf coy:Infrastructure ;
+         rdfs:comment "a logictics hub for shipping"@en ;
+         rdfs:label "Port"@en .
 
 
 ###  https://schema.coypu.org/#Product

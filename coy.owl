@@ -42,7 +42,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:modified"/>
-        <Literal>2021-01-26</Literal>
+        <Literal>2022-02-07</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:rights"/>
@@ -74,16 +74,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.9</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="https://creativecommons.org/ns#license"/>
         <Literal>https://creativecommons.org/licenses/by/4.0/</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#City"/>
     </Declaration>
@@ -106,6 +109,9 @@
         <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Factory"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Industry"/>
     </Declaration>
     <Declaration>
@@ -122,6 +128,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Product"/>
@@ -197,6 +206,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBirthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCapacity"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasCapital"/>
@@ -439,6 +451,10 @@
         <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#City"/>
         <Class IRI="#Location"/>
     </SubClassOf>
@@ -459,12 +475,20 @@
         <Class IRI="#Event"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Factory"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Material"/>
         <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#News"/>
         <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#Infrastructure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
@@ -628,6 +652,9 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasBirthday"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCapacity"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasCapital"/>
@@ -822,6 +849,10 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasCapacity"/>
+        <Class IRI="#Infrastructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasCapital"/>
         <Class IRI="#Company"/>
     </DataPropertyDomain>
@@ -968,6 +999,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasBirthday"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCapacity"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasCapital"/>
@@ -1226,6 +1261,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Airport</IRI>
+        <Literal xml:lang="en">a logistics hub for air freight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Airport</IRI>
+        <Literal xml:lang="en">Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#City</IRI>
         <Literal xml:lang="en">a city as defined by NUTS or IATA</Literal>
     </AnnotationAssertion>
@@ -1341,6 +1386,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Factory</IRI>
+        <Literal xml:lang="en">a factory or production site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Factory</IRI>
+        <Literal xml:lang="en">Factory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Industry</IRI>
         <Literal xml:lang="en">an industry or economic sector as defined in NACE</Literal>
     </AnnotationAssertion>
@@ -1443,6 +1498,16 @@
         <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
         <IRI>#Person</IRI>
         <Literal>https://schema.org/Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Port</IRI>
+        <Literal xml:lang="en">a logictics hub for shipping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Port</IRI>
+        <Literal xml:lang="en">Port</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1571,6 +1636,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal xml:lang="en">the capacity in tonnes of a facility (like a port or airport)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal xml:lang="en">hasCapacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCapital</IRI>
         <Literal xml:lang="en">the capital of a company</Literal>
     </AnnotationAssertion>
@@ -1657,7 +1732,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCyberRiskScore</IRI>
-        <Literal xml:lang="en">the cyber risk score of an event or company</Literal>
+        <Literal xml:lang="en">the cyber risk score of an event or company - base on Implisense technology profile data?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
