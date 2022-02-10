@@ -9,7 +9,7 @@
      versionIRI="https://schema.coypu.org/">
     <Prefix name="" IRI="https://schema.coypu.org/"/>
     <Prefix name="gn" IRI="https://www.geonames.org/ontology#"/>
-    <Prefix name="coy" IRI="https://schema.coypu.org/#"/>
+    <Prefix name="coy" IRI="https://schema.coypu.org/"/>
     <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="geo" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -29,6 +29,14 @@
         <Literal xml:lang="en">Andreas Schaefer</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="en">Felix Engel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="en">Nenad Krdzavac</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>2021-09-06</Literal>
     </Annotation>
@@ -42,7 +50,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:modified"/>
-        <Literal>2022-02-07</Literal>
+        <Literal>2022-02-10</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:rights"/>
@@ -50,7 +58,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
-        <Literal xml:lang="en">Coypu Ontology</Literal>
+        <Literal xml:lang="en">CoyPu Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
@@ -70,15 +78,15 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal xml:lang="en">coy: Coypu Ontology</Literal>
+        <Literal xml:lang="en">coy: CoyPu Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="https://creativecommons.org/ns#license"/>

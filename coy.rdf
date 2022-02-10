@@ -3,7 +3,7 @@
      xml:base="https://schema.coypu.org/"
      xmlns:gn="https://www.geonames.org/ontology#"
      xmlns:ns="https://creativecommons.org/ns#"
-     xmlns:coy="https://schema.coypu.org/#"
+     xmlns:coy="https://schema.coypu.org/"
      xmlns:dbo="http://dbpedia.org/ontology/"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -23,19 +23,21 @@
     <owl:Ontology rdf:about="https://schema.coypu.org/">
         <owl:versionIRI rdf:resource="https://schema.coypu.org/"/>
         <terms:contributor xml:lang="en">Andreas Schaefer</terms:contributor>
+        <terms:contributor xml:lang="en">Felix Engel</terms:contributor>
+        <terms:contributor xml:lang="en">Nenad Krdzavac</terms:contributor>
         <terms:created>2021-09-06</terms:created>
         <terms:creator xml:lang="en">Nils Steinert</terms:creator>
         <terms:isVersionOf>https://schema.coypu.org/</terms:isVersionOf>
-        <terms:modified>2022-02-07</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-10</terms:modified>
         <terms:rights xml:lang="en">CC BY 4.0 - Implisense GmbH</terms:rights>
-        <terms:title xml:lang="en">Coypu Ontology</terms:title>
+        <terms:title xml:lang="en">CoyPu Ontology</terms:title>
         <vann:preferredNamespacePrefix>coy</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://schema.coypu.org/</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations.</rdfs:comment>
         <rdfs:isDefinedBy>https://schema.coypu.org/</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">coy: Coypu Ontology</rdfs:label>
-        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:priorVersion>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
+        <rdfs:label xml:lang="en">coy: CoyPu Ontology</rdfs:label>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</owl:versionInfo>
         <ns:license>https://creativecommons.org/licenses/by/4.0/</ns:license>
     </owl:Ontology>
     
