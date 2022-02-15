@@ -50,7 +50,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:modified"/>
-        <Literal>2022-02-10</Literal>
+        <Literal>2022-02-15</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:rights"/>
@@ -82,11 +82,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.2</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.3</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="https://creativecommons.org/ns#license"/>
@@ -153,13 +153,16 @@
         <ObjectProperty IRI="#hasCustomer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEmployee"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasImpactOn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasIndustry"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManager"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasProduct"/>
@@ -171,19 +174,19 @@
         <ObjectProperty IRI="#hasSupplier"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isActiveIn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isCustomerOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isEmployeeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isImpactedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isIndustryOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagerOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPartOf"/>
@@ -447,10 +450,7 @@
         <AnnotationProperty IRI="http://schema.org/unitText"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="https://creativecommons.org/ns#license"/>
@@ -471,6 +471,10 @@
         <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Country"/>
         <Class IRI="#Location"/>
     </SubClassOf>
@@ -483,8 +487,24 @@
         <Class IRI="#Event"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Factory"/>
         <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industry"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Material"/>
@@ -495,8 +515,16 @@
         <Class IRI="#Event"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Port"/>
         <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
@@ -511,16 +539,20 @@
         <ObjectProperty IRI="#isCustomerOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasEmployee"/>
-        <ObjectProperty IRI="#isEmployeeOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasImpactOn"/>
         <ObjectProperty IRI="#isImpactedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIndustry"/>
+        <ObjectProperty IRI="#isIndustryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasLocation"/>
         <ObjectProperty IRI="#isLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasManager"/>
+        <ObjectProperty IRI="#isManagerOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasProduct"/>
@@ -539,12 +571,20 @@
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEmployee"/>
+        <ObjectProperty IRI="#hasImpactOn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndustry"/>
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasImpactOn"/>
-        <Class IRI="#Event"/>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProduct"/>
@@ -559,20 +599,24 @@
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isActiveIn"/>
-        <Class IRI="#Company"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCustomerOf"/>
         <Class IRI="#Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isEmployeeOf"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#isImpactedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIndustryOf"/>
+        <Class IRI="#Industry"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isLocationOf"/>
         <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPartOf"/>
@@ -581,6 +625,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isProductOf"/>
         <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubjectOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isSupplierOf"/>
@@ -595,36 +643,52 @@
         <Class IRI="#Company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEmployee"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#hasImpactOn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndustry"/>
+        <Class IRI="#Industry"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLocation"/>
         <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProduct"/>
         <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSupplier"/>
         <Class IRI="#Company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isActiveIn"/>
-        <Class IRI="#Industry"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isCustomerOf"/>
-        <Class IRI="#Company"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isEmployeeOf"/>
         <Class IRI="#Company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isImpactedBy"/>
         <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIndustryOf"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocationOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <Class IRI="#Company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPartOf"/>
@@ -845,8 +909,16 @@
         <DataProperty IRI="#isRare"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasAdaptiveCapability"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasAlertScore"/>
         <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAlternateName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasBalanceSheetTotal"/>
@@ -869,8 +941,28 @@
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasCopingCapability"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasCpaCode"/>
         <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCreationTimestamp"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCurrency"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCyberRiskScore"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasDissolutionDate"/>
@@ -878,6 +970,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasEbidCode"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmail"/>
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -889,8 +985,16 @@
         <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasExposure"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasFamilyName"/>
         <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFax"/>
+        <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasFoundingDate"/>
@@ -921,12 +1025,32 @@
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasHsCode"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasId"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasInfrastructureType"/>
         <Class IRI="#Infrastructure"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasIsoCode"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasJobTitle"/>
         <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLanguage"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#Location"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasLegalForm"/>
@@ -941,7 +1065,31 @@
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasModificationTimestamp"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNaceCode"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasNumberOfEmployees"/>
+        <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPercentage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPhoneNumber"/>
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -949,8 +1097,16 @@
         <Class IRI="#Country"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasProfit"/>
         <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPublisher"/>
+        <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPurpose"/>
@@ -961,6 +1117,14 @@
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRiskScore"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasSocialMediaUrl"/>
         <Class IRI="#Company"/>
     </DataPropertyDomain>
@@ -969,12 +1133,32 @@
         <Class IRI="#Company"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasSusceptibility"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTag"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasTimestamp"/>
         <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasUrl"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasVat"/>
         <Class IRI="#Company"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVolatility"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVulnerability"/>
+        <Class IRI="#Country"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasZip"/>
@@ -1253,14 +1437,29 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>http://www.w3.org/2002/07/owl#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
         <Literal xml:lang="en">Thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
+        <Literal>http://www.w3.org/2002/07/owl#</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>owl:topDataProperty</AbbreviatedIRI>
         <Literal xml:lang="en">topDataProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>owl:topObjectProperty</AbbreviatedIRI>
+        <Literal>http://www.w3.org/2002/07/owl#</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1288,12 +1487,12 @@
         <Literal xml:lang="en">City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#City</IRI>
         <Literal>https://dbpedia.org/ontology/City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#City</IRI>
         <Literal>https://schema.org/City</Literal>
     </AnnotationAssertion>
@@ -1318,12 +1517,12 @@
         <Literal xml:lang="en">Company</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Company</IRI>
         <Literal>http://dbpedia.org/ontology/Company</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Company</IRI>
         <Literal>https://schema.org/Corporation</Literal>
     </AnnotationAssertion>
@@ -1338,12 +1537,12 @@
         <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Country</IRI>
         <Literal>https://dbpedia.org/ontology/Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Country</IRI>
         <Literal>https://schema.org/Country</Literal>
     </AnnotationAssertion>
@@ -1378,17 +1577,17 @@
         <Literal xml:lang="en">Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Event</IRI>
         <Literal>http://eventKG.l3s.uni-hannover.de/schema/Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Event</IRI>
         <Literal>https://dbpedia.org/ontology/Event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Event</IRI>
         <Literal>https://schema.org/Event</Literal>
     </AnnotationAssertion>
@@ -1440,17 +1639,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Location</IRI>
-        <Literal>https://www.geonames.org/ontology#Feature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
-        <IRI>#Location</IRI>
         <Literal>https://dbpedia.org/ontology/Place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Location</IRI>
         <Literal>https://schema.org/Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Location</IRI>
+        <Literal>https://www.geonames.org/ontology#Feature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1493,17 +1692,17 @@
         <Literal xml:lang="en">Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Person</IRI>
         <Literal>http://xmlns.com/foaf/0.1/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Person</IRI>
         <Literal>https://dbpedia.org/ontology/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Person</IRI>
         <Literal>https://schema.org/Person</Literal>
     </AnnotationAssertion>
@@ -1538,7 +1737,7 @@
         <Literal>https://dbpedia.org/page/Material</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Product</IRI>
         <Literal>https://schema.org/Product</Literal>
     </AnnotationAssertion>
@@ -1553,12 +1752,12 @@
         <Literal xml:lang="en">Region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Region</IRI>
         <Literal>https://dbpedia.org/ontology/AdministrativeRegion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentClass"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Region</IRI>
         <Literal>https://schema.org/AdministrativeArea</Literal>
     </AnnotationAssertion>
@@ -1608,14 +1807,14 @@
         <Literal xml:lang="en">an alternate name of a thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#hasAlternateName</IRI>
-        <Literal xml:lang="en">https://schema.org/alternateName</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAlternateName</IRI>
         <Literal xml:lang="en">hasAlternateName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hasAlternateName</IRI>
+        <Literal xml:lang="en">https://schema.org/alternateName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1638,7 +1837,7 @@
         <Literal xml:lang="en">hasBirthday</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasBirthday</IRI>
         <Literal>https://schema.org/birthDate</Literal>
     </AnnotationAssertion>
@@ -1723,7 +1922,7 @@
         <Literal xml:lang="en">hasCurrency</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasCurrency</IRI>
         <Literal>https://schema.org/currency</Literal>
     </AnnotationAssertion>
@@ -1740,7 +1939,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasCyberRiskScore</IRI>
-        <Literal xml:lang="en">the cyber risk score of an event or company - base on Implisense technology profile data?</Literal>
+        <Literal xml:lang="en">the cyber risk score of a company</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1758,7 +1957,7 @@
         <Literal xml:lang="en">hasDescription</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasDescription</IRI>
         <Literal>https://schema.org/description</Literal>
     </AnnotationAssertion>
@@ -1773,7 +1972,7 @@
         <Literal xml:lang="en">hasDissolutionDate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasDissolutionDate</IRI>
         <Literal>https://schema.org/dissolutionDate</Literal>
     </AnnotationAssertion>
@@ -1803,24 +2002,9 @@
         <Literal xml:lang="en">hasEmail</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasEmail</IRI>
         <Literal>https://schema.org/email</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasEmployee</IRI>
-        <Literal xml:lang="en">a person employed by a company</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasEmployee</IRI>
-        <Literal xml:lang="en">hasEmployee</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
-        <IRI>#hasEmployee</IRI>
-        <Literal>https://schema.org/employee</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1831,12 +2015,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasEventStatus</IRI>
         <Literal xml:lang="en">hasEventStatus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasEventType</IRI>
-        <Literal xml:lang="en">Implisense event types:
-situation (crisis, cyber attack), reorganization (dissolution, merger, aquisition), finances (report, funding, investment), market (sentiment, trade), corporate actions (name change, new product), corporate IT actions (erp, crm), marketing (blogs, awards, sponsoring), management (new ceo, board member change), hiring (job openings), fact (politics, infrastructure)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1874,7 +2052,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasFamilyName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasFamilyName</IRI>
         <Literal>https://schema.org/familyName</Literal>
     </AnnotationAssertion>
@@ -1889,7 +2067,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasFax</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasFax</IRI>
         <Literal>https://schema.org/faxNumber</Literal>
     </AnnotationAssertion>
@@ -1904,7 +2082,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasFoundingDate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasFoundingDate</IRI>
         <Literal>https://schema.org/foundingDate</Literal>
     </AnnotationAssertion>
@@ -1929,7 +2107,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasGivenName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasGivenName</IRI>
         <Literal>https://schema.org/givenName</Literal>
     </AnnotationAssertion>
@@ -2004,7 +2182,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasId</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasId</IRI>
         <Literal>https://schema.org/identifier</Literal>
     </AnnotationAssertion>
@@ -2017,6 +2195,16 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasImpactOn</IRI>
         <Literal xml:lang="en">hasImpactOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIndustry</IRI>
+        <Literal xml:lang="en">the sector or industry a company is active in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIndustry</IRI>
+        <Literal xml:lang="en">hasIndustry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2049,14 +2237,14 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasJobTitle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasJobTitle</IRI>
         <Literal>https://schema.org/jobTitle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasLanguage</IRI>
-        <Literal xml:lang="en">a language spoken in a country or by a person</Literal>
+        <Literal xml:lang="en">a language spoken in a country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2079,12 +2267,12 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal>http://www.w3.org/2003/01/geo/wgs84_pos#</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLatitude</IRI>
         <Literal>https://schema.org/latitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLatitude</IRI>
         <Literal>https://www.geonames.org/ontology#lat</Literal>
     </AnnotationAssertion>
@@ -2109,7 +2297,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasLegalName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLegalName</IRI>
         <Literal>https://schema.org/legalName</Literal>
     </AnnotationAssertion>
@@ -2124,7 +2312,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasLeiCode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLeiCode</IRI>
         <Literal>https://schema.org/leiCode</Literal>
     </AnnotationAssertion>
@@ -2159,14 +2347,29 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal>http://www.w3.org/2003/01/geo/wgs84_pos#</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLongitude</IRI>
         <Literal>https://schema.org/longitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasLongitude</IRI>
         <Literal>https://www.geonames.org/ontology#long</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasManager</IRI>
+        <Literal xml:lang="en">a person which is part of a company&apos;s management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasManager</IRI>
+        <Literal xml:lang="en">hasManager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hasManager</IRI>
+        <Literal>https://schema.org/employee</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2199,12 +2402,12 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasName</IRI>
         <Literal>http://dbpedia.org/property/name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasName</IRI>
         <Literal>https://schema.org/name</Literal>
     </AnnotationAssertion>
@@ -2249,7 +2452,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasPhoneNumber</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasPhoneNumber</IRI>
         <Literal>https://schema.org/telephone</Literal>
     </AnnotationAssertion>
@@ -2346,7 +2549,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasRiskScore</IRI>
-        <Literal xml:lang="en">the risk score of an event or company</Literal>
+        <Literal xml:lang="en">the risk score of an event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2374,7 +2577,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasStreet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasStreet</IRI>
         <Literal>https://schema.org/streetAddress</Literal>
     </AnnotationAssertion>
@@ -2389,7 +2592,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasSubject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasSubject</IRI>
         <Literal>https://schema.org/about</Literal>
     </AnnotationAssertion>
@@ -2449,12 +2652,12 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasUrl</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasUrl</IRI>
         <Literal>http://dbpedia.org/property/website</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasUrl</IRI>
         <Literal>https://schema.org/url</Literal>
     </AnnotationAssertion>
@@ -2469,7 +2672,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasVat</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasVat</IRI>
         <Literal>https://schema.org/vatID</Literal>
     </AnnotationAssertion>
@@ -2509,7 +2712,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">hasZip</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasZip</IRI>
         <Literal>https://schema.org/postalCode</Literal>
     </AnnotationAssertion>
@@ -2525,16 +2728,6 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isActiveIn</IRI>
-        <Literal xml:lang="en">the sector or industry a company is active in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isActiveIn</IRI>
-        <Literal xml:lang="en">isActiveIn</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isCustomerOf</IRI>
         <Literal xml:lang="en">the company sourcing a product, material, resource or service from another company</Literal>
     </AnnotationAssertion>
@@ -2542,16 +2735,6 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isCustomerOf</IRI>
         <Literal xml:lang="en">isCustomerOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isEmployeeOf</IRI>
-        <Literal xml:lang="en">the company employing a person</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isEmployeeOf</IRI>
-        <Literal xml:lang="en">isEmployeeOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2565,6 +2748,16 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIndustryOf</IRI>
+        <Literal xml:lang="en">the company active in a sector or industry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isIndustryOf</IRI>
+        <Literal xml:lang="en">isIndustryOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isLocationOf</IRI>
         <Literal xml:lang="en">the event, company or critical infrastructure at a certain location</Literal>
     </AnnotationAssertion>
@@ -2572,6 +2765,16 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isLocationOf</IRI>
         <Literal xml:lang="en">isLocationOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagerOf</IRI>
+        <Literal xml:lang="en">the company managed by a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isManagerOf</IRI>
+        <Literal xml:lang="en">isManagerOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2614,7 +2817,7 @@ situation (crisis, cyber attack), reorganization (dissolution, merger, aquisitio
         <Literal xml:lang="en">isSubjectOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:equivalentProperty"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#isSubjectOf</IRI>
         <Literal>https://schema.org/subjectOf</Literal>
     </AnnotationAssertion>
