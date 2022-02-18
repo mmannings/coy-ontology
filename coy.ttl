@@ -25,7 +25,7 @@
                              terms:created "2021-09-06" ;
                              terms:creator "Nils Steinert"@en ;
                              terms:isVersionOf "https://schema.coypu.org/" ;
-                             terms:modified "2022-02-15" ;
+                             terms:modified "2022-02-18" ;
                              terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
                              terms:title "CoyPu Ontology"@en ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "coy" ;
@@ -33,8 +33,8 @@
                              rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                              rdfs:isDefinedBy "https://schema.coypu.org/" ;
                              rdfs:label "coy: CoyPu Ontology"@en ;
-                             owl:priorVersion 1.2 ;
-                             owl:versionInfo 1.3 ;
+                             owl:priorVersion 1.3 ;
+                             owl:versionInfo 1.4 ;
                              <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
@@ -936,6 +936,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                     rdfs:label "Airport"@en .
 
 
+###  https://schema.coypu.org/#Biological
+<https://schema.coypu.org/#Biological> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                       rdfs:comment "an epidemic, pandemic or infestation event"@en ;
+                                       rdfs:label "BiologicalDisaster"@en ;
+                                       rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
 ###  https://schema.coypu.org/#City
 <https://schema.coypu.org/#City> rdf:type owl:Class ;
                                  rdfs:subClassOf <https://schema.coypu.org/#Location> ;
@@ -943,6 +951,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                  rdfs:label "City"@en ;
                                  rdfs:seeAlso "https://dbpedia.org/ontology/City" ,
                                               "https://schema.org/City" .
+
+
+###  https://schema.coypu.org/#Climatological
+<https://schema.coypu.org/#Climatological> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                           rdfs:comment "a drought, wildfire or glacial lake outburst event"@en ;
+                                           rdfs:label "ClimatologicalDisaster"@en ;
+                                           rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
 ###  https://schema.coypu.org/#Commodity
@@ -970,18 +986,19 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                  "https://schema.org/Country" .
 
 
-###  https://schema.coypu.org/#Cybersecurity
-<https://schema.coypu.org/#Cybersecurity> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://schema.coypu.org/#Event> ;
-                                          rdfs:comment "a cyber attack or related event"@en ;
-                                          rdfs:label "Cybersecurity"@en .
+###  https://schema.coypu.org/#CybersecurityAccident
+<https://schema.coypu.org/#CybersecurityAccident> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+                                                  rdfs:comment "a cyber attack or related event"@en ;
+                                                  rdfs:label "CybersecurityAccident"@en .
 
 
 ###  https://schema.coypu.org/#Disaster
 <https://schema.coypu.org/#Disaster> rdf:type owl:Class ;
                                      rdfs:subClassOf <https://schema.coypu.org/#Event> ;
                                      rdfs:comment "a natural or technological disaster"@en ;
-                                     rdfs:label "Disaster"@en .
+                                     rdfs:label "Disaster"@en ;
+                                     rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
 ###  https://schema.coypu.org/#Event
@@ -994,11 +1011,43 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                "https://schema.org/Event" .
 
 
+###  https://schema.coypu.org/#Extraterrestrial
+<https://schema.coypu.org/#Extraterrestrial> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                             rdfs:comment "a space weather event"@en ;
+                                             rdfs:label "ExtraterrestrialDisaster"@en ;
+                                             rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
 ###  https://schema.coypu.org/#Factory
 <https://schema.coypu.org/#Factory> rdf:type owl:Class ;
                                     rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
                                     rdfs:comment "a factory or production site"@en ;
                                     rdfs:label "Factory"@en .
+
+
+###  https://schema.coypu.org/#Geophysical
+<https://schema.coypu.org/#Geophysical> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                        rdfs:comment "an earthquake, volcanic eruption or storm event"@en ;
+                                        rdfs:label "GeophysicalDisaster"@en ;
+                                        rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#Hydrological
+<https://schema.coypu.org/#Hydrological> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                         rdfs:comment "a landslide, wave action or flooding event"@en ;
+                                         rdfs:label "HydrologicalDisaster"@en ;
+                                         rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#IndustrialAccident
+<https://schema.coypu.org/#IndustrialAccident> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+                                               rdfs:comment "an event related to a production site or factory operations"@en ;
+                                               rdfs:label "IndustrialAccident"@en ;
+                                               rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
 ###  https://schema.coypu.org/#Industry
@@ -1035,6 +1084,30 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                   "https://dbpedia.org/page/Material" .
 
 
+###  https://schema.coypu.org/#Meteorological
+<https://schema.coypu.org/#Meteorological> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://schema.coypu.org/#NaturalDisaster> ;
+                                           rdfs:comment "a storm or extreme temperature event"@en ;
+                                           rdfs:label "MeteorologicalDisaster"@en ;
+                                           rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#MiscellaneousAccident
+<https://schema.coypu.org/#MiscellaneousAccident> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+                                                  rdfs:comment "a technological event not covered otherwise"@en ;
+                                                  rdfs:label "MiscellaneousAccident"@en ;
+                                                  rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#NaturalDisaster
+<https://schema.coypu.org/#NaturalDisaster> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://schema.coypu.org/#Disaster> ;
+                                            rdfs:comment "a natural crisis or disaster event"@en ;
+                                            rdfs:label "NaturalDisaster"@en ;
+                                            rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
 ###  https://schema.coypu.org/#News
 <https://schema.coypu.org/#News> rdf:type owl:Class ;
                                  rdfs:subClassOf <https://schema.coypu.org/#Event> ;
@@ -1057,6 +1130,13 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                  rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
                                  rdfs:comment "a logictics hub for shipping"@en ;
                                  rdfs:label "Port"@en .
+
+
+###  https://schema.coypu.org/#Powerplant
+<https://schema.coypu.org/#Powerplant> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
+                                       rdfs:comment "a facility for generating electric power"@en ;
+                                       rdfs:label "Powerplant"@en .
 
 
 ###  https://schema.coypu.org/#Product
@@ -1084,6 +1164,22 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                     rdfs:comment "a utility or non-material product"@en ;
                                     rdfs:label "Service"@en ;
                                     rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" .
+
+
+###  https://schema.coypu.org/#TechnologicalDisaster
+<https://schema.coypu.org/#TechnologicalDisaster> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/#Disaster> ;
+                                                  rdfs:comment "a man-made crisis or disaster event"@en ;
+                                                  rdfs:label "TechnologicalDisaster"@en ;
+                                                  rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#TransportAccident
+<https://schema.coypu.org/#TransportAccident> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+                                              rdfs:comment "an event relating to logistical operations"@en ;
+                                              rdfs:label "TransportAccident"@en ;
+                                              rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
 #################################################################
