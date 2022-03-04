@@ -1099,6 +1099,18 @@ xsd:date rdf:type rdfs:Datatype .
 											          rdfs:label "Product Type"@en ;
 													  rdfs:comment "This classes comprises types that stand as the models for instances of E22 Human-Made Object that are produced as the result of production activities using plans exact enough to result in one or more series of uniform, functionally and aesthetically identical and interchangeable items. The product type is the intended ideal form of the manufacture process. It is typical of instances of E22 that conform to an instance of E99 Product Type that its component parts are interchangeable with component parts of other instances of E22 made after the model of the same instance of E99. Frequently, the uniform production according to a given instance of E99 Product Type is achieved by creating individual tools, such as moulds or print plates that are themselves carriers of the design of the product type. Modern tools may use the flexibility of electronically controlled devices to achieve such uniformity. The product type itself, i.e., the potentially unlimited series of aesthetically equivalent items, may be the target of artistic design, rather than the individual object. In extreme cases, only one instance of a product type may have been produced, such as in a 'print on demand' process which was only triggered once. However, this should not be confused with industrial prototypes, such as car prototypes, which are produced prior to the production line being set up, or test the production line itself" ;
 													  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+													  
+<http://www.cidoc-crm.org/cidoc-crm/E53_Place> rdf:type owl:Class ;
+                                               rdfs:label "Place"@en ;
+											   rdfs:label "Ort"@de ;
+											   rdfs:label "Τόπος"@el ;
+											   rdfs:label "Lieu"@fr ;
+											   rdfs:label "Local"@pt ;
+											   rdfs:label "Место"@ru ;
+											   rdfs:label "地点"@zh ;
+											   rdfs:comment "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame. It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance. Any instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for)" ;
+											   rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+													  
 ###  http://www.w3id.org/ecsel-dr-SO#Product
 <http://www.w3id.org/ecsel-dr-SO#Product> rdf:type owl:Class ;
                                           rdfs:comment "A product is a work product that is delivered to the customer."@en ,
@@ -1317,7 +1329,9 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                      rdfs:label "Location"@en ;
                                      rdfs:seeAlso "https://dbpedia.org/ontology/Place" ,
                                                   "https://schema.org/Place" ,
-                                                  "https://www.geonames.org/ontology#Feature" .
+                                                  "https://www.geonames.org/ontology#Feature" ;
+									rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+									
 
 
 ###  https://schema.coypu.org/#Material
