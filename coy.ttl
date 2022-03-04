@@ -126,6 +126,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+
 ###  https://schema.coypu.org/#hasCustomer
 <https://schema.coypu.org/#hasCustomer> rdf:type owl:ObjectProperty ;
                                         owl:inverseOf <https://schema.coypu.org/#isCustomerOf> ;
@@ -290,6 +291,14 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+
+###https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart
+
+<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:domain <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
+																									  rdfs:range <http://www.w3.org/2001/XMLSchema#dateTime> ;
+																									  rdfs:label "has disaster start" ;
+                                                                                                      skos:definition "Indicates the start of the disaster" .
 ###  https://schema.coypu.org/#hasAdaptiveCapability
 <https://schema.coypu.org/#hasAdaptiveCapability> rdf:type owl:DatatypeProperty ,
                                                            owl:FunctionalProperty ;
