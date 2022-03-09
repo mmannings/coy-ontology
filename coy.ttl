@@ -3,6 +3,7 @@
 @prefix coy: <https://schema.coypu.org/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ips: <https://schema.implisense.com/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -125,7 +126,40 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+	
+###https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy
+<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy> rdf:type owl:ObjectProperty ;
+rdfs:domain <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ;
+rdfs:range <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
+rdfs:label "is impacted by"@en ;
+skos:definition "Links an affected object to an impact."@en .
 
+####ttps://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn
+<ttps://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn> rdf:type owl:ObjectProperty ;
+owl:inverseOf <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy> ;
+rdfs:domain <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
+rdfs:range <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ;
+rdfs:label "has impact on"@en ;
+skos:definition "Indicates which vulnerable object is impacted by the specific impact occurrence."@en .
+
+
+
+###https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster
+<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster> rdf:type owl:ObjectProperty ;
+ rdfs:domain <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location>	;
+ rdfs:range <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
+ rdfs:label "is location of disaster"@en ;
+ skos:definition "Links a location to a natural disaster occurrence"@en .
+ 
+ 
+###  https://schema.implisense.com/#locatedAt
+<https://schema.implisense.com/#locatedAt> rdf:type owl:ObjectProperty ;
+              rdfs:range <<https://schema.implisense.com/#Location> ;
+			  rdfs:range <https://schema.coypu.org/#Location> ;
+              rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
+              rdfs:label "locatedAt"@en ;
+              rdfs:seeAlso "https://schema.org/location" .
+			  
 
 ###  https://schema.coypu.org/#hasCustomer
 <https://schema.coypu.org/#hasCustomer> rdf:type owl:ObjectProperty ;

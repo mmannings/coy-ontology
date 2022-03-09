@@ -19,6 +19,7 @@
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_1
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_1> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-OM#Supplier> ;
+	<https://schema.coypu.org/#isSupplierOf> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_10> , <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_11> , <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_12> , <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_9> ;
 	rdfs:label "Samsung Electronics" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_10
@@ -56,11 +57,59 @@
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_16> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
 	rdfs:label "utility shut off power" .
 # 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_17
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_17> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
+	rdfs:label "massive snow storm" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_18
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_18> a owl:NamedIndividual , <https://schema.coypu.org/#Location> ;
+	rdfs:label "US" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_19
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_19> a owl:NamedIndividual , <https://schema.coypu.org/#Company> ;
+	rdfs:label "NXP" .
+# 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_2
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_2> a owl:NamedIndividual , <https://schema.coypu.org/#City> ;
+	<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6> ;
+	<https://schema.implisense.com/#locatedAt> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_4> ;
 	rdfs:label "Austin" ;
 	rdfs:seeAlso "https://www.wikidata.org/wiki/Q16559" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_20
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_20> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-PWR#Product> ;
+	rdfs:label "Semiconductors" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_21
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_21> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-PWR#Product> ;
+	rdfs:label "Infineon  Semiconductors" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_22
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_22> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ;
+	rdfs:label "factories" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_23
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_23> a owl:NamedIndividual , <https://schema.coypu.org/#Product> ;
+	rdfs:label "microcontrollers" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_24
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_24> a owl:NamedIndividual , <https://schema.coypu.org/#Product> ;
+	rdfs:label "sensors" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_25
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_25> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
+	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_3> ;
+	rdfs:label "power outages" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_3
 
@@ -81,16 +130,19 @@
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
+	<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart> "\"2016-16-02T16:00:00+00:00\""^^xsd:dateTime ;
 	rdfs:label "severe winter storm" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_7
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_7> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+	<https://schema.coypu.org/#isProductOf> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_1> ;
 	rdfs:label "14-nanometer" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_8
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_8> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+	<https://schema.coypu.org/#isProductOf> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_1> ;
 	rdfs:label "28-nanometer" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_9
