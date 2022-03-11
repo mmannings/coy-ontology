@@ -16,45 +16,75 @@
 # #################################################################
 # 
 # 
-
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_1
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_1> a owl:NamedIndividual , <https://schema.coypu.org/#Location> , <https://schema.coypu.org/#Region> ;
-rdfs:label "Taiwan"@en .
-	
+	<https://schema.coypu.org/#isLocationOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
+	rdfs:label "Taiwan"@en .
+# 
+# https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10
+
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7> ;
+	<https://schema.coypu.org/#hasEventStatus> "second" ;
+	<https://schema.coypu.org/#hasTimestamp> "2021-02-05T16:00:00"^^xsd:dateTime ;
+	rdfs:label "fire" .
+# 
+# https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12
+
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> a owl:NamedIndividual , <https://schema.coypu.org/#Company> ;
+	<https://schema.coypu.org/isProductLineOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
+	<https://schema.coypu.org/#isSupplierOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
+	rdfs:label "Ajinomoto" .
+# 
+# https://schema.coypu.org/kb/case_1/case_1.owl#coypu_13
+
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_13> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> , <http://www.w3id.org/ecsel-dr-SCP#NEWs> ;
+	<https://schema.coypu.org/#hasSubject> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
+	rdfs:label "chip shortages" .
+# 
+# https://schema.coypu.org/kb/case_1/case_1.owl#coypu_16
+
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_16> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<https://schema.coypu.org/affectsProductLine> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_8> , <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9> ;
+	rdfs:label "shipments" .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_2
+
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_2> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-OM#Supplier> , <https://schema.coypu.org/#Company> ;
-rdfs:label "Unimicron Technology Corp.’s"@en .
-	
-# https://schema.coypu.org/kb/case_1/case_1.owl#coypu_3
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_3> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ,
-<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset> ;
-rdfs:label "plant"@en .
-	
+	rdfs:label "Unimicron Technology Corp.’s"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4
+
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-rdfs:label "(ABF) substrates"@en .
-
+	<https://schema.coypu.org/usedProductLineFor> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6> ;
+	rdfs:label "ajinomoto build-up film (ABF) substrates"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_5
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_5> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
-rdfs:label "outbreak"@en .
 
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_5> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4> ;
+	<https://schema.coypu.org/#hasTimestamp> "2020-10-01T00:00:00"^^xsd:dateTime ;
+	rdfs:label "outbreak"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6
+
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-rdfs:label "connect chips to the mainboard"@en .
-
+	rdfs:label "connect chips to the mainboard"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ;
-rdfs:label "Unimicron plant"@en .
 
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset> , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject> ;
+	rdfs:label "Unimicron Technology Corp.’s plant"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_8
+
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_8> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-rdfs:label "central processing units (CPUs)"@en .
-
-
+	rdfs:label "central processing units (CPUs)"@en .
+# 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-rdfs:label "smartphone application processors"@en .
 
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+	rdfs:label "smartphone application processors"@en .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

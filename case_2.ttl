@@ -11,6 +11,19 @@
 # 
 # #################################################################
 # #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart
+
+<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart> a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Individuals
 # #
 # #################################################################
@@ -108,8 +121,15 @@
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_25
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_25> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
+	<https://schema.coypu.org/impactCausedByEvent> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6> ;
 	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_3> ;
 	rdfs:label "power outages" .
+# 
+# https://schema.coypu.org/kb/case_2/case_2.owl#coypu_26
+
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_26> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<https://schema.coypu.org/#hasSubject> <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_5> ;
+	rdfs:label "chip shortages" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_3
 
@@ -124,13 +144,14 @@
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_5
 
-<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_5> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact> ;
+<https://schema.coypu.org/kb/case_2/case_2.owl#coypu_5> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+	<https://schema.coypu.org/#hasTimestamp> "2021-02-16T00:00:00"^^xsd:dateTime ;
 	rdfs:label "shut down" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6
 
 <https://schema.coypu.org/kb/case_2/case_2.owl#coypu_6> a owl:NamedIndividual , <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster> ;
-	<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasDisasterStart> "\"2016-16-02T16:00:00+00:00\""^^xsd:dateTime ;
+	<https://schema.coypu.org/#hasTimestamp> "2020-02-17T00:00:00"^^xsd:dateTime ;
 	rdfs:label "severe winter storm" .
 # 
 # https://schema.coypu.org/kb/case_2/case_2.owl#coypu_7
