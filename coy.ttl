@@ -168,6 +168,12 @@ beAWARE_ontology:isLocationOfDisaster rdfs:range beAWARE_ontology:NaturalDisaste
 	rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
 	rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> .
 # 
+# https://schema.coypu.org/haltOperation
+
+:haltOperation a owl:ObjectProperty ;
+	rdfs:domain <https://schema.coypu.org/#Company> ;
+	rdfs:range owl:Thing .
+# 
 # https://schema.coypu.org/impactCausedByEvent
 
 :impactCausedByEvent a owl:ObjectProperty ;
@@ -178,6 +184,18 @@ beAWARE_ontology:isLocationOfDisaster rdfs:range beAWARE_ontology:NaturalDisaste
 
 :isProductLineOf a owl:ObjectProperty ;
 	rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+	rdfs:range <https://schema.coypu.org/#Company> .
+# 
+# https://schema.coypu.org/orderTo
+
+:orderTo a owl:ObjectProperty ;
+	rdfs:domain <https://schema.coypu.org/#Company> ;
+	rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+# 
+# https://schema.coypu.org/orderedBy
+
+:orderedBy a owl:ObjectProperty ;
+	rdfs:domain <https://schema.coypu.org/#Company> ;
 	rdfs:range <https://schema.coypu.org/#Company> .
 # 
 # https://schema.coypu.org/usedProductLineFor
