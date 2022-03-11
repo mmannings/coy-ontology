@@ -525,6 +525,14 @@ xsd:date rdf:type rdfs:Datatype .
                                          rdfs:seeAlso "https://schema.org/givenName" .
 
 
+###  https://schema.coypu.org/#hasGlideId
+<https://schema.coypu.org/#hasGlideId> rdf:type owl:DatatypeProperty ,
+                                                owl: FunctionalProperty ;
+                                        rdfs:domain <https://schema.coypu.org/#Disaster> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "the Global Identifier numbers according to GLIDEnumber.net"@en ;
+                                        rdfs:label "hasGlideId"@en .
+
 ###  https://schema.coypu.org/#hasHonorificTitle
 <https://schema.coypu.org/#hasHonorificTitle> rdf:type owl:DatatypeProperty ,
                                                        owl:FunctionalProperty ;
