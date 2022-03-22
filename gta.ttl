@@ -1,0 +1,425 @@
+@prefix : <http://schema.coypu.org/gta/> .
+@prefix coy: <http://schema.coypu.org/gta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://schema.coypu.org/gta/> .
+
+<http://schema.coypu.org/gta/> rdf:type owl:Ontology ;
+                                owl:versionIRI <http://schema.coypu.org/gta/0.1.0> ;
+                                rdfs:comment "An ontology for modeling global trade alerts mainly inspired by Global Trade Alerts repository."@en ;
+                                rdfs:label "Global Trade Alerts Ontology"@en ;
+                                rdfs:seeAlso "https://www.globaltradealert.org/" ;
+                                owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.coypu.org/gta/Anti-Circumvention
+coy:Anti-Circumvention rdf:type owl:Class ;
+                       rdfs:subClassOf coy:TradeDefenceInstruments ;
+                       rdfs:label "Anti-Circumvention"@en .
+
+
+###  http://schema.coypu.org/gta/Anti-Dumping
+coy:Anti-Dumping rdf:type owl:Class ;
+                 rdfs:subClassOf coy:TradeDefenceInstruments ;
+                 rdfs:label "Anti-Dumping"@en .
+
+
+###  http://schema.coypu.org/gta/Anti-Subsidy
+coy:Anti-Subsidy rdf:type owl:Class ;
+                 rdfs:subClassOf coy:TradeDefenceInstruments ;
+                 rdfs:label "Anti-Subsidy"@en .
+
+
+###  http://schema.coypu.org/gta/CapitalControlsAndExchangeRatePolicy
+coy:CapitalControlsAndExchangeRatePolicy rdf:type owl:Class ;
+                                         rdfs:subClassOf coy:InterventionType ;
+                                         rdfs:label "Capital controls and exchange rate policy"@en .
+
+
+###  http://schema.coypu.org/gta/CompetitiveDevaluation
+coy:CompetitiveDevaluation rdf:type owl:Class ;
+                           rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ;
+                           rdfs:label "Competitive devaluation"@en .
+
+
+###  http://schema.coypu.org/gta/ControlOnPersonalTransactions
+coy:ControlOnPersonalTransactions rdf:type owl:Class ;
+                                  rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ;
+                                  rdfs:label "Control on personal transactions"@en .
+
+
+###  http://schema.coypu.org/gta/ControlsOnCommercialTransactionsAndInvestmentInstruments
+coy:ControlsOnCommercialTransactionsAndInvestmentInstruments rdf:type owl:Class ;
+                                                             rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ;
+                                                             rdfs:label "Controls on commercial transactions and investment instruments"@en .
+
+
+###  http://schema.coypu.org/gta/ControlsOnCreditOperations
+coy:ControlsOnCreditOperations rdf:type owl:Class ;
+                               rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ;
+                               rdfs:label "Controls on credit operations"@en .
+
+
+###  http://schema.coypu.org/gta/ExportAndImportPolicyInstruments
+coy:ExportAndImportPolicyInstruments rdf:type owl:Class ;
+                                     rdfs:subClassOf coy:InterventionType ;
+                                     rdfs:label "Export and import policy instruments"@en .
+
+
+###  http://schema.coypu.org/gta/ExportBan
+coy:ExportBan rdf:type owl:Class ;
+              rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+              rdfs:label "Export ban"@en .
+
+
+###  http://schema.coypu.org/gta/ExportLicensingRequirement
+coy:ExportLicensingRequirement rdf:type owl:Class ;
+                               rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                               rdfs:label "Export licensing requirement"@en .
+
+
+###  http://schema.coypu.org/gta/ExportQuota
+coy:ExportQuota rdf:type owl:Class ;
+                rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                rdfs:label "Export quota"@en .
+
+
+###  http://schema.coypu.org/gta/ExportSubsidy
+coy:ExportSubsidy rdf:type owl:Class ;
+                  rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                  rdfs:label "Export subsidy"@en .
+
+
+###  http://schema.coypu.org/gta/ExportTariffQuota
+coy:ExportTariffQuota rdf:type owl:Class ;
+                      rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                      rdfs:label "Export tariff quota"@en .
+
+
+###  http://schema.coypu.org/gta/ExportTax
+coy:ExportTax rdf:type owl:Class ;
+              rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+              rdfs:label "Export tax"@en .
+
+
+###  http://schema.coypu.org/gta/ExportTaxIncentive
+coy:ExportTaxIncentive rdf:type owl:Class ;
+                       rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                       rdfs:label "Export tax incentive"@en .
+
+
+###  http://schema.coypu.org/gta/FinancialAssistanceInForeignMarket
+coy:FinancialAssistanceInForeignMarket rdf:type owl:Class ;
+                                       rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                                       rdfs:label "Financial assistance in foreign market"@en .
+
+
+###  http://schema.coypu.org/gta/FinancialGrant
+coy:FinancialGrant rdf:type owl:Class ;
+                   rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                   rdfs:label "Financial grant"@en .
+
+
+###  http://schema.coypu.org/gta/ForeignCustomerRule
+coy:ForeignCustomerRule rdf:type owl:Class ;
+                        rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                        rdfs:label "Foreign customer rule"@en .
+
+
+###  http://schema.coypu.org/gta/ForeignInvestmentPolicy
+coy:ForeignInvestmentPolicy rdf:type owl:Class ;
+                            rdfs:subClassOf coy:InterventionType ;
+                            rdfs:label "Foreign investment policy"@en .
+
+
+###  http://schema.coypu.org/gta/ImportBan
+coy:ImportBan rdf:type owl:Class ;
+              rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+              rdfs:label "Import ban"@en .
+
+
+###  http://schema.coypu.org/gta/ImportIncentive
+coy:ImportIncentive rdf:type owl:Class ;
+                    rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                    rdfs:label "Import incentive"@en .
+
+
+###  http://schema.coypu.org/gta/ImportLicensingRequirement
+coy:ImportLicensingRequirement rdf:type owl:Class ;
+                               rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                               rdfs:label "Import licensing requirement"@en .
+
+
+###  http://schema.coypu.org/gta/ImportMonitoring
+coy:ImportMonitoring rdf:type owl:Class ;
+                     rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                     rdfs:label "Import monitoring"@en .
+
+
+###  http://schema.coypu.org/gta/ImportQuota
+coy:ImportQuota rdf:type owl:Class ;
+                rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                rdfs:label "Import quota"@en .
+
+
+###  http://schema.coypu.org/gta/ImportTariff
+coy:ImportTariff rdf:type owl:Class ;
+                 rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                 rdfs:label "Import tariff"@en .
+
+
+###  http://schema.coypu.org/gta/ImportTariffQuota
+coy:ImportTariffQuota rdf:type owl:Class ;
+                      rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                      rdfs:label "Import tariff quota"@en .
+
+
+###  http://schema.coypu.org/gta/In-kindGrant
+coy:In-kindGrant rdf:type owl:Class ;
+                 rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                 rdfs:label "In-kind grant"@en .
+
+
+###  http://schema.coypu.org/gta/IntellectualPropertyProtection
+coy:IntellectualPropertyProtection rdf:type owl:Class ;
+                                   rdfs:subClassOf coy:OtherInstruments ;
+                                   rdfs:label "Intellectual property protection"@en .
+
+
+###  http://schema.coypu.org/gta/InterestPaymentSubsidy
+coy:InterestPaymentSubsidy rdf:type owl:Class ;
+                           rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                           rdfs:label "Interest payment subsidy"@en .
+
+
+###  http://schema.coypu.org/gta/InternalTaxationOfImports
+coy:InternalTaxationOfImports rdf:type owl:Class ;
+                              rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                              rdfs:label "Internal taxation of imports"@en .
+
+
+###  http://schema.coypu.org/gta/InterventionType
+coy:InterventionType rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing ;
+                     rdfs:label "intervention type"@en .
+
+
+###  http://schema.coypu.org/gta/LaborForceMigrationPolicy
+coy:LaborForceMigrationPolicy rdf:type owl:Class ;
+                              rdfs:subClassOf coy:InterventionType ;
+                              rdfs:label "Labor force migration policy"@en .
+
+
+###  http://schema.coypu.org/gta/LabourMarketAccess
+coy:LabourMarketAccess rdf:type owl:Class ;
+                       rdfs:subClassOf coy:LaborForceMigrationPolicy ;
+                       rdfs:label "Labour market access"@en .
+
+
+###  http://schema.coypu.org/gta/LocalLabour
+coy:LocalLabour rdf:type owl:Class ;
+                rdfs:subClassOf coy:LocalisationPolicy ;
+                rdfs:label "Local labour"@en .
+
+
+###  http://schema.coypu.org/gta/LocalOperations
+coy:LocalOperations rdf:type owl:Class ;
+                    rdfs:subClassOf coy:LocalisationPolicy ;
+                    rdfs:label "Local operations"@en .
+
+
+###  http://schema.coypu.org/gta/LocalSourcing
+coy:LocalSourcing rdf:type owl:Class ;
+                  rdfs:subClassOf coy:LocalisationPolicy ,
+                                  coy:PublicProcurementPolicy ;
+                  rdfs:label "Local sourcing"@en .
+
+
+###  http://schema.coypu.org/gta/LocalisationPolicy
+coy:LocalisationPolicy rdf:type owl:Class ;
+                       rdfs:subClassOf coy:InterventionType ;
+                       rdfs:label "Localisation policy"@en .
+
+
+###  http://schema.coypu.org/gta/OtherExportInventive
+coy:OtherExportInventive rdf:type owl:Class ;
+                         rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                         rdfs:label "Other export inventive"@en .
+
+
+###  http://schema.coypu.org/gta/OtherInstruments
+coy:OtherInstruments rdf:type owl:Class ;
+                     rdfs:subClassOf coy:InterventionType ;
+                     rdfs:label "Other instruments"@en .
+
+
+###  http://schema.coypu.org/gta/Post-migrationTreatment
+coy:Post-migrationTreatment rdf:type owl:Class ;
+                            rdfs:subClassOf coy:LaborForceMigrationPolicy ,
+                                            coy:LocalisationPolicy ;
+                            rdfs:label "Post-migration treatment"@en .
+
+
+###  http://schema.coypu.org/gta/ProductionSubsidy
+coy:ProductionSubsidy rdf:type owl:Class ;
+                      rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                      rdfs:label "Production subsidy"@en .
+
+
+###  http://schema.coypu.org/gta/PublicProcurementAccess
+coy:PublicProcurementAccess rdf:type owl:Class ;
+                            rdfs:subClassOf coy:PublicProcurementPolicy ;
+                            rdfs:label "Public procurement access"@en .
+
+
+###  http://schema.coypu.org/gta/PublicProcurementLocalisation
+coy:PublicProcurementLocalisation rdf:type owl:Class ;
+                                  rdfs:subClassOf coy:PublicProcurementPolicy ;
+                                  rdfs:label "Public procurement localisation"@en .
+
+
+###  http://schema.coypu.org/gta/PublicProcurementPolicy
+coy:PublicProcurementPolicy rdf:type owl:Class ;
+                            rdfs:subClassOf coy:InterventionType ;
+                            rdfs:label "Public procurement policy"@en .
+
+
+###  http://schema.coypu.org/gta/PublicProcurementPreferenceMargin
+coy:PublicProcurementPreferenceMargin rdf:type owl:Class ;
+                                      rdfs:subClassOf coy:PublicProcurementPolicy ;
+                                      rdfs:label "Public procurement preference margin"@en .
+
+
+###  http://schema.coypu.org/gta/Safeguard
+coy:Safeguard rdf:type owl:Class ;
+              rdfs:subClassOf coy:OtherInstruments ,
+                              coy:TradeDefenceInstruments ;
+              rdfs:label "Safeguard"@en .
+
+
+###  http://schema.coypu.org/gta/SanitaryAndPhytosanitaryMeasure
+coy:SanitaryAndPhytosanitaryMeasure rdf:type owl:Class ;
+                                    rdfs:subClassOf coy:OtherInstruments ;
+                                    rdfs:label "Sanitary and phytosanitary measure"@en .
+
+
+###  http://schema.coypu.org/gta/StateLoan
+coy:StateLoan rdf:type owl:Class ;
+              rdfs:subClassOf coy:SubsidiesAndStateAid ;
+              rdfs:label "State loan"@en .
+
+
+###  http://schema.coypu.org/gta/SubsidiesAndStateAid
+coy:SubsidiesAndStateAid rdf:type owl:Class ;
+                         rdfs:subClassOf coy:InterventionType ;
+                         rdfs:label "Subsidies and state aid"@en .
+
+
+###  http://schema.coypu.org/gta/TaxOrSocialInsuranceRelief
+coy:TaxOrSocialInsuranceRelief rdf:type owl:Class ;
+                               rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                               rdfs:label "Tax or social insurance relief"@en .
+
+
+###  http://schema.coypu.org/gta/TechnicalBarrierToTrade
+coy:TechnicalBarrierToTrade rdf:type owl:Class ;
+                            rdfs:subClassOf coy:OtherInstruments ;
+                            rdfs:label "Technical barrier to trade"@en .
+
+
+###  http://schema.coypu.org/gta/TradeBalancingMeasure
+coy:TradeBalancingMeasure rdf:type owl:Class ;
+                          rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                          rdfs:label "Trade balancing measure"@en .
+
+
+###  http://schema.coypu.org/gta/TradeDefenceInstruments
+coy:TradeDefenceInstruments rdf:type owl:Class ;
+                            rdfs:subClassOf coy:InterventionType ;
+                            rdfs:label "Trade defence instruments"@en .
+
+
+###  http://schema.coypu.org/gta/TradeFinance
+coy:TradeFinance rdf:type owl:Class ;
+                 rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                 rdfs:label "Trade finance"@en .
+
+
+###  http://schema.coypu.org/gta/TradePaymentMeasure
+coy:TradePaymentMeasure rdf:type owl:Class ;
+                        rdfs:subClassOf coy:ExportAndImportPolicyInstruments ,
+                                        coy:ForeignInvestmentPolicy ;
+                        rdfs:label "Trade payment measure"@en .
+
+
+###  http://schema.coypu.org/gta/Bailout%28CapitalInjectionOrEquityParticipation%29
+<http://schema.coypu.org/gta/Bailout%28CapitalInjectionOrEquityParticipation%29> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf coy:SubsidiesAndStateAid ;
+                                                                                 rdfs:label "Bailout (capital injection or equity participation)"@en .
+
+
+###  http://schema.coypu.org/gta/Export-relatedNon-TariffMeasure%2CNes
+<http://schema.coypu.org/gta/Export-relatedNon-TariffMeasure%2CNes> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                                                                    rdfs:label "Export-related non-tariff measure, nes"@en .
+
+
+###  http://schema.coypu.org/gta/FDI%3AEntryAndOwnershipRule
+<http://schema.coypu.org/gta/FDI%3AEntryAndOwnershipRule> rdf:type owl:Class ;
+                                                          rdfs:subClassOf coy:ForeignInvestmentPolicy ;
+                                                          rdfs:label "FDI: Entry and ownership rule"@en .
+
+
+###  http://schema.coypu.org/gta/FDI%3AFinancialIncentive
+<http://schema.coypu.org/gta/FDI%3AFinancialIncentive> rdf:type owl:Class ;
+                                                       rdfs:subClassOf coy:ForeignInvestmentPolicy ;
+                                                       rdfs:label "FDI: Financial incentive"@en .
+
+
+###  http://schema.coypu.org/gta/FDI%3ATreatmentAndOperations%2CNes
+<http://schema.coypu.org/gta/FDI%3ATreatmentAndOperations%2CNes> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf coy:ForeignInvestmentPolicy ,
+                                                                                 coy:LaborForceMigrationPolicy ;
+                                                                 rdfs:label "FDI: Treatment and operations, nes"@en .
+
+
+###  http://schema.coypu.org/gta/Import-relatedNon-TariffMeasure%2CNes
+<http://schema.coypu.org/gta/Import-relatedNon-TariffMeasure%2CNes> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
+                                                                    rdfs:label "Import-related non-tariff measure, nes"@en .
+
+
+###  http://schema.coypu.org/gta/PublicProcurement%2CNes
+<http://schema.coypu.org/gta/PublicProcurement%2CNes> rdf:type owl:Class ;
+                                                      rdfs:subClassOf coy:PublicProcurementPolicy ,
+                                                                      coy:SubsidiesAndStateAid ;
+                                                      rdfs:label "Public procurement, nes"@en .
+
+
+###  http://schema.coypu.org/gta/Repatriation%26SurrenderRequirements
+<http://schema.coypu.org/gta/Repatriation%26SurrenderRequirements> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ;
+                                                                   rdfs:label "Repatriation & surrender requirements"@en .
+
+
+###  http://schema.coypu.org/gta/StateAid%2CNes
+<http://schema.coypu.org/gta/StateAid%2CNes> rdf:type owl:Class ;
+                                             rdfs:subClassOf coy:SubsidiesAndStateAid ,
+                                                             coy:TradeDefenceInstruments ;
+                                             rdfs:label "State aid, nes"@en .
+
+
+###  http://schema.coypu.org/gta/TradePaymentMeasure%28SeeExportAndImportSection%29
+<http://schema.coypu.org/gta/TradePaymentMeasure%28SeeExportAndImportSection%29> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ,
+                                                                                                 coy:ExportAndImportPolicyInstruments ;
+                                                                                 rdfs:label "Trade payment measure (see export and import section)"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
