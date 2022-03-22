@@ -15,6 +15,34 @@
                                 owl:versionInfo "v0.1.0" .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.coypu.org/gta/hasAffectedJurisdiction
+coy:hasAffectedJurisdiction rdf:type owl:ObjectProperty ;
+                            rdfs:range coy:Jurisdiction .
+
+
+###  http://schema.coypu.org/gta/hasAffectedProduct
+coy:hasAffectedProduct rdf:type owl:ObjectProperty .
+
+
+###  http://schema.coypu.org/gta/hasAffectedSector
+coy:hasAffectedSector rdf:type owl:ObjectProperty ;
+                      rdfs:range coy:Sector .
+
+
+###  http://schema.coypu.org/gta/hasImplementingJurisdiction
+coy:hasImplementingJurisdiction rdf:type owl:ObjectProperty ;
+                                rdfs:range coy:Jurisdiction .
+
+
+###  http://schema.coypu.org/gta/hasInterventionType
+coy:hasInterventionType rdf:type owl:ObjectProperty ;
+                        rdfs:range coy:InterventionType .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
@@ -62,6 +90,19 @@ coy:hasRemovalDate rdf:type owl:DatatypeProperty ;
 change. Note that changes that have only been partially replaced or withdrawn do not include a
 removal date."""@en ;
                    rdfs:label "Removal date"@en .
+
+
+###  http://schema.coypu.org/gta/hasSectorID
+coy:hasSectorID rdf:type owl:DatatypeProperty ;
+                rdfs:comment """The GTA uses the Common Product Classification (CPC, version 2.1) at the 3-digit level. The details of this
+classification and its correspondence to others are available from the United Nations Statistics Division."""@en ;
+                rdfs:label "has sector ID"@en .
+
+
+###  http://schema.coypu.org/gta/hasStateActTitle
+coy:hasStateActTitle rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "has state act title"@en .
 
 
 ###  http://schema.coypu.org/gta/hasTerminationAnnouncementDate
@@ -210,6 +251,13 @@ coy:ForeignInvestmentPolicy rdf:type owl:Class ;
                             rdfs:label "Foreign investment policy"@en .
 
 
+###  http://schema.coypu.org/gta/ImplementationLevel
+coy:ImplementationLevel rdf:type owl:Class ;
+                        rdfs:comment """The GTA database differentiates the announcements of different government levels or agencies. In total, it
+distinguishes 6 different actors."""@en ;
+                        rdfs:label "Implementation level"@en .
+
+
 ###  http://schema.coypu.org/gta/ImportBan
 coy:ImportBan rdf:type owl:Class ;
               rdfs:subClassOf coy:ExportAndImportPolicyInstruments ;
@@ -280,6 +328,10 @@ coy:InternalTaxationOfImports rdf:type owl:Class ;
 coy:InterventionType rdf:type owl:Class ;
                      rdfs:subClassOf owl:Thing ;
                      rdfs:label "intervention type"@en .
+
+
+###  http://schema.coypu.org/gta/Jurisdiction
+coy:Jurisdiction rdf:type owl:Class .
 
 
 ###  http://schema.coypu.org/gta/LaborForceMigrationPolicy
@@ -379,6 +431,10 @@ coy:Safeguard rdf:type owl:Class ;
 coy:SanitaryAndPhytosanitaryMeasure rdf:type owl:Class ;
                                     rdfs:subClassOf coy:OtherInstruments ;
                                     rdfs:label "Sanitary and phytosanitary measure"@en .
+
+
+###  http://schema.coypu.org/gta/Sector
+coy:Sector rdf:type owl:Class .
 
 
 ###  http://schema.coypu.org/gta/StateLoan
