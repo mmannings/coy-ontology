@@ -15,8 +15,80 @@
                                 owl:versionInfo "v0.1.0" .
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.coypu.org/gta/hasAnnouncementDate
+coy:hasAnnouncementDate rdf:type owl:DatatypeProperty ;
+                        rdfs:comment "The issuance date of the documented government statement."@en ;
+                        rdfs:label "Announcement date"@en .
+
+
+###  http://schema.coypu.org/gta/hasImplementationDate
+coy:hasImplementationDate rdf:type owl:DatatypeProperty ;
+                          rdfs:comment "The date the documented change is enforced."@en ;
+                          rdfs:label "Implementation date"@en .
+
+
+###  http://schema.coypu.org/gta/hasInvestigationStatusDate
+coy:hasInvestigationStatusDate rdf:type owl:DatatypeProperty ;
+                               rdfs:label "Investigation status date"@en .
+
+
+###  http://schema.coypu.org/gta/hasProlongationAnnouncementDate
+coy:hasProlongationAnnouncementDate rdf:type owl:DatatypeProperty ;
+                                    rdfs:comment """The date on which the prolongation of a temporary change was
+communicated."""@en ;
+                                    rdfs:label "Prolongation announcement date"@en .
+
+
+###  http://schema.coypu.org/gta/hasProlongationImplementationDate
+coy:hasProlongationImplementationDate rdf:type owl:DatatypeProperty ;
+                                      rdfs:comment """The date the prolongation became effective i.e. the day after the
+previously sought removal date."""@en ;
+                                      rdfs:label "Prolongation implementation date"@en .
+
+
+###  http://schema.coypu.org/gta/hasProlongationRemovalDate
+coy:hasProlongationRemovalDate rdf:type owl:DatatypeProperty ;
+                               rdfs:comment """The date the prolongation ends i.e. the new removal date as implied by
+this prolongation."""@en ;
+                               rdfs:label "Prolongation removal date"@en .
+
+
+###  http://schema.coypu.org/gta/hasRemovalDate
+coy:hasRemovalDate rdf:type owl:DatatypeProperty ;
+                   rdfs:comment """The date the documented change is either withdrawn or fully replaced by a further
+change. Note that changes that have only been partially replaced or withdrawn do not include a
+removal date."""@en ;
+                   rdfs:label "Removal date"@en .
+
+
+###  http://schema.coypu.org/gta/hasTerminationAnnouncementDate
+coy:hasTerminationAnnouncementDate rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                   rdfs:comment """The date on which the premature termination of a temporary
+change was communicated."""@en ;
+                                   rdfs:label "Termination announcement date"@en .
+
+
+###  http://schema.coypu.org/gta/hasTerminationImplementationDate
+coy:hasTerminationImplementationDate rdf:type owl:DatatypeProperty ;
+                                     rdfs:comment """The date the premature termination became effective i.e. the day
+after the previously sought removal date."""@en ;
+                                     rdfs:label "Termination implementation date"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://schema.coypu.org/gta/AffectedCommercialFlow
+coy:AffectedCommercialFlow rdf:type owl:Class ;
+                           rdfs:comment """The affected commercial flow field includes the predominantly affected flow direction. There are three
+potential values. Only one value can be assigned to each intervention."""@en ;
+                           rdfs:label "Affected commercial flow"@en .
+
 
 ###  http://schema.coypu.org/gta/Anti-Circumvention
 coy:Anti-Circumvention rdf:type owl:Class ;
@@ -420,6 +492,31 @@ coy:TradePaymentMeasure rdf:type owl:Class ;
                                                                                  rdfs:subClassOf coy:CapitalControlsAndExchangeRatePolicy ,
                                                                                                  coy:ExportAndImportPolicyInstruments ;
                                                                                  rdfs:label "Trade payment measure (see export and import section)"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://schema.coypu.org/gta/Inward
+coy:Inward rdf:type owl:NamedIndividual ,
+                    coy:AffectedCommercialFlow ;
+           rdfs:comment "The predominantly distorted market is the domestic market of the implementing jurisdiction."@en ;
+           rdfs:label "Inward"@en .
+
+
+###  http://schema.coypu.org/gta/Outward
+coy:Outward rdf:type owl:NamedIndividual ,
+                     coy:AffectedCommercialFlow ;
+            rdfs:comment "The documented change concerns an outflow restriction. The predominantly affected market is the outflow destination."@en ;
+            rdfs:label "Outward"@en .
+
+
+###  http://schema.coypu.org/gta/OutwardSubsidy
+coy:OutwardSubsidy rdf:type owl:NamedIndividual ,
+                            coy:AffectedCommercialFlow ;
+                   rdfs:comment "In general, this value is only chosen for export incentives and trade finance interventions. In exceptional cases, a state aid awarded to an exporting company which generates its sales exclusively abroad may be classified as an outward subsidy."@en ;
+                   rdfs:label "Outward subsidy"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
