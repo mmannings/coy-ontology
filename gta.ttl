@@ -501,8 +501,7 @@ coy:LocalOperations rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/LocalSourcing
 coy:LocalSourcing rdf:type owl:NamedIndividual ,
-                           coy:LocalisationPolicy ,
-                           coy:PublicProcurementPolicy ;
+                           coy:LocalisationPolicy ;
                   rdfs:label "Local sourcing"@en .
 
 
@@ -528,8 +527,7 @@ coy:OutwardSubsidy rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/Post-migrationTreatment
 coy:Post-migrationTreatment rdf:type owl:NamedIndividual ,
-                                     coy:LaborForceMigrationPolicy ,
-                                     coy:LocalisationPolicy ;
+                                     coy:LaborForceMigrationPolicy ;
                             rdfs:label "Post-migration treatment"@en .
 
 
@@ -566,7 +564,6 @@ coy:RedTriangle rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/Safeguard
 coy:Safeguard rdf:type owl:NamedIndividual ,
-                       coy:OtherInstruments ,
                        coy:TradeDefenceInstruments ;
               rdfs:label "Safeguard"@en .
 
@@ -609,8 +606,7 @@ coy:TradeFinance rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/TradePaymentMeasure
 coy:TradePaymentMeasure rdf:type owl:NamedIndividual ,
-                                 coy:ExportAndImportPolicyInstruments ,
-                                 coy:ForeignInvestmentPolicy ;
+                                 coy:ExportAndImportPolicyInstruments ;
                         rdfs:label "Trade payment measure"@en .
 
 
@@ -640,8 +636,7 @@ coy:TradePaymentMeasure rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/FDI%3ATreatmentAndOperations%2CNes
 <https://schema.coypu.org/gta/FDI%3ATreatmentAndOperations%2CNes> rdf:type owl:NamedIndividual ,
-                                                                           coy:ForeignInvestmentPolicy ,
-                                                                           coy:LaborForceMigrationPolicy ;
+                                                                           coy:ForeignInvestmentPolicy ;
                                                                   rdfs:label "FDI: Treatment and operations, nes"@en .
 
 
@@ -653,8 +648,7 @@ coy:TradePaymentMeasure rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/PublicProcurement%2CNes
 <https://schema.coypu.org/gta/PublicProcurement%2CNes> rdf:type owl:NamedIndividual ,
-                                                                coy:PublicProcurementPolicy ,
-                                                                coy:SubsidiesAndStateAid ;
+                                                                coy:PublicProcurementPolicy ;
                                                        rdfs:label "Public procurement, nes"@en .
 
 
@@ -666,15 +660,13 @@ coy:TradePaymentMeasure rdf:type owl:NamedIndividual ,
 
 ###  https://schema.coypu.org/gta/StateAid%2CNes
 <https://schema.coypu.org/gta/StateAid%2CNes> rdf:type owl:NamedIndividual ,
-                                                       coy:SubsidiesAndStateAid ,
-                                                       coy:TradeDefenceInstruments ;
+                                                       coy:SubsidiesAndStateAid ;
                                               rdfs:label "State aid, nes"@en .
 
 
 ###  https://schema.coypu.org/gta/TradePaymentMeasure%28SeeExportAndImportSection%29
 <https://schema.coypu.org/gta/TradePaymentMeasure%28SeeExportAndImportSection%29> rdf:type owl:NamedIndividual ,
-                                                                                           coy:CapitalControlsAndExchangeRatePolicy ,
-                                                                                           coy:ExportAndImportPolicyInstruments ;
+                                                                                           coy:CapitalControlsAndExchangeRatePolicy ;
                                                                                   rdfs:label "Trade payment measure (see export and import section)"@en .
 
 
