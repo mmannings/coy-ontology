@@ -145,7 +145,7 @@ xsd:date a rdfs:Datatype .
 # https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy
 
 beAWARE_ontology:isImpactedBy a owl:ObjectProperty ;
-	owl:inverseOf <ttps://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn> ;
+	owl:inverseOf <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn> ;
 	rdfs:domain beAWARE_ontology:VulnerableObject ;
 	rdfs:range beAWARE_ontology:Impact ;
 	rdfs:label "is impacted by"@en ;
@@ -363,9 +363,9 @@ beAWARE_ontology:isLocationOfDisaster rdfs:range beAWARE_ontology:NaturalDisaste
 # https://schema.implisense.com/#locatedAt
 
 ips:locatedAt a owl:ObjectProperty ;
-	rdfs:range <<https://schema.implisense.com/#Location> .
+	rdfs:range <https://schema.implisense.com/#Location> .
 
-<<https://schema.implisense.com/#Location> a owl:Class .
+<https://schema.implisense.com/#Location> a owl:Class .
 
 ips:locatedAt rdfs:range <https://schema.coypu.org/#Location> ;
 	rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
@@ -374,7 +374,7 @@ ips:locatedAt rdfs:range <https://schema.coypu.org/#Location> ;
 # 
 # ttps://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn
 
-<ttps://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn> a owl:ObjectProperty ;
+<https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#hasImpactOn> a owl:ObjectProperty ;
 	rdfs:domain beAWARE_ontology:Impact ;
 	rdfs:range beAWARE_ontology:VulnerableObject ;
 	rdfs:label "has impact on"@en ;
