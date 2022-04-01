@@ -1143,7 +1143,8 @@ beAWARE_ontology:LivingBeing a owl:Class ;
 # https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location
 
 beAWARE_ontology:Location a owl:Class ;
-	rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+	rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+	rdfs:label "Location" .
 # 
 # https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster
 
