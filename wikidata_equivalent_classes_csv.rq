@@ -21,8 +21,8 @@ SELECT DISTINCT
  ?cls a owl:Class ;
  rdfs:label ?label
  FILTER(lang(?label) = "en")
-
-  BIND(str(?label) as ?term)  	  
+  BIND(coalesce(replace(str(?label), "([a-z])([A-Z])", "$1 $2"), ?label) AS ?tmp)
+  BIND(str(?tmp) as ?term)  	  
   SERVICE <https://query.wikidata.org/sparql> {
     SELECT ?item ?itemLabel ?itemDescription ?type ?typeLabel ?typeDescription ?term WHERE {
   SERVICE wikibase:mwapi {
