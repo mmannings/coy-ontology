@@ -12,7 +12,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 SELECT DISTINCT
 ?cls (?label AS ?cls_label)
 (?item AS ?wd_item) (?itemLabel AS ?wd_item_label) (?itemDescription AS ?wd_item_description)
-(?type AS ?wd_item_type) (?typeLabel AS ?wd_item_type_label)  (?typeDescription AS ?wd_item_type_description)
+(group_concat(?types; separator="; ") AS ?wd_item_types)
 {
  ?cls a owl:Class ;
  rdfs:label ?label
@@ -39,7 +39,11 @@ ORDER BY (?num)
 LIMIT 5
   
   }
+  
+  
+BIND(CONCAT(replace(str(?type), str(wd:), ""), ", ", str(?typeLabel), ", ", str(?typeDescription)) AS ?types)
 }
+GROUP BY ?cls ?label ?item ?itemLabel ?itemDescription
 ORDER BY ?cls_label ?wd_item_label ?wd_item_type_label
 
 
