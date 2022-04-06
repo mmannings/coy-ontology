@@ -1,3 +1,7 @@
+# query has to be executed on the Coy ontology
+# e.g. via Apache JENA with 
+# sparql --data coy.ttl --query wikidata_equivalent_classes_csv.rq --results=csv > wd_links_draft.csv
+
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
