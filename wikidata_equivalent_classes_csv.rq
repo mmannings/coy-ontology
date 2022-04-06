@@ -1,0 +1,45 @@
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wdata: <http://www.wikidata.org/wiki/Special:EntityData/>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mwapi: <https://www.mediawiki.org/ontology#API/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+ 
+
+SELECT DISTINCT
+?cls (?label AS ?cls_label)
+(?item AS ?wd_item) (?itemLabel AS ?wd_item_label) (?itemDescription AS ?wd_item_description)
+(?type AS ?wd_item_type) (?typeLabel AS ?wd_item_type_label)  (?typeDescription AS ?wd_item_type_description)
+{
+ ?cls a owl:Class ;
+ rdfs:label ?label
+ FILTER(lang(?label) = "en")
+
+  BIND(str(?label) as ?term)  	  
+  SERVICE <https://query.wikidata.org/sparql> {
+    SELECT ?item ?itemLabel ?itemDescription ?type ?typeLabel ?typeDescription ?term WHERE {
+  SERVICE wikibase:mwapi {
+    bd:serviceParam wikibase:endpoint "www.wikidata.org";
+      wikibase:api "EntitySearch";
+      <https://www.mediawiki.org/ontology#API/search> ?term;
+      <https://www.mediawiki.org/ontology#API/language> "en".
+    ?item wikibase:apiOutputItem <https://www.mediawiki.org/ontology#API/item>.
+    ?num wikibase:apiOrdinal true.
+  }
+  #OPTIONAL {
+  ?item (wdt:P279|wdt:P31) ?type 
+  #}
+  FILTER(?type not in (wd:Q13442814, wd:Q1711593))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY (?num)
+LIMIT 5
+  
+  }
+}
+ORDER BY ?cls_label ?wd_item_label ?wd_item_type_label
+
+
