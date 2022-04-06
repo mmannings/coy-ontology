@@ -17,6 +17,15 @@
 #    Object Properties
 #################################################################
 
+###  https://schema.coypu.org/gta/hasAffectedCommercialFlow
+:hasAffectedCommercialFlow rdf:type owl:ObjectProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :Intervention ;
+                           rdfs:range :AffectedCommercialFlow ;
+                           rdfs:comment "The affected commercial flow field includes the predominantly affected flow direction. There are three potential values. Only one value can be assigned to each intervention."@en ;
+                           rdfs:label "has affected commercial flow"@en .
+
+
 ###  https://schema.coypu.org/gta/hasAffectedJurisdiction
 :hasAffectedJurisdiction rdf:type owl:ObjectProperty ;
                          rdfs:domain :Intervention ;
@@ -42,6 +51,14 @@
                   rdfs:domain :Intervention ;
                   rdfs:range :GTAEvaluation ;
                   rdfs:label "has GTA evaluation"@en .
+
+
+###  https://schema.coypu.org/gta/hasImplementationLevel
+:hasImplementationLevel rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Intervention ;
+                        rdfs:range :ImplementationLevel ;
+                        rdfs:comment "The GTA database differentiates the announcements of different government levels or agencies. In total, it distinguishes 6 different actors."@en ;
+                        rdfs:label "has implementation level"@en .
 
 
 ###  https://schema.coypu.org/gta/hasImplementingJurisdiction
@@ -70,12 +87,16 @@
 
 ###  https://schema.coypu.org/gta/hasAnnouncementDate
 :hasAnnouncementDate rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :StateAct ;
+                     rdfs:range xsd:dateTime ;
                      rdfs:comment "The issuance date of the documented government statement."@en ;
                      rdfs:label "Announcement date"@en .
 
 
 ###  https://schema.coypu.org/gta/hasImplementationDate
 :hasImplementationDate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Intervention ;
+                       rdfs:range xsd:dateTime ;
                        rdfs:comment "The date the documented change is enforced."@en ;
                        rdfs:label "Implementation date"@en .
 
@@ -89,6 +110,8 @@
 
 ###  https://schema.coypu.org/gta/hasInvestigationStatusDate
 :hasInvestigationStatusDate rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Intervention ;
+                            rdfs:range xsd:dateTime ;
                             rdfs:label "Investigation status date"@en .
 
 
@@ -109,6 +132,8 @@ Organisation. The United Nations Statistics Division published a helpful summary
 
 ###  https://schema.coypu.org/gta/hasProlongationAnnouncementDate
 :hasProlongationAnnouncementDate rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Intervention ;
+                                 rdfs:range xsd:dateTime ;
                                  rdfs:comment """The date on which the prolongation of a temporary change was
 communicated."""@en ;
                                  rdfs:label "Prolongation announcement date"@en .
@@ -116,6 +141,8 @@ communicated."""@en ;
 
 ###  https://schema.coypu.org/gta/hasProlongationImplementationDate
 :hasProlongationImplementationDate rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :Intervention ;
+                                   rdfs:range xsd:dateTime ;
                                    rdfs:comment """The date the prolongation became effective i.e. the day after the
 previously sought removal date."""@en ;
                                    rdfs:label "Prolongation implementation date"@en .
@@ -123,6 +150,8 @@ previously sought removal date."""@en ;
 
 ###  https://schema.coypu.org/gta/hasProlongationRemovalDate
 :hasProlongationRemovalDate rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Intervention ;
+                            rdfs:range xsd:dateTime ;
                             rdfs:comment """The date the prolongation ends i.e. the new removal date as implied by
 this prolongation."""@en ;
                             rdfs:label "Prolongation removal date"@en .
@@ -130,6 +159,8 @@ this prolongation."""@en ;
 
 ###  https://schema.coypu.org/gta/hasRemovalDate
 :hasRemovalDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Intervention ;
+                rdfs:range xsd:dateTime ;
                 rdfs:comment """The date the documented change is either withdrawn or fully replaced by a further
 change. Note that changes that have only been partially replaced or withdrawn do not include a
 removal date."""@en ;
@@ -160,13 +191,15 @@ classification and its correspondence to others are available from the United Na
 
 ###  https://schema.coypu.org/gta/hasStateActTitle
 :hasStateActTitle rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :StateAct ;
                   rdfs:range xsd:string ;
                   rdfs:label "has state act title"@en .
 
 
 ###  https://schema.coypu.org/gta/hasTerminationAnnouncementDate
 :hasTerminationAnnouncementDate rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+                                rdfs:domain :Intervention ;
+                                rdfs:range xsd:dateTime ;
                                 rdfs:comment """The date on which the premature termination of a temporary
 change was communicated."""@en ;
                                 rdfs:label "Termination announcement date"@en .
@@ -174,6 +207,8 @@ change was communicated."""@en ;
 
 ###  https://schema.coypu.org/gta/hasTerminationImplementationDate
 :hasTerminationImplementationDate rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Intervention ;
+                                  rdfs:range xsd:dateTime ;
                                   rdfs:comment """The date the premature termination became effective i.e. the day
 after the previously sought removal date."""@en ;
                                   rdfs:label "Termination implementation date"@en .
