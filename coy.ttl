@@ -1009,6 +1009,30 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                    rdfs:label "isRare"@en .
 
 
+###  https://schema.coypu.org/#hasAcledID
+<https://schema.coypu.org/#hasAcledID> rdf:type owl:DatatypeProperty ,
+                                                owl:FunctionalProperty ;
+	                                      rdfs:domain <https://schema.coypu.org/#AcledEvent>;
+	                                      rdfs:range xsd:integer ;
+	                                      rdfs:label "hasAcledDataID"@en .
+
+
+###  https://schema.coypu.org/#hasFatalities
+<https://schema.coypu.org/#hasFatalities> rdf:type owl:DatatypeProperty ;
+	                                        rdfs:domain <https://schema.coypu.org/#AcledEvent>;
+	                                        rdfs:range xsd:integer ;
+	                                        rdfs:comment "The number of reported fatalities which occurred during the event"@en ;
+	                                        rdfs:label "hasFatalities"@en .
+
+
+###  https://schema.coypu.org/#hasActor
+<https://schema.coypu.org/#hasActor> rdf:type owl:DatatypeProperty ;
+	                                   rdfs:domain <https://schema.coypu.org/#AcledEvent> ;
+	                                   rdfs:range xsd:string ;
+	                                   rdfs:comment "The named actor involved in the event"@en ;
+	                                   rdfs:label "hasActor"@en .                                   
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -1531,6 +1555,232 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                               rdfs:comment "an event relating to logistical operations"@en ;
                                               rdfs:label "TransportAccident"@en ;
                                               rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/#AcledEvent
+<https://schema.coypu.org/#AcledEvent> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+                                       rdfs:comment "Armed Conflict Location & Event Data"@en ;
+                                       rdfs:label "ACLED Event"@en .
+
+
+###  ttps://schema.coypu.org/#ViolentEvents
+<https://schema.coypu.org/#ViolentEvents> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://schema.coypu.org/#AcledEventType> ;
+	                                        rdfs:label "Violent events"@en .
+
+
+###  ttps://schema.coypu.org/#Battles
+<https://schema.coypu.org/#Battles> rdf:type owl:Class ;
+	                                  rdfs:subClassOf <https://schema.coypu.org/#ViolentEvents> ;
+	                                  rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
+	                                        groups at a particular time and location.”"""@en ;
+	                                  rdfs:label "Battles"@en .
+
+
+###  https://schema.coypu.org/#ArmedClash
+<https://schema.coypu.org/#ArmedClash> rdf:type owl:Class ;
+	                                     rdfs:subClassOf <https://schema.coypu.org/#Battles> ;
+	                                     rdfs:label "Armed clash"@en .
+
+
+###  https://schema.coypu.org/#GovernmentRegainsTerritory
+<https://schema.coypu.org/#GovernmentRegainsTerritory> rdf:type owl:Class ;
+	                                                     rdfs:subClassOf <https://schema.coypu.org/#Battles> ;
+	                                                     rdfs:label "Government regains territory"@en .
+
+
+###  https://schema.coypu.org/#Non-StateActorOvertakesTerritory
+<https://schema.coypu.org/#Non-StateActorOvertakesTerritory> rdf:type owl:Class ;
+	                                                           rdfs:subClassOf <https://schema.coypu.org/#Battles> ;
+	                                                           rdfs:label "Non-state actor overtakes territory"@en .
+
+
+###  https://schema.coypu.org/#Explosions%2FRemoteViolence
+<https://schema.coypu.org/#Explosions%2FRemoteViolence> rdf:type owl:Class ;
+	                                                      rdfs:subClassOf <https://schema.coypu.org/#ViolentEvents> ;
+	                                                      rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
+	                                                       tool for engaging in conflict creates asymmetry by taking away the ability of the target to
+	                                                       respond”."""@en ;
+	                                                      rdfs:label "Explosions/remote violence"@en .
+
+
+###  https://schema.coypu.org/#ChemicalWeapon
+<https://schema.coypu.org/#ChemicalWeapon> rdf:type owl:Class ;
+	                                         rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                         rdfs:comment """all substances
+	                                          listed in the Schedule 1 of the Chemical Weapons Convention"""@en ;
+	                                         rdfs:label "Chemical weapon"@en .
+
+
+###  https://schema.coypu.org/#Air%2FDroneStrike
+<https://schema.coypu.org/#Air%2FDroneStrike> rdf:type owl:Class ;
+	                                            rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                            rdfs:label "Air/drone strike"@en .
+
+
+###  https://schema.coypu.org/#SuicideBomb
+<https://schema.coypu.org/#SuicideBomb> rdf:type owl:Class ;
+	                                      rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                      rdfs:label "Suicide bomb"@en .
+
+
+###  https://schema.coypu.org/#Shelling%2FArtillery%2FMissileAttack
+<https://schema.coypu.org/#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
+	                                                               rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                                               rdfs:label "Shelling/artillery/missile attack"@en .
+
+
+###  https://schema.coypu.org/#RemoteExplosive%2FLandmine%2FIED
+<https://schema.coypu.org/#RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
+	                                                           rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                                           rdfs:label "Remote explosive/landmine/IED"@en .
+
+
+###  https://schema.coypu.org/#Grenade
+<https://schema.coypu.org/#Grenade> rdf:type owl:Class ;
+	                                  rdfs:subClassOf <https://schema.coypu.org/#Explosions%2FRemoteViolence> ;
+	                                  rdfs:label "Grenade"@en .
+
+
+###  https://schema.coypu.org/#ViolenceAgainstCivilians
+<https://schema.coypu.org/#ViolenceAgainstCivilians> rdf:type owl:Class ;
+	                                                   rdfs:subClassOf <https://schema.coypu.org/#ViolentEvents> ;
+	                                                   rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
+	                                                    groups at a particular time and location."""@en ;
+	                                                   rdfs:label "Violence against civilians"@en .
+
+
+###  https://schema.coypu.org/#SexualViolence
+<https://schema.coypu.org/#SexualViolence> rdf:type owl:Class ;
+	                                         rdfs:subClassOf <https://schema.coypu.org/#ViolenceAgainstCivilians> ;
+	                                         rdfs:label "Sexual violence"@en .
+
+
+###  https://schema.coypu.org/#Attack
+<https://schema.coypu.org/#Attack> rdf:type owl:Class ;
+	                                 rdfs:subClassOf <https://schema.coypu.org/#ViolenceAgainstCivilians> ;
+	                                 rdfs:label "Attack"@en .
+
+
+###  https://schema.coypu.org/#Abduction%2FForcedDisappearance
+<https://schema.coypu.org/#Abduction%2FForcedDisappearance> rdf:type owl:Class ;
+	                                                          rdfs:subClassOf <https://schema.coypu.org/#ViolenceAgainstCivilians> ;
+	                                                          rdfs:label "Abduction/forced disappearance"@en .
+
+
+###  https://schema.coypu.org/#Demonstrations
+<https://schema.coypu.org/#Demonstrations> rdf:type owl:Class ;
+	                                         rdfs:subClassOf <https://schema.coypu.org/#AcledEventType> ;
+	                                         rdfs:label "Demonstrations"@en .
+
+
+###  https://schema.coyput.org/#Protests
+<https://schema.coyput.org/#Protests> rdf:type owl:Class ;
+	                                    rdfs:subClassOf <https://schema.coypu.org/#Demonstrations> ;
+	                                    rdfs:comment """A protest is defined as a public demonstration in which the participants do not engage in
+	                                     violence, though violence may be used against them."""@en ;
+	                                    rdfs:label "Protests"@en .
+
+
+###  https://schema.coypu.org/#PeacefulProtest
+<https://schema.coypu.org/#PeacefulProtest> rdf:type owl:Class ;
+	                                          rdfs:subClassOf <https://schema.coyput.org/#Protests> ;
+	                                          rdfs:label "Peaceful protest"@en .
+
+
+###  https://schema.coypu.org/#ProtestWithIntervention
+<https://schema.coypu.org/#ProtestWithIntervention> rdf:type owl:Class ;
+	                                                  rdfs:subClassOf <https://schema.coyput.org/#Protests> ;
+	                                                  rdfs:label "Protest with intervention"@en .
+
+
+###  https://schema.coypu.org/#ExcessiveForceAgainstProtesters
+<https://schema.coypu.org/#ExcessiveForceAgainstProtesters> rdf:type owl:Class ;
+	                                                          rdfs:subClassOf <https://schema.coyput.org/#Protests> ;
+	                                                          rdfs:label "Excessive force against protesters"@en .
+
+
+###  https://schema.coypu.org/#Riots
+<https://schema.coypu.org/#Riots> rdf:type owl:Class ;
+	                                rdfs:subClassOf <https://schema.coypu.org/#Demonstrations> ;
+	                                rdfs:comment """‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts,
+	                                 including but not limited to rock throwing, property destruction, etc."""@en ;
+	                                rdfs:label "Riots"@en .
+
+
+###  https://schema.coypu.org/ViolentDemonstration
+<https://schema.coypu.org/ViolentDemonstration> rdf:type owl:Class ;
+	                                              rdfs:subClassOf <https://schema.coypu.org/#Riots> ;
+	                                              rdfs:label "Violent demonstration"@en .
+
+
+###  https://schema.coypu.org/#MobViolence
+<https://schema.coypu.org/#MobViolence> rdf:type owl:Class ;
+	                                      rdfs:subClassOf <https://schema.coypu.org/#Riots> ;
+	                                      rdfs:label "Mob violence"@en .
+
+
+###  https://schema.coypu.org/#NonViolentActions
+<https://schema.coypu.org/#NonViolentActions> rdf:type owl:Class ;
+	                                            rdfs:subClassOf <https://schema.coypu.org/#AcledEventType> ;
+	                                            rdfs:label "Non-violent actions"@en .
+
+###  https://schema.coypu.org/StrategicDevelopments
+<https://schema.coypu.org/StrategicDevelopments> rdf:type owl:Class ;
+	                                               rdfs:subClassOf <https://schema.coypu.org/#NonViolentActions> ;
+	                                               rdfs:comment """This event type captures contextually important information regarding the activities of
+	                                                violent groups that is not itself recorded as political violence, yet may trigger future
+	                                                events or contribute to political dynamics within and across states. """@en ;
+	                                               rdfs:label "Strategic developments"@en .
+
+
+###  https://schema.coypu.org/#Agreement
+<https://schema.coypu.org/#Agreement> rdf:type owl:Class ;
+	                                    rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                    rdfs:label "Agreement"@en .
+
+
+###  https://schema.coypu.org/#Arrests
+<https://schema.coypu.org/#Arrests> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                  rdfs:label "Arrests"@en .
+
+
+###  https://schema.coypu.org/#ChangeToGroup%2FActivity
+<https://schema.coypu.org/#ChangeToGroup%2FActivity> rdf:type owl:Class ;
+	                                                   rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                                   rdfs:label "Change to group/activity"@en .
+
+
+###  https://schema.coypu.org/#DisruptedWeaponUse
+<https://schema.coypu.org/#DisruptedWeaponUse> rdf:type owl:Class ;
+	                                             rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                             rdfs:label "Disrupted weapon use"@en .
+
+
+###  https://schema.coypu.org/#HeadquartersOrBaseEstablished
+<https://schema.coypu.org/#HeadquartersOrBaseEstablished> rdf:type owl:Class ;
+	                                                        rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                                        rdfs:label "Headquarters or base established"@en .
+
+
+###  ttps://schema.coypu.org/#Looting%2FPropertyDestruction
+<https://schema.coypu.org/#Looting%2FPropertyDestruction> rdf:type owl:Class ;
+	                                                        rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                                        rdfs:label "Looting/property destruction"@en .
+
+
+###  https://schema.coypu.org/#Non-ViolentTransferOfTerritory
+<https://schema.coypu.org/#Non-ViolentTransferOfTerritory> rdf:type owl:Class ;
+	                                                         rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                                         rdfs:label "Non-violent transfer of territory"@en .
+
+
+###  https://schema.coypu.org/#Other
+<https://schema.coypu.org/#Other> rdf:type owl:Class ;
+	                                rdfs:subClassOf <https://schema.coypu.org/StrategicDevelopments> ;
+	                                rdfs:label "Other"@en .                                              
 
 
 #################################################################
