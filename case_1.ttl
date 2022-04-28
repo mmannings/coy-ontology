@@ -1,12 +1,12 @@
-@prefix : <https://schema.coypu.org/kb/case_1/case_1.owl##> .
+@prefix : <https://schema.coypu.org/kb/case_1/case_1.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://schema.coypu.org/kb/case_1/case_1.owl#> a owl:Ontology ;
-	owl:imports <https://schema.coypu.org/> .
+<https://schema.coypu.org/kb/case_1/case_1.owl> a owl:Ontology ;
+	owl:imports <https://schema.coypu.org/global> .
 # 
 # 
 # #################################################################
@@ -18,53 +18,53 @@
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_1
 
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_1> a owl:NamedIndividual , <https://schema.coypu.org/#Location> , <https://schema.coypu.org/#Region> ;
-	<https://schema.coypu.org/#isLocationOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_1> a owl:NamedIndividual , <https://schema.coypu.org/global#Location> , <https://schema.coypu.org/global#Region> ;
+	<https://schema.coypu.org/global#isLocationOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
 	rdfs:label "Taiwan"@en .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7> ;
-	<https://schema.coypu.org/#hasEventStatus> "second" ;
-	<https://schema.coypu.org/#hasTimestamp> "2021-02-05T16:00:00"^^xsd:dateTime ;
+	<https://schema.coypu.org/global#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_7> ;
+	<https://schema.coypu.org/global#hasEventStatus> "second" ;
+	<https://schema.coypu.org/global#hasTimestamp> "2021-02-05T16:00:00"^^xsd:dateTime ;
 	rdfs:label "fire" .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12
 
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> a owl:NamedIndividual , <https://schema.coypu.org/#Company> ;
-	<https://schema.coypu.org/isProductLineOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
-	<https://schema.coypu.org/#isSupplierOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> a owl:NamedIndividual , <https://schema.coypu.org/global#Company> ;
+	<https://schema.coypu.org/global#isProductLineOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
+	<https://schema.coypu.org/global#isSupplierOf> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_12> ;
 	rdfs:label "Ajinomoto" .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_13
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_13> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> , <http://www.w3id.org/ecsel-dr-SCP#NEWs> ;
-	<https://schema.coypu.org/#hasSubject> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
+	<https://schema.coypu.org/global#hasSubject> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_10> ;
 	rdfs:label "chip shortages" .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_16
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_16> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-	<https://schema.coypu.org/affectsProductLine> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_8> , <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9> ;
+	<https://schema.coypu.org/global#affectsProductLine> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_8> , <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_9> ;
 	rdfs:label "shipments" .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_2
 
-<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_2> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-OM#Supplier> , <https://schema.coypu.org/#Company> ;
+<https://schema.coypu.org/kb/case_1/case_1.owl#coypu_2> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-OM#Supplier> , <https://schema.coypu.org/global#Company> ;
 	rdfs:label "Unimicron Technology Corp.’s"@en .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4> a owl:NamedIndividual , <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-	<https://schema.coypu.org/usedProductLineFor> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6> ;
+	<https://schema.coypu.org/global#usedProductLineFor> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6> ;
 	rdfs:label "ajinomoto build-up film (ABF) substrates"@en .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_5
 
 <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_5> a owl:NamedIndividual , <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-	<https://schema.coypu.org/#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4> ;
-	<https://schema.coypu.org/#hasTimestamp> "2020-10-01T00:00:00"^^xsd:dateTime ;
+	<https://schema.coypu.org/global#hasImpactOn> <https://schema.coypu.org/kb/case_1/case_1.owl#coypu_4> ;
+	<https://schema.coypu.org/global#hasTimestamp> "2020-10-01T00:00:00"^^xsd:dateTime ;
 	rdfs:label "outbreak"@en .
 # 
 # https://schema.coypu.org/kb/case_1/case_1.owl#coypu_6

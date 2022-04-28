@@ -1,4 +1,4 @@
-@prefix : <https://schema.coypu.org/> .
+@prefix : <https://schema.coypu.org/global#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
@@ -16,23 +16,23 @@
 @prefix dcterms: <http://purl.org/dc/terms> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
-@base <https://schema.coypu.org/> .
+@base <https://schema.coypu.org/global#> .
 
-<https://schema.coypu.org/> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://schema.coypu.org/> ;
+<https://schema.coypu.org/global> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://schema.coypu.org/global> ;
                              terms:contributor "Andreas Schaefer"@en ,
                                                "Felix Engel"@en ,
                                                "Nenad Krdzavac"@en ;
                              terms:created "2021-09-06" ;
                              terms:creator "Nils Steinert"@en ;
-                             terms:isVersionOf "https://schema.coypu.org/" ;
+                             terms:isVersionOf <https://schema.coypu.org/global> ;
                              terms:modified "2022-04-26" ;
                              terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
                              terms:title "CoyPu Ontology"@en ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "coy" ;
-                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://schema.coypu.org/" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://schema.coypu.org/global#" ;
                              rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                             rdfs:isDefinedBy "https://schema.coypu.org/" ;
+                             rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                              rdfs:label "coy: CoyPu Ontology"@en ;
                              owl:priorVersion 1.4 ;
                              owl:versionInfo 1.5 ;
@@ -155,78 +155,78 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                       skos:definition "Links a location to a natural disaster occurrence"@en .
 
 
-###  https://schema.coypu.org/affectsProductLine
+###  https://schema.coypu.org/global#affectsProductLine
 :affectsProductLine rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                     rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> .
 
 
-###  https://schema.coypu.org/haltOperation
+###  https://schema.coypu.org/global#haltOperation
 :haltOperation rdf:type owl:ObjectProperty ;
-               rdfs:domain <https://schema.coypu.org/#Company> ;
+               rdfs:domain <https://schema.coypu.org/global#Company> ;
                rdfs:range owl:Thing .
 
 
-###  https://schema.coypu.org/impactCausedByEvent
+###  https://schema.coypu.org/global#impactCausedByEvent
 :impactCausedByEvent rdf:type owl:ObjectProperty ;
                      rdfs:domain beAWARE_ontology:Impact ;
                      rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
 
 
-###  https://schema.coypu.org/isProductLineOf
+###  https://schema.coypu.org/global#isProductLineOf
 :isProductLineOf rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-                 rdfs:range <https://schema.coypu.org/#Company> .
+                 rdfs:range <https://schema.coypu.org/global#Company> .
 
 
-###  https://schema.coypu.org/orderTo
+###  https://schema.coypu.org/global#orderTo
 :orderTo rdf:type owl:ObjectProperty ;
-         rdfs:domain <https://schema.coypu.org/#Company> ;
+         rdfs:domain <https://schema.coypu.org/global#Company> ;
          rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
 
 
-###  https://schema.coypu.org/orderedBy
+###  https://schema.coypu.org/global#orderedBy
 :orderedBy rdf:type owl:ObjectProperty ;
-           rdfs:domain <https://schema.coypu.org/#Company> ;
-           rdfs:range <https://schema.coypu.org/#Company> .
+           rdfs:domain <https://schema.coypu.org/global#Company> ;
+           rdfs:range <https://schema.coypu.org/global#Company> .
 
 
-###  https://schema.coypu.org/usedProductLineFor
+###  https://schema.coypu.org/global#usedProductLineFor
 :usedProductLineFor rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
                     rdfs:range owl:Thing .
 
 
-###  https://schema.coypu.org/#hasCustomer
-<https://schema.coypu.org/#hasCustomer> rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf <https://schema.coypu.org/#isCustomerOf> ;
-                                        rdfs:domain <https://schema.coypu.org/#Company> ;
-                                        rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#hasCustomer
+<https://schema.coypu.org/global#hasCustomer> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <https://schema.coypu.org/global#isCustomerOf> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                        rdfs:range <https://schema.coypu.org/global#Company> ;
                                         rdfs:comment "the company providing a product, material, resource or service to another company"@en ;
                                         rdfs:label "hasCustomer"@en .
 
 
-###  https://schema.coypu.org/#hasImpactOn
-<https://schema.coypu.org/#hasImpactOn> rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf <https://schema.coypu.org/#isImpactedBy> ;
+###  https://schema.coypu.org/global#hasImpactOn
+<https://schema.coypu.org/global#hasImpactOn> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <https://schema.coypu.org/global#isImpactedBy> ;
                                         rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                         rdfs:range owl:Thing ;
                                         rdfs:comment "the thing impacted by an event"@en ;
                                         rdfs:label "hasImpactOn"@en .
 
 
-###  https://schema.coypu.org/#hasIndustry
-<https://schema.coypu.org/#hasIndustry> rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf <https://schema.coypu.org/#isIndustryOf> ;
-                                        rdfs:domain <https://schema.coypu.org/#Company> ;
-                                        rdfs:range <https://schema.coypu.org/#Industry> ;
+###  https://schema.coypu.org/global#hasIndustry
+<https://schema.coypu.org/global#hasIndustry> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <https://schema.coypu.org/global#isIndustryOf> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                        rdfs:range <https://schema.coypu.org/global#Industry> ;
                                         rdfs:comment "the sector or industry a company is active in"@en ;
                                         rdfs:label "hasIndustry"@en .
 
 
-###  https://schema.coypu.org/#hasLocation
-<https://schema.coypu.org/#hasLocation> rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf <https://schema.coypu.org/#isLocationOf> ;
+###  https://schema.coypu.org/global#hasLocation
+<https://schema.coypu.org/global#hasLocation> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <https://schema.coypu.org/global#isLocationOf> ;
                                         rdfs:domain owl:Thing ;
                                         rdfs:range beAWARE_ontology:Location ;
                                         rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
@@ -234,28 +234,28 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                         rdfs:seeAlso "https://schema.org/location" .
 
 
-###  https://schema.coypu.org/#hasManager
-<https://schema.coypu.org/#hasManager> rdf:type owl:ObjectProperty ;
-                                       owl:inverseOf <https://schema.coypu.org/#isManagerOf> ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
-                                       rdfs:range <https://schema.coypu.org/#Person> ;
+###  https://schema.coypu.org/global#hasManager
+<https://schema.coypu.org/global#hasManager> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf <https://schema.coypu.org/global#isManagerOf> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                       rdfs:range <https://schema.coypu.org/global#Person> ;
                                        rdfs:comment "a person which is part of a company's management"@en ;
                                        rdfs:label "hasManager"@en ;
                                        rdfs:seeAlso "https://schema.org/employee" .
 
 
-###  https://schema.coypu.org/#hasProduct
-<https://schema.coypu.org/#hasProduct> rdf:type owl:ObjectProperty ;
-                                       owl:inverseOf <https://schema.coypu.org/#isProductOf> ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
-                                       rdfs:range <https://schema.coypu.org/#Product> ;
+###  https://schema.coypu.org/global#hasProduct
+<https://schema.coypu.org/global#hasProduct> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf <https://schema.coypu.org/global#isProductOf> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                       rdfs:range <https://schema.coypu.org/global#Product> ;
                                        rdfs:comment "the material, resource or service a company produces"@en ;
                                        rdfs:label "hasProduct"@en .
 
 
-###  https://schema.coypu.org/#hasSubject
-<https://schema.coypu.org/#hasSubject> rdf:type owl:ObjectProperty ;
-                                       owl:inverseOf <https://schema.coypu.org/#isSubjectOf> ;
+###  https://schema.coypu.org/global#hasSubject
+<https://schema.coypu.org/global#hasSubject> rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf <https://schema.coypu.org/global#isSubjectOf> ;
                                        rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                        rdfs:range owl:Thing ;
                                        rdfs:comment "the thing an event is about"@en ;
@@ -263,73 +263,73 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                        rdfs:seeAlso "https://schema.org/about" .
 
 
-###  https://schema.coypu.org/#hasSupplier
-<https://schema.coypu.org/#hasSupplier> rdf:type owl:ObjectProperty ;
-                                        owl:inverseOf <https://schema.coypu.org/#isSupplierOf> ;
-                                        rdfs:domain <https://schema.coypu.org/#Company> ;
-                                        rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#hasSupplier
+<https://schema.coypu.org/global#hasSupplier> rdf:type owl:ObjectProperty ;
+                                        owl:inverseOf <https://schema.coypu.org/global#isSupplierOf> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                        rdfs:range <https://schema.coypu.org/global#Company> ;
                                         rdfs:comment "the company supplying a product, material, resource or service to another company"@en ;
                                         rdfs:label "hasSupplier"@en .
 
 
-###  https://schema.coypu.org/#isCustomerOf
-<https://schema.coypu.org/#isCustomerOf> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Company> ;
-                                         rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isCustomerOf
+<https://schema.coypu.org/global#isCustomerOf> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                         rdfs:range <https://schema.coypu.org/global#Company> ;
                                          rdfs:comment "the company sourcing a product, material, resource or service from another company"@en ;
                                          rdfs:label "isCustomerOf"@en .
 
 
-###  https://schema.coypu.org/#isImpactedBy
-<https://schema.coypu.org/#isImpactedBy> rdf:type owl:ObjectProperty ;
+###  https://schema.coypu.org/global#isImpactedBy
+<https://schema.coypu.org/global#isImpactedBy> rdf:type owl:ObjectProperty ;
                                          rdfs:domain owl:Thing ;
                                          rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                          rdfs:comment "the event impacting a thing"@en ;
                                          rdfs:label "isImpactedBy"@en .
 
 
-###  https://schema.coypu.org/#isIndustryOf
-<https://schema.coypu.org/#isIndustryOf> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Industry> ;
-                                         rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isIndustryOf
+<https://schema.coypu.org/global#isIndustryOf> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://schema.coypu.org/global#Industry> ;
+                                         rdfs:range <https://schema.coypu.org/global#Company> ;
                                          rdfs:comment "the company active in a sector or industry"@en ;
                                          rdfs:label "isIndustryOf"@en .
 
 
-###  https://schema.coypu.org/#isLocationOf
-<https://schema.coypu.org/#isLocationOf> rdf:type owl:ObjectProperty ;
+###  https://schema.coypu.org/global#isLocationOf
+<https://schema.coypu.org/global#isLocationOf> rdf:type owl:ObjectProperty ;
                                          rdfs:domain beAWARE_ontology:Location ;
                                          rdfs:range owl:Thing ;
                                          rdfs:comment "the event, company or critical infrastructure at a certain location"@en ;
                                          rdfs:label "isLocationOf"@en .
 
 
-###  https://schema.coypu.org/#isManagerOf
-<https://schema.coypu.org/#isManagerOf> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Person> ;
-                                        rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isManagerOf
+<https://schema.coypu.org/global#isManagerOf> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://schema.coypu.org/global#Person> ;
+                                        rdfs:range <https://schema.coypu.org/global#Company> ;
                                         rdfs:comment "the company managed by a person"@en ;
                                         rdfs:label "isManagerOf"@en .
 
 
-###  https://schema.coypu.org/#isPartOf
-<https://schema.coypu.org/#isPartOf> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://schema.coypu.org/#Company> ;
-                                     rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isPartOf
+<https://schema.coypu.org/global#isPartOf> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                     rdfs:range <https://schema.coypu.org/global#Company> ;
                                      rdfs:comment "the concern or group a company is part of"@en ;
                                      rdfs:label "isPartOf"@en .
 
 
-###  https://schema.coypu.org/#isProductOf
-<https://schema.coypu.org/#isProductOf> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Product> ;
-                                        rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isProductOf
+<https://schema.coypu.org/global#isProductOf> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://schema.coypu.org/global#Product> ;
+                                        rdfs:range <https://schema.coypu.org/global#Company> ;
                                         rdfs:comment "the company producing a material, resource or service"@en ;
                                         rdfs:label "isProductOf"@en .
 
 
-###  https://schema.coypu.org/#isSubjectOf
-<https://schema.coypu.org/#isSubjectOf> rdf:type owl:ObjectProperty ;
+###  https://schema.coypu.org/global#isSubjectOf
+<https://schema.coypu.org/global#isSubjectOf> rdf:type owl:ObjectProperty ;
                                         rdfs:domain owl:Thing ;
                                         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                         rdfs:comment "the publisher or subject of an event"@en ;
@@ -337,18 +337,18 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                         rdfs:seeAlso "https://schema.org/subjectOf" .
 
 
-###  https://schema.coypu.org/#isSupplierOf
-<https://schema.coypu.org/#isSupplierOf> rdf:type owl:ObjectProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Company> ;
-                                         rdfs:range <https://schema.coypu.org/#Company> ;
+###  https://schema.coypu.org/global#isSupplierOf
+<https://schema.coypu.org/global#isSupplierOf> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://schema.coypu.org/global#Company> ;
+                                         rdfs:range <https://schema.coypu.org/global#Company> ;
                                          rdfs:comment "the company supplied with a product, material, resource or service by another company"@en ;
                                          rdfs:label "isSupplierOf"@en .
 
 
-###  https://schema.coypu.org/#isUsedIn
-<https://schema.coypu.org/#isUsedIn> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://schema.coypu.org/#Product> ;
-                                     rdfs:range <https://schema.coypu.org/#Product> ;
+###  https://schema.coypu.org/global#isUsedIn
+<https://schema.coypu.org/global#isUsedIn> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <https://schema.coypu.org/global#Product> ;
+                                     rdfs:range <https://schema.coypu.org/global#Product> ;
                                      rdfs:comment "a product, material or resource used in production of another material, resource or product"@en ;
                                      rdfs:label "isUsedIn"@en .
 
@@ -365,18 +365,18 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://schema.coypu.org/#hasAdaptiveCapability
-<https://schema.coypu.org/#hasAdaptiveCapability> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasAdaptiveCapability
+<https://schema.coypu.org/global#hasAdaptiveCapability> rdf:type owl:DatatypeProperty ,
                                                            owl:FunctionalProperty ;
-                                                  rdfs:domain <https://schema.coypu.org/#Country> ;
+                                                  rdfs:domain <https://schema.coypu.org/global#Country> ;
                                                   rdfs:range xsd:decimal ;
                                                   rdfs:comment "the adaptive capability of a country as defined by Weltrisikobericht"@en ;
                                                   rdfs:label "hasAdaptiveCapability"@en ;
                                                   rdfs:seeAlso "https://weltrisikobericht.de"@en .
 
 
-###  https://schema.coypu.org/#hasAlertScore
-<https://schema.coypu.org/#hasAlertScore> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasAlertScore
+<https://schema.coypu.org/global#hasAlertScore> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
                                           rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                           rdfs:range xsd:string ;
@@ -384,8 +384,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                           rdfs:label "hasAlertScore"@en .
 
 
-###  https://schema.coypu.org/#hasAlternateName
-<https://schema.coypu.org/#hasAlternateName> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasAlternateName
+<https://schema.coypu.org/global#hasAlternateName> rdf:type owl:DatatypeProperty ,
                                                       owl:FunctionalProperty ;
                                              rdfs:domain owl:Thing ;
                                              rdfs:range xsd:string ;
@@ -394,74 +394,74 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                              rdfs:seeAlso "https://schema.org/alternateName"@en .
 
 
-###  https://schema.coypu.org/#hasBalanceSheetTotal
-<https://schema.coypu.org/#hasBalanceSheetTotal> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasBalanceSheetTotal
+<https://schema.coypu.org/global#hasBalanceSheetTotal> rdf:type owl:DatatypeProperty ,
                                                           owl:FunctionalProperty ;
-                                                 rdfs:domain <https://schema.coypu.org/#Company> ;
+                                                 rdfs:domain <https://schema.coypu.org/global#Company> ;
                                                  rdfs:range xsd:decimal ;
                                                  rdfs:comment "the balance sheet total of a company (at a specified date in a specified currency)"@en ;
                                                  rdfs:label "hasBalanceSheetTotal"@en .
 
 
-###  https://schema.coypu.org/#hasBirthday
-<https://schema.coypu.org/#hasBirthday> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasBirthday
+<https://schema.coypu.org/global#hasBirthday> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Person> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Person> ;
                                         rdfs:range xsd:dateTime ;
                                         rdfs:comment "the birthday of a person"@en ;
                                         rdfs:label "hasBirthday"@en ;
                                         rdfs:seeAlso "https://schema.org/birthDate" .
 
 
-###  https://schema.coypu.org/#hasCapacity
-<https://schema.coypu.org/#hasCapacity> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCapacity
+<https://schema.coypu.org/global#hasCapacity> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Infrastructure> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Infrastructure> ;
                                         rdfs:range xsd:positiveInteger ;
                                         rdfs:comment "the capacity in tonnes of a facility (like a port or airport)"@en ;
                                         rdfs:label "hasCapacity"@en .
 
 
-###  https://schema.coypu.org/#hasCapital
-<https://schema.coypu.org/#hasCapital> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCapital
+<https://schema.coypu.org/global#hasCapital> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "the capital of a company"@en ;
                                        rdfs:label "hasCapital"@en .
 
 
-###  https://schema.coypu.org/#hasCompanySize
-<https://schema.coypu.org/#hasCompanySize> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCompanySize
+<https://schema.coypu.org/global#hasCompanySize> rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
-                                           rdfs:domain <https://schema.coypu.org/#Company> ;
+                                           rdfs:domain <https://schema.coypu.org/global#Company> ;
                                            rdfs:range xsd:string ;
                                            rdfs:comment "the size of a company according to the EU SME definition"@en ;
                                            rdfs:label "hasCompanySize"@en ;
                                            rdfs:seeAlso "https://ec.europa.eu/growth/smes/sme-definition_en" .
 
 
-###  https://schema.coypu.org/#hasCopingCapability
-<https://schema.coypu.org/#hasCopingCapability> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCopingCapability
+<https://schema.coypu.org/global#hasCopingCapability> rdf:type owl:DatatypeProperty ,
                                                          owl:FunctionalProperty ;
-                                                rdfs:domain <https://schema.coypu.org/#Country> ;
+                                                rdfs:domain <https://schema.coypu.org/global#Country> ;
                                                 rdfs:range xsd:decimal ;
                                                 rdfs:comment "the coping capability of a country as defined by Weltrisikobericht"@en ;
                                                 rdfs:label "hasCopingCapability"@en ;
                                                 rdfs:seeAlso "https://weltrisikobericht.de"@en .
 
 
-###  https://schema.coypu.org/#hasCpaCode
-<https://schema.coypu.org/#hasCpaCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCpaCode
+<https://schema.coypu.org/global#hasCpaCode> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Product> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Product> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "a product code as defined in CPA"@en ;
                                        rdfs:label "hasCpaCode"@en .
 
 
-###  https://schema.coypu.org/#hasCreationTimestamp
-<https://schema.coypu.org/#hasCreationTimestamp> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCreationTimestamp
+<https://schema.coypu.org/global#hasCreationTimestamp> rdf:type owl:DatatypeProperty ,
                                                           owl:FunctionalProperty ;
                                                  rdfs:domain owl:Thing ;
                                                  rdfs:range xsd:dateTime ;
@@ -469,27 +469,27 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                  rdfs:label "hasCreationTimestamp"@en .
 
 
-###  https://schema.coypu.org/#hasCurrency
-<https://schema.coypu.org/#hasCurrency> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCurrency
+<https://schema.coypu.org/global#hasCurrency> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Country> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Country> ;
                                         rdfs:range xsd:decimal ;
                                         rdfs:comment "the currency of a country or monetary value"@en ;
                                         rdfs:label "hasCurrency"@en ;
                                         rdfs:seeAlso "https://schema.org/currency" .
 
 
-###  https://schema.coypu.org/#hasCyberRiskScore
-<https://schema.coypu.org/#hasCyberRiskScore> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasCyberRiskScore
+<https://schema.coypu.org/global#hasCyberRiskScore> rdf:type owl:DatatypeProperty ,
                                                        owl:FunctionalProperty ;
-                                              rdfs:domain <https://schema.coypu.org/#Company> ;
+                                              rdfs:domain <https://schema.coypu.org/global#Company> ;
                                               rdfs:range xsd:decimal ;
                                               rdfs:comment "the cyber risk score of a company"@en ;
                                               rdfs:label "hasCyberRiskScore"@en .
 
 
-###  https://schema.coypu.org/#hasDescription
-<https://schema.coypu.org/#hasDescription> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasDescription
+<https://schema.coypu.org/global#hasDescription> rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
                                            rdfs:domain owl:Thing ;
                                            rdfs:range xsd:string ;
@@ -498,38 +498,38 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                            rdfs:seeAlso "https://schema.org/description" .
 
 
-###  https://schema.coypu.org/#hasDissolutionDate
-<https://schema.coypu.org/#hasDissolutionDate> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasDissolutionDate
+<https://schema.coypu.org/global#hasDissolutionDate> rdf:type owl:DatatypeProperty ,
                                                         owl:FunctionalProperty ;
-                                               rdfs:domain <https://schema.coypu.org/#Company> ;
+                                               rdfs:domain <https://schema.coypu.org/global#Company> ;
                                                rdfs:range xsd:dateTime ;
                                                rdfs:comment "the dissolution date of a company"@en ;
                                                rdfs:label "hasDissolutionDate"@en ;
                                                rdfs:seeAlso "https://schema.org/dissolutionDate" .
 
 
-###  https://schema.coypu.org/#hasEbidCode
-<https://schema.coypu.org/#hasEbidCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasEbidCode
+<https://schema.coypu.org/global#hasEbidCode> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Company> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Company> ;
                                         rdfs:range xsd:string ;
                                         rdfs:comment "the European Business Identifier of a company"@en ;
                                         rdfs:label "hasEbidCode"@en ;
                                         rdfs:seeAlso "https://www.unternehmensverzeichnis.org" .
 
 
-###  https://schema.coypu.org/#hasEmail
-<https://schema.coypu.org/#hasEmail> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasEmail
+<https://schema.coypu.org/global#hasEmail> rdf:type owl:DatatypeProperty ,
                                               owl:FunctionalProperty ;
-                                     rdfs:domain <https://schema.coypu.org/#Company> ;
+                                     rdfs:domain <https://schema.coypu.org/global#Company> ;
                                      rdfs:range xsd:string ;
                                      rdfs:comment "an email address"@en ;
                                      rdfs:label "hasEmail"@en ;
                                      rdfs:seeAlso "https://schema.org/email" .
 
 
-###  https://schema.coypu.org/#hasEventStatus
-<https://schema.coypu.org/#hasEventStatus> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasEventStatus
+<https://schema.coypu.org/global#hasEventStatus> rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
                                            rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                            rdfs:range xsd:string ;
@@ -537,8 +537,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                            rdfs:label "hasEventStatus"@en .
 
 
-###  https://schema.coypu.org/#hasEventType
-<https://schema.coypu.org/#hasEventType> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasEventType
+<https://schema.coypu.org/global#hasEventType> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
                                          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                          rdfs:range xsd:string ;
@@ -546,48 +546,48 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                          rdfs:label "hasEventType"@en .
 
 
-###  https://schema.coypu.org/#hasExposure
-<https://schema.coypu.org/#hasExposure> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasExposure
+<https://schema.coypu.org/global#hasExposure> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Country> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Country> ;
                                         rdfs:range xsd:decimal ;
                                         rdfs:comment "the exposure of a country as defined by Weltrisikobericht"@en ;
                                         rdfs:label "hasExposure"@en ;
                                         rdfs:seeAlso "https://weltrisikobericht.de"@en .
 
 
-###  https://schema.coypu.org/#hasFamilyName
-<https://schema.coypu.org/#hasFamilyName> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasFamilyName
+<https://schema.coypu.org/global#hasFamilyName> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
-                                          rdfs:domain <https://schema.coypu.org/#Person> ;
+                                          rdfs:domain <https://schema.coypu.org/global#Person> ;
                                           rdfs:range xsd:string ;
                                           rdfs:comment "the family name of a person"@en ;
                                           rdfs:label "hasFamilyName"@en ;
                                           rdfs:seeAlso "https://schema.org/familyName" .
 
 
-###  https://schema.coypu.org/#hasFax
-<https://schema.coypu.org/#hasFax> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasFax
+<https://schema.coypu.org/global#hasFax> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
-                                   rdfs:domain <https://schema.coypu.org/#Company> ;
+                                   rdfs:domain <https://schema.coypu.org/global#Company> ;
                                    rdfs:range xsd:string ;
                                    rdfs:comment "a fax number"@en ;
                                    rdfs:label "hasFax"@en ;
                                    rdfs:seeAlso "https://schema.org/faxNumber" .
 
 
-###  https://schema.coypu.org/#hasFoundingDate
-<https://schema.coypu.org/#hasFoundingDate> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasFoundingDate
+<https://schema.coypu.org/global#hasFoundingDate> rdf:type owl:DatatypeProperty ,
                                                      owl:FunctionalProperty ;
-                                            rdfs:domain <https://schema.coypu.org/#Company> ;
+                                            rdfs:domain <https://schema.coypu.org/global#Company> ;
                                             rdfs:range xsd:dateTime ;
                                             rdfs:comment "the founding date of a company"@en ;
                                             rdfs:label "hasFoundingDate"@en ;
                                             rdfs:seeAlso "https://schema.org/foundingDate" .
 
 
-###  https://schema.coypu.org/#hasGeoFence
-<https://schema.coypu.org/#hasGeoFence> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasGeoFence
+<https://schema.coypu.org/global#hasGeoFence> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
                                         rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                         rdfs:range xsd:positiveInteger ;
@@ -595,29 +595,29 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                         rdfs:label "hasGeoFence"@en .
 
 
-###  https://schema.coypu.org/#hasGivenName
-<https://schema.coypu.org/#hasGivenName> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasGivenName
+<https://schema.coypu.org/global#hasGivenName> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Person> ;
+                                         rdfs:domain <https://schema.coypu.org/global#Person> ;
                                          rdfs:range xsd:string ;
                                          rdfs:comment "the given name of a person"@en ;
                                          rdfs:label "hasGivenName"@en ;
                                          rdfs:seeAlso "https://schema.org/givenName" .
 
 
-###  https://schema.coypu.org/#hasGlideId
-<https://schema.coypu.org/#hasGlideId> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasGlideId
+<https://schema.coypu.org/global#hasGlideId> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Disaster> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Disaster> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "the Global Identifier numbers according to GLIDEnumber.net"@en ;
                                        rdfs:label "hasGlideId"@en .
 
 
-###  https://schema.coypu.org/#hasHonorificTitle
-<https://schema.coypu.org/#hasHonorificTitle> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasHonorificTitle
+<https://schema.coypu.org/global#hasHonorificTitle> rdf:type owl:DatatypeProperty ,
                                                        owl:FunctionalProperty ;
-                                              rdfs:domain <https://schema.coypu.org/#Person> ;
+                                              rdfs:domain <https://schema.coypu.org/global#Person> ;
                                               rdfs:range xsd:string ;
                                               rdfs:comment "a honorific title of a person"@en ;
                                               rdfs:label "hasHonorificTitle"@en ;
@@ -625,44 +625,44 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                            "https://schema.org/honorificSuffix" .
 
 
-###  https://schema.coypu.org/#hasHrCourt
-<https://schema.coypu.org/#hasHrCourt> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasHrCourt
+<https://schema.coypu.org/global#hasHrCourt> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "the German court where a company is registered"@en ;
                                        rdfs:label "hasHrCourt"@en .
 
 
-###  https://schema.coypu.org/#hasHrId
-<https://schema.coypu.org/#hasHrId> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasHrId
+<https://schema.coypu.org/global#hasHrId> rdf:type owl:DatatypeProperty ,
                                              owl:FunctionalProperty ;
-                                    rdfs:domain <https://schema.coypu.org/#Company> ;
+                                    rdfs:domain <https://schema.coypu.org/global#Company> ;
                                     rdfs:range xsd:string ;
                                     rdfs:comment "a German company register id"@en ;
                                     rdfs:label "hasHrId"@en .
 
 
-###  https://schema.coypu.org/#hasHrType
-<https://schema.coypu.org/#hasHrType> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasHrType
+<https://schema.coypu.org/global#hasHrType> rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
-                                      rdfs:domain <https://schema.coypu.org/#Company> ;
+                                      rdfs:domain <https://schema.coypu.org/global#Company> ;
                                       rdfs:range xsd:string ;
                                       rdfs:comment "the type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)"@en ;
                                       rdfs:label "hasHrType"@en .
 
 
-###  https://schema.coypu.org/#hasHsCode
-<https://schema.coypu.org/#hasHsCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasHsCode
+<https://schema.coypu.org/global#hasHsCode> rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
-                                      rdfs:domain <https://schema.coypu.org/#Product> ;
+                                      rdfs:domain <https://schema.coypu.org/global#Product> ;
                                       rdfs:range xsd:string ;
                                       rdfs:comment "a product code as defined in the EU harmonized system"@en ;
                                       rdfs:label "hasHsCode"@en .
 
 
-###  https://schema.coypu.org/#hasId
-<https://schema.coypu.org/#hasId> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasId
+<https://schema.coypu.org/global#hasId> rdf:type owl:DatatypeProperty ,
                                            owl:FunctionalProperty ;
                                   rdfs:domain owl:Thing ;
                                   rdfs:range xsd:string ;
@@ -671,45 +671,45 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                   rdfs:seeAlso "https://schema.org/identifier" .
 
 
-###  https://schema.coypu.org/#hasInfrastructureType
-<https://schema.coypu.org/#hasInfrastructureType> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasInfrastructureType
+<https://schema.coypu.org/global#hasInfrastructureType> rdf:type owl:DatatypeProperty ,
                                                            owl:FunctionalProperty ;
-                                                  rdfs:domain <https://schema.coypu.org/#Infrastructure> ;
+                                                  rdfs:domain <https://schema.coypu.org/global#Infrastructure> ;
                                                   rdfs:range xsd:string ;
                                                   rdfs:comment "the type of critical infrastructure (like airport, port or powerplant)"@en ;
                                                   rdfs:label "hasInfrastructureType"@en .
 
 
-###  https://schema.coypu.org/#hasIsoCode
-<https://schema.coypu.org/#hasIsoCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasIsoCode
+<https://schema.coypu.org/global#hasIsoCode> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Country> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Country> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "a country code as defined in ISO 3166"@en ;
                                        rdfs:label "hasIsoCode"@en .
 
 
-###  https://schema.coypu.org/#hasJobTitle
-<https://schema.coypu.org/#hasJobTitle> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasJobTitle
+<https://schema.coypu.org/global#hasJobTitle> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Person> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Person> ;
                                         rdfs:range xsd:string ;
                                         rdfs:comment "the job description of a person"@en ;
                                         rdfs:label "hasJobTitle"@en ;
                                         rdfs:seeAlso "https://schema.org/jobTitle" .
 
 
-###  https://schema.coypu.org/#hasLanguage
-<https://schema.coypu.org/#hasLanguage> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLanguage
+<https://schema.coypu.org/global#hasLanguage> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
-                                        rdfs:domain <https://schema.coypu.org/#Country> ;
+                                        rdfs:domain <https://schema.coypu.org/global#Country> ;
                                         rdfs:range xsd:string ;
                                         rdfs:comment "a language spoken in a country"@en ;
                                         rdfs:label "hasLanguage"@en .
 
 
-###  https://schema.coypu.org/#hasLatitude
-<https://schema.coypu.org/#hasLatitude> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLatitude
+<https://schema.coypu.org/global#hasLatitude> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
                                         rdfs:domain beAWARE_ontology:Location ;
                                         rdfs:range xsd:decimal ;
@@ -720,37 +720,37 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                      "https://www.geonames.org/ontology#lat" .
 
 
-###  https://schema.coypu.org/#hasLegalForm
-<https://schema.coypu.org/#hasLegalForm> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLegalForm
+<https://schema.coypu.org/global#hasLegalForm> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Company> ;
+                                         rdfs:domain <https://schema.coypu.org/global#Company> ;
                                          rdfs:range xsd:string ;
                                          rdfs:comment "the legal form of a company"@en ;
                                          rdfs:label "hasLegalForm"@en .
 
 
-###  https://schema.coypu.org/#hasLegalName
-<https://schema.coypu.org/#hasLegalName> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLegalName
+<https://schema.coypu.org/global#hasLegalName> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Company> ;
+                                         rdfs:domain <https://schema.coypu.org/global#Company> ;
                                          rdfs:range xsd:string ;
                                          rdfs:comment "the legal name of a company"@en ;
                                          rdfs:label "hasLegalName"@en ;
                                          rdfs:seeAlso "https://schema.org/legalName" .
 
 
-###  https://schema.coypu.org/#hasLeiCode
-<https://schema.coypu.org/#hasLeiCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLeiCode
+<https://schema.coypu.org/global#hasLeiCode> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "a legal entity identifier as defined in ISO 17442"@en ;
                                        rdfs:label "hasLeiCode"@en ;
                                        rdfs:seeAlso "https://schema.org/leiCode" .
 
 
-###  https://schema.coypu.org/#hasLongitude
-<https://schema.coypu.org/#hasLongitude> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasLongitude
+<https://schema.coypu.org/global#hasLongitude> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
                                          rdfs:domain beAWARE_ontology:Location ;
                                          rdfs:range xsd:decimal ;
@@ -761,8 +761,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                       "https://www.geonames.org/ontology#long" .
 
 
-###  https://schema.coypu.org/#hasModificationTimestamp
-<https://schema.coypu.org/#hasModificationTimestamp> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasModificationTimestamp
+<https://schema.coypu.org/global#hasModificationTimestamp> rdf:type owl:DatatypeProperty ,
                                                               owl:FunctionalProperty ;
                                                      rdfs:domain owl:Thing ;
                                                      rdfs:range xsd:dateTime ;
@@ -770,8 +770,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                      rdfs:label "hasModificationTimestamp"@en .
 
 
-###  https://schema.coypu.org/#hasNaceCode
-<https://schema.coypu.org/#hasNaceCode> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasNaceCode
+<https://schema.coypu.org/global#hasNaceCode> rdf:type owl:DatatypeProperty ,
                                                  owl:FunctionalProperty ;
                                         rdfs:domain owl:Thing ;
                                         rdfs:range xsd:string ;
@@ -779,8 +779,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                         rdfs:label "hasNaceCode"@en .
 
 
-###  https://schema.coypu.org/#hasName
-<https://schema.coypu.org/#hasName> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasName
+<https://schema.coypu.org/global#hasName> rdf:type owl:DatatypeProperty ,
                                              owl:FunctionalProperty ;
                                     rdfs:domain owl:Thing ;
                                     rdfs:range xsd:string ;
@@ -790,10 +790,10 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                  "https://schema.org/name" .
 
 
-###  https://schema.coypu.org/#hasNumberOfEmployees
-<https://schema.coypu.org/#hasNumberOfEmployees> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasNumberOfEmployees
+<https://schema.coypu.org/global#hasNumberOfEmployees> rdf:type owl:DatatypeProperty ,
                                                           owl:FunctionalProperty ;
-                                                 rdfs:domain <https://schema.coypu.org/#Company> ;
+                                                 rdfs:domain <https://schema.coypu.org/global#Company> ;
                                                  rdfs:range xsd:positiveInteger ;
                                                  rdfs:comment "the number of employees of a company (in a specified year)"@en ;
                                                  rdfs:label "hasNumberOfEmployees"@en ;
@@ -801,8 +801,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                               "https://schema.org/numberOfEmployees" .
 
 
-###  https://schema.coypu.org/#hasPercentage
-<https://schema.coypu.org/#hasPercentage> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPercentage
+<https://schema.coypu.org/global#hasPercentage> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
                                           rdfs:domain owl:Thing ;
                                           rdfs:range xsd:decimal ;
@@ -810,45 +810,45 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                           rdfs:label "hasPercentage"@en .
 
 
-###  https://schema.coypu.org/#hasPhoneNumber
-<https://schema.coypu.org/#hasPhoneNumber> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPhoneNumber
+<https://schema.coypu.org/global#hasPhoneNumber> rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
-                                           rdfs:domain <https://schema.coypu.org/#Company> ;
+                                           rdfs:domain <https://schema.coypu.org/global#Company> ;
                                            rdfs:range xsd:string ;
                                            rdfs:comment "a phone number (should be normalized)"@en ;
                                            rdfs:label "hasPhoneNumber"@en ;
                                            rdfs:seeAlso "https://schema.org/telephone" .
 
 
-###  https://schema.coypu.org/#hasPopulation
-<https://schema.coypu.org/#hasPopulation> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPopulation
+<https://schema.coypu.org/global#hasPopulation> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
-                                          rdfs:domain <https://schema.coypu.org/#Country> ;
+                                          rdfs:domain <https://schema.coypu.org/global#Country> ;
                                           rdfs:range xsd:positiveInteger ;
                                           rdfs:comment "the number of people inhabiting a country"@en ;
                                           rdfs:label "hasPopulation"@en .
 
 
-###  https://schema.coypu.org/#hasPrice
-<https://schema.coypu.org/#hasPrice> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPrice
+<https://schema.coypu.org/global#hasPrice> rdf:type owl:DatatypeProperty ,
                                               owl:FunctionalProperty ;
-                                     rdfs:domain <https://schema.coypu.org/#Product> ;
+                                     rdfs:domain <https://schema.coypu.org/global#Product> ;
                                      rdfs:range xsd:decimal ;
                                      rdfs:comment "a product price (at a specified date in a specified currency)"@en ;
                                      rdfs:label "hasPrice"@en .
 
 
-###  https://schema.coypu.org/#hasProfit
-<https://schema.coypu.org/#hasProfit> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasProfit
+<https://schema.coypu.org/global#hasProfit> rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
-                                      rdfs:domain <https://schema.coypu.org/#Company> ;
+                                      rdfs:domain <https://schema.coypu.org/global#Company> ;
                                       rdfs:range xsd:decimal ;
                                       rdfs:comment "the profit of a company (for a specified year in a specified currency)"@en ;
                                       rdfs:label "hasProfit"@en .
 
 
-###  https://schema.coypu.org/#hasPublisher
-<https://schema.coypu.org/#hasPublisher> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPublisher
+<https://schema.coypu.org/global#hasPublisher> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
                                          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                          rdfs:range xsd:string ;
@@ -856,37 +856,37 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                          rdfs:label "hasPublisher"@en .
 
 
-###  https://schema.coypu.org/#hasPurpose
-<https://schema.coypu.org/#hasPurpose> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasPurpose
+<https://schema.coypu.org/global#hasPurpose> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
                                        rdfs:range xsd:string ;
                                        rdfs:comment "the stated purpose of an organization"@en ;
                                        rdfs:label "hasPurpose"@en .
 
 
-###  https://schema.coypu.org/#hasRevenue
-<https://schema.coypu.org/#hasRevenue> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasRevenue
+<https://schema.coypu.org/global#hasRevenue> rdf:type owl:DatatypeProperty ,
                                                 owl:FunctionalProperty ;
-                                       rdfs:domain <https://schema.coypu.org/#Company> ;
+                                       rdfs:domain <https://schema.coypu.org/global#Company> ;
                                        rdfs:range xsd:decimal ;
                                        rdfs:comment "the revenue of a company (for a specified year in a specified currency)"@en ;
                                        rdfs:label "hasRevenue"@en ;
                                        rdfs:seeAlso "https://schema.org/yearlyRevenue" .
 
 
-###  https://schema.coypu.org/#hasRiskLevel
-<https://schema.coypu.org/#hasRiskLevel> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasRiskLevel
+<https://schema.coypu.org/global#hasRiskLevel> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
-                                         rdfs:domain <https://schema.coypu.org/#Country> ;
+                                         rdfs:domain <https://schema.coypu.org/global#Country> ;
                                          rdfs:range xsd:decimal ;
                                          rdfs:comment "the risk level of a country as defined by Weltrisikobericht"@en ;
                                          rdfs:label "hasRiskLevel"@en ;
                                          rdfs:seeAlso "https://weltrisikobericht.de" .
 
 
-###  https://schema.coypu.org/#hasRiskScore
-<https://schema.coypu.org/#hasRiskScore> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasRiskScore
+<https://schema.coypu.org/global#hasRiskScore> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
                                          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                          rdfs:range xsd:decimal ;
@@ -894,37 +894,37 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                          rdfs:label "hasRiskScore"@en .
 
 
-###  https://schema.coypu.org/#hasSocialMediaUrl
-<https://schema.coypu.org/#hasSocialMediaUrl> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasSocialMediaUrl
+<https://schema.coypu.org/global#hasSocialMediaUrl> rdf:type owl:DatatypeProperty ,
                                                        owl:FunctionalProperty ;
-                                              rdfs:domain <https://schema.coypu.org/#Company> ;
+                                              rdfs:domain <https://schema.coypu.org/global#Company> ;
                                               rdfs:range xsd:anyURI ;
                                               rdfs:comment "a company social media profile url"@en ;
                                               rdfs:label "hasSocialMediaUrl"@en .
 
 
-###  https://schema.coypu.org/#hasStreet
-<https://schema.coypu.org/#hasStreet> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasStreet
+<https://schema.coypu.org/global#hasStreet> rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
-                                      rdfs:domain <https://schema.coypu.org/#Company> ;
+                                      rdfs:domain <https://schema.coypu.org/global#Company> ;
                                       rdfs:range xsd:string ;
                                       rdfs:comment "a street address"@en ;
                                       rdfs:label "hasStreet"@en ;
                                       rdfs:seeAlso "https://schema.org/streetAddress" .
 
 
-###  https://schema.coypu.org/#hasSusceptibility
-<https://schema.coypu.org/#hasSusceptibility> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasSusceptibility
+<https://schema.coypu.org/global#hasSusceptibility> rdf:type owl:DatatypeProperty ,
                                                        owl:FunctionalProperty ;
-                                              rdfs:domain <https://schema.coypu.org/#Country> ;
+                                              rdfs:domain <https://schema.coypu.org/global#Country> ;
                                               rdfs:range xsd:decimal ;
                                               rdfs:comment "the susceptibility of a country as defined by Weltrisikobericht"@en ;
                                               rdfs:label "hasSusceptibility"@en ;
                                               rdfs:seeAlso "https://weltrisikobericht.de"@en .
 
 
-###  https://schema.coypu.org/#hasTag
-<https://schema.coypu.org/#hasTag> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasTag
+<https://schema.coypu.org/global#hasTag> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
                                    rdfs:domain owl:Thing ;
                                    rdfs:range xsd:string ;
@@ -932,8 +932,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                    rdfs:label "hasTag"@en .
 
 
-###  https://schema.coypu.org/#hasTimestamp
-<https://schema.coypu.org/#hasTimestamp> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasTimestamp
+<https://schema.coypu.org/global#hasTimestamp> rdf:type owl:DatatypeProperty ,
                                                   owl:FunctionalProperty ;
                                          rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                          rdfs:range xsd:dateTime ;
@@ -941,8 +941,8 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                          rdfs:label "hasTimestamp"@en .
 
 
-###  https://schema.coypu.org/#hasUrl
-<https://schema.coypu.org/#hasUrl> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasUrl
+<https://schema.coypu.org/global#hasUrl> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
                                    rdfs:domain owl:Thing ;
                                    rdfs:range xsd:anyURI ;
@@ -952,58 +952,58 @@ ips:locatedAt rdf:type owl:ObjectProperty ;
                                                 "https://schema.org/url" .
 
 
-###  https://schema.coypu.org/#hasVat
-<https://schema.coypu.org/#hasVat> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasVat
+<https://schema.coypu.org/global#hasVat> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
-                                   rdfs:domain <https://schema.coypu.org/#Company> ;
+                                   rdfs:domain <https://schema.coypu.org/global#Company> ;
                                    rdfs:range xsd:string ;
                                    rdfs:comment "the vat id of a company"@en ;
                                    rdfs:label "hasVat"@en ;
                                    rdfs:seeAlso "https://schema.org/vatID" .
 
 
-###  https://schema.coypu.org/#hasVolatility
-<https://schema.coypu.org/#hasVolatility> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasVolatility
+<https://schema.coypu.org/global#hasVolatility> rdf:type owl:DatatypeProperty ,
                                                    owl:FunctionalProperty ;
-                                          rdfs:domain <https://schema.coypu.org/#Product> ;
+                                          rdfs:domain <https://schema.coypu.org/global#Product> ;
                                           rdfs:range xsd:decimal ;
                                           rdfs:comment "the volatility of a product price (at a specified date)"@en ;
                                           rdfs:label "hasVolatility"@en .
 
 
-###  https://schema.coypu.org/#hasVulnerability
-<https://schema.coypu.org/#hasVulnerability> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasVulnerability
+<https://schema.coypu.org/global#hasVulnerability> rdf:type owl:DatatypeProperty ,
                                                       owl:FunctionalProperty ;
-                                             rdfs:domain <https://schema.coypu.org/#Country> ;
+                                             rdfs:domain <https://schema.coypu.org/global#Country> ;
                                              rdfs:range xsd:decimal ;
                                              rdfs:comment "the vulnerability of a country as defined by Weltrisikobericht"@en ;
                                              rdfs:label "hasVulnerability"@en ;
                                              rdfs:seeAlso "https://weltrisikobericht.de"@en .
 
 
-###  https://schema.coypu.org/#hasZip
-<https://schema.coypu.org/#hasZip> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#hasZip
+<https://schema.coypu.org/global#hasZip> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
-                                   rdfs:domain <https://schema.coypu.org/#Company> ;
+                                   rdfs:domain <https://schema.coypu.org/global#Company> ;
                                    rdfs:range xsd:string ;
                                    rdfs:comment "a zip code"@en ;
                                    rdfs:label "hasZip"@en ;
                                    rdfs:seeAlso "https://schema.org/postalCode" .
 
 
-###  https://schema.coypu.org/#isActive
-<https://schema.coypu.org/#isActive> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#isActive
+<https://schema.coypu.org/global#isActive> rdf:type owl:DatatypeProperty ,
                                               owl:FunctionalProperty ;
-                                     rdfs:domain <https://schema.coypu.org/#Company> ;
+                                     rdfs:domain <https://schema.coypu.org/global#Company> ;
                                      rdfs:range xsd:boolean ;
                                      rdfs:comment "the economic status of a company (active or inactive)"@en ;
                                      rdfs:label "isActive"@en .
 
 
-###  https://schema.coypu.org/#isRare
-<https://schema.coypu.org/#isRare> rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/global#isRare
+<https://schema.coypu.org/global#isRare> rdf:type owl:DatatypeProperty ,
                                             owl:FunctionalProperty ;
-                                   rdfs:domain <https://schema.coypu.org/#Material> ;
+                                   rdfs:domain <https://schema.coypu.org/global#Material> ;
                                    rdfs:range xsd:boolean ;
                                    rdfs:comment "classifies the production material as rare material"@en ;
                                    rdfs:label "isRare"@en .
@@ -1292,7 +1292,7 @@ beAWARE_ontology:Location rdf:type owl:Class ;
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster
 beAWARE_ontology:NaturalDisaster rdf:type owl:Class ;
                                  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E6_Destruction> ,
-                                                 <https://schema.coypu.org/#Disaster> ;
+                                                 <https://schema.coypu.org/global#Disaster> ;
                                  rdfs:comment "a natural crisis or disaster event"@en ;
                                  rdfs:label "Natural Disaster"@en ,
                                             "NaturalDisaster"@en ;
@@ -1307,23 +1307,23 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                   skos:definition "Any living being or object that needs to be protected from hazards" .
 
 
-###  https://schema.coypu.org/#Airport
-<https://schema.coypu.org/#Airport> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
+###  https://schema.coypu.org/global#Airport
+<https://schema.coypu.org/global#Airport> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://schema.coypu.org/global#Infrastructure> ;
                                     rdfs:comment "a logistics hub for air freight"@en ;
                                     rdfs:label "Airport"@en .
 
 
-###  https://schema.coypu.org/#Biological
-<https://schema.coypu.org/#Biological> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Biological
+<https://schema.coypu.org/global#Biological> rdf:type owl:Class ;
                                        rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                        rdfs:comment "an epidemic, pandemic or infestation event"@en ;
                                        rdfs:label "BiologicalDisaster"@en ;
                                        rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#City
-<https://schema.coypu.org/#City> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#City
+<https://schema.coypu.org/global#City> rdf:type owl:Class ;
                                  rdfs:subClassOf beAWARE_ontology:Location ;
                                  rdfs:comment "a city as defined by NUTS or IATA"@en ;
                                  rdfs:label "City"@en ;
@@ -1331,23 +1331,23 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                               "https://schema.org/City" .
 
 
-###  https://schema.coypu.org/#Climatological
-<https://schema.coypu.org/#Climatological> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Climatological
+<https://schema.coypu.org/global#Climatological> rdf:type owl:Class ;
                                            rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                            rdfs:comment "a drought, wildfire or glacial lake outburst event"@en ;
                                            rdfs:label "ClimatologicalDisaster"@en ;
                                            rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#Commodity
-<https://schema.coypu.org/#Commodity> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://schema.coypu.org/#Product> ;
+###  https://schema.coypu.org/global#Commodity
+<https://schema.coypu.org/global#Commodity> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://schema.coypu.org/global#Product> ;
                                       rdfs:comment "a commodity good or production material"@en ;
                                       rdfs:label "Commodity"@en .
 
 
-###  https://schema.coypu.org/#Company
-<https://schema.coypu.org/#Company> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Company
+<https://schema.coypu.org/global#Company> rdf:type owl:Class ;
                                     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> ,
                                                     owl:Thing ;
                                     rdfs:comment "a company, organization or corporation"@en ;
@@ -1356,8 +1356,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                                  "https://schema.org/Corporation" .
 
 
-###  https://schema.coypu.org/#Country
-<https://schema.coypu.org/#Country> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Country
+<https://schema.coypu.org/global#Country> rdf:type owl:Class ;
                                     rdfs:subClassOf beAWARE_ontology:Location ;
                                     rdfs:comment "a country as defined in ISO 3166"@en ;
                                     rdfs:label "Country"@en ;
@@ -1365,109 +1365,109 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                                  "https://schema.org/Country" .
 
 
-###  https://schema.coypu.org/#CybersecurityAccident
-<https://schema.coypu.org/#CybersecurityAccident> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+###  https://schema.coypu.org/global#CybersecurityAccident
+<https://schema.coypu.org/global#CybersecurityAccident> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/global#TechnologicalDisaster> ;
                                                   rdfs:comment "a cyber attack or related event"@en ;
                                                   rdfs:label "CybersecurityAccident"@en .
 
 
-###  https://schema.coypu.org/#Disaster
-<https://schema.coypu.org/#Disaster> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Disaster
+<https://schema.coypu.org/global#Disaster> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                      rdfs:comment "a natural or technological disaster"@en ;
                                      rdfs:label "Disaster"@en ;
                                      rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#Extraterrestrial
-<https://schema.coypu.org/#Extraterrestrial> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Extraterrestrial
+<https://schema.coypu.org/global#Extraterrestrial> rdf:type owl:Class ;
                                              rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                              rdfs:comment "a space weather event"@en ;
                                              rdfs:label "ExtraterrestrialDisaster"@en ;
                                              rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#Factory
-<https://schema.coypu.org/#Factory> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
+###  https://schema.coypu.org/global#Factory
+<https://schema.coypu.org/global#Factory> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://schema.coypu.org/global#Infrastructure> ;
                                     rdfs:comment "a factory or production site"@en ;
                                     rdfs:label "Factory"@en .
 
 
-###  https://schema.coypu.org/#Geophysical
-<https://schema.coypu.org/#Geophysical> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Geophysical
+<https://schema.coypu.org/global#Geophysical> rdf:type owl:Class ;
                                         rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                         rdfs:comment "an earthquake, volcanic eruption or storm event"@en ;
                                         rdfs:label "GeophysicalDisaster"@en ;
                                         rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#Hydrological
-<https://schema.coypu.org/#Hydrological> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Hydrological
+<https://schema.coypu.org/global#Hydrological> rdf:type owl:Class ;
                                          rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                          rdfs:comment "a landslide, wave action or flooding event"@en ;
                                          rdfs:label "HydrologicalDisaster"@en ;
                                          rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#IndustrialAccident
-<https://schema.coypu.org/#IndustrialAccident> rdf:type owl:Class ;
-                                               rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+###  https://schema.coypu.org/global#IndustrialAccident
+<https://schema.coypu.org/global#IndustrialAccident> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://schema.coypu.org/global#TechnologicalDisaster> ;
                                                rdfs:comment "an event related to a production site or factory operations"@en ;
                                                rdfs:label "IndustrialAccident"@en ;
                                                rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#Industry
-<https://schema.coypu.org/#Industry> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Industry
+<https://schema.coypu.org/global#Industry> rdf:type owl:Class ;
                                      rdfs:subClassOf owl:Thing ;
                                      rdfs:comment "an industry or economic sector as defined in NACE"@en ;
                                      rdfs:label "Industry"@en ;
                                      rdfs:seeAlso "https://dbpedia.org/page/Category:Economic_sectors" .
 
 
-###  https://schema.coypu.org/#Infrastructure
-<https://schema.coypu.org/#Infrastructure> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Infrastructure
+<https://schema.coypu.org/global#Infrastructure> rdf:type owl:Class ;
                                            rdfs:subClassOf owl:Thing ;
                                            rdfs:comment "a facility providing critical infrastructure for production or logistics"@en ;
                                            rdfs:label "Infrastructure"@en .
 
 
-###  https://schema.coypu.org/#Material
-<https://schema.coypu.org/#Material> rdf:type owl:Class ;
-                                     rdfs:subClassOf <https://schema.coypu.org/#Product> ;
+###  https://schema.coypu.org/global#Material
+<https://schema.coypu.org/global#Material> rdf:type owl:Class ;
+                                     rdfs:subClassOf <https://schema.coypu.org/global#Product> ;
                                      rdfs:comment "a production material"@en ;
                                      rdfs:label "Material"@en ;
                                      rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" ,
                                                   "https://dbpedia.org/page/Material" .
 
 
-###  https://schema.coypu.org/#Meteorological
-<https://schema.coypu.org/#Meteorological> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Meteorological
+<https://schema.coypu.org/global#Meteorological> rdf:type owl:Class ;
                                            rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                                            rdfs:comment "a storm or extreme temperature event"@en ;
                                            rdfs:label "MeteorologicalDisaster"@en ;
                                            rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#MiscellaneousAccident
-<https://schema.coypu.org/#MiscellaneousAccident> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+###  https://schema.coypu.org/global#MiscellaneousAccident
+<https://schema.coypu.org/global#MiscellaneousAccident> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/global#TechnologicalDisaster> ;
                                                   rdfs:comment "a technological event not covered otherwise"@en ;
                                                   rdfs:label "MiscellaneousAccident"@en ;
                                                   rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#News
-<https://schema.coypu.org/#News> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#News
+<https://schema.coypu.org/global#News> rdf:type owl:Class ;
                                  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                  rdfs:comment "a newspaper article, social media posting or press release"@en ;
                                  rdfs:label "News"@en .
 
 
-###  https://schema.coypu.org/#Person
-<https://schema.coypu.org/#Person> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Person
+<https://schema.coypu.org/global#Person> rdf:type owl:Class ;
                                    rdfs:subClassOf owl:Thing ;
                                    rdfs:comment "a natural person"@en ;
                                    rdfs:label "Person"@en ;
@@ -1476,22 +1476,22 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                                 "https://schema.org/Person" .
 
 
-###  https://schema.coypu.org/#Port
-<https://schema.coypu.org/#Port> rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
+###  https://schema.coypu.org/global#Port
+<https://schema.coypu.org/global#Port> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://schema.coypu.org/global#Infrastructure> ;
                                  rdfs:comment "a logictics hub for shipping"@en ;
                                  rdfs:label "Port"@en .
 
 
-###  https://schema.coypu.org/#Powerplant
-<https://schema.coypu.org/#Powerplant> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://schema.coypu.org/#Infrastructure> ;
+###  https://schema.coypu.org/global#Powerplant
+<https://schema.coypu.org/global#Powerplant> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://schema.coypu.org/global#Infrastructure> ;
                                        rdfs:comment "a facility for generating electric power"@en ;
                                        rdfs:label "Powerplant"@en .
 
 
-###  https://schema.coypu.org/#Product
-<https://schema.coypu.org/#Product> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Product
+<https://schema.coypu.org/global#Product> rdf:type owl:Class ;
                                     rdfs:subClassOf owl:Thing ;
                                     rdfs:comment "a product, service, production material or refined resource"@en ;
                                     rdfs:label "Product"@en ;
@@ -1500,8 +1500,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                                  "https://schema.org/Product" .
 
 
-###  https://schema.coypu.org/#Region
-<https://schema.coypu.org/#Region> rdf:type owl:Class ;
+###  https://schema.coypu.org/global#Region
+<https://schema.coypu.org/global#Region> rdf:type owl:Class ;
                                    rdfs:subClassOf beAWARE_ontology:Location ;
                                    rdfs:comment "an administrative or economic area"@en ;
                                    rdfs:label "Region"@en ;
@@ -1509,25 +1509,25 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                                 "https://schema.org/AdministrativeArea" .
 
 
-###  https://schema.coypu.org/#Service
-<https://schema.coypu.org/#Service> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://schema.coypu.org/#Product> ;
+###  https://schema.coypu.org/global#Service
+<https://schema.coypu.org/global#Service> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://schema.coypu.org/global#Product> ;
                                     rdfs:comment "a utility or non-material product"@en ;
                                     rdfs:label "Service"@en ;
                                     rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" .
 
 
-###  https://schema.coypu.org/#TechnologicalDisaster
-<https://schema.coypu.org/#TechnologicalDisaster> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <https://schema.coypu.org/#Disaster> ;
+###  https://schema.coypu.org/global#TechnologicalDisaster
+<https://schema.coypu.org/global#TechnologicalDisaster> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://schema.coypu.org/global#Disaster> ;
                                                   rdfs:comment "a man-made crisis or disaster event"@en ;
                                                   rdfs:label "TechnologicalDisaster"@en ;
                                                   rdfs:seeAlso "https://www.emdat.be/guidelines" .
 
 
-###  https://schema.coypu.org/#TransportAccident
-<https://schema.coypu.org/#TransportAccident> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://schema.coypu.org/#TechnologicalDisaster> ;
+###  https://schema.coypu.org/global#TransportAccident
+<https://schema.coypu.org/global#TransportAccident> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://schema.coypu.org/global#TechnologicalDisaster> ;
                                               rdfs:comment "an event relating to logistical operations"@en ;
                                               rdfs:label "TransportAccident"@en ;
                                               rdfs:seeAlso "https://www.emdat.be/guidelines" .
