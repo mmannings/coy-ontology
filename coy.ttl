@@ -1564,6 +1564,12 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                        rdfs:label "ACLED Event"@en .
 
 
+###  https://schema.coypu.org/#AcledEventType
+<https://schema.coypu.org/#AcledEventType> rdf:type owl:Class ;
+                                           rdfs:subClassOf :ACLEDEvent ;
+                                           rdfs:label "Event type"@en .
+
+
 ###  ttps://schema.coypu.org/#ViolentEvents
 <https://schema.coypu.org/#ViolentEvents> rdf:type owl:Class ;
                                           rdfs:subClassOf <https://schema.coypu.org/#AcledEventType> ;
