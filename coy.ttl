@@ -2,7 +2,6 @@
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix ips: <https://schema.implisense.com/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -351,14 +350,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 :usedProductLineFor rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
                     rdfs:range owl:Thing .
-
-
-###  https://schema.implisense.com/#locatedAt
-ips:locatedAt rdf:type owl:ObjectProperty ;
-              rdfs:range beAWARE_ontology:Location ;
-              rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
-              rdfs:label "locatedAt"@en ;
-              rdfs:seeAlso "https://schema.org/location" .
 
 
 #################################################################
