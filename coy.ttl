@@ -9,9 +9,10 @@
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
@@ -28,8 +29,8 @@
                                    terms:modified "2022-04-26" ;
                                    terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
                                    terms:title "CoyPu Ontology"@en ;
-                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "coy" ;
-                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://schema.coypu.org/global#" ;
+                                   vann:preferredNamespacePrefix "coy" ;
+                                   vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
@@ -70,39 +71,39 @@ terms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/about
-<http://schema.org/about> rdf:type owl:AnnotationProperty .
+schema:about rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/domainIncludes
-<http://schema.org/domainIncludes> rdf:type owl:AnnotationProperty .
+schema:domainIncludes rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/maxValue
-<http://schema.org/maxValue> rdf:type owl:AnnotationProperty .
+schema:maxValue rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/minValue
-<http://schema.org/minValue> rdf:type owl:AnnotationProperty .
+schema:minValue rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/rangeIncludes
-<http://schema.org/rangeIncludes> rdf:type owl:AnnotationProperty .
+schema:rangeIncludes rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/unitCode
-<http://schema.org/unitCode> rdf:type owl:AnnotationProperty .
+schema:unitCode rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/unitText
-<http://schema.org/unitText> rdf:type owl:AnnotationProperty .
+schema:unitText rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
