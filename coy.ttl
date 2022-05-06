@@ -22,11 +22,14 @@
                                    owl:versionIRI <https://schema.coypu.org/global> ;
                                    terms:contributor "Andreas Schaefer"@en ,
                                                      "Felix Engel"@en ,
-                                                     "Nenad Krdzavac"@en ;
+                                                     "Lorenz Bühmann"@en ,
+                                                     "Nenad Krdzavac"@en ,
+                                                     "Simon Bin"@en ,
+                                                     "Till Grabo"@en ;
                                    terms:created "2021-09-06" ;
                                    terms:creator "Nils Steinert"@en ;
                                    terms:isVersionOf <https://schema.coypu.org/global> ;
-                                   terms:modified "2022-04-26" ;
+                                   terms:modified "2022-05-06" ;
                                    terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
                                    terms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
@@ -34,8 +37,8 @@
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion 1.4 ;
-                                   owl:versionInfo 1.5 ;
+                                   owl:priorVersion "1.5"@en ;
+                                   owl:versionInfo "1.6"@en ;
                                    <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
@@ -135,7 +138,7 @@ beAWARE_ontology:hasImpactOn rdf:type owl:ObjectProperty ;
                              owl:inverseOf beAWARE_ontology:isImpactedBy ;
                              rdfs:domain beAWARE_ontology:Impact ;
                              rdfs:range beAWARE_ontology:VulnerableObject ;
-                             rdfs:label "has impact on"@en ;
+                             rdfs:label "beAware - has impact on"@en ;
                              skos:definition "Indicates which vulnerable object is impacted by the specific impact occurrence."@en .
 
 
@@ -143,7 +146,7 @@ beAWARE_ontology:hasImpactOn rdf:type owl:ObjectProperty ;
 beAWARE_ontology:isImpactedBy rdf:type owl:ObjectProperty ;
                               rdfs:domain beAWARE_ontology:VulnerableObject ;
                               rdfs:range beAWARE_ontology:Impact ;
-                              rdfs:label "is impacted by"@en ;
+                              rdfs:label "beAware - is impacted by"@en ;
                               skos:definition "Links an affected object to an impact."@en .
 
 
@@ -151,20 +154,23 @@ beAWARE_ontology:isImpactedBy rdf:type owl:ObjectProperty ;
 beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                       rdfs:domain beAWARE_ontology:Location ;
                                       rdfs:range beAWARE_ontology:NaturalDisaster ;
-                                      rdfs:label "is location of disaster"@en ;
+                                      rdfs:label "beAware - is location of disaster"@en ;
                                       skos:definition "Links a location to a natural disaster occurrence"@en .
 
 
 ###  https://schema.coypu.org/global#affectsProductLine
 :affectsProductLine rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-                    rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> .
+                    rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+                    rdfs:label "CRM - affectsProductLine"@en .
 
 
 ###  https://schema.coypu.org/global#haltOperation
 :haltOperation rdf:type owl:ObjectProperty ;
                rdfs:domain :Company ;
-               rdfs:range owl:Thing .
+               rdfs:range owl:Thing ;
+               rdfs:label "haltOperation"@en ;
+               owl:deprecated ""@en .
 
 
 ###  https://schema.coypu.org/global#hasCustomer
@@ -245,7 +251,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#impactCausedByEvent
 :impactCausedByEvent rdf:type owl:ObjectProperty ;
                      rdfs:domain beAWARE_ontology:Impact ;
-                     rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+                     rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+                     rdfs:label "CRM - impactCausedByEvent"@en .
 
 
 ###  https://schema.coypu.org/global#isCustomerOf
@@ -299,7 +306,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#isProductLineOf
 :isProductLineOf rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-                 rdfs:range :Company .
+                 rdfs:range :Company ;
+                 rdfs:label "CRM - isProductLineOf"@en .
 
 
 ###  https://schema.coypu.org/global#isProductOf
@@ -338,19 +346,24 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#orderTo
 :orderTo rdf:type owl:ObjectProperty ;
          rdfs:domain :Company ;
-         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+         rdfs:label "orderTo"@en ;
+         owl:deprecated ""@en .
 
 
 ###  https://schema.coypu.org/global#orderedBy
 :orderedBy rdf:type owl:ObjectProperty ;
            rdfs:domain :Company ;
-           rdfs:range :Company .
+           rdfs:range :Company ;
+           rdfs:label "orderedBy"@en ;
+           owl:deprecated ""@en .
 
 
 ###  https://schema.coypu.org/global#usedProductLineFor
 :usedProductLineFor rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-                    rdfs:range owl:Thing .
+                    rdfs:range owl:Thing ;
+                    rdfs:label "CRM - usedProductLineFor"@en .
 
 
 #################################################################
@@ -1323,10 +1336,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                   skos:definition "Any living being or object that needs to be protected from hazards" .
 
 
-###  https://schema.coypu.org/global#ACLEDEvent
-:ACLEDEvent rdf:type owl:Class .
-
-
 ###  https://schema.coypu.org/global#AcledEvent
 :AcledEvent rdf:type owl:Class ;
             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
@@ -1336,8 +1345,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#AcledEventType
 :AcledEventType rdf:type owl:Class ;
-                rdfs:subClassOf :ACLEDEvent ;
-                rdfs:label "Event type"@en .
+                rdfs:subClassOf :AcledEvent ;
+                rdfs:label "ACLED Event Type"@en .
 
 
 ###  https://schema.coypu.org/global#Agreement
@@ -1621,6 +1630,13 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                      "https://schema.org/Person" .
 
 
+###  https://schema.coypu.org/global#Pipeline
+:Pipeline rdf:type owl:Class ;
+          rdfs:subClassOf :Infrastructure ;
+          rdfs:comment "a gas, oil or hydrogen pipeline"@en ;
+          rdfs:label "Pipeline"@en .
+
+
 ###  https://schema.coypu.org/global#Port
 :Port rdf:type owl:Class ;
       rdfs:subClassOf :Infrastructure ;
@@ -1703,6 +1719,13 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                        rdfs:comment "a man-made crisis or disaster event"@en ;
                        rdfs:label "TechnologicalDisaster"@en ;
                        rdfs:seeAlso "https://www.emdat.be/guidelines" .
+
+
+###  https://schema.coypu.org/global#Terminal
+:Terminal rdf:type owl:Class ;
+          rdfs:subClassOf :Infrastructure ;
+          rdfs:comment "a terminal to connect gas pipelines"@en ;
+          rdfs:label "Terminal"@en .
 
 
 ###  https://schema.coypu.org/global#TransportAccident
