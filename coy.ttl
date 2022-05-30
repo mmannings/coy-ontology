@@ -139,7 +139,8 @@ beAWARE_ontology:hasImpactOn rdf:type owl:ObjectProperty ;
                              rdfs:domain beAWARE_ontology:Impact ;
                              rdfs:range beAWARE_ontology:VulnerableObject ;
                              rdfs:label "be aware - has impact on"@en ;
-                             skos:definition "Indicates which vulnerable object is impacted by the specific impact occurrence."@en .
+                             skos:definition "Indicates which vulnerable object is impacted by the specific impact occurrence."@en ;
+                             skos:prefLabel "be aware - has impact on"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isImpactedBy
@@ -147,7 +148,8 @@ beAWARE_ontology:isImpactedBy rdf:type owl:ObjectProperty ;
                               rdfs:domain beAWARE_ontology:VulnerableObject ;
                               rdfs:range beAWARE_ontology:Impact ;
                               rdfs:label "be aware - is impacted by"@en ;
-                              skos:definition "Links an affected object to an impact."@en .
+                              skos:definition "Links an affected object to an impact."@en ;
+                              skos:prefLabel "be aware - is impacted by"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#isLocationOfDisaster
@@ -155,7 +157,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                       rdfs:domain beAWARE_ontology:Location ;
                                       rdfs:range beAWARE_ontology:NaturalDisaster ;
                                       rdfs:label "be aware - is location of disaster"@en ;
-                                      skos:definition "Links a location to a natural disaster occurrence"@en .
+                                      skos:definition "Links a location to a natural disaster occurrence"@en ;
+                                      skos:prefLabel "be aware - is location of disaster"@en .
 
 
 ###  https://schema.coypu.org/global#affectsProductLine
@@ -1052,7 +1055,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                    "physical thing"@en ,
                                                                    "Υλικό Πράγμα"@el ,
                                                                    "Физическая Вещь"@ru ,
-                                                                   "实物"@zh .
+                                                                   "实物"@zh ;
+                                                        skos:prefLabel "physical thing"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
@@ -1064,7 +1068,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                               "Entité CRM"@fr ,
                                                               "RM Entität"@de ,
                                                               "crm entity"@en ,
-                                                              "Οντότητα CIDOC CRM"@el .
+                                                              "Οντότητα CIDOC CRM"@el ;
+                                                   skos:prefLabel "crm entity"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
@@ -1077,7 +1082,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                       "conceptual object"@en ,
                                                                       "Νοητικό Αντικείμενο"@el ,
                                                                       "Концептуальный Объект"@ru ,
-                                                                      "概念对象"@zh .
+                                                                      "概念对象"@zh ;
+                                                           skos:prefLabel "conceptual object"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity
@@ -1090,7 +1096,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                    "temporal entity"@en ,
                                                                    "Έγχρονη Οντότητα"@el ,
                                                                    "Временная Сущность"@ru ,
-                                                                   "时序实体"@zh .
+                                                                   "时序实体"@zh ;
+                                                        skos:prefLabel "temporal entity"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State
@@ -1103,7 +1110,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                    "État matériel"@fr ,
                                                                    "Κατάσταση"@el ,
                                                                    "Состояние"@ru ,
-                                                                   "条件状态"@zh .
+                                                                   "条件状态"@zh ;
+                                                        skos:prefLabel "condition state"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E4_Period
@@ -1117,7 +1125,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                           "period"@en ,
                                                           "Περίοδος"@el ,
                                                           "Период"@ru ,
-                                                          "时期"@zh .
+                                                          "时期"@zh ;
+                                               skos:prefLabel "period"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E53_Place
@@ -1130,7 +1139,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                           "place"@en ,
                                                           "Τόπος"@el ,
                                                           "Место"@ru ,
-                                                          "地点"@zh .
+                                                          "地点"@zh ;
+                                               skos:prefLabel "place"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E55_Type
@@ -1143,7 +1153,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "type"@en ,
                                                          "Τύπος"@el ,
                                                          "Тип"@ru ,
-                                                         "类型"@zh .
+                                                         "类型"@zh ;
+                                              skos:prefLabel "type"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E5_Event
@@ -1161,7 +1172,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "事件"@zh ;
                                               rdfs:seeAlso "http://eventKG.l3s.uni-hannover.de/schema/Event" ,
                                                            "https://dbpedia.org/ontology/Event" ,
-                                                           "https://schema.org/Event" .
+                                                           "https://schema.org/Event" ;
+                                              skos:prefLabel "event"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence
@@ -1174,7 +1186,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                      "end of existence"@en ,
                                                                      "Τέλος Ύπαρξης"@el ,
                                                                      "Конец Существования"@ru ,
-                                                                     "结束"@zh .
+                                                                     "结束"@zh ;
+                                                          skos:prefLabel "end of existence"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E6_Destruction
@@ -1187,7 +1200,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                "destruction"@en ,
                                                                "Καταστροφή"@el ,
                                                                "Разрушение"@ru ,
-                                                               "破坏"@zh .
+                                                               "破坏"@zh ;
+                                                    skos:prefLabel "destruction"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E70_Thing
@@ -1200,14 +1214,16 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                           "thing"@en ,
                                                           "Πράγμα"@el ,
                                                           "Вещь"@ru ,
-                                                          "事物"@zh .
+                                                          "事物"@zh ;
+                                               skos:prefLabel "thing"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing
 <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> rdf:type owl:Class ;
                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
                                                           rdfs:comment "This class comprises discrete, identifiable human-made items that are documented as single units. These items are either intellectual products or human-made physical things, and are characterized by relative stability. They may for instance have a solid physical form, an electronic encoding, or they may be logical concepts or structures" ;
-                                                          rdfs:label "human-made"@en .
+                                                          rdfs:label "human-made"@en ;
+                                                          skos:prefLabel "human-made"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object
@@ -1220,7 +1236,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                  "legal object"@en ,
                                                                  "Νομικό Αντικείμενο"@el ,
                                                                  "Объект Права"@ru ,
-                                                                 "法律对象"@zh .
+                                                                 "法律对象"@zh ;
+                                                      skos:prefLabel "legal object"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item
@@ -1233,21 +1250,24 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                     "Seiendes"@de ,
                                                                     "persistent item"@en ,
                                                                     "Ον"@el ,
-                                                                    "Постоянная Сущность"@ru .
+                                                                    "Постоянная Сущность"@ru ;
+                                                         skos:prefLabel "persistent item"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume
 <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> rdf:type owl:Class ;
                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
                                                           rdfs:comment "This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place and E52 Timespan are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time" ;
-                                                          rdfs:label "spacetime volume"@en .
+                                                          rdfs:label "spacetime volume"@en ;
+                                                          skos:prefLabel "spacetime volume"@en .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E99_Product_Type
 <http://www.cidoc-crm.org/cidoc-crm/E99_Product_Type> rdf:type owl:Class ;
                                                       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
                                                       rdfs:comment "This classes comprises types that stand as the models for instances of E22 Human-Made Object that are produced as the result of production activities using plans exact enough to result in one or more series of uniform, functionally and aesthetically identical and interchangeable items. The product type is the intended ideal form of the manufacture process. It is typical of instances of E22 that conform to an instance of E99 Product Type that its component parts are interchangeable with component parts of other instances of E22 made after the model of the same instance of E99. Frequently, the uniform production according to a given instance of E99 Product Type is achieved by creating individual tools, such as moulds or print plates that are themselves carriers of the design of the product type. Modern tools may use the flexibility of electronically controlled devices to achieve such uniformity. The product type itself, i.e., the potentially unlimited series of aesthetically equivalent items, may be the target of artistic design, rather than the individual object. In extreme cases, only one instance of a product type may have been produced, such as in a 'print on demand' process which was only triggered once. However, this should not be confused with industrial prototypes, such as car prototypes, which are produced prior to the production line being set up, or test the production line itself" ;
-                                                      rdfs:label "product type"@en .
+                                                      rdfs:label "product type"@en ;
+                                                      skos:prefLabel "product type"@en .
 
 
 ###  http://www.w3.org/2002/07/owl#Thing
@@ -1259,7 +1279,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 <http://www.w3id.org/ecsel-dr-OM#Supplier> rdf:type owl:Class ;
                                            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> ;
                                            rdfs:comment "Organization that provides something needed such as a product or service"@en ;
-                                           rdfs:label "supplier"@en .
+                                           rdfs:label "supplier"@en ;
+                                           skos:prefLabel "supplier"@en .
 
 
 ###  http://www.w3id.org/ecsel-dr-PWR#Product
@@ -1272,7 +1293,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  http://www.w3id.org/ecsel-dr-SCP#NEWs
 <http://www.w3id.org/ecsel-dr-SCP#NEWs> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> ;
-                                        rdfs:label "NEWs"@en .
+                                        rdfs:label "NEWs"@en ;
+                                        skos:prefLabel "NEWs"@en .
 
 
 ###  http://www.w3id.org/ecsel-dr-SO#Product
@@ -1280,14 +1302,16 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E99_Product_Type> ;
                                           rdfs:comment "A product is a work product that is delivered to the customer."@en ,
                                                        "A product is any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en ;
-                                          rdfs:label "product"@en .
+                                          rdfs:label "product"@en ;
+                                          skos:prefLabel "product"@en .
 
 
 ###  http://www.w3id.org/ecsel-dr-SO#Product_Line
 <http://www.w3id.org/ecsel-dr-SO#Product_Line> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://www.w3id.org/ecsel-dr-SO#Product> ;
                                                rdfs:comment "The product line is one of the most prominent grouping of products. It is used in reporting as well as for structuring organizations."@en ;
-                                               rdfs:label "product line"@en .
+                                               rdfs:label "product line"@en ;
+                                               skos:prefLabel "product line"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Asset
@@ -1295,21 +1319,24 @@ beAWARE_ontology:Asset rdf:type owl:Class ;
                        rdfs:subClassOf beAWARE_ontology:VulnerableObject ;
                        owl:disjointWith beAWARE_ontology:LivingBeing ;
                        rdfs:label "asset"@en ;
-                       skos:definition "Any non-living item of interest" .
+                       skos:definition "Any non-living item of interest" ;
+                       skos:prefLabel "asset"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Impact
 beAWARE_ontology:Impact rdf:type owl:Class ;
                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
                         rdfs:label "impact"@en ;
-                        skos:definition "Represents the impact of natural disasters and incidents" .
+                        skos:definition "Represents the impact of natural disasters and incidents" ;
+                        skos:prefLabel "impact"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#LivingBeing
 beAWARE_ontology:LivingBeing rdf:type owl:Class ;
                              rdfs:subClassOf beAWARE_ontology:VulnerableObject ;
                              rdfs:label "living being"@en ;
-                             skos:definition "Any living being that is in danger during a natural disaster" .
+                             skos:definition "Any living being that is in danger during a natural disaster" ;
+                             skos:prefLabel "living being"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location
@@ -1325,14 +1352,16 @@ beAWARE_ontology:NaturalDisaster rdf:type owl:Class ;
                                  rdfs:comment "a natural crisis or disaster event"@en ;
                                  rdfs:label "natural disaster"@en ;
                                  rdfs:seeAlso "https://www.emdat.be/guidelines" ;
-                                 skos:definition "Represents the actual manifestation of a natural disaster type. An instance of a natural disaster has specific climate conditions with specific values (e.g. temperature = 45) plus some other properties (e.g. start/end time)" .
+                                 skos:definition "Represents the actual manifestation of a natural disaster type. An instance of a natural disaster has specific climate conditions with specific values (e.g. temperature = 45) plus some other properties (e.g. start/end time)" ;
+                                 skos:prefLabel "natural disaster"@en .
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#VulnerableObject
 beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                   rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> ;
                                   rdfs:label "vulnerable object"@en ;
-                                  skos:definition "Any living being or object that needs to be protected from hazards" .
+                                  skos:definition "Any living being or object that needs to be protected from hazards" ;
+                                  skos:prefLabel "vulnerable object"@en .
 
 
 ###  https://schema.coypu.org/global#AcledEvent
@@ -1805,7 +1834,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                                       rdfs:subClassOf :Demonstrations ;
                                       rdfs:comment """A protest is defined as a public demonstration in which the participants do not engage in
 	                                     violence, though violence may be used against them."""@en ;
-                                      rdfs:label "protests"@en .
+                                      rdfs:label "protests"@en ;
+                                      skos:prefLabel "protests"@en .
 
 
 #################################################################
