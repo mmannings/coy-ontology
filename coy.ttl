@@ -4,14 +4,15 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/spec/#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://rdfs.org/ns/void#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
 @base <https://schema.coypu.org/global> .
@@ -19,11 +20,11 @@
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/global> ;
                                    dcterms:contributor "Andreas Schaefer"@en ,
-                                                     "Felix Engel"@en ,
-                                                     "Lorenz Bühmann"@en ,
-                                                     "Nenad Krdzavac"@en ,
-                                                     "Simon Bin"@en ,
-                                                     "Till Grabo"@en ;
+                                                       "Felix Engel"@en ,
+                                                       "Lorenz Bühmann"@en ,
+                                                       "Nenad Krdzavac"@en ,
+                                                       "Simon Bin"@en ,
+                                                       "Till Grabo"@en ;
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
@@ -658,7 +659,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                    rdfs:comment "a honorific title of a person"@en ;
                    rdfs:label "hasHonorificTitle"@en ;
                    rdfs:seeAlso <https://schema.org/honorificPrefix> ,
-                               <https://schema.org/honorificSuffix> .
+                                <https://schema.org/honorificSuffix> .
 
 
 ###  https://schema.coypu.org/global#hasHrCourt
@@ -751,9 +752,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:decimal ;
              rdfs:comment "a latitude as defined in WGS 84"@en ;
              rdfs:label "hasLatitude"@en ;
-             rdfs:seeAlso <http://www.w3.org/2003/01/geo/wgs84_pos#> ,
+             rdfs:seeAlso geo: ,
                           <https://schema.org/latitude> ,
-                          <https://www.geonames.org/ontology#lat> .
+                          gn:lat .
 
 
 ###  https://schema.coypu.org/global#hasLegalForm
@@ -792,9 +793,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:decimal ;
               rdfs:comment "a longitude as defined in WGS 84"@en ;
               rdfs:label "hasLongitude"@en ;
-              rdfs:seeAlso <http://www.w3.org/2003/01/geo/wgs84_pos#> ,
+              rdfs:seeAlso geo: ,
                            <https://schema.org/longitude> ,
-                           <https://www.geonames.org/ontology#long> .
+                           gn:long .
 
 
 ###  https://schema.coypu.org/global#hasModificationTimestamp
@@ -1166,7 +1167,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "Συμβάν"@el ,
                                                          "Событие"@ru ,
                                                          "事件"@zh ;
-                                              rdfs:seeAlso <http://eventKG.l3s.uni-hannover.de/schema/Event> ,
+                                              rdfs:seeAlso eventKG:Event ,
                                                            <https://dbpedia.org/ontology/Event> ,
                                                            <https://schema.org/Event> .
 
@@ -1441,7 +1442,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                          owl:Thing ;
          rdfs:comment "a company, organization or corporation"@en ;
          rdfs:label "Company"@en ;
-         rdfs:seeAlso <http://dbpedia.org/ontology/Company> ,
+         rdfs:seeAlso dbo:Company ,
                       <https://schema.org/Corporation> .
 
 
@@ -1564,8 +1565,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "a production material"@en ;
           rdfs:label "Material"@en ;
-          rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> ,
-                       <https://dbpedia.org/page/Material> .
+          rdfs:seeAlso <https://dbpedia.org/page/Material> ,
+                       <https://dbpedia.org/page/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#Meteorological
@@ -1663,8 +1664,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "Product"@en ;
-         rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> ,
-                      <https://dbpedia.org/page/Material> ,
+         rdfs:seeAlso <https://dbpedia.org/page/Material> ,
+                      <https://dbpedia.org/page/Category:Goods_(economics)> ,
                       <https://schema.org/Product> .
 
 
