@@ -246,6 +246,10 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:label "hasSupplier"@en .
 
 
+###  https://schema.coypu.org/global#hasTerritorialEntity
+:hasTerritorialEntity rdf:type owl:ObjectProperty .
+
+
 ###  https://schema.coypu.org/global#impactCausedByEvent
 :impactCausedByEvent rdf:type owl:ObjectProperty ;
                      rdfs:domain beAWARE_ontology:Impact ;
@@ -367,6 +371,11 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://schema.coypu.org/global#code-3166-2
+:code-3166-2 rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The ISO 3166-2 code of a country"@en .
+
 
 ###  https://schema.coypu.org/global#hasAcledID
 :hasAcledID rdf:type owl:DatatypeProperty ,
@@ -1724,6 +1733,12 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Infrastructure ;
           rdfs:comment "a terminal to connect gas pipelines"@en ;
           rdfs:label "Terminal"@en .
+
+
+###  https://schema.coypu.org/global#TerritorialEntityOfSingleCountry
+:TerritorialEntityOfSingleCountry rdf:type owl:Class ;
+                                  rdfs:subClassOf beAWARE_ontology:Location ;
+                                  rdfs:comment "Some Teritorial entity, that belongs to a single country."@en .
 
 
 ###  https://schema.coypu.org/global#TransportAccident
