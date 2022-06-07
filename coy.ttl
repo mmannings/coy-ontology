@@ -1,6 +1,7 @@
 @prefix : <https://schema.coypu.org/global#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,7 +12,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://rdfs.org/ns/void#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
@@ -80,32 +81,8 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/about
-schema:about rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/domainIncludes
-schema:domainIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/maxValue
-schema:maxValue rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/minValue
-schema:minValue rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/rangeIncludes
-schema:rangeIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/unitCode
-schema:unitCode rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/unitText
-schema:unitText rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -118,6 +95,34 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  https://creativecommons.org/ns#license
 <https://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/about
+schema:about rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/domainIncludes
+schema:domainIncludes rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/maxValue
+schema:maxValue rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/minValue
+schema:minValue rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/rangeIncludes
+schema:rangeIncludes rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/unitCode
+schema:unitCode rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/unitText
+schema:unitText rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -206,7 +211,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range beAWARE_ontology:Location ;
              rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
              rdfs:label "hasLocation"@en ;
-             rdfs:seeAlso <https://schema.org/location> .
+             rdfs:seeAlso schema:location .
 
 
 ###  https://schema.coypu.org/global#hasManager
@@ -216,7 +221,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range :Person ;
             rdfs:comment "a person which is part of a company's management"@en ;
             rdfs:label "hasManager"@en ;
-            rdfs:seeAlso <https://schema.org/employee> .
+            rdfs:seeAlso schema:employee .
 
 
 ###  https://schema.coypu.org/global#hasProduct
@@ -235,7 +240,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range owl:Thing ;
             rdfs:comment "the thing an event is about"@en ;
             rdfs:label "hasSubject"@en ;
-            rdfs:seeAlso <https://schema.org/about> .
+            rdfs:seeAlso schema:about .
 
 
 ###  https://schema.coypu.org/global#hasSupplier
@@ -327,7 +332,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
              rdfs:comment "the publisher or subject of an event"@en ;
              rdfs:label "isSubjectOf"@en ;
-             rdfs:seeAlso <https://schema.org/subjectOf> .
+             rdfs:seeAlso schema:subjectOf .
 
 
 ###  https://schema.coypu.org/global#isSupplierOf
@@ -420,7 +425,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                   rdfs:range xsd:string ;
                   rdfs:comment "an alternate name of a thing"@en ;
                   rdfs:label "hasAlternateName"@en ;
-                  rdfs:seeAlso <https://schema.org/alternateName> .
+                  rdfs:seeAlso schema:alternateName .
 
 
 ###  https://schema.coypu.org/global#hasBalanceSheetTotal
@@ -439,7 +444,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:dateTime ;
              rdfs:comment "the birthday of a person"@en ;
              rdfs:label "hasBirthday"@en ;
-             rdfs:seeAlso <https://schema.org/birthDate> .
+             rdfs:seeAlso schema:birthDate .
 
 
 ###  https://schema.coypu.org/global#hasCapacity
@@ -505,7 +510,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:decimal ;
              rdfs:comment "the currency of a country or monetary value"@en ;
              rdfs:label "hasCurrency"@en ;
-             rdfs:seeAlso <https://schema.org/currency> .
+             rdfs:seeAlso schema:currency .
 
 
 ###  https://schema.coypu.org/global#hasCyberRiskScore
@@ -524,7 +529,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                 rdfs:range xsd:string ;
                 rdfs:comment "the description of a thing"@en ;
                 rdfs:label "hasDescription"@en ;
-                rdfs:seeAlso <https://schema.org/description> .
+                rdfs:seeAlso schema:description .
 
 
 ###  https://schema.coypu.org/global#hasDissolutionDate
@@ -534,7 +539,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                     rdfs:range xsd:dateTime ;
                     rdfs:comment "the dissolution date of a company"@en ;
                     rdfs:label "hasDissolutionDate"@en ;
-                    rdfs:seeAlso <https://schema.org/dissolutionDate> .
+                    rdfs:seeAlso schema:dissolutionDate .
 
 
 ###  https://schema.coypu.org/global#hasEbidCode
@@ -554,7 +559,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
           rdfs:range xsd:string ;
           rdfs:comment "an email address"@en ;
           rdfs:label "hasEmail"@en ;
-          rdfs:seeAlso <https://schema.org/email> .
+          rdfs:seeAlso schema:email .
 
 
 ###  https://schema.coypu.org/global#hasEventStatus
@@ -592,7 +597,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                rdfs:range xsd:string ;
                rdfs:comment "the family name of a person"@en ;
                rdfs:label "hasFamilyName"@en ;
-               rdfs:seeAlso <https://schema.org/familyName> .
+               rdfs:seeAlso schema:familyName .
 
 
 ###  https://schema.coypu.org/global#hasFatalities
@@ -610,7 +615,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "a fax number"@en ;
         rdfs:label "hasFax"@en ;
-        rdfs:seeAlso <https://schema.org/faxNumber> .
+        rdfs:seeAlso schema:faxNumber .
 
 
 ###  https://schema.coypu.org/global#hasFoundingDate
@@ -620,7 +625,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                  rdfs:range xsd:dateTime ;
                  rdfs:comment "the founding date of a company"@en ;
                  rdfs:label "hasFoundingDate"@en ;
-                 rdfs:seeAlso <https://schema.org/foundingDate> .
+                 rdfs:seeAlso schema:foundingDate .
 
 
 ###  https://schema.coypu.org/global#hasGeoFence
@@ -639,7 +644,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:string ;
               rdfs:comment "the given name of a person"@en ;
               rdfs:label "hasGivenName"@en ;
-              rdfs:seeAlso <https://schema.org/givenName> .
+              rdfs:seeAlso schema:givenName .
 
 
 ###  https://schema.coypu.org/global#hasGlideId
@@ -658,8 +663,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:string ;
                    rdfs:comment "a honorific title of a person"@en ;
                    rdfs:label "hasHonorificTitle"@en ;
-                   rdfs:seeAlso <https://schema.org/honorificPrefix> ,
-                                <https://schema.org/honorificSuffix> .
+                   rdfs:seeAlso schema:honorificPrefix ,
+                                schema:honorificSuffix .
 
 
 ###  https://schema.coypu.org/global#hasHrCourt
@@ -705,7 +710,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
        rdfs:range xsd:string ;
        rdfs:comment "a unique id (the Implisense ID for companies)"@en ;
        rdfs:label "hasId"@en ;
-       rdfs:seeAlso <https://schema.org/identifier> .
+       rdfs:seeAlso schema:identifier .
 
 
 ###  https://schema.coypu.org/global#hasInfrastructureType
@@ -733,7 +738,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:string ;
              rdfs:comment "the job description of a person"@en ;
              rdfs:label "hasJobTitle"@en ;
-             rdfs:seeAlso <https://schema.org/jobTitle> .
+             rdfs:seeAlso schema:jobTitle .
 
 
 ###  https://schema.coypu.org/global#hasLanguage
@@ -753,7 +758,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:comment "a latitude as defined in WGS 84"@en ;
              rdfs:label "hasLatitude"@en ;
              rdfs:seeAlso geo: ,
-                          <https://schema.org/latitude> ,
+                          schema:latitude ,
                           gn:lat .
 
 
@@ -773,7 +778,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:string ;
               rdfs:comment "the legal name of a company"@en ;
               rdfs:label "hasLegalName"@en ;
-              rdfs:seeAlso <https://schema.org/legalName> .
+              rdfs:seeAlso schema:legalName .
 
 
 ###  https://schema.coypu.org/global#hasLeiCode
@@ -783,7 +788,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range xsd:string ;
             rdfs:comment "a legal entity identifier as defined in ISO 17442"@en ;
             rdfs:label "hasLeiCode"@en ;
-            rdfs:seeAlso <https://schema.org/leiCode> .
+            rdfs:seeAlso schema:leiCode .
 
 
 ###  https://schema.coypu.org/global#hasLongitude
@@ -794,7 +799,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:comment "a longitude as defined in WGS 84"@en ;
               rdfs:label "hasLongitude"@en ;
               rdfs:seeAlso geo: ,
-                           <https://schema.org/longitude> ,
+                           schema:longitude ,
                            gn:long .
 
 
@@ -824,7 +829,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
          rdfs:comment "the name of a thing"@en ;
          rdfs:label "hasName"@en ;
          rdfs:seeAlso <http://dbpedia.org/property/name> ,
-                      <https://schema.org/name> .
+                      schema:name .
 
 
 ###  https://schema.coypu.org/global#hasNumberOfEmployees
@@ -835,7 +840,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                       rdfs:comment "the number of employees of a company (in a specified year)"@en ;
                       rdfs:label "hasNumberOfEmployees"@en ;
                       rdfs:seeAlso <http://dbpedia.org/property/numEmployees> ,
-                                   <https://schema.org/numberOfEmployees> .
+                                   schema:numberOfEmployees .
 
 
 ###  https://schema.coypu.org/global#hasPercentage
@@ -854,7 +859,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                 rdfs:range xsd:string ;
                 rdfs:comment "a phone number (should be normalized)"@en ;
                 rdfs:label "hasPhoneNumber"@en ;
-                rdfs:seeAlso <https://schema.org/telephone> .
+                rdfs:seeAlso schema:telephone .
 
 
 ###  https://schema.coypu.org/global#hasPopulation
@@ -909,7 +914,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range xsd:decimal ;
             rdfs:comment "the revenue of a company (for a specified year in a specified currency)"@en ;
             rdfs:label "hasRevenue"@en ;
-            rdfs:seeAlso <https://schema.org/yearlyRevenue> .
+            rdfs:seeAlso schema:yearlyRevenue .
 
 
 ###  https://schema.coypu.org/global#hasRiskLevel
@@ -947,7 +952,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
            rdfs:range xsd:string ;
            rdfs:comment "a street address"@en ;
            rdfs:label "hasStreet"@en ;
-           rdfs:seeAlso <https://schema.org/streetAddress> .
+           rdfs:seeAlso schema:streetAddress .
 
 
 ###  https://schema.coypu.org/global#hasSusceptibility
@@ -986,7 +991,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:comment "the url of a web resource"@en ;
         rdfs:label "hasUrl"@en ;
         rdfs:seeAlso <http://dbpedia.org/property/website> ,
-                     <https://schema.org/url> .
+                     schema:url .
 
 
 ###  https://schema.coypu.org/global#hasVat
@@ -996,7 +1001,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "the vat id of a company"@en ;
         rdfs:label "hasVat"@en ;
-        rdfs:seeAlso <https://schema.org/vatID> .
+        rdfs:seeAlso schema:vatID .
 
 
 ###  https://schema.coypu.org/global#hasVolatility
@@ -1025,7 +1030,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "a zip code"@en ;
         rdfs:label "hasZip"@en ;
-        rdfs:seeAlso <https://schema.org/postalCode> .
+        rdfs:seeAlso schema:postalCode .
 
 
 ###  https://schema.coypu.org/global#isActive
@@ -1169,7 +1174,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "事件"@zh ;
                                               rdfs:seeAlso eventKG:Event ,
                                                            <https://dbpedia.org/ontology/Event> ,
-                                                           <https://schema.org/Event> .
+                                                           schema:Event .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence
@@ -1418,7 +1423,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
       rdfs:comment "a city as defined by NUTS or IATA"@en ;
       rdfs:label "City"@en ;
       rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
-                   <https://schema.org/City> .
+                   schema:City .
 
 
 ###  https://schema.coypu.org/global#Climatological
@@ -1443,7 +1448,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:comment "a company, organization or corporation"@en ;
          rdfs:label "Company"@en ;
          rdfs:seeAlso dbo:Company ,
-                      <https://schema.org/Corporation> .
+                      schema:Corporation .
 
 
 ###  https://schema.coypu.org/global#Country
@@ -1452,7 +1457,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:comment "a country as defined in ISO 3166"@en ;
          rdfs:label "Country"@en ;
          rdfs:seeAlso <https://dbpedia.org/ontology/Country> ,
-                      <https://schema.org/Country> .
+                      schema:Country .
 
 
 ###  https://schema.coypu.org/global#CybersecurityAccident
@@ -1550,7 +1555,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
           rdfs:label "Industry"@en ;
-          rdfs:seeAlso <https://dbpedia.org/page/Category:Economic_sectors> .
+          rdfs:seeAlso dbr:Category:Economic_sectors .
 
 
 ###  https://schema.coypu.org/global#Infrastructure
@@ -1565,8 +1570,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "a production material"@en ;
           rdfs:label "Material"@en ;
-          rdfs:seeAlso <https://dbpedia.org/page/Material> ,
-                       <https://dbpedia.org/page/Category:Goods_(economics)> .
+          rdfs:seeAlso dbr:Material ,
+                       <https://dbpedia.org/resource/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#Meteorological
@@ -1635,7 +1640,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:label "Person"@en ;
         rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> ,
                      <https://dbpedia.org/ontology/Person> ,
-                     <https://schema.org/Person> .
+                     schema:Person .
 
 
 ###  https://schema.coypu.org/global#Pipeline
@@ -1664,9 +1669,9 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "Product"@en ;
-         rdfs:seeAlso <https://dbpedia.org/page/Material> ,
-                      <https://dbpedia.org/page/Category:Goods_(economics)> ,
-                      <https://schema.org/Product> .
+         rdfs:seeAlso dbr:Material ,
+                      <https://dbpedia.org/resource/Category:Goods_(economics)> ,
+                      schema:Product .
 
 
 ###  https://schema.coypu.org/global#ProtestWithIntervention
@@ -1681,7 +1686,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:comment "an administrative or economic area"@en ;
         rdfs:label "Region"@en ;
         rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
-                     <https://schema.org/AdministrativeArea> .
+                     schema:AdministrativeArea .
 
 
 ###  https://schema.coypu.org/global#Riots
@@ -1697,7 +1702,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "a utility or non-material product"@en ;
          rdfs:label "Service"@en ;
-         rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> .
+         rdfs:seeAlso <https://dbpedia.org/resource/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
