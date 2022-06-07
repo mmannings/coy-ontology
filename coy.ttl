@@ -937,7 +937,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
            rdfs:range xsd:string ;
            rdfs:comment "a street address"@en ;
            rdfs:label "hasStreet"@en ;
-           rdfs:seeAlso "https://schema.org/streetAddress" .
+           rdfs:seeAlso <https://schema.org/streetAddress> .
 
 
 ###  https://schema.coypu.org/global#hasSusceptibility
@@ -947,7 +947,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "the susceptibility of a country as defined by Weltrisikobericht"@en ;
                    rdfs:label "hasSusceptibility"@en ;
-                   rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                   rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasTag
@@ -975,8 +975,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:anyURI ;
         rdfs:comment "the url of a web resource"@en ;
         rdfs:label "hasUrl"@en ;
-        rdfs:seeAlso "http://dbpedia.org/property/website" ,
-                     "https://schema.org/url" .
+        rdfs:seeAlso <http://dbpedia.org/property/website> ,
+                     <https://schema.org/url> .
 
 
 ###  https://schema.coypu.org/global#hasVat
@@ -986,7 +986,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "the vat id of a company"@en ;
         rdfs:label "hasVat"@en ;
-        rdfs:seeAlso "https://schema.org/vatID" .
+        rdfs:seeAlso <https://schema.org/vatID> .
 
 
 ###  https://schema.coypu.org/global#hasVolatility
@@ -1005,7 +1005,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                   rdfs:range xsd:decimal ;
                   rdfs:comment "the vulnerability of a country as defined by Weltrisikobericht"@en ;
                   rdfs:label "hasVulnerability"@en ;
-                  rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                  rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasZip
@@ -1015,7 +1015,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "a zip code"@en ;
         rdfs:label "hasZip"@en ;
-        rdfs:seeAlso "https://schema.org/postalCode" .
+        rdfs:seeAlso <https://schema.org/postalCode> .
 
 
 ###  https://schema.coypu.org/global#isActive
@@ -1157,9 +1157,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "Συμβάν"@el ,
                                                          "Событие"@ru ,
                                                          "事件"@zh ;
-                                              rdfs:seeAlso "http://eventKG.l3s.uni-hannover.de/schema/Event" ,
-                                                           "https://dbpedia.org/ontology/Event" ,
-                                                           "https://schema.org/Event" .
+                                              rdfs:seeAlso <http://eventKG.l3s.uni-hannover.de/schema/Event> ,
+                                                           <https://dbpedia.org/ontology/Event> ,
+                                                           <https://schema.org/Event> .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence
@@ -1323,7 +1323,7 @@ beAWARE_ontology:NaturalDisaster rdf:type owl:Class ;
                                  rdfs:comment "a natural crisis or disaster event"@en ;
                                  rdfs:label "Natural Disaster"@en ,
                                             "NaturalDisaster"@en ;
-                                 rdfs:seeAlso "https://www.emdat.be/guidelines" ;
+                                 rdfs:seeAlso <https://www.emdat.be/guidelines> ;
                                  skos:definition "Represents the actual manifestation of a natural disaster type. An instance of a natural disaster has specific climate conditions with specific values (e.g. temperature = 45) plus some other properties (e.g. start/end time)" .
 
 
@@ -1391,7 +1391,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
             rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
             rdfs:comment "an epidemic, pandemic or infestation event"@en ;
             rdfs:label "BiologicalDisaster"@en ;
-            rdfs:seeAlso "https://www.emdat.be/guidelines" .
+            rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#ChemicalWeapon
@@ -1407,8 +1407,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
       rdfs:subClassOf beAWARE_ontology:Location ;
       rdfs:comment "a city as defined by NUTS or IATA"@en ;
       rdfs:label "City"@en ;
-      rdfs:seeAlso "https://dbpedia.org/ontology/City" ,
-                   "https://schema.org/City" .
+      rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
+                   <https://schema.org/City> .
 
 
 ###  https://schema.coypu.org/global#Climatological
@@ -1416,7 +1416,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                 rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                 rdfs:comment "a drought, wildfire or glacial lake outburst event"@en ;
                 rdfs:label "ClimatologicalDisaster"@en ;
-                rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Commodity
@@ -1432,8 +1432,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                          owl:Thing ;
          rdfs:comment "a company, organization or corporation"@en ;
          rdfs:label "Company"@en ;
-         rdfs:seeAlso "http://dbpedia.org/ontology/Company" ,
-                      "https://schema.org/Corporation" .
+         rdfs:seeAlso <http://dbpedia.org/ontology/Company> ,
+                      <https://schema.org/Corporation> .
 
 
 ###  https://schema.coypu.org/global#Country
@@ -1441,8 +1441,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf beAWARE_ontology:Location ;
          rdfs:comment "a country as defined in ISO 3166"@en ;
          rdfs:label "Country"@en ;
-         rdfs:seeAlso "https://dbpedia.org/ontology/Country" ,
-                      "https://schema.org/Country" .
+         rdfs:seeAlso <https://dbpedia.org/ontology/Country> ,
+                      <https://schema.org/Country> .
 
 
 ###  https://schema.coypu.org/global#CybersecurityAccident
@@ -1463,7 +1463,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
           rdfs:comment "a natural or technological disaster"@en ;
           rdfs:label "Disaster"@en ;
-          rdfs:seeAlso "https://www.emdat.be/guidelines" .
+          rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#DisruptedWeaponUse
@@ -1483,7 +1483,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                   rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                   rdfs:comment "a space weather event"@en ;
                   rdfs:label "ExtraterrestrialDisaster"@en ;
-                  rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                  rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Factory
@@ -1498,7 +1498,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
              rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
              rdfs:comment "an earthquake, volcanic eruption or storm event"@en ;
              rdfs:label "GeophysicalDisaster"@en ;
-             rdfs:seeAlso "https://www.emdat.be/guidelines" .
+             rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#GovernmentRegainsTerritory
@@ -1524,7 +1524,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
               rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
               rdfs:comment "a landslide, wave action or flooding event"@en ;
               rdfs:label "HydrologicalDisaster"@en ;
-              rdfs:seeAlso "https://www.emdat.be/guidelines" .
+              rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#IndustrialAccident
@@ -1532,7 +1532,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                     rdfs:subClassOf :TechnologicalDisaster ;
                     rdfs:comment "an event related to a production site or factory operations"@en ;
                     rdfs:label "IndustrialAccident"@en ;
-                    rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                    rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Industry
@@ -1540,7 +1540,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
           rdfs:label "Industry"@en ;
-          rdfs:seeAlso "https://dbpedia.org/page/Category:Economic_sectors" .
+          rdfs:seeAlso <https://dbpedia.org/page/Category:Economic_sectors> .
 
 
 ###  https://schema.coypu.org/global#Infrastructure
@@ -1555,8 +1555,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "a production material"@en ;
           rdfs:label "Material"@en ;
-          rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" ,
-                       "https://dbpedia.org/page/Material" .
+          rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> ,
+                       <https://dbpedia.org/page/Material> .
 
 
 ###  https://schema.coypu.org/global#Meteorological
@@ -1564,7 +1564,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                 rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                 rdfs:comment "a storm or extreme temperature event"@en ;
                 rdfs:label "MeteorologicalDisaster"@en ;
-                rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#MiscellaneousAccident
@@ -1572,7 +1572,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                        rdfs:subClassOf :TechnologicalDisaster ;
                        rdfs:comment "a technological event not covered otherwise"@en ;
                        rdfs:label "MiscellaneousAccident"@en ;
-                       rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                       rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#MobViolence
@@ -1623,9 +1623,9 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:subClassOf owl:Thing ;
         rdfs:comment "a natural person"@en ;
         rdfs:label "Person"@en ;
-        rdfs:seeAlso "http://xmlns.com/foaf/0.1/Person" ,
-                     "https://dbpedia.org/ontology/Person" ,
-                     "https://schema.org/Person" .
+        rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> ,
+                     <https://dbpedia.org/ontology/Person> ,
+                     <https://schema.org/Person> .
 
 
 ###  https://schema.coypu.org/global#Pipeline
@@ -1654,9 +1654,9 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "Product"@en ;
-         rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" ,
-                      "https://dbpedia.org/page/Material" ,
-                      "https://schema.org/Product" .
+         rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> ,
+                      <https://dbpedia.org/page/Material> ,
+                      <https://schema.org/Product> .
 
 
 ###  https://schema.coypu.org/global#ProtestWithIntervention
@@ -1670,8 +1670,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:subClassOf beAWARE_ontology:Location ;
         rdfs:comment "an administrative or economic area"@en ;
         rdfs:label "Region"@en ;
-        rdfs:seeAlso "https://dbpedia.org/ontology/AdministrativeRegion" ,
-                     "https://schema.org/AdministrativeArea" .
+        rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
+                     <https://schema.org/AdministrativeArea> .
 
 
 ###  https://schema.coypu.org/global#Riots
@@ -1687,7 +1687,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "a utility or non-material product"@en ;
          rdfs:label "Service"@en ;
-         rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" .
+         rdfs:seeAlso <https://dbpedia.org/page/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
@@ -1716,7 +1716,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                        rdfs:subClassOf :Disaster ;
                        rdfs:comment "a man-made crisis or disaster event"@en ;
                        rdfs:label "TechnologicalDisaster"@en ;
-                       rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                       rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Terminal
@@ -1731,7 +1731,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                    rdfs:subClassOf :TechnologicalDisaster ;
                    rdfs:comment "an event relating to logistical operations"@en ;
                    rdfs:label "TransportAccident"@en ;
-                   rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                   rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#ViolenceAgainstCivilians
