@@ -20,7 +20,8 @@
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/global> ;
-                                   dcterms:contributor "Andreas Schaefer"@en ,
+                                   dcterms:contributor <http://aksw.org/NatanaelArndt> ,
+                                                       "Andreas Schaefer"@en ,
                                                        "Felix Engel"@en ,
                                                        "Lorenz Bühmann"@en ,
                                                        "Nenad Krdzavac"@en ,
@@ -29,8 +30,8 @@
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-05-06" ;
-                                   dcterms:rights "CC BY 4.0 - Implisense GmbH"@en ;
+                                   dcterms:modified "2022-06-07" ;
+                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
