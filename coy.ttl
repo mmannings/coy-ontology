@@ -1554,7 +1554,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 :Industry rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
-          rdfs:label "Industry"@en ;
+          rdfs:label "Industry"@en ,
+                     "Wirtschaftszweig"@de ;
           rdfs:seeAlso dbr:Category:Economic_sectors .
 
 
