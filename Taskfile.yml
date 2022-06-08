@@ -1,0 +1,13 @@
+version: '3'
+
+vars:
+  FILE: coy
+  RAPPER: rapper
+
+tasks:
+
+  default:
+    - task: check_turtle
+
+  check_turtle:
+    - '{{ .RAPPER }} -i turtle -c {{.FILE}}.ttl'

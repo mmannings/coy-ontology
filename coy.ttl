@@ -1,6 +1,7 @@
 @prefix : <https://schema.coypu.org/global#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,27 +12,27 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://rdfs.org/ns/void#> .
-@prefix terms: <http://purl.org/dc/terms/> .
-@prefix schema: <http://schema.org/> .
-@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
 @base <https://schema.coypu.org/global> .
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/global> ;
-                                   terms:contributor "Andreas Schaefer"@en ,
-                                                     "Felix Engel"@en ,
-                                                     "Lorenz Bühmann"@en ,
-                                                     "Nenad Krdzavac"@en ,
-                                                     "Simon Bin"@en ,
-                                                     "Till Grabo"@en ;
-                                   terms:created "2021-09-06" ;
-                                   terms:creator "Nils Steinert"@en ;
-                                   terms:isVersionOf <https://schema.coypu.org/global> ;
-                                   terms:modified "2022-05-06" ;
-                                   terms:rights "CC BY 4.0 - Implisense GmbH"@en ;
-                                   terms:title "CoyPu Ontology"@en ;
+                                   dcterms:contributor <http://aksw.org/NatanaelArndt> ,
+                                                       "Andreas Schaefer"@en ,
+                                                       "Felix Engel"@en ,
+                                                       "Lorenz Bühmann"@en ,
+                                                       "Nenad Krdzavac"@en ,
+                                                       "Simon Bin"@en ,
+                                                       "Till Grabo"@en ;
+                                   dcterms:created "2021-09-06" ;
+                                   dcterms:creator "Nils Steinert"@en ;
+                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
+                                   dcterms:modified "2022-06-07" ;
+                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
+                                   dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
@@ -46,31 +47,31 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/contributor
-terms:contributor rdf:type owl:AnnotationProperty .
+dcterms:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-terms:created rdf:type owl:AnnotationProperty .
+dcterms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-terms:creator rdf:type owl:AnnotationProperty .
+dcterms:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/isVersionOf
-terms:isVersionOf rdf:type owl:AnnotationProperty .
+dcterms:isVersionOf rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-terms:modified rdf:type owl:AnnotationProperty .
+dcterms:modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/rights
-terms:rights rdf:type owl:AnnotationProperty .
+dcterms:rights rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-terms:title rdf:type owl:AnnotationProperty .
+dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -81,32 +82,8 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/about
-schema:about rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/domainIncludes
-schema:domainIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/maxValue
-schema:maxValue rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/minValue
-schema:minValue rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/rangeIncludes
-schema:rangeIncludes rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/unitCode
-schema:unitCode rdf:type owl:AnnotationProperty .
-
-
-###  http://schema.org/unitText
-schema:unitText rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -119,6 +96,34 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  https://creativecommons.org/ns#license
 <https://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/about
+schema:about rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/domainIncludes
+schema:domainIncludes rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/maxValue
+schema:maxValue rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/minValue
+schema:minValue rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/rangeIncludes
+schema:rangeIncludes rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/unitCode
+schema:unitCode rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/unitText
+schema:unitText rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -210,7 +215,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range beAWARE_ontology:Location ;
              rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
              rdfs:label "has location"@en ;
-             rdfs:seeAlso "https://schema.org/location" .
+             rdfs:seeAlso schema:location .
 
 
 ###  https://schema.coypu.org/global#hasManager
@@ -220,7 +225,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range :Person ;
             rdfs:comment "a person which is part of a company's management"@en ;
             rdfs:label "has manager"@en ;
-            rdfs:seeAlso "https://schema.org/employee" .
+            rdfs:seeAlso schema:employee .
 
 
 ###  https://schema.coypu.org/global#hasProduct
@@ -239,7 +244,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range owl:Thing ;
             rdfs:comment "the thing an event is about"@en ;
             rdfs:label "has subject"@en ;
-            rdfs:seeAlso "https://schema.org/about" .
+            rdfs:seeAlso schema:about .
 
 
 ###  https://schema.coypu.org/global#hasSupplier
@@ -251,11 +256,15 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:label "has supplier"@en .
 
 
+###  https://schema.coypu.org/global#hasTerritorialEntity
+:hasTerritorialEntity rdf:type owl:ObjectProperty .
+
+
 ###  https://schema.coypu.org/global#impactCausedByEvent
 :impactCausedByEvent rdf:type owl:ObjectProperty ;
                      rdfs:domain beAWARE_ontology:Impact ;
                      rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-                     rdfs:label "crm - impact caused by event"@en .
+                     rdfs:label "CRM - impact caused by event"@en .
 
 
 ###  https://schema.coypu.org/global#isCustomerOf
@@ -310,7 +319,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 :isProductLineOf rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
                  rdfs:range :Company ;
-                 rdfs:label "crm - is product line of"@en .
+                 rdfs:label "CRM - is product line of"@en .
 
 
 ###  https://schema.coypu.org/global#isProductOf
@@ -327,7 +336,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
              rdfs:comment "the publisher or subject of an event"@en ;
              rdfs:label "is subject of"@en ;
-             rdfs:seeAlso "https://schema.org/subjectOf" .
+             rdfs:seeAlso schema:subjectOf .
 
 
 ###  https://schema.coypu.org/global#isSupplierOf
@@ -366,12 +375,17 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 :usedProductLineFor rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
                     rdfs:range owl:Thing ;
-                    rdfs:label "crm - used product line for"@en .
+                    rdfs:label "CRM - used product line for"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://schema.coypu.org/global#code-3166-2
+:code-3166-2 rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The ISO 3166-2 code of a country"@en .
+
 
 ###  https://schema.coypu.org/global#hasAcledID
 :hasAcledID rdf:type owl:DatatypeProperty ,
@@ -396,7 +410,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                        rdfs:range xsd:decimal ;
                        rdfs:comment "the adaptive capability of a country as defined by Weltrisikobericht"@en ;
                        rdfs:label "has adaptive capability"@en ;
-                       rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                       rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasAlertScore
@@ -415,7 +429,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                   rdfs:range xsd:string ;
                   rdfs:comment "an alternate name of a thing"@en ;
                   rdfs:label "has alternate name"@en ;
-                  rdfs:seeAlso "https://schema.org/alternateName"@en .
+                  rdfs:seeAlso schema:alternateName .
 
 
 ###  https://schema.coypu.org/global#hasBalanceSheetTotal
@@ -434,7 +448,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:dateTime ;
              rdfs:comment "the birthday of a person"@en ;
              rdfs:label "has birthday"@en ;
-             rdfs:seeAlso "https://schema.org/birthDate" .
+             rdfs:seeAlso schema:birthDate .
 
 
 ###  https://schema.coypu.org/global#hasCapacity
@@ -462,7 +476,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                 rdfs:range xsd:string ;
                 rdfs:comment "the size of a company according to the EU SME definition"@en ;
                 rdfs:label "has company size"@en ;
-                rdfs:seeAlso "https://ec.europa.eu/growth/smes/sme-definition_en" .
+                rdfs:seeAlso <https://ec.europa.eu/growth/smes/sme-definition_en> .
 
 
 ###  https://schema.coypu.org/global#hasCopingCapability
@@ -472,7 +486,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                      rdfs:range xsd:decimal ;
                      rdfs:comment "the coping capability of a country as defined by Weltrisikobericht"@en ;
                      rdfs:label "has coping capability"@en ;
-                     rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                     rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasCpaCode
@@ -500,7 +514,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:decimal ;
              rdfs:comment "the currency of a country or monetary value"@en ;
              rdfs:label "has currency"@en ;
-             rdfs:seeAlso "https://schema.org/currency" .
+             rdfs:seeAlso schema:currency .
 
 
 ###  https://schema.coypu.org/global#hasCyberRiskScore
@@ -519,7 +533,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                 rdfs:range xsd:string ;
                 rdfs:comment "the description of a thing"@en ;
                 rdfs:label "has description"@en ;
-                rdfs:seeAlso "https://schema.org/description" .
+                rdfs:seeAlso schema:description .
 
 
 ###  https://schema.coypu.org/global#hasDissolutionDate
@@ -529,7 +543,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                     rdfs:range xsd:dateTime ;
                     rdfs:comment "the dissolution date of a company"@en ;
                     rdfs:label "has dissolution date"@en ;
-                    rdfs:seeAlso "https://schema.org/dissolutionDate" .
+                    rdfs:seeAlso schema:dissolutionDate .
 
 
 ###  https://schema.coypu.org/global#hasEbidCode
@@ -539,7 +553,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:string ;
              rdfs:comment "the European Business Identifier of a company"@en ;
              rdfs:label "has EBID code"@en ;
-             rdfs:seeAlso "https://www.unternehmensverzeichnis.org" .
+             rdfs:seeAlso <https://www.unternehmensverzeichnis.org> .
 
 
 ###  https://schema.coypu.org/global#hasEmail
@@ -549,7 +563,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
           rdfs:range xsd:string ;
           rdfs:comment "an email address"@en ;
           rdfs:label "has email"@en ;
-          rdfs:seeAlso "https://schema.org/email" .
+          rdfs:seeAlso schema:email .
 
 
 ###  https://schema.coypu.org/global#hasEventStatus
@@ -577,7 +591,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:decimal ;
              rdfs:comment "the exposure of a country as defined by Weltrisikobericht"@en ;
              rdfs:label "has exposure"@en ;
-             rdfs:seeAlso "https://weltrisikobericht.de"@en .
+             rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasFamilyName
@@ -587,7 +601,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                rdfs:range xsd:string ;
                rdfs:comment "the family name of a person"@en ;
                rdfs:label "has family name"@en ;
-               rdfs:seeAlso "https://schema.org/familyName" .
+               rdfs:seeAlso schema:familyName .
 
 
 ###  https://schema.coypu.org/global#hasFatalities
@@ -605,7 +619,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "a fax number"@en ;
         rdfs:label "has fax"@en ;
-        rdfs:seeAlso "https://schema.org/faxNumber" .
+        rdfs:seeAlso schema:faxNumber .
 
 
 ###  https://schema.coypu.org/global#hasFoundingDate
@@ -615,7 +629,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                  rdfs:range xsd:dateTime ;
                  rdfs:comment "the founding date of a company"@en ;
                  rdfs:label "has founding date"@en ;
-                 rdfs:seeAlso "https://schema.org/foundingDate" .
+                 rdfs:seeAlso schema:foundingDate .
 
 
 ###  https://schema.coypu.org/global#hasGeoFence
@@ -634,7 +648,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:string ;
               rdfs:comment "the given name of a person"@en ;
               rdfs:label "has given name"@en ;
-              rdfs:seeAlso "https://schema.org/givenName" .
+              rdfs:seeAlso schema:givenName .
 
 
 ###  https://schema.coypu.org/global#hasGlideId
@@ -653,8 +667,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:string ;
                    rdfs:comment "a honorific title of a person"@en ;
                    rdfs:label "has honorific title"@en ;
-                   rdfs:seeAlso "https://schema.org/honorificPrefix" ,
-                                "https://schema.org/honorificSuffix" .
+                   rdfs:seeAlso schema:honorificPrefix ,
+                                schema:honorificSuffix .
 
 
 ###  https://schema.coypu.org/global#hasHrCourt
@@ -700,7 +714,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
        rdfs:range xsd:string ;
        rdfs:comment "a unique id (the Implisense ID for companies)"@en ;
        rdfs:label "has ID"@en ;
-       rdfs:seeAlso "https://schema.org/identifier" .
+       rdfs:seeAlso schema:identifier .
 
 
 ###  https://schema.coypu.org/global#hasInfrastructureType
@@ -728,7 +742,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:string ;
              rdfs:comment "the job description of a person"@en ;
              rdfs:label "has job title"@en ;
-             rdfs:seeAlso "https://schema.org/jobTitle" .
+             rdfs:seeAlso schema:jobTitle .
 
 
 ###  https://schema.coypu.org/global#hasLanguage
@@ -747,9 +761,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
              rdfs:range xsd:decimal ;
              rdfs:comment "a latitude as defined in WGS 84"@en ;
              rdfs:label "has latitude"@en ;
-             rdfs:seeAlso "http://www.w3.org/2003/01/geo/wgs84_pos#" ,
-                          "https://schema.org/latitude" ,
-                          "https://www.geonames.org/ontology#lat" .
+             rdfs:seeAlso geo:lat ,
+                          schema:latitude ,
+                          gn:lat .
 
 
 ###  https://schema.coypu.org/global#hasLegalForm
@@ -768,7 +782,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:string ;
               rdfs:comment "the legal name of a company"@en ;
               rdfs:label "has legal name"@en ;
-              rdfs:seeAlso "https://schema.org/legalName" .
+              rdfs:seeAlso schema:legalName .
 
 
 ###  https://schema.coypu.org/global#hasLeiCode
@@ -778,7 +792,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range xsd:string ;
             rdfs:comment "a legal entity identifier as defined in ISO 17442"@en ;
             rdfs:label "has LEI code"@en ;
-            rdfs:seeAlso "https://schema.org/leiCode" .
+            rdfs:seeAlso schema:leiCode .
 
 
 ###  https://schema.coypu.org/global#hasLongitude
@@ -788,9 +802,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:decimal ;
               rdfs:comment "a longitude as defined in WGS 84"@en ;
               rdfs:label "has longitude"@en ;
-              rdfs:seeAlso "http://www.w3.org/2003/01/geo/wgs84_pos#" ,
-                           "https://schema.org/longitude" ,
-                           "https://www.geonames.org/ontology#long" .
+              rdfs:seeAlso geo:long ,
+                           schema:longitude ,
+                           gn:long .
 
 
 ###  https://schema.coypu.org/global#hasModificationTimestamp
@@ -818,8 +832,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
          rdfs:range xsd:string ;
          rdfs:comment "the name of a thing"@en ;
          rdfs:label "has name"@en ;
-         rdfs:seeAlso "http://dbpedia.org/property/name" ,
-                      "https://schema.org/name" .
+         rdfs:seeAlso <http://dbpedia.org/property/name> ,
+                      schema:name .
 
 
 ###  https://schema.coypu.org/global#hasNumberOfEmployees
@@ -829,8 +843,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                       rdfs:range xsd:positiveInteger ;
                       rdfs:comment "the number of employees of a company (in a specified year)"@en ;
                       rdfs:label "has number of employees"@en ;
-                      rdfs:seeAlso "http://dbpedia.org/property/numEmployees" ,
-                                   "https://schema.org/numberOfEmployees" .
+                      rdfs:seeAlso <http://dbpedia.org/property/numEmployees> ,
+                                   schema:numberOfEmployees .
 
 
 ###  https://schema.coypu.org/global#hasPercentage
@@ -849,7 +863,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                 rdfs:range xsd:string ;
                 rdfs:comment "a phone number (should be normalized)"@en ;
                 rdfs:label "has phone number"@en ;
-                rdfs:seeAlso "https://schema.org/telephone" .
+                rdfs:seeAlso schema:telephone .
 
 
 ###  https://schema.coypu.org/global#hasPopulation
@@ -904,7 +918,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:range xsd:decimal ;
             rdfs:comment "the revenue of a company (for a specified year in a specified currency)"@en ;
             rdfs:label "has revenue"@en ;
-            rdfs:seeAlso "https://schema.org/yearlyRevenue" .
+            rdfs:seeAlso schema:yearlyRevenue .
 
 
 ###  https://schema.coypu.org/global#hasRiskLevel
@@ -914,7 +928,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
               rdfs:range xsd:decimal ;
               rdfs:comment "the risk level of a country as defined by Weltrisikobericht"@en ;
               rdfs:label "has risk level"@en ;
-              rdfs:seeAlso "https://weltrisikobericht.de" .
+              rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasRiskScore
@@ -942,7 +956,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
            rdfs:range xsd:string ;
            rdfs:comment "a street address"@en ;
            rdfs:label "has street"@en ;
-           rdfs:seeAlso "https://schema.org/streetAddress" .
+           rdfs:seeAlso schema:streetAddress .
 
 
 ###  https://schema.coypu.org/global#hasSusceptibility
@@ -952,7 +966,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "the susceptibility of a country as defined by Weltrisikobericht"@en ;
                    rdfs:label "has susceptibility"@en ;
-                   rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                   rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasTag
@@ -980,8 +994,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:anyURI ;
         rdfs:comment "the url of a web resource"@en ;
         rdfs:label "has URL"@en ;
-        rdfs:seeAlso "http://dbpedia.org/property/website" ,
-                     "https://schema.org/url" .
+        rdfs:seeAlso <http://dbpedia.org/property/website> ,
+                     schema:url .
 
 
 ###  https://schema.coypu.org/global#hasVat
@@ -991,7 +1005,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "the vat id of a company"@en ;
         rdfs:label "has VAT"@en ;
-        rdfs:seeAlso "https://schema.org/vatID" .
+        rdfs:seeAlso schema:vatID .
 
 
 ###  https://schema.coypu.org/global#hasVolatility
@@ -1010,7 +1024,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                   rdfs:range xsd:decimal ;
                   rdfs:comment "the vulnerability of a country as defined by Weltrisikobericht"@en ;
                   rdfs:label "has vulnerability"@en ;
-                  rdfs:seeAlso "https://weltrisikobericht.de"@en .
+                  rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
 ###  https://schema.coypu.org/global#hasZip
@@ -1020,7 +1034,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
         rdfs:range xsd:string ;
         rdfs:comment "a zip code"@en ;
         rdfs:label "has ZIP"@en ;
-        rdfs:seeAlso "https://schema.org/postalCode" .
+        rdfs:seeAlso schema:postalCode .
 
 
 ###  https://schema.coypu.org/global#isActive
@@ -1077,9 +1091,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> ;
                                                            rdfs:comment "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers. Characteristically, instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Instances of E28 Conceptual Object have the ability to exist on more than one particular carrier at the same time, such as paper, electronic signals, marks, audio media, paintings, photos, human memories, etc. They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost" ;
                                                            rdfs:label "Begrifflicher Gegenstand"@de ,
+                                                                      "Conceptual Object"@en ,
                                                                       "Objet conceptuel"@fr ,
                                                                       "Objeto Conceitual"@pt ,
-                                                                      "conceptual object"@en ,
                                                                       "Νοητικό Αντικείμενο"@el ,
                                                                       "Концептуальный Объект"@ru ,
                                                                       "概念对象"@zh ;
@@ -1093,7 +1107,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                         rdfs:label "Entidade Temporal"@pt ,
                                                                    "Entité temporelle"@fr ,
                                                                    "Geschehendes"@de ,
-                                                                   "temporal entity"@en ,
+                                                                   "Temporal Entity"@en ,
                                                                    "Έγχρονη Οντότητα"@el ,
                                                                    "Временная Сущность"@ru ,
                                                                    "时序实体"@zh ;
@@ -1104,9 +1118,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> rdf:type owl:Class ;
                                                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> ;
                                                         rdfs:comment "This class comprises the states of objects characterised by a certain condition over a time-span. An instance of this class describes the prevailing physical condition of any material object or feature during a specific instance of E52 Time Span. In general, the time-span for which a certain condition can be asserted may be  shorter than the real time-span, for which this condition held. The nature of that condition can be described using P2 has type. For example, the instance of E3 Condition State “condition of the SS Great Britain between 22 September 1846 and 27 August 1847” can be characterized as an instance “wrecked” of E55 Type" ;
-                                                        rdfs:label "Estado Material"@pt ,
+                                                        rdfs:label "Condition State"@en ,
+                                                                   "Estado Material"@pt ,
                                                                    "Zustandsphase"@de ,
-                                                                   "condition state"@en ,
                                                                    "État matériel"@fr ,
                                                                    "Κατάσταση"@el ,
                                                                    "Состояние"@ru ,
@@ -1119,10 +1133,10 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> ,
                                                                <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> ;
                                                rdfs:comment "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space. It is the social or physical coherence of these phenomena that identify an instance of E4 Period and not the associated spatiotemporal extent. This extent is only the “ground” or space in an abstract physical sense that the actual process of growth, spread and retreat has covered. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area and time as a sedentary culture. This also means that overlapping land use rights, common among first nations, amounts to overlapping periods. Often, this class is used to describe prehistoric or historic periods such as the “Neolithic Period”, the “Ming Dynasty” or the “McCarthy Era”, but also geopolitical units and activities of settlements are regarded as special cases of E4 Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore, E4 Period is a superclass of E5 Event. For example, a modern clinical birth, an instance of E67 Birth, can be seen as both a single event, i.e., an instance of E5 Event, and as an extended period, i.e., an instance of E4 Period, that consists of multiple physical processes and complementary activities performed by multiple instances of E39 Actor. As the actual extent of an instance of E4 Period in spacetime we regard the trajectories of the participating physical things during their participation in an instance of E4 Period. This includes the open spaces via which these things have interacted and the spaces by which they had the potential to interact during that period or event in the way defined by the type of the respective period or event. Examples include the air in a meeting room transferring the voices of the participants. Since these phenomena are fuzzy, we assume the spatiotemporal extent to be contiguous, except for cases of phenomena spreading out over islands or other separated areas, including geopolitical units distributed over disconnected areas such as islands or colonies. Whether the trajectories necessary for participants to travel between these areas are regarded as part of the spatiotemporal extent or not has to be decided in each case based on a concrete analysis, taking use of the sea for other purposes than travel, such as fishing, into consideration. One may also argue that the activities to govern disconnected areas imply travelling through spaces connecting them and that these areas hence are spatially connected in a way, but it appears counterintuitive to consider for instance travel routes in international waters as extensions of geopolitical units. Consequently, an instance of E4 Period may occupy a number of disjoint spacetime volumes, however there must not be a discontinuity in the timespan covered by these spacetime volumes. This means that an instance of E4 Period must be contiguous in time. If it has ended in all areas, it has ended as a whole. However, it may end in one area before another, such as in the Polynesian migration, and it continues as long as it is ongoing in at least one area. We model E4 Period as a subclass of E2 Temporal Entity and of E92 Spacetime Volume. The latter is intended as a phenomenal spacetime volume as defined in CIDOC CRMgeo (Doerr &amp;amp; Hiebel, 2013). By virtue of this multiple inheritance, we can discuss the physical extent of an instance of E4 Period without representing each instance of it together with an instance of its associated spacetime volume. This model combines two quite different kinds of substance: an instance of E4 Period is a phenomenon while an instance of E92 Spacetime Volume is an aggregation of points in spacetime. However, the real spatiotemporal extent of an instance of E4 Period is regarded to be unique to it due to all its details and fuzziness; its identity and existence depends uniquely on the identity of the instance of E4 Period. Therefore, this multiple inheritance is unambiguous and effective and furthermore corresponds to the intuitions of natural language. Typical use of this class in cultural heritage documentation is for documenting cultural and artistic periods. There are two different conceptualisations of ‘artistic style’, defined either by physical features or by historical context. For example, “Impressionism” can be viewed as a period in the European sphere of influence lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an instance of E4 Period, and the second defines morphological object types that fall under E55 Type. A geopolitical unit as a specific case of an instance of E4 Period is the set of activities and phenomena related to the claim of power, the consequences of belonging to a jurisdictional area and an administrative system that establishes a geopolitical unit. Examples from the modern period are countries or administrative areas of countries such as districts whose actions and structures define activities and phenomena in the area that they intend to govern. The borders of geopolitical units are often defined in contracts or treaties although they may deviate from the actual practice. The spatiotemporal properties of Geopolitical units can be modelled through the properties inherited from E92 Spacetime Volume. Another specific case of an instance of E4 Period is the actual extent of the set of activities and phenomena as evidenced by their physical traces that define a settlement, such as the populated period of Nineveh" ;
-                                               rdfs:label "Período"@pt ,
+                                               rdfs:label "Period"@en ,
+                                                          "Período"@pt ,
                                                           "Phase"@de ,
                                                           "Période"@fr ,
-                                                          "period"@en ,
                                                           "Περίοδος"@el ,
                                                           "Период"@ru ,
                                                           "时期"@zh ;
@@ -1136,7 +1150,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                rdfs:label "Lieu"@fr ,
                                                           "Local"@pt ,
                                                           "Ort"@de ,
-                                                          "place"@en ,
+                                                          "Place"@en ,
                                                           "Τόπος"@el ,
                                                           "Место"@ru ,
                                                           "地点"@zh ;
@@ -1148,9 +1162,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> ;
                                               rdfs:comment "This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CIDOC CRM classes. Instances of E55 Type represent concepts in contrast to instances of E41 Appellation which are used to name instances of CIDOC CRM classes. E55 Type is the CIDOC CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CIDOC CRM as subclasses of E55 Type, forming hierarchies of terms, i.e., instances of E55 Type linked via P127 has broader term (has narrower term): E55 Type. Such hierarchies may be extended with additional properties" ;
                                               rdfs:label "Tipo"@pt ,
+                                                         "Type"@en ,
                                                          "Type"@fr ,
                                                          "Typus"@de ,
-                                                         "type"@en ,
                                                          "Τύπος"@el ,
                                                          "Тип"@ru ,
                                                          "类型"@zh ;
@@ -1164,15 +1178,15 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                               rdfs:comment "This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles. While the continuous growth of a tree lacks the limits characteristic of an event, its germination from a seed does qualify as an event. Similarly, the blowing of the wind lacks the distinctness and limits of an event, but a hurricane, flood or earthquake would qualify as an event. Mental processes are considered as events, in cases where they are connected with the material externalization of their results; for example, the creation of a poem, a performance or a change of intention that becomes obvious from subsequent actions or declarations. The effects of an instance of E5 Event may not lead to relevant permanent changes of properties or relations of the items involved in it, for example an unrecorded performance. Of course, in order to be documented, some kind of evidence for an event must exist, be it witnesses, traces or products of the event. While instances of E4 Period always require some form of coherence between its constituent phenomena, in addition, the essential constituents of instances of E5 Event should contribute to an overall effect; for example, the statements made during a meeting and the listening of the audience. Viewed at a coarse level of detail, an instance of E5 Event may appear as if it had an ‘instantaneous’ overall effect, but any process or interaction of material nature in reality have an extent in time and space. At a fine level, instances of E5 Event may be analyzed into component phenomena and phases within a space and timeframe, and as such can be seen as a period, regardless of the size of the phenomena. The reverse is not necessarily the case: not all instances of E4 Period give rise to a noteworthy overall effect and are thus not instances of E5 Event" ,
                                                            "an event related to a specific location with a singular occurence"@en ;
                                               rdfs:label "Ereignis"@de ,
+                                                         "Event"@en ,
                                                          "Evento"@pt ,
-                                                         "event"@en ,
                                                          "Événement"@fr ,
                                                          "Συμβάν"@el ,
                                                          "Событие"@ru ,
                                                          "事件"@zh ;
-                                              rdfs:seeAlso "http://eventKG.l3s.uni-hannover.de/schema/Event" ,
-                                                           "https://dbpedia.org/ontology/Event" ,
-                                                           "https://schema.org/Event" ;
+                                              rdfs:seeAlso eventKG:Event ,
+                                                           <https://dbpedia.org/ontology/Event> ,
+                                                           schema:Event ;
                                               skos:prefLabel "event"@en .
 
 
@@ -1181,9 +1195,9 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
                                                           rdfs:comment "This class comprises events that end the existence of any instance of E77 Persistent Item. It may be used for temporal reasoning about things (physical items, groups of people, living beings)  ceasing to exist; it serves as a hook for determination of a “terminus post quem” or “terminus ante quem”. In cases where substance from an instance of E64 Persistent Item continues to exist in a new form, the process would be documented as instances of E81 Transformation" ;
                                                           rdfs:label "Daseinsende"@de ,
+                                                                     "End of Existence"@en ,
                                                                      "Fim da Existência"@pt ,
                                                                      "Fin d'existence"@fr ,
-                                                                     "end of existence"@en ,
                                                                      "Τέλος Ύπαρξης"@el ,
                                                                      "Конец Существования"@ru ,
                                                                      "结束"@zh ;
@@ -1194,10 +1208,10 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E6_Destruction> rdf:type owl:Class ;
                                                     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> ;
                                                     rdfs:comment "This class comprises events that destroy one or more instances of E18 Physical Thing such that they lose their identity as the subjects of documentation. Some destruction events are intentional, while others are independent of human activity. Intentional destruction may be documented by classifying the event as both an instance of E6 Destruction and of E7 Activity. The decision to document an object as destroyed, transformed or modified is context sensitive: 1. If the matter remaining from the destruction is not documented, the event is modelled solely as an instance of E6 Destruction. 2. An event should also be documented as an instance of E81 Transformation if it results in the destruction of one or more objects and the simultaneous production of others using parts or material from the original. In this case, the new items have separate identities. Matter is preserved, but identity is not. 3. When the initial identity of the changed instance of E18 Physical Thing is preserved, the event should be documented as an instance of E11 Modification" ;
-                                                    rdfs:label "Destruction"@fr ,
+                                                    rdfs:label "Destruction"@en ,
+                                                               "Destruction"@fr ,
                                                                "Destruição"@pt ,
                                                                "Zerstörung"@de ,
-                                                               "destruction"@en ,
                                                                "Καταστροφή"@el ,
                                                                "Разрушение"@ru ,
                                                                "破坏"@zh ;
@@ -1211,7 +1225,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                rdfs:label "Chose"@fr ,
                                                           "Coisa"@pt ,
                                                           "Sache"@de ,
-                                                          "thing"@en ,
+                                                          "Thing"@en ,
                                                           "Πράγμα"@el ,
                                                           "Вещь"@ru ,
                                                           "事物"@zh ;
@@ -1222,7 +1236,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> rdf:type owl:Class ;
                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
                                                           rdfs:comment "This class comprises discrete, identifiable human-made items that are documented as single units. These items are either intellectual products or human-made physical things, and are characterized by relative stability. They may for instance have a solid physical form, an electronic encoding, or they may be logical concepts or structures" ;
-                                                          rdfs:label "human-made"@en ;
+                                                          rdfs:label "Human-Made"@en ;
                                                           skos:prefLabel "human-made"@en .
 
 
@@ -1230,10 +1244,10 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> rdf:type owl:Class ;
                                                       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
                                                       rdfs:comment "This class comprises those material or immaterial items to which instances of E30 Right, such as the right of ownership or use, can be applied. This is true for all instances of E18 Physical Thing. In the case of instances of E28 Conceptual Object, however, the identity of an instance of E28 Conceptual Object or the method of its use may be too ambiguous to reliably establish instances of E30 Right, as in the case of taxa and inspirations. Ownership of corporations is currently regarded as out of scope of the CIDOC CRM" ;
-                                                      rdfs:label "Objet juridique"@fr ,
+                                                      rdfs:label "Legal Object"@en ,
+                                                                 "Objet juridique"@fr ,
                                                                  "Objeto Jurídico"@pt ,
                                                                  "Rechtsobjekt"@de ,
-                                                                 "legal object"@en ,
                                                                  "Νομικό Αντικείμενο"@el ,
                                                                  "Объект Права"@ru ,
                                                                  "法律对象"@zh ;
@@ -1247,8 +1261,8 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          rdfs:label ">持久项"@zh ,
                                                                     "Entidade Persistente"@pt ,
                                                                     "Entité persistante"@fr ,
+                                                                    "Persistent Item"@en ,
                                                                     "Seiendes"@de ,
-                                                                    "persistent item"@en ,
                                                                     "Ον"@el ,
                                                                     "Постоянная Сущность"@ru ;
                                                          skos:prefLabel "persistent item"@en .
@@ -1258,7 +1272,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> rdf:type owl:Class ;
                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
                                                           rdfs:comment "This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place and E52 Timespan are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time" ;
-                                                          rdfs:label "spacetime volume"@en ;
+                                                          rdfs:label "Spacetime Volume"@en ;
                                                           skos:prefLabel "spacetime volume"@en .
 
 
@@ -1266,7 +1280,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 <http://www.cidoc-crm.org/cidoc-crm/E99_Product_Type> rdf:type owl:Class ;
                                                       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
                                                       rdfs:comment "This classes comprises types that stand as the models for instances of E22 Human-Made Object that are produced as the result of production activities using plans exact enough to result in one or more series of uniform, functionally and aesthetically identical and interchangeable items. The product type is the intended ideal form of the manufacture process. It is typical of instances of E22 that conform to an instance of E99 Product Type that its component parts are interchangeable with component parts of other instances of E22 made after the model of the same instance of E99. Frequently, the uniform production according to a given instance of E99 Product Type is achieved by creating individual tools, such as moulds or print plates that are themselves carriers of the design of the product type. Modern tools may use the flexibility of electronically controlled devices to achieve such uniformity. The product type itself, i.e., the potentially unlimited series of aesthetically equivalent items, may be the target of artistic design, rather than the individual object. In extreme cases, only one instance of a product type may have been produced, such as in a 'print on demand' process which was only triggered once. However, this should not be confused with industrial prototypes, such as car prototypes, which are produced prior to the production line being set up, or test the production line itself" ;
-                                                      rdfs:label "product type"@en ;
+                                                      rdfs:label "Product Type"@en ;
                                                       skos:prefLabel "product type"@en .
 
 
@@ -1342,7 +1356,9 @@ beAWARE_ontology:LivingBeing rdf:type owl:Class ;
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location
 beAWARE_ontology:Location rdf:type owl:Class ;
                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-                          rdfs:label "Location" .
+                          rdfs:label "location"@en ;
+                          skos:prefLabel "location"@en .
+
 
 
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster
@@ -1351,7 +1367,7 @@ beAWARE_ontology:NaturalDisaster rdf:type owl:Class ;
                                                  :Disaster ;
                                  rdfs:comment "a natural crisis or disaster event"@en ;
                                  rdfs:label "natural disaster"@en ;
-                                 rdfs:seeAlso "https://www.emdat.be/guidelines" ;
+                                 rdfs:seeAlso <https://www.emdat.be/guidelines> ;
                                  skos:definition "Represents the actual manifestation of a natural disaster type. An instance of a natural disaster has specific climate conditions with specific values (e.g. temperature = 45) plus some other properties (e.g. start/end time)" ;
                                  skos:prefLabel "natural disaster"@en .
 
@@ -1421,7 +1437,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
             rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
             rdfs:comment "an epidemic, pandemic or infestation event"@en ;
             rdfs:label "biological disaster"@en ;
-            rdfs:seeAlso "https://www.emdat.be/guidelines" .
+            rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#ChemicalWeapon
@@ -1437,8 +1453,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
       rdfs:subClassOf beAWARE_ontology:Location ;
       rdfs:comment "a city as defined by NUTS or IATA"@en ;
       rdfs:label "city"@en ;
-      rdfs:seeAlso "https://dbpedia.org/ontology/City" ,
-                   "https://schema.org/City" .
+      rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
+                   schema:City .
 
 
 ###  https://schema.coypu.org/global#Climatological
@@ -1446,7 +1462,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                 rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                 rdfs:comment "a drought, wildfire or glacial lake outburst event"@en ;
                 rdfs:label "climatological disaster"@en ;
-                rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Commodity
@@ -1462,8 +1478,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                          owl:Thing ;
          rdfs:comment "a company, organization or corporation"@en ;
          rdfs:label "company"@en ;
-         rdfs:seeAlso "http://dbpedia.org/ontology/Company" ,
-                      "https://schema.org/Corporation" .
+         rdfs:seeAlso dbo:Company ,
+                      schema:Corporation .
 
 
 ###  https://schema.coypu.org/global#Country
@@ -1471,8 +1487,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf beAWARE_ontology:Location ;
          rdfs:comment "a country as defined in ISO 3166"@en ;
          rdfs:label "country"@en ;
-         rdfs:seeAlso "https://dbpedia.org/ontology/Country" ,
-                      "https://schema.org/Country" .
+         rdfs:seeAlso <https://dbpedia.org/ontology/Country> ,
+                      schema:Country .
 
 
 ###  https://schema.coypu.org/global#CybersecurityAccident
@@ -1493,7 +1509,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
           rdfs:comment "a natural or technological disaster"@en ;
           rdfs:label "disaster"@en ;
-          rdfs:seeAlso "https://www.emdat.be/guidelines" .
+          rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#DisruptedWeaponUse
@@ -1513,7 +1529,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                   rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                   rdfs:comment "a space weather event"@en ;
                   rdfs:label "extraterrestrial disaster"@en ;
-                  rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                  rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Factory
@@ -1528,7 +1544,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
              rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
              rdfs:comment "an earthquake, volcanic eruption or storm event"@en ;
              rdfs:label "geophysical disaster"@en ;
-             rdfs:seeAlso "https://www.emdat.be/guidelines" .
+             rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#GovernmentRegainsTerritory
@@ -1554,7 +1570,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
               rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
               rdfs:comment "a landslide, wave action or flooding event"@en ;
               rdfs:label "hydrological disaster"@en ;
-              rdfs:seeAlso "https://www.emdat.be/guidelines" .
+              rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#IndustrialAccident
@@ -1562,15 +1578,16 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                     rdfs:subClassOf :TechnologicalDisaster ;
                     rdfs:comment "an event related to a production site or factory operations"@en ;
                     rdfs:label "industrial accident"@en ;
-                    rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                    rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Industry
 :Industry rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
-          rdfs:label "industry"@en ;
-          rdfs:seeAlso "https://dbpedia.org/page/Category:Economic_sectors" .
+          rdfs:label "industry"@en ,
+                     "Wirtschaftszweig"@de ;
+          rdfs:seeAlso dbr:Category:Economic_sectors .
 
 
 ###  https://schema.coypu.org/global#Infrastructure
@@ -1585,8 +1602,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "a production material"@en ;
           rdfs:label "material"@en ;
-          rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" ,
-                       "https://dbpedia.org/page/Material" .
+          rdfs:seeAlso dbr:Material ,
+                       <https://dbpedia.org/resource/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#Meteorological
@@ -1594,7 +1611,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                 rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
                 rdfs:comment "a storm or extreme temperature event"@en ;
                 rdfs:label "meteorological disaster"@en ;
-                rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#MiscellaneousAccident
@@ -1602,7 +1619,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                        rdfs:subClassOf :TechnologicalDisaster ;
                        rdfs:comment "a technological event not covered otherwise"@en ;
                        rdfs:label "miscellaneous accident"@en ;
-                       rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                       rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#MobViolence
@@ -1653,9 +1670,9 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:subClassOf owl:Thing ;
         rdfs:comment "a natural person"@en ;
         rdfs:label "person"@en ;
-        rdfs:seeAlso "http://xmlns.com/foaf/0.1/Person" ,
-                     "https://dbpedia.org/ontology/Person" ,
-                     "https://schema.org/Person" .
+        rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> ,
+                     <https://dbpedia.org/ontology/Person> ,
+                     schema:Person .
 
 
 ###  https://schema.coypu.org/global#Pipeline
@@ -1684,9 +1701,9 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "product"@en ;
-         rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" ,
-                      "https://dbpedia.org/page/Material" ,
-                      "https://schema.org/Product" .
+         rdfs:seeAlso dbr:Material ,
+                      <https://dbpedia.org/resource/Category:Goods_(economics)> ,
+                      schema:Product .
 
 
 ###  https://schema.coypu.org/global#ProtestWithIntervention
@@ -1700,8 +1717,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
         rdfs:subClassOf beAWARE_ontology:Location ;
         rdfs:comment "an administrative or economic area"@en ;
         rdfs:label "region"@en ;
-        rdfs:seeAlso "https://dbpedia.org/ontology/AdministrativeRegion" ,
-                     "https://schema.org/AdministrativeArea" .
+        rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
+                     schema:AdministrativeArea .
 
 
 ###  https://schema.coypu.org/global#Riots
@@ -1717,7 +1734,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "a utility or non-material product"@en ;
          rdfs:label "service"@en ;
-         rdfs:seeAlso "https://dbpedia.org/page/Category:Goods_(economics)" .
+         rdfs:seeAlso <https://dbpedia.org/resource/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
@@ -1746,7 +1763,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                        rdfs:subClassOf :Disaster ;
                        rdfs:comment "a man-made crisis or disaster event"@en ;
                        rdfs:label "technological disaster"@en ;
-                       rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                       rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#Terminal
@@ -1756,12 +1773,18 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:label "terminal"@en .
 
 
+###  https://schema.coypu.org/global#TerritorialEntityOfSingleCountry
+:TerritorialEntityOfSingleCountry rdf:type owl:Class ;
+                                  rdfs:subClassOf beAWARE_ontology:Location ;
+                                  rdfs:comment "Some Teritorial entity, that belongs to a single country."@en .
+
+
 ###  https://schema.coypu.org/global#TransportAccident
 :TransportAccident rdf:type owl:Class ;
                    rdfs:subClassOf :TechnologicalDisaster ;
                    rdfs:comment "an event relating to logistical operations"@en ;
                    rdfs:label "transport accident"@en ;
-                   rdfs:seeAlso "https://www.emdat.be/guidelines" .
+                   rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#ViolenceAgainstCivilians
