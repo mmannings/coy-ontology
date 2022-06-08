@@ -24,6 +24,15 @@ rutt:english-language-tag
     rut:sparqlWhere """ {
       VALUES ?t {rdf:Property owl:DataProperty owl:ObjectProperty rdfs:Class owl:Class}
       ?this a ?t
+      FILTER(
+        !(strstarts(str(?this), str(rdf:)) || 
+          strstarts(str(?this), str(rdfs:)) ||
+          strstarts(str(?this), str(owl:)) ||  
+          strstarts(str(?this), str(skos:)) ||
+          strstarts(str(?this), str(dcterms:))  
+        )
+      
+      ) # omit built-in vocab entities
 
       FILTER NOT EXISTS {?this rdfs:label ?l FILTER(langmatches(lang(?l), "en"))}
     }""" ;
