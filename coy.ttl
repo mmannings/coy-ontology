@@ -1,4 +1,4 @@
-Demonstrationcoypu.org/global@prefix : <https://schema.coypu.org/global#> .
+@prefix : <https://schema.coypu.org/global#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
