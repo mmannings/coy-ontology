@@ -23,22 +23,33 @@ rutt:english-language-tag
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
     rut:sparqlWhere """ {
       VALUES ?t {rdf:Property owl:DataProperty owl:ObjectProperty rdfs:Class owl:Class}
-      ?this a ?t
+      ?this a ?t 
+
+      # omit built-in vocab entities
       FILTER(
         !(strstarts(str(?this), str(rdf:)) || 
           strstarts(str(?this), str(rdfs:)) ||
           strstarts(str(?this), str(owl:)) ||  
           strstarts(str(?this), str(skos:)) ||
           strstarts(str(?this), str(dcterms:))  
-        )
-      
-      ) # omit built-in vocab entities
+        )  
+      ) 
 
       FILTER NOT EXISTS {?this rdfs:label ?l FILTER(langmatches(lang(?l), "en"))}
     }""" ;
     rut:sparqlPrevalence """ SELECT (count(?this) AS ?total) WHERE {
       VALUES ?t {rdf:Property owl:DataProperty owl:ObjectProperty rdfs:Class owl:Class}
       ?this a ?t
+
+      # omit built-in vocab entities
+      FILTER(
+        !(strstarts(str(?this), str(rdf:)) || 
+          strstarts(str(?this), str(rdfs:)) ||
+          strstarts(str(?this), str(owl:)) ||  
+          strstarts(str(?this), str(skos:)) ||
+          strstarts(str(?this), str(dcterms:))  
+        )  
+      ) 
     } """ ;
 
     rut:testCaseLogLevel
