@@ -30,8 +30,7 @@ rutt:english-language-tag
         !(strstarts(str(?this), str(rdf:)) || 
           strstarts(str(?this), str(rdfs:)) ||
           strstarts(str(?this), str(owl:)) ||  
-          strstarts(str(?this), str(skos:)) ||
-          strstarts(str(?this), str(dcterms:))  
+          strstarts(str(?this), "http://www.w3.org/2004/02/skos/core#")  
         )  
       ) 
 
@@ -46,8 +45,7 @@ rutt:english-language-tag
         !(strstarts(str(?this), str(rdf:)) || 
           strstarts(str(?this), str(rdfs:)) ||
           strstarts(str(?this), str(owl:)) ||  
-          strstarts(str(?this), str(skos:)) ||
-          strstarts(str(?this), str(dcterms:))  
+          strstarts(str(?this), "http://www.w3.org/2004/02/skos/core#")
         )  
       ) 
     } """ ;
