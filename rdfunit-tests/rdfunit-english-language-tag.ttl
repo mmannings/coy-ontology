@@ -22,18 +22,15 @@ rutt:english-language-tag
     rut:references rdf:Property, owl:DatatypeProperty, owl:ObjectProperty ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
     rut:sparqlWhere """ {
+      VALUES ?t {rdf:Property owl:DataProperty owl:ObjectProperty rdfs:Class owl:Class}
       ?this a ?t
-      FILTER (?t in (rdf:Property, owl:DataProperty, owl:ObjectProperty, rdfs:Class, owl:Class))
 
-      ?this rdfs:label ?l
-      FILTER(lang(?l) != "en")
-         }""" ;
+      FILTER NOT EXISTS {?this rdfs:label ?l FILTER(langmatches(lang(?l), "en"))}
+    }""" ;
     rut:sparqlPrevalence """ SELECT (count(?this) AS ?total) WHERE {
+      VALUES ?t {rdf:Property owl:DataProperty owl:ObjectProperty rdfs:Class owl:Class}
       ?this a ?t
-      FILTER (?t in (rdf:Property, owl:DataProperty, owl:ObjectProperty, rdfs:Class, owl:Class))
-
-      ?this rdfs:label ?l
-          } """ ;
+    } """ ;
 
     rut:testCaseLogLevel
               rlog:WARN .
