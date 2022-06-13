@@ -39,5 +39,5 @@ cd:
   script:
     - mv dist/index-en.html dist/index.html && rm dist/readme.md
     - git config user.email "tboonx@googlemail.com" &&  git config user.name "TBoonX"
-    - git clone https://gitlab-ci-token:$gitlab_pac_push@gitlab.com/coypu-project/coy-documentation.git repo && cd repo && cp -r ../dist/* ./public/
-    - git add . && git commit -am "CD" && git push git push https://gitlab-ci-token:$gitlab_pac_push@gitlab.com/coypu-project/coy-documentation.git HEAD:master
+    - git clone https://TBoonX:$gitlab_pac_push@gitlab.com/coypu-project/coy-documentation.git repo && cd repo && cp -r ../dist/* ./public/
+    - git add . && git commit -am "CD" && git push https://TBoonX:$gitlab_pac_push@gitlab.com/coypu-project/coy-documentation.git HEAD:main
