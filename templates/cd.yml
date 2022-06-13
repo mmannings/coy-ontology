@@ -1,7 +1,7 @@
 download:
   stage: download
   rules:
-    - if: '$CI_COMMIT_TAG ~ /^verified20/'
+    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: tboonx/git:latest
     entrypoint: [""]
@@ -17,7 +17,7 @@ download:
 widoco:
   stage: widoco
   rules:
-    - if: '$CI_COMMIT_TAG ~ /^verified20/'
+    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
@@ -32,7 +32,7 @@ widoco:
 cd:
   stage: cd
   rules:
-    - if: '$CI_COMMIT_TAG ~ /^verified20/'
+    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: bitnami/git:latest
     entrypoint: [""]
