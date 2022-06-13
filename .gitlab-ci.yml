@@ -20,14 +20,16 @@ workflow:
   rules:
     - if: '$CI_COMMIT_TAG !~ /^verified20/'
 
-stages:
-  - rdfunit
-  - oops
-  - interprete
-  - reasoner
-  - git
+stages: # skip old stages
+  #- rdfunit
+  #- oops
+  #- interprete
+  #- reasoner
+  #- git
   # Now CD part
   - download
+  - widoco
+  - cd
 
 syntax:
   stage: .pre
