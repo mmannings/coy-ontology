@@ -38,8 +38,8 @@
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.5"@en ;
-                                   owl:versionInfo "1.6"@en ;
+                                   owl:priorVersion "1.5"@en ; # URI is needed
+                                   owl:versionInfo "1.6"@en ; # URI is needed
                                    <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
