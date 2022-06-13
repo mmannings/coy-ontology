@@ -27,7 +27,7 @@ widoco:
       - "./dist"
     public: false
   script:
-    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./MatVoc-Core.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
+    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
 
 cd:
   stage: cd
