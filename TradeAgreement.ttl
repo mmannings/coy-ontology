@@ -1,0 +1,259 @@
+@prefix : <https://schema.coypu.org/global#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://schema.coypu.org/global#> .
+
+<https://schema.coypu.org/global#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://schema.coypu.org/global#0.1.0> ;
+                                 rdfs:seeAlso "https://rtais.wto.org/UI/PublicMaintainRTAHome.aspx" ;
+                                 owl:versionInfo "v0.1.0" .
+
+############  Classes
+
+
+###  https://schema.coypu.org/global#TradeAgreement
+:TradeAgreement rdf:type owl:Class ;
+                rdfs:comment """A trade agreement (also known as trade pact) is a wide-ranging taxes, tariff and
+                                trade treaty that often includes investment guarantees. It exists when two or more countries agree
+                                on terms that help them trade with each other. The most common trade agreements are of the
+                                preferential and free trade types, which are concluded in order to reduce (or eliminate) tariffs,
+                                quotas and other trade restrictions on items traded between the signatories."""@en ;
+                rdfs:label "Trade agreement"@en .
+
+
+###  https://schema.coypu.org/global#RegionalTradeAgreement
+:RegionalTradeAgreement rdf:type owl:Class ;
+                        rdfs:subClassOf :TradeAgreement ;
+                        rdfs:comment """RTAs in the WTO are taken to mean any reciprocal trade agreement between two or more
+                                        partners, not necessarily belonging to the same region."""@en ;
+                        rdfs:label "Regional trade agreement"@en .
+
+
+###  https://schema.coypu.org/global#FreeTradeAgreement
+:FreeTradeAgreement rdf:type owl:Class ;
+                    rdfs:subClassOf :TradeAgreement ;
+                    rdfs:label "Free trade agreement"@en .
+
+
+###  https://schema.coypu.org/global#FreeTradeArea
+:FreeTradeArea rdf:type owl:Class ;
+               rdfs:subClassOf :RegionalTradeAgreement ;
+               rdfs:comment """A free-trade area shall be understood to mean a group of two or more customs territories
+                               in which the duties and other restrictive regulations of commerce (except, where necessary,
+                               those permitted under Articles XI, XII, XIII, XIV, XV and XX) are eliminated on substantially
+                               all the trade between the constituent territories in products originating in such territories."""@en ;
+               rdfs:seeAlso "https://www.wto.org/english/tratop_e/region_e/regatt_e.htm"@en ;
+               rdfs:label "Free trade area"@en .
+
+
+###  https://schema.coypu.org/global#CustomsUnion
+:CustomsUnion rdf:type owl:Class ;
+              rdfs:subClassOf :RegionalTradeAgreement ;
+              rdfs:comment """A customs union shall be understood to mean the substitution of a single customs territory
+                              for two or more customs territories, so that (i) duties and other restrictive regulations
+                              of commerce (except, where necessary, those permitted under Articles XI, XII, XIII, XIV, XV and XX)
+                              are eliminated with respect to substantially all the trade between the constituent
+                              territories of the union or at least with respect to substantially all the trade in products
+                              originating in such territories, and, (ii) subject to the provisions of paragraph 9, substantially
+                              the same duties and other regulations of commerce are applied by each of the members of the union
+                              to the trade of territories not included in the union;"""@en ;
+              rdfs:seeAlso "https://www.wto.org/english/tratop_e/region_e/regatt_e.htm"@en ;
+              rdfs:label "Customs union"@en .
+
+
+###  https://schema.coypu.org/global#EconomicIntegrationAgreement
+:EconomicIntegrationAgreement rdf:type owl:Class ;
+                              rdfs:subClassOf :RegionalTradeAgreement ;
+                              rdfs:seeAlso "https://www.wto.org/english/docs_e/legal_e/26-gats_01_e.htm#articleV"@en ;
+                              rdfs:label "Economic integration agreement"@en .
+
+
+###  https://schema.coypu.org/global#PartialScopeAgreement
+:PartialScopeAgreement rdf:type owl:Class ;
+                       rdfs:subClassOf :RegionalTradeAgreement ;
+                       rdfs:comment """"Partial Scope" which is not defined or referred to in the WTO Agreement, means
+                                       that the agreement covers only certain products. """@en ;
+                       rdfs:seeAlso "https://www.wto.org/english/docs_e/legal_e/enabling1979_e.htm"@en ;
+                       rdfs:label "Partial scope agreement"@en .
+
+
+
+
+##########  Datatype Properties
+
+###  https://schema.coypu.org/global#hasCoverage
+:hasCoverage rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RegionalTradeAgreement ;
+             rdfs:range xsd:string ;
+             rdfs:label "has coverage"@en .
+
+
+###  https://schema.coypu.org/global#hasRtaType
+:hasType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :RegionalTradeAgreement ;
+         rdfs:range xsd:string ;
+         rdfs:label "has regional trade agreement type"@en .
+
+
+### https://schema.coypu.org/global#hasRtaStatus
+:hasRtaStatus rdf:type owl:DatatypeProperty ;
+              rdfs:domain :RegionalTradeAgreement ;
+              rdfs:range xsd:string ;
+              rdfs:label "has regional trade agreement status"@en .
+
+
+###  https://schema.coypu.org/global#hasNotification
+:hasNotification rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RegionalTradeAgreement ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has notification"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfSignature%28Goods%29
+<https://schema.coypu.org/global#hasDateOfSignature%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain :RegionalTradeAgreement ;
+                                                                  rdfs:range xsd:dateTime ;
+                                                                  rdfs:label "has date of signature(goods)"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfSignature%28Services%29
+<https://schema.coypu.org/global#hasDateOfSignature%28Services%29> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain :RegionalTradeAgreement ;
+                                                                     rdfs:range xsd:dateTime ;
+                                                                     rdfs:label "has date of signature(servies)"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfNotification%28Goods%29
+<https://schema.coypu.org/global#hasDateOfNotification%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain :RegionalTradeAgreement ;
+                                                                     rdfs:range xsd:dateTime ;
+                                                                     rdfs:label "has date of notification(goods)"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfNotification%28Services%29
+<https://schema.coypu.org/global#hasDateOfNotification%28Services%29> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :RegionalTradeAgreement ;
+                                                                        rdfs:range xsd:dateTime ;
+                                                                        rdfs:label "has date of notification(services)"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfEntryIntoForce%28Goods%29
+<https://schema.coypu.org/global#hasDateOfEntryIntoForce%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain :RegionalTradeAgreement ;
+                                                                       rdfs:range xsd:dateTime ;
+                                                                       rdfs:label "has date of entry into force(goods)"@en .
+
+
+###  https://schema.coypu.org/global#hasDateOfEntryIntoForce%28Services%29
+<https://schema.coypu.org/global#hasDateOfEntryIntoForce%28Services%29> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain :RegionalTradeAgreement ;
+                                                                           rdfs:range xsd:dateTime ;
+                                                                           rdfs:label "has date of entry into force(services)"@en .
+
+
+###  https://schema.coypu.org/global#hasInactiveDate
+:hasInactiveDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RegionalTradeAgreement ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:label "has inactive date"@en .
+
+
+###  https://schema.coypu.org/global#isAccession
+:isAccession rdf:type owl:DatatypeProperty ;
+             rdfs:domain :RegionalTradeAgreement ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "is accession"@en .
+
+
+###  https://schema.coypu.org/global#hasRtaComposition
+:hasRtaComposition rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :RegionalTradeAgreement ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "has RTA composition"@en .
+
+
+###  https://schema.coypu.org/global#isCrossRegional
+:isCrossRegional rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RegionalTradeAgreement ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:label "is cross regional"@en .
+
+
+###  https://schema.coypu.org/global#isAllPartiesWtoMembers
+:isAllPartiesWtoMembers rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :RegionalTradeAgreement ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:label "is all parties WTO members"@en .
+
+
+###  https://schema.coypu.org/global#hasCurrentSignatories
+:hasCurrentSignatories rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :RegionalTradeAgreement ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "has current signatories"@en .
+
+
+###  https://schema.coypu.org/global#hasOriginalSignatories
+:hasOriginalSignatories rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :RegionalTradeAgreement ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "has original signatories"@en .
+
+
+###  https://schema.coypu.org/global#hasSpecificEntry%2FExitDate
+<https://schema.coypu.org/global#hasSpecificEntry%2FExitDate> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain :RegionalTradeAgreement ;
+                                                                 rdfs:range xsd:dateTime ;
+                                                                 rdfs:label "has specific entry/exit dates"@en .
+
+
+###  https://schema.coypu.org/global#hasWtoConsiderationProcess%28Goods%29
+<https://schema.coypu.org/global#hasWtoConsiderationProcess%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain :RegionalTradeAgreement ;
+                                                                          rdfs:range xsd:string ;
+                                                                          rdfs:label "has WTO consideration process(goods)"@en.
+
+
+###  https://schema.coypu.org/global#hasConsiderationDate%28Goods%29
+<https://schema.coypu.org/global#hasConsiderationDate%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain :RegionalTradeAgreement ;
+                                                                    rdfs:range xsd:dateTime ;
+                                                                    rdfs:label "has consideration date(goods)"@en .
+
+
+###  https://schema.coypu.org/global#hasWtoConsiderationProcess%28Services%29
+<https://schema.coypu.org/global#hasWtoConsiderationProcess%28Services%29> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain :RegionalTradeAgreement ;
+                                                                              rdfs:range xsd:string ;
+                                                                              rdfs:label "has WTO consideration process(services)"@en .
+
+
+###  https://schema.coypu.org/global#hasConsiderationDate%28Services%29
+<https://schema.coypu.org/global#hasConsiderationDate%28Services%29> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :RegionalTradeAgreement ;
+                                                                        rdfs:range xsd:dateTime ;
+                                                                        rdfs:label "has consideration date(services)"@en .
+
+
+###  https://schema.coypu.org/global#hasEndOfImplementationPeriod%28Goods%29
+<https://schema.coypu.org/global#hasEndOfImplementationPeriod%28Goods%29> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain :RegionalTradeAgreement ;
+                                                                          rdfs:range xsd:integer ;
+                                                                          rdfs:label "has end of implementation date (goods)"@en .
+
+
+###  https://schema.coypu.org/global#hasEndOfImplementationPeriod%Services%29
+<https://schema.coypu.org/global#hasEndOfImplementationPeriod%Services%29> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain :RegionalTradeAgreement ;
+                                                                           rdfs:range xsd:integer ;
+                                                                           rdfs:label "has end of implementation date (services)"@en .
+
+
+###  https://schema.coypu.org/global#hasRemarks
+:hasRemarks rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RegionalTradeAgreement ;
+            rdfs:range xsd:string ;
+            rdfs:label "has remarks"@en .
