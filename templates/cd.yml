@@ -3,7 +3,7 @@ download:
   rules:
     - if: '$CI_COMMIT_TAG ~ /^verified20/'
   image:
-    name: tboonx/git:latest
+    name: alpine/git:latest
     entrypoint: [""]
   artifacts:
     when: always
@@ -34,11 +34,10 @@ cd:
   rules:
     - if: '$CI_COMMIT_TAG ~ /^verified20/'
   image:
-    name: bitnami/git:latest
+    name: alpine/git:latest
     entrypoint: [""]
   script:
     - mv dist/index-en.html dist/index.html && rm dist/readme.md
-    - git config user.email "tboonx@googlemail.com" &&  git config user.name "TBoonX"
+    - git config --global user.email "tboonx@googlemail.com" &&  git --global config user.name "TBoonX"
     - git clone "https://TBoonX:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/
-    - git config user.email "tboonx@googlemail.com" &&  git config user.name "TBoonX"
     - git add . && git commit -am "CD" && git push "https://TBoonX:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
