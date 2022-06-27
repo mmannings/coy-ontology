@@ -38,6 +38,6 @@ cd:
     entrypoint: [""]
   script:
     - mv dist/index-en.html dist/index.html && rm dist/readme.md
-    - git config --global user.email "tboonx@googlemail.com" &&  git config --global user.name "TBoonX"
-    - git clone "https://TBoonX:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/
-    - git add . && git commit -am "CD" && git push "https://TBoonX:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
+    - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
+    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/
+    - git add . && git commit -am "CD" && git push "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
