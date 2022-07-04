@@ -1529,11 +1529,79 @@ It is recommended that internationally or nationally agreed codes and terminolog
 # 
 # https://schema.coypu.org/global#Person
 
-:Person a owl:Class ;
-	rdfs:subClassOf owl:Thing ;
-	rdfs:comment "a natural person"@en ;
-	rdfs:label "person"@en ;
-	rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> , <https://dbpedia.org/ontology/Person> , schema:Person .
+#:Person a owl:Class ;
+#	rdfs:subClassOf owl:Thing ;
+#	rdfs:comment "a natural person"@en ;
+#	rdfs:label "person"@en ;
+#	rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> , <https://dbpedia.org/ontology/Person> , schema:Person .
+	
+	<http://www.cidoc-crm.org/cidoc-crm/E21_Person> a owl:Class;
+                                                rdfs:comment """This class comprises real persons who live or are assumed to have lived.
+Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CIDOC CRM does not propose a specific form to support reasoning about possible identity.
+In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (an instance of E21 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of E21 Person does not imply that the concept comprises personae.""";
+                                                rdfs:label "Person"@en,
+                                                           "Person"@de,
+                                                           "Πρόσωπο"@el,
+                                                           "Personne"@fr,
+                                                           "Pessoa"@pt,
+                                                           "Личность"@ru,
+                                                           "人物"@zh;
+                                                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object>,
+                                                                <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>.
+
+<http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> a owl:Class;
+                                                           rdfs:comment """This class comprises individual items of a material nature, which live, have lived or are natural products of or from living organisms.
+Artificial objects that incorporate biological elements, such as Victorian butterfly frames, can be documented as both instances of E20 Biological Object and E22 Human-Made Object.""";
+                                                           rdfs:label "Biological Object"@en,
+                                                                      "Biologischer Gegenstand"@de,
+                                                                      "Βιολογικό Ακτικείμενο"@el,
+                                                                      "Objet biologique"@fr,
+                                                                      "Objeto Biológico"@pt,
+                                                                      "Биологический Объект"@ru,
+                                                                      "生物对象"@zh;
+                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>.
+	
+<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> a owl:Class;
+                                                         rdfs:comment """This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.
+The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen. Typically, instances of E19 Physical Object can be moved (if not too heavy).
+In some contexts, such objects, except for aggregates, are also called “bona fide objects” (Smith &amp; Varzi, 2000, pp.401-420), i.e., naturally defined objects.
+The decision as to what is documented as a complete item, rather than by its parts or components, may be a purely administrative decision or may be a result of the order in which the item was acquired.""";
+                                                         rdfs:label "Physical Object"@en,
+                                                                    "Materieller Gegenstand"@de,
+                                                                    "Υλικό Αντικείμενο"@el,
+                                                                    "Objet matériel"@fr,
+                                                                    "Objeto Material"@pt,
+                                                                    "Физический Объект"@ru,
+                                                                    "物质对象"@zh;
+                                                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>.
+														 
+<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> a owl:Class;
+                                               rdfs:comment "This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.";
+                                               rdfs:label "Actor"@en,
+                                                          "Akteur"@de,
+                                                          "Δράστης"@el,
+                                                          "Agent"@fr,
+                                                          "Agente"@pt,
+                                                          "Агент"@ru,
+                                                          "参与者"@zh;
+                                               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item>.
+											   
+<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> a owl:Class;
+                                                         rdfs:comment """This class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names.
+Instances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics use to be sufficiently similar to recognize the instance for some substantial period of time.
+The more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described of referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols.
+The main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties.
+An instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge.""";
+                                                         rdfs:label "Persistent Item"@en,
+                                                                    "Seiendes"@de,
+                                                                    "Ον"@el,
+                                                                    "Entité persistante"@fr,
+                                                                    "Entidade Persistente"@pt,
+                                                                    "Постоянная Сущность"@ru,
+                                                                    "持久项"@zh;
+                                                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>.
+											   
+																
 # 
 # https://schema.coypu.org/global#Pipeline
 
