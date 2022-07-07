@@ -34,10 +34,12 @@ syntax:
     paths:
       - "./rdfunit-tests/allTests.ttl"
       - "./main.ttl"
+      - "./main.xml"
     public: false
   script:
     - cp coy.ttl main.ttl
     - rapper -o turtle -i turtle main.ttl
+    - rapper -o rdfxml -i turtle main.ttl > main.xml
     - rm -f ./rdfunit-tests/allTests* && cat ./rdfunit-tests/*.ttl > ./rdfunit-tests/allTests_.ttl
     - rapper -o turtle -i turtle ./rdfunit-tests/allTests_.ttl > ./rdfunit-tests/allTests.ttl
 
@@ -104,7 +106,7 @@ reasoner:
     paths:
       - "./infered_classes.owl"
   script:
-    - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.ttl
+    - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.xml
     - cat infered_classes.owl
 
 git:
