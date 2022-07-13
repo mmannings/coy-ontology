@@ -140,7 +140,7 @@ tag:
     entrypoint: [""]
   script:
     # Update the classes
-    - git add infered_classes.owl && bash ./scripts/try_commit.sh
+    - git add infered_classes.owl && ./scripts/try_commit.sh
     # Add the tag
     - export now=date "+%Y.%m.%d_%H.%M"`
     - git tag -a -m "Verified by CI" verified$now
