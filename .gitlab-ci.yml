@@ -30,7 +30,7 @@ stages:
   - oops
   - interprete
   - reasoner
-  - git
+  - tag
   # Now CD part
   - download
   - widoco
@@ -131,9 +131,10 @@ reasoner:
     - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.xml
     - cat infered_classes.owl
 
-git:
-  stage: git
-  when: manual
+tag:
+  stage: tag
+  rules:
+    - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
     name: tboonx/git:0.1
     entrypoint: [""]
@@ -144,7 +145,7 @@ git:
     - export now=date "+%Y.%m.%d_%H.%M"`
     - git tag -a -m "Verified by CI" verified$now
     # Push it to the repository - credentials are not set yet
-    - git config user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config user.name "bot_push_coypu"
+    - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - git push https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com:coypu-project/ontology-creation-policy.git HEAD:master --follow-tags
 
 send_email:
