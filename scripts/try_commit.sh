@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 lines=`git diff-index --name-only HEAD | wc -l`
 lines=$(($lines + 1))
