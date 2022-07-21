@@ -143,7 +143,7 @@ tag:
     # Update the classes
     - git add infered_classes.owl && ./scripts/try_commit.sh
     # Add the tag
-    - export now=date "+%Y.%m.%d_%H.%M"`
+    - export now='date "+%Y.%m.%d_%H.%M"'
     - git tag -a -m "Verified by CI" verified$now
     # Push it to the repository - credentials are not set yet
     - git push https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com:coypu-project/ontology-creation-policy.git HEAD:master --follow-tags
