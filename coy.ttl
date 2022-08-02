@@ -30,7 +30,7 @@
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-06-07" ;
+                                   dcterms:modified "2022-08-02" ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
@@ -38,8 +38,8 @@
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.5"@en ;
-                                   owl:versionInfo "1.6"@en ;
+                                   owl:priorVersion "1.6"@en ;
+                                   owl:versionInfo "1.7"@en ;
                                    <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
@@ -382,11 +382,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://schema.coypu.org/global#code-3166-2
-:code-3166-2 rdf:type owl:DatatypeProperty ;
-             rdfs:comment "The ISO 3166-2 code of a country"@en .
-
-
 ###  https://schema.coypu.org/global#hasAcledID
 :hasAcledID rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
@@ -726,12 +721,20 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                        rdfs:label "has infrastructure type"@en .
 
 
+###  https://schema.coypu.org/global#hasIso2Code
+:hasIso2Code rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "a country code as defined in ISO 3166-2"@en ;
+             rdfs:label "has ISO-2 code"@en .
+
+
 ###  https://schema.coypu.org/global#hasIsoCode
 :hasIsoCode rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Country ;
             rdfs:range xsd:string ;
-            rdfs:comment "a country code as defined in ISO 3166"@en ;
+            rdfs:comment "a country code as defined in ISO 3166-3"@en ;
             rdfs:label "has ISO code"@en .
 
 
@@ -1360,7 +1363,6 @@ beAWARE_ontology:Location rdf:type owl:Class ;
                           skos:prefLabel "location"@en .
 
 
-
 ###  https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#NaturalDisaster
 beAWARE_ontology:NaturalDisaster rdf:type owl:Class ;
                                  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E6_Destruction> ,
@@ -1414,8 +1416,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Arrest
 :Arrest rdf:type owl:Class ;
-         rdfs:subClassOf :StrategicDevelopment ;
-         rdfs:label "arrest"@en .
+        rdfs:subClassOf :StrategicDevelopment ;
+        rdfs:label "arrest"@en .
 
 
 ###  https://schema.coypu.org/global#Attack
@@ -1426,10 +1428,10 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Battle
 :Battle rdf:type owl:Class ;
-         rdfs:subClassOf :ViolentEvent ;
-         rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
+        rdfs:subClassOf :ViolentEvent ;
+        rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
 	                                        groups at a particular time and location.”"""@en ;
-         rdfs:label "battle"@en .
+        rdfs:label "battle"@en .
 
 
 ###  https://schema.coypu.org/global#Biological
@@ -1500,8 +1502,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Demonstration
 :Demonstration rdf:type owl:Class ;
-                rdfs:subClassOf :AcledEventType ;
-                rdfs:label "demonstration"@en .
+               rdfs:subClassOf :AcledEventType ;
+               rdfs:label "demonstration"@en .
 
 
 ###  https://schema.coypu.org/global#Disaster
@@ -1585,9 +1587,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 :Industry rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
-          rdfs:label "industry"@en ,
-                     "Wirtschaftszweig"@de ;
-          rdfs:seeAlso dbr:Category:Economic_sectors .
+          rdfs:label "Wirtschaftszweig"@de ,
+                     "industry"@en .
 
 
 ###  https://schema.coypu.org/global#Infrastructure
@@ -1602,8 +1603,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "a production material"@en ;
           rdfs:label "material"@en ;
-          rdfs:seeAlso dbr:Material ,
-                       <https://dbpedia.org/resource/Category:Goods_(economics)> .
+          rdfs:seeAlso dbr:Material .
 
 
 ###  https://schema.coypu.org/global#Meteorological
@@ -1649,8 +1649,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#NonViolentAction
 :NonViolentAction rdf:type owl:Class ;
-                   rdfs:subClassOf :AcledEventType ;
-                   rdfs:label "non-violent Action"@en .
+                  rdfs:subClassOf :AcledEventType ;
+                  rdfs:label "non-violent Action"@en .
 
 
 ###  https://schema.coypu.org/global#Other
@@ -1702,8 +1702,16 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "product"@en ;
          rdfs:seeAlso dbr:Material ,
-                      <https://dbpedia.org/resource/Category:Goods_(economics)> ,
                       schema:Product .
+
+
+###  https://schema.coypu.org/global#Protest
+:Protest rdf:type owl:Class ;
+         rdfs:subClassOf :Demonstration ;
+         rdfs:comment """A protest is defined as a public demonstration in which the participants do not engage in
+	                        violence, though violence may be used against them."""@en ;
+         rdfs:label "protest"@en ;
+         skos:prefLabel "protest"@en .
 
 
 ###  https://schema.coypu.org/global#ProtestWithIntervention
@@ -1723,18 +1731,17 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Riot
 :Riot rdf:type owl:Class ;
-       rdfs:subClassOf :Demonstration ;
-       rdfs:comment """‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts,
+      rdfs:subClassOf :Demonstration ;
+      rdfs:comment """‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts,
 	                                 including but not limited to rock throwing, property destruction, etc."""@en ;
-       rdfs:label "riot"@en .
+      rdfs:label "riot"@en .
 
 
 ###  https://schema.coypu.org/global#Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "a utility or non-material product"@en ;
-         rdfs:label "service"@en ;
-         rdfs:seeAlso <https://dbpedia.org/resource/Category:Goods_(economics)> .
+         rdfs:label "service"@en .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
@@ -1745,11 +1752,11 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#StrategicDevelopment
 :StrategicDevelopment rdf:type owl:Class ;
-                       rdfs:subClassOf :NonViolentAction ;
-                       rdfs:comment """This event type captures contextually important information regarding the activities of
+                      rdfs:subClassOf :NonViolentAction ;
+                      rdfs:comment """This event type captures contextually important information regarding the activities of
 	                                                violent groups that is not itself recorded as political violence, yet may trigger future
 	                                                events or contribute to political dynamics within and across states. """@en ;
-                       rdfs:label "strategic developments"@en .
+                      rdfs:label "strategic developments"@en .
 
 
 ###  https://schema.coypu.org/global#SuicideBomb
@@ -1803,8 +1810,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#ViolentEvent
 :ViolentEvent rdf:type owl:Class ;
-               rdfs:subClassOf :AcledEventType ;
-               rdfs:label "violent events"@en .
+              rdfs:subClassOf :AcledEventType ;
+              rdfs:label "violent events"@en .
 
 
 ###  https://schema.coypu.org/global#Abduction%2FForcedDisappearance
@@ -1827,11 +1834,11 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Explosion%2FRemoteViolence
 <https://schema.coypu.org/global#Explosion%2FRemoteViolence> rdf:type owl:Class ;
-                                                              rdfs:subClassOf :ViolentEvent ;
-                                                              rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
+                                                             rdfs:subClassOf :ViolentEvent ;
+                                                             rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
 	                                                       tool for engaging in conflict creates asymmetry by taking away the ability of the target to
 	                                                       respond”."""@en ;
-                                                              rdfs:label "explosion/remote violence"@en .
+                                                             rdfs:label "explosion/remote violence"@en .
 
 
 ###  https://schema.coypu.org/global#Looting%2FPropertyDestruction
@@ -1850,15 +1857,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 <https://schema.coypu.org/global#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
                                                                        rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
                                                                        rdfs:label "shelling/artillery/missile attack"@en .
-
-
-###  https://schema.coypu.org/global#Protest
-:Protest rdf:type owl:Class ;
-          rdfs:subClassOf :Demonstration ;
-          rdfs:comment """A protest is defined as a public demonstration in which the participants do not engage in
-	                        violence, though violence may be used against them."""@en ;
-          rdfs:label "protest"@en ;
-          skos:prefLabel "protest"@en .
 
 
 #################################################################
