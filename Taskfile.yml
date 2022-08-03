@@ -26,7 +26,7 @@ tasks:
     - task: check_turtle
 
   check_turtle:
-    - '{{ .RAPPER_CMD }} -i turtle -c {{.SCHEMAFILE}}.ttl'
+    - "{{ .RAPPER_CMD }} -i turtle -c {{.SCHEMAFILE}}.ttl"
 
   generate_shapes:
     - task: extract:generate_shapes:from_ontology
@@ -67,4 +67,4 @@ tasks:
 
   helper:sync_turtle_nt:
     cmds:
-      - {{ .RAPPER_CMD }} -i turtle -o ntriples --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | LC_ALL=C sort -u > {{.FILE}}.nt
+      - "{{ .RAPPER_CMD }} -i turtle -o ntriples --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | LC_ALL=C sort -u > {{.FILE}}.nt"
