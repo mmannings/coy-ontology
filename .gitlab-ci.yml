@@ -29,6 +29,7 @@ stages:
   - rdfunit
   - oops
   - interprete
+  - generate_shapes
   - reasoner
   - tag
   # Now CD part
