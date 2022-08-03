@@ -1,4 +1,5 @@
 @prefix coy: <https://schema.coypu.org/global#> .
+@prefix coy-sh: <https://schema.coypu.org/global_shapes#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <https://dbpedia.org/resource/> .

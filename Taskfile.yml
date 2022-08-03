@@ -38,7 +38,7 @@ tasks:
   extract:generate_shapes:from_ontology:
     desc: Generate the shapes from the ontology
     cmds:
-      - "{{.GRAMO_DOCKER}} extractor --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace miakg-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
+      - "{{.GRAMO_DOCKER}} extractor --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
 
   extract:reshape:merge:
     desc: Merge two shape graphs into a new shape graph
