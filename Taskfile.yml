@@ -18,7 +18,7 @@ vars:
   DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
   DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
 
-  GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.3
+  GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
   GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
 
   RAPPER_CMD: rapper
@@ -41,7 +41,7 @@ tasks:
   extract:generate_shapes:from_ontology:
     desc: Generate the shapes from the ontology
     cmds:
-      - "{{.GRAMO_DOCKER}} extractor --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
+      - "{{.GRAMO_DOCKER}} extractor --ontology --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
 
   extract:reshape:merge:
     desc: Merge two shape graphs into a new shape graph
