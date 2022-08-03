@@ -34,7 +34,7 @@ tasks:
   generate_shapes:
     - task: extract:generate_shapes:from_ontology
     - task: extract:reshape:merge
-    - task: sync:commit_ontology_and_shapes
+    - task: sync:commit_shapes
       vars: { MSG_ADD: 'extracted shapes from ontology' }
     - task: sync:git_push
 
