@@ -30,6 +30,7 @@ stages:
   - oops
   - interprete
   - reasoner
+  - version
   - tag
   # Now CD part
   - download
@@ -130,6 +131,26 @@ reasoner:
   script:
     - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.xml
     - cat infered_classes.owl
+
+version:
+  stage: version
+  rules:
+    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH != /main/
+  image:
+    name: bitnami/git
+    entrypoint: [""]
+  script:
+    - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
+    - . scripts/helper.sh
+    # get coy.ttl from main
+    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-ontology.git" main_repo_clone
+    - cp main_repo_clone/coy.ttl ./coy.main.ttl
+    # exit if there was no change in the vocab file
+    - exit_if_no_file_change ./coy.main.ttl ./coy.ttl
+    # value of branchs owl:versionInfo has to be higher
+    - owl_version_increase_test ./coy.main.ttl ./coy.ttl
+    # owl:priorVersion of this branch is lower than owl:versionInfo of this branch
+    - owl_version_compare ./coy.ttl
 
 tag:
   stage: tag
