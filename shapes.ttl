@@ -1,0 +1,1420 @@
+@base <https://schema.coypu.org/global_shapes#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix coy: <global#> .
+@prefix coy-sh: <> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
+@prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+coy-sh:beAWARE_ontology_Asset
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass beAWARE_ontology:Asset .
+
+coy-sh:beAWARE_ontology_Impact
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:beAWARE_ontology_hasImpactOn, coy-sh:coy_impactCausedByEvent ;
+    sh:targetClass beAWARE_ontology:Impact .
+
+coy-sh:beAWARE_ontology_LivingBeing
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass beAWARE_ontology:LivingBeing .
+
+coy-sh:beAWARE_ontology_Location
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:beAWARE_ontology_isLocationOfDisaster, coy-sh:coy_hasLatitude, coy-sh:coy_hasLongitude, coy-sh:coy_isLocationOf ;
+    sh:targetClass beAWARE_ontology:Location .
+
+coy-sh:beAWARE_ontology_NaturalDisaster
+    a sh:NodeShape ;
+    sh:description "a natural crisis or disaster event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass beAWARE_ontology:NaturalDisaster .
+
+coy-sh:beAWARE_ontology_VulnerableObject
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:beAWARE_ontology_isImpactedBy ;
+    sh:targetClass beAWARE_ontology:VulnerableObject .
+
+coy-sh:beAWARE_ontology_hasImpactOn
+    a sh:PropertyShape ;
+    sh:class beAWARE_ontology:VulnerableObject ;
+    sh:name "be aware - has impact on"@en ;
+    sh:path beAWARE_ontology:hasImpactOn .
+
+coy-sh:beAWARE_ontology_isImpactedBy
+    a sh:PropertyShape ;
+    sh:class beAWARE_ontology:Impact ;
+    sh:name "be aware - is impacted by"@en ;
+    sh:path beAWARE_ontology:isImpactedBy .
+
+coy-sh:beAWARE_ontology_isLocationOfDisaster
+    a sh:PropertyShape ;
+    sh:class beAWARE_ontology:NaturalDisaster ;
+    sh:name "be aware - is location of disaster"@en ;
+    sh:path beAWARE_ontology:isLocationOfDisaster .
+
+<#coy_Abduction%2FForcedDisappearance>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#Abduction%2FForcedDisappearance> .
+
+coy-sh:coy_AcledEvent
+    a sh:NodeShape ;
+    sh:description "Armed Conflict Location & Event Data"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasAcledID, coy-sh:coy_hasActor, coy-sh:coy_hasFatalities ;
+    sh:targetClass coy:AcledEvent .
+
+coy-sh:coy_AcledEventType
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:AcledEventType .
+
+coy-sh:coy_Agreement
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Agreement .
+
+<#coy_Air%2FDroneStrike>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#Air%2FDroneStrike> .
+
+coy-sh:coy_Airport
+    a sh:NodeShape ;
+    sh:description "a logistics hub for air freight"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Airport .
+
+coy-sh:coy_ArmedClash
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ArmedClash .
+
+coy-sh:coy_Arrest
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Arrest .
+
+coy-sh:coy_Attack
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Attack .
+
+coy-sh:coy_Battle
+    a sh:NodeShape ;
+    sh:description """ACLED defines a battle as “a violent interaction between two politically organized armed
+	                                        groups at a particular time and location.”"""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Battle .
+
+coy-sh:coy_Biological
+    a sh:NodeShape ;
+    sh:description "an epidemic, pandemic or infestation event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Biological .
+
+<#coy_ChangeToGroup%2FActivity>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#ChangeToGroup%2FActivity> .
+
+coy-sh:coy_ChemicalWeapon
+    a sh:NodeShape ;
+    sh:description """all substances
+	                                          listed in the Schedule 1 of the Chemical Weapons Convention"""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ChemicalWeapon .
+
+coy-sh:coy_City
+    a sh:NodeShape ;
+    sh:description "a city as defined by NUTS or IATA"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:City .
+
+coy-sh:coy_Climatological
+    a sh:NodeShape ;
+    sh:description "a drought, wildfire or glacial lake outburst event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Climatological .
+
+coy-sh:coy_Commodity
+    a sh:NodeShape ;
+    sh:description "a commodity good or production material"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Commodity .
+
+coy-sh:coy_Company
+    a sh:NodeShape ;
+    sh:description "a company, organization or corporation"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_haltOperation, coy-sh:coy_hasBalanceSheetTotal, coy-sh:coy_hasCapital, coy-sh:coy_hasCompanySize, coy-sh:coy_hasCustomer, coy-sh:coy_hasCyberRiskScore, coy-sh:coy_hasDissolutionDate, coy-sh:coy_hasEbidCode, coy-sh:coy_hasEmail, coy-sh:coy_hasFax, coy-sh:coy_hasFoundingDate, coy-sh:coy_hasHrCourt, coy-sh:coy_hasHrId, coy-sh:coy_hasHrType, coy-sh:coy_hasIndustry, coy-sh:coy_hasLegalForm, coy-sh:coy_hasLegalName, coy-sh:coy_hasLeiCode, coy-sh:coy_hasManager, coy-sh:coy_hasNumberOfEmployees, coy-sh:coy_hasPhoneNumber, coy-sh:coy_hasProduct, coy-sh:coy_hasProfit, coy-sh:coy_hasPurpose, coy-sh:coy_hasRevenue, coy-sh:coy_hasSocialMediaUrl, coy-sh:coy_hasStreet, coy-sh:coy_hasSupplier, coy-sh:coy_hasVat, coy-sh:coy_hasZip, coy-sh:coy_isActive, coy-sh:coy_isCustomerOf, coy-sh:coy_isPartOf, coy-sh:coy_isSupplierOf, coy-sh:coy_orderTo, coy-sh:coy_orderedBy ;
+    sh:targetClass coy:Company .
+
+coy-sh:coy_Country
+    a sh:NodeShape ;
+    sh:description "a country as defined in ISO 3166"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasAdaptiveCapability, coy-sh:coy_hasCopingCapability, coy-sh:coy_hasCurrency, coy-sh:coy_hasExposure, coy-sh:coy_hasIso2Code, coy-sh:coy_hasIsoCode, coy-sh:coy_hasLanguage, coy-sh:coy_hasPopulation, coy-sh:coy_hasRiskLevel, coy-sh:coy_hasSusceptibility, coy-sh:coy_hasVulnerability ;
+    sh:targetClass coy:Country .
+
+coy-sh:coy_CybersecurityAccident
+    a sh:NodeShape ;
+    sh:description "a cyber attack or related event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:CybersecurityAccident .
+
+coy-sh:coy_Demonstration
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Demonstration .
+
+coy-sh:coy_Disaster
+    a sh:NodeShape ;
+    sh:description "a natural or technological disaster"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasGlideId ;
+    sh:targetClass coy:Disaster .
+
+coy-sh:coy_DisruptedWeaponUse
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:DisruptedWeaponUse .
+
+coy-sh:coy_ExcessiveForceAgainstProtesters
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ExcessiveForceAgainstProtesters .
+
+<#coy_Explosion%2FRemoteViolence>
+    a sh:NodeShape ;
+    sh:description """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
+	                                                       tool for engaging in conflict creates asymmetry by taking away the ability of the target to
+	                                                       respond”."""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#Explosion%2FRemoteViolence> .
+
+coy-sh:coy_Extraterrestrial
+    a sh:NodeShape ;
+    sh:description "a space weather event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Extraterrestrial .
+
+coy-sh:coy_Factory
+    a sh:NodeShape ;
+    sh:description "a factory or production site"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Factory .
+
+coy-sh:coy_Geophysical
+    a sh:NodeShape ;
+    sh:description "an earthquake, volcanic eruption or storm event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Geophysical .
+
+coy-sh:coy_GovernmentRegainsTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:GovernmentRegainsTerritory .
+
+coy-sh:coy_Grenade
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Grenade .
+
+coy-sh:coy_HeadquartersOrBaseEstablished
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:HeadquartersOrBaseEstablished .
+
+coy-sh:coy_Hydrological
+    a sh:NodeShape ;
+    sh:description "a landslide, wave action or flooding event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Hydrological .
+
+coy-sh:coy_IndustrialAccident
+    a sh:NodeShape ;
+    sh:description "an event related to a production site or factory operations"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:IndustrialAccident .
+
+coy-sh:coy_Industry
+    a sh:NodeShape ;
+    sh:description "an industry or economic sector as defined in NACE"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_isIndustryOf ;
+    sh:targetClass coy:Industry .
+
+coy-sh:coy_Infrastructure
+    a sh:NodeShape ;
+    sh:description "a facility providing critical infrastructure for production or logistics"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasCapacity, coy-sh:coy_hasInfrastructureType ;
+    sh:targetClass coy:Infrastructure .
+
+<#coy_Looting%2FPropertyDestruction>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#Looting%2FPropertyDestruction> .
+
+coy-sh:coy_Material
+    a sh:NodeShape ;
+    sh:description "a production material"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_isRare ;
+    sh:targetClass coy:Material .
+
+coy-sh:coy_Meteorological
+    a sh:NodeShape ;
+    sh:description "a storm or extreme temperature event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Meteorological .
+
+coy-sh:coy_MiscellaneousAccident
+    a sh:NodeShape ;
+    sh:description "a technological event not covered otherwise"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:MiscellaneousAccident .
+
+coy-sh:coy_MobViolence
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:MobViolence .
+
+coy-sh:coy_News
+    a sh:NodeShape ;
+    sh:description "a newspaper article, social media posting or press release"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:News .
+
+coy-sh:coy_Non-StateActorOvertakesTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Non-StateActorOvertakesTerritory .
+
+coy-sh:coy_Non-ViolentTransferOfTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Non-ViolentTransferOfTerritory .
+
+coy-sh:coy_NonViolentAction
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:NonViolentAction .
+
+coy-sh:coy_Other
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Other .
+
+coy-sh:coy_PeacefulProtest
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:PeacefulProtest .
+
+coy-sh:coy_Person
+    a sh:NodeShape ;
+    sh:description "a natural person"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasBirthday, coy-sh:coy_hasFamilyName, coy-sh:coy_hasGivenName, coy-sh:coy_hasHonorificTitle, coy-sh:coy_hasJobTitle, coy-sh:coy_isManagerOf ;
+    sh:targetClass coy:Person .
+
+coy-sh:coy_Pipeline
+    a sh:NodeShape ;
+    sh:description "a gas, oil or hydrogen pipeline"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Pipeline .
+
+coy-sh:coy_Port
+    a sh:NodeShape ;
+    sh:description "a logictics hub for shipping"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Port .
+
+coy-sh:coy_Powerplant
+    a sh:NodeShape ;
+    sh:description "a facility for generating electric power"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Powerplant .
+
+coy-sh:coy_Product
+    a sh:NodeShape ;
+    sh:description "a product, service, production material or refined resource"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasCpaCode, coy-sh:coy_hasHsCode, coy-sh:coy_hasPrice, coy-sh:coy_hasVolatility, coy-sh:coy_isProductOf, coy-sh:coy_isUsedIn ;
+    sh:targetClass coy:Product .
+
+coy-sh:coy_Protest
+    a sh:NodeShape ;
+    sh:description """A protest is defined as a public demonstration in which the participants do not engage in
+	                        violence, though violence may be used against them."""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Protest .
+
+coy-sh:coy_ProtestWithIntervention
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ProtestWithIntervention .
+
+coy-sh:coy_Region
+    a sh:NodeShape ;
+    sh:description "an administrative or economic area"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Region .
+
+<#coy_RemoteExplosive%2FLandmine%2FIED>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#RemoteExplosive%2FLandmine%2FIED> .
+
+coy-sh:coy_Riot
+    a sh:NodeShape ;
+    sh:description """‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts,
+	                                 including but not limited to rock throwing, property destruction, etc."""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Riot .
+
+coy-sh:coy_Service
+    a sh:NodeShape ;
+    sh:description "a utility or non-material product"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Service .
+
+coy-sh:coy_SexualViolence
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:SexualViolence .
+
+<#coy_Shelling%2FArtillery%2FMissileAttack>
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <global#Shelling%2FArtillery%2FMissileAttack> .
+
+coy-sh:coy_StrategicDevelopment
+    a sh:NodeShape ;
+    sh:description """This event type captures contextually important information regarding the activities of
+	                                                violent groups that is not itself recorded as political violence, yet may trigger future
+	                                                events or contribute to political dynamics within and across states. """@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:StrategicDevelopment .
+
+coy-sh:coy_SuicideBomb
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:SuicideBomb .
+
+coy-sh:coy_TechnologicalDisaster
+    a sh:NodeShape ;
+    sh:description "a man-made crisis or disaster event"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:TechnologicalDisaster .
+
+coy-sh:coy_Terminal
+    a sh:NodeShape ;
+    sh:description "a terminal to connect gas pipelines"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Terminal .
+
+coy-sh:coy_TerritorialEntityOfSingleCountry
+    a sh:NodeShape ;
+    sh:description "Some Teritorial entity, that belongs to a single country."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:TerritorialEntityOfSingleCountry .
+
+coy-sh:coy_TransportAccident
+    a sh:NodeShape ;
+    sh:description "an event relating to logistical operations"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:TransportAccident .
+
+coy-sh:coy_ViolenceAgainstCivilians
+    a sh:NodeShape ;
+    sh:description """ACLED defines a battle as “a violent interaction between two politically organized armed
+	                                                    groups at a particular time and location."""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolenceAgainstCivilians .
+
+coy-sh:coy_ViolentDemonstration
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolentDemonstration .
+
+coy-sh:coy_ViolentEvent
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolentEvent .
+
+coy-sh:coy_affectsProductLine
+    a sh:PropertyShape ;
+    sh:class <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
+    sh:name "crm - affects product line"@en ;
+    sh:path coy:affectsProductLine .
+
+coy-sh:coy_haltOperation
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:name "halt operation"@en ;
+    sh:path coy:haltOperation .
+
+coy-sh:coy_hasAcledID
+    a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:name "has ACLED data ID"@en ;
+    sh:path coy:hasAcledID .
+
+coy-sh:coy_hasActor
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The named actor involved in the event"@en ;
+    sh:name "has actor"@en ;
+    sh:path coy:hasActor .
+
+coy-sh:coy_hasAdaptiveCapability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the adaptive capability of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has adaptive capability"@en ;
+    sh:path coy:hasAdaptiveCapability .
+
+coy-sh:coy_hasAlertScore
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the alert level score of an event (like 0 / 1 / 2 or green / orange / red)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has alert score"@en ;
+    sh:path coy:hasAlertScore .
+
+coy-sh:coy_hasBalanceSheetTotal
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the balance sheet total of a company (at a specified date in a specified currency)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has balance sheet total"@en ;
+    sh:path coy:hasBalanceSheetTotal .
+
+coy-sh:coy_hasBirthday
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "the birthday of a person"@en ;
+    sh:maxCount 1 ;
+    sh:name "has birthday"@en ;
+    sh:path coy:hasBirthday .
+
+coy-sh:coy_hasCapacity
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "the capacity in tonnes of a facility (like a port or airport)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has capacity"@en ;
+    sh:path coy:hasCapacity .
+
+coy-sh:coy_hasCapital
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the capital of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has capital"@en ;
+    sh:path coy:hasCapital .
+
+coy-sh:coy_hasCompanySize
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the size of a company according to the EU SME definition"@en ;
+    sh:maxCount 1 ;
+    sh:name "has company size"@en ;
+    sh:path coy:hasCompanySize .
+
+coy-sh:coy_hasCopingCapability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the coping capability of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has coping capability"@en ;
+    sh:path coy:hasCopingCapability .
+
+coy-sh:coy_hasCpaCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a product code as defined in CPA"@en ;
+    sh:maxCount 1 ;
+    sh:name "has CPA code"@en ;
+    sh:path coy:hasCpaCode .
+
+coy-sh:coy_hasCurrency
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the currency of a country or monetary value"@en ;
+    sh:maxCount 1 ;
+    sh:name "has currency"@en ;
+    sh:path coy:hasCurrency .
+
+coy-sh:coy_hasCustomer
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company providing a product, material, resource or service to another company"@en ;
+    sh:name "has customer"@en ;
+    sh:path coy:hasCustomer .
+
+coy-sh:coy_hasCyberRiskScore
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the cyber risk score of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has cyber risk score"@en ;
+    sh:path coy:hasCyberRiskScore .
+
+coy-sh:coy_hasDissolutionDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "the dissolution date of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has dissolution date"@en ;
+    sh:path coy:hasDissolutionDate .
+
+coy-sh:coy_hasEbidCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the European Business Identifier of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has EBID code"@en ;
+    sh:path coy:hasEbidCode .
+
+coy-sh:coy_hasEmail
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "an email address"@en ;
+    sh:maxCount 1 ;
+    sh:name "has email"@en ;
+    sh:path coy:hasEmail .
+
+coy-sh:coy_hasEventStatus
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the status of an event (current or past)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has event status"@en ;
+    sh:path coy:hasEventStatus .
+
+coy-sh:coy_hasEventType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the type of an event (like earthquake or cyber attack)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has event type"@en ;
+    sh:path coy:hasEventType .
+
+coy-sh:coy_hasExposure
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the exposure of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has exposure"@en ;
+    sh:path coy:hasExposure .
+
+coy-sh:coy_hasFamilyName
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the family name of a person"@en ;
+    sh:maxCount 1 ;
+    sh:name "has family name"@en ;
+    sh:path coy:hasFamilyName .
+
+coy-sh:coy_hasFatalities
+    a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:description "The number of reported fatalities which occurred during the event"@en ;
+    sh:name "has fatalities"@en ;
+    sh:path coy:hasFatalities .
+
+coy-sh:coy_hasFax
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a fax number"@en ;
+    sh:maxCount 1 ;
+    sh:name "has fax"@en ;
+    sh:path coy:hasFax .
+
+coy-sh:coy_hasFoundingDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "the founding date of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has founding date"@en ;
+    sh:path coy:hasFoundingDate .
+
+coy-sh:coy_hasGeoFence
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "the radius (in meters) of a projected circle around the center of an event to estimate its area of impact"@en ;
+    sh:maxCount 1 ;
+    sh:name "has geo fence"@en ;
+    sh:path coy:hasGeoFence .
+
+coy-sh:coy_hasGivenName
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the given name of a person"@en ;
+    sh:maxCount 1 ;
+    sh:name "has given name"@en ;
+    sh:path coy:hasGivenName .
+
+coy-sh:coy_hasGlideId
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the Global Identifier numbers according to GLIDEnumber.net"@en ;
+    sh:maxCount 1 ;
+    sh:name "has glide ID"@en ;
+    sh:path coy:hasGlideId .
+
+coy-sh:coy_hasHonorificTitle
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a honorific title of a person"@en ;
+    sh:maxCount 1 ;
+    sh:name "has honorific title"@en ;
+    sh:path coy:hasHonorificTitle .
+
+coy-sh:coy_hasHrCourt
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the German court where a company is registered"@en ;
+    sh:maxCount 1 ;
+    sh:name "has HR court"@en ;
+    sh:path coy:hasHrCourt .
+
+coy-sh:coy_hasHrId
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a German company register id"@en ;
+    sh:maxCount 1 ;
+    sh:name "has HR ID"@en ;
+    sh:path coy:hasHrId .
+
+coy-sh:coy_hasHrType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has HR type"@en ;
+    sh:path coy:hasHrType .
+
+coy-sh:coy_hasHsCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a product code as defined in the EU harmonized system"@en ;
+    sh:maxCount 1 ;
+    sh:name "has HS code"@en ;
+    sh:path coy:hasHsCode .
+
+coy-sh:coy_hasImpactOn
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:description "the thing impacted by an event"@en ;
+    sh:name "has impact on"@en ;
+    sh:path coy:hasImpactOn .
+
+coy-sh:coy_hasIndustry
+    a sh:PropertyShape ;
+    sh:class coy:Industry ;
+    sh:description "the sector or industry a company is active in"@en ;
+    sh:name "has industry"@en ;
+    sh:path coy:hasIndustry .
+
+coy-sh:coy_hasInfrastructureType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the type of critical infrastructure (like airport, port or powerplant)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has infrastructure type"@en ;
+    sh:path coy:hasInfrastructureType .
+
+coy-sh:coy_hasIso2Code
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a country code as defined in ISO 3166-2"@en ;
+    sh:name "has ISO-2 code"@en ;
+    sh:path coy:hasIso2Code .
+
+coy-sh:coy_hasIsoCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a country code as defined in ISO 3166-3"@en ;
+    sh:maxCount 1 ;
+    sh:name "has ISO code"@en ;
+    sh:path coy:hasIsoCode .
+
+coy-sh:coy_hasJobTitle
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the job description of a person"@en ;
+    sh:maxCount 1 ;
+    sh:name "has job title"@en ;
+    sh:path coy:hasJobTitle .
+
+coy-sh:coy_hasLanguage
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a language spoken in a country"@en ;
+    sh:maxCount 1 ;
+    sh:name "has language"@en ;
+    sh:path coy:hasLanguage .
+
+coy-sh:coy_hasLatitude
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "a latitude as defined in WGS 84"@en ;
+    sh:maxCount 1 ;
+    sh:name "has latitude"@en ;
+    sh:path coy:hasLatitude .
+
+coy-sh:coy_hasLegalForm
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the legal form of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has legal form"@en ;
+    sh:path coy:hasLegalForm .
+
+coy-sh:coy_hasLegalName
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the legal name of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has legal name"@en ;
+    sh:path coy:hasLegalName .
+
+coy-sh:coy_hasLeiCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a legal entity identifier as defined in ISO 17442"@en ;
+    sh:maxCount 1 ;
+    sh:name "has LEI code"@en ;
+    sh:path coy:hasLeiCode .
+
+coy-sh:coy_hasLongitude
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "a longitude as defined in WGS 84"@en ;
+    sh:maxCount 1 ;
+    sh:name "has longitude"@en ;
+    sh:path coy:hasLongitude .
+
+coy-sh:coy_hasManager
+    a sh:PropertyShape ;
+    sh:class coy:Person ;
+    sh:description "a person which is part of a company's management"@en ;
+    sh:name "has manager"@en ;
+    sh:path coy:hasManager .
+
+coy-sh:coy_hasNumberOfEmployees
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "the number of employees of a company (in a specified year)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has number of employees"@en ;
+    sh:path coy:hasNumberOfEmployees .
+
+coy-sh:coy_hasPhoneNumber
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a phone number (should be normalized)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has phone number"@en ;
+    sh:path coy:hasPhoneNumber .
+
+coy-sh:coy_hasPopulation
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "the number of people inhabiting a country"@en ;
+    sh:maxCount 1 ;
+    sh:name "has population"@en ;
+    sh:path coy:hasPopulation .
+
+coy-sh:coy_hasPrice
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "a product price (at a specified date in a specified currency)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has price"@en ;
+    sh:path coy:hasPrice .
+
+coy-sh:coy_hasProduct
+    a sh:PropertyShape ;
+    sh:class coy:Product ;
+    sh:description "the material, resource or service a company produces"@en ;
+    sh:name "has product"@en ;
+    sh:path coy:hasProduct .
+
+coy-sh:coy_hasProfit
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the profit of a company (for a specified year in a specified currency)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has profit"@en ;
+    sh:path coy:hasProfit .
+
+coy-sh:coy_hasPublisher
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the publisher of an event"@en ;
+    sh:maxCount 1 ;
+    sh:name "has publisher"@en ;
+    sh:path coy:hasPublisher .
+
+coy-sh:coy_hasPurpose
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the stated purpose of an organization"@en ;
+    sh:maxCount 1 ;
+    sh:name "has purpose"@en ;
+    sh:path coy:hasPurpose .
+
+coy-sh:coy_hasRevenue
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the revenue of a company (for a specified year in a specified currency)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has revenue"@en ;
+    sh:path coy:hasRevenue .
+
+coy-sh:coy_hasRiskLevel
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the risk level of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has risk level"@en ;
+    sh:path coy:hasRiskLevel .
+
+coy-sh:coy_hasRiskScore
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the risk score of an event"@en ;
+    sh:maxCount 1 ;
+    sh:name "has risk score"@en ;
+    sh:path coy:hasRiskScore .
+
+coy-sh:coy_hasSocialMediaUrl
+    a sh:PropertyShape ;
+    sh:class xsd:anyURI ;
+    sh:description "a company social media profile url"@en ;
+    sh:maxCount 1 ;
+    sh:name "has social media URL"@en ;
+    sh:path coy:hasSocialMediaUrl .
+
+coy-sh:coy_hasStreet
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a street address"@en ;
+    sh:maxCount 1 ;
+    sh:name "has street"@en ;
+    sh:path coy:hasStreet .
+
+coy-sh:coy_hasSubject
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:description "the thing an event is about"@en ;
+    sh:name "has subject"@en ;
+    sh:path coy:hasSubject .
+
+coy-sh:coy_hasSupplier
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company supplying a product, material, resource or service to another company"@en ;
+    sh:name "has supplier"@en ;
+    sh:path coy:hasSupplier .
+
+coy-sh:coy_hasSusceptibility
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the susceptibility of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has susceptibility"@en ;
+    sh:path coy:hasSusceptibility .
+
+coy-sh:coy_hasTimestamp
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "the timestamp of an event"@en ;
+    sh:maxCount 1 ;
+    sh:name "has timestamp"@en ;
+    sh:path coy:hasTimestamp .
+
+coy-sh:coy_hasVat
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "the vat id of a company"@en ;
+    sh:maxCount 1 ;
+    sh:name "has VAT"@en ;
+    sh:path coy:hasVat .
+
+coy-sh:coy_hasVolatility
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the volatility of a product price (at a specified date)"@en ;
+    sh:maxCount 1 ;
+    sh:name "has volatility"@en ;
+    sh:path coy:hasVolatility .
+
+coy-sh:coy_hasVulnerability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "the vulnerability of a country as defined by Weltrisikobericht"@en ;
+    sh:maxCount 1 ;
+    sh:name "has vulnerability"@en ;
+    sh:path coy:hasVulnerability .
+
+coy-sh:coy_hasZip
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "a zip code"@en ;
+    sh:maxCount 1 ;
+    sh:name "has ZIP"@en ;
+    sh:path coy:hasZip .
+
+coy-sh:coy_impactCausedByEvent
+    a sh:PropertyShape ;
+    sh:class <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+    sh:name "CRM - impact caused by event"@en ;
+    sh:path coy:impactCausedByEvent .
+
+coy-sh:coy_isActive
+    a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:description "the economic status of a company (active or inactive)"@en ;
+    sh:maxCount 1 ;
+    sh:name "is active"@en ;
+    sh:path coy:isActive .
+
+coy-sh:coy_isCustomerOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company sourcing a product, material, resource or service from another company"@en ;
+    sh:name "is customer of"@en ;
+    sh:path coy:isCustomerOf .
+
+coy-sh:coy_isIndustryOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company active in a sector or industry"@en ;
+    sh:name "is industry of"@en ;
+    sh:path coy:isIndustryOf .
+
+coy-sh:coy_isLocationOf
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:description "the event, company or critical infrastructure at a certain location"@en ;
+    sh:name "is location of"@en ;
+    sh:path coy:isLocationOf .
+
+coy-sh:coy_isManagerOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company managed by a person"@en ;
+    sh:name "is manager of"@en ;
+    sh:path coy:isManagerOf .
+
+coy-sh:coy_isPartOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the concern or group a company is part of"@en ;
+    sh:name "is part of"@en ;
+    sh:path coy:isPartOf .
+
+coy-sh:coy_isProductLineOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:name "CRM - is product line of"@en ;
+    sh:path coy:isProductLineOf .
+
+coy-sh:coy_isProductOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company producing a material, resource or service"@en ;
+    sh:name "is product of"@en ;
+    sh:path coy:isProductOf .
+
+coy-sh:coy_isRare
+    a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:description "classifies the production material as rare material"@en ;
+    sh:maxCount 1 ;
+    sh:name "is rare"@en ;
+    sh:path coy:isRare .
+
+coy-sh:coy_isSupplierOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "the company supplied with a product, material, resource or service by another company"@en ;
+    sh:name "is supplier of"@en ;
+    sh:path coy:isSupplierOf .
+
+coy-sh:coy_isUsedIn
+    a sh:PropertyShape ;
+    sh:class coy:Product ;
+    sh:description "a product, material or resource used in production of another material, resource or product"@en ;
+    sh:name "is used in"@en ;
+    sh:path coy:isUsedIn .
+
+coy-sh:coy_orderTo
+    a sh:PropertyShape ;
+    sh:class <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
+    sh:name "order to"@en ;
+    sh:path coy:orderTo .
+
+coy-sh:coy_orderedBy
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:name "ordered by"@en ;
+    sh:path coy:orderedBy .
+
+coy-sh:coy_usedProductLineFor
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:name "CRM - used product line for"@en ;
+    sh:path coy:usedProductLineFor .
+
+coy-sh:dcterms_contributor
+    a sh:PropertyShape ;
+    sh:path dcterms:contributor .
+
+coy-sh:dcterms_created
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:created .
+
+coy-sh:dcterms_creator
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:creator .
+
+coy-sh:dcterms_isVersionOf
+    a sh:PropertyShape ;
+    sh:class owl:Ontology ;
+    sh:nodeKind sh:IRI ;
+    sh:path dcterms:isVersionOf .
+
+coy-sh:dcterms_modified
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:modified .
+
+coy-sh:dcterms_rights
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:rights .
+
+coy-sh:dcterms_title
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path dcterms:title .
+
+coy-sh:ns1_license
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://creativecommons.org/ns#license> .
+
+coy-sh:ns2_E18_Physical_Thing
+    a sh:NodeShape ;
+    sh:description "This class comprises all persistent physical items with a relatively stable form, human-made or natural. Depending on the existence of natural boundaries of such things, the CIDOC CRM distinguishes the instances of E19 Physical Object from instances of E26 Physical Feature, such as holes, rivers, pieces of land etc. Most instances of E19 Physical Object can be moved (if not too heavy), whereas features are integral to the surrounding matter. An instance of E18 Physical Thing occupies not only a particular geometric space at any instant of its existence, but in the course of its existence it also forms a trajectory through spacetime, which occupies a real, that is phenomenal, volume in spacetime. We include in the occupied space the space filled by the matter of the physical thing and all its inner spaces, such as the interior of a box. For the purpose of more detailed descriptions of the presence of an instance of E18 Physical Thing in space and time it can be associated with its specific instance of E92 Spacetime Volume by the property P196 defines (is defined by). The CIDOC CRM is generally not concerned with amounts of matter in fluid or gaseous states, as long as they are not confined in an identifiable way for an identifiable minimal time-span" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> .
+
+coy-sh:ns2_E1_CRM_Entity
+    a sh:NodeShape ;
+    sh:description "This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. It is an abstract concept providing for three general properties: Identification by name or appellation, and in particular by a preferred identifier Classification by type, allowing further refinement of the specific subclass an instance belongs to Attachment of free text and other unstructured data for the expression of anything not captured by formal properties All other classes within the CIDOC CRM are directly or indirectly specialisations of E1 CRM Entity" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+
+coy-sh:ns2_E28_Conceptual_Object
+    a sh:NodeShape ;
+    sh:description "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers. Characteristically, instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Instances of E28 Conceptual Object have the ability to exist on more than one particular carrier at the same time, such as paper, electronic signals, marks, audio media, paintings, photos, human memories, etc. They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+
+coy-sh:ns2_E2_Temporal_Entity
+    a sh:NodeShape ;
+    sh:description "This class comprises all phenomena, such as the instances of E4 Periods and E5 Events, which happen over a limited extent in time. This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former instance of E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice. In some contexts, such phenomena are also called perdurants. This class is disjoint from E77 Persistent Item and is an abstract class that typically has no direct instances. E2 Temporal Entity is specialized into E4 Period, which applies to a particular geographic area (defined with a greater or lesser degree of precision), and E3 Condition State, which applies to instances of E18 Physical Thing" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> .
+
+coy-sh:ns2_E3_Condition_State
+    a sh:NodeShape ;
+    sh:description "This class comprises the states of objects characterised by a certain condition over a time-span. An instance of this class describes the prevailing physical condition of any material object or feature during a specific instance of E52 Time Span. In general, the time-span for which a certain condition can be asserted may be  shorter than the real time-span, for which this condition held. The nature of that condition can be described using P2 has type. For example, the instance of E3 Condition State “condition of the SS Great Britain between 22 September 1846 and 27 August 1847” can be characterized as an instance “wrecked” of E55 Type" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> .
+
+coy-sh:ns2_E4_Period
+    a sh:NodeShape ;
+    sh:description "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space. It is the social or physical coherence of these phenomena that identify an instance of E4 Period and not the associated spatiotemporal extent. This extent is only the “ground” or space in an abstract physical sense that the actual process of growth, spread and retreat has covered. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area and time as a sedentary culture. This also means that overlapping land use rights, common among first nations, amounts to overlapping periods. Often, this class is used to describe prehistoric or historic periods such as the “Neolithic Period”, the “Ming Dynasty” or the “McCarthy Era”, but also geopolitical units and activities of settlements are regarded as special cases of E4 Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore, E4 Period is a superclass of E5 Event. For example, a modern clinical birth, an instance of E67 Birth, can be seen as both a single event, i.e., an instance of E5 Event, and as an extended period, i.e., an instance of E4 Period, that consists of multiple physical processes and complementary activities performed by multiple instances of E39 Actor. As the actual extent of an instance of E4 Period in spacetime we regard the trajectories of the participating physical things during their participation in an instance of E4 Period. This includes the open spaces via which these things have interacted and the spaces by which they had the potential to interact during that period or event in the way defined by the type of the respective period or event. Examples include the air in a meeting room transferring the voices of the participants. Since these phenomena are fuzzy, we assume the spatiotemporal extent to be contiguous, except for cases of phenomena spreading out over islands or other separated areas, including geopolitical units distributed over disconnected areas such as islands or colonies. Whether the trajectories necessary for participants to travel between these areas are regarded as part of the spatiotemporal extent or not has to be decided in each case based on a concrete analysis, taking use of the sea for other purposes than travel, such as fishing, into consideration. One may also argue that the activities to govern disconnected areas imply travelling through spaces connecting them and that these areas hence are spatially connected in a way, but it appears counterintuitive to consider for instance travel routes in international waters as extensions of geopolitical units. Consequently, an instance of E4 Period may occupy a number of disjoint spacetime volumes, however there must not be a discontinuity in the timespan covered by these spacetime volumes. This means that an instance of E4 Period must be contiguous in time. If it has ended in all areas, it has ended as a whole. However, it may end in one area before another, such as in the Polynesian migration, and it continues as long as it is ongoing in at least one area. We model E4 Period as a subclass of E2 Temporal Entity and of E92 Spacetime Volume. The latter is intended as a phenomenal spacetime volume as defined in CIDOC CRMgeo (Doerr &amp;amp; Hiebel, 2013). By virtue of this multiple inheritance, we can discuss the physical extent of an instance of E4 Period without representing each instance of it together with an instance of its associated spacetime volume. This model combines two quite different kinds of substance: an instance of E4 Period is a phenomenon while an instance of E92 Spacetime Volume is an aggregation of points in spacetime. However, the real spatiotemporal extent of an instance of E4 Period is regarded to be unique to it due to all its details and fuzziness; its identity and existence depends uniquely on the identity of the instance of E4 Period. Therefore, this multiple inheritance is unambiguous and effective and furthermore corresponds to the intuitions of natural language. Typical use of this class in cultural heritage documentation is for documenting cultural and artistic periods. There are two different conceptualisations of ‘artistic style’, defined either by physical features or by historical context. For example, “Impressionism” can be viewed as a period in the European sphere of influence lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an instance of E4 Period, and the second defines morphological object types that fall under E55 Type. A geopolitical unit as a specific case of an instance of E4 Period is the set of activities and phenomena related to the claim of power, the consequences of belonging to a jurisdictional area and an administrative system that establishes a geopolitical unit. Examples from the modern period are countries or administrative areas of countries such as districts whose actions and structures define activities and phenomena in the area that they intend to govern. The borders of geopolitical units are often defined in contracts or treaties although they may deviate from the actual practice. The spatiotemporal properties of Geopolitical units can be modelled through the properties inherited from E92 Spacetime Volume. Another specific case of an instance of E4 Period is the actual extent of the set of activities and phenomena as evidenced by their physical traces that define a settlement, such as the populated period of Nineveh" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E4_Period> .
+
+coy-sh:ns2_E53_Place
+    a sh:NodeShape ;
+    sh:description "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter. The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame. It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance. Any instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for)" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+
+coy-sh:ns2_E55_Type
+    a sh:NodeShape ;
+    sh:description "This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CIDOC CRM classes. Instances of E55 Type represent concepts in contrast to instances of E41 Appellation which are used to name instances of CIDOC CRM classes. E55 Type is the CIDOC CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CIDOC CRM as subclasses of E55 Type, forming hierarchies of terms, i.e., instances of E55 Type linked via P127 has broader term (has narrower term): E55 Type. Such hierarchies may be extended with additional properties" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+
+coy-sh:ns2_E5_Event
+    a sh:NodeShape ;
+    sh:description "an event related to a specific location with a singular occurence"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_affectsProductLine, coy-sh:coy_hasAlertScore, coy-sh:coy_hasEventStatus, coy-sh:coy_hasEventType, coy-sh:coy_hasGeoFence, coy-sh:coy_hasImpactOn, coy-sh:coy_hasPublisher, coy-sh:coy_hasRiskScore, coy-sh:coy_hasSubject, coy-sh:coy_hasTimestamp ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
+
+coy-sh:ns2_E64_End_of_Existence
+    a sh:NodeShape ;
+    sh:description "This class comprises events that end the existence of any instance of E77 Persistent Item. It may be used for temporal reasoning about things (physical items, groups of people, living beings)  ceasing to exist; it serves as a hook for determination of a “terminus post quem” or “terminus ante quem”. In cases where substance from an instance of E64 Persistent Item continues to exist in a new form, the process would be documented as instances of E81 Transformation" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> .
+
+coy-sh:ns2_E6_Destruction
+    a sh:NodeShape ;
+    sh:description "This class comprises events that destroy one or more instances of E18 Physical Thing such that they lose their identity as the subjects of documentation. Some destruction events are intentional, while others are independent of human activity. Intentional destruction may be documented by classifying the event as both an instance of E6 Destruction and of E7 Activity. The decision to document an object as destroyed, transformed or modified is context sensitive: 1. If the matter remaining from the destruction is not documented, the event is modelled solely as an instance of E6 Destruction. 2. An event should also be documented as an instance of E81 Transformation if it results in the destruction of one or more objects and the simultaneous production of others using parts or material from the original. In this case, the new items have separate identities. Matter is preserved, but identity is not. 3. When the initial identity of the changed instance of E18 Physical Thing is preserved, the event should be documented as an instance of E11 Modification" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E6_Destruction> .
+
+coy-sh:ns2_E70_Thing
+    a sh:NodeShape ;
+    sh:description "This general class comprises discrete, identifiable, instances of E77 Persistent Item that are documented as single units, that either consist of matter or depend on being carried by matter and are characterized by relative stability. They may be intellectual products or physical things. They may for instance have a solid physical form, an electronic encoding, or they may be a logical concept or structure" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> .
+
+coy-sh:ns2_E71_Human-Made_Thing
+    a sh:NodeShape ;
+    sh:description "This class comprises discrete, identifiable human-made items that are documented as single units. These items are either intellectual products or human-made physical things, and are characterized by relative stability. They may for instance have a solid physical form, an electronic encoding, or they may be logical concepts or structures" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing> .
+
+coy-sh:ns2_E72_Legal_Object
+    a sh:NodeShape ;
+    sh:description "This class comprises those material or immaterial items to which instances of E30 Right, such as the right of ownership or use, can be applied. This is true for all instances of E18 Physical Thing. In the case of instances of E28 Conceptual Object, however, the identity of an instance of E28 Conceptual Object or the method of its use may be too ambiguous to reliably establish instances of E30 Right, as in the case of taxa and inspirations. Ownership of corporations is currently regarded as out of scope of the CIDOC CRM" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
+
+coy-sh:ns2_E77_Persistent_Item
+    a sh:NodeShape ;
+    sh:description "This class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names. Instances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics use to be sufficiently similar to recognize the instance for some substantial period of time. The more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described of referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols. The main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties. An instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> .
+
+coy-sh:ns2_E92_Spacetime_Volume
+    a sh:NodeShape ;
+    sh:description "This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place and E52 Timespan are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> .
+
+coy-sh:ns2_E99_Product_Type
+    a sh:NodeShape ;
+    sh:description "This classes comprises types that stand as the models for instances of E22 Human-Made Object that are produced as the result of production activities using plans exact enough to result in one or more series of uniform, functionally and aesthetically identical and interchangeable items. The product type is the intended ideal form of the manufacture process. It is typical of instances of E22 that conform to an instance of E99 Product Type that its component parts are interchangeable with component parts of other instances of E22 made after the model of the same instance of E99. Frequently, the uniform production according to a given instance of E99 Product Type is achieved by creating individual tools, such as moulds or print plates that are themselves carriers of the design of the product type. Modern tools may use the flexibility of electronically controlled devices to achieve such uniformity. The product type itself, i.e., the potentially unlimited series of aesthetically equivalent items, may be the target of artistic design, rather than the individual object. In extreme cases, only one instance of a product type may have been produced, such as in a 'print on demand' process which was only triggered once. However, this should not be confused with industrial prototypes, such as car prototypes, which are produced prior to the production line being set up, or test the production line itself" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.cidoc-crm.org/cidoc-crm/E99_Product_Type> .
+
+coy-sh:ns3_Supplier
+    a sh:NodeShape ;
+    sh:description "Organization that provides something needed such as a product or service"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.w3id.org/ecsel-dr-OM#Supplier> .
+
+coy-sh:ns4_Product
+    a sh:NodeShape ;
+    sh:description "The superclass of all classes describing products or services types, either by nature or purpose. Examples for such subclasses are \"TV set\", \"vacuum cleaner\", etc. An instance of this class can be either an actual product or service (gr:Individual), a placeholder instance for unknown instances of a mass-produced commodity (gr:SomeItems), or a model / prototype specification (gr:ProductOrServiceModel). When in doubt, use gr:SomeItems" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.w3id.org/ecsel-dr-PWR#Product> .
+
+coy-sh:ns5_NEWs
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.w3id.org/ecsel-dr-SCP#NEWs> .
+
+coy-sh:ns6_Product
+    a sh:NodeShape ;
+    sh:description "A product is any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <http://www.w3id.org/ecsel-dr-SO#Product> .
+
+coy-sh:ns6_Product_Line
+    a sh:NodeShape ;
+    sh:description "The product line is one of the most prominent grouping of products. It is used in reporting as well as for structuring organizations."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_isProductLineOf, coy-sh:coy_usedProductLineFor ;
+    sh:targetClass <http://www.w3id.org/ecsel-dr-SO#Product_Line> .
+
+coy-sh:owl_AnnotationProperty
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass owl:AnnotationProperty .
+
+coy-sh:owl_Class
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:owl_disjointWith, coy-sh:owl_equivalentClass, coy-sh:rdfs_comment, coy-sh:rdfs_label, coy-sh:rdfs_seeAlso, coy-sh:rdfs_subClassOf, coy-sh:skos_definition, coy-sh:skos_prefLabel ;
+    sh:targetClass owl:Class .
+
+coy-sh:owl_DatatypeProperty
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:rdfs_comment, coy-sh:rdfs_domain, coy-sh:rdfs_label, coy-sh:rdfs_range, coy-sh:rdfs_seeAlso ;
+    sh:targetClass owl:DatatypeProperty .
+
+coy-sh:owl_FunctionalProperty
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:rdfs_comment, coy-sh:rdfs_domain, coy-sh:rdfs_label, coy-sh:rdfs_range, coy-sh:rdfs_seeAlso ;
+    sh:targetClass owl:FunctionalProperty .
+
+coy-sh:owl_ObjectProperty
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:owl_deprecated, coy-sh:owl_inverseOf, coy-sh:rdfs_comment, coy-sh:rdfs_domain, coy-sh:rdfs_label, coy-sh:rdfs_range, coy-sh:rdfs_seeAlso, coy-sh:skos_definition, coy-sh:skos_prefLabel ;
+    sh:targetClass owl:ObjectProperty .
+
+coy-sh:owl_Ontology
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:dcterms_contributor, coy-sh:dcterms_created, coy-sh:dcterms_creator, coy-sh:dcterms_isVersionOf, coy-sh:dcterms_modified, coy-sh:dcterms_rights, coy-sh:dcterms_title, coy-sh:ns1_license, coy-sh:owl_priorVersion, coy-sh:owl_versionIRI, coy-sh:owl_versionInfo, coy-sh:rdfs_comment, coy-sh:rdfs_isDefinedBy, coy-sh:rdfs_label, coy-sh:vann_preferredNamespacePrefix, coy-sh:vann_preferredNamespaceUri ;
+    sh:targetClass owl:Ontology .
+
+coy-sh:owl_deprecated
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path owl:deprecated .
+
+coy-sh:owl_disjointWith
+    a sh:PropertyShape ;
+    sh:class owl:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:path owl:disjointWith .
+
+coy-sh:owl_equivalentClass
+    a sh:PropertyShape ;
+    sh:class owl:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:path owl:equivalentClass .
+
+coy-sh:owl_inverseOf
+    a sh:PropertyShape ;
+    sh:class owl:ObjectProperty ;
+    sh:nodeKind sh:IRI ;
+    sh:path owl:inverseOf .
+
+coy-sh:owl_priorVersion
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path owl:priorVersion .
+
+coy-sh:owl_versionIRI
+    a sh:PropertyShape ;
+    sh:class owl:Ontology ;
+    sh:nodeKind sh:IRI ;
+    sh:path owl:versionIRI .
+
+coy-sh:owl_versionInfo
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path owl:versionInfo .
+
+coy-sh:rdfs_Datatype
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass rdfs:Datatype .
+
+coy-sh:rdfs_comment
+    a sh:PropertyShape ;
+    sh:nodeKind sh:Literal ;
+    sh:path rdfs:comment .
+
+coy-sh:rdfs_domain
+    a sh:PropertyShape ;
+    sh:class owl:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:path rdfs:domain .
+
+coy-sh:rdfs_isDefinedBy
+    a sh:PropertyShape ;
+    sh:path rdfs:isDefinedBy .
+
+coy-sh:rdfs_label
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path rdfs:label .
+
+coy-sh:rdfs_range
+    a sh:PropertyShape ;
+    sh:class owl:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:path rdfs:range .
+
+coy-sh:rdfs_seeAlso
+    a sh:PropertyShape ;
+    sh:class owl:AnnotationProperty ;
+    sh:nodeKind sh:IRI ;
+    sh:path rdfs:seeAlso .
+
+coy-sh:rdfs_subClassOf
+    a sh:PropertyShape ;
+    sh:class owl:Class ;
+    sh:nodeKind sh:IRI ;
+    sh:path rdfs:subClassOf .
+
+coy-sh:skos_definition
+    a sh:PropertyShape ;
+    sh:nodeKind sh:Literal ;
+    sh:path skos:definition .
+
+coy-sh:skos_prefLabel
+    a sh:PropertyShape ;
+    sh:datatype rdf:langString ;
+    sh:nodeKind sh:Literal ;
+    sh:path skos:prefLabel .
+
+coy-sh:vann_preferredNamespacePrefix
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path vann:preferredNamespacePrefix .
+
+coy-sh:vann_preferredNamespaceUri
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:nodeKind sh:Literal ;
+    sh:path vann:preferredNamespaceUri .
+
