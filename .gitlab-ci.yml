@@ -25,6 +25,11 @@ workflow:
         - scripts
         - rdfunit-tests
 
+services:
+  - name: docker:dind
+    alias: docker
+
+
 stages:
   - rdfunit
   - oops
@@ -123,14 +128,14 @@ generate_shapes:
   rules:
     - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
-    name: ubuntu
+    name: pheyvaer/raptor
   artifacts:
     when: always
     paths:
       - "./shapes.ttl"
   script:
-    - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
-    - task generate_shapes
+    - sh -c "$(curl -k --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+    - /root/.local/bin/task generate_shapes
 
 reasoner:
   stage: reasoner
