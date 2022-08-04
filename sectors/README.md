@@ -26,14 +26,18 @@ Writing those mappings by ourself is infeasible, neither are we domain experts, 
 ![image](/uploads/be5cff2bd42450965e30c3b4078acf26/image.png)
 
 
-### NACE 2
+### NACE Rev. 2
 * [NACE Rev. 2](https://ec.europa.eu/eurostat/web/nace-rev2/overview) (Statistical Classification of Economic Activities in the European Community) is the classification of economic activities in the European Union (EU)
 * European version of ISIC (International Standard Industrial Classification of All Economic Activities), Rev. 4, which is a global classification of economic activities maintained by the United Nations
 * intially hosted by Eurostat on RAMON platform, but recently (2022-07-14) moved most of the data to a newer platform [EU Vocabularies](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2)
 * the movement to vocabularies also results in an RDF resp. [SKOS/XKOS dataset](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2#_eu_europa_publications_portlet_conceptdisplay_ConceptDisplayPortlet_14TabContent) being provided instead of good old [XML/CSV](https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC)
 * the advantage i) it's already RDF and ii) it's multi-lingual
 
-An example from the RDF SKOS taxonomy:
+An example from the RDF SKOS taxonomy taken with
+
+``` sparql
+CONSTRUCT {?s ?p ?o} WHERE {BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s) ?s ?p ?o . filter( isURI(?o) || lang(?o) = 'en')  }
+```
 
 
 ``` turtle
@@ -50,6 +54,7 @@ An example from the RDF SKOS taxonomy:
         skos:inScheme         :nace2 ;
         skos:prefLabel        "01.19 Growing of other non-perennial crops"@en .
 ```
+(That is technically exactly like I created it from the CSV file (except for the namespace of course).)
 
 ### Example
 In the Global Trade Alerts dataset `CPC 2.1` is used for products and `HS 2012` for sectors.
