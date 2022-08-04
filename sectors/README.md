@@ -36,7 +36,13 @@ Writing those mappings by ourself is infeasible, neither are we domain experts, 
 An example from the RDF SKOS taxonomy taken with
 
 ``` sparql
-CONSTRUCT {?s ?p ?o} WHERE {BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s) ?s ?p ?o . filter( isURI(?o) || lang(?o) = 'en')  }
+CONSTRUCT {
+        ?s ?p ?o
+} WHERE {
+        BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s)
+        ?s ?p ?o .
+        filter( isURI(?o) || lang(?o) = '' || lang(?o) = 'en')
+}
 ```
 
 
@@ -52,6 +58,7 @@ CONSTRUCT {?s ?p ?o} WHERE {BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s) ?
         skos:altLabel         "Growing of other non-perennial crops"@en ;
         skos:broader          :011 ;
         skos:inScheme         :nace2 ;
+        skos:notation         "01.19"^^rdf:PlainLiteral ;
         skos:prefLabel        "01.19 Growing of other non-perennial crops"@en .
 ```
 (That is technically exactly like I created it from the CSV file (except for the namespace of course).)
@@ -68,7 +75,7 @@ CONSTRUCT {
         BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s)
         ?ass a xkos:ConceptAssociation ;
              xkos:sourceConcept ?s ;
-              xkos:targetConcept ?t
+             xkos:targetConcept ?t
 }
 
 ```
