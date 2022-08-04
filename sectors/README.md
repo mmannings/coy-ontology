@@ -98,9 +98,9 @@ So our goal is to get from
 Looking at the figure above, we can see
 
 * a path `CPC 2.1` -> `ISIC 4` -> `NACE 2`
-* no entry for `HS 2012`
+* no entry for `HS 2012`, but there are are mappings provided nevertheless: https://unstats.un.org/unsd/classifications/Econ/tables/CPC/CPCv21_HS12/cpc21-hs2012.txt which in fact just adds one more hop to the previous path: `HS 2012` -> `CPC 2.1` -> `ISIC 4` -> `NACE 2`
 
-That said, the figure
+
 
 
 
