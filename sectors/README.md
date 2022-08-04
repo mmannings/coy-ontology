@@ -1,0 +1,54 @@
+## Problem statement
+Different datasets quite often use different classification schemas to refer to products, sectors, activities and industries. 
+In the Coypu project we decided to use `NACE 2` across pipeline and platform.
+
+### Task
+Find a way aka mappings from other schemas to `NACE 2`. 
+
+### Status
+Writing those mappings by ourself is infeasible, neither are we domain experts, nor do we have enough time to work on this. Luckily, there are some existing mappings aka correspondence tables available on the web:
+
+* UNStats: https://unstats.un.org/unsd/classifications/Econ#Correspondences
+* TODO other sources?
+
+#### An overview (taken from a [challenge](https://semstats.org/2016/challenge/classifications)), yellow lines denote existing mappings
+
+![image](/uploads/3600d03d52da8c21a45cd352eaff4468/image.png)
+------------------
+#### Another view on the different classifications taken from the paper [Taxonomies and Nomenclatures Guidance](https://www.icmagroup.org/assets/documents/Sustainable-finance/Taxonomies-and-Nomenclatures-Guidance-March-2021-18032021.pdf):
+##### Economic activity and product nomenclatures in selected parts of the world/user group
+![image](/uploads/83b507e842664ef22a45cadac9309eb5/image.png)
+------------------
+##### An example how those different coding schemes across the same products look like:
+![image](/uploads/a3c480839b3b7c5588ff2c3a3769179f/image.png) 
+------------------
+##### Some additional perspectives on those classifications (not that relevant for us probably):
+![image](/uploads/be5cff2bd42450965e30c3b4078acf26/image.png)
+
+
+### NACE 2
+* [NACE Rev. 2](https://ec.europa.eu/eurostat/web/nace-rev2/overview) (Statistical Classification of Economic Activities in the European Community) is the classification of economic activities in the European Union (EU)
+* European version of ISIC (International Standard Industrial Classification of All Economic Activities), Rev. 4, which is a global classification of economic activities maintained by the United Nations
+* intially hosted by Eurostat on RAMON platform, but recently (2022-07-14) moved most of the data to a newer platform [EU Vocabularies](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2)
+* the movement to vocabularies also results in an RDF resp. [SKOS/XKOS dataset](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2#_eu_europa_publications_portlet_conceptdisplay_ConceptDisplayPortlet_14TabContent) being provided instead of good old [XML/CSV](https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC)
+* the advantage i) it's already RDF and ii) it's multi-lingual
+
+### Example
+In the Global Trade Alerts dataset `CPC 2.1` is used for products and `HS 2012` for sectors.
+
+So our goal is to get from 
+
+* `CPC 2.1` -> `NACE 2`
+* `HS 2012` -> `NACE 2`
+
+Looking at the figure above, we can see
+
+* a path `CPC 2.1` -> `ISIC 4` -> `NACE 2`
+* no entry for `HS 2012`
+
+That said, the figure
+
+
+
+
+
