@@ -56,6 +56,30 @@ CONSTRUCT {?s ?p ?o} WHERE {BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s) ?
 ```
 (That is technically exactly like I created it from the CSV file (except for the namespace of course).)
 
+As stated, there is a direct correspondence to ISIC r4 which is also contained in the RDF data and modelled via XKOS:
+
+``` sparql
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+CONSTRUCT {
+        ?ass a xkos:ConceptAssociation ; 
+             xkos:sourceConcept ?s ; 
+             xkos:targetConcept ?t 
+} WHERE {
+        BIND(<http://data.europa.eu/ux2/nace2/0119> AS ?s)
+        ?ass a xkos:ConceptAssociation ;
+             xkos:sourceConcept ?s ;
+              xkos:targetConcept ?t
+}
+
+```
+
+``` turtle
+:NACE2_ISIC4_10  rdf:type   xkos:ConceptAssociation ;
+        xkos:sourceConcept  :0119 ;
+        xkos:targetConcept  <http://stats-class.fao.uniroma2.it/ISIC/rev4/0119> .
+
+```
+
 ### Example
 In the Global Trade Alerts dataset `CPC 2.1` is used for products and `HS 2012` for sectors.
 
