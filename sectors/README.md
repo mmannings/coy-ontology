@@ -33,6 +33,24 @@ Writing those mappings by ourself is infeasible, neither are we domain experts, 
 * the movement to vocabularies also results in an RDF resp. [SKOS/XKOS dataset](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2#_eu_europa_publications_portlet_conceptdisplay_ConceptDisplayPortlet_14TabContent) being provided instead of good old [XML/CSV](https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC)
 * the advantage i) it's already RDF and ii) it's multi-lingual
 
+An example from the RDF SKOS taxonomy:
+
+
+``` turtle
+@prefix :         <http://data.europa.eu/ux2/nace2/> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+
+:0119   rdf:type              skos:Concept ;
+        xkos:coreContentNote  "This class includes the growing of all other non-perennial crops:\n- growing of swedes, mangolds, fodder roots, clover, alfalfa, sainfoin, fodder maize and other grasses, forage kale and similar forage products \n- growing of beet seeds (excluding sugar beet seeds) and seeds of forage plants\n- growing of flowers\n- production of cut flowers and flower buds\n- growing of flower seeds"@en ;
+        xkos:exclusionNote    "This class excludes:\n- growing of non-perennial spices, aromatic, drug and pharmaceutical crops, see 01.28"@en ;
+        skos:altLabel         "Growing of other non-perennial crops"@en ;
+        skos:broader          :011 ;
+        skos:inScheme         :nace2 ;
+        skos:prefLabel        "01.19 Growing of other non-perennial crops"@en .
+```
+
 ### Example
 In the Global Trade Alerts dataset `CPC 2.1` is used for products and `HS 2012` for sectors.
 
