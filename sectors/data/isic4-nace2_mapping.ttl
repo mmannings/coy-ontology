@@ -1,0 +1,1810 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isic: <https://data.coypu.org/classification/activity/un_isic_r4/> .
+@prefix nace: <https://data.coypu.org/classification/activity/eu_nace_r2/> .
+
+isic:A  skos:closeMatch  nace:A .
+
+isic:01  skos:closeMatch  nace:01 .
+
+isic:011  skos:closeMatch  nace:01.1 .
+
+isic:0111  skos:closeMatch  nace:01.11 .
+
+isic:0112  skos:closeMatch  nace:01.12 .
+
+isic:0113  skos:closeMatch  nace:01.13 .
+
+isic:0114  skos:closeMatch  nace:01.14 .
+
+isic:0115  skos:closeMatch  nace:01.15 .
+
+isic:0116  skos:closeMatch  nace:01.16 .
+
+isic:0119  skos:closeMatch  nace:01.19 .
+
+isic:012  skos:closeMatch  nace:01.2 .
+
+isic:0121  skos:closeMatch  nace:01.21 .
+
+isic:0122  skos:closeMatch  nace:01.22 .
+
+isic:0123  skos:closeMatch  nace:01.23 .
+
+isic:0124  skos:closeMatch  nace:01.24 .
+
+isic:0125  skos:closeMatch  nace:01.25 .
+
+isic:0126  skos:closeMatch  nace:01.26 .
+
+isic:0127  skos:closeMatch  nace:01.27 .
+
+isic:0128  skos:closeMatch  nace:01.28 .
+
+isic:0129  skos:closeMatch  nace:01.29 .
+
+isic:013  skos:closeMatch  nace:01.3 .
+
+isic:0130  skos:closeMatch  nace:01.30 .
+
+isic:014  skos:closeMatch  nace:01.4 .
+
+isic:0141  skos:closeMatch  nace:01.41 ;
+        skos:closeMatch  nace:01.42 .
+
+isic:0142  skos:closeMatch  nace:01.43 .
+
+isic:0143  skos:closeMatch  nace:01.44 .
+
+isic:0144  skos:closeMatch  nace:01.45 .
+
+isic:0145  skos:closeMatch  nace:01.46 .
+
+isic:0146  skos:closeMatch  nace:01.47 .
+
+isic:0149  skos:closeMatch  nace:01.49 .
+
+isic:015  skos:closeMatch  nace:01.5 .
+
+isic:0150  skos:closeMatch  nace:01.50 .
+
+isic:016  skos:closeMatch  nace:01.6 .
+
+isic:0161  skos:closeMatch  nace:01.61 .
+
+isic:0162  skos:closeMatch  nace:01.62 .
+
+isic:0163  skos:closeMatch  nace:01.63 .
+
+isic:0164  skos:closeMatch  nace:01.64 .
+
+isic:017  skos:closeMatch  nace:01.7 .
+
+isic:0170  skos:closeMatch  nace:01.70 .
+
+isic:02  skos:closeMatch  nace:02 .
+
+isic:021  skos:closeMatch  nace:02.1 .
+
+isic:0210  skos:closeMatch  nace:02.10 .
+
+isic:022  skos:closeMatch  nace:02.2 .
+
+isic:0220  skos:closeMatch  nace:02.20 .
+
+isic:023  skos:closeMatch  nace:02.3 .
+
+isic:0230  skos:closeMatch  nace:02.30 .
+
+isic:024  skos:closeMatch  nace:02.4 .
+
+isic:0240  skos:closeMatch  nace:02.40 .
+
+isic:03  skos:closeMatch  nace:03 .
+
+isic:031  skos:closeMatch  nace:03.1 .
+
+isic:0311  skos:closeMatch  nace:03.11 .
+
+isic:0312  skos:closeMatch  nace:03.12 .
+
+isic:032  skos:closeMatch  nace:03.2 .
+
+isic:0321  skos:closeMatch  nace:03.21 .
+
+isic:0322  skos:closeMatch  nace:03.22 .
+
+isic:B  skos:closeMatch  nace:B .
+
+isic:05  skos:closeMatch  nace:05 .
+
+isic:051  skos:closeMatch  nace:05.1 .
+
+isic:0510  skos:closeMatch  nace:05.10 .
+
+isic:052  skos:closeMatch  nace:05.2 .
+
+isic:0520  skos:closeMatch  nace:05.20 .
+
+isic:06  skos:closeMatch  nace:06 .
+
+isic:061  skos:closeMatch  nace:06.1 .
+
+isic:0610  skos:closeMatch  nace:06.10 .
+
+isic:062  skos:closeMatch  nace:06.2 .
+
+isic:0620  skos:closeMatch  nace:06.20 .
+
+isic:07  skos:closeMatch  nace:07 .
+
+isic:071  skos:closeMatch  nace:07.1 .
+
+isic:0710  skos:closeMatch  nace:07.10 .
+
+isic:072  skos:closeMatch  nace:07.2 .
+
+isic:0721  skos:closeMatch  nace:07.21 .
+
+isic:0729  skos:closeMatch  nace:07.29 .
+
+isic:08  skos:closeMatch  nace:08 .
+
+isic:081  skos:closeMatch  nace:08.1 .
+
+isic:0810  skos:closeMatch  nace:08.11 ;
+        skos:closeMatch  nace:08.12 .
+
+isic:089  skos:closeMatch  nace:08.9 .
+
+isic:0891  skos:closeMatch  nace:08.91 .
+
+isic:0892  skos:closeMatch  nace:08.92 .
+
+isic:0893  skos:closeMatch  nace:08.93 .
+
+isic:0899  skos:closeMatch  nace:08.99 .
+
+isic:09  skos:closeMatch  nace:09 .
+
+isic:091  skos:closeMatch  nace:09.1 .
+
+isic:0910  skos:closeMatch  nace:09.10 .
+
+isic:099  skos:closeMatch  nace:09.9 .
+
+isic:0990  skos:closeMatch  nace:09.90 .
+
+isic:C  skos:closeMatch  nace:C .
+
+isic:10  skos:closeMatch  nace:10 .
+
+isic:101  skos:closeMatch  nace:10.1 .
+
+isic:1010  skos:closeMatch  nace:10.11 ;
+        skos:closeMatch  nace:10.12 ;
+        skos:closeMatch  nace:10.13 .
+
+isic:102  skos:closeMatch  nace:10.2 .
+
+isic:1020  skos:closeMatch  nace:10.20 .
+
+isic:103  skos:closeMatch  nace:10.3 .
+
+isic:1030  skos:closeMatch  nace:10.31 ;
+        skos:closeMatch  nace:10.32 ;
+        skos:closeMatch  nace:10.39 .
+
+isic:104  skos:closeMatch  nace:10.4 .
+
+isic:1040  skos:closeMatch  nace:10.41 ;
+        skos:closeMatch  nace:10.42 .
+
+isic:105  skos:closeMatch  nace:10.5 .
+
+isic:1050  skos:closeMatch  nace:10.51 ;
+        skos:closeMatch  nace:10.52 .
+
+isic:106  skos:closeMatch  nace:10.6 .
+
+isic:1061  skos:closeMatch  nace:10.61 .
+
+isic:1062  skos:closeMatch  nace:10.62 .
+
+isic:107  skos:closeMatch  nace:10.7 .
+
+isic:1071  skos:closeMatch  nace:10.71 ;
+        skos:closeMatch  nace:10.72 .
+
+isic:1074  skos:closeMatch  nace:10.73 .
+
+isic:107  skos:closeMatch  nace:10.8 .
+
+isic:1072  skos:closeMatch  nace:10.81 .
+
+isic:1073  skos:closeMatch  nace:10.82 .
+
+isic:1079  skos:closeMatch  nace:10.83 ;
+        skos:closeMatch  nace:10.84 .
+
+isic:1075  skos:closeMatch  nace:10.85 .
+
+isic:1079  skos:closeMatch  nace:10.86 ;
+        skos:closeMatch  nace:10.89 .
+
+isic:108  skos:closeMatch  nace:10.9 .
+
+isic:1080  skos:closeMatch  nace:10.91 ;
+        skos:closeMatch  nace:10.92 .
+
+isic:11  skos:closeMatch  nace:11 .
+
+isic:110  skos:closeMatch  nace:11.0 .
+
+isic:1101  skos:closeMatch  nace:11.01 .
+
+isic:1102  skos:closeMatch  nace:11.02 ;
+        skos:closeMatch  nace:11.03 ;
+        skos:closeMatch  nace:11.04 .
+
+isic:1103  skos:closeMatch  nace:11.05 ;
+        skos:closeMatch  nace:11.06 .
+
+isic:1104  skos:closeMatch  nace:11.07 .
+
+isic:12  skos:closeMatch  nace:12 .
+
+isic:120  skos:closeMatch  nace:12.0 .
+
+isic:1200  skos:closeMatch  nace:12.00 .
+
+isic:13  skos:closeMatch  nace:13 .
+
+isic:131  skos:closeMatch  nace:13.1 .
+
+isic:1311  skos:closeMatch  nace:13.10 .
+
+isic:131  skos:closeMatch  nace:13.2 .
+
+isic:1312  skos:closeMatch  nace:13.20 .
+
+isic:131  skos:closeMatch  nace:13.3 .
+
+isic:1313  skos:closeMatch  nace:13.30 .
+
+isic:139  skos:closeMatch  nace:13.9 .
+
+isic:1391  skos:closeMatch  nace:13.91 .
+
+isic:1392  skos:closeMatch  nace:13.92 .
+
+isic:1393  skos:closeMatch  nace:13.93 .
+
+isic:1394  skos:closeMatch  nace:13.94 .
+
+isic:1399  skos:closeMatch  nace:13.95 ;
+        skos:closeMatch  nace:13.96 ;
+        skos:closeMatch  nace:13.99 .
+
+isic:14  skos:closeMatch  nace:14 .
+
+isic:141  skos:closeMatch  nace:14.1 .
+
+isic:1410  skos:closeMatch  nace:14.11 ;
+        skos:closeMatch  nace:14.12 ;
+        skos:closeMatch  nace:14.13 ;
+        skos:closeMatch  nace:14.14 ;
+        skos:closeMatch  nace:14.19 .
+
+isic:142  skos:closeMatch  nace:14.2 .
+
+isic:1420  skos:closeMatch  nace:14.20 .
+
+isic:143  skos:closeMatch  nace:14.3 .
+
+isic:1430  skos:closeMatch  nace:14.31 ;
+        skos:closeMatch  nace:14.39 .
+
+isic:15  skos:closeMatch  nace:15 .
+
+isic:151  skos:closeMatch  nace:15.1 .
+
+isic:1511  skos:closeMatch  nace:15.11 .
+
+isic:1512  skos:closeMatch  nace:15.12 .
+
+isic:152  skos:closeMatch  nace:15.2 .
+
+isic:1520  skos:closeMatch  nace:15.20 .
+
+isic:16  skos:closeMatch  nace:16 .
+
+isic:161  skos:closeMatch  nace:16.1 .
+
+isic:1610  skos:closeMatch  nace:16.10 .
+
+isic:162  skos:closeMatch  nace:16.2 .
+
+isic:1621  skos:closeMatch  nace:16.21 .
+
+isic:1622  skos:closeMatch  nace:16.22 ;
+        skos:closeMatch  nace:16.23 .
+
+isic:1623  skos:closeMatch  nace:16.24 .
+
+isic:1629  skos:closeMatch  nace:16.29 .
+
+isic:17  skos:closeMatch  nace:17 .
+
+isic:170  skos:closeMatch  nace:17.1 .
+
+isic:1701  skos:closeMatch  nace:17.11 ;
+        skos:closeMatch  nace:17.12 .
+
+isic:170  skos:closeMatch  nace:17.2 .
+
+isic:1702  skos:closeMatch  nace:17.21 .
+
+isic:1709  skos:closeMatch  nace:17.22 ;
+        skos:closeMatch  nace:17.23 ;
+        skos:closeMatch  nace:17.24 ;
+        skos:closeMatch  nace:17.29 .
+
+isic:18  skos:closeMatch  nace:18 .
+
+isic:181  skos:closeMatch  nace:18.1 .
+
+isic:1811  skos:closeMatch  nace:18.11 ;
+        skos:closeMatch  nace:18.12 .
+
+isic:1812  skos:closeMatch  nace:18.13 ;
+        skos:closeMatch  nace:18.14 .
+
+isic:182  skos:closeMatch  nace:18.2 .
+
+isic:1820  skos:closeMatch  nace:18.20 .
+
+isic:19  skos:closeMatch  nace:19 .
+
+isic:191  skos:closeMatch  nace:19.1 .
+
+isic:1910  skos:closeMatch  nace:19.10 .
+
+isic:192  skos:closeMatch  nace:19.2 .
+
+isic:1920  skos:closeMatch  nace:19.20 .
+
+isic:20  skos:closeMatch  nace:20 .
+
+isic:201  skos:closeMatch  nace:20.1 .
+
+isic:2011  skos:closeMatch  nace:20.11 ;
+        skos:closeMatch  nace:20.12 ;
+        skos:closeMatch  nace:20.13 ;
+        skos:closeMatch  nace:20.14 .
+
+isic:2012  skos:closeMatch  nace:20.15 .
+
+isic:2013  skos:closeMatch  nace:20.16 ;
+        skos:closeMatch  nace:20.17 .
+
+isic:202  skos:closeMatch  nace:20.2 .
+
+isic:2021  skos:closeMatch  nace:20.20 .
+
+isic:202  skos:closeMatch  nace:20.3 .
+
+isic:2022  skos:closeMatch  nace:20.30 .
+
+isic:202  skos:closeMatch  nace:20.4 .
+
+isic:2023  skos:closeMatch  nace:20.41 ;
+        skos:closeMatch  nace:20.42 .
+
+isic:202  skos:closeMatch  nace:20.5 .
+
+isic:2029  skos:closeMatch  nace:20.51 ;
+        skos:closeMatch  nace:20.52 ;
+        skos:closeMatch  nace:20.53 ;
+        skos:closeMatch  nace:20.59 .
+
+isic:203  skos:closeMatch  nace:20.6 .
+
+isic:2030  skos:closeMatch  nace:20.60 .
+
+isic:21  skos:closeMatch  nace:21 .
+
+isic:210  skos:closeMatch  nace:21.1 .
+
+isic:2100  skos:closeMatch  nace:21.10 .
+
+isic:210  skos:closeMatch  nace:21.2 .
+
+isic:2100  skos:closeMatch  nace:21.20 .
+
+isic:22  skos:closeMatch  nace:22 .
+
+isic:221  skos:closeMatch  nace:22.1 .
+
+isic:2211  skos:closeMatch  nace:22.11 .
+
+isic:2219  skos:closeMatch  nace:22.19 .
+
+isic:222  skos:closeMatch  nace:22.2 .
+
+isic:2220  skos:closeMatch  nace:22.21 ;
+        skos:closeMatch  nace:22.22 ;
+        skos:closeMatch  nace:22.23 ;
+        skos:closeMatch  nace:22.29 .
+
+isic:23  skos:closeMatch  nace:23 .
+
+isic:231  skos:closeMatch  nace:23.1 .
+
+isic:2310  skos:closeMatch  nace:23.11 ;
+        skos:closeMatch  nace:23.12 ;
+        skos:closeMatch  nace:23.13 ;
+        skos:closeMatch  nace:23.14 ;
+        skos:closeMatch  nace:23.19 .
+
+isic:239  skos:closeMatch  nace:23.2 .
+
+isic:2391  skos:closeMatch  nace:23.20 .
+
+isic:239  skos:closeMatch  nace:23.3 .
+
+isic:2392  skos:closeMatch  nace:23.31 ;
+        skos:closeMatch  nace:23.32 .
+
+isic:239  skos:closeMatch  nace:23.4 .
+
+isic:2393  skos:closeMatch  nace:23.41 ;
+        skos:closeMatch  nace:23.42 ;
+        skos:closeMatch  nace:23.43 ;
+        skos:closeMatch  nace:23.44 ;
+        skos:closeMatch  nace:23.49 .
+
+isic:239  skos:closeMatch  nace:23.5 .
+
+isic:2394  skos:closeMatch  nace:23.51 ;
+        skos:closeMatch  nace:23.52 .
+
+isic:239  skos:closeMatch  nace:23.6 .
+
+isic:2395  skos:closeMatch  nace:23.61 ;
+        skos:closeMatch  nace:23.62 ;
+        skos:closeMatch  nace:23.63 ;
+        skos:closeMatch  nace:23.64 ;
+        skos:closeMatch  nace:23.65 ;
+        skos:closeMatch  nace:23.69 .
+
+isic:239  skos:closeMatch  nace:23.7 .
+
+isic:2396  skos:closeMatch  nace:23.70 .
+
+isic:239  skos:closeMatch  nace:23.9 .
+
+isic:2399  skos:closeMatch  nace:23.91 ;
+        skos:closeMatch  nace:23.99 .
+
+isic:24  skos:closeMatch  nace:24 .
+
+isic:241  skos:closeMatch  nace:24.1 .
+
+isic:2410  skos:closeMatch  nace:24.10 .
+
+isic:241  skos:closeMatch  nace:24.2 .
+
+isic:2410  skos:closeMatch  nace:24.20 .
+
+isic:241  skos:closeMatch  nace:24.3 .
+
+isic:2410  skos:closeMatch  nace:24.31 ;
+        skos:closeMatch  nace:24.32 ;
+        skos:closeMatch  nace:24.33 ;
+        skos:closeMatch  nace:24.34 .
+
+isic:242  skos:closeMatch  nace:24.4 .
+
+isic:2420  skos:closeMatch  nace:24.41 ;
+        skos:closeMatch  nace:24.42 ;
+        skos:closeMatch  nace:24.43 ;
+        skos:closeMatch  nace:24.44 ;
+        skos:closeMatch  nace:24.45 ;
+        skos:closeMatch  nace:24.46 .
+
+isic:243  skos:closeMatch  nace:24.5 .
+
+isic:2431  skos:closeMatch  nace:24.51 ;
+        skos:closeMatch  nace:24.52 .
+
+isic:2432  skos:closeMatch  nace:24.53 ;
+        skos:closeMatch  nace:24.54 .
+
+isic:25  skos:closeMatch  nace:25 .
+
+isic:251  skos:closeMatch  nace:25.1 .
+
+isic:2511  skos:closeMatch  nace:25.11 ;
+        skos:closeMatch  nace:25.12 .
+
+isic:251  skos:closeMatch  nace:25.2 .
+
+isic:2512  skos:closeMatch  nace:25.21 ;
+        skos:closeMatch  nace:25.29 .
+
+isic:251  skos:closeMatch  nace:25.3 .
+
+isic:2513  skos:closeMatch  nace:25.30 .
+
+isic:252  skos:closeMatch  nace:25.4 .
+
+isic:2520  skos:closeMatch  nace:25.40 .
+
+isic:259  skos:closeMatch  nace:25.5 .
+
+isic:2591  skos:closeMatch  nace:25.50 .
+
+isic:259  skos:closeMatch  nace:25.6 .
+
+isic:2592  skos:closeMatch  nace:25.61 ;
+        skos:closeMatch  nace:25.62 .
+
+isic:259  skos:closeMatch  nace:25.7 .
+
+isic:2593  skos:closeMatch  nace:25.71 ;
+        skos:closeMatch  nace:25.72 ;
+        skos:closeMatch  nace:25.73 .
+
+isic:259  skos:closeMatch  nace:25.9 .
+
+isic:2599  skos:closeMatch  nace:25.91 ;
+        skos:closeMatch  nace:25.92 ;
+        skos:closeMatch  nace:25.93 ;
+        skos:closeMatch  nace:25.94 ;
+        skos:closeMatch  nace:25.99 .
+
+isic:26  skos:closeMatch  nace:26 .
+
+isic:261  skos:closeMatch  nace:26.1 .
+
+isic:2610  skos:closeMatch  nace:26.11 ;
+        skos:closeMatch  nace:26.12 .
+
+isic:262  skos:closeMatch  nace:26.2 .
+
+isic:2620  skos:closeMatch  nace:26.20 .
+
+isic:263  skos:closeMatch  nace:26.3 .
+
+isic:2630  skos:closeMatch  nace:26.30 .
+
+isic:264  skos:closeMatch  nace:26.4 .
+
+isic:2640  skos:closeMatch  nace:26.40 .
+
+isic:265  skos:closeMatch  nace:26.5 .
+
+isic:2651  skos:closeMatch  nace:26.51 .
+
+isic:2652  skos:closeMatch  nace:26.52 .
+
+isic:266  skos:closeMatch  nace:26.6 .
+
+isic:2660  skos:closeMatch  nace:26.60 .
+
+isic:267  skos:closeMatch  nace:26.7 .
+
+isic:2670  skos:closeMatch  nace:26.70 .
+
+isic:268  skos:closeMatch  nace:26.8 .
+
+isic:2680  skos:closeMatch  nace:26.80 .
+
+isic:27  skos:closeMatch  nace:27 .
+
+isic:271  skos:closeMatch  nace:27.1 .
+
+isic:2710  skos:closeMatch  nace:27.11 ;
+        skos:closeMatch  nace:27.12 .
+
+isic:272  skos:closeMatch  nace:27.2 .
+
+isic:2720  skos:closeMatch  nace:27.20 .
+
+isic:273  skos:closeMatch  nace:27.3 .
+
+isic:2731  skos:closeMatch  nace:27.31 .
+
+isic:2732  skos:closeMatch  nace:27.32 .
+
+isic:2733  skos:closeMatch  nace:27.33 .
+
+isic:274  skos:closeMatch  nace:27.4 .
+
+isic:2740  skos:closeMatch  nace:27.40 .
+
+isic:275  skos:closeMatch  nace:27.5 .
+
+isic:2750  skos:closeMatch  nace:27.51 ;
+        skos:closeMatch  nace:27.52 .
+
+isic:279  skos:closeMatch  nace:27.9 .
+
+isic:2790  skos:closeMatch  nace:27.90 .
+
+isic:28  skos:closeMatch  nace:28 .
+
+isic:281  skos:closeMatch  nace:28.1 .
+
+isic:2811  skos:closeMatch  nace:28.11 .
+
+isic:2812  skos:closeMatch  nace:28.12 .
+
+isic:2813  skos:closeMatch  nace:28.13 ;
+        skos:closeMatch  nace:28.14 .
+
+isic:2814  skos:closeMatch  nace:28.15 .
+
+isic:281  skos:closeMatch  nace:28.2 .
+
+isic:2815  skos:closeMatch  nace:28.21 .
+
+isic:2816  skos:closeMatch  nace:28.22 .
+
+isic:2817  skos:closeMatch  nace:28.23 .
+
+isic:2818  skos:closeMatch  nace:28.24 .
+
+isic:2819  skos:closeMatch  nace:28.25 ;
+        skos:closeMatch  nace:28.29 .
+
+isic:282  skos:closeMatch  nace:28.3 .
+
+isic:2821  skos:closeMatch  nace:28.30 .
+
+isic:282  skos:closeMatch  nace:28.4 .
+
+isic:2822  skos:closeMatch  nace:28.41 ;
+        skos:closeMatch  nace:28.49 .
+
+isic:282  skos:closeMatch  nace:28.9 .
+
+isic:2823  skos:closeMatch  nace:28.91 .
+
+isic:2824  skos:closeMatch  nace:28.92 .
+
+isic:2825  skos:closeMatch  nace:28.93 .
+
+isic:2826  skos:closeMatch  nace:28.94 .
+
+isic:2829  skos:closeMatch  nace:28.95 ;
+        skos:closeMatch  nace:28.96 ;
+        skos:closeMatch  nace:28.99 .
+
+isic:29  skos:closeMatch  nace:29 .
+
+isic:291  skos:closeMatch  nace:29.1 .
+
+isic:2910  skos:closeMatch  nace:29.10 .
+
+isic:292  skos:closeMatch  nace:29.2 .
+
+isic:2920  skos:closeMatch  nace:29.20 .
+
+isic:293  skos:closeMatch  nace:29.3 .
+
+isic:2930  skos:closeMatch  nace:29.31 ;
+        skos:closeMatch  nace:29.32 .
+
+isic:30  skos:closeMatch  nace:30 .
+
+isic:301  skos:closeMatch  nace:30.1 .
+
+isic:3011  skos:closeMatch  nace:30.11 .
+
+isic:3012  skos:closeMatch  nace:30.12 .
+
+isic:302  skos:closeMatch  nace:30.2 .
+
+isic:3020  skos:closeMatch  nace:30.20 .
+
+isic:303  skos:closeMatch  nace:30.3 .
+
+isic:3030  skos:closeMatch  nace:30.30 .
+
+isic:304  skos:closeMatch  nace:30.4 .
+
+isic:3040  skos:closeMatch  nace:30.40 .
+
+isic:309  skos:closeMatch  nace:30.9 .
+
+isic:3091  skos:closeMatch  nace:30.91 .
+
+isic:3092  skos:closeMatch  nace:30.92 .
+
+isic:3099  skos:closeMatch  nace:30.99 .
+
+isic:31  skos:closeMatch  nace:31 .
+
+isic:310  skos:closeMatch  nace:31.0 .
+
+isic:3100  skos:closeMatch  nace:31.01 ;
+        skos:closeMatch  nace:31.02 ;
+        skos:closeMatch  nace:31.03 ;
+        skos:closeMatch  nace:31.09 .
+
+isic:32  skos:closeMatch  nace:32 .
+
+isic:321  skos:closeMatch  nace:32.1 .
+
+isic:3211  skos:closeMatch  nace:32.11 ;
+        skos:closeMatch  nace:32.12 .
+
+isic:3212  skos:closeMatch  nace:32.13 .
+
+isic:322  skos:closeMatch  nace:32.2 .
+
+isic:3220  skos:closeMatch  nace:32.20 .
+
+isic:323  skos:closeMatch  nace:32.3 .
+
+isic:3230  skos:closeMatch  nace:32.30 .
+
+isic:324  skos:closeMatch  nace:32.4 .
+
+isic:3240  skos:closeMatch  nace:32.40 .
+
+isic:325  skos:closeMatch  nace:32.5 .
+
+isic:3250  skos:closeMatch  nace:32.50 .
+
+isic:329  skos:closeMatch  nace:32.9 .
+
+isic:3290  skos:closeMatch  nace:32.91 ;
+        skos:closeMatch  nace:32.99 .
+
+isic:33  skos:closeMatch  nace:33 .
+
+isic:331  skos:closeMatch  nace:33.1 .
+
+isic:3311  skos:closeMatch  nace:33.11 .
+
+isic:3312  skos:closeMatch  nace:33.12 .
+
+isic:3313  skos:closeMatch  nace:33.13 .
+
+isic:3314  skos:closeMatch  nace:33.14 .
+
+isic:3315  skos:closeMatch  nace:33.15 ;
+        skos:closeMatch  nace:33.16 ;
+        skos:closeMatch  nace:33.17 .
+
+isic:3319  skos:closeMatch  nace:33.19 .
+
+isic:332  skos:closeMatch  nace:33.2 .
+
+isic:3320  skos:closeMatch  nace:33.20 .
+
+isic:D  skos:closeMatch  nace:D .
+
+isic:35  skos:closeMatch  nace:35 .
+
+isic:351  skos:closeMatch  nace:35.1 .
+
+isic:3510  skos:closeMatch  nace:35.11 ;
+        skos:closeMatch  nace:35.12 ;
+        skos:closeMatch  nace:35.13 ;
+        skos:closeMatch  nace:35.14 .
+
+isic:352  skos:closeMatch  nace:35.2 .
+
+isic:3520  skos:closeMatch  nace:35.21 ;
+        skos:closeMatch  nace:35.22 ;
+        skos:closeMatch  nace:35.23 .
+
+isic:353  skos:closeMatch  nace:35.3 .
+
+isic:3530  skos:closeMatch  nace:35.30 .
+
+isic:E  skos:closeMatch  nace:E .
+
+isic:36  skos:closeMatch  nace:36 .
+
+isic:360  skos:closeMatch  nace:36.0 .
+
+isic:3600  skos:closeMatch  nace:36.00 .
+
+isic:37  skos:closeMatch  nace:37 .
+
+isic:370  skos:closeMatch  nace:37.0 .
+
+isic:3700  skos:closeMatch  nace:37.00 .
+
+isic:38  skos:closeMatch  nace:38 .
+
+isic:381  skos:closeMatch  nace:38.1 .
+
+isic:3811  skos:closeMatch  nace:38.11 .
+
+isic:3812  skos:closeMatch  nace:38.12 .
+
+isic:382  skos:closeMatch  nace:38.2 .
+
+isic:3821  skos:closeMatch  nace:38.21 .
+
+isic:3822  skos:closeMatch  nace:38.22 .
+
+isic:383  skos:closeMatch  nace:38.3 .
+
+isic:3830  skos:closeMatch  nace:38.31 ;
+        skos:closeMatch  nace:38.32 .
+
+isic:39  skos:closeMatch  nace:39 .
+
+isic:390  skos:closeMatch  nace:39.0 .
+
+isic:3900  skos:closeMatch  nace:39.00 .
+
+isic:F  skos:closeMatch  nace:F .
+
+isic:41  skos:closeMatch  nace:41 .
+
+isic:410  skos:closeMatch  nace:41.1 .
+
+isic:4100  skos:closeMatch  nace:41.10 .
+
+isic:410  skos:closeMatch  nace:41.2 .
+
+isic:4100  skos:closeMatch  nace:41.20 .
+
+isic:42  skos:closeMatch  nace:42 .
+
+isic:421  skos:closeMatch  nace:42.1 .
+
+isic:4210  skos:closeMatch  nace:42.11 ;
+        skos:closeMatch  nace:42.12 ;
+        skos:closeMatch  nace:42.13 .
+
+isic:422  skos:closeMatch  nace:42.2 .
+
+isic:4220  skos:closeMatch  nace:42.21 ;
+        skos:closeMatch  nace:42.22 .
+
+isic:429  skos:closeMatch  nace:42.9 .
+
+isic:4290  skos:closeMatch  nace:42.91 ;
+        skos:closeMatch  nace:42.99 .
+
+isic:43  skos:closeMatch  nace:43 .
+
+isic:431  skos:closeMatch  nace:43.1 .
+
+isic:4311  skos:closeMatch  nace:43.11 .
+
+isic:4312  skos:closeMatch  nace:43.12 ;
+        skos:closeMatch  nace:43.13 .
+
+isic:432  skos:closeMatch  nace:43.2 .
+
+isic:4321  skos:closeMatch  nace:43.21 .
+
+isic:4322  skos:closeMatch  nace:43.22 .
+
+isic:4329  skos:closeMatch  nace:43.29 .
+
+isic:433  skos:closeMatch  nace:43.3 .
+
+isic:4330  skos:closeMatch  nace:43.31 ;
+        skos:closeMatch  nace:43.32 ;
+        skos:closeMatch  nace:43.33 ;
+        skos:closeMatch  nace:43.34 ;
+        skos:closeMatch  nace:43.39 .
+
+isic:439  skos:closeMatch  nace:43.9 .
+
+isic:4390  skos:closeMatch  nace:43.91 ;
+        skos:closeMatch  nace:43.99 .
+
+isic:G  skos:closeMatch  nace:G .
+
+isic:45  skos:closeMatch  nace:45 .
+
+isic:451  skos:closeMatch  nace:45.1 .
+
+isic:4510  skos:closeMatch  nace:45.11 ;
+        skos:closeMatch  nace:45.19 .
+
+isic:452  skos:closeMatch  nace:45.2 .
+
+isic:4520  skos:closeMatch  nace:45.20 .
+
+isic:453  skos:closeMatch  nace:45.3 .
+
+isic:4530  skos:closeMatch  nace:45.31 ;
+        skos:closeMatch  nace:45.32 .
+
+isic:454  skos:closeMatch  nace:45.4 .
+
+isic:4540  skos:closeMatch  nace:45.40 .
+
+isic:46  skos:closeMatch  nace:46 .
+
+isic:461  skos:closeMatch  nace:46.1 .
+
+isic:4610  skos:closeMatch  nace:46.11 ;
+        skos:closeMatch  nace:46.12 ;
+        skos:closeMatch  nace:46.13 ;
+        skos:closeMatch  nace:46.14 ;
+        skos:closeMatch  nace:46.15 ;
+        skos:closeMatch  nace:46.16 ;
+        skos:closeMatch  nace:46.17 ;
+        skos:closeMatch  nace:46.18 ;
+        skos:closeMatch  nace:46.19 .
+
+isic:462  skos:closeMatch  nace:46.2 .
+
+isic:4620  skos:closeMatch  nace:46.21 ;
+        skos:closeMatch  nace:46.22 ;
+        skos:closeMatch  nace:46.23 ;
+        skos:closeMatch  nace:46.24 .
+
+isic:463  skos:closeMatch  nace:46.3 .
+
+isic:4630  skos:closeMatch  nace:46.31 ;
+        skos:closeMatch  nace:46.32 ;
+        skos:closeMatch  nace:46.33 ;
+        skos:closeMatch  nace:46.34 ;
+        skos:closeMatch  nace:46.35 ;
+        skos:closeMatch  nace:46.36 ;
+        skos:closeMatch  nace:46.37 ;
+        skos:closeMatch  nace:46.38 ;
+        skos:closeMatch  nace:46.39 .
+
+isic:464  skos:closeMatch  nace:46.4 .
+
+isic:4641  skos:closeMatch  nace:46.41 ;
+        skos:closeMatch  nace:46.42 .
+
+isic:4649  skos:closeMatch  nace:46.43 ;
+        skos:closeMatch  nace:46.44 ;
+        skos:closeMatch  nace:46.45 ;
+        skos:closeMatch  nace:46.46 ;
+        skos:closeMatch  nace:46.47 ;
+        skos:closeMatch  nace:46.48 ;
+        skos:closeMatch  nace:46.49 .
+
+isic:465  skos:closeMatch  nace:46.5 .
+
+isic:4651  skos:closeMatch  nace:46.51 .
+
+isic:4652  skos:closeMatch  nace:46.52 .
+
+isic:465  skos:closeMatch  nace:46.6 .
+
+isic:4653  skos:closeMatch  nace:46.61 .
+
+isic:4659  skos:closeMatch  nace:46.62 ;
+        skos:closeMatch  nace:46.63 ;
+        skos:closeMatch  nace:46.64 ;
+        skos:closeMatch  nace:46.65 ;
+        skos:closeMatch  nace:46.66 ;
+        skos:closeMatch  nace:46.69 .
+
+isic:466  skos:closeMatch  nace:46.7 .
+
+isic:4661  skos:closeMatch  nace:46.71 .
+
+isic:4662  skos:closeMatch  nace:46.72 .
+
+isic:4663  skos:closeMatch  nace:46.73 ;
+        skos:closeMatch  nace:46.74 .
+
+isic:4669  skos:closeMatch  nace:46.75 ;
+        skos:closeMatch  nace:46.76 ;
+        skos:closeMatch  nace:46.77 .
+
+isic:469  skos:closeMatch  nace:46.9 .
+
+isic:4690  skos:closeMatch  nace:46.90 .
+
+isic:47  skos:closeMatch  nace:47 .
+
+isic:471  skos:closeMatch  nace:47.1 .
+
+isic:4711  skos:closeMatch  nace:47.11 .
+
+isic:4719  skos:closeMatch  nace:47.19 .
+
+isic:472  skos:closeMatch  nace:47.2 .
+
+isic:4721  skos:closeMatch  nace:47.21 ;
+        skos:closeMatch  nace:47.22 ;
+        skos:closeMatch  nace:47.23 ;
+        skos:closeMatch  nace:47.24 .
+
+isic:4722  skos:closeMatch  nace:47.25 .
+
+isic:4723  skos:closeMatch  nace:47.26 .
+
+isic:4721  skos:closeMatch  nace:47.29 .
+
+isic:473  skos:closeMatch  nace:47.3 .
+
+isic:4730  skos:closeMatch  nace:47.30 .
+
+isic:474  skos:closeMatch  nace:47.4 .
+
+isic:4741  skos:closeMatch  nace:47.41 ;
+        skos:closeMatch  nace:47.42 .
+
+isic:4742  skos:closeMatch  nace:47.43 .
+
+isic:475  skos:closeMatch  nace:47.5 .
+
+isic:4751  skos:closeMatch  nace:47.51 .
+
+isic:4752  skos:closeMatch  nace:47.52 .
+
+isic:4753  skos:closeMatch  nace:47.53 .
+
+isic:4759  skos:closeMatch  nace:47.54 ;
+        skos:closeMatch  nace:47.59 .
+
+isic:476  skos:closeMatch  nace:47.6 .
+
+isic:4761  skos:closeMatch  nace:47.61 ;
+        skos:closeMatch  nace:47.62 .
+
+isic:4762  skos:closeMatch  nace:47.63 .
+
+isic:4763  skos:closeMatch  nace:47.64 .
+
+isic:4764  skos:closeMatch  nace:47.65 .
+
+isic:477  skos:closeMatch  nace:47.7 .
+
+isic:4771  skos:closeMatch  nace:47.71 ;
+        skos:closeMatch  nace:47.72 .
+
+isic:4772  skos:closeMatch  nace:47.73 ;
+        skos:closeMatch  nace:47.74 ;
+        skos:closeMatch  nace:47.75 .
+
+isic:4773  skos:closeMatch  nace:47.76 ;
+        skos:closeMatch  nace:47.77 ;
+        skos:closeMatch  nace:47.78 .
+
+isic:4774  skos:closeMatch  nace:47.79 .
+
+isic:478  skos:closeMatch  nace:47.8 .
+
+isic:4781  skos:closeMatch  nace:47.81 .
+
+isic:4782  skos:closeMatch  nace:47.82 .
+
+isic:4789  skos:closeMatch  nace:47.89 .
+
+isic:479  skos:closeMatch  nace:47.9 .
+
+isic:4791  skos:closeMatch  nace:47.91 .
+
+isic:4799  skos:closeMatch  nace:47.99 .
+
+isic:H  skos:closeMatch  nace:H .
+
+isic:49  skos:closeMatch  nace:49 .
+
+isic:491  skos:closeMatch  nace:49.1 .
+
+isic:4911  skos:closeMatch  nace:49.10 .
+
+isic:491  skos:closeMatch  nace:49.2 .
+
+isic:4912  skos:closeMatch  nace:49.20 .
+
+isic:492  skos:closeMatch  nace:49.3 .
+
+isic:4921  skos:closeMatch  nace:49.31 .
+
+isic:4922  skos:closeMatch  nace:49.32 ;
+        skos:closeMatch  nace:49.39 .
+
+isic:492  skos:closeMatch  nace:49.4 .
+
+isic:4923  skos:closeMatch  nace:49.41 ;
+        skos:closeMatch  nace:49.42 .
+
+isic:493  skos:closeMatch  nace:49.5 .
+
+isic:4930  skos:closeMatch  nace:49.50 .
+
+isic:50  skos:closeMatch  nace:50 .
+
+isic:501  skos:closeMatch  nace:50.1 .
+
+isic:5011  skos:closeMatch  nace:50.10 .
+
+isic:501  skos:closeMatch  nace:50.2 .
+
+isic:5012  skos:closeMatch  nace:50.20 .
+
+isic:502  skos:closeMatch  nace:50.3 .
+
+isic:5021  skos:closeMatch  nace:50.30 .
+
+isic:502  skos:closeMatch  nace:50.4 .
+
+isic:5022  skos:closeMatch  nace:50.40 .
+
+isic:51  skos:closeMatch  nace:51 .
+
+isic:511  skos:closeMatch  nace:51.1 .
+
+isic:5110  skos:closeMatch  nace:51.10 .
+
+isic:512  skos:closeMatch  nace:51.2 .
+
+isic:5120  skos:closeMatch  nace:51.21 ;
+        skos:closeMatch  nace:51.22 .
+
+isic:52  skos:closeMatch  nace:52 .
+
+isic:521  skos:closeMatch  nace:52.1 .
+
+isic:5210  skos:closeMatch  nace:52.10 .
+
+isic:522  skos:closeMatch  nace:52.2 .
+
+isic:5221  skos:closeMatch  nace:52.21 .
+
+isic:5222  skos:closeMatch  nace:52.22 .
+
+isic:5223  skos:closeMatch  nace:52.23 .
+
+isic:5224  skos:closeMatch  nace:52.24 .
+
+isic:5229  skos:closeMatch  nace:52.29 .
+
+isic:53  skos:closeMatch  nace:53 .
+
+isic:531  skos:closeMatch  nace:53.1 .
+
+isic:5310  skos:closeMatch  nace:53.10 .
+
+isic:532  skos:closeMatch  nace:53.2 .
+
+isic:5320  skos:closeMatch  nace:53.20 .
+
+isic:I  skos:closeMatch  nace:I .
+
+isic:55  skos:closeMatch  nace:55 .
+
+isic:551  skos:closeMatch  nace:55.1 .
+
+isic:5510  skos:closeMatch  nace:55.10 .
+
+isic:551  skos:closeMatch  nace:55.2 .
+
+isic:5510  skos:closeMatch  nace:55.20 .
+
+isic:552  skos:closeMatch  nace:55.3 .
+
+isic:5520  skos:closeMatch  nace:55.30 .
+
+isic:559  skos:closeMatch  nace:55.9 .
+
+isic:5590  skos:closeMatch  nace:55.90 .
+
+isic:56  skos:closeMatch  nace:56 .
+
+isic:561  skos:closeMatch  nace:56.1 .
+
+isic:5610  skos:closeMatch  nace:56.10 .
+
+isic:562  skos:closeMatch  nace:56.2 .
+
+isic:5621  skos:closeMatch  nace:56.21 .
+
+isic:5629  skos:closeMatch  nace:56.29 .
+
+isic:563  skos:closeMatch  nace:56.3 .
+
+isic:5630  skos:closeMatch  nace:56.30 .
+
+isic:J  skos:closeMatch  nace:J .
+
+isic:58  skos:closeMatch  nace:58 .
+
+isic:581  skos:closeMatch  nace:58.1 .
+
+isic:5811  skos:closeMatch  nace:58.11 .
+
+isic:5812  skos:closeMatch  nace:58.12 .
+
+isic:5813  skos:closeMatch  nace:58.13 ;
+        skos:closeMatch  nace:58.14 .
+
+isic:5819  skos:closeMatch  nace:58.19 .
+
+isic:582  skos:closeMatch  nace:58.2 .
+
+isic:5820  skos:closeMatch  nace:58.21 ;
+        skos:closeMatch  nace:58.29 .
+
+isic:59  skos:closeMatch  nace:59 .
+
+isic:591  skos:closeMatch  nace:59.1 .
+
+isic:5911  skos:closeMatch  nace:59.11 .
+
+isic:5912  skos:closeMatch  nace:59.12 .
+
+isic:5913  skos:closeMatch  nace:59.13 .
+
+isic:5914  skos:closeMatch  nace:59.14 .
+
+isic:592  skos:closeMatch  nace:59.2 .
+
+isic:5920  skos:closeMatch  nace:59.20 .
+
+isic:60  skos:closeMatch  nace:60 .
+
+isic:601  skos:closeMatch  nace:60.1 .
+
+isic:6010  skos:closeMatch  nace:60.10 .
+
+isic:602  skos:closeMatch  nace:60.2 .
+
+isic:6020  skos:closeMatch  nace:60.20 .
+
+isic:61  skos:closeMatch  nace:61 .
+
+isic:611  skos:closeMatch  nace:61.1 .
+
+isic:6110  skos:closeMatch  nace:61.10 .
+
+isic:612  skos:closeMatch  nace:61.2 .
+
+isic:6120  skos:closeMatch  nace:61.20 .
+
+isic:613  skos:closeMatch  nace:61.3 .
+
+isic:6130  skos:closeMatch  nace:61.30 .
+
+isic:619  skos:closeMatch  nace:61.9 .
+
+isic:6190  skos:closeMatch  nace:61.90 .
+
+isic:62  skos:closeMatch  nace:62 .
+
+isic:620  skos:closeMatch  nace:62.0 .
+
+isic:6201  skos:closeMatch  nace:62.01 .
+
+isic:6202  skos:closeMatch  nace:62.02 ;
+        skos:closeMatch  nace:62.03 .
+
+isic:6209  skos:closeMatch  nace:62.09 .
+
+isic:63  skos:closeMatch  nace:63 .
+
+isic:631  skos:closeMatch  nace:63.1 .
+
+isic:6311  skos:closeMatch  nace:63.11 .
+
+isic:6312  skos:closeMatch  nace:63.12 .
+
+isic:639  skos:closeMatch  nace:63.9 .
+
+isic:6391  skos:closeMatch  nace:63.91 .
+
+isic:6399  skos:closeMatch  nace:63.99 .
+
+isic:K  skos:closeMatch  nace:K .
+
+isic:64  skos:closeMatch  nace:64 .
+
+isic:641  skos:closeMatch  nace:64.1 .
+
+isic:6411  skos:closeMatch  nace:64.11 .
+
+isic:6419  skos:closeMatch  nace:64.19 .
+
+isic:642  skos:closeMatch  nace:64.2 .
+
+isic:6420  skos:closeMatch  nace:64.20 .
+
+isic:643  skos:closeMatch  nace:64.3 .
+
+isic:6430  skos:closeMatch  nace:64.30 .
+
+isic:649  skos:closeMatch  nace:64.9 .
+
+isic:6491  skos:closeMatch  nace:64.91 .
+
+isic:6492  skos:closeMatch  nace:64.92 .
+
+isic:6499  skos:closeMatch  nace:64.99 .
+
+isic:65  skos:closeMatch  nace:65 .
+
+isic:651  skos:closeMatch  nace:65.1 .
+
+isic:6511  skos:closeMatch  nace:65.11 .
+
+isic:6512  skos:closeMatch  nace:65.12 .
+
+isic:652  skos:closeMatch  nace:65.2 .
+
+isic:6520  skos:closeMatch  nace:65.20 .
+
+isic:653  skos:closeMatch  nace:65.3 .
+
+isic:6530  skos:closeMatch  nace:65.30 .
+
+isic:66  skos:closeMatch  nace:66 .
+
+isic:661  skos:closeMatch  nace:66.1 .
+
+isic:6611  skos:closeMatch  nace:66.11 .
+
+isic:6612  skos:closeMatch  nace:66.12 .
+
+isic:6619  skos:closeMatch  nace:66.19 .
+
+isic:662  skos:closeMatch  nace:66.2 .
+
+isic:6621  skos:closeMatch  nace:66.21 .
+
+isic:6622  skos:closeMatch  nace:66.22 .
+
+isic:6629  skos:closeMatch  nace:66.29 .
+
+isic:663  skos:closeMatch  nace:66.3 .
+
+isic:6630  skos:closeMatch  nace:66.30 .
+
+isic:L  skos:closeMatch  nace:L .
+
+isic:68  skos:closeMatch  nace:68 .
+
+isic:681  skos:closeMatch  nace:68.1 .
+
+isic:6810  skos:closeMatch  nace:68.10 .
+
+isic:681  skos:closeMatch  nace:68.2 .
+
+isic:6810  skos:closeMatch  nace:68.20 .
+
+isic:682  skos:closeMatch  nace:68.3 .
+
+isic:6820  skos:closeMatch  nace:68.31 ;
+        skos:closeMatch  nace:68.32 .
+
+isic:M  skos:closeMatch  nace:M .
+
+isic:69  skos:closeMatch  nace:69 .
+
+isic:691  skos:closeMatch  nace:69.1 .
+
+isic:6910  skos:closeMatch  nace:69.10 .
+
+isic:692  skos:closeMatch  nace:69.2 .
+
+isic:6920  skos:closeMatch  nace:69.20 .
+
+isic:70  skos:closeMatch  nace:70 .
+
+isic:701  skos:closeMatch  nace:70.1 .
+
+isic:7010  skos:closeMatch  nace:70.10 .
+
+isic:702  skos:closeMatch  nace:70.2 .
+
+isic:7020  skos:closeMatch  nace:70.21 ;
+        skos:closeMatch  nace:70.22 .
+
+isic:71  skos:closeMatch  nace:71 .
+
+isic:711  skos:closeMatch  nace:71.1 .
+
+isic:7110  skos:closeMatch  nace:71.11 ;
+        skos:closeMatch  nace:71.12 .
+
+isic:712  skos:closeMatch  nace:71.2 .
+
+isic:7120  skos:closeMatch  nace:71.20 .
+
+isic:72  skos:closeMatch  nace:72 .
+
+isic:721  skos:closeMatch  nace:72.1 .
+
+isic:7210  skos:closeMatch  nace:72.11 ;
+        skos:closeMatch  nace:72.19 .
+
+isic:722  skos:closeMatch  nace:72.2 .
+
+isic:7220  skos:closeMatch  nace:72.20 .
+
+isic:73  skos:closeMatch  nace:73 .
+
+isic:731  skos:closeMatch  nace:73.1 .
+
+isic:7310  skos:closeMatch  nace:73.11 ;
+        skos:closeMatch  nace:73.12 .
+
+isic:732  skos:closeMatch  nace:73.2 .
+
+isic:7320  skos:closeMatch  nace:73.20 .
+
+isic:74  skos:closeMatch  nace:74 .
+
+isic:741  skos:closeMatch  nace:74.1 .
+
+isic:7410  skos:closeMatch  nace:74.10 .
+
+isic:742  skos:closeMatch  nace:74.2 .
+
+isic:7420  skos:closeMatch  nace:74.20 .
+
+isic:749  skos:closeMatch  nace:74.3 .
+
+isic:7490  skos:closeMatch  nace:74.30 .
+
+isic:749  skos:closeMatch  nace:74.9 .
+
+isic:7490  skos:closeMatch  nace:74.90 .
+
+isic:75  skos:closeMatch  nace:75 .
+
+isic:750  skos:closeMatch  nace:75.0 .
+
+isic:7500  skos:closeMatch  nace:75.00 .
+
+isic:N  skos:closeMatch  nace:N .
+
+isic:77  skos:closeMatch  nace:77 .
+
+isic:771  skos:closeMatch  nace:77.1 .
+
+isic:7710  skos:closeMatch  nace:77.11 ;
+        skos:closeMatch  nace:77.12 .
+
+isic:772  skos:closeMatch  nace:77.2 .
+
+isic:7721  skos:closeMatch  nace:77.21 .
+
+isic:7722  skos:closeMatch  nace:77.22 .
+
+isic:7729  skos:closeMatch  nace:77.29 .
+
+isic:773  skos:closeMatch  nace:77.3 .
+
+isic:7730  skos:closeMatch  nace:77.31 ;
+        skos:closeMatch  nace:77.32 ;
+        skos:closeMatch  nace:77.33 ;
+        skos:closeMatch  nace:77.34 ;
+        skos:closeMatch  nace:77.35 ;
+        skos:closeMatch  nace:77.39 .
+
+isic:774  skos:closeMatch  nace:77.4 .
+
+isic:7740  skos:closeMatch  nace:77.40 .
+
+isic:78  skos:closeMatch  nace:78 .
+
+isic:781  skos:closeMatch  nace:78.1 .
+
+isic:7810  skos:closeMatch  nace:78.10 .
+
+isic:782  skos:closeMatch  nace:78.2 .
+
+isic:7820  skos:closeMatch  nace:78.20 .
+
+isic:783  skos:closeMatch  nace:78.3 .
+
+isic:7830  skos:closeMatch  nace:78.30 .
+
+isic:79  skos:closeMatch  nace:79 .
+
+isic:791  skos:closeMatch  nace:79.1 .
+
+isic:7911  skos:closeMatch  nace:79.11 .
+
+isic:7912  skos:closeMatch  nace:79.12 .
+
+isic:799  skos:closeMatch  nace:79.9 .
+
+isic:7990  skos:closeMatch  nace:79.90 .
+
+isic:80  skos:closeMatch  nace:80 .
+
+isic:801  skos:closeMatch  nace:80.1 .
+
+isic:8010  skos:closeMatch  nace:80.10 .
+
+isic:802  skos:closeMatch  nace:80.2 .
+
+isic:8020  skos:closeMatch  nace:80.20 .
+
+isic:803  skos:closeMatch  nace:80.3 .
+
+isic:8030  skos:closeMatch  nace:80.30 .
+
+isic:81  skos:closeMatch  nace:81 .
+
+isic:811  skos:closeMatch  nace:81.1 .
+
+isic:8110  skos:closeMatch  nace:81.10 .
+
+isic:812  skos:closeMatch  nace:81.2 .
+
+isic:8121  skos:closeMatch  nace:81.21 .
+
+isic:8129  skos:closeMatch  nace:81.22 ;
+        skos:closeMatch  nace:81.29 .
+
+isic:813  skos:closeMatch  nace:81.3 .
+
+isic:8130  skos:closeMatch  nace:81.30 .
+
+isic:82  skos:closeMatch  nace:82 .
+
+isic:821  skos:closeMatch  nace:82.1 .
+
+isic:8211  skos:closeMatch  nace:82.11 .
+
+isic:8219  skos:closeMatch  nace:82.19 .
+
+isic:822  skos:closeMatch  nace:82.2 .
+
+isic:8220  skos:closeMatch  nace:82.20 .
+
+isic:823  skos:closeMatch  nace:82.3 .
+
+isic:8230  skos:closeMatch  nace:82.30 .
+
+isic:829  skos:closeMatch  nace:82.9 .
+
+isic:8291  skos:closeMatch  nace:82.91 .
+
+isic:8292  skos:closeMatch  nace:82.92 .
+
+isic:8299  skos:closeMatch  nace:82.99 .
+
+isic:O  skos:closeMatch  nace:O .
+
+isic:84  skos:closeMatch  nace:84 .
+
+isic:841  skos:closeMatch  nace:84.1 .
+
+isic:8411  skos:closeMatch  nace:84.11 .
+
+isic:8412  skos:closeMatch  nace:84.12 .
+
+isic:8413  skos:closeMatch  nace:84.13 .
+
+isic:842  skos:closeMatch  nace:84.2 .
+
+isic:8421  skos:closeMatch  nace:84.21 .
+
+isic:8422  skos:closeMatch  nace:84.22 .
+
+isic:8423  skos:closeMatch  nace:84.23 ;
+        skos:closeMatch  nace:84.24 ;
+        skos:closeMatch  nace:84.25 .
+
+isic:843  skos:closeMatch  nace:84.3 .
+
+isic:8430  skos:closeMatch  nace:84.30 .
+
+isic:P  skos:closeMatch  nace:P .
+
+isic:85  skos:closeMatch  nace:85 .
+
+isic:851  skos:closeMatch  nace:85.1 .
+
+isic:8510  skos:closeMatch  nace:85.10 .
+
+isic:851  skos:closeMatch  nace:85.2 .
+
+isic:8510  skos:closeMatch  nace:85.20 .
+
+isic:852  skos:closeMatch  nace:85.3 .
+
+isic:8521  skos:closeMatch  nace:85.31 .
+
+isic:8522  skos:closeMatch  nace:85.32 .
+
+isic:853  skos:closeMatch  nace:85.4 .
+
+isic:8530  skos:closeMatch  nace:85.41 ;
+        skos:closeMatch  nace:85.42 .
+
+isic:854  skos:closeMatch  nace:85.5 .
+
+isic:8541  skos:closeMatch  nace:85.51 .
+
+isic:8542  skos:closeMatch  nace:85.52 .
+
+isic:8549  skos:closeMatch  nace:85.53 ;
+        skos:closeMatch  nace:85.59 .
+
+isic:855  skos:closeMatch  nace:85.6 .
+
+isic:8550  skos:closeMatch  nace:85.60 .
+
+isic:Q  skos:closeMatch  nace:Q .
+
+isic:86  skos:closeMatch  nace:86 .
+
+isic:861  skos:closeMatch  nace:86.1 .
+
+isic:8610  skos:closeMatch  nace:86.10 .
+
+isic:862  skos:closeMatch  nace:86.2 .
+
+isic:8620  skos:closeMatch  nace:86.21 ;
+        skos:closeMatch  nace:86.22 ;
+        skos:closeMatch  nace:86.23 .
+
+isic:869  skos:closeMatch  nace:86.9 .
+
+isic:8690  skos:closeMatch  nace:86.90 .
+
+isic:87  skos:closeMatch  nace:87 .
+
+isic:871  skos:closeMatch  nace:87.1 .
+
+isic:8710  skos:closeMatch  nace:87.10 .
+
+isic:872  skos:closeMatch  nace:87.2 .
+
+isic:8720  skos:closeMatch  nace:87.20 .
+
+isic:873  skos:closeMatch  nace:87.3 .
+
+isic:8730  skos:closeMatch  nace:87.30 .
+
+isic:879  skos:closeMatch  nace:87.9 .
+
+isic:8790  skos:closeMatch  nace:87.90 .
+
+isic:88  skos:closeMatch  nace:88 .
+
+isic:881  skos:closeMatch  nace:88.1 .
+
+isic:8810  skos:closeMatch  nace:88.10 .
+
+isic:889  skos:closeMatch  nace:88.9 .
+
+isic:8890  skos:closeMatch  nace:88.91 ;
+        skos:closeMatch  nace:88.99 .
+
+isic:R  skos:closeMatch  nace:R .
+
+isic:90  skos:closeMatch  nace:90 .
+
+isic:900  skos:closeMatch  nace:90.0 .
+
+isic:9000  skos:closeMatch  nace:90.01 ;
+        skos:closeMatch  nace:90.02 ;
+        skos:closeMatch  nace:90.03 ;
+        skos:closeMatch  nace:90.04 .
+
+isic:91  skos:closeMatch  nace:91 .
+
+isic:910  skos:closeMatch  nace:91.0 .
+
+isic:9101  skos:closeMatch  nace:91.01 .
+
+isic:9102  skos:closeMatch  nace:91.02 ;
+        skos:closeMatch  nace:91.03 .
+
+isic:9103  skos:closeMatch  nace:91.04 .
+
+isic:92  skos:closeMatch  nace:92 .
+
+isic:920  skos:closeMatch  nace:92.0 .
+
+isic:9200  skos:closeMatch  nace:92.00 .
+
+isic:93  skos:closeMatch  nace:93 .
+
+isic:931  skos:closeMatch  nace:93.1 .
+
+isic:9311  skos:closeMatch  nace:93.11 .
+
+isic:9312  skos:closeMatch  nace:93.12 .
+
+isic:9311  skos:closeMatch  nace:93.13 .
+
+isic:9319  skos:closeMatch  nace:93.19 .
+
+isic:932  skos:closeMatch  nace:93.2 .
+
+isic:9321  skos:closeMatch  nace:93.21 .
+
+isic:9329  skos:closeMatch  nace:93.29 .
+
+isic:S  skos:closeMatch  nace:S .
+
+isic:94  skos:closeMatch  nace:94 .
+
+isic:941  skos:closeMatch  nace:94.1 .
+
+isic:9411  skos:closeMatch  nace:94.11 .
+
+isic:9412  skos:closeMatch  nace:94.12 .
+
+isic:942  skos:closeMatch  nace:94.2 .
+
+isic:9420  skos:closeMatch  nace:94.20 .
+
+isic:949  skos:closeMatch  nace:94.9 .
+
+isic:9491  skos:closeMatch  nace:94.91 .
+
+isic:9492  skos:closeMatch  nace:94.92 .
+
+isic:9499  skos:closeMatch  nace:94.99 .
+
+isic:95  skos:closeMatch  nace:95 .
+
+isic:951  skos:closeMatch  nace:95.1 .
+
+isic:9511  skos:closeMatch  nace:95.11 .
+
+isic:9512  skos:closeMatch  nace:95.12 .
+
+isic:952  skos:closeMatch  nace:95.2 .
+
+isic:9521  skos:closeMatch  nace:95.21 .
+
+isic:9522  skos:closeMatch  nace:95.22 .
+
+isic:9523  skos:closeMatch  nace:95.23 .
+
+isic:9524  skos:closeMatch  nace:95.24 .
+
+isic:9529  skos:closeMatch  nace:95.25 ;
+        skos:closeMatch  nace:95.29 .
+
+isic:96  skos:closeMatch  nace:96 .
+
+isic:960  skos:closeMatch  nace:96.0 .
+
+isic:9601  skos:closeMatch  nace:96.01 .
+
+isic:9602  skos:closeMatch  nace:96.02 .
+
+isic:9603  skos:closeMatch  nace:96.03 .
+
+isic:9609  skos:closeMatch  nace:96.04 ;
+        skos:closeMatch  nace:96.09 .
+
+isic:T  skos:closeMatch  nace:T .
+
+isic:97  skos:closeMatch  nace:97 .
+
+isic:970  skos:closeMatch  nace:97.0 .
+
+isic:9700  skos:closeMatch  nace:97.00 .
+
+isic:98  skos:closeMatch  nace:98 .
+
+isic:981  skos:closeMatch  nace:98.1 .
+
+isic:9810  skos:closeMatch  nace:98.10 .
+
+isic:982  skos:closeMatch  nace:98.2 .
+
+isic:9820  skos:closeMatch  nace:98.20 .
+
+isic:U  skos:closeMatch  nace:U .
+
+isic:99  skos:closeMatch  nace:99 .
+
+isic:990  skos:closeMatch  nace:99.0 .
+
+isic:9900  skos:closeMatch  nace:99.00 .
