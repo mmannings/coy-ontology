@@ -57,6 +57,7 @@ tasks:
   sync:commit_shapes:
     desc: Commit the current state of the shape file to the current branch
     cmds:
+      - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
       - git add {{.SHAPEFILE}}.ttl {{.SHAPEFILE}}.nt
       - cmd: 'git commit -m "Bot update shapes: {{.MSG_ADD}}"'
         ignore_error: true
@@ -64,7 +65,7 @@ tasks:
   sync:git_push:
     desc: Push changes to the repository
     cmds:
-      - git push
+      - git push https://bot_push_coypu:{{.GITLAB_PAC_PUSH}}@gitlab.com/coypu-project/coy-ontology.git HEAD:main
 
   helper:normalize_turtle:
     cmds:

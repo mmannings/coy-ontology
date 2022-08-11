@@ -25,6 +25,11 @@ workflow:
         - scripts
         - rdfunit-tests
 
+services:
+  - name: docker:dind
+    alias: docker
+
+
 stages:
   - rdfunit
   - oops
