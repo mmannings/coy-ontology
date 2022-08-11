@@ -29,7 +29,7 @@ stats:
   artifacts:
     when: always
     paths:
-      -"coy.withStats.ttl"
+      - "coy.withStats.ttl"
     public: false
   script:
     - cat coy.ttl > main.ttl
