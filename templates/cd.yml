@@ -9,10 +9,37 @@ download:
     when: always
     paths:
       - "./java-17-widoco-1.4.17-jar-with-dependencies.jar"
+      - "void.stats.ttl"
     public: false
   script:
     - rm -rf ./dist ./repo
     - wget https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-17-widoco-1.4.17-jar-with-dependencies.jar
+    # get void statistics
+    - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
+    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/dataset-stats.git" void
+    - cp void/void-implisense.ttl void.stats.ttl
+
+stats:
+  stage: stats
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^verified20/'
+  image:
+    name: tboonx/rpt:jena-4.6.0
+    entrypoint: [""]
+  artifacts:
+    when: always
+    paths:
+      - "coy.withStats.ttl"
+    public: false
+  script:
+    - cat coy.ttl > main.ttl
+    - java -jar /rpt.jar integrate -o=onlyVoid.nt --out-format=ntriples void.stats.ttl scripts/extractVoidInformation.rq
+    - cat onlyVoid.nt >> main.ttl
+    - java -jar /rpt.jar integrate -o=x.nt --out-format=ntriples main.ttl scripts/createParentClassStatInfo.rq
+    - cat x.nt >> main.ttl
+    - java -jar /rpt.jar integrate -o=coy.withStats.nt --out-format=ntriples main.ttl scripts/createNotInUseStatus.rq
+    - cat coy.withStats.nt >> main.ttl
+    - mv main.ttl coy.withStats.ttl
 
 widoco:
   stage: widoco
@@ -27,7 +54,7 @@ widoco:
       - "./dist"
     public: false
   script:
-    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
+    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.withStats.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
 
 cd:
   stage: cd
