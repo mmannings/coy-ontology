@@ -21,7 +21,9 @@ vars:
   GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
   GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
 
-  RAPPER_CMD: rapper
+  RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
+  RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
+  RAPPER_CMD: {{.RAPPER_DOCKER}} rapper
 
 tasks:
 
