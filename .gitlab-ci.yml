@@ -24,6 +24,8 @@ workflow:
         - coy.ttl
         - scripts
         - rdfunit-tests
+        - .gitlab-ci.yml
+        - templates
 
 stages:
   - rdfunit
@@ -178,3 +180,4 @@ send_email:
         ls -hal &&
         export TEXT=`cat reports.txt` &&
         curl --request POST --url https://api.sendgrid.com/v3/mail/send --header "Authorization: Bearer $SENDGRID_API_KEY" --header "Content-Type: application/json" --data "{\"personalizations\": [{\"to\": [{\"email\": \"$GITLAB_USER_EMAIL\"}]}],\"from\": {\"email\": \"junghanns@infai.org\"},\"subject\": \"Gitlab Build $CI_PROJECT_NAME Pipeline\",\"content\": [{\"type\": \"text/html\", \"value\": \"<b>Repository $CI_PROJECT_NAME branch $CI_COMMIT_BRANCH: Pipeline $CI_PIPELINE_ID, job $CI_JOB_ID</b><br> More info at: <a href=\\\"$CI_PIPELINE_URL\\\">$CI_PIPELINE_URL</a><br><br>Listed below you will find the summary of RDFUnit (manual and generic test cases) and <a href=\\\"http://oops.linkeddata.es/catalogue.jsp\\\">OOPS</a> (common pitfalls).<br><br>For more information read the pipeline/job result. Please be aware that OOPS results are empty when the external serivce is not available or has issues with the ontology file. Ask InfAI if you are unsure.<br><br><br><pre>$TEXT</pre><br><br>A basic classification was also created. In order to read it, please follow the pipeline URL at the top, then click on resoner step and then on download on the right sidebar.\"}]}"
+
