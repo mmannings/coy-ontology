@@ -1,7 +1,5 @@
 download:
   stage: download
-  rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -17,12 +15,10 @@ download:
     # get void statistics
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/dataset-stats.git" void
-    - cp void/void-implisense.ttl void.stats.ttl
+    - cp void/implisense-stats.nt void.stats.ttl
 
 stats:
   stage: stats
-  rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: tboonx/rpt:jena-4.6.0
     entrypoint: [""]
@@ -43,8 +39,6 @@ stats:
 
 widoco:
   stage: widoco
-  rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
@@ -52,7 +46,7 @@ widoco:
     when: always
     paths:
       - "./dist"
-    public: false
+    public: true
   script:
     - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.withStats.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
 
@@ -68,3 +62,37 @@ cd:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/
     - git add . && git commit -am "CD" && git push "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
+
+deploy_review:
+  image: node:16
+  stage: cd
+  needs:
+    - widoco
+  before_script:
+    - npm install surge --save-dev
+  script:
+    - mv dist/index-en.html dist/index.html && rm dist/readme.md
+    - npx surge dist/ $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: https://$CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh
+    on_stop: stop_deploy_review
+    auto_stop_in: 1 week
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+
+stop_deploy_review:
+  image: node:16
+  stage: cd
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - npm install surge --save-dev
+  script:
+    - npx surge teardown $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    action: stop
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: manual
