@@ -1,0 +1,40 @@
+PREFIX vaem: <http://www.linkedmodel.org/schema/vaem#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+CONSTRUCT {
+  ?cls a owl:Class ;
+    vaem:rationale "---USED BUT NOT IN ONTOLOGY---" .
+  ?prop a owl:AnnotationProperty ;
+    vaem:rationale "---USED BUT NOT IN ONTOLOGY---" .
+} WHERE {
+  {
+    [] void:class ?cls .
+
+    FILTER(!regex(str(?cls),concat("^(",
+      str(rdfs:),"|",
+      str(owl:),"|",
+      str(void:),"|",
+      str(rdf:),"|",
+      str(geo:),"|",
+    "(?!))")))
+    
+    FILTER NOT EXISTS {
+      ?cls a owl:Class
+    }
+  } UNION {
+    [] void:property ?prop .
+
+    FILTER(!regex(str(?prop),concat("^(",
+      str(rdfs:),"|",
+      str(owl:),"|",
+      str(void:),"|",
+      str(rdf:),"|",
+      str(geo:),"|",
+    "(?!))")))
+
+    FILTER NOT EXISTS {
+      VALUES ?ot { owl:ObjectProperty owl:DatatypeProperty owl:AnnotationProperty } 
+      ?prop a ?ot
+    }
+  }
+}

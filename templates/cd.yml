@@ -35,6 +35,8 @@ stats:
     - cat x.nt >> main.ttl
     - java -jar /rpt.jar integrate -o=coy.withStats.nt --out-format=ntriples main.ttl scripts/createNotInUseStatus.rq
     - cat coy.withStats.nt >> main.ttl
+    - java -jar /rpt.jar integrate -o=coy.missing.nt --out-format=ntriples void.stats.ttl main.ttl scripts/usedButNotInOnto.rq
+    - cat coy.missing.nt >> main.ttl
     - mv main.ttl coy.withStats.ttl
 
 widoco:
@@ -49,6 +51,19 @@ widoco:
     public: true
   script:
     - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.withStats.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
+    - |
+        sed -i -e "/<\/body>/i \
+          <script type=\"text/javascript\">\\
+            var x = document.evaluate(\"//dl[./dd[text()='---USED BUT NOT IN ONTOLOGY---']]\", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);\
+            for (var i = 0; i < x.snapshotLength; i++) {\
+              x.snapshotItem(i).style='background-color:red';\
+            }\
+            var x = document.evaluate(\"//dl[./dd[text()='Not in use']]\", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);\
+            for (var i = 0; i < x.snapshotLength; i++) {\
+              x.snapshotItem(i).style='background-color:yellow';\
+            }\\
+          </script>
+        " dist/index-en.html
 
 cd:
   stage: cd
