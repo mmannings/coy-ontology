@@ -23,7 +23,7 @@ vars:
 
   RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
   RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
-  RAPPER_CMD: {{.RAPPER_DOCKER}} rapper
+  RAPPER_CMD: '{{.RAPPER_DOCKER}} rapper'
 
 tasks:
 
