@@ -59,7 +59,7 @@ tasks:
     cmds:
       - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
       - git add {{.SHAPEFILE}}.ttl {{.SHAPEFILE}}.nt
-      - cmd: 'git commit -m "Bot update shapes: {{.MSG_ADD}}"'
+      - cmd: 'git commit -m "Bot update shapes: {{.MSG_ADD}} [skip ci]"'
         ignore_error: true
 
   sync:git_push:
