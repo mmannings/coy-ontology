@@ -20,14 +20,14 @@ CONSTRUCT {
   
 } WHERE {
   VALUES (?url ?id_col ?label_col ?ns) {
-    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/CPC_Ver_2_1_english_structure.txt> "CPC21code" "CPC21title" "https://data.coypu.org/classification/product/un_cpc_v21/")
+    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/CPC_Ver_2_1_english_structure.txt> "CPC21code" "CPC21title" cpc:)
   } 
   
   ?url csv:parse (?rowJsonObj "-ho") .
   BIND(json:path(?rowJsonObj, "$." + ?id_col) AS ?code)
   BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
 
-  BIND(URI(CONCAT(?ns, ?code)) AS ?s)
+  BIND(URI(CONCAT(STR(?ns), ?code)) AS ?s)
   BIND(strlang(?label_txt, "en") AS ?label)
   
   # parent concept

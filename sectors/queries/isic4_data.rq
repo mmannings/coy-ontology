@@ -19,13 +19,13 @@ CONSTRUCT {
   
 } WHERE {
   VALUES (?url ?id_col ?label_col ?ns) {
-    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/ISIC_Rev_4_english_structure.Txt> "Code" "Description" "https://data.coypu.org/classification/activity/un_isic_r4/")
+    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/ISIC_Rev_4_english_structure.Txt> "Code" "Description" isic:)
   } 
   
   ?url csv:parse (?rowJsonObj "-ho") .
   BIND(json:path(?rowJsonObj, "$." + ?id_col) AS ?code)
   BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
 
-  BIND(URI(CONCAT(?ns, ?code)) AS ?s)
+  BIND(URI(CONCAT(STR(?ns), ?code)) AS ?s)
   BIND(strlang(?label_txt, "en") AS ?label)
 }
