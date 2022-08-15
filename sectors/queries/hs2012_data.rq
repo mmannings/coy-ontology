@@ -33,7 +33,7 @@ CONSTRUCT {
   BIND(strlang(?label_txt, "en") AS ?label)
   
   BIND(json:path(?item, "$.parent") AS ?parent_code)
-  BIND(IF(STRLEN(?parent_code) > 0, URI(CONCAT(str(hs:), ?parent_code)), COALESCE()) AS ?parent)
+  BIND(IF(?parent_code != "#", URI(CONCAT(str(hs:), ?parent_code)), COALESCE()) AS ?parent)
 }
 
 
