@@ -1,6 +1,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix isic: <https://data.coypu.org/classification/activity/un_isic_r4/> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 isic:A  rdf:type        skos:Concept ;

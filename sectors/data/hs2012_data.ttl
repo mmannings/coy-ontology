@@ -1,37 +1,32 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix hs: <https://data.coypu.org/classification/product/un_hs_2012/> .
+@prefix hs: <https://data.coypu.org/classification/hs_2012/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 hs:ALL  rdf:type        skos:Concept ;
         skos:inScheme   hs: ;
         skos:prefLabel  "All HS2012 categories"@en ;
-        skos:notation   "ALL" ;
-        skos:broader    <https://data.coypu.org/classification/product/un_hs_2012/#> .
+        skos:notation   "ALL" .
 
 hs:TOTAL  rdf:type      skos:Concept ;
         skos:inScheme   hs: ;
         skos:prefLabel  "Total of all HS2012 commodities"@en ;
-        skos:notation   "TOTAL" ;
-        skos:broader    <https://data.coypu.org/classification/product/un_hs_2012/#> .
+        skos:notation   "TOTAL" .
 
 hs:AG2  rdf:type        skos:Concept ;
         skos:inScheme   hs: ;
         skos:prefLabel  "AGAll 2-digit HS2012 commodities"@en ;
-        skos:notation   "AG2" ;
-        skos:broader    <https://data.coypu.org/classification/product/un_hs_2012/#> .
+        skos:notation   "AG2" .
 
 hs:AG4  rdf:type        skos:Concept ;
         skos:inScheme   hs: ;
         skos:prefLabel  "AGAll 4-digit HS2012 commodities"@en ;
-        skos:notation   "AG4" ;
-        skos:broader    <https://data.coypu.org/classification/product/un_hs_2012/#> .
+        skos:notation   "AG4" .
 
 hs:AG6  rdf:type        skos:Concept ;
         skos:inScheme   hs: ;
         skos:prefLabel  "AGAll 6-digit HS2012 commodities"@en ;
-        skos:notation   "AG6" ;
-        skos:broader    <https://data.coypu.org/classification/product/un_hs_2012/#> .
+        skos:notation   "AG6" .
 
 hs:01   rdf:type        skos:Concept ;
         skos:inScheme   hs: ;
