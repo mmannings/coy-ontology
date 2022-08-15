@@ -5,7 +5,11 @@ PREFIX json: <http://jsa.aksw.org/fn/json/>
 PREFIX csv: <http://jsa.aksw.org/fn/csv/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX cpc: <https://data.coypu.org/classification/product/un_cpc_v21/>
+
+PREFIX cpc: <https://data.coypu.org/classification/cpc_v2.1/>
+PREFIX hs: <https://data.coypu.org/classification/hs_2012/>
+PREFIX nace: <https://data.coypu.org/classification/nace_r2/>
+PREFIX isic: <https://data.coypu.org/classification/isic_r4/>
 
 CONSTRUCT {
   ?s a skos:Concept ;
