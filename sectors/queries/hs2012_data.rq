@@ -1,0 +1,36 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX url: <http://jsa.aksw.org/fn/url/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX hs: <https://data.coypu.org/classification/product/un_hs_2012/>
+
+CONSTRUCT {
+  ?s a skos:Concept ;
+     skos:inScheme hs: ;
+     skos:prefLabel ?label ;  
+     skos:notation ?code ;
+     skos:broader ?parent
+  
+} WHERE {
+  BIND(<https://comtrade.un.org/data/cache/classificationH4.json> as ?url)
+  BIND(STRDT(url:text(?url), xsd:json) AS ?json)
+  
+  BIND(json:path(?json, "$.results") AS ?itemsArr)
+  ?itemsArr json:unnest (?item ?i) .
+  BIND(json:path(?item, "$.id") AS ?code)
+  BIND(json:path(?item, "$.text") AS ?label_txt_)
+  BIND(REPLACE(?label_txt_, "\\d+ - ", "") AS ?label_txt)
+
+  BIND(URI(CONCAT(str(hs:), ?code)) AS ?s)
+  BIND(strlang(?label_txt, "en") AS ?label)
+  
+  BIND(json:path(?item, "$.parent") AS ?parent_code)
+  BIND(URI(CONCAT(str(hs:), ?parent_code)) AS ?parent)
+}
+
+
+

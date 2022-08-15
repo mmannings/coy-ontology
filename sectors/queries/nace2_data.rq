@@ -1,0 +1,44 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX xml: <http://jsa.aksw.org/fn/xml/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX nace: <https://data.coypu.org/classification/activity/eu_nace_r2/>
+
+CONSTRUCT {
+  ?s a skos:Concept ;
+     skos:inScheme nace: ;
+     skos:prefLabel ?label ;
+     skos:notation ?code ;
+     xkos:coreContentNote ?core_content_note ;
+     xkos:additionalContentNote ?additional_content_note ;
+     xkos:exclusionNote ?exclusion_note 
+  
+} WHERE {
+  BIND(<file:///home/user/work/projects/coypu/data-sources/sectors/NACE/NACE_REV2_20220528_075016.xml> AS ?url)
+  
+  
+  ?url xml:parse ?xml .
+  ?xml xml:unnest ("/Claset/Classification/Item" ?item)
+ 
+  BIND(xml:path(?item, "./@id") AS ?code)
+  BIND(URI(CONCAT(str(nace:), ?code)) AS ?s)
+  
+  BIND(xml:path(?item, "./Label/LabelText/text()") AS ?label_txt)
+  BIND(strlang(?label_txt, "en") AS ?label)
+  
+  BIND(xml:path(?item, "./Property[@name='ExplanatoryNote']") AS ?expl_note)
+  
+  BIND(xml:path(?expl_note, "./PropertyQualifier[@name='CentralContent']/PropertyText/text()") AS ?core_txt)
+  BIND(strlang(?core_txt, "en") AS ?core_content_note)
+  
+  BIND(xml:path(?expl_note, "./PropertyQualifier[@name='LimitContent']/PropertyText/text()") AS ?additional_txt)
+  BIND(strlang(?additional_txt, "en") AS ?additional_content_note)
+  
+  BIND(xml:path(?expl_note, "./PropertyQualifier[@name='Exclusions']/PropertyText/text()") AS ?exclusion_txt)
+  BIND(strlang(?exclusion_txt, "en") AS ?exclusion_note)
+  
+}

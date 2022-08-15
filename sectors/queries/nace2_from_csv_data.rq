@@ -1,0 +1,44 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX nace: <https://data.coypu.org/classification/product/eu_nace_r2/>
+
+CONSTRUCT {
+  ?s a skos:Concept ;
+     skos:inScheme nace: ;
+     skos:prefLabel ?label ; 
+     skos:notation ?code ;
+     skos:broader ?parent ;
+     xkos:coreContentNote ?core_content_note ;
+     xkos:additionalContentNote ?additional_content_note ;
+     xkos:exclusionNote ?exclusion_note 
+  
+} WHERE {
+  VALUES (?url ?id_col ?label_col ?ns) {
+    (<file:///home/user/work/projects/coypu/data-sources/sectors/NACE/NACE_REV2_20220725_135216.csv> "Code" "Description" nace:)
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?id_col) AS ?code)
+  BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
+
+  BIND(URI(CONCAT(STR(?ns), ?code)) AS ?s)
+  BIND(strlang(?label_txt, "en") AS ?label)
+  
+  # parent concept
+  BIND(json:path(?rowJsonObj, "$.Parent") AS ?parent_code)
+  BIND(URI(CONCAT(STR(?ns), ?parent_code)) AS ?parent)
+  
+  BIND(json:path(?rowJsonObj, "$.['This item includes']") AS ?core_txt)
+  BIND(IF(STRLEN(?core_txt) > 0, strlang(?core_txt, "en"), COALESCE()) AS ?core_content_note)
+  
+  BIND(json:path(?rowJsonObj, "$.['This item also includes']") AS ?additional_txt)
+  BIND(IF(STRLEN(?additional_txt) > 0, strlang(?additional_txt, "en"), COALESCE()) AS ?additional_content_note)
+  
+  BIND(json:path(?rowJsonObj, "$.['This item excludes']") AS ?exclusion_txt)
+  BIND(IF(STRLEN(?exclusion_txt) > 0, strlang(?exclusion_txt, "en"), COALESCE()) AS ?exclusion_note)
+}

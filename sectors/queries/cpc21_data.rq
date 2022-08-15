@@ -1,0 +1,33 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cpc: <https://data.coypu.org/classification/product/un_cpc_v21/>
+
+CONSTRUCT {
+  ?s a skos:Concept ;
+     skos:inScheme cpc: ;
+     skos:prefLabel ?label ; 
+     skos:notation ?code ;
+     skos:broader ?parent
+  
+} WHERE {
+  VALUES (?url ?id_col ?label_col ?ns) {
+    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/CPC_Ver_2_1_english_structure.txt> "CPC21code" "CPC21title" "https://data.coypu.org/classification/product/un_cpc_v21/")
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?id_col) AS ?code)
+  BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
+
+  BIND(URI(CONCAT(?ns, ?code)) AS ?s)
+  BIND(strlang(?label_txt, "en") AS ?label)
+  
+  # parent concept
+  BIND(IF(STRLEN(?code) > 1, SUBSTR(?code, 0, STRLEN(?code)), COALESCE()) AS ?parent_code)
+  BIND(URI(CONCAT(?ns, ?parent_code)) AS ?parent)
+  
+}

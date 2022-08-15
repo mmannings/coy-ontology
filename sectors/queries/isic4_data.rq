@@ -1,0 +1,27 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX isic: <https://data.coypu.org/classification/activity/un_isic_r4/>
+
+CONSTRUCT {
+  ?s a skos:Concept ;
+     skos:inScheme isic: ;
+     skos:prefLabel ?label ;  
+     skos:notation ?code
+  
+} WHERE {
+  VALUES (?url ?id_col ?label_col ?ns) {
+    (<https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/ISIC_Rev_4_english_structure.Txt> "Code" "Description" "https://data.coypu.org/classification/activity/un_isic_r4/")
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?id_col) AS ?code)
+  BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
+
+  BIND(URI(CONCAT(?ns, ?code)) AS ?s)
+  BIND(strlang(?label_txt, "en") AS ?label)
+}

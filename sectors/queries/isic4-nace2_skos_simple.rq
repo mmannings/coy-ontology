@@ -1,0 +1,26 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX cpc: <https://data.coypu.org/classification/product/un_cpc_v21/>
+PREFIX isic: <https://data.coypu.org/classification/activity/un_isic_r4/>
+PREFIX nace: <https://data.coypu.org/classification/activity/eu_nace_r2/>
+
+CONSTRUCT {
+  ?from skos:closeMatch ?to
+  
+} WHERE {
+  VALUES (?url ?from_col ?to_col ?from_ns ?to_ns) {
+    (<https://unstats.un.org/unsd/classifications/Econ/tables/ISIC/ISIC4_NACE2/ISIC4_NACE2.txt> "ISIC4code" "NACE2code" isic: nace:)
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?from_col) AS ?from_code)
+  BIND(json:path(?rowJsonObj, "$." + ?to_col) AS ?to_code)
+  BIND(URI(CONCAT(STR(?from_ns), ?from_code)) AS ?from)
+  BIND(URI(CONCAT(STR(?to_ns), ?to_code)) AS ?to)
+}
+#LIMIT 100
