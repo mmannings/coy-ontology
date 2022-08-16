@@ -1,4 +1,5 @@
 @prefix : <https://schema.coypu.org/global#> .
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix gn: <https://www.geonames.org/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -20,6 +21,7 @@
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/global> ;
+                                   cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor <http://aksw.org/NatanaelArndt> ,
                                                        "Andreas Schaefer"@en ,
                                                        "Felix Engel"@en ,
@@ -39,12 +41,15 @@
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
                                    owl:priorVersion "1.6"@en ;
-                                   owl:versionInfo "1.7"@en ;
-                                   ns1:license "https://creativecommons.org/licenses/by/4.0/" .
+                                   owl:versionInfo "1.7"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://creativecommons.org/ns#license
+cc:license rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/contributor
 dcterms:contributor rdf:type owl:AnnotationProperty .
