@@ -1,6 +1,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix isic: <https://data.coypu.org/classification/activity/un_isic_r4/> .
-@prefix cpc: <https://data.coypu.org/classification/product/un_cpc_v21/> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix cpc: <https://data.coypu.org/classification/cpc_v2.1/> .
 
 cpc:01111  skos:closeMatch  isic:0111 .
 
@@ -2184,108 +2184,6 @@ cpc:38998  skos:closeMatch  isic:2029 .
 
 cpc:38999  skos:closeMatch  isic:3290 .
 
-cpc:39110  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39120  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39130  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39141  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39149  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39150  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39160  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39170  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39180  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39211  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39212  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39213  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39214  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39215  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39216  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39217  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39218  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39220  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39230  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39240  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39250  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39260  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39270  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39281  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39282  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39283  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39290  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39310  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39320  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39331  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39332  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39333  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39340  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39350  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39361  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39362  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39363  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39364  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39365  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39366  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39367  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39368  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39370  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39380  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39910  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39920  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39931  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39939  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39940  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39950  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
-cpc:39990  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
-
 cpc:41111  skos:closeMatch  isic:2410 .
 
 cpc:41112  skos:closeMatch  isic:2410 .
@@ -4239,8 +4137,6 @@ cpc:83939  skos:closeMatch  isic:7490 .
 cpc:83940  skos:closeMatch  isic:5812 .
 
 cpc:83950  skos:closeMatch  isic:7490 .
-
-cpc:83960  skos:closeMatch  <https://data.coypu.org/classification/activity/un_isic_r4/n/a> .
 
 cpc:83990  skos:closeMatch  isic:7490 .
 

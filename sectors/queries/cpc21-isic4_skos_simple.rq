@@ -24,5 +24,11 @@ CONSTRUCT {
   BIND(json:path(?rowJsonObj, "$." + ?to_col) AS ?to_code)
   BIND(URI(CONCAT(STR(?from_ns), ?from_code)) AS ?from)
   BIND(URI(CONCAT(STR(?to_ns), ?to_code)) AS ?to)
+  
+  # there are cases where no appropriate ISIC correspondence exists, at least not according to the
+  # provided mapping table, those are marked with "n/a"
+  # we omit those for now, not sure if keeping them would bring any benefit
+  FILTER(?to_code != "n/a")
+  
 }
 #LIMIT 100
