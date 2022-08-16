@@ -1,6 +1,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix hs: <https://data.coypu.org/classification/activity/un_hs_2012/> .
-@prefix cpc: <https://data.coypu.org/classification/product/un_cpc_v21/> .
+@prefix hs: <https://data.coypu.org/classification/hs_2012/> .
+@prefix cpc: <https://data.coypu.org/classification/cpc_v2.1/> .
 
 hs:100111  skos:closeMatch  cpc:01111 .
 

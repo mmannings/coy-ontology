@@ -1,6 +1,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix isic: <https://data.coypu.org/classification/activity/un_isic_r4/> .
-@prefix nace: <https://data.coypu.org/classification/activity/eu_nace_r2/> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix nace: <https://data.coypu.org/classification/nace_r2/> .
 
 isic:A  skos:closeMatch  nace:A .
 
