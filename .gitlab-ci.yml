@@ -24,6 +24,8 @@ workflow:
         - coy.ttl
         - scripts
         - rdfunit-tests
+        - .gitlab-ci.yml
+        - Taskfile.yml
 
 services:
   - name: docker:dind

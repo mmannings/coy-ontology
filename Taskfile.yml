@@ -18,12 +18,18 @@ vars:
   DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
   DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
 
+  CMEMC_VERSION: v21.11.4
+  CMEMC_IMAGE: docker-registry.eccenca.com/eccenca-cmemc:{{.CMEMC_VERSION}}
+  CMEMC_PARAMS: -e "CMEM_BASE_URI={{.CMEM_BASE_URI}}" -e "OAUTH_GRANT_TYPE={{.OAUTH_GRANT_TYPE}}" -e "OAUTH_CLIENT_ID={{.OAUTH_CLIENT_ID}}" -e "OAUTH_CLIENT_SECRET={{.OAUTH_CLIENT_SECRET}}"
+  CMEMC_DOCKER: docker run {{.DOCKER_PARAMS}} {{.CMEMC_PARAMS}} {{.DOCKER_DIRS}} {{.CMEMC_IMAGE}}
+
   GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
   GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
 
   RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
   RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
   RAPPER_CMD: '{{.RAPPER_DOCKER}} rapper'
+
 
 tasks:
 
@@ -67,6 +73,12 @@ tasks:
     cmds:
       - git push https://bot_push_coypu:{{.GITLAB_PAC_PUSH}}@gitlab.com/coypu-project/coy-ontology.git HEAD:main
 
+  sync:upload_ontology:
+    desc: Upload the ontology file to the CMEM vocabulary catalog
+    cmds:
+      - task: helper:cmemc:import_vocabulary
+        vars: { FILE: '{{.SCHEMAFILE}}' }
+
   helper:normalize_turtle:
     cmds:
       - cat prefixes.ttl {{.FILE}}.ttl | {{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} - | sponge {{.FILE}}.ttl
@@ -74,3 +86,7 @@ tasks:
   helper:sync_turtle_nt:
     cmds:
       - "{{ .RAPPER_CMD }} -i turtle -o ntriples --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | LC_ALL=C sort -u > {{.FILE}}.nt"
+
+  helper:cmemc:import_vocabulary:
+    cmds:
+      - "{{.CMEMC_DOCKER}} vocabulary import --replace {{.FILE}}.ttl"
