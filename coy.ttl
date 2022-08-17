@@ -30,7 +30,7 @@
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-08-02" ;
+                                   dcterms:modified "2022-06-07" ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
@@ -38,8 +38,8 @@
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.6"@en ;
-                                   owl:versionInfo "1.7"@en ;
+                                   owl:priorVersion "1.5"@en ;
+                                   owl:versionInfo "1.6"@en ;
                                    <https://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
 
 #################################################################
@@ -222,7 +222,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 :hasManager rdf:type owl:ObjectProperty ;
             owl:inverseOf :isManagerOf ;
             rdfs:domain :Company ;
-            rdfs:range :Person ;
+            rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
             rdfs:comment "a person which is part of a company's management"@en ;
             rdfs:label "has manager"@en ;
             rdfs:seeAlso schema:employee .
@@ -301,7 +301,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 
 ###  https://schema.coypu.org/global#isManagerOf
 :isManagerOf rdf:type owl:ObjectProperty ;
-             rdfs:domain :Person ;
+             rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
              rdfs:range :Company ;
              rdfs:comment "the company managed by a person"@en ;
              rdfs:label "is manager of"@en .
@@ -382,6 +382,11 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  https://schema.coypu.org/global#code-3166-2
+:code-3166-2 rdf:type owl:DatatypeProperty ;
+             rdfs:comment "The ISO 3166-2 code of a country"@en .
+
+
 ###  https://schema.coypu.org/global#hasAcledID
 :hasAcledID rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
@@ -439,7 +444,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#hasBirthday
 :hasBirthday rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
-             rdfs:domain :Person ;
+             rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
              rdfs:range xsd:dateTime ;
              rdfs:comment "the birthday of a person"@en ;
              rdfs:label "has birthday"@en ;
@@ -592,7 +597,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#hasFamilyName
 :hasFamilyName rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
-               rdfs:domain :Person ;
+               rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
                rdfs:range xsd:string ;
                rdfs:comment "the family name of a person"@en ;
                rdfs:label "has family name"@en ;
@@ -639,7 +644,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#hasGivenName
 :hasGivenName rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
-              rdfs:domain :Person ;
+              rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
               rdfs:range xsd:string ;
               rdfs:comment "the given name of a person"@en ;
               rdfs:label "has given name"@en ;
@@ -658,7 +663,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#hasHonorificTitle
 :hasHonorificTitle rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
-                   rdfs:domain :Person ;
+                   rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
                    rdfs:range xsd:string ;
                    rdfs:comment "a honorific title of a person"@en ;
                    rdfs:label "has honorific title"@en ;
@@ -721,27 +726,19 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                        rdfs:label "has infrastructure type"@en .
 
 
-###  https://schema.coypu.org/global#hasIso2Code
-:hasIso2Code rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Country ;
-             rdfs:range xsd:string ;
-             rdfs:comment "a country code as defined in ISO 3166-2"@en ;
-             rdfs:label "has ISO-2 code"@en .
-
-
 ###  https://schema.coypu.org/global#hasIsoCode
 :hasIsoCode rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Country ;
             rdfs:range xsd:string ;
-            rdfs:comment "a country code as defined in ISO 3166-3"@en ;
+            rdfs:comment "a country code as defined in ISO 3166"@en ;
             rdfs:label "has ISO code"@en .
 
 
 ###  https://schema.coypu.org/global#hasJobTitle
 :hasJobTitle rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
-             rdfs:domain :Person ;
+             rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
              rdfs:range xsd:string ;
              rdfs:comment "the job description of a person"@en ;
              rdfs:label "has job title"@en ;
@@ -1052,7 +1049,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#isRare
 :isRare rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
-        rdfs:domain :Material ;
+        rdfs:domain <http://www.cidoc-crm.org/cidoc-crm/E57_Material> ;
         rdfs:range xsd:boolean ;
         rdfs:comment "classifies the production material as rare material"@en ;
         rdfs:label "is rare"@en .
@@ -1076,6 +1073,22 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                         skos:prefLabel "physical thing"@en .
 
 
+###  http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object
+<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> ;
+                                                         rdfs:comment """This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.
+The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen. Typically, instances of E19 Physical Object can be moved (if not too heavy).
+In some contexts, such objects, except for aggregates, are also called “bona fide objects” (Smith &amp; Varzi, 2000, pp.401-420), i.e., naturally defined objects.
+The decision as to what is documented as a complete item, rather than by its parts or components, may be a purely administrative decision or may be a result of the order in which the item was acquired.""" ;
+                                                         rdfs:label "Materieller Gegenstand"@de ,
+                                                                    "Objet matériel"@fr ,
+                                                                    "Objeto Material"@pt ,
+                                                                    "Physical Object"@en ,
+                                                                    "Υλικό Αντικείμενο"@el ,
+                                                                    "Физический Объект"@ru ,
+                                                                    "物质对象"@zh .
+
+
 ###  http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
 <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> rdf:type owl:Class ;
                                                    rdfs:comment "This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. It is an abstract concept providing for three general properties: Identification by name or appellation, and in particular by a preferred identifier Classification by type, allowing further refinement of the specific subclass an instance belongs to Attachment of free text and other unstructured data for the expression of anything not captured by formal properties All other classes within the CIDOC CRM are directly or indirectly specialisations of E1 CRM Entity" ;
@@ -1087,6 +1100,36 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                               "crm entity"@en ,
                                                               "Οντότητα CIDOC CRM"@el ;
                                                    skos:prefLabel "crm entity"@en .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object
+<http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> ;
+                                                           rdfs:comment """This class comprises individual items of a material nature, which live, have lived or are natural products of or from living organisms.
+Artificial objects that incorporate biological elements, such as Victorian butterfly frames, can be documented as both instances of E20 Biological Object and E22 Human-Made Object.""" ;
+                                                           rdfs:label "Biological Object"@en ,
+                                                                      "Biologischer Gegenstand"@de ,
+                                                                      "Objet biologique"@fr ,
+                                                                      "Objeto Biológico"@pt ,
+                                                                      "Βιολογικό Ακτικείμενο"@el ,
+                                                                      "Биологический Объект"@ru ,
+                                                                      "生物对象"@zh .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E21_Person
+<http://www.cidoc-crm.org/cidoc-crm/E21_Person> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> ,
+                                                                <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
+                                                rdfs:comment """This class comprises real persons who live or are assumed to have lived.
+Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CIDOC CRM does not propose a specific form to support reasoning about possible identity.
+In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (an instance of E21 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of E21 Person does not imply that the concept comprises personae.""" ;
+                                                rdfs:label "Person"@de ,
+                                                           "Person"@en ,
+                                                           "Personne"@fr ,
+                                                           "Pessoa"@pt ,
+                                                           "Πρόσωπο"@el ,
+                                                           "Личность"@ru ,
+                                                           "人物"@zh .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
@@ -1115,6 +1158,19 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                                    "Временная Сущность"@ru ,
                                                                    "时序实体"@zh ;
                                                         skos:prefLabel "temporal entity"@en .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E39_Actor
+<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> ;
+                                               rdfs:comment "This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible." ;
+                                               rdfs:label "Actor"@en ,
+                                                          "Agent"@fr ,
+                                                          "Agente"@pt ,
+                                                          "Akteur"@de ,
+                                                          "Δράστης"@el ,
+                                                          "Агент"@ru ,
+                                                          "参与者"@zh .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State
@@ -1172,6 +1228,23 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                                                          "Тип"@ru ,
                                                          "类型"@zh ;
                                               skos:prefLabel "type"@en .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E57_Material
+<http://www.cidoc-crm.org/cidoc-crm/E57_Material> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ,
+                                                                  :Product ;
+                                                  rdfs:comment """This class is a specialization of E55 Type and comprises the concepts of materials.
+Instances of E57 Material may denote properties of matter before its use, during its use, and as incorporated in an object, such as ultramarine powder, tempera paste, reinforced concrete. Discrete pieces of raw-materials kept in museums, such as bricks, sheets of fabric, pieces of metal, should be modelled individually in the same way as other objects. Discrete used or processed pieces, such as the stones from Nefer Titi's temple, should be modelled as parts (cf. P46 is composed of (forms part of): E18 Physical Thing).
+This type is used categorically in the model without reference to instances of it, i.e., the Model does not foresee the description of instances of instances of E57 Material, e.g.: “instances of gold”.
+It is recommended that internationally or nationally agreed codes and terminology are used.""" ;
+                                                  rdfs:label "Material"@de ,
+                                                             "Material"@en ,
+                                                             "Material"@pt ,
+                                                             "Matériau"@fr ,
+                                                             "Υλικό"@el ,
+                                                             "Материал"@ru ,
+                                                             "材质"@zh .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/E5_Event
@@ -1260,14 +1333,20 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item
 <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> rdf:type owl:Class ;
                                                          rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
-                                                         rdfs:comment "This class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names. Instances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics use to be sufficiently similar to recognize the instance for some substantial period of time. The more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described of referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols. The main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties. An instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge" ;
+                                                         rdfs:comment """This class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names.
+Instances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics use to be sufficiently similar to recognize the instance for some substantial period of time.
+The more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described of referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols.
+The main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties.
+An instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge.""" ,
+                                                                      "This class comprises items that have persistent characteristics of structural nature substantially related to their identity and their integrity, sometimes known as “endurants” in philosophy. Persistent Items may be physical entities, such as people, animals or things, conceptual entities such as ideas, concepts, products of the imagination or even names. Instances of E77 Persistent Item may be present or be part of interactions in different periods or events. They can repeatedly be recognized at disparate occasions during their existence by characteristics of structural nature. The respective characteristics need not be exactly the same during all the existence of an instance of E77 Persistent Item. Often, they undergo gradual change, still bearing some similarities with that of previous times, or disappear completely and new emerge. For instance, a person, from the time of being born on, will gradually change all its features and acquire new ones, such as a scar. Even the DNA in different body cells will develop defects and mutations. Nevertheless, relevant characteristics use to be sufficiently similar to recognize the instance for some substantial period of time. The more specific criteria that determine the identity of instances of subclasses of E77 Persistent Item may vary considerably and are described of referred to in the respective scope notes. The decision about which exact criteria to use depends on whether the observable behaviour of the respective part of reality such confined conforms to the reasoning the user is interested in. For example, a building can be regarded as no longer existing if it is dismantled and the materials reused in a different configuration. On the other hand, human beings go through radical and profound changes during their life-span, affecting both material composition and form, yet preserve their identity by other criteria, such as being bodily separated from other persons. Similarly, inanimate objects may be subject to exchange of parts and matter. On the opposite, the identity of a (version of a) text of a scientific publication is given by the exact arrangement of its relevant symbols. The main classes of objects that fall outside the scope of the E77 Persistent Item class are temporal objects such as periods, events and acts, and descriptive properties. An instance of E77 Persistent Item does not require actual knowledge of the identifying features of the instance being currently known. There may be cases, where the actual identifying features of an instance of E77 Persistent Item are not decidable at a particular state of knowledge" ;
                                                          rdfs:label ">持久项"@zh ,
                                                                     "Entidade Persistente"@pt ,
                                                                     "Entité persistante"@fr ,
                                                                     "Persistent Item"@en ,
                                                                     "Seiendes"@de ,
                                                                     "Ον"@el ,
-                                                                    "Постоянная Сущность"@ru ;
+                                                                    "Постоянная Сущность"@ru ,
+                                                                    "持久项"@zh ;
                                                          skos:prefLabel "persistent item"@en .
 
 
@@ -1389,12 +1468,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
             rdfs:label "ACLED event"@en .
 
 
-###  https://schema.coypu.org/global#AcledEventType
-:AcledEventType rdf:type owl:Class ;
-                rdfs:subClassOf :AcledEvent ;
-                rdfs:label "ACLED event type"@en .
-
-
 ###  https://schema.coypu.org/global#Agreement
 :Agreement rdf:type owl:Class ;
            rdfs:subClassOf :StrategicDevelopment ;
@@ -1422,13 +1495,13 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Attack
 :Attack rdf:type owl:Class ;
-        rdfs:subClassOf :ViolenceAgainstCivilians ;
+        rdfs:subClassOf owl:Thing ;
         rdfs:label "attack"@en .
 
 
 ###  https://schema.coypu.org/global#Battle
 :Battle rdf:type owl:Class ;
-        rdfs:subClassOf :ViolentEvent ;
+        rdfs:subClassOf owl:Thing ;
         rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
 	                                        groups at a particular time and location.”"""@en ;
         rdfs:label "battle"@en .
@@ -1444,7 +1517,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#ChemicalWeapon
 :ChemicalWeapon rdf:type owl:Class ;
-                rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+                rdfs:subClassOf owl:Thing ;
                 rdfs:comment """all substances
 	                                          listed in the Schedule 1 of the Chemical Weapons Convention"""@en ;
                 rdfs:label "chemical weapon"@en .
@@ -1502,7 +1575,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#Demonstration
 :Demonstration rdf:type owl:Class ;
-               rdfs:subClassOf :AcledEventType ;
+               rdfs:subClassOf :AcledEvent ;
                rdfs:label "demonstration"@en .
 
 
@@ -1520,12 +1593,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                     rdfs:label "disrupted weapon use"@en .
 
 
-###  https://schema.coypu.org/global#ExcessiveForceAgainstProtesters
-:ExcessiveForceAgainstProtesters rdf:type owl:Class ;
-                                 rdfs:subClassOf :Protest ;
-                                 rdfs:label "excessive force against protesters"@en .
-
-
 ###  https://schema.coypu.org/global#Extraterrestrial
 :Extraterrestrial rdf:type owl:Class ;
                   rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
@@ -1541,38 +1608,10 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:label "factory"@en .
 
 
-###  https://schema.coypu.org/global#Geophysical
-:Geophysical rdf:type owl:Class ;
-             rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
-             rdfs:comment "an earthquake, volcanic eruption or storm event"@en ;
-             rdfs:label "geophysical disaster"@en ;
-             rdfs:seeAlso <https://www.emdat.be/guidelines> .
-
-
-###  https://schema.coypu.org/global#GovernmentRegainsTerritory
-:GovernmentRegainsTerritory rdf:type owl:Class ;
-                            rdfs:subClassOf :Battle ;
-                            rdfs:label "government regains territory"@en .
-
-
 ###  https://schema.coypu.org/global#Grenade
 :Grenade rdf:type owl:Class ;
-         rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+         rdfs:subClassOf owl:Thing ;
          rdfs:label "grenade"@en .
-
-
-###  https://schema.coypu.org/global#HeadquartersOrBaseEstablished
-:HeadquartersOrBaseEstablished rdf:type owl:Class ;
-                               rdfs:subClassOf :StrategicDevelopment ;
-                               rdfs:label "headquarters or base established"@en .
-
-
-###  https://schema.coypu.org/global#Hydrological
-:Hydrological rdf:type owl:Class ;
-              rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
-              rdfs:comment "a landslide, wave action or flooding event"@en ;
-              rdfs:label "hydrological disaster"@en ;
-              rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#IndustrialAccident
@@ -1588,7 +1627,8 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "an industry or economic sector as defined in NACE"@en ;
           rdfs:label "Wirtschaftszweig"@de ,
-                     "industry"@en .
+                     "industry"@en ;
+          rdfs:seeAlso dbr:Category:Economic_sectors .
 
 
 ###  https://schema.coypu.org/global#Infrastructure
@@ -1596,22 +1636,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing ;
                 rdfs:comment "a facility providing critical infrastructure for production or logistics"@en ;
                 rdfs:label "infrastructure"@en .
-
-
-###  https://schema.coypu.org/global#Material
-:Material rdf:type owl:Class ;
-          rdfs:subClassOf :Product ;
-          rdfs:comment "a production material"@en ;
-          rdfs:label "material"@en ;
-          rdfs:seeAlso dbr:Material .
-
-
-###  https://schema.coypu.org/global#Meteorological
-:Meteorological rdf:type owl:Class ;
-                rdfs:subClassOf beAWARE_ontology:NaturalDisaster ;
-                rdfs:comment "a storm or extreme temperature event"@en ;
-                rdfs:label "meteorological disaster"@en ;
-                rdfs:seeAlso <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#MiscellaneousAccident
@@ -1633,46 +1657,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
       rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
       rdfs:comment "a newspaper article, social media posting or press release"@en ;
       rdfs:label "news"@en .
-
-
-###  https://schema.coypu.org/global#Non-StateActorOvertakesTerritory
-:Non-StateActorOvertakesTerritory rdf:type owl:Class ;
-                                  rdfs:subClassOf :Battle ;
-                                  rdfs:label "non-state actor overtakes territory"@en .
-
-
-###  https://schema.coypu.org/global#Non-ViolentTransferOfTerritory
-:Non-ViolentTransferOfTerritory rdf:type owl:Class ;
-                                rdfs:subClassOf :StrategicDevelopment ;
-                                rdfs:label "non-violent transfer of territory"@en .
-
-
-###  https://schema.coypu.org/global#NonViolentAction
-:NonViolentAction rdf:type owl:Class ;
-                  rdfs:subClassOf :AcledEventType ;
-                  rdfs:label "non-violent Action"@en .
-
-
-###  https://schema.coypu.org/global#Other
-:Other rdf:type owl:Class ;
-       rdfs:subClassOf :StrategicDevelopment ;
-       rdfs:label "other"@en .
-
-
-###  https://schema.coypu.org/global#PeacefulProtest
-:PeacefulProtest rdf:type owl:Class ;
-                 rdfs:subClassOf :Protest ;
-                 rdfs:label "peaceful protest"@en .
-
-
-###  https://schema.coypu.org/global#Person
-:Person rdf:type owl:Class ;
-        rdfs:subClassOf owl:Thing ;
-        rdfs:comment "a natural person"@en ;
-        rdfs:label "person"@en ;
-        rdfs:seeAlso <http://xmlns.com/foaf/0.1/Person> ,
-                     <https://dbpedia.org/ontology/Person> ,
-                     schema:Person .
 
 
 ###  https://schema.coypu.org/global#Pipeline
@@ -1702,6 +1686,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
          rdfs:comment "a product, service, production material or refined resource"@en ;
          rdfs:label "product"@en ;
          rdfs:seeAlso dbr:Material ,
+                      <https://dbpedia.org/resource/Category:Goods_(economics)> ,
                       schema:Product .
 
 
@@ -1712,12 +1697,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 	                        violence, though violence may be used against them."""@en ;
          rdfs:label "protest"@en ;
          skos:prefLabel "protest"@en .
-
-
-###  https://schema.coypu.org/global#ProtestWithIntervention
-:ProtestWithIntervention rdf:type owl:Class ;
-                         rdfs:subClassOf :Protest ;
-                         rdfs:label "protest with intervention"@en .
 
 
 ###  https://schema.coypu.org/global#Region
@@ -1741,18 +1720,19 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "a utility or non-material product"@en ;
-         rdfs:label "service"@en .
+         rdfs:label "service"@en ;
+         rdfs:seeAlso <https://dbpedia.org/resource/Category:Goods_(economics)> .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
 :SexualViolence rdf:type owl:Class ;
-                rdfs:subClassOf :ViolenceAgainstCivilians ;
+                rdfs:subClassOf owl:Thing ;
                 rdfs:label "sexual violence"@en .
 
 
 ###  https://schema.coypu.org/global#StrategicDevelopment
 :StrategicDevelopment rdf:type owl:Class ;
-                      rdfs:subClassOf :NonViolentAction ;
+                      rdfs:subClassOf owl:Thing ;
                       rdfs:comment """This event type captures contextually important information regarding the activities of
 	                                                violent groups that is not itself recorded as political violence, yet may trigger future
 	                                                events or contribute to political dynamics within and across states. """@en ;
@@ -1761,7 +1741,7 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
 
 ###  https://schema.coypu.org/global#SuicideBomb
 :SuicideBomb rdf:type owl:Class ;
-             rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+             rdfs:subClassOf owl:Thing ;
              rdfs:label "suicide bomb"@en .
 
 
@@ -1778,85 +1758,6 @@ beAWARE_ontology:VulnerableObject rdf:type owl:Class ;
           rdfs:subClassOf :Infrastructure ;
           rdfs:comment "a terminal to connect gas pipelines"@en ;
           rdfs:label "terminal"@en .
-
-
-###  https://schema.coypu.org/global#TerritorialEntityOfSingleCountry
-:TerritorialEntityOfSingleCountry rdf:type owl:Class ;
-                                  rdfs:subClassOf beAWARE_ontology:Location ;
-                                  rdfs:comment "Some Teritorial entity, that belongs to a single country."@en .
-
-
-###  https://schema.coypu.org/global#TransportAccident
-:TransportAccident rdf:type owl:Class ;
-                   rdfs:subClassOf :TechnologicalDisaster ;
-                   rdfs:comment "an event relating to logistical operations"@en ;
-                   rdfs:label "transport accident"@en ;
-                   rdfs:seeAlso <https://www.emdat.be/guidelines> .
-
-
-###  https://schema.coypu.org/global#ViolenceAgainstCivilians
-:ViolenceAgainstCivilians rdf:type owl:Class ;
-                          rdfs:subClassOf :ViolentEvent ;
-                          rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
-	                                                    groups at a particular time and location."""@en ;
-                          rdfs:label "violence against civilians"@en .
-
-
-###  https://schema.coypu.org/global#ViolentDemonstration
-:ViolentDemonstration rdf:type owl:Class ;
-                      rdfs:subClassOf :Riot ;
-                      rdfs:label "violent demonstration"@en .
-
-
-###  https://schema.coypu.org/global#ViolentEvent
-:ViolentEvent rdf:type owl:Class ;
-              rdfs:subClassOf :AcledEventType ;
-              rdfs:label "violent events"@en .
-
-
-###  https://schema.coypu.org/global#Abduction%2FForcedDisappearance
-<https://schema.coypu.org/global#Abduction%2FForcedDisappearance> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf :ViolenceAgainstCivilians ;
-                                                                  rdfs:label "abduction/forced disappearance"@en .
-
-
-###  https://schema.coypu.org/global#Air%2FDroneStrike
-<https://schema.coypu.org/global#Air%2FDroneStrike> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                    rdfs:label "air/drone strike"@en .
-
-
-###  https://schema.coypu.org/global#ChangeToGroup%2FActivity
-<https://schema.coypu.org/global#ChangeToGroup%2FActivity> rdf:type owl:Class ;
-                                                           rdfs:subClassOf :StrategicDevelopment ;
-                                                           rdfs:label "change to group/activity"@en .
-
-
-###  https://schema.coypu.org/global#Explosion%2FRemoteViolence
-<https://schema.coypu.org/global#Explosion%2FRemoteViolence> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :ViolentEvent ;
-                                                             rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
-	                                                       tool for engaging in conflict creates asymmetry by taking away the ability of the target to
-	                                                       respond”."""@en ;
-                                                             rdfs:label "explosion/remote violence"@en .
-
-
-###  https://schema.coypu.org/global#Looting%2FPropertyDestruction
-<https://schema.coypu.org/global#Looting%2FPropertyDestruction> rdf:type owl:Class ;
-                                                                rdfs:subClassOf :StrategicDevelopment ;
-                                                                rdfs:label "looting/property destruction"@en .
-
-
-###  https://schema.coypu.org/global#RemoteExplosive%2FLandmine%2FIED
-<https://schema.coypu.org/global#RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                                   rdfs:label "remote explosive/landmine/ied"@en .
-
-
-###  https://schema.coypu.org/global#Shelling%2FArtillery%2FMissileAttack
-<https://schema.coypu.org/global#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
-                                                                       rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                                       rdfs:label "shelling/artillery/missile attack"@en .
 
 
 #################################################################
