@@ -135,6 +135,10 @@ generate_shapes:
     - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
     name: docker:latest
+  variables:
+    # Tell docker CLI how to talk to Docker daemon; see
+    # https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker-executor
+    DOCKER_TLS_CERTDIR: ""
   artifacts:
     when: always
     paths:
