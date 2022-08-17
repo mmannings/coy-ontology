@@ -71,8 +71,26 @@ widoco:
           </script>
         " dist/index-en.html
 
+original_onto:
+  stage: download
+  image:
+    name: alpine/git:latest
+    entrypoint: [""]
+  artifacts:
+    when: always
+    paths:
+      - "./diff"
+    public: false
+  script:
+    - mkdir -p diff
+    - git show $CI_MERGE_REQUEST_DIFF_BASE_SHA:coy.ttl > diff/coy_orig.ttl
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+
 ontodiff:
   stage: ontodiff
+  needs:
+    - original_onto
   artifacts:
     when: always
     paths:
@@ -82,9 +100,7 @@ ontodiff:
     name: registry.gitlab.com/coypu-project/coy-ontology/bubastis
     entrypoint: [""]
   script:
-    - mkdir -p diff
     - cp coy.ttl diff/coy.ttl
-    - git show $CI_MERGE_REQUEST_DIFF_BASE_SHA:coy.ttl > diff/coy_orig.ttl
     - cd diff
     - /app/run.sh coy_orig.ttl coy.ttl
   rules:
@@ -108,11 +124,16 @@ deploy_review:
   stage: cd
   needs:
     - widoco
+    - ontodiff
   before_script:
     - npm install surge --save-dev
   script:
     - mv dist/index-en.html dist/index.html && rm dist/readme.md
-    - npx surge dist/ $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
+    - rm -fr preview
+    - mkdir -p preview
+    - mv dist/ preview/
+    - mv diff/ preview/
+    - npx surge preview/ $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
   environment:
     name: review/$CI_COMMIT_REF_NAME
     url: https://$CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh
