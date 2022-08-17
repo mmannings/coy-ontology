@@ -24,6 +24,8 @@ workflow:
         - coy.ttl
         - scripts
         - rdfunit-tests
+        - .gitlab-ci.yml
+        - Taskfile.yml
 
 stages:
   - rdfunit
@@ -36,6 +38,10 @@ stages:
   - download
   - widoco
   - cd
+
+services:
+  - name: docker:dind
+    alias: docker
 
 syntax:
   stage: .pre
