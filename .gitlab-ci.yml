@@ -143,6 +143,7 @@ version:
   image:
     name: bitnami/git
     entrypoint: [""]
+  allow_failure: true
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - . scripts/helper.sh
