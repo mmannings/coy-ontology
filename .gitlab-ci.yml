@@ -144,7 +144,7 @@ generate_shapes:
     paths:
       - "./shapes.ttl"
   script:
-    - apk add --update curl git && rm -rf /var/cache/apk/*
+    - apk add --update curl git moreutils && rm -rf /var/cache/apk/*
     - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin && PATH=$HOME/.local/bin:$PATH
     - task generate_shapes
 
