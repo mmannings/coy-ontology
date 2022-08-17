@@ -38,6 +38,7 @@ stages:
   - download
   - stats
   - widoco
+  - ontodiff
   - cd
 
 syntax:

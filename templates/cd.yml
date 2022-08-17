@@ -71,6 +71,25 @@ widoco:
           </script>
         " dist/index-en.html
 
+ontodiff:
+  stage: ontodiff
+  artifacts:
+    when: always
+    paths:
+      - "./diff"
+    public: true
+  image:
+    name: registry.gitlab.com/coypu-project/coy-ontology/bubastis
+    entrypoint: [""]
+  script:
+    - mkdir -p diff
+    - cp coy.ttl diff/coy.ttl
+    - git show $CI_MERGE_REQUEST_DIFF_BASE_SHA:coy.ttl > diff/coy_orig.ttl
+    - cd diff
+    - /app/run.sh coy_orig.ttl coy.ttl
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+
 cd:
   stage: cd
   rules:
