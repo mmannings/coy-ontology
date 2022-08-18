@@ -32,6 +32,6 @@ CONSTRUCT {
   
   # parent concept
   BIND(IF(STRLEN(?code) > 1, SUBSTR(?code, 0, STRLEN(?code)), COALESCE()) AS ?parent_code)
-  BIND(URI(CONCAT(?ns, ?parent_code)) AS ?parent)
+  BIND(URI(CONCAT(STR(?ns), ?parent_code)) AS ?parent)
   
 }
