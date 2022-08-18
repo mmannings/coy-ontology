@@ -1,3 +1,8 @@
 rdfunit-tests/allTests.ttl
 rdfunit-tests/allTests_.ttl
+
+docu-ontology/.jekyll-cache
+docu-ontology/.vendor
+docu-ontology/Gemfile.lock
+docu-ontology/_site
 shapes_extracted_ontology.ttl

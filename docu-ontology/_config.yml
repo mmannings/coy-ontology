@@ -1,0 +1,14 @@
+title: "coy: CoyPu Ontology"
+baseurl: "/global" # the subpath of your site, e.g. /blog
+url: "https://schema.coypu.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-jod
+
+jekyll_rdf:
+    path: "coy.ttl"
+    include_blank: false
+    restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"https://schema.coypu.org/global#\") }"
+    class_template_mappings:
+      "http://www.w3.org/2002/07/owl#Ontology": "ontology"
