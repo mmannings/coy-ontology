@@ -19,7 +19,7 @@ How to use the provided industry sectors, activities and products dataset:
 
 ## Currently provided mappings
 
-* provided as SKOS concept relations via `skos:closeMatch` property
+* provided as SKOS concept relations via [`skos:closeMatch`](https://www.w3.org/2009/08/skos-reference/skos.html#closeMatch) property
 * can be `1-1`, `1-n`, `n-1` or `n-n` mappings
 
 |    From     |     To      |
