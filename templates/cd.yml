@@ -1,7 +1,7 @@
 download:
   stage: download
   rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
+    - if: $CI_COMMIT_TAG =~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -17,7 +17,7 @@ download:
 widoco:
   stage: widoco
   rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
+    - if: $CI_COMMIT_TAG =~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
@@ -29,15 +29,79 @@ widoco:
   script:
     - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
 
+jod:
+  stage: jod
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
+  image:
+    name: ruby
+    entrypoint: [""]
+  artifacts:
+    when: always
+    paths:
+      - "docu-ontology/_site/index.html"
+    public: false
+  script:
+    - apt-get update && apt-get install -y raptor2-utils curl
+    - sh -c "$(curl -k --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
+    - cd docu-ontology && /root/.local/bin/task
+    - |
+        sed -i -e "/<\/body>/i \
+          <script type=\"text/javascript\">\\
+            var element =[].slice.call(document.getElementsByClassName(\"lead\")).find(e => {if (e.nodeName === \"P\" && e.className === \"lead\") return true});\
+            var pre = document.createElement(\"pre\");\
+            pre.innerHTML = \"The detailled documentation could be found under <a href='https://coypu-project.gitlab.io/coy-documentation/detailed/'>LINK</a>.\";\
+            element.append(pre);\\
+          </script>
+        " _site/index.html
+
 cd:
   stage: cd
   rules:
-    - if: '$CI_COMMIT_TAG =~ /^verified20/'
+    - if: $CI_COMMIT_TAG =~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
   image:
     name: alpine/git:latest
     entrypoint: [""]
   script:
     - mv dist/index-en.html dist/index.html && rm dist/readme.md
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
-    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/
+    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/detailed/ && cp ../docu-ontology/_site/index.html ./public/index.html
     - git add . && git commit -am "CD" && git push "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
+
+distribute_to_cmem:
+  stage: cd
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^verified20/'
+  image:
+    name: docker:latest
+  parallel:
+    matrix:
+    - INST:
+      - IPS
+      - TIB
+      - PM
+      # - INFAI
+  variables:
+    # Tell docker CLI how to talk to Docker daemon; see
+    # https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker-executor
+    DOCKER_TLS_CERTDIR: ""
+    # List the instances
+    IPS_INSTANCE: implisense.coypu.org
+    INFAI_INSTANCE: infai.coypu.org
+    TIB_INSTANCE: tib.coypu.org
+    PM_INSTANCE: pm.coypu.org
+  script:
+    - apk add --update curl && rm -rf /var/cache/apk/*
+    - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin && PATH=$HOME/.local/bin:$PATH
+    - |
+      INSTANCE_VAR="${INST}_INSTANCE"
+      eval INSTANCE="\$${INSTANCE_VAR}"
+      # CMEMC Setup
+      INST_SECRET_CMEM_OAUTH_CLIENT_ID="${INST}_CMEM_OAUTH_CLIENT_ID"
+      INST_SECRET_CMEM_OAUTH_CLIENT_SECRET="${INST}_CMEM_OAUTH_CLIENT_SECRET"
+      CMEM_BASE_URI=https://${INSTANCE}/
+      OAUTH_GRANT_TYPE=client_credentials
+      eval OAUTH_CLIENT_ID="\$${INST_SECRET_CMEM_OAUTH_CLIENT_ID}"
+      eval OAUTH_CLIENT_SECRET="\$${INST_SECRET_CMEM_OAUTH_CLIENT_SECRET}"
+      export CMEM_BASE_URI OAUTH_GRANT_TYPE OAUTH_CLIENT_ID OAUTH_CLIENT_SECRET
+    - "task sync:upload_ontology"

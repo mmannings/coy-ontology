@@ -21,6 +21,7 @@
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/global> ;
+                                   owl:imports <https://ec.europa.eu/eurostat/ramon/ontologies/nace.rdf> ;
                                    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor <http://aksw.org/NatanaelArndt> ,
                                                        "Andreas Schaefer"@en ,
