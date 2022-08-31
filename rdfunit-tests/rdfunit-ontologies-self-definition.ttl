@@ -20,10 +20,10 @@ rutt:ontologies-self-definition
     rut:generated rut:ManuallyGenerated ;
     rut:references rdfs:label ;
     rut:source <http://www.w3.org/2002/07/owl#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         ?this a owl:Ontology .
         ?this rdfs:isDefinedBy ?this . } """ ;
     rut:sparqlPrevalence """SELECT (count(?ontology) AS ?total) WHERE {
                                 ?ontology a owl:Ontology . } """ ;
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

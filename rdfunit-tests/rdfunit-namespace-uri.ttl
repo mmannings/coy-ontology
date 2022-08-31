@@ -23,7 +23,7 @@ rutt:ontologies-vann-preferredNamespaceUri
         OPTIONAL { ?this <http://purl.org/vocab/vann/preferredNamespaceUri> ?vannUri }
         FILTER (
             !(str(?this) = str(?vannUri)) ||
-            !bound(?vannUri) 
+            !bound(?vannUri)
         )} """ ;
     rut:sparqlPrevalence """ SELECT (count(?this) AS ?total) WHERE {
                                  ?this a owl:Ontology . } """ ;
@@ -38,4 +38,4 @@ rutt:ontologies-vann-preferredNamespaceUri
         rut:annotationValue """?vannUri""";
     ];
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

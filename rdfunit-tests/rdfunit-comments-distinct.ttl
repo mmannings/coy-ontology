@@ -20,7 +20,7 @@ rutt:resources-have-distinct-comments
     rut:generated rut:ManuallyGenerated ;
     rut:references rdfs:comment ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         { ?this a owl:Ontology . } UNION {
             ?ontology a owl:Ontology .
             ?this rdfs:isDefinedBy ?ontology .
@@ -30,7 +30,7 @@ rutt:resources-have-distinct-comments
             ?ontology a owl:Ontology .
             ?r2 rdfs:isDefinedBy ?ontology .
         }
-        
+
         ?this rdfs:comment ?c1 .
         ?r2 rdfs:comment ?c2 .
         FILTER (
@@ -49,4 +49,4 @@ rutt:resources-have-distinct-comments
         rut:annotationValue """?r2""";
     ];
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

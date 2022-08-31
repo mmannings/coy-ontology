@@ -20,7 +20,7 @@ rutt:resources-have-distinct-labels
     rut:generated rut:ManuallyGenerated ;
     rut:references rdfs:label ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         { ?this a owl:Ontology . } UNION {
             ?ontology a owl:Ontology .
             ?this rdfs:isDefinedBy ?ontology .
@@ -49,4 +49,4 @@ rutt:resources-have-distinct-labels
         rut:annotationValue """?r2""";
     ];
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

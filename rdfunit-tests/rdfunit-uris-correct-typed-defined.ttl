@@ -20,7 +20,7 @@ rutt:ontology-resources-correct-uris-isDefinedBy-type
     rut:generated rut:ManuallyGenerated ;
     rut:references rdfs:isDefinedBy, rdf:type ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         ?ontology a owl:Ontology .
         { ?this ?p1 ?o1 } UNION { ?s2 ?p2 ?this } UNION {?s3 ?this ?o3 } .
         OPTIONAL {?this rdf:type ?type}
@@ -45,4 +45,4 @@ rutt:ontology-resources-correct-uris-isDefinedBy-type
         FILTER (
           isIRI(?this) && ?this != ?ontology && strStarts(str(?this), str(?ontology)))  } """ ;
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

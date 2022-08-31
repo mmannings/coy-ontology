@@ -20,19 +20,19 @@ rutt:skos-concepts-are-topconcept-or-have-broader
     rut:generated rut:ManuallyGenerated ;
     rut:references skos:Concept ;
     rut:source <http://www.w3.org/2004/02/skos/core#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         ?this a <http://www.w3.org/2004/02/skos/core#Concept> .
-        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#broader> ?broader. 
-          ?broader a <http://www.w3.org/2004/02/skos/core#Concept>. 
+        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#broader> ?broader.
+          ?broader a <http://www.w3.org/2004/02/skos/core#Concept>.
         }
-        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#topConceptOf> ?scheme. 
+        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#topConceptOf> ?scheme.
           ?scheme a <http://www.w3.org/2004/02/skos/core#ConceptScheme>
         }
         FILTER (
             !bound(?scheme) &&
-            !bound(?broader) 
+            !bound(?broader)
         )} """ ;
     rut:sparqlPrevalence """SELECT (count(?this) AS ?total) WHERE {
                                 ?this a <http://www.w3.org/2004/02/skos/core#Concept> .} """ ;
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

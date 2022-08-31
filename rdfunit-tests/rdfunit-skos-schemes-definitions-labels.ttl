@@ -20,19 +20,19 @@ rutt:skos-conceptschemes-have-english-definition-and-preflabel
     rut:generated rut:ManuallyGenerated ;
     rut:references skos:ConceptScheme ;
     rut:source <http://www.w3.org/2004/02/skos/core#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
        ?this a <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#definition> ?def 
+        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#definition> ?def
           FILTER(
             STRLEN(?def) > 0
           )
         }
-        OPTIONAL { ?this rdfs:comment ?def 
+        OPTIONAL { ?this rdfs:comment ?def
           FILTER(
             STRLEN(?def) > 0
           )
         }
-        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#prefLabel> ?label 
+        OPTIONAL { ?this <http://www.w3.org/2004/02/skos/core#prefLabel> ?label
           FILTER(
             STRLEN(?label) > 0
           )
@@ -44,4 +44,4 @@ rutt:skos-conceptschemes-have-english-definition-and-preflabel
     rut:sparqlPrevalence """SELECT (count(?this) AS ?total) WHERE {
                                 ?this a <http://www.w3.org/2004/02/skos/core#ConceptScheme> .} """ ;
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

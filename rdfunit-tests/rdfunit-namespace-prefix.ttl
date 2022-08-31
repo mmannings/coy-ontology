@@ -37,4 +37,4 @@ rutt:ontologies-vann-preferredNamespacePrefix
         rut:annotationValue """?vannPrefix""";
     ];
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .

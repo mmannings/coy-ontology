@@ -20,7 +20,7 @@ rutt:resources-no-placeholder-literals
     rut:generated rut:ManuallyGenerated ;
     rut:references rdfs:label, rdfs:comment ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
-    rut:sparqlWhere """ { 
+    rut:sparqlWhere """ {
         { ?this a owl:Ontology . } UNION {
             ?ontology a owl:Ontology .
             ?this rdfs:isDefinedBy ?ontology .
@@ -40,7 +40,7 @@ rutt:resources-no-placeholder-literals
                                         { ?this a owl:Ontology . } UNION {
                                           ?ontology a owl:Ontology .
                                           ?this rdfs:isDefinedBy ?ontology .
-                                        } 
+                                        }
                                     } """ ;
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .
