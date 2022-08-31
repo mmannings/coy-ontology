@@ -2,8 +2,8 @@
 
 function owl_version_compare () {
   local file=$1
-  versionInfo=`cat $file | grep owl:versionInfo | head -n 1 | grep -oP '[\.\d{1,6}]*'`
-  priorVersion=`cat $file | grep owl:priorVersion | head -n 1 | grep -oP '[\.\d{1,6}]*'`
+  versionInfo=`cat $file | grep owl:versionInfo | head -n 1 | grep -oP '\d{1,6}(\.\d{1,6}){0,3}'`
+  priorVersion=`cat $file | grep owl:priorVersion | head -n 1 | grep -oP '\d{1,6}(\.\d{1,6}){0,3}'`
 
   echo $versionInfo
   echo $priorVersion
@@ -20,8 +20,8 @@ function owl_version_compare () {
 function owl_version_increase_test () {
   local file1=$1
   local file2=$2
-  versionInfo_file1=`cat $file1 | grep owl:versionInfo | head -n 1 | grep -oP '[\.\d{1,6}]*'`
-  versionInfo_file2=`cat $file2 | grep owl:versionInfo | head -n 1 | grep -oP '[\.\d{1,6}]*'`
+  versionInfo_file1=`cat $file1 | grep owl:versionInfo | head -n 1 | grep -oP '\d{1,6}(\.\d{1,6}){0,3}'`
+  versionInfo_file2=`cat $file2 | grep owl:versionInfo | head -n 1 | grep -oP '\d{1,6}(\.\d{1,6}){0,3}'`
 
   echo "version file 1: $versionInfo_file1"
   echo "version file 2: $versionInfo_file2"
