@@ -38,4 +38,4 @@ rutt:ontologies-owl-versionInfo
         rut:annotationValue """?versionInfo""";
     ];
     rut:testCaseLogLevel
-              rlog:ERROR .
+              rlog:WARN .
