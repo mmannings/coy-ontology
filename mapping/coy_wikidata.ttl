@@ -10,6 +10,8 @@
                                                   owl:versionIRI <https://schema.coypu.org/mapping/coy_wikidata/1.0.0> ;
                                                   owl:imports <https://schema.coypu.org/global/1.6> ,
                                                               <https://schema.coypu.org/wikidata/0.1> .
+                                                  owl:priorVersion "0.0"@en ;
+                                                  owl:versionInfo "0.1"@en .
 
 #################################################################
 #    Classes

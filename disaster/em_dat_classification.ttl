@@ -13,7 +13,8 @@
                                              rdfs:comment "Crisis/hazard related taxonomy developed by CRED for disaster preparedness and humanitarian actions at national and international level"@en ;
                                              rdfs:label "emdat: Disaster Classification Ontology"@en ;
                                              rdfs:seeAlso "https://www.emdat.be/classification" ;
-                                             owl:versionInfo "v0.2.1" .
+                                             owl:priorVersion "v0.2.0"@en ;
+                                             owl:versionInfo "v0.2.1"@en .
 
 #################################################################
 #    Annotation properties
