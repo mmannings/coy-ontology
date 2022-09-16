@@ -17,32 +17,32 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
 @prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
-@base <https://schema.coypu.org/global> .
+@base <https://ec.europa.eu/eurostat/ramon/ontologies/nace.rdf> .
 
-<https://schema.coypu.org/global> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://schema.coypu.org/global> ;
-                                   owl:imports <https://ec.europa.eu/eurostat/ramon/ontologies/nace.rdf> ;
-                                   cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                   dcterms:contributor <http://aksw.org/NatanaelArndt> ,
-                                                       "Andreas Schaefer"@en ,
-                                                       "Felix Engel"@en ,
-                                                       "Lorenz Bühmann"@en ,
-                                                       "Nenad Krdzavac"@en ,
-                                                       "Simon Bin"@en ,
-                                                       "Till Grabo"@en ;
-                                   dcterms:created "2021-09-06" ;
-                                   dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-08-02" ;
-                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
-                                   dcterms:title "CoyPu Ontology"@en ;
-                                   vann:preferredNamespacePrefix "coy" ;
-                                   vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
-                                   rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                                   rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                                   rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.6"@en ;
-                                   owl:versionInfo "1.7"@en .
+<https://ec.europa.eu/eurostat/ramon/ontologies/nace.rdf> rdf:type owl:Ontology ;
+                                                           owl:versionIRI <https://schema.coypu.org/global> ;
+                                                           owl:imports <https://ec.europa.eu/eurostat/ramon/ontologies/nace.rdf> ;
+                                                           cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                           dcterms:contributor "Andreas Schaefer"@en ,
+                                                                               "Felix Engel"@en ,
+                                                                               "Lorenz Bühmann"@en ,
+                                                                               "Natanael Arndt"@en ,
+                                                                               "Nenad Krdzavac"@en ,
+                                                                               "Simon Bin"@en ,
+                                                                               "Till Grabo"@en ;
+                                                           dcterms:created "2021-09-06" ;
+                                                           dcterms:creator "Nils Steinert"@en ;
+                                                           dcterms:isVersionOf <https://schema.coypu.org/global> ;
+                                                           dcterms:modified "2022-09-16" ;
+                                                           dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
+                                                           dcterms:title "CoyPu Ontology"@en ;
+                                                           vann:preferredNamespacePrefix "coy" ;
+                                                           vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
+                                                           rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
+                                                           rdfs:isDefinedBy <https://schema.coypu.org/global> ;
+                                                           rdfs:label "coy: CoyPu Ontology"@en ;
+                                                           owl:priorVersion "1.7"@en ;
+                                                           owl:versionInfo "1.8"@en .
 
 #################################################################
 #    Annotation properties
@@ -179,12 +179,22 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                     rdfs:label "crm - affects product line"@en .
 
 
-###  https://schema.coypu.org/global#haltOperation
-:haltOperation rdf:type owl:ObjectProperty ;
-               rdfs:domain :Company ;
-               rdfs:range owl:Thing ;
-               rdfs:label "halt operation"@en ;
-               owl:deprecated ""@en .
+###  https://schema.coypu.org/global#hasCityLocation
+:hasCityLocation rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasLocation ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range beAWARE_ontology:Location ;
+                 rdfs:comment "the city an event, company or critical infrastructure is located at"@en ;
+                 rdfs:label "has city location"@en .
+
+
+###  https://schema.coypu.org/global#hasCountryLocation
+:hasCountryLocation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasLocation ;
+                    rdfs:domain owl:Thing ;
+                    rdfs:range beAWARE_ontology:Location ;
+                    rdfs:comment "the country an event, company or critical infrastructure is located at"@en ;
+                    rdfs:label "has country location"@en .
 
 
 ###  https://schema.coypu.org/global#hasCustomer
@@ -263,7 +273,11 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 
 
 ###  https://schema.coypu.org/global#hasTerritorialEntity
-:hasTerritorialEntity rdf:type owl:ObjectProperty .
+:hasTerritorialEntity rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasLocation ;
+                      rdfs:domain owl:Thing ;
+                      rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+                      rdfs:label "has territorial entity"@en .
 
 
 ###  https://schema.coypu.org/global#impactCausedByEvent
@@ -359,22 +373,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
           rdfs:range :Product ;
           rdfs:comment "a product, material or resource used in production of another material, resource or product"@en ;
           rdfs:label "is used in"@en .
-
-
-###  https://schema.coypu.org/global#orderTo
-:orderTo rdf:type owl:ObjectProperty ;
-         rdfs:domain :Company ;
-         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-         rdfs:label "order to"@en ;
-         owl:deprecated ""@en .
-
-
-###  https://schema.coypu.org/global#orderedBy
-:orderedBy rdf:type owl:ObjectProperty ;
-           rdfs:domain :Company ;
-           rdfs:range :Company ;
-           rdfs:label "ordered by"@en ;
-           owl:deprecated ""@en .
 
 
 ###  https://schema.coypu.org/global#usedProductLineFor
@@ -729,7 +727,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 
 ###  https://schema.coypu.org/global#hasIso2Code
 :hasIso2Code rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Country ;
              rdfs:range xsd:string ;
              rdfs:comment "a country code as defined in ISO 3166-2"@en ;
              rdfs:label "has ISO-2 code"@en .
@@ -738,7 +735,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 ###  https://schema.coypu.org/global#hasIsoCode
 :hasIsoCode rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
-            rdfs:domain :Country ;
             rdfs:range xsd:string ;
             rdfs:comment "a country code as defined in ISO 3166-3"@en ;
             rdfs:label "has ISO code"@en .
