@@ -29,6 +29,7 @@ workflow:
         - scripts
         - rdfunit-tests
         - .gitlab-ci.yml
+        - templates
         - Taskfile.yml
         - docu-ontology
 
