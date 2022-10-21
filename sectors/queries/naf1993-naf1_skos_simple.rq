@@ -1,0 +1,41 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sys: <http://jsa.aksw.org/fn/sys/>
+
+PREFIX naf1993: <https://data.coypu.org/classification/naf_1993/>
+PREFIX naf1: <https://data.coypu.org/classification/naf_r1/>
+
+PREFIX afn: <http://jena.apache.org/ARQ/function#> 
+
+CONSTRUCT {
+  ?from skos:closeMatch ?to .
+  ?from skos:notation ?from_code .
+  ?from skos:inScheme naf1993: .
+  ?to skos:notation ?to_code .
+  ?to skos:inScheme naf1: .
+} WHERE {
+  VALUES (?url ?from_col ?to_col ?from_ns ?to_ns) {
+    (<env://INPUT> "['NAF1993 Code']" "['NAF1 Code']" naf1993: naf1:)
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?from_col) AS ?from_code_)
+  BIND(json:path(?rowJsonObj, "$." + ?to_col) AS ?to_code_)
+  
+  #FILTER(afn:print(?from_code_))
+  #FILTER(afn:print(?to_code_))
+  
+  BIND(REPLACE(STR(?from_code_), "^(.*)(\\s-\\s)(.*)$", "$1") AS ?from_code)
+  BIND(REPLACE(STR(?to_code_), "^(.*)(\\s-\\s)(.*)$", "$1") AS ?to_code)
+  
+  FILTER(STRLEN(?from_code) > 0)
+  
+  BIND(URI(CONCAT(STR(?from_ns), ?from_code)) AS ?from)
+  BIND(URI(CONCAT(STR(?to_ns), ?to_code)) AS ?to)
+}
+#LIMIT 100
