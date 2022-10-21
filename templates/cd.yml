@@ -117,8 +117,7 @@ cd:
 deploy_review:
   image: node:16
   stage: cd
-  needs:
-    - widoco
+  needs: ["widoco"]
   before_script:
     - npm install surge --save-dev
   script:
