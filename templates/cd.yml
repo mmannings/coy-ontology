@@ -23,6 +23,8 @@ download:
 stats:
   stage: cd
   needs: ["syntax","download"]
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
     name: tboonx/rpt:jena-4.6.0
     entrypoint: [""]
