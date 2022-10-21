@@ -2,7 +2,7 @@ download:
   stage: cd
   needs: ["syntax"]
   rules:
-    - if: $CI_COMMIT_TAG =~ /^verified20/
+    - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -10,16 +10,44 @@ download:
     when: always
     paths:
       - "./java-17-widoco-1.4.17-jar-with-dependencies.jar"
+      - "void.stats.ttl"
     public: false
   script:
     - rm -rf ./dist ./repo
     - wget https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-17-widoco-1.4.17-jar-with-dependencies.jar
+    # get void statistics
+    - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
+    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/dataset-stats.git" void
+    - cp void/skynet-stats.nt void.stats.ttl
+
+stats:
+  stage: cd
+  needs: ["syntax","download"]
+  image:
+    name: tboonx/rpt:jena-4.6.0
+    entrypoint: [""]
+  artifacts:
+    when: always
+    paths:
+      - "coy.withStats.ttl"
+    public: false
+  script:
+    - cat main.ttl > tmp.ttl
+    - java -jar /rpt.jar integrate -o=onlyVoid.nt --out-format=ntriples void.stats.ttl scripts/extractVoidInformation.rq
+    - cat onlyVoid.nt >> tmp.ttl
+    - java -jar /rpt.jar integrate -o=parentClass.nt --out-format=ntriples tmp.ttl scripts/createParentClassStatInfo.rq
+    - cat parentClass.nt >> tmp.ttl
+    - java -jar /rpt.jar integrate -o=coy.withStats.nt --out-format=ntriples tmp.ttl scripts/createNotInUseStatus.rq
+    - cat coy.withStats.nt >> tmp.ttl
+    - java -jar /rpt.jar integrate -o=coy.missing.nt --out-format=ntriples void.stats.ttl tmp.ttl scripts/usedButNotInOnto.rq
+    - cat coy.missing.nt >> tmp.ttl
+    - sed -e 's|%\(2[89]\)|__x__\1|g' tmp.ttl > coy.withStats.ttl
 
 widoco:
   stage: cd
-  needs: ["download"]
+  needs: ["download","stats"]
   rules:
-    - if: $CI_COMMIT_TAG =~ /^verified20/
+    - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
@@ -27,9 +55,23 @@ widoco:
     when: always
     paths:
       - "./dist"
-    public: false
+    public: true
   script:
-    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./main.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
+    - java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile ./coy.withStats.ttl -lang en -webVowl -licensius -includeAnnotationProperties -uniteSections -noPlaceHolderText -outFolder dist
+    - sed -i -e 's|__x__|%|g' dist/index-en.html dist/ontology.jsonld dist/ontology.ttl dist/ontology.nt dist/ontology.rdf dist/webvowl/data/ontology.json
+    - |
+        sed -i -e "/<\/body>/i \
+          <script type=\"text/javascript\">\\
+            var x = document.evaluate(\"//dl[./dd[text()='---USED BUT NOT IN ONTOLOGY---']]\", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);\
+            for (var i = 0; i < x.snapshotLength; i++) {\
+              x.snapshotItem(i).style='background-color:red;border-radius:5px';\
+            }\
+            var x = document.evaluate(\"//dl[./dd[text()='Not in use']]\", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);\
+            for (var i = 0; i < x.snapshotLength; i++) {\
+              x.snapshotItem(i).style='background-color:yellow;border-radius:5px';\
+            }\\
+          </script>
+        " dist/index-en.html
 
 jod:
   stage: cd
@@ -71,6 +113,40 @@ cd:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp -r ../dist/* ./public/detailed/ && cp ../docu-ontology/_site/index.html ./public/index.html
     - git add . && git commit -am "CD" && git push "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
+
+deploy_review:
+  image: node:16
+  stage: cd
+  needs: ["widoco"]
+  before_script:
+    - npm install surge --save-dev
+  script:
+    - mv dist/index-en.html dist/index.html && rm dist/readme.md
+    - npx surge dist/ $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: https://$CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh
+    on_stop: stop_deploy_review
+    auto_stop_in: 1 week
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+
+stop_deploy_review:
+  image: node:16
+  stage: cd
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - npm install surge --save-dev
+  script:
+    - npx surge teardown $CI_COMMIT_REF_SLUG-coy-onto-preview.surge.sh --token $SURGE_TOKEN
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    action: stop
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: manual
+      allow_failure: true
 
 distribute_to_cmem:
   stage: cd
