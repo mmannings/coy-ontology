@@ -47,10 +47,8 @@ stages:
   # Now CD part
   - cd
 
-syntax:
+syntax: # Has to run everytime because it prepares the RDF files
   stage: .pre
-  rules:
-    - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
     name: pheyvaer/raptor
     entrypoint: [""]
