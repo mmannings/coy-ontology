@@ -48,10 +48,8 @@ stages:
   # Now CD part
   - cd
 
-syntax:
+syntax: # Has to run everytime because it prepares the RDF files
   stage: .pre
-  rules:
-    - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
     name: pheyvaer/raptor
     entrypoint: [""]
@@ -137,9 +135,8 @@ interprete:
 
 generate_shapes:
   stage: generate_shapes
-  needs: ["syntax"]
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
+    - if: $CI_COMMIT_TAG =~ /^verified20/
   when: manual
   image:
     name: docker:latest
@@ -175,7 +172,7 @@ reasoner:
 version:
   stage: version
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH != /main/
+    - if: $CI_COMMIT_TAG !~ /^verified20/ && ( $CI_COMMIT_BRANCH  != "main" && $CI_COMMIT_REF_NAME != "main" )
   image:
     name: bitnami/git
     entrypoint: [""]
@@ -195,7 +192,7 @@ version:
 tag:
   stage: tag
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
+    - if: $CI_COMMIT_TAG !~ /^verified20/ && ( $CI_COMMIT_BRANCH  == "main" || $CI_COMMIT_REF_NAME == "main" )
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -211,6 +208,8 @@ tag:
 
 send_email:
     stage: .post
+    rules:
+      - if: '$CI_COMMIT_TAG !~ /^verified20/'
     when: always
     script:
       - |
