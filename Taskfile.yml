@@ -3,7 +3,7 @@ version: '3'
 vars:
   ONTOLOGY_IRI: https://schema.coypu.org/global#
   SHAPE_IRI: https://schema.coypu.org/global_shapes#
-  SCHEMAFILE: "main"
+  SCHEMAFILE: "global/coy"
   SHAPEFILE: "shapes"
 
   UID:
