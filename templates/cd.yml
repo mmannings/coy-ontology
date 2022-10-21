@@ -47,7 +47,7 @@ widoco:
   stage: cd
   needs: ["download","stats"]
   rules:
-    - if: $CI_COMMIT_TAG =~ /^verified20/
+    - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
