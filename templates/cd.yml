@@ -1,8 +1,5 @@
 download:
   stage: cd
-  needs: ["syntax"]
-  dependencies:
-    - syntax
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
@@ -24,10 +21,6 @@ download:
 
 stats:
   stage: cd
-  needs: ["syntax", "download"]
-  dependencies:
-    - syntax
-    - download
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
@@ -52,10 +45,6 @@ stats:
 
 widoco:
   stage: cd
-  needs: ["stats", "download"]
-  dependencies:
-    - stats
-    - download
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
   image:
@@ -85,9 +74,6 @@ widoco:
 
 jod:
   stage: cd
-  needs: ["syntax"]
-  dependencies:
-    - syntax
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
   image:
@@ -114,11 +100,6 @@ jod:
 
 cd:
   stage: cd
-  needs: ["syntax", "widoco", "jod"]
-  dependencies:
-    - syntax
-    - widoco
-    - jod
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
   image:
@@ -133,13 +114,6 @@ cd:
 deploy_review:
   image: node:16
   stage: cd
-  needs: ["syntax", "widoco", "jod", "download", "stats"]
-  dependencies:
-    - syntax
-    - widoco
-    - jod
-    - download
-    - stats
   before_script:
     - npm install surge --save-dev
   script:
@@ -172,11 +146,6 @@ stop_deploy_review:
 
 distribute_to_cmem:
   stage: cd
-  needs: ["syntax", "download", "stats"]
-  dependencies:
-    - syntax
-    - download
-    - stats
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
   image:
