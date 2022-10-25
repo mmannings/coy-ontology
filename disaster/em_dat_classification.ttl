@@ -1,20 +1,21 @@
-@prefix : <https://schema.coypu.org/em-dat/> .
+@prefix : <https://schema.coypu.org/em-dat#> .
+@prefix coy: <https://schema.coypu.org/global#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://schema.coypu.org/disaster/em-dat/> .
+@base <https://schema.coypu.org/em-dat#> .
 
-<https://schema.coypu.org/disaster/em-dat/> rdf:type owl:Ontology ;
-                                             owl:versionIRI <https://schema.coypu.org/disaster/em-dat/0.2.1> ;
-                                             <http://purl.org/dc/terms/preferedNamespaceUri> "https://schema.coypu.org/em-dat/" ;
-                                             <http://purl.org/dc/terms/preferredNamespacePrefix> "emdat" ;
-                                             rdfs:comment "Crisis/hazard related taxonomy developed by CRED for disaster preparedness and humanitarian actions at national and international level"@en ;
-                                             rdfs:label "emdat: Disaster Classification Ontology"@en ;
-                                             rdfs:seeAlso "https://www.emdat.be/classification" ;
-                                             owl:priorVersion "v0.2.0"@en ;
-                                             owl:versionInfo "v0.2.1"@en .
+<https://schema.coypu.org/em-dat#> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://schema.coypu.org/em-dat/0.2.1> ;
+                                    <http://purl.org/dc/terms/preferedNamespaceUri> "https://schema.coypu.org/em-dat#" ;
+                                    <http://purl.org/dc/terms/preferredNamespacePrefix> "emdat" ;
+                                    rdfs:comment "Crisis/hazard related taxonomy developed by CRED for disaster preparedness and humanitarian actions at national and international level"@en ;
+                                    rdfs:label "emdat: Disaster Classification Ontology"@en ;
+                                    rdfs:seeAlso "https://www.emdat.be/classification" ;
+                                    owl:priorVersion "v0.2.0"@en ;
+                                    owl:versionInfo "v0.2.1" .
 
 #################################################################
 #    Annotation properties
@@ -28,13 +29,13 @@
 <http://purl.org/dc/terms/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
-###  https://schema.coypu.org/disaster/em-dat/hasGlideHazardCode
+###  https://schema.coypu.org/em-dat#hasGlideHazardCode
 :hasGlideHazardCode rdf:type owl:AnnotationProperty ;
                     rdfs:comment "the GLIDE hazard code"@en ;
                     rdfs:label "GLIDE hazard code"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/hasReliefWebIdentifier
+###  https://schema.coypu.org/em-dat#hasReliefWebIdentifier
 :hasReliefWebIdentifier rdf:type owl:AnnotationProperty ;
                         rdfs:comment "the ID of the corresponding distaster type in the ReliefWeb API V1"@en ;
                         rdfs:label "ReliefWeb ID"@en .
@@ -44,36 +45,36 @@
 #    Classes
 #################################################################
 
-###  https://schema.coypu.org/disaster/em-dat/Air
+###  https://schema.coypu.org/em-dat#Air
 :Air rdf:type owl:Class ;
      rdfs:subClassOf :TransportAccident ;
      rdfs:label "air"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Airburst
+###  https://schema.coypu.org/em-dat#Airburst
 :Airburst rdf:type owl:Class ;
           rdfs:subClassOf :Impact ;
           rdfs:comment "An explosion of a comet or meteoroid within the Earth’s atmosphere without striking the ground."@en ;
           rdfs:label "airburst"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/AnimalAccident
+###  https://schema.coypu.org/em-dat#AnimalAccident
 :AnimalAccident rdf:type owl:Class ;
                 rdfs:subClassOf :BiologicalDisaster ;
                 rdfs:comment "Human encounters with dangerous or exotic animals in both urban and rural developments."@en ;
                 rdfs:label "animal accident"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/AshFall
+###  https://schema.coypu.org/em-dat#AshFall
 :AshFall rdf:type owl:Class ;
          rdfs:subClassOf :VolcanicActivity ;
          rdfs:comment "Fine (less than 4 mm in diameter) unconsolidated volcanic debris blown into the atmosphere during an eruption; can remain airborne for long periods of time and travel considerable distance from the source."@en ;
          rdfs:label "ash fall"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Avalanche
+###  https://schema.coypu.org/em-dat#Avalanche
 :Avalanche rdf:type owl:Class ;
-           rdfs:subClassOf <https://schema.coypu.org/disaster/em-dat/Landslide(wet)> ;
+           rdfs:subClassOf <https://schema.coypu.org/em-dat#Landslide(wet)> ;
            rdfs:comment """A large mass of loosened earth material, snow, or ice that slides, flows or falls rapidly down a mountainside under the force of gravity.
 
 - Snow Avalanche: Rapid downslope movement of a mix of snow and ice.
@@ -81,42 +82,42 @@
            rdfs:label "avalanche (snow, debris, mudflow, rockfall)"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Bacterial_Disease
+###  https://schema.coypu.org/em-dat#Bacterial_Disease
 :Bacterial_Disease rdf:type owl:Class ;
                    rdfs:subClassOf :Epidemic ;
                    rdfs:comment "An unusual increase in the number of incidents caused by the exposure to bacteria either through skin contact, ingestion or inhalation. Examples include salmonella, MSRA, and cholera, among others."@en ;
                    rdfs:label "bacterial disease"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/BiologicalDisaster
+###  https://schema.coypu.org/em-dat#BiologicalDisaster
 :BiologicalDisaster rdf:type owl:Class ;
                     rdfs:subClassOf :NaturalDisaster ;
                     rdfs:comment "A hazard caused by the exposure to living organisms and their toxic substances (e.g. venom, mold) or vector-borne diseases that they may carry. Examples are venomous wildlife and insects, poisonous plants, and mosquitoes carrying disease-causing agents such as parasites, bacteria, or viruses (e.g. malaria)."@en ;
                     rdfs:label "biological disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ChemicalSpill
+###  https://schema.coypu.org/em-dat#ChemicalSpill
 :ChemicalSpill rdf:type owl:Class ;
                rdfs:subClassOf :IndustrialAccident ;
                rdfs:comment "Accident release occurring during the production, transportation or handling of hazardous chemical substances."@en ;
                rdfs:label "chemical spill"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ClimatologicalDisaster
+###  https://schema.coypu.org/em-dat#ClimatologicalDisaster
 :ClimatologicalDisaster rdf:type owl:Class ;
                         rdfs:subClassOf :NaturalDisaster ;
                         rdfs:comment "A hazard caused by long-lived, meso- to macro-scale atmospheric processes ranging from intra-seasonal to multi-decadal climate variability."@en ;
                         rdfs:label "climatological disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/CoastalFlood
+###  https://schema.coypu.org/em-dat#CoastalFlood
 :CoastalFlood rdf:type owl:Class ;
               rdfs:subClassOf :Flood ;
               rdfs:comment "Higher-than-normal water levels along the coast caused by tidal changes or thunderstorms that result in ﬂooding, which can last from days to weeks."@en ;
               rdfs:label "coastal flood"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ColdWave
+###  https://schema.coypu.org/em-dat#ColdWave
 :ColdWave rdf:type owl:Class ;
           rdfs:subClassOf :ExtremeTemperature ;
           rdfs:comment "A period of abnormally cold weather. Typically a cold wave lasts two or more days and may be aggravated by high winds. The exact temperature criteria for what constitutes a cold wave vary by location."@en ;
@@ -125,7 +126,7 @@
           :hasReliefWebIdentifier 4653 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Collapse
+###  https://schema.coypu.org/em-dat#Collapse
 :Collapse rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Class ;
                             owl:unionOf ( :IndustrialAccident
@@ -136,26 +137,26 @@
           rdfs:label "collapse"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ConvectiveStorm
+###  https://schema.coypu.org/em-dat#ConvectiveStorm
 :ConvectiveStorm rdf:type owl:Class ;
                  rdfs:subClassOf :Storm ;
                  rdfs:comment "A type of meteorological hazard generated by the heating of air and the availability of moist and unstable air masses. Convective storms range from localised thunderstorms (with heavy rain and/or hail, lightning, high winds, tornadoes) to meso-scale, multi-day events."@en ;
                  rdfs:label "convective storm"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Derecho
+###  https://schema.coypu.org/em-dat#Derecho
 :Derecho rdf:type owl:Class ;
          rdfs:subClassOf :ConvectiveStorm ;
          rdfs:label "derecho"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Disaster
-:Disaster rdf:type owl:Class ;
-          rdfs:comment "Situation or event, which overwhelms local capacity, necessitating a request to national or international level for external assistance (definition considered in EM-DAT); An unforeseen and often sudden event that causes great damage, destruction and human suffering. Though often caused by nature, disasters can have human origins."@en ;
-          rdfs:label "disaster"@en .
+###  https://schema.coypu.org/em-dat#Disaster
+#:Disaster rdf:type owl:Class ;
+#          rdfs:comment "Situation or event, which overwhelms local capacity, necessitating a request to national or international level for external assistance (definition considered in EM-DAT); An unforeseen #and often sudden event that causes great damage, destruction and human suffering. Though often caused by nature, disasters can have human origins."@en ;
+#          rdfs:label "disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Drought
+###  https://schema.coypu.org/em-dat#Drought
 :Drought rdf:type owl:Class ;
          rdfs:subClassOf :ClimatologicalDisaster ;
          rdfs:comment "An extended period of unusually low precipitation that produces a shortage of water for people, animals and plants. Drought is diﬀerent from most other hazards in that it develops slowly, sometimes even over years, and its onset is generally diﬃcult to detect. Drought is not solely a physical phenomenon because its impacts can be exacerbated by human activities and water supply demands. Drought is therefore often deﬁned both conceptually and operationally. Operational deﬁnitions of drought, meaning the degree of precipitation reduction that constitutes a drought, vary by locality, climate and environmental sector."@en ;
@@ -164,7 +165,7 @@
          :hasReliefWebIdentifier 4672 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Earthquake
+###  https://schema.coypu.org/em-dat#Earthquake
 :Earthquake rdf:type owl:Class ;
             rdfs:subClassOf :GeophysicalDisaster ;
             rdfs:comment "Sudden movement of a block of the Earth’s crust along a geological fault and associated ground shaking."@en ;
@@ -173,14 +174,14 @@
             :hasReliefWebIdentifier 4628 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/EnergeticParticles
+###  https://schema.coypu.org/em-dat#EnergeticParticles
 :EnergeticParticles rdf:type owl:Class ;
                     rdfs:subClassOf :SpaceWeather ;
                     rdfs:comment "Emissions from solar radiation storms consisting of pieces of matter (e.g., protons and other charged particles) moving at very high speed. The magnetosphere and atmosphere block (solar) energetic particles (SEP) from reaching humans on Earth but they are damaging to the electronics of space-borne technology (such as satellites) and pose a radiation hazard to life in space and aircrafts travelling at high altitudes."@en ;
                     rdfs:label "energetic particles"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Epidemic
+###  https://schema.coypu.org/em-dat#Epidemic
 :Epidemic rdf:type owl:Class ;
           rdfs:subClassOf :BiologicalDisaster ;
           rdfs:comment "Either an unusual increase in the number of cases of an infectious disease, which already exists in the region or population concerned; or the appearance of an infection previously absent from a region."@en ;
@@ -189,7 +190,7 @@
           :hasReliefWebIdentifier 4642 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Explosion
+###  https://schema.coypu.org/em-dat#Explosion
 :Explosion rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Class ;
                              owl:unionOf ( :IndustrialAccident
@@ -200,7 +201,7 @@
            rdfs:label "explosion"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ExtraTropicalStorm
+###  https://schema.coypu.org/em-dat#ExtraTropicalStorm
 :ExtraTropicalStorm rdf:type owl:Class ;
                     rdfs:subClassOf :Storm ;
                     rdfs:comment "A type of low-pressure cyclonic system in the middle and high latitudes (also called mid-latitude cyclone) that primarily gets its energy from the horizontal temperature contrasts (fronts) in the atmosphere. When associated with cold fronts, extratropical cyclones may be particularly damaging (e.g. European winter/windstorm, Nor’easter)."@en ;
@@ -209,20 +210,20 @@
                     :hasReliefWebIdentifier 4719 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ExtraterrestrialDisaster
+###  https://schema.coypu.org/em-dat#ExtraterrestrialDisaster
 :ExtraterrestrialDisaster rdf:type owl:Class ;
                           rdfs:subClassOf :NaturalDisaster ;
                           rdfs:comment "A hazard caused by asteroids, meteoroids, and comets as they pass near-earth, enter the Earth’s atmosphere, and/or strike the Earth, and by changes in interplanetary conditions that effect the Earth’s magnetosphere, ionosphere, and thermosphere."@en ;
                           rdfs:label "extraterrestrial disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ExtremeTemperature
+###  https://schema.coypu.org/em-dat#ExtremeTemperature
 :ExtremeTemperature rdf:type owl:Class ;
                     rdfs:subClassOf :MeteorologicalDisaster ;
                     rdfs:label "extreme temperature"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Fire
+###  https://schema.coypu.org/em-dat#Fire
 :Fire rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Class ;
                         owl:unionOf ( :IndustrialAccident
@@ -235,7 +236,7 @@
       :hasReliefWebIdentifier "5706" .
 
 
-###  https://schema.coypu.org/disaster/em-dat/FlashFlood
+###  https://schema.coypu.org/em-dat#FlashFlood
 :FlashFlood rdf:type owl:Class ;
             rdfs:subClassOf :Flood ;
             rdfs:comment "Rapid inland floods due to intense rainfall A flash flood describes sudden flooding with short duration. In sloped terrain the water flows rapidly with a high destruction potential. In flat terrain the rainwater cannot infiltrate into the ground or run off (due to small slope) as quickly as it falls. Flash floods typically are associated with thunderstorms. A flash flood can occur at virtually any place."@en ;
@@ -244,7 +245,7 @@
             :hasReliefWebIdentifier 4624 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Flood
+###  https://schema.coypu.org/em-dat#Flood
 :Flood rdf:type owl:Class ;
        rdfs:subClassOf :HydrologicalDisaster ;
        rdfs:comment "A general term for the overﬂow of water from a stream channel onto normally dry land in the ﬂoodplain (riverine ﬂooding), higher-than- normal levels along the coast and in lakes or reservoirs (coastal ﬂooding) as well as ponding of water at or near the point where the rain fell (ﬂash ﬂoods)."@en ;
@@ -253,81 +254,81 @@
        :hasReliefWebIdentifier 4611 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Fog
+###  https://schema.coypu.org/em-dat#Fog
 :Fog rdf:type owl:Class ;
      rdfs:subClassOf :MeteorologicalDisaster ;
      rdfs:comment "Water droplets that are suspended in the air near the Earth’s surface. Fog is simply a cloud that is in contact with the ground."@en ;
      rdfs:label "fog"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ForestFire
+###  https://schema.coypu.org/em-dat#ForestFire
 :ForestFire rdf:type owl:Class ;
             rdfs:subClassOf :Wildfire ;
             rdfs:comment "A type of wildﬁre in a wooded area."@en ;
             rdfs:label "forest fire"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/FrostOrFreeze
+###  https://schema.coypu.org/em-dat#FrostOrFreeze
 :FrostOrFreeze rdf:type owl:Class ;
                rdfs:subClassOf :SevereWinterConditions ;
                rdfs:label "frost/freeze"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/FungalDisease
+###  https://schema.coypu.org/em-dat#FungalDisease
 :FungalDisease rdf:type owl:Class ;
                rdfs:subClassOf :Epidemic ;
                rdfs:comment "Exposure to fungi either through skin contact, ingestion or inhalation of spores resulting in an unusual increase in the number of incidents. Examples are fungal pneumonia, fungal meningitis, etc."@en ;
                rdfs:label "fungal disease"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/GasLeak
+###  https://schema.coypu.org/em-dat#GasLeak
 :GasLeak rdf:type owl:Class ;
          rdfs:subClassOf :IndustrialAccident ;
          rdfs:label "gas leak"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/GeomagneticStorm
+###  https://schema.coypu.org/em-dat#GeomagneticStorm
 :GeomagneticStorm rdf:type owl:Class ;
                   rdfs:subClassOf :SpaceWeather ;
                   rdfs:comment "A type of extraterrestrial hazard caused by solar wind shockwaves that temporarily disturb the Earth’s magnetosphere. Geomagnetic storms can disrupt power grids, spacecraft operations, and satellite communications."@en ;
                   rdfs:label "geomagnetic storm"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/GeophysicalDisaster
+###  https://schema.coypu.org/em-dat#GeophysicalDisaster
 :GeophysicalDisaster rdf:type owl:Class ;
                      rdfs:subClassOf :NaturalDisaster ;
                      rdfs:comment "A hazard originating from solid earth. This term is used interchangeably with the term geological hazard."@en ;
                      rdfs:label "geophysical disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/GlacialLakeOutburst
+###  https://schema.coypu.org/em-dat#GlacialLakeOutburst
 :GlacialLakeOutburst rdf:type owl:Class ;
                      rdfs:subClassOf :ClimatologicalDisaster ;
                      rdfs:comment "A ﬂood that occurs when water dammed by a glacier or moraine is suddenly released. Glacial lakes can be at the front of the glacier (marginal lake) or below the ice sheet (sub-glacial lake)."@en ;
                      rdfs:label "glacial lake outburst"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Grasshopper
+###  https://schema.coypu.org/em-dat#Grasshopper
 :Grasshopper rdf:type owl:Class ;
              rdfs:subClassOf :InsectInfestation ;
              rdfs:label "grasshopper"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/GroundMovement
+###  https://schema.coypu.org/em-dat#GroundMovement
 :GroundMovement rdf:type owl:Class ;
                 rdfs:subClassOf :Earthquake ;
                 rdfs:comment "Surface displacement of earthen materials due to ground shaking triggered by earthquakes or volcanic eruptions."@en ;
                 rdfs:label "ground movement"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Hail
+###  https://schema.coypu.org/em-dat#Hail
 :Hail rdf:type owl:Class ;
       rdfs:subClassOf :ConvectiveStorm ;
       rdfs:comment "Storm with hailstones as dominant type of precipitation. A hail storm is a type of storm that is characterised by hail as the dominant part of its precipitation. The size of the hailstones can vary between pea size (6mm) and softball size (112mm) and therefore cause considerable damage."@en ;
       rdfs:label "hail"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/HeatWave
+###  https://schema.coypu.org/em-dat#HeatWave
 :HeatWave rdf:type owl:Class ;
           rdfs:subClassOf :ExtremeTemperature ;
           rdfs:label "heat wave"@en ;
@@ -335,35 +336,35 @@
           :hasReliefWebIdentifier 4930 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/HydrologicalDisaster
+###  https://schema.coypu.org/em-dat#HydrologicalDisaster
 :HydrologicalDisaster rdf:type owl:Class ;
                       rdfs:subClassOf :NaturalDisaster ;
                       rdfs:comment "A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater."@en ;
                       rdfs:label "hydrological disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/IceJamFlood
+###  https://schema.coypu.org/em-dat#IceJamFlood
 :IceJamFlood rdf:type owl:Class ;
              rdfs:subClassOf :Flood ;
              rdfs:comment "The accumulation of ﬂoating ice restricting or blocking a river’s ﬂow and drainage. Ice jams tend to develop near river bends and obstructions (e.g. bridges)."@en ;
              rdfs:label "ice jam flood"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Impact
+###  https://schema.coypu.org/em-dat#Impact
 :Impact rdf:type owl:Class ;
         rdfs:subClassOf :ExtraterrestrialDisaster ;
         rdfs:comment "A type of extraterrestrial hazard caused by the collision of the Earth with a meteoroid, asteroid or comet."@en ;
         rdfs:label "impact"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/IndustrialAccident
+###  https://schema.coypu.org/em-dat#IndustrialAccident
 :IndustrialAccident rdf:type owl:Class ;
                     rdfs:subClassOf :TechnologicalDisaster ;
                     rdfs:comment "Disaster type term used in EM-DAT to describe technological accidents of an industrial nature/involving industrial buildings (e.g. factories)."@en ;
                     rdfs:label "industrial accident"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/InsectInfestation
+###  https://schema.coypu.org/em-dat#InsectInfestation
 :InsectInfestation rdf:type owl:Class ;
                    rdfs:subClassOf :BiologicalDisaster ;
                    rdfs:comment "Pervasive influx and development of insects or parasites affecting humans, animals, crops and materials."@en ;
@@ -372,54 +373,54 @@
                    :hasReliefWebIdentifier 5255 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Lahar
+###  https://schema.coypu.org/em-dat#Lahar
 :Lahar rdf:type owl:Class ;
        rdfs:subClassOf :VolcanicActivity ;
        rdfs:comment "Hot or cold mixture of earthen material ﬂowing on the slope of a volcano either during or between volcanic eruptions"@en ;
        rdfs:label "lahar"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/LandFire
+###  https://schema.coypu.org/em-dat#LandFire
 :LandFire rdf:type owl:Class ;
           rdfs:subClassOf :Wildfire ;
           rdfs:label "land fire: brush, bush, pasture"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/LavaFlow
+###  https://schema.coypu.org/em-dat#LavaFlow
 :LavaFlow rdf:type owl:Class ;
           rdfs:subClassOf :VolcanicActivity ;
           rdfs:comment "The ejected magma that moves as a liquid mass downslope from a volcano during an eruption."@en ;
           rdfs:label "lava flow"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/LightningOrThunderstorm
+###  https://schema.coypu.org/em-dat#LightningOrThunderstorm
 :LightningOrThunderstorm rdf:type owl:Class ;
                          rdfs:subClassOf :ConvectiveStorm ;
                          rdfs:comment "Hazards/losses caused by lightning stroke. Lightning is an atmospheric discharge of electricity, which typically occurs during thunderstorms, and sometimes during volcanic eruptions or dust storms."@en ;
                          rdfs:label "lightning/thunderstorm"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Locust
+###  https://schema.coypu.org/em-dat#Locust
 :Locust rdf:type owl:Class ;
         rdfs:subClassOf :InsectInfestation ;
         rdfs:label "locust"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/MeteorologicalDisaster
+###  https://schema.coypu.org/em-dat#MeteorologicalDisaster
 :MeteorologicalDisaster rdf:type owl:Class ;
                         rdfs:subClassOf :NaturalDisaster ;
                         rdfs:comment "A hazard caused by short-lived, micro- to meso-scale extreme weather and atmospheric conditions that last from minutes to days."@en ;
                         rdfs:label "meteorological disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/MiscelleanousAccident
+###  https://schema.coypu.org/em-dat#MiscelleanousAccident
 :MiscelleanousAccident rdf:type owl:Class ;
                        rdfs:subClassOf :TechnologicalDisaster ;
                        rdfs:comment "Disaster type term used in EM-DAT to describe technological accidents of a non-industrial or transport nature (e.g. houses)."@en ;
                        rdfs:label "miscelleanous accident"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/MudSlide
+###  https://schema.coypu.org/em-dat#MudSlide
 :MudSlide rdf:type owl:Class ;
           rdfs:subClassOf :Avalanche ;
           rdfs:comment "Mud slide (GLIDE hazard code: MS) is defined as a type of landslide, which occurs when the slope is saturated with water. This more destructive flow can pick up rocks, trees, houses and cars. As the debris moves into river and stream beds, bridges can become blocked or even collapse, making a temporary dam that can flood neighbouring areas.  (GLIDE)"@en ;
@@ -428,19 +429,19 @@
           :hasReliefWebIdentifier 4814 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/NaturalDisaster
+###  https://schema.coypu.org/em-dat#NaturalDisaster
 :NaturalDisaster rdf:type owl:Class ;
-                 rdfs:subClassOf :Disaster ;
+                 rdfs:subClassOf coy:Disaster ;
                  rdfs:label "natural disaster"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/OilSpill
+###  https://schema.coypu.org/em-dat#OilSpill
 :OilSpill rdf:type owl:Class ;
           rdfs:subClassOf :IndustrialAccident ;
           rdfs:label "oil spill"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Other
+###  https://schema.coypu.org/em-dat#Other
 :Other rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Class ;
                          owl:unionOf ( :IndustrialAccident
@@ -452,93 +453,93 @@
        :hasReliefWebIdentifier 5042 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ParasiticDisease
+###  https://schema.coypu.org/em-dat#ParasiticDisease
 :ParasiticDisease rdf:type owl:Class ;
                   rdfs:subClassOf :Epidemic ;
                   rdfs:comment "Exposure to a parasite–an organism living on or in a host–causes an unusual increase in the number of incidents. Exposure to parasites occurs mostly through contaminated water, food or contact with insects, animals (zoonotic), pets, etc. Examples are malaria, chagas disease, giardiasis and trichinellosis."@en ;
                   rdfs:label "parasitic disease"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Poisoning
+###  https://schema.coypu.org/em-dat#Poisoning
 :Poisoning rdf:type owl:Class ;
            rdfs:subClassOf :IndustrialAccident ;
            rdfs:comment "Poisoning of atmosphere or water courses due to industrial sources."@en ;
            rdfs:label "poisoning"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/PrionDisease
+###  https://schema.coypu.org/em-dat#PrionDisease
 :PrionDisease rdf:type owl:Class ;
               rdfs:subClassOf :Epidemic ;
               rdfs:comment "A type of biological hazard caused by prion proteins. Prion diseases or transmissible spongiform encephalopathies (TSEs) are a family of rare progressive neurodegenerative disorders that aﬀect both humans and animals characterised by long incubation periods and neural loss. Examples are Bovine Spongiform Encephalophathy (BSE), Creutzfeldt- Jakob-Disease (CJD), Kuru, etc."@en ;
               rdfs:label "prion disease"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/PyroclasticFlow
+###  https://schema.coypu.org/em-dat#PyroclasticFlow
 :PyroclasticFlow rdf:type owl:Class ;
                  rdfs:subClassOf :VolcanicActivity ;
                  rdfs:comment "Extremely hot gases, ash, and other materials of more than 1,000 degrees Celsius that rapidly ﬂow down the ﬂank of a volcano (more than 700 km/h) during an eruption."@en ;
                  rdfs:label "pyroclastic flow"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Radiation
+###  https://schema.coypu.org/em-dat#Radiation
 :Radiation rdf:type owl:Class ;
            rdfs:subClassOf :IndustrialAccident ;
            rdfs:label "radiation"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Rail
+###  https://schema.coypu.org/em-dat#Rail
 :Rail rdf:type owl:Class ;
       rdfs:subClassOf :TransportAccident ;
       rdfs:label "rail"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Rain
+###  https://schema.coypu.org/em-dat#Rain
 :Rain rdf:type owl:Class ;
       rdfs:subClassOf :ConvectiveStorm ;
       rdfs:comment "Water vapour condenses in the atmosphere to form water droplets that fall to the Earth."@en ;
       rdfs:label "rain"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/RiverineFlood
+###  https://schema.coypu.org/em-dat#RiverineFlood
 :RiverineFlood rdf:type owl:Class ;
                rdfs:subClassOf :Flood ;
                rdfs:label "riverine flood"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Road
+###  https://schema.coypu.org/em-dat#Road
 :Road rdf:type owl:Class ;
       rdfs:subClassOf :TransportAccident ;
       rdfs:label "road"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/RockFall
+###  https://schema.coypu.org/em-dat#RockFall
 :RockFall rdf:type owl:Class ;
-          rdfs:subClassOf <https://schema.coypu.org/disaster/em-dat/MassMovement_(dry)> ;
+          rdfs:subClassOf <https://schema.coypu.org/em-dat#MassMovement_(dry)> ;
           rdfs:label "rock fall"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/RogueWave
+###  https://schema.coypu.org/em-dat#RogueWave
 :RogueWave rdf:type owl:Class ;
            rdfs:subClassOf :WaveAction ;
            rdfs:comment "An unusual single crest of an ocean wave far out at sea that is much higher and/or steeper than other waves in the prevailing swell system"@en ;
            rdfs:label "rogue wave"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SandOrDustStorm
+###  https://schema.coypu.org/em-dat#SandOrDustStorm
 :SandOrDustStorm rdf:type owl:Class ;
                  rdfs:subClassOf :ConvectiveStorm ;
                  rdfs:comment "A sandstorm/dust storm typically occurs in arid or semi-arid regions if high wind speeds cause the transportation of small particles like sand or fine clastic sediment by saltation and/or suspension. e.g. in deserts."@en ;
                  rdfs:label "sand/dust storm"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Seiche
+###  https://schema.coypu.org/em-dat#Seiche
 :Seiche rdf:type owl:Class ;
         rdfs:subClassOf :WaveAction ;
         rdfs:comment "A standing wave of water in a large semi- or fully-enclosed body of water (lakes or bays) created by strong winds and/or a large barometric pressure gradient."@en ;
         rdfs:label "seiche"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SevereStorm
+###  https://schema.coypu.org/em-dat#SevereStorm
 :SevereStorm rdf:type owl:Class ;
              rdfs:subClassOf :ConvectiveStorm ;
              rdfs:label "severe storm"@en ;
@@ -546,21 +547,21 @@
              :hasReliefWebIdentifier 4656 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SevereWinterConditions
+###  https://schema.coypu.org/em-dat#SevereWinterConditions
 :SevereWinterConditions rdf:type owl:Class ;
                         rdfs:subClassOf :ExtremeTemperature ;
                         rdfs:comment "Damage caused by snow and ice. Winter damage refers to damage to buildings, infrastructure, traffic (esp. navigation) inflicted by snow and ice in form of snow pressure, freezing rain, frozen waterways etc."@en ;
                         rdfs:label "severe winter conditions"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Shockwave
+###  https://schema.coypu.org/em-dat#Shockwave
 :Shockwave rdf:type owl:Class ;
            rdfs:subClassOf :SpaceWeather ;
            rdfs:comment "A shockwave carries energy from a disturbance through a medium (solid, liquid, gas) similar to a wave though it travels at much higher speed. It can be a type of extraterrestrial hazard caused by the explosion (airburst) or impact of meteorites that generate energy shockwaves capable of shattering glass, collapsing walls, etc."@en ;
            rdfs:label "shockwave"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SnowAvalanche
+###  https://schema.coypu.org/em-dat#SnowAvalanche
 :SnowAvalanche rdf:type owl:Class ;
                rdfs:subClassOf :Avalanche ;
                rdfs:label "snow avalanche"@en ;
@@ -568,25 +569,25 @@
                :hasReliefWebIdentifier "4764"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SnowOrIce
+###  https://schema.coypu.org/em-dat#SnowOrIce
 :SnowOrIce rdf:type owl:Class ;
            rdfs:subClassOf :SevereWinterConditions ;
            rdfs:label "snow/ice"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/SpaceWeather
+###  https://schema.coypu.org/em-dat#SpaceWeather
 :SpaceWeather rdf:type owl:Class ;
               rdfs:subClassOf :ExtraterrestrialDisaster ;
               rdfs:label "space weather"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Storm
+###  https://schema.coypu.org/em-dat#Storm
 :Storm rdf:type owl:Class ;
        rdfs:subClassOf :MeteorologicalDisaster ;
        rdfs:label "storm"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/StormOrSurge
+###  https://schema.coypu.org/em-dat#StormOrSurge
 :StormOrSurge rdf:type owl:Class ;
               rdfs:subClassOf :ConvectiveStorm ;
               rdfs:comment "An abnormal rise in sea level generated by a tropical cyclone or other intense storms."@en ;
@@ -595,29 +596,29 @@
               :hasReliefWebIdentifier 5549 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/TechnologicalDisaster
+###  https://schema.coypu.org/em-dat#TechnologicalDisaster
 :TechnologicalDisaster rdf:type owl:Class ;
-                       rdfs:subClassOf :Disaster ;
+                       rdfs:subClassOf coy:Disaster ;
                        rdfs:label "technological disaster"@en ;
                        :hasGlideHazardCode "AC" ;
                        :hasReliefWebIdentifier 4620 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Tornado
+###  https://schema.coypu.org/em-dat#Tornado
 :Tornado rdf:type owl:Class ;
          rdfs:subClassOf :ConvectiveStorm ;
          rdfs:comment "A violently rotating column of air that reaches the ground or open water (waterspout)."@en ;
          rdfs:label "tornado"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/TransportAccident
+###  https://schema.coypu.org/em-dat#TransportAccident
 :TransportAccident rdf:type owl:Class ;
                    rdfs:subClassOf :TechnologicalDisaster ;
                    rdfs:comment "Disaster type term used in EM-DAT to describe technological transport accidents involving mechanised modes of transport. It comprises of four disaster subsets: accidents involving aeroplanes, helicopters, airships and balloons « Transport:Air »; accidents involving sailing boats, ferries, cruise ships, other boats « Transport:Boat »; accidents involving trains « Transport:Rail »; and accidents involving motor vehicles on roads and tracks « Transport:Road »."@en ;
                    rdfs:label "transport accident"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/TropicalStorm
+###  https://schema.coypu.org/em-dat#TropicalStorm
 :TropicalStorm rdf:type owl:Class ;
                rdfs:subClassOf :Storm ;
                rdfs:comment "A tropical storm originates over tropical or subtropical waters. It is characterised by a warm-core, non-frontal synoptic-scale cyclone with a low pressure centre, spiral rain bands and strong winds. Depending on their location, tropical cyclones are referred to as hurricanes (Atlantic, Northeast Paciﬁc), typhoons (Northwest Paciﬁc), or cyclones (South Paciﬁc and Indian Ocean)."@en ;
@@ -626,7 +627,7 @@
                :hasReliefWebIdentifier 4618 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Tsunami
+###  https://schema.coypu.org/em-dat#Tsunami
 :Tsunami rdf:type owl:Class ;
          rdfs:subClassOf :Earthquake ;
          rdfs:comment "« wave in the port » in Japanese: A series of waves (with long wavelengths when traveling across the deep ocean) that are generated by a displacement of massive amounts of water through underwater earthquakes, volcanic eruptions or landslides. Tsunami waves travel at very high speed across the ocean but as they begin to reach shallow water they slow down and the wave grows steeper."@en ;
@@ -635,13 +636,13 @@
          :hasReliefWebIdentifier 4687 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/ViralDisease
+###  https://schema.coypu.org/em-dat#ViralDisease
 :ViralDisease rdf:type owl:Class ;
               rdfs:subClassOf :Epidemic ;
               rdfs:label "viral disease"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/VolcanicActivity
+###  https://schema.coypu.org/em-dat#VolcanicActivity
 :VolcanicActivity rdf:type owl:Class ;
                   rdfs:subClassOf :GeophysicalDisaster ;
                   rdfs:comment "A type of volcanic event near an opening/vent in the Earth’s surface including volcanic eruptions of lava, ash, hot vapour, gas, and pyroclastic material."@en ;
@@ -650,19 +651,19 @@
                   :hasReliefWebIdentifier 4615 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Water
+###  https://schema.coypu.org/em-dat#Water
 :Water rdf:type owl:Class ;
        rdfs:subClassOf :TransportAccident ;
        rdfs:label "water"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/WaveAction
+###  https://schema.coypu.org/em-dat#WaveAction
 :WaveAction rdf:type owl:Class ;
             rdfs:subClassOf :HydrologicalDisaster ;
             rdfs:label "wave action"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Wildfire
+###  https://schema.coypu.org/em-dat#Wildfire
 :Wildfire rdf:type owl:Class ;
           rdfs:subClassOf :ClimatologicalDisaster ;
           rdfs:comment "Any uncontrolled and non-prescribed combustion or burning of plants in a natural setting such as a forest, grassland, brush land or tundra, which consumes the natural fuels and spreads based on environmental conditions (e.g., wind, topography). Wildﬁres can be triggered by lightning or human actions."@en ;
@@ -671,41 +672,41 @@
           :hasReliefWebIdentifier 4648 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Wind
+###  https://schema.coypu.org/em-dat#Wind
 :Wind rdf:type owl:Class ;
       rdfs:subClassOf :ConvectiveStorm ;
       rdfs:comment "Diﬀerences in air pressure resulting in the horizontal motion of air. The greater the diﬀerence in pressure, the stronger the wind. Wind moves from high pressure toward low pressure."@en ;
       rdfs:label "wind"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/WinterStormOrBlizzard
+###  https://schema.coypu.org/em-dat#WinterStormOrBlizzard
 :WinterStormOrBlizzard rdf:type owl:Class ;
                        rdfs:subClassOf :ConvectiveStorm ;
                        rdfs:comment "A low pressure system in winter months with signiﬁcant accumulations of snow, freezing rain, sleet or ice. A blizzard is a severe snow storm with winds exceeding 35 mph (56 km/h) for three or more hours, producing reduced visibility (less than 0.25 mile (400 m))."@en ;
                        rdfs:label "winter storm/blizzard"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Landslide(dry)
-<https://schema.coypu.org/disaster/em-dat/Landslide(dry)> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <https://schema.coypu.org/disaster/em-dat/MassMovement_(dry)> ;
-                                                          rdfs:comment "Any kind of moderate to rapid soil movement incl. lahar, mudslide, debris flow. A landslide is the movement of soil or rock controlled by gravity and the speed of the movement usually ranges between slow and rapid, but not very slow. It can be superficial or deep, but the materials have to make up a mass that is a portion of the slope or the slope itself. The movement has to be downward and outward with a free face."@en ;
-                                                          rdfs:label "landslide (dry)"@en ;
-                                                          :hasGlideHazardCode "LS" ;
-                                                          :hasReliefWebIdentifier 4728 .
+###  https://schema.coypu.org/em-dat#Landslide(dry)
+<https://schema.coypu.org/em-dat#Landslide(dry)> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://schema.coypu.org/em-dat#MassMovement_(dry)> ;
+                                                 rdfs:comment "Any kind of moderate to rapid soil movement incl. lahar, mudslide, debris flow. A landslide is the movement of soil or rock controlled by gravity and the speed of the movement usually ranges between slow and rapid, but not very slow. It can be superficial or deep, but the materials have to make up a mass that is a portion of the slope or the slope itself. The movement has to be downward and outward with a free face."@en ;
+                                                 rdfs:label "landslide (dry)"@en ;
+                                                 :hasGlideHazardCode "LS" ;
+                                                 :hasReliefWebIdentifier 4728 .
 
 
-###  https://schema.coypu.org/disaster/em-dat/Landslide(wet)
-<https://schema.coypu.org/disaster/em-dat/Landslide(wet)> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :HydrologicalDisaster ;
-                                                          rdfs:comment "Any kind of moderate to rapid soil movement incl. lahar, mudslide, debris flow. A landslide is the movement of soil or rock controlled by gravity and the speed of the movement usually ranges between slow and rapid, but not very slow. It can be superficial or deep, but the materials have to make up a mass that is a portion of the slope or the slope itself. The movement has to be downward and outward with a free face."@en ;
-                                                          rdfs:label "landslide (wet)"@en .
+###  https://schema.coypu.org/em-dat#Landslide(wet)
+<https://schema.coypu.org/em-dat#Landslide(wet)> rdf:type owl:Class ;
+                                                 rdfs:subClassOf :HydrologicalDisaster ;
+                                                 rdfs:comment "Any kind of moderate to rapid soil movement incl. lahar, mudslide, debris flow. A landslide is the movement of soil or rock controlled by gravity and the speed of the movement usually ranges between slow and rapid, but not very slow. It can be superficial or deep, but the materials have to make up a mass that is a portion of the slope or the slope itself. The movement has to be downward and outward with a free face."@en ;
+                                                 rdfs:label "landslide (wet)"@en .
 
 
-###  https://schema.coypu.org/disaster/em-dat/MassMovement_(dry)
-<https://schema.coypu.org/disaster/em-dat/MassMovement_(dry)> rdf:type owl:Class ;
-                                                              rdfs:subClassOf :GeophysicalDisaster ;
-                                                              rdfs:comment "Any type of downslope movement of earth materials."@en ;
-                                                              rdfs:label "mass movement (dry)"@en .
+###  https://schema.coypu.org/em-dat#MassMovement_(dry)
+<https://schema.coypu.org/em-dat#MassMovement_(dry)> rdf:type owl:Class ;
+                                                     rdfs:subClassOf :GeophysicalDisaster ;
+                                                     rdfs:comment "Any type of downslope movement of earth materials."@en ;
+                                                     rdfs:label "mass movement (dry)"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -13,19 +13,25 @@
 #
 # For more information, see: https://docs.gitlab.com/ee/ci/yaml/index.html#stages
 
+default:
+  artifacts:
+    expire_in: 7 days
 
 include:
   - templates/cd.yml
 
 workflow:
   rules:
-    - if: '$CI_COMMIT_TAG !~ /^verified20/'
-      changes:
-        - coy.ttl
+    - changes:
+        - global/coy.ttl
+        - disaster/em_dat_classification.ttl
+        - mapping/coy_wikidata.ttl
         - scripts
         - rdfunit-tests
         - .gitlab-ci.yml
+        - templates
         - Taskfile.yml
+        - docu-ontology
 
 services:
   - name: docker:dind
@@ -33,27 +39,17 @@ services:
 
 
 stages:
-  - rdfunit
-  - oops
+  - validation
   - interprete
   - generate_shapes
   - reasoner
   - version
   - tag
   # Now CD part
-  - download
-  - widoco
-  - jod
   - cd
 
-services:
-  - name: docker:dind
-    alias: docker
-
-syntax:
+syntax: # Has to run everytime because it prepares the RDF files
   stage: .pre
-  rules:
-    - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
     name: pheyvaer/raptor
     entrypoint: [""]
@@ -78,7 +74,8 @@ syntax:
 
 
 rdfunit:
-  stage: rdfunit
+  stage: validation
+  needs: ["syntax"]
   rules:
     - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
@@ -100,7 +97,8 @@ rdfunit:
 
 
 oops:
-  stage: oops
+  stage: validation
+  needs: ["syntax"]
   rules:
     - if: '$CI_COMMIT_TAG !~ /^verified20/'
   image:
@@ -138,7 +136,7 @@ interprete:
 generate_shapes:
   stage: generate_shapes
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
+    - if: $CI_COMMIT_TAG =~ /^verified20/
   when: manual
   image:
     name: docker:latest
@@ -174,7 +172,7 @@ reasoner:
 version:
   stage: version
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH != /main/
+    - if: $CI_COMMIT_TAG !~ /^verified20/ && ( $CI_COMMIT_BRANCH  != "main" && $CI_COMMIT_REF_NAME != "main" )
   image:
     name: bitnami/git
     entrypoint: [""]
@@ -194,7 +192,7 @@ version:
 tag:
   stage: tag
   rules:
-    - if: $CI_COMMIT_TAG !~ /^verified20/ && $CI_COMMIT_BRANCH  == /main/
+    - if: $CI_COMMIT_TAG !~ /^verified20/ && ( $CI_COMMIT_BRANCH  == "main" || $CI_COMMIT_REF_NAME == "main" )
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -210,6 +208,8 @@ tag:
 
 send_email:
     stage: .post
+    rules:
+      - if: '$CI_COMMIT_TAG !~ /^verified20/'
     when: always
     script:
       - |

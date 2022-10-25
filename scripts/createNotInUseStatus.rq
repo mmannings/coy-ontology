@@ -1,0 +1,27 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX void: <http://rdfs.org/ns/void#>
+construct {
+  ?class sw:term_status "Not in use" .
+  ?property sw:term_status "Not in use" .
+}
+where {
+  {
+    ?class rdf:type owl:Class .
+    filter not exists {
+      ?class sw:term_status ?data .
+    }
+  }
+  union
+  {
+    ?property a ?t .
+    filter (
+      ?t in (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)
+    )
+    filter not exists {
+      ?property sw:term_status ?data2 .
+    }
+  }
+}
