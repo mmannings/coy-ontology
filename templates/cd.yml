@@ -210,6 +210,8 @@ distribute_to_cmem:
       OAUTH_GRANT_TYPE=client_credentials
       eval OAUTH_CLIENT_ID="\$${INST_SECRET_CMEM_OAUTH_CLIENT_ID}"
       eval OAUTH_CLIENT_SECRET="\$${INST_SECRET_CMEM_OAUTH_CLIENT_SECRET}"
+      echo $INST_SECRET_CMEM_OAUTH_CLIENT_ID
       export CMEM_BASE_URI OAUTH_GRANT_TYPE OAUTH_CLIENT_ID OAUTH_CLIENT_SECRET
     - export
+    - echo $IPS_CMEM_OAUTH_CLIENT_ID
     - "task sync:upload_ontology"
