@@ -2,6 +2,8 @@ download:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
+  dependencies:
+    - syntax
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -23,6 +25,9 @@ stats:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
+  dependencies:
+    - syntax
+    - download
   image:
     name: tboonx/rpt:jena-4.6.0
     entrypoint: [""]
@@ -47,6 +52,10 @@ widoco:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/ || $CI_MERGE_REQUEST_ID
+  dependencies:
+    - syntax
+    - download
+    - stats
   image:
     name: openjdk:17-oracle
     entrypoint: [""]
@@ -76,6 +85,8 @@ jod:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
+  dependencies:
+    - syntax
   image:
     name: ruby
     entrypoint: [""]
@@ -102,6 +113,9 @@ cd:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
+  dependencies:
+    - widoco
+    - jod
   image:
     name: alpine/git:latest
     entrypoint: [""]
@@ -126,6 +140,9 @@ deploy_review:
     auto_stop_in: 1 week
   rules:
     - if: $CI_MERGE_REQUEST_ID
+  dependencies:
+    - syntax
+    - widoco
 
 stop_deploy_review:
   image: node:16
@@ -148,6 +165,9 @@ distribute_to_cmem:
   stage: cd
   rules:
     - if: $CI_COMMIT_TAG =~ /^verified20/
+  dependencies:
+    - syntax
+    - download
   image:
     name: docker:latest
   parallel:
