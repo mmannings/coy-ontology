@@ -41,11 +41,8 @@
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
                                    owl:priorVersion "1.7"@en ;
-<<<<<<< HEAD
-                                   owl:versionInfo "1.7.1"@en .
-=======
-                                   owl:versionInfo "1.8"@en .
->>>>>>> cd4b27d97b6c5aaf70db29e9fe0d51ca909118c9
+                                   owl:versionInfo "1.8.1"@en .
+
 
 #################################################################
 #    Annotation properties
@@ -183,15 +180,7 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                     rdfs:label "crm - affects product line"@en .
 
 
-<<<<<<< HEAD
-###  https://schema.coypu.org/global#haltOperation
-:haltOperation rdf:type owl:ObjectProperty ;
-               rdfs:domain :Company ;
-               rdfs:range owl:Thing ;
-               rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-               rdfs:label "halt operation"@en ;
-               owl:deprecated ""@en .
-=======
+
 ###  https://schema.coypu.org/global#hasCityLocation
 :hasCityLocation rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasLocation ;
@@ -208,7 +197,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
                     rdfs:range beAWARE_ontology:Location ;
                     rdfs:comment "the country an event, company or critical infrastructure is located at"@en ;
                     rdfs:label "has country location"@en .
->>>>>>> cd4b27d97b6c5aaf70db29e9fe0d51ca909118c9
 
 
 ###  https://schema.coypu.org/global#hasCustomer
@@ -273,15 +261,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:label "has product"@en .
 
 
-###  https://schema.coypu.org/global#hasProductLine
-:hasProductLine rdf:type owl:ObjectProperty ;
-                owl:inverseOf :isProductLineOf ;
-                rdfs:domain :Company ;
-                rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-                rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                rdfs:label "CRM - has product line"@en .
-
-
 ###  https://schema.coypu.org/global#hasSubject
 :hasSubject rdf:type owl:ObjectProperty ;
             owl:inverseOf :isSubjectOf ;
@@ -305,14 +284,11 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
 
 ###  https://schema.coypu.org/global#hasTerritorialEntity
 :hasTerritorialEntity rdf:type owl:ObjectProperty ;
-<<<<<<< HEAD
                       rdfs:isDefinedBy <https://schema.coypu.org/global> .
-=======
                       rdfs:subPropertyOf :hasLocation ;
                       rdfs:domain owl:Thing ;
                       rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
                       rdfs:label "has territorial entity"@en .
->>>>>>> cd4b27d97b6c5aaf70db29e9fe0d51ca909118c9
 
 
 ###  https://schema.coypu.org/global#impactCausedByEvent
@@ -422,27 +398,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
           rdfs:label "is used in"@en .
 
 
-<<<<<<< HEAD
-###  https://schema.coypu.org/global#orderTo
-:orderTo rdf:type owl:ObjectProperty ;
-         rdfs:domain :Company ;
-         rdfs:range <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
-         rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-         rdfs:label "order to"@en ;
-         owl:deprecated ""@en .
-
-
-###  https://schema.coypu.org/global#orderedBy
-:orderedBy rdf:type owl:ObjectProperty ;
-           rdfs:domain :Company ;
-           rdfs:range :Company ;
-           rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-           rdfs:label "ordered by"@en ;
-           owl:deprecated ""@en .
-
-
-=======
->>>>>>> cd4b27d97b6c5aaf70db29e9fe0d51ca909118c9
 ###  https://schema.coypu.org/global#usedProductLineFor
 :usedProductLineFor rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
