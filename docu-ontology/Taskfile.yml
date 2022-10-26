@@ -1,7 +1,7 @@
 version: '3'
 
 vars:
-  ONTOLOGY: main
+  ONTOLOGY: coy
   RAPPER: rapper
   DOCU_PATH: .
 
