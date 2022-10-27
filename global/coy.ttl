@@ -261,15 +261,6 @@ beAWARE_ontology:isLocationOfDisaster rdf:type owl:ObjectProperty ;
             rdfs:label "has product"@en .
 
 
-###  https://schema.coypu.org/global#hasProductLine
-:hasProductLine rdf:type owl:ObjectProperty ;
-                owl:inverseOf :isProductLineOf ;
-                rdfs:domain :Company ;
-                rdfs:range <http://www.w3id.org/ecsel-dr-SO#Product_Line> ;
-                rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                rdfs:label "CRM - has product line"@en .
-
-
 ###  https://schema.coypu.org/global#hasSubject
 :hasSubject rdf:type owl:ObjectProperty ;
             owl:inverseOf :isSubjectOf ;
