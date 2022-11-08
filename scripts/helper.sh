@@ -66,10 +66,8 @@ function exit_if_no_file_change () {
   local file1=$1
   local file2=$2
 
-  lines_of_cmp_result=`cmp $file1 $file2 | wc -l`
-  lines_of_cmp_result=$(($lines_of_cmp_result - 1 + 1))
-
-  if (( $lines_of_cmp_result < 1 ))
+  echo "Calculating line count difference ..."
+  if cmp "$file1" "$file2"
   then
     echo "There was no change in the vocabulary file, thus not checking the version increase."
     exit 0
