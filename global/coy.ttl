@@ -41,7 +41,7 @@
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
                                    owl:priorVersion "1.7"@en ;
-                                   owl:versionInfo "1.8"@en .
+                                   owl:versionInfo "1.8.1"@en .
 
 #################################################################
 #    Annotation properties
