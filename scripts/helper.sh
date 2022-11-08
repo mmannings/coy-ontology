@@ -67,7 +67,7 @@ function exit_if_no_file_change () {
   local file2=$2
 
   echo "Calculating line count difference ..."
-  lines_of_cmp_result=`cmp $file1 $file2 | wc -l`
+  lines_of_cmp_result=$(cmp $file1 $file2 | wc -l)
   echo "make it a number ..."
   lines_of_cmp_result=$(($lines_of_cmp_result - 1 + 1))
 
