@@ -57,7 +57,7 @@ function owl_version_increase_test () {
   echo $temp
   if [[ $temp != "<" ]]
   then
-    echo "file $file : owl:versionInfo of $file1 is not lower than of $file2!"
+    echo "file $file : owl:versionInfo of $file2 was not increased, i.e. it need to be higher than the version of $file1!"
     exit 1
   fi
 }
@@ -69,7 +69,8 @@ function exit_if_no_file_change () {
   echo "Calculating line count difference ..."
   if cmp "$file1" "$file2"
   then
-    echo "There was no change in the vocabulary file, thus not checking the version increase."
+    echo "There is no change in the vocabulary file, thus not checking the version increase."
     exit 0
   fi
+  echo "Done with exit_if_no_file_change"
 }
