@@ -4,12 +4,12 @@ function version_compare () { # made by https://stackoverflow.com/questions/4023
   function sub_ver () {
     local len=${#1}
     temp=${1%%"."*} && indexOf=`echo ${1%%"."*} | echo ${#temp}`
-    echo -e "${1:0:indexOf}"
+    echo -e "${1:0:$indexOf}"
   }
   function cut_dot () {
     local offset=${#1}
     local length=${#2}
-    echo -e "${2:((++offset)):length}"
+    echo -e "${2:((++offset)):$length}"
   }
   if [ -z "$1" ] || [ -z "$2" ]; then
     echo "=" && exit 0
@@ -57,7 +57,7 @@ function owl_version_increase_test () {
   echo $temp
   if [[ $temp != "<" ]]
   then
-    echo "file $file : owl:versionInfo of $file2 was not increased, i.e. it need to be higher than the version of $file1!"
+    echo "file $file2 : owl:versionInfo of $file2 was not increased, i.e. it needs to be higher than the version of $file1!"
     exit 1
   fi
 }
