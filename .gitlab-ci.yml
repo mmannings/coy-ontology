@@ -181,8 +181,7 @@ version:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - . scripts/helper.sh
     # get coy.ttl from main
-    - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-ontology.git" main_repo_clone
-    - cp main_repo_clone/global/coy.ttl ./coy.main.ttl
+    - git show --format=raw $( git ls-tree -r main | grep global/coy.ttl | awk '{ print $3; }' ) > ./coy.main.ttl
     # exit if there was no change in the vocab file
     - exit_if_no_file_change ./coy.main.ttl ./global/coy.ttl
     # value of branchs owl:versionInfo has to be higher

@@ -1,0 +1,769 @@
+@prefix : <https://schema.coypu.org/gta#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <https://schema.coypu.org/gta#> .
+
+<https://schema.coypu.org/gta#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://schema.coypu.org/gta/0.1.0> ;
+                                 vann:preferredNamespacePrefix "gta" ;
+                                 vann:preferredNamespaceUri "https://schema.coypu.org/gta#" ;
+                                 rdfs:comment "An ontology for modeling global trade alerts mainly inspired by Global Trade Alerts repository."@en ;
+                                 rdfs:label "Global Trade Alerts Ontology"@en ;
+                                 rdfs:seeAlso <https://www.globaltradealert.org/> ;
+                                 owl:versionInfo "v0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.coypu.org/gta#hasAffectedCommercialFlow
+:hasAffectedCommercialFlow rdf:type owl:ObjectProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :Intervention ;
+                           rdfs:range :AffectedCommercialFlow ;
+                           rdfs:comment "The affected commercial flow field includes the predominantly affected flow direction. There are three potential values. Only one value can be assigned to each intervention."@en ;
+                           rdfs:label "has affected commercial flow"@en .
+
+
+###  https://schema.coypu.org/gta#hasAffectedJurisdiction
+:hasAffectedJurisdiction rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Intervention ;
+                         rdfs:range :Jurisdiction ;
+                         rdfs:label "has affected jurisdiction"@en .
+
+
+###  https://schema.coypu.org/gta#hasAffectedProduct
+:hasAffectedProduct rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Intervention ;
+                    rdfs:range <https://schema.coypu.org/#Product> ;
+                    rdfs:label "has affected product"@en .
+
+
+###  https://schema.coypu.org/gta#hasAffectedSector
+:hasAffectedSector rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Intervention ;
+                   rdfs:range :Sector ;
+                   rdfs:label "has affected sector"@en .
+
+
+###  https://schema.coypu.org/gta#hasGTAEvaluation
+:hasGTAEvaluation rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Intervention ;
+                  rdfs:range :GTAEvaluation ;
+                  rdfs:label "has GTA evaluation"@en .
+
+
+###  https://schema.coypu.org/gta#hasImplementationLevel
+:hasImplementationLevel rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Intervention ;
+                        rdfs:range :ImplementationLevel ;
+                        rdfs:comment "The GTA database differentiates the announcements of different government levels or agencies. In total, it distinguishes 6 different actors."@en ;
+                        rdfs:label "has implementation level"@en .
+
+
+###  https://schema.coypu.org/gta#hasImplementingJurisdiction
+:hasImplementingJurisdiction rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Intervention ;
+                             rdfs:range :Jurisdiction ;
+                             rdfs:label "has implementing jurisdiction"@en .
+
+
+###  https://schema.coypu.org/gta#hasIntervention
+:hasIntervention rdf:type owl:ObjectProperty ;
+                 rdfs:domain :StateAct ;
+                 rdfs:range :Intervention ;
+                 rdfs:label "has intervention"@en .
+
+
+###  https://schema.coypu.org/gta#hasInterventionType
+:hasInterventionType rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Intervention ;
+                     rdfs:range :InterventionType ;
+                     rdfs:label "has intervention type"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.coypu.org/gta#hasAnnouncementDate
+:hasAnnouncementDate rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :StateAct ;
+                     rdfs:range xsd:dateTime ;
+                     rdfs:comment "The issuance date of the documented government statement."@en ;
+                     rdfs:label "Announcement date"@en .
+
+
+###  https://schema.coypu.org/gta#hasImplementationDate
+:hasImplementationDate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Intervention ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:comment "The date the documented change is enforced."@en ;
+                       rdfs:label "Implementation date"@en .
+
+
+###  https://schema.coypu.org/gta#hasInterventionID
+:hasInterventionID rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Intervention ;
+                   rdfs:label "has intervention ID"@en .
+
+
+###  https://schema.coypu.org/gta#hasInvestigationStatusDate
+:hasInvestigationStatusDate rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Intervention ;
+                            rdfs:range xsd:dateTime ;
+                            rdfs:label "Investigation status date"@en .
+
+
+###  https://schema.coypu.org/gta#hasProductID
+:hasProductID rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://schema.coypu.org/#Product> ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:string ;
+                           owl:withRestrictions ( [ xsd:pattern "[0-9]{6}"
+                                                  ]
+                                                )
+                         ] ;
+              rdfs:comment """The GTA uses the Harmonised System (HS, version 2012) at the 6-digit level. At this level, the Harmonised
+System includes more than 5’000 different products. Each product is commonly referred to as its own “tariff
+line”. The details of this classification and its correspondence to others are available from the World Customs
+Organisation. The United Nations Statistics Division published a helpful summary."""@en ;
+              rdfs:label "has product ID"@en .
+
+
+###  https://schema.coypu.org/gta#hasProlongationAnnouncementDate
+:hasProlongationAnnouncementDate rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Intervention ;
+                                 rdfs:range xsd:dateTime ;
+                                 rdfs:comment """The date on which the prolongation of a temporary change was
+communicated."""@en ;
+                                 rdfs:label "Prolongation announcement date"@en .
+
+
+###  https://schema.coypu.org/gta#hasProlongationImplementationDate
+:hasProlongationImplementationDate rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :Intervention ;
+                                   rdfs:range xsd:dateTime ;
+                                   rdfs:comment """The date the prolongation became effective i.e. the day after the
+previously sought removal date."""@en ;
+                                   rdfs:label "Prolongation implementation date"@en .
+
+
+###  https://schema.coypu.org/gta#hasProlongationRemovalDate
+:hasProlongationRemovalDate rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Intervention ;
+                            rdfs:range xsd:dateTime ;
+                            rdfs:comment """The date the prolongation ends i.e. the new removal date as implied by
+this prolongation."""@en ;
+                            rdfs:label "Prolongation removal date"@en .
+
+
+###  https://schema.coypu.org/gta#hasRemovalDate
+:hasRemovalDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Intervention ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment """The date the documented change is either withdrawn or fully replaced by a further
+change. Note that changes that have only been partially replaced or withdrawn do not include a
+removal date."""@en ;
+                rdfs:label "Removal date"@en .
+
+
+###  https://schema.coypu.org/gta#hasSectorID
+:hasSectorID rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Sector ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:string ;
+                          owl:withRestrictions ( [ xsd:pattern "[0-9]{3}"
+                                                 ]
+                                               )
+                        ] ;
+             rdfs:comment "The GTA uses the Common Product Classification (CPC, version 2.1) at the 3-digit level. The details of this classification and its correspondence to others are available from the United Nations Statistics Division."@en ;
+             rdfs:label "has sector ID"@en .
+
+
+###  https://schema.coypu.org/gta#hasStateActID
+:hasStateActID rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :StateAct ;
+               rdfs:label "has state act ID"@en .
+
+
+###  https://schema.coypu.org/gta#hasStateActTitle
+:hasStateActTitle rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :StateAct ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "has state act title"@en .
+
+
+###  https://schema.coypu.org/gta#hasTerminationAnnouncementDate
+:hasTerminationAnnouncementDate rdf:type owl:DatatypeProperty ;
+                                rdfs:domain :Intervention ;
+                                rdfs:range xsd:dateTime ;
+                                rdfs:comment """The date on which the premature termination of a temporary
+change was communicated."""@en ;
+                                rdfs:label "Termination announcement date"@en .
+
+
+###  https://schema.coypu.org/gta#hasTerminationImplementationDate
+:hasTerminationImplementationDate rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Intervention ;
+                                  rdfs:range xsd:dateTime ;
+                                  rdfs:comment """The date the premature termination became effective i.e. the day
+after the previously sought removal date."""@en ;
+                                  rdfs:label "Termination implementation date"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.coypu.org/#Product
+<https://schema.coypu.org/#Product> rdf:type owl:Class ;
+                                    rdfs:label "Product"@en .
+
+
+###  https://schema.coypu.org/gta#AffectedCommercialFlow
+:AffectedCommercialFlow rdf:type owl:Class ;
+                        rdfs:comment """The affected commercial flow field includes the predominantly affected flow direction. There are three
+potential values. Only one value can be assigned to each intervention."""@en ;
+                        rdfs:label "Affected commercial flow"@en .
+
+
+###  https://schema.coypu.org/gta#CapitalControlsAndExchangeRatePolicy
+:CapitalControlsAndExchangeRatePolicy rdf:type owl:Class ;
+                                      rdfs:subClassOf :InterventionType ;
+                                      rdfs:label "Capital controls and exchange rate policy"@en .
+
+
+###  https://schema.coypu.org/gta#ExportAndImportPolicyInstruments
+:ExportAndImportPolicyInstruments rdf:type owl:Class ;
+                                  rdfs:subClassOf :InterventionType ;
+                                  rdfs:label "Export and import policy instruments"@en .
+
+
+###  https://schema.coypu.org/gta#ForeignInvestmentPolicy
+:ForeignInvestmentPolicy rdf:type owl:Class ;
+                         rdfs:subClassOf :InterventionType ;
+                         rdfs:label "Foreign investment policy"@en .
+
+
+###  https://schema.coypu.org/gta#GTAEvaluation
+:GTAEvaluation rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( :Amber
+                                                 :Green
+                                                 :Red
+                                               )
+                                   ] ;
+               rdfs:comment "The direction of the change for each intervention. The evaluation is signalled by a triangle in one of three different colours."@en ;
+               rdfs:label "GTA evaluation"@en .
+
+
+###  https://schema.coypu.org/gta#ImplementationLevel
+:ImplementationLevel rdf:type owl:Class ;
+                     rdfs:comment """The GTA database differentiates the announcements of different government levels or agencies. In total, it
+distinguishes 6 different actors."""@en ;
+                     rdfs:label "Implementation level"@en .
+
+
+###  https://schema.coypu.org/gta#Intervention
+:Intervention rdf:type owl:Class ;
+              rdfs:comment "Each state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."@en ;
+              rdfs:label "intervention"@en .
+
+
+###  https://schema.coypu.org/gta#InterventionType
+:InterventionType rdf:type owl:Class ;
+                  rdfs:subClassOf owl:Thing ;
+                  rdfs:label "intervention type"@en .
+
+
+###  https://schema.coypu.org/gta#Jurisdiction
+:Jurisdiction rdf:type owl:Class ;
+              rdfs:label "jurisdiction"@en .
+
+
+###  https://schema.coypu.org/gta#LaborForceMigrationPolicy
+:LaborForceMigrationPolicy rdf:type owl:Class ;
+                           rdfs:subClassOf :InterventionType ;
+                           rdfs:label "Labor force migration policy"@en .
+
+
+###  https://schema.coypu.org/gta#LocalisationPolicy
+:LocalisationPolicy rdf:type owl:Class ;
+                    rdfs:subClassOf :InterventionType ;
+                    rdfs:label "Localisation policy"@en .
+
+
+###  https://schema.coypu.org/gta#OtherInstruments
+:OtherInstruments rdf:type owl:Class ;
+                  rdfs:subClassOf :InterventionType ;
+                  rdfs:label "Other instruments"@en .
+
+
+###  https://schema.coypu.org/gta#PublicProcurementPolicy
+:PublicProcurementPolicy rdf:type owl:Class ;
+                         rdfs:subClassOf :InterventionType ;
+                         rdfs:label "Public procurement policy"@en .
+
+
+###  https://schema.coypu.org/gta#Sector
+:Sector rdf:type owl:Class ;
+        rdfs:label "sector"@en .
+
+
+###  https://schema.coypu.org/gta#StateAct
+:StateAct rdf:type owl:Class ;
+          rdfs:comment """For the GTA database, a state act is equivalent to an announcement by a government body. Each announcement documented by the GTA team includes at least one new and credible promise for change in market conditions at home or abroad.
+Each state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."""@en ;
+          rdfs:label "state act"@en .
+
+
+###  https://schema.coypu.org/gta#SubsidiesAndStateAid
+:SubsidiesAndStateAid rdf:type owl:Class ;
+                      rdfs:subClassOf :InterventionType ;
+                      rdfs:label "Subsidies and state aid"@en .
+
+
+###  https://schema.coypu.org/gta#TradeDefenceInstruments
+:TradeDefenceInstruments rdf:type owl:Class ;
+                         rdfs:subClassOf :InterventionType ;
+                         rdfs:label "Trade defence instruments"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://schema.coypu.org/gta#Amber
+:Amber rdf:type owl:NamedIndividual ,
+                :GTAEvaluation ;
+       rdfs:comment "The intervention likely involves discrimination against foreign commercial interests."@en ;
+       rdfs:label "amber"@en .
+
+
+###  https://schema.coypu.org/gta#Anti-Circumvention
+:Anti-Circumvention rdf:type owl:NamedIndividual ,
+                             :TradeDefenceInstruments ;
+                    rdfs:label "Anti-Circumvention"@en .
+
+
+###  https://schema.coypu.org/gta#Anti-Dumping
+:Anti-Dumping rdf:type owl:NamedIndividual ,
+                       :TradeDefenceInstruments ;
+              rdfs:label "Anti-Dumping"@en .
+
+
+###  https://schema.coypu.org/gta#Anti-Subsidy
+:Anti-Subsidy rdf:type owl:NamedIndividual ,
+                       :TradeDefenceInstruments ;
+              rdfs:label "Anti-Subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#CompetitiveDevaluation
+:CompetitiveDevaluation rdf:type owl:NamedIndividual ,
+                                 :CapitalControlsAndExchangeRatePolicy ;
+                        rdfs:label "Competitive devaluation"@en .
+
+
+###  https://schema.coypu.org/gta#ControlOnPersonalTransactions
+:ControlOnPersonalTransactions rdf:type owl:NamedIndividual ,
+                                        :CapitalControlsAndExchangeRatePolicy ;
+                               rdfs:label "Control on personal transactions"@en .
+
+
+###  https://schema.coypu.org/gta#ControlsOnCommercialTransactionsAndInvestmentInstruments
+:ControlsOnCommercialTransactionsAndInvestmentInstruments rdf:type owl:NamedIndividual ,
+                                                                   :CapitalControlsAndExchangeRatePolicy ;
+                                                          rdfs:label "Controls on commercial transactions and investment instruments"@en .
+
+
+###  https://schema.coypu.org/gta#ControlsOnCreditOperations
+:ControlsOnCreditOperations rdf:type owl:NamedIndividual ,
+                                     :CapitalControlsAndExchangeRatePolicy ;
+                            rdfs:label "Controls on credit operations"@en .
+
+
+###  https://schema.coypu.org/gta#ExportBan
+:ExportBan rdf:type owl:NamedIndividual ,
+                    :ExportAndImportPolicyInstruments ;
+           rdfs:label "Export ban"@en .
+
+
+###  https://schema.coypu.org/gta#ExportLicensingRequirement
+:ExportLicensingRequirement rdf:type owl:NamedIndividual ,
+                                     :ExportAndImportPolicyInstruments ;
+                            rdfs:label "Export licensing requirement"@en .
+
+
+###  https://schema.coypu.org/gta#ExportQuota
+:ExportQuota rdf:type owl:NamedIndividual ,
+                      :ExportAndImportPolicyInstruments ;
+             rdfs:label "Export quota"@en .
+
+
+###  https://schema.coypu.org/gta#ExportSubsidy
+:ExportSubsidy rdf:type owl:NamedIndividual ,
+                        :ExportAndImportPolicyInstruments ;
+               rdfs:label "Export subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#ExportTariffQuota
+:ExportTariffQuota rdf:type owl:NamedIndividual ,
+                            :ExportAndImportPolicyInstruments ;
+                   rdfs:label "Export tariff quota"@en .
+
+
+###  https://schema.coypu.org/gta#ExportTax
+:ExportTax rdf:type owl:NamedIndividual ,
+                    :ExportAndImportPolicyInstruments ;
+           rdfs:label "Export tax"@en .
+
+
+###  https://schema.coypu.org/gta#ExportTaxIncentive
+:ExportTaxIncentive rdf:type owl:NamedIndividual ,
+                             :ExportAndImportPolicyInstruments ;
+                    rdfs:label "Export tax incentive"@en .
+
+
+###  https://schema.coypu.org/gta#FinancialAssistanceInForeignMarket
+:FinancialAssistanceInForeignMarket rdf:type owl:NamedIndividual ,
+                                             :SubsidiesAndStateAid ;
+                                    rdfs:label "Financial assistance in foreign market"@en .
+
+
+###  https://schema.coypu.org/gta#FinancialGrant
+:FinancialGrant rdf:type owl:NamedIndividual ,
+                         :SubsidiesAndStateAid ;
+                rdfs:label "Financial grant"@en .
+
+
+###  https://schema.coypu.org/gta#ForeignCustomerRule
+:ForeignCustomerRule rdf:type owl:NamedIndividual ,
+                              :ExportAndImportPolicyInstruments ;
+                     rdfs:label "Foreign customer rule"@en .
+
+
+###  https://schema.coypu.org/gta#Green
+:Green rdf:type owl:NamedIndividual ,
+                :GTAEvaluation ;
+       rdfs:comment "The intervention liberalises on a non-discriminatory (i.e., most favoured nation) basis; or improves the transparency of a relevant policy."@en ;
+       rdfs:label "green"@en .
+
+
+###  https://schema.coypu.org/gta#ImportBan
+:ImportBan rdf:type owl:NamedIndividual ,
+                    :ExportAndImportPolicyInstruments ;
+           rdfs:label "Import ban"@en .
+
+
+###  https://schema.coypu.org/gta#ImportIncentive
+:ImportIncentive rdf:type owl:NamedIndividual ,
+                          :ExportAndImportPolicyInstruments ;
+                 rdfs:label "Import incentive"@en .
+
+
+###  https://schema.coypu.org/gta#ImportLicensingRequirement
+:ImportLicensingRequirement rdf:type owl:NamedIndividual ,
+                                     :ExportAndImportPolicyInstruments ;
+                            rdfs:label "Import licensing requirement"@en .
+
+
+###  https://schema.coypu.org/gta#ImportMonitoring
+:ImportMonitoring rdf:type owl:NamedIndividual ,
+                           :ExportAndImportPolicyInstruments ;
+                  rdfs:label "Import monitoring"@en .
+
+
+###  https://schema.coypu.org/gta#ImportQuota
+:ImportQuota rdf:type owl:NamedIndividual ,
+                      :ExportAndImportPolicyInstruments ;
+             rdfs:label "Import quota"@en .
+
+
+###  https://schema.coypu.org/gta#ImportTariff
+:ImportTariff rdf:type owl:NamedIndividual ,
+                       :ExportAndImportPolicyInstruments ;
+              rdfs:label "Import tariff"@en .
+
+
+###  https://schema.coypu.org/gta#ImportTariffQuota
+:ImportTariffQuota rdf:type owl:NamedIndividual ,
+                            :ExportAndImportPolicyInstruments ;
+                   rdfs:label "Import tariff quota"@en .
+
+
+###  https://schema.coypu.org/gta#In-kindGrant
+:In-kindGrant rdf:type owl:NamedIndividual ,
+                       :SubsidiesAndStateAid ;
+              rdfs:label "In-kind grant"@en .
+
+
+###  https://schema.coypu.org/gta#IntellectualPropertyProtection
+:IntellectualPropertyProtection rdf:type owl:NamedIndividual ,
+                                         :OtherInstruments ;
+                                rdfs:label "Intellectual property protection"@en .
+
+
+###  https://schema.coypu.org/gta#InterestPaymentSubsidy
+:InterestPaymentSubsidy rdf:type owl:NamedIndividual ,
+                                 :SubsidiesAndStateAid ;
+                        rdfs:label "Interest payment subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#InternalTaxationOfImports
+:InternalTaxationOfImports rdf:type owl:NamedIndividual ,
+                                    :ExportAndImportPolicyInstruments ;
+                           rdfs:label "Internal taxation of imports"@en .
+
+
+###  https://schema.coypu.org/gta#InternationalFinancialInstitution
+:InternationalFinancialInstitution rdf:type owl:NamedIndividual ,
+                                            :ImplementationLevel ;
+                                   rdfs:comment "Announcements made by a publicly owned bank with more than one shareholding member state."@en ;
+                                   rdfs:label "International Financial Institution"@en .
+
+
+###  https://schema.coypu.org/gta#Inward
+:Inward rdf:type owl:NamedIndividual ,
+                 :AffectedCommercialFlow ;
+        rdfs:comment "The predominantly distorted market is the domestic market of the implementing jurisdiction."@en ;
+        rdfs:label "Inward"@en .
+
+
+###  https://schema.coypu.org/gta#LabourMarketAccess
+:LabourMarketAccess rdf:type owl:NamedIndividual ,
+                             :LaborForceMigrationPolicy ;
+                    rdfs:label "Labour market access"@en .
+
+
+###  https://schema.coypu.org/gta#LocalLabour
+:LocalLabour rdf:type owl:NamedIndividual ,
+                      :LocalisationPolicy ;
+             rdfs:label "Local labour"@en .
+
+
+###  https://schema.coypu.org/gta#LocalOperations
+:LocalOperations rdf:type owl:NamedIndividual ,
+                          :LocalisationPolicy ;
+                 rdfs:label "Local operations"@en .
+
+
+###  https://schema.coypu.org/gta#LocalSourcing
+:LocalSourcing rdf:type owl:NamedIndividual ,
+                        :LocalisationPolicy ;
+               rdfs:label "Local sourcing"@en .
+
+
+###  https://schema.coypu.org/gta#National
+:National rdf:type owl:NamedIndividual ,
+                   :ImplementationLevel ;
+          rdfs:comment "Announcements made by central government including the central bank, where relevant."@en ;
+          rdfs:label "National"@en .
+
+
+###  https://schema.coypu.org/gta#NationalFinancialInstitution
+:NationalFinancialInstitution rdf:type owl:NamedIndividual ,
+                                       :ImplementationLevel ;
+                              rdfs:comment "Announcements made by a publicly owned bank such as the National Development or Export-Import bank. GTA-relevant central bank announcements are subsumed as part of the national level."@en ;
+                              rdfs:label "National Financial Institution"@en .
+
+
+###  https://schema.coypu.org/gta#OtherExportInventive
+:OtherExportInventive rdf:type owl:NamedIndividual ,
+                               :ExportAndImportPolicyInstruments ;
+                      rdfs:label "Other export inventive"@en .
+
+
+###  https://schema.coypu.org/gta#Outward
+:Outward rdf:type owl:NamedIndividual ,
+                  :AffectedCommercialFlow ;
+         rdfs:comment "The documented change concerns an outflow restriction. The predominantly affected market is the outflow destination."@en ;
+         rdfs:label "Outward"@en .
+
+
+###  https://schema.coypu.org/gta#OutwardSubsidy
+:OutwardSubsidy rdf:type owl:NamedIndividual ,
+                         :AffectedCommercialFlow ;
+                rdfs:comment "In general, this value is only chosen for export incentives and trade finance interventions. In exceptional cases, a state aid awarded to an exporting company which generates its sales exclusively abroad may be classified as an outward subsidy."@en ;
+                rdfs:label "Outward subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#Post-migrationTreatment
+:Post-migrationTreatment rdf:type owl:NamedIndividual ,
+                                  :LaborForceMigrationPolicy ;
+                         rdfs:label "Post-migration treatment"@en .
+
+
+###  https://schema.coypu.org/gta#ProductionSubsidy
+:ProductionSubsidy rdf:type owl:NamedIndividual ,
+                            :SubsidiesAndStateAid ;
+                   rdfs:label "Production subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#PublicProcurementAccess
+:PublicProcurementAccess rdf:type owl:NamedIndividual ,
+                                  :PublicProcurementPolicy ;
+                         rdfs:label "Public procurement access"@en .
+
+
+###  https://schema.coypu.org/gta#PublicProcurementLocalisation
+:PublicProcurementLocalisation rdf:type owl:NamedIndividual ,
+                                        :PublicProcurementPolicy ;
+                               rdfs:label "Public procurement localisation"@en .
+
+
+###  https://schema.coypu.org/gta#PublicProcurementPreferenceMargin
+:PublicProcurementPreferenceMargin rdf:type owl:NamedIndividual ,
+                                            :PublicProcurementPolicy ;
+                                   rdfs:label "Public procurement preference margin"@en .
+
+
+###  https://schema.coypu.org/gta#Red
+:Red rdf:type owl:NamedIndividual ,
+              :GTAEvaluation ;
+     rdfs:comment "The intervention almost certainly discriminates against foreign commercial interests."@en ;
+     rdfs:label "red"@en .
+
+
+###  https://schema.coypu.org/gta#Safeguard
+:Safeguard rdf:type owl:NamedIndividual ,
+                    :TradeDefenceInstruments ;
+           rdfs:label "Safeguard"@en .
+
+
+###  https://schema.coypu.org/gta#SanitaryAndPhytosanitaryMeasure
+:SanitaryAndPhytosanitaryMeasure rdf:type owl:NamedIndividual ,
+                                          :OtherInstruments ;
+                                 rdfs:label "Sanitary and phytosanitary measure"@en .
+
+
+###  https://schema.coypu.org/gta#StateLoan
+:StateLoan rdf:type owl:NamedIndividual ,
+                    :SubsidiesAndStateAid ;
+           rdfs:label "State loan"@en .
+
+
+###  https://schema.coypu.org/gta#Subnational
+:Subnational rdf:type owl:NamedIndividual ,
+                      :ImplementationLevel ;
+             rdfs:comment "Announcements made by lower levels of government such as regional, state, provincial and municipal governments."@en ;
+             rdfs:label "subnational"@en .
+
+
+###  https://schema.coypu.org/gta#Supranational
+:Supranational rdf:type owl:NamedIndividual ,
+                        :ImplementationLevel ;
+               rdfs:comment "Announcement by supra-national bodies with binding consequences for its member states. Examples include the European Commission as well as the steering bodies of customs unions."@en ;
+               rdfs:label "supranational"@en .
+
+
+###  https://schema.coypu.org/gta#TaxOrSocialInsuranceRelief
+:TaxOrSocialInsuranceRelief rdf:type owl:NamedIndividual ,
+                                     :SubsidiesAndStateAid ;
+                            rdfs:label "Tax or social insurance relief"@en .
+
+
+###  https://schema.coypu.org/gta#TechnicalBarrierToTrade
+:TechnicalBarrierToTrade rdf:type owl:NamedIndividual ,
+                                  :OtherInstruments ;
+                         rdfs:label "Technical barrier to trade"@en .
+
+
+###  https://schema.coypu.org/gta#TradeBalancingMeasure
+:TradeBalancingMeasure rdf:type owl:NamedIndividual ,
+                                :ExportAndImportPolicyInstruments ;
+                       rdfs:label "Trade balancing measure"@en .
+
+
+###  https://schema.coypu.org/gta#TradeFinance
+:TradeFinance rdf:type owl:NamedIndividual ,
+                       :ExportAndImportPolicyInstruments ;
+              rdfs:label "Trade finance"@en .
+
+
+###  https://schema.coypu.org/gta#TradePaymentMeasure
+:TradePaymentMeasure rdf:type owl:NamedIndividual ,
+                              :ExportAndImportPolicyInstruments ;
+                     rdfs:label "Trade payment measure"@en .
+
+
+###  https://schema.coypu.org/gta#Bailout%28CapitalInjectionOrEquityParticipation%29
+<https://schema.coypu.org/gta#Bailout%28CapitalInjectionOrEquityParticipation%29> rdf:type owl:NamedIndividual ,
+                                                                                           :SubsidiesAndStateAid ;
+                                                                                  rdfs:label "Bailout (capital injection or equity participation)"@en .
+
+
+###  https://schema.coypu.org/gta#Export-relatedNon-TariffMeasure%2CNes
+<https://schema.coypu.org/gta#Export-relatedNon-TariffMeasure%2CNes> rdf:type owl:NamedIndividual ,
+                                                                              :ExportAndImportPolicyInstruments ;
+                                                                     rdfs:label "Export-related non-tariff measure, nes"@en .
+
+
+###  https://schema.coypu.org/gta#FDI%3AEntryAndOwnershipRule
+<https://schema.coypu.org/gta#FDI%3AEntryAndOwnershipRule> rdf:type owl:NamedIndividual ,
+                                                                    :ForeignInvestmentPolicy ;
+                                                           rdfs:label "FDI: Entry and ownership rule"@en .
+
+
+###  https://schema.coypu.org/gta#FDI%3AFinancialIncentive
+<https://schema.coypu.org/gta#FDI%3AFinancialIncentive> rdf:type owl:NamedIndividual ,
+                                                                 :ForeignInvestmentPolicy ;
+                                                        rdfs:label "FDI: Financial incentive"@en .
+
+
+###  https://schema.coypu.org/gta#FDI%3ATreatmentAndOperations%2CNes
+<https://schema.coypu.org/gta#FDI%3ATreatmentAndOperations%2CNes> rdf:type owl:NamedIndividual ,
+                                                                           :ForeignInvestmentPolicy ;
+                                                                  rdfs:label "FDI: Treatment and operations, nes"@en .
+
+
+###  https://schema.coypu.org/gta#Import-relatedNon-TariffMeasure%2CNes
+<https://schema.coypu.org/gta#Import-relatedNon-TariffMeasure%2CNes> rdf:type owl:NamedIndividual ,
+                                                                              :ExportAndImportPolicyInstruments ;
+                                                                     rdfs:label "Import-related non-tariff measure, nes"@en .
+
+
+###  https://schema.coypu.org/gta#PublicProcurement%2CNes
+<https://schema.coypu.org/gta#PublicProcurement%2CNes> rdf:type owl:NamedIndividual ,
+                                                                :PublicProcurementPolicy ;
+                                                       rdfs:label "Public procurement, nes"@en .
+
+
+###  https://schema.coypu.org/gta#Repatriation%26SurrenderRequirements
+<https://schema.coypu.org/gta#Repatriation%26SurrenderRequirements> rdf:type owl:NamedIndividual ,
+                                                                             :CapitalControlsAndExchangeRatePolicy ;
+                                                                    rdfs:label "Repatriation & surrender requirements"@en .
+
+
+###  https://schema.coypu.org/gta#StateAid%2CNes
+<https://schema.coypu.org/gta#StateAid%2CNes> rdf:type owl:NamedIndividual ,
+                                                       :SubsidiesAndStateAid ;
+                                              rdfs:label "State aid, nes"@en .
+
+
+###  https://schema.coypu.org/gta#TradePaymentMeasure%28SeeExportAndImportSection%29
+<https://schema.coypu.org/gta#TradePaymentMeasure%28SeeExportAndImportSection%29> rdf:type owl:NamedIndividual ,
+                                                                                           :CapitalControlsAndExchangeRatePolicy ;
+                                                                                  rdfs:label "Trade payment measure (see export and import section)"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
