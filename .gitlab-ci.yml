@@ -180,6 +180,7 @@ version:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     - . scripts/helper.sh
     # get coy.ttl from main
+    - git fetch --depth=1 origin main
     - git show --format=raw $( git ls-tree -r main | grep global/coy.ttl | awk '{ print $3; }' ) > ./coy.main.ttl
     # exit if there was no change in the vocab file
     - exit_if_no_file_change ./coy.main.ttl ./global/coy.ttl
