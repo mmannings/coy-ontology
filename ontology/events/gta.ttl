@@ -51,7 +51,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  https://schema.coypu.org/gta#hasAffectedProduct
 :hasAffectedProduct rdf:type owl:ObjectProperty ;
                     rdfs:domain :Intervention ;
-                    rdfs:range <https://schema.coypu.org/#Product> ;
                     rdfs:label "has affected product"@en .
 
 
@@ -134,7 +133,6 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://schema.coypu.org/gta#hasProductID
 :hasProductID rdf:type owl:DatatypeProperty ;
-              rdfs:domain <https://schema.coypu.org/#Product> ;
               rdfs:range [ rdf:type rdfs:Datatype ;
                            owl:onDatatype xsd:string ;
                            owl:withRestrictions ( [ xsd:pattern "[0-9]{6}"
@@ -235,9 +233,8 @@ after the previously sought removal date."""@en ;
 #    Classes
 #################################################################
 
-###  https://schema.coypu.org/#Product
-<https://schema.coypu.org/#Product> rdf:type owl:Class ;
-                                    rdfs:label "Product"@en .
+###  https://schema.coypu.org/global#GlobalTradeAlert
+<https://schema.coypu.org/global#GlobalTradeAlert> rdf:type owl:Class .
 
 
 ###  https://schema.coypu.org/gta#AffectedCommercialFlow
@@ -292,7 +289,7 @@ distinguishes 6 different actors."""@en ;
 
 ###  https://schema.coypu.org/gta#InterventionType
 :InterventionType rdf:type owl:Class ;
-                  rdfs:subClassOf owl:Thing ;
+                  rdfs:subClassOf <https://schema.coypu.org/global#GlobalTradeAlert> ;
                   rdfs:label "intervention type"@en .
 
 
