@@ -37,7 +37,7 @@
 ###  https://schema.coypu.org/em-dat#hasReliefWebIdentifier
 :hasReliefWebIdentifier rdf:type owl:AnnotationProperty ;
                         rdfs:comment "the ID of the corresponding distaster type in the ReliefWeb API V1"@en ;
-                        rdfs:label "ReliefWeb ID"@en .
+                        rdfs:label "hasReliefWebIdentifier"@en .
 
 
 #################################################################
