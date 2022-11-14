@@ -1180,9 +1180,6 @@ world-port-index:VesselSizeClass:M rdf:type owl:NamedIndividual ,
 <https://schema.coypu.org/em-dat/hasReliefWebIdentifier> ns:term_status "In use, triple count: 21" .
 
 
-<https://schema.coypu.org/global#AcledEvent> ns:term_status "In use, distinct subjects: 1552933" .
-
-
 <https://schema.coypu.org/global#Agreement> ns:term_status "In use, distinct subjects: 2134" .
 
 
@@ -1205,6 +1202,9 @@ world-port-index:VesselSizeClass:M rdf:type owl:NamedIndividual ,
 
 
 <https://schema.coypu.org/global#Company> ns:term_status "In use, distinct subjects: 12260073" .
+
+
+<https://schema.coypu.org/global#Conflict> ns:term_status "In use, distinct subjects: 1552933" .
 
 
 <https://schema.coypu.org/global#Country> ns:term_status "In use, distinct subjects: 260" .
