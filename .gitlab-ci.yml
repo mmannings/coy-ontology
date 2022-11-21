@@ -18,20 +18,21 @@ default:
     expire_in: 7 days
 
 include:
-  - templates/cd.yml
+  - supplements/continuous_delivery.yml
 
 workflow:
   rules:
     - changes:
-        - global/coy.ttl
-        - disaster/em_dat_classification.ttl
-        - mapping/coy_wikidata.ttl
-        - scripts
-        - rdfunit-tests
+        - ontology/global/coy.ttl
+        - ontology/events/em-dat.ttl
+        - ontology/events/gta.ttl
+        - ontology/events/rta.ttl
+        - ontology/infrastructure/world-port-index.ttl
+        - ontology/mapping/coy_wikidata.ttl
+        - ontology/rdfunit-tests
         - .gitlab-ci.yml
-        - templates
-        - Taskfile.yml
-        - docu-ontology
+        - supplements
+        - docu
 
 services:
   - name: docker:dind
@@ -56,21 +57,24 @@ syntax: # Has to run everytime because it prepares the RDF files
   artifacts:
     when: always
     paths:
-      - "./rdfunit-tests/allTests.ttl"
+      - "./rdfunit-tests/ontology/allTests.ttl"
       - "./main.ttl"
       - "./main.xml"
     public: false
   script:
     # Concatenation
-    - rapper -o ntriples -i turtle disaster/em_dat_classification.ttl > main.n3
-    - rapper -o ntriples -i turtle global/coy.ttl >> main.n3
-    - rapper -o ntriples -i turtle mapping/coy_wikidata.ttl >> main.n3.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontology/events/em-dat.ttl > main.n3
+    - rapper -o ntriples -i turtle ontology/events/gta.ttl > main.n3
+    - rapper -o ntriples -i turtle ontology/events/rta.ttl > main.n3
+    - rapper -o ntriples -i turtle ontology/global/coy.ttl >> main.n3
+    #- rapper -o ntriples -i turtle ontology/mapping/coy_wikidata.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontology/infrastructure/world-port-index.ttl >> main.n3
     # Parsing to other formats
     - rapper -o turtle -i ntriples main.n3 > main.ttl
     - rapper -o rdfxml -i ntriples main.n3 > main.xml
     # Preparing tests
-    - rm -f ./rdfunit-tests/allTests* && cat ./rdfunit-tests/*.ttl > ./rdfunit-tests/allTests_.ttl
-    - rapper -o turtle -i turtle ./rdfunit-tests/allTests_.ttl > ./rdfunit-tests/allTests.ttl
+    - rm -f ./ontology/rdfunit-tests/allTests* && cat ./ontology/rdfunit-tests/*.ttl > ./ontology/rdfunit-tests/allTests_.ttl
+    - rapper -o turtle -i turtle ./ontology/rdfunit-tests/allTests_.ttl > ./ontology/rdfunit-tests/allTests.ttl
 
 
 rdfunit:
@@ -91,7 +95,7 @@ rdfunit:
     - java -jar /app/rdfunit-validate.jar -d ./main.ttl -f /tmp/ -o json-ld -s owl,rdfs -r shacl
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_results.jsonld
     - cat ./RDFUnit_results.jsonld
-    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
+    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./ontology/rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_manual_results.jsonld
     - cat ./RDFUnit_manual_results.jsonld
 
@@ -131,7 +135,7 @@ interprete:
     - apk update
     - apk upgrade
     - apk add bash
-    - bash -c "./scripts/interprete.sh"
+    - bash -c "./supplements/scripts/interprete.sh"
 
 generate_shapes:
   stage: generate_shapes
@@ -163,10 +167,10 @@ reasoner:
   artifacts:
     when: always
     paths:
-      - "./infered_classes.owl"
+      - "./ontology/infered_classes.owl"
   script:
-    - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.xml
-    - cat infered_classes.owl
+    - java -jar /hermit/HermiT.jar -cO -v2 -o ontology/infered_classes.owl ./main.xml
+    - cat ontology/infered_classes.owl
 
 # Atm only the coy.ttl file versions are checked
 version:
@@ -178,16 +182,16 @@ version:
     entrypoint: [""]
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
-    - . scripts/helper.sh
+    - . supplements/scripts/helper.sh
     # get coy.ttl from main
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-ontology.git" main_repo_clone
-    - cp main_repo_clone/global/coy.ttl ./coy.main.ttl
+    - cp main_repo_clone/ontology/global/coy.ttl ./coy.main.ttl
     # exit if there was no change in the vocab file
-    - exit_if_no_file_change ./coy.main.ttl ./global/coy.ttl
+    - exit_if_no_file_change ./coy.main.ttl ./ontology/global/coy.ttl
     # value of branchs owl:versionInfo has to be higher
-    - owl_version_increase_test ./coy.main.ttl ./global/coy.ttl
+    - owl_version_increase_test ./coy.main.ttl ./ontology/global/coy.ttl
     # owl:priorVersion of this branch is lower than owl:versionInfo of this branch
-    - owl_version_compare ./global/coy.ttl
+    - owl_version_compare ./ontology/global/coy.ttl
 
 tag:
   stage: tag
@@ -199,7 +203,7 @@ tag:
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     # Update the classes
-    - git add infered_classes.owl && ./scripts/try_commit.sh
+    - git add ontology/infered_classes.owl && ./supplements/scripts/try_commit.sh
     # Add the tag
     - export now=$(date "+%Y.%m.%d_%H.%M")
     - git tag -a -m "Verified by CI" verified$now
