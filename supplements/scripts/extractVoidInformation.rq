@@ -1,0 +1,34 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX void: <http://rdfs.org/ns/void#>
+construct {
+  ?class sw:term_status ?ds .
+  ?property sw:term_status ?triples .
+}
+where {
+  {
+    ?voidid void:class ?class ;
+            void:distinctSubjects ?ds_ .
+    bind(concat("CoyPu graph: In use, distinct subjects: ", str(?ds_)) as ?ds)
+    filter(
+      !(strstarts(str(?class), "http://www.w3.org/2000/01/rdf-schema") ||
+        strstarts(str(?class), "http://www.w3.org/2002/07/owl") ||
+        strstarts(str(?class), "http://rdfs.org/ns/void") ||
+        strstarts(str(?class), "http://www.w3.org/1999/02/22-rdf-syntax-ns"))
+    )
+  }
+  union
+  {
+    ?voidid2 void:property ?property ;
+             void:triples ?triples_ .
+    bind(concat("CoyPu graph: In use, triple count: ", str(?triples_)) as ?triples)
+    filter(
+      !(strstarts(str(?property), "http://www.w3.org/2000/01/rdf-schema") ||
+        strstarts(str(?property), "http://www.w3.org/2002/07/owl") ||
+        strstarts(str(?property), "http://rdfs.org/ns/void") ||
+        strstarts(str(?property), "http://www.w3.org/1999/02/22-rdf-syntax-ns"))
+    )
+  }
+}

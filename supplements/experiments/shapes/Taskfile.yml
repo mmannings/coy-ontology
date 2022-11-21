@@ -1,0 +1,92 @@
+version: '3'
+
+vars:
+  ONTOLOGY_IRI: https://schema.coypu.org/global#
+  SHAPE_IRI: https://schema.coypu.org/global_shapes#
+  SCHEMAFILE: "global/coy"
+  SHAPEFILE: "shapes"
+
+  UID:
+    sh: id -u
+  GID:
+    sh: id -g
+  SHELL_PWD:
+    sh: pwd
+
+  DOCKER_PWD: /data
+  DOCKER_DIRS: -v "{{.SHELL_PWD}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
+  DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
+  DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
+
+  CMEMC_VERSION: v21.11.4
+  CMEMC_IMAGE: docker-registry.eccenca.com/eccenca-cmemc:{{.CMEMC_VERSION}}
+  CMEMC_PARAMS: -e "CMEM_BASE_URI={{.CMEM_BASE_URI}}" -e "OAUTH_GRANT_TYPE={{.OAUTH_GRANT_TYPE}}" -e "OAUTH_CLIENT_ID={{.OAUTH_CLIENT_ID}}" -e "OAUTH_CLIENT_SECRET={{.OAUTH_CLIENT_SECRET}}"
+  CMEMC_DOCKER: docker run {{.DOCKER_PARAMS}} {{.CMEMC_PARAMS}} {{.DOCKER_DIRS}} {{.CMEMC_IMAGE}}
+
+  GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
+  GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
+
+  RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
+  RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
+  RAPPER_CMD: '{{.RAPPER_DOCKER}} rapper'
+
+
+tasks:
+
+  default:
+    - task: check_turtle
+
+  check_turtle:
+    - "{{ .RAPPER_CMD }} -i turtle -c {{.SCHEMAFILE}}.ttl"
+
+  generate_shapes:
+    - task: extract:generate_shapes:from_ontology
+    - task: extract:reshape:merge
+    - task: sync:commit_shapes
+      vars: { MSG_ADD: 'extracted shapes from ontology' }
+    - task: sync:git_push
+
+  extract:generate_shapes:from_ontology:
+    desc: Generate the shapes from the ontology
+    cmds:
+      - "{{.GRAMO_DOCKER}} extractor --ontology --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
+
+  extract:reshape:merge:
+    desc: Merge two shape graphs into a new shape graph
+    cmds:
+      - "{{.GRAMO_DOCKER}} reshaper --mode merge --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}.ttl --other_shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --target {{.DOCKER_PWD}}/{{.SHAPEFILE}}.ttl"
+      - task: helper:normalize_turtle
+        vars: { FILE: '{{.SHAPEFILE}}', DEFAULT_GRAPH_IRI: '{{.SHAPE_IRI}}' }
+      - task: helper:sync_turtle_nt
+        vars: { FILE: '{{.SHAPEFILE}}', DEFAULT_GRAPH_IRI: '{{.SHAPE_IRI}}' }
+
+  sync:commit_shapes:
+    desc: Commit the current state of the shape file to the current branch
+    cmds:
+      - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
+      - git add {{.SHAPEFILE}}.ttl {{.SHAPEFILE}}.nt
+      - cmd: 'git commit -m "Bot update shapes: {{.MSG_ADD}} [skip ci]"'
+        ignore_error: true
+
+  sync:git_push:
+    desc: Push changes to the repository
+    cmds:
+      - git push https://bot_push_coypu:{{.GITLAB_PAC_PUSH}}@gitlab.com/coypu-project/coy-ontology.git HEAD:main
+
+  sync:upload_ontology:
+    desc: Upload the ontology file to the CMEM vocabulary catalog
+    cmds:
+      - task: helper:cmemc:import_vocabulary
+        vars: { FILE: '{{.SCHEMAFILE}}' }
+
+  helper:normalize_turtle:
+    cmds:
+      - cat prefixes.ttl {{.FILE}}.ttl | {{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} - | sponge {{.FILE}}.ttl
+
+  helper:sync_turtle_nt:
+    cmds:
+      - "{{ .RAPPER_CMD }} -i turtle -o ntriples --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | LC_ALL=C sort -u > {{.FILE}}.nt"
+
+  helper:cmemc:import_vocabulary:
+    cmds:
+      - "{{.CMEMC_DOCKER}} vocabulary import --replace {{.FILE}}.ttl"

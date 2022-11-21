@@ -1,0 +1,66 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rlog:    <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> .
+@prefix rutg: <http://rdfunit.aksw.org/data/generators#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rut: <http://rdfunit.aksw.org/ns/core#> .
+@prefix rutp: <http://rdfunit.aksw.org/data/patterns#> .
+@prefix rutt: <http://rdfunit.aksw.org/data/tests#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+
+rutt:has-in-relations
+    a rut:ManualTestCase ;
+    dcterms:description "Properties should start with has." ;
+    rut:appliesTo rut:Schema ;
+    rut:generated rut:ManuallyGenerated ;
+    rut:references rdf:Property, owl:DatatypeProperty, owl:ObjectProperty ;
+    rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
+    rut:sparqlWhere """ {
+      ?this a ?t .
+
+      ?ontology a owl:Ontology.
+      FILTER (
+        strStarts(str(?this), str(?ontology))
+          && ?t in (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)
+      )
+      filter not exists {
+    	?b a ?u ;
+           owl:inverseOf ?this .
+        FILTER (
+       		strStarts(str(?b), str(?ontology))
+              && ?u in (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)
+               && ?this != ?b
+        )
+      }
+      BIND(REPLACE(STR(?this), "^([^/#]*[/#])*([^/#]+)$", "$2") AS ?localName)
+      FILTER(
+        !REGEX(?localName, "^has[A-Z]")
+      )
+         }""" ;
+    rut:sparqlPrevalence """ SELECT (count(?this) AS ?total) WHERE {
+      ?this a ?t .
+
+      ?ontology a owl:Ontology.
+      FILTER (
+        strStarts(str(?this), str(?ontology))
+          && ?t in (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)
+      )
+      filter not exists {
+    	?b a ?u ;
+           owl:inverseOf ?this .
+        FILTER (
+       		strStarts(str(?b), str(?ontology))
+              && ?u in (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)
+               && ?this != ?b
+        )
+      }
+          } """ ;
+
+    rut:testCaseLogLevel
+              rlog:WARN .
