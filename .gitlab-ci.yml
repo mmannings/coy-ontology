@@ -24,7 +24,7 @@ workflow:
   rules:
     - changes:
         - ontology/global/coy.ttl
-        - ontology/events/em_dat.ttl
+        - ontology/events/em-dat.ttl
         - ontology/events/gta.ttl
         - ontology/events/rta.ttl
         - ontology/infrastructure/world-port-index.ttl
@@ -63,7 +63,7 @@ syntax: # Has to run everytime because it prepares the RDF files
     public: false
   script:
     # Concatenation
-    - rapper -o ntriples -i turtle ontology/events/em_dat.ttl > main.n3
+    - rapper -o ntriples -i turtle ontology/events/em-dat.ttl > main.n3
     - rapper -o ntriples -i turtle ontology/events/gta.ttl > main.n3
     - rapper -o ntriples -i turtle ontology/events/rta.ttl > main.n3
     - rapper -o ntriples -i turtle ontology/global/coy.ttl >> main.n3
