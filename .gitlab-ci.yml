@@ -57,7 +57,7 @@ syntax: # Has to run everytime because it prepares the RDF files
   artifacts:
     when: always
     paths:
-      - "./rdfunit-tests/allTests.ttl"
+      - "./rdfunit-tests/ontology/allTests.ttl"
       - "./main.ttl"
       - "./main.xml"
     public: false
@@ -73,8 +73,8 @@ syntax: # Has to run everytime because it prepares the RDF files
     - rapper -o turtle -i ntriples main.n3 > main.ttl
     - rapper -o rdfxml -i ntriples main.n3 > main.xml
     # Preparing tests
-    - rm -f ./rdfunit-tests/allTests* && cat ./rdfunit-tests/*.ttl > ./rdfunit-tests/allTests_.ttl
-    - rapper -o turtle -i turtle ./rdfunit-tests/allTests_.ttl > ./rdfunit-tests/allTests.ttl
+    - rm -f ./ontology/rdfunit-tests/allTests* && cat ./ontology/rdfunit-tests/*.ttl > ./ontology/rdfunit-tests/allTests_.ttl
+    - rapper -o turtle -i turtle ./ontology/rdfunit-tests/allTests_.ttl > ./ontology/rdfunit-tests/allTests.ttl
 
 
 rdfunit:
@@ -95,7 +95,7 @@ rdfunit:
     - java -jar /app/rdfunit-validate.jar -d ./main.ttl -f /tmp/ -o json-ld -s owl,rdfs -r shacl
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_results.jsonld
     - cat ./RDFUnit_results.jsonld
-    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
+    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./ontology/rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_manual_results.jsonld
     - cat ./RDFUnit_manual_results.jsonld
 
