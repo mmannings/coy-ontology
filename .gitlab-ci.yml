@@ -18,20 +18,21 @@ default:
     expire_in: 7 days
 
 include:
-  - templates/cd.yml
+  - supplements/continuous_delivery.yml
 
 workflow:
   rules:
     - changes:
-        - global/coy.ttl
-        - disaster/em_dat_classification.ttl
-        - mapping/coy_wikidata.ttl
-        - scripts
-        - rdfunit-tests
+        - ontology/global/coy.ttl
+        - ontology/events/em_dat.ttl
+        - ontology/events/gta.ttl
+        - ontology/events/rta.ttl
+        - ontology/infrastructure/world-port-index.ttl
+        - ontology/mapping/coy_wikidata.ttl
+        - ontology/rdfunit-tests
         - .gitlab-ci.yml
-        - templates
-        - Taskfile.yml
-        - docu-ontology
+        - supplements
+        - docu
 
 services:
   - name: docker:dind
@@ -134,7 +135,7 @@ interprete:
     - apk update
     - apk upgrade
     - apk add bash
-    - bash -c "./scripts/interprete.sh"
+    - bash -c "./supplements/scripts/interprete.sh"
 
 generate_shapes:
   stage: generate_shapes
@@ -181,7 +182,7 @@ version:
     entrypoint: [""]
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
-    - . scripts/helper.sh
+    - . supplements/scripts/helper.sh
     # get coy.ttl from main
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-ontology.git" main_repo_clone
     - cp main_repo_clone/ontlogy/global/coy.ttl ./coy.main.ttl
@@ -202,7 +203,7 @@ tag:
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     # Update the classes
-    - git add ontlogy/infered_classes.owl && ./scripts/try_commit.sh
+    - git add ontlogy/infered_classes.owl && ./supplements/scripts/try_commit.sh
     # Add the tag
     - export now=$(date "+%Y.%m.%d_%H.%M")
     - git tag -a -m "Verified by CI" verified$now
