@@ -249,7 +249,8 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              rdfs:range :Location ;
              rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
              rdfs:label "has location"@en ;
-             rdfs:seeAlso schema:location .
+             rdfs:seeAlso schema:location ,
+                          "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" .
 
 
 ###  https://schema.coypu.org/global#hasManagementAffiliation
@@ -330,7 +331,8 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasTimespan rdf:type owl:ObjectProperty ;
              rdfs:domain :Event ;
              rdfs:range :Timespan ;
-             rdfs:label "has timespan"@en .
+             rdfs:label "has timespan"@en ;
+             rdfs:seeAlso "P4_has_time-span" .
 
 
 ###  https://schema.coypu.org/global#hasWeblinkAffiliation
@@ -342,6 +344,12 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        rdfs:label "has weblink affiliation"@en .
 
 
+###  https://schema.coypu.org/global#hasWikidataEventType
+:hasWikidataEventType rdf:type owl:ObjectProperty ;
+                      rdfs:domain owl:Thing ;
+                      rdfs:label "has wikidata event type"@en .
+
+
 ###  https://schema.coypu.org/global#isCustomerOf
 :isCustomerOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Company ;
@@ -351,9 +359,12 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 
 
 ###  https://schema.coypu.org/global#isIdentifiedBy
-:isIdentifiedBy rdf:type owl:ObjectProperty ;
+:isIdentifiedBy rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
                 rdfs:domain owl:Thing ;
-                rdfs:label "is identified by"@en .
+                rdfs:range owl:Thing ;
+                rdfs:label "is identified by"@en ;
+                rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"@en .
 
 
 ###  https://schema.coypu.org/global#isImpactedBy
@@ -376,7 +387,8 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isLocatedIn rdf:type owl:ObjectProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range :Location ;
-             rdfs:label "is located in"@en .
+             rdfs:label "is located in"@en ;
+             rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" .
 
 
 ###  https://schema.coypu.org/global#isLocationOf
@@ -390,7 +402,9 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#isOccuringDuring
 :isOccuringDuring rdf:type owl:ObjectProperty ;
                   rdfs:domain owl:Thing ;
-                  rdfs:label "is occuring during"@en .
+                  rdfs:range owl:Thing ;
+                  rdfs:label "is occuring during"@en ;
+                  rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during" .
 
 
 ###  https://schema.coypu.org/global#isPartOf
@@ -893,7 +907,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#hasOsmId
 :hasOsmId rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain owl:Thing ;
+          rdfs:domain :OsmElement ;
           rdfs:range xsd:integer ;
           rdfs:label "has osm id"@en .
 
@@ -901,7 +915,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#hasOsmType
 :hasOsmType rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
-            rdfs:domain owl:Thing ;
+            rdfs:domain :OsmElement ;
             rdfs:range xsd:string ;
             rdfs:label "has osm type"@en .
 
@@ -1142,14 +1156,6 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                   rdfs:seeAlso <https://weltrisikobericht.de> .
 
 
-###  https://schema.coypu.org/global#hasWikidataEventType
-:hasWikidataEventType rdf:type owl:DatatypeProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:domain :Event ;
-                      rdfs:range xsd:string ;
-                      rdfs:label "has wikidata event type"@en .
-
-
 ###  https://schema.coypu.org/global#hasZip
 :hasZip rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
@@ -1176,6 +1182,12 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  http://www.w3.org/2002/07/owl#Thing
 owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
           rdfs:label "Thing"@en .
+
+
+###  https://schema.coypu.org/global#AdministrativeRegion
+:AdministrativeRegion rdf:type owl:Class ;
+                      rdfs:subClassOf :Region ;
+                      rdfs:label "AdministrativeRegion"@en .
 
 
 ###  https://schema.coypu.org/global#Agreement
@@ -1270,6 +1282,12 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
          rdfs:label "Country"@en ;
          rdfs:seeAlso <https://dbpedia.org/ontology/Country> ,
                       schema:Country .
+
+
+###  https://schema.coypu.org/global#CountryStatistic
+:CountryStatistic rdf:type owl:Class ;
+                  rdfs:subClassOf :Feature ;
+                  rdfs:label "CountryStatistic"@en .
 
 
 ###  https://schema.coypu.org/global#Customer
@@ -1373,7 +1391,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Location
 :Location rdf:type owl:Class ;
           rdfs:label "Location"@en ;
-          rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location (offline?)"@en .
+          rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"@en .
 
 
 ###  https://schema.coypu.org/global#MobViolence
@@ -1572,6 +1590,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
               rdfs:subClassOf :Conflict ;
               rdfs:comment "an armed conflict, battle, explosion or violence against civilians" ;
               rdfs:label "ViolentEvent"@en .
+
+
+###  https://schema.coypu.org/global#WikiNews
+:WikiNews rdf:type owl:Class ;
+          rdfs:subClassOf :Event ;
+          rdfs:comment "a current news event extracted from Wikipedia"@en ;
+          rdfs:label "WikiNews"@en ;
+          rdfs:seeAlso "https://en.wikipedia.org/wiki/Portal:Current_events" .
 
 
 ###  https://schema.coypu.org/global#Abduction%2FForcedDisappearance
