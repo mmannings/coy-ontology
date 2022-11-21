@@ -62,9 +62,12 @@ syntax: # Has to run everytime because it prepares the RDF files
     public: false
   script:
     # Concatenation
-    - rapper -o ntriples -i turtle disaster/em_dat_classification.ttl > main.n3
-    - rapper -o ntriples -i turtle global/coy.ttl >> main.n3
-    - rapper -o ntriples -i turtle mapping/coy_wikidata.ttl >> main.n3.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontlogy/events/em_dat.ttl > main.n3
+    - rapper -o ntriples -i turtle ontlogy/events/gta.ttl > main.n3
+    - rapper -o ntriples -i turtle ontlogy/events/rta.ttl > main.n3
+    - rapper -o ntriples -i turtle ontlogy/global/coy.ttl >> main.n3
+    #- rapper -o ntriples -i turtle ontlogy/mapping/coy_wikidata.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontlogy/infrastructure/world-port-index.ttl >> main.n3
     # Parsing to other formats
     - rapper -o turtle -i ntriples main.n3 > main.ttl
     - rapper -o rdfxml -i ntriples main.n3 > main.xml
@@ -163,10 +166,10 @@ reasoner:
   artifacts:
     when: always
     paths:
-      - "./infered_classes.owl"
+      - "./ontlogy/infered_classes.owl"
   script:
-    - java -jar /hermit/HermiT.jar -cO -v2 -o infered_classes.owl ./main.xml
-    - cat infered_classes.owl
+    - java -jar /hermit/HermiT.jar -cO -v2 -o ontlogy/infered_classes.owl ./main.xml
+    - cat ontlogy/infered_classes.owl
 
 # Atm only the coy.ttl file versions are checked
 version:
@@ -181,13 +184,13 @@ version:
     - . scripts/helper.sh
     # get coy.ttl from main
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-ontology.git" main_repo_clone
-    - cp main_repo_clone/global/coy.ttl ./coy.main.ttl
+    - cp main_repo_clone/ontlogy/global/coy.ttl ./coy.main.ttl
     # exit if there was no change in the vocab file
-    - exit_if_no_file_change ./coy.main.ttl ./global/coy.ttl
+    - exit_if_no_file_change ./coy.main.ttl ./ontlogy/global/coy.ttl
     # value of branchs owl:versionInfo has to be higher
-    - owl_version_increase_test ./coy.main.ttl ./global/coy.ttl
+    - owl_version_increase_test ./coy.main.ttl ./ontlogy/global/coy.ttl
     # owl:priorVersion of this branch is lower than owl:versionInfo of this branch
-    - owl_version_compare ./global/coy.ttl
+    - owl_version_compare ./ontlogy/global/coy.ttl
 
 tag:
   stage: tag
@@ -199,7 +202,7 @@ tag:
   script:
     - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
     # Update the classes
-    - git add infered_classes.owl && ./scripts/try_commit.sh
+    - git add ontlogy/infered_classes.owl && ./scripts/try_commit.sh
     # Add the tag
     - export now=$(date "+%Y.%m.%d_%H.%M")
     - git tag -a -m "Verified by CI" verified$now
