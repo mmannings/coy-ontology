@@ -1200,7 +1200,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :Airport rdf:type owl:Class ;
          rdfs:subClassOf :Infrastructure ;
          rdfs:comment "a logistics hub for air freight"@en ;
-         rdfs:label "Airport"@en .
+         rdfs:label "Airport"@en ;
+         rdfs:seeAlso "http://www.wikidata.org/entity/Q1248784" .
 
 
 ###  https://schema.coypu.org/global#ArmedClash
@@ -1241,14 +1242,16 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
       rdfs:comment "a center of population, commerce, and culture; a town of significant size and importance"@en ;
       rdfs:label "City"@en ;
       rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
-                   schema:City .
+                   schema:City ,
+                   "http://www.wikidata.org/entity/Q515" .
 
 
 ###  https://schema.coypu.org/global#Commodity
 :Commodity rdf:type owl:Class ;
            rdfs:subClassOf :Product ;
            rdfs:comment "a commodity good or production material"@en ;
-           rdfs:label "Commodity"@en .
+           rdfs:label "Commodity"@en ;
+           rdfs:seeAlso "http://www.wikidata.org/entity/Q317088" .
 
 
 ###  https://schema.coypu.org/global#Company
@@ -1257,7 +1260,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
          rdfs:comment "an organization engaged in economic activities"@en ;
          rdfs:label "Company"@en ;
          rdfs:seeAlso dbo:Company ,
-                      schema:Corporation .
+                      schema:Corporation ,
+                      "http://www.wikidata.org/entity/Q783794" .
 
 
 ###  https://schema.coypu.org/global#Conflict
@@ -1308,7 +1312,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
           rdfs:subClassOf :Event ;
           rdfs:comment "a natural or technological disaster"@en ;
           rdfs:label "Disaster"@en ;
-          rdfs:seeAlso <https://www.emdat.be/guidelines> .
+          rdfs:seeAlso <https://www.emdat.be/guidelines> ,
+                       "http://www.wikidata.org/entity/Q3839081" .
 
 
 ###  https://schema.coypu.org/global#DisruptedWeaponUse
@@ -1345,7 +1350,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :Factory rdf:type owl:Class ;
          rdfs:subClassOf :Infrastructure ;
          rdfs:comment "a factory or production site"@en ;
-         rdfs:label "Factory"@en .
+         rdfs:label "Factory"@en ;
+         rdfs:seeAlso "http://www.wikidata.org/entity/Q83405" .
 
 
 ###  https://schema.coypu.org/global#Feature
@@ -1378,6 +1384,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
           rdfs:comment "an industry or economic sector"@en ;
           rdfs:label "Industry"@en ,
                      "Wirtschaftszweig"@de ;
+          rdfs:seeAlso "http://www.wikidata.org/entity/Q8148" ;
           skos:prefLabel "Sector"@en .
 
 
@@ -1385,7 +1392,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :Infrastructure rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing ;
                 rdfs:comment "a facility providing critical infrastructure for production or logistics"@en ;
-                rdfs:label "Infrastructure"@en .
+                rdfs:label "Infrastructure"@en ;
+                rdfs:seeAlso "http://www.wikidata.org/entity/Q121359" .
 
 
 ###  https://schema.coypu.org/global#Location
@@ -1404,7 +1412,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :News rdf:type owl:Class ;
       rdfs:subClassOf :Event ;
       rdfs:comment "a newspaper article, social media posting or press release"@en ;
-      rdfs:label "News"@en .
+      rdfs:label "News"@en ;
+      rdfs:seeAlso "http://www.wikidata.org/entity/Q38926" .
 
 
 ###  https://schema.coypu.org/global#Non-StateActorOvertakesTerritory
@@ -1455,14 +1464,16 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :Port rdf:type owl:Class ;
       rdfs:subClassOf :Infrastructure ;
       rdfs:comment "a logictics hub for shipping"@en ;
-      rdfs:label "Port"@en .
+      rdfs:label "Port"@en ;
+      rdfs:seeAlso "http://www.wikidata.org/entity/Q44782" .
 
 
 ###  https://schema.coypu.org/global#Powerplant
 :Powerplant rdf:type owl:Class ;
             rdfs:subClassOf :Infrastructure ;
             rdfs:comment "a facility for generating electric power"@en ;
-            rdfs:label "Powerplant"@en .
+            rdfs:label "Powerplant"@en ;
+            rdfs:seeAlso "http://www.wikidata.org/entity/Q159719" .
 
 
 ###  https://schema.coypu.org/global#Product
@@ -1493,7 +1504,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
         rdfs:comment "an administrative or economic area"@en ;
         rdfs:label "Region"@en ;
         rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
-                     schema:AdministrativeArea .
+                     schema:AdministrativeArea ,
+                     "http://www.wikidata.org/entity/Q82794" .
 
 
 ###  https://schema.coypu.org/global#RegionalIndustry
@@ -1528,6 +1540,13 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :SexualViolence rdf:type owl:Class ;
                 rdfs:subClassOf :ViolenceAgainstCivilians ;
                 rdfs:label "Sexual violence"@en .
+
+
+###  https://schema.coypu.org/global#SocioPoliticalEvent
+:SocioPoliticalEvent rdf:type owl:Class ;
+                     rdfs:subClassOf :Event ;
+                     rdfs:label "SocioPoliticalEvent" ;
+                     rdfs:seeAlso "https://dataverse.harvard.edu/dataverse/icews" .
 
 
 ###  https://schema.coypu.org/global#StrategicDevelopment
@@ -1668,6 +1687,25 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                         rdfs:subClassOf :Feature ;
                                                         rdfs:comment "annotation for the World Port Index dataset"@en ;
                                                         rdfs:label "PortFeature"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://schema.coypu.org/em-dat#BiologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q36516758" .
+
+
+<https://schema.coypu.org/em-dat#IndustrialAccident> rdfs:seeAlso "http://www.wikidata.org/entity/Q68800046" .
+
+
+<https://schema.coypu.org/em-dat#MeteorologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q6823473" .
+
+
+<https://schema.coypu.org/em-dat#TechnologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q37282022" .
+
+
+<https://schema.coypu.org/em-dat#TransportAccident> rdfs:seeAlso "http://www.wikidata.org/entity/Q11822042" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
