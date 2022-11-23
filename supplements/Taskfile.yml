@@ -1,0 +1,35 @@
+version: '3'
+
+vars:
+  UID:
+    sh: id -u
+  GID:
+    sh: id -g
+  SHELL_PWD:
+    sh: pwd
+
+  ONTOLOGY_IRI: https://schema.coypu.org/global#
+  SCHEMA_FILE: "coy"
+  SCHEMA_DIR: {{.SHELL_PWD}}/../ontology/global
+
+  DOCKER_PWD: /data
+  DOCKER_DIRS: -v "{{.SCHEMA_DIR}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
+  DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
+  DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
+
+  CMEMC_VERSION: v21.11.4
+  CMEMC_IMAGE: docker-registry.eccenca.com/eccenca-cmemc:{{.CMEMC_VERSION}}
+  CMEMC_PARAMS: -e "CMEM_BASE_URI={{.CMEM_BASE_URI}}" -e "OAUTH_GRANT_TYPE={{.OAUTH_GRANT_TYPE}}" -e "OAUTH_CLIENT_ID={{.OAUTH_CLIENT_ID}}" -e "OAUTH_CLIENT_SECRET={{.OAUTH_CLIENT_SECRET}}"
+  CMEMC_DOCKER: docker run {{.DOCKER_PARAMS}} {{.CMEMC_PARAMS}} {{.DOCKER_DIRS}} {{.CMEMC_IMAGE}}
+
+tasks:
+
+  sync:upload_ontology:
+    desc: Upload the ontology file to the CMEM vocabulary catalog
+    cmds:
+      - task: helper:cmemc:import_vocabulary
+        vars: { FILE: '{{.SCHEMAFILE}}' }
+
+  helper:cmemc:import_vocabulary:
+    cmds:
+      - "{{.CMEMC_DOCKER}} vocabulary import --replace {{.FILE}}.ttl"

@@ -211,4 +211,4 @@ distribute_to_cmem:
       eval OAUTH_CLIENT_ID="\$${INST_SECRET_CMEM_OAUTH_CLIENT_ID}"
       eval OAUTH_CLIENT_SECRET="\$${INST_SECRET_CMEM_OAUTH_CLIENT_SECRET}"
       export CMEM_BASE_URI OAUTH_GRANT_TYPE OAUTH_CLIENT_ID OAUTH_CLIENT_SECRET
-    - "cd supplements/experiments/shapes && task sync:upload_ontology"
+    - "cd supplements && task sync:upload_ontology"
