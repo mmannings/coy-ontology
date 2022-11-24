@@ -15,35 +15,35 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://schema.coypu.org/global> .
+@base <https://schema.coypu.org/world-port-index/1.0> .
 
-<https://schema.coypu.org/global> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://schema.coypu.org/global/2.0> ;
-                                   owl:imports <https://schema.coypu.org/em-dat/1.0> ,
-                                               <https://schema.coypu.org/gta/1.0> ,
-                                               <https://schema.coypu.org/ta/1.0> ,
-                                               <https://schema.coypu.org/world-port-index/1.0> ;
-                                   cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                   dcterms:contributor "Andreas Schaefer"@en ,
-                                                       "Felix Engel"@en ,
-                                                       "Lorenz Bühmann"@en ,
-                                                       "Natanael Arndt"@en ,
-                                                       "Nenad Krdzavac"@en ,
-                                                       "Simon Bin"@en ,
-                                                       "Till Grabo"@en ;
-                                   dcterms:created "2021-09-06" ;
-                                   dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-11-21" ;
-                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
-                                   dcterms:title "CoyPu Ontology"@en ;
-                                   vann:preferredNamespacePrefix "coy" ;
-                                   vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
-                                   rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                                   rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                                   rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.8"@en ;
-                                   owl:versionInfo "2.0"@en .
+<https://schema.coypu.org/world-port-index/1.0> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://schema.coypu.org/global/2.0> ;
+                                                 owl:imports <https://schema.coypu.org/em-dat/1.0> ,
+                                                             <https://schema.coypu.org/gta/1.0> ,
+                                                             <https://schema.coypu.org/ta/1.0> ,
+                                                             <https://schema.coypu.org/world-port-index/1.0> ;
+                                                 cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 dcterms:contributor "Andreas Schaefer"@en ,
+                                                                     "Felix Engel"@en ,
+                                                                     "Lorenz Bühmann"@en ,
+                                                                     "Natanael Arndt"@en ,
+                                                                     "Nenad Krdzavac"@en ,
+                                                                     "Simon Bin"@en ,
+                                                                     "Till Grabo"@en ;
+                                                 dcterms:created "2021-09-06" ;
+                                                 dcterms:creator "Nils Steinert"@en ;
+                                                 dcterms:isVersionOf <https://schema.coypu.org/global> ;
+                                                 dcterms:modified "2022-11-21" ;
+                                                 dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
+                                                 dcterms:title "CoyPu Ontology"@en ;
+                                                 vann:preferredNamespacePrefix "coy" ;
+                                                 vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
+                                                 rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
+                                                 rdfs:isDefinedBy <https://schema.coypu.org/global> ;
+                                                 rdfs:label "coy: CoyPu Ontology"@en ;
+                                                 owl:priorVersion "1.8"@en ;
+                                                 owl:versionInfo "2.0"@en .
 
 #################################################################
 #    Annotation properties
@@ -1402,6 +1402,13 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
           rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"@en .
 
 
+###  https://schema.coypu.org/global#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf :Product ;
+          rdfs:comment "a substance or resource which is required for producing other goods"@en ;
+          rdfs:label "Material"@en .
+
+
 ###  https://schema.coypu.org/global#MobViolence
 :MobViolence rdf:type owl:Class ;
              rdfs:subClassOf :Riot ;
@@ -1534,6 +1541,13 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
        rdfs:subClassOf :Location ;
        rdfs:comment "A large natural stream of water emptying into an ocean, lake, or other body of water and usually fed along its course by converging tributaries. Often providing critial logistics infrastructure."@en ;
        rdfs:label "River"@en .
+
+
+###  https://schema.coypu.org/global#Service
+:Service rdf:type owl:Class ;
+         rdfs:subClassOf :Product ;
+         rdfs:comment "an economic activity that is done for others as an occupation or business"@en ;
+         rdfs:label "Service"@en .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
@@ -1687,25 +1701,6 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                         rdfs:subClassOf :Feature ;
                                                         rdfs:comment "annotation for the World Port Index dataset"@en ;
                                                         rdfs:label "PortFeature"@en .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-<https://schema.coypu.org/em-dat#BiologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q36516758" .
-
-
-<https://schema.coypu.org/em-dat#IndustrialAccident> rdfs:seeAlso "http://www.wikidata.org/entity/Q68800046" .
-
-
-<https://schema.coypu.org/em-dat#MeteorologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q6823473" .
-
-
-<https://schema.coypu.org/em-dat#TechnologicalDisaster> rdfs:seeAlso "http://www.wikidata.org/entity/Q37282022" .
-
-
-<https://schema.coypu.org/em-dat#TransportAccident> rdfs:seeAlso "http://www.wikidata.org/entity/Q11822042" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
