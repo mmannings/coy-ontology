@@ -268,7 +268,7 @@
 ###  https://schema.coypu.org/ta#PartialScopeAgreement
 :PartialScopeAgreement rdf:type owl:Class ;
                        rdfs:subClassOf :RegionalTradeAgreement ;
-                       rdfs:comment "Partial Scope\" which is not defined or referred to in the WTO Agreement, means that the agreement covers only certain products."@en ;
+                       rdfs:comment "A partial scope agreement which is not defined or referred to in the WTO agreement means that tit covers only certain products."@en ;
                        rdfs:label "Partial scope agreement"@en ;
                        rdfs:seeAlso "https://www.wto.org/english/docs_e/legal_e/enabling1979_e.htm"@en .
 
@@ -276,7 +276,7 @@
 ###  https://schema.coypu.org/ta#RegionalTradeAgreement
 :RegionalTradeAgreement rdf:type owl:Class ;
                         rdfs:subClassOf :TradeAgreement ;
-                        rdfs:comment "RTAs in the WTO are taken to mean any reciprocal trade agreement between two or more partners, not necessarily belonging to the same region."@en ;
+                        rdfs:comment "Any reciprocal trade agreement between two or more partners, not necessarily belonging to the same region."@en ;
                         rdfs:label "Regional trade agreement"@en .
 
 

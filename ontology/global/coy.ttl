@@ -18,7 +18,7 @@
 @base <https://schema.coypu.org/global> .
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://schema.coypu.org/global/2.0> ;
+                                   owl:versionIRI <https://schema.coypu.org/global/2.1> ;
                                    owl:imports <https://schema.coypu.org/em-dat/1.0> ,
                                                <https://schema.coypu.org/gta/1.0> ,
                                                <https://schema.coypu.org/ta/1.0> ,
@@ -42,8 +42,8 @@
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion "1.8"@en ;
-                                   owl:versionInfo "2.0"@en .
+                                   owl:priorVersion 2.0 ;
+                                   owl:versionInfo 2.1 .
 
 #################################################################
 #    Annotation properties
@@ -154,7 +154,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasAffiliation rdf:type owl:ObjectProperty ;
                 rdfs:domain :Company ;
                 rdfs:range :Company ;
-                rdfs:comment "a relationship between two companies"@en ;
+                rdfs:comment "A relationship between two companies."@en ;
                 rdfs:label "has affiliation"@en .
 
 
@@ -162,6 +162,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasBranchOffices rdf:type owl:ObjectProperty ;
                   rdfs:domain :Company ;
                   rdfs:range :Company ;
+                  rdfs:comment "A local or international branch of a company."@en ;
                   rdfs:label "has branch offices"@en .
 
 
@@ -170,7 +171,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  rdfs:subPropertyOf :hasLocation ;
                  rdfs:domain owl:Thing ;
                  rdfs:range :City ;
-                 rdfs:comment "the city an event, company or critical infrastructure is located at"@en ;
+                 rdfs:comment "The city an event, company or critical infrastructure is located at."@en ;
                  rdfs:label "has city location"@en .
 
 
@@ -179,7 +180,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       rdfs:subPropertyOf :hasLocation ;
                       rdfs:domain owl:Thing ;
                       rdfs:range :Continent ;
-                      rdfs:comment "the continent a country, event, company or critical infrastructure is located at"@en ;
+                      rdfs:comment "The continent a country, event, company or critical infrastructure is located at."@en ;
                       rdfs:label "has continent location"@en .
 
 
@@ -188,7 +189,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                     rdfs:subPropertyOf :hasLocation ;
                     rdfs:domain owl:Thing ;
                     rdfs:range :Country ;
-                    rdfs:comment "the country a city, event, company or critical infrastructure is located at"@en ;
+                    rdfs:comment "The country a city, event, company or critical infrastructure is located at."@en ;
                     rdfs:label "has country location"@en .
 
 
@@ -197,7 +198,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isCustomerOf ;
              rdfs:domain :Company ;
              rdfs:range :Company ;
-             rdfs:comment "the company providing a product, material, resource or service to another company"@en ;
+             rdfs:comment "The company receiving a product, material, resource or service to another company, usually for monetary compensation."@en ;
              rdfs:label "has customer"@en .
 
 
@@ -205,6 +206,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasFactory rdf:type owl:ObjectProperty ;
             rdfs:domain :Company ;
             rdfs:range :Factory ;
+            rdfs:comment "A production site or manufactoring hub of a company."@en ;
             rdfs:label "has factory"@en .
 
 
@@ -212,6 +214,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasHeadquarter rdf:type owl:ObjectProperty ;
                 rdfs:domain :Company ;
                 rdfs:range :Company ;
+                rdfs:comment "The main or singular office of a company."@en ;
                 rdfs:label "has headquarter"@en .
 
 
@@ -220,7 +223,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isImpactedBy ;
              rdfs:domain :Event ;
              rdfs:range owl:Thing ;
-             rdfs:comment "the thing impacted by an event"@en ;
+             rdfs:comment "The thing impacted by an event."@en ;
              rdfs:label "has impact on"@en .
 
 
@@ -229,7 +232,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isIndustryOf ;
              rdfs:domain :Company ;
              rdfs:range :Industry ;
-             rdfs:comment "the sector or industry a company is active in"@en ;
+             rdfs:comment "The sector or industry a company is active in."@en ;
              rdfs:label "has industry"@en .
 
 
@@ -238,7 +241,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      rdfs:subPropertyOf :hasAffiliation ;
                      rdfs:domain :Company ;
                      rdfs:range :Company ;
-                     rdfs:comment "a legal relationship between two companies"@en ;
+                     rdfs:comment "A legal relationship between two companies."@en ;
                      rdfs:label "has legal affiliation"@en .
 
 
@@ -247,7 +250,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isLocationOf ;
              rdfs:domain owl:Thing ;
              rdfs:range :Location ;
-             rdfs:comment "the location an event, company or critical infrastructure is located at"@en ;
+             rdfs:comment "The location an event, company or critical infrastructure is located at."@en ;
              rdfs:label "has location"@en ;
              rdfs:seeAlso schema:location ,
                           "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" .
@@ -258,7 +261,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                           rdfs:subPropertyOf :hasAffiliation ;
                           rdfs:domain :Company ;
                           rdfs:range :Company ;
-                          rdfs:comment "a managerial relationship between two companies"@en ;
+                          rdfs:comment "A managerial relationship between two companies."@en ;
                           rdfs:label "has management affiliation"@en .
 
 
@@ -274,7 +277,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
             owl:inverseOf :isProductOf ;
             rdfs:domain :Company ;
             rdfs:range :Product ;
-            rdfs:comment "the material, resource or service a company produces"@en ;
+            rdfs:comment "The material, resource or service a company produces."@en ;
             rdfs:label "has product"@en .
 
 
@@ -283,7 +286,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                    rdfs:subPropertyOf :hasLocation ;
                    rdfs:domain owl:Thing ;
                    rdfs:range :Region ;
-                   rdfs:comment "the region a city, event, company or critical infrastructure is located at"@en ;
+                   rdfs:comment "The region a city, event, company or critical infrastructure is located at."@en ;
                    rdfs:label "has region location"@en .
 
 
@@ -292,6 +295,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain :Industry ;
                      rdfs:range :RegionalIndustry ;
+                     rdfs:comment "A sector located in a specific country, from the Exiobase dataset."@en ;
                      rdfs:label "has regional industry"@en .
 
 
@@ -307,7 +311,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                            rdfs:subPropertyOf :hasAffiliation ;
                            rdfs:domain :Company ;
                            rdfs:range :Company ;
-                           rdfs:comment "a relationship between two companies sharing the same address"@en ;
+                           rdfs:comment "A relationship between two companies sharing the same address."@en ;
                            rdfs:label "has same address affiiation"@en .
 
 
@@ -323,7 +327,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isSupplierOf ;
              rdfs:domain :Company ;
              rdfs:range :Company ;
-             rdfs:comment "the company supplying a product, material, resource or service to another company"@en ;
+             rdfs:comment "The company supplying a product, material, resource or service to another company."@en ;
              rdfs:label "has supplier"@en .
 
 
@@ -331,8 +335,9 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasTimespan rdf:type owl:ObjectProperty ;
              rdfs:domain :Event ;
              rdfs:range :Timespan ;
+             rdfs:comment "The peroid of duration of an event."@en ;
              rdfs:label "has timespan"@en ;
-             rdfs:seeAlso "P4_has_time-span" .
+             rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span" .
 
 
 ###  https://schema.coypu.org/global#hasWeblinkAffiliation
@@ -340,7 +345,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        rdfs:subPropertyOf :hasAffiliation ;
                        rdfs:domain :Company ;
                        rdfs:range :Company ;
-                       rdfs:comment "a relationship between two companies expressed by a website link"@en ;
+                       rdfs:comment "A relationship between two companies expressed by a website link."@en ;
                        rdfs:label "has weblink affiliation"@en .
 
 
@@ -354,7 +359,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isCustomerOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Company ;
               rdfs:range :Company ;
-              rdfs:comment "the company sourcing a product, material, resource or service from another company"@en ;
+              rdfs:comment "The company sourcing a product, material, resource or service from another company."@en ;
               rdfs:label "is customer of"@en .
 
 
@@ -371,7 +376,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isImpactedBy rdf:type owl:ObjectProperty ;
               rdfs:domain owl:Thing ;
               rdfs:range :Event ;
-              rdfs:comment "the event impacting a thing"@en ;
+              rdfs:comment "The event impacting a thing."@en ;
               rdfs:label "is impacted by"@en .
 
 
@@ -379,7 +384,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isIndustryOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Industry ;
               rdfs:range :Company ;
-              rdfs:comment "the company active in a sector or industry"@en ;
+              rdfs:comment "The company active in a sector or industry."@en ;
               rdfs:label "is industry of"@en .
 
 
@@ -395,7 +400,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isLocationOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Location ;
               rdfs:range owl:Thing ;
-              rdfs:comment "the event, company or critical infrastructure at a certain location"@en ;
+              rdfs:comment "The event, company or critical infrastructure at a certain location."@en ;
               rdfs:label "is location of"@en .
 
 
@@ -411,7 +416,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isPartOf rdf:type owl:ObjectProperty ;
           rdfs:domain :Company ;
           rdfs:range :Company ;
-          rdfs:comment "the concern or group a company is part of"@en ;
+          rdfs:comment "The concern or group a company is part of."@en ;
           rdfs:label "is part of"@en .
 
 
@@ -419,7 +424,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isProductOf rdf:type owl:ObjectProperty ;
              rdfs:domain :Product ;
              rdfs:range :Company ;
-             rdfs:comment "the company producing a material, resource or service"@en ;
+             rdfs:comment "The company producing a material, resource or service."@en ;
              rdfs:label "is product of"@en .
 
 
@@ -434,7 +439,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isSupplierOf rdf:type owl:ObjectProperty ;
               rdfs:domain :Company ;
               rdfs:range :Company ;
-              rdfs:comment "the company supplied with a product, material, resource or service by another company"@en ;
+              rdfs:comment "The company supplied with a product, material, resource or service by another company."@en ;
               rdfs:label "is supplier of"@en .
 
 
@@ -442,7 +447,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isUsedIn rdf:type owl:ObjectProperty ;
           rdfs:domain :Product ;
           rdfs:range :Product ;
-          rdfs:comment "a product, material or resource used in production of another material, resource or product"@en ;
+          rdfs:comment "A product, material or resource used in production of another material, resource or product."@en ;
           rdfs:label "is used in"@en .
 
 
@@ -460,6 +465,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Conflict ;
             rdfs:range xsd:integer ;
+            rdfs:comment "A unique identified used in the ACLED dataset."@en ;
             rdfs:label "has acled data id"@en .
 
 
@@ -468,7 +474,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                    owl:FunctionalProperty ;
           rdfs:domain :Conflict ;
           rdfs:range xsd:string ;
-          rdfs:comment "The named actor involved in the event"@en ;
+          rdfs:comment "The named actor involved in the event."@en ;
           rdfs:label "has actor"@en .
 
 
@@ -477,7 +483,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                 owl:FunctionalProperty ;
                        rdfs:domain :Country ;
                        rdfs:range xsd:decimal ;
-                       rdfs:comment "the adaptive capability of a country as defined by Weltrisikobericht"@en ;
+                       rdfs:comment "The adaptive capability of a country as defined by Weltrisikobericht."@en ;
                        rdfs:label "has adaptive capability"@en ;
                        rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -487,7 +493,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                         owl:FunctionalProperty ;
                rdfs:domain :Event ;
                rdfs:range xsd:string ;
-               rdfs:comment "the alert level score of an event (like 0 / 1 / 2 or green / orange / red)"@en ;
+               rdfs:comment "The alert level score of an event (eg. 0/1/2 or green/orange/red)."@en ;
                rdfs:label "has alert score"@en .
 
 
@@ -496,7 +502,6 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                            owl:FunctionalProperty ;
                   rdfs:domain owl:Thing ;
                   rdfs:range xsd:string ;
-                  rdfs:comment "an alternate name of a thing"@en ;
                   rdfs:label "has alternate name"@en ;
                   rdfs:seeAlso schema:alternateName .
 
@@ -506,7 +511,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                owl:FunctionalProperty ;
                       rdfs:domain :Company ;
                       rdfs:range xsd:decimal ;
-                      rdfs:comment "the balance sheet total of a company (at a specified date in a specified currency)"@en ;
+                      rdfs:comment "The balance sheet total of a company (at a specified date in a specified currency)."@en ;
                       rdfs:label "has balance sheet total"@en .
 
 
@@ -515,7 +520,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Infrastructure ;
              rdfs:range xsd:positiveInteger ;
-             rdfs:comment "the capacity in tonnes of a facility (like a port or airport)"@en ;
+             rdfs:comment "The capacity in tonnes of a facility (eg. ports or airports)."@en ;
              rdfs:label "has capacity"@en .
 
 
@@ -524,7 +529,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Company ;
             rdfs:range xsd:string ;
-            rdfs:comment "the monetary capital of a company"@en ;
+            rdfs:comment "The monetary capital of a company."@en ;
             rdfs:label "has capital"@en .
 
 
@@ -533,7 +538,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain :RegionalIndustry ;
                 rdfs:range xsd:decimal ;
-                rdfs:comment "the CO2 emissions of a country- or region-specific industry in Gg"@en ;
+                rdfs:comment "The CO2 emissions of a regional industry in Gg."@en ;
                 rdfs:label "has co2 emission"@en .
 
 
@@ -542,7 +547,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain :Company ;
                 rdfs:range xsd:string ;
-                rdfs:comment "the size of a company according to the EU SME definition"@en ;
+                rdfs:comment "The size of a company according to the EU SME definition."@en ;
                 rdfs:label "has company size"@en ;
                 rdfs:seeAlso <https://ec.europa.eu/growth/smes/sme-definition_en> .
 
@@ -552,7 +557,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                               owl:FunctionalProperty ;
                      rdfs:domain :Country ;
                      rdfs:range xsd:decimal ;
-                     rdfs:comment "the coping capability of a country as defined by Weltrisikobericht"@en ;
+                     rdfs:comment "The coping capability of a country as defined by Weltrisikobericht."@en ;
                      rdfs:label "has coping capability"@en ;
                      rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -562,8 +567,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Product ;
             rdfs:range xsd:string ;
-            rdfs:comment "a product code as defined in CPA"@en ;
-            rdfs:label "has cpa code"@en .
+            rdfs:comment "A product code as defined in CPA."@en ;
+            rdfs:label "has cpa code"@en ;
+            rdfs:seeAlso "https://ec.europa.eu/eurostat/web/cpa" .
 
 
 ###  https://schema.coypu.org/global#hasCreationTimestamp
@@ -571,7 +577,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                owl:FunctionalProperty ;
                       rdfs:domain owl:Thing ;
                       rdfs:range xsd:dateTime ;
-                      rdfs:comment "the timestamp of initial creation"@en ;
+                      rdfs:comment "The instant of initial creation."@en ;
                       rdfs:label "has creation timestamp"@en .
 
 
@@ -580,7 +586,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Country ;
              rdfs:range xsd:decimal ;
-             rdfs:comment "the currency of a country or monetary value"@en ;
+             rdfs:comment "The currency of a country or monetary value."@en ;
              rdfs:label "has currency"@en ;
              rdfs:seeAlso schema:currency .
 
@@ -590,10 +596,10 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain owl:Thing ;
                 rdfs:range xsd:string ;
-                rdfs:comment "the description of a thing"@en ;
+                rdfs:comment "The description of a thing."@en ;
                 rdfs:label "has description"@en ;
                 rdfs:seeAlso schema:description ;
-                owl:deprecated "use rdfs:comment instead" .
+                owl:deprecated "Use rdfs:comment instead." .
 
 
 ###  https://schema.coypu.org/global#hasDissolutionDate
@@ -601,7 +607,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                              owl:FunctionalProperty ;
                     rdfs:domain :Company ;
                     rdfs:range xsd:dateTime ;
-                    rdfs:comment "the dissolution date of a company"@en ;
+                    rdfs:comment "The dissolution date of a company."@en ;
                     rdfs:label "has dissolution date"@en ;
                     rdfs:seeAlso schema:dissolutionDate .
 
@@ -611,7 +617,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Company ;
              rdfs:range xsd:string ;
-             rdfs:comment "the European Business Identifier of a company"@en ;
+             rdfs:comment "The European Business Identifier of a company."@en ;
              rdfs:label "has ebid code"@en ;
              rdfs:seeAlso <https://www.unternehmensverzeichnis.org> .
 
@@ -621,7 +627,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                    owl:FunctionalProperty ;
           rdfs:domain :Company ;
           rdfs:range xsd:string ;
-          rdfs:comment "an email address"@en ;
+          rdfs:comment "A company's email address."@en ;
           rdfs:label "has email"@en ;
           rdfs:seeAlso schema:email .
 
@@ -647,7 +653,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain :Event ;
                 rdfs:range xsd:string ;
-                rdfs:comment "the status of an event (current or past)"@en ;
+                rdfs:comment "The status of an event (eg. current or past)."@en ;
                 rdfs:label "has event status"@en .
 
 
@@ -656,8 +662,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Event ;
               rdfs:range xsd:string ;
-              rdfs:comment "the type of an event (like earthquake or cyber attack)"@en ;
-              rdfs:label "has event type"@en .
+              rdfs:comment "The type of an event (like earthquake or cyber attack)."@en ;
+              rdfs:label "has event type"@en ;
+              owl:deprecated "Use rdf:type instead." .
 
 
 ###  https://schema.coypu.org/global#hasExposure
@@ -665,7 +672,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Country ;
              rdfs:range xsd:decimal ;
-             rdfs:comment "the exposure of a country as defined by Weltrisikobericht"@en ;
+             rdfs:comment "The exposure of a country as defined by Weltrisikobericht."@en ;
              rdfs:label "has exposure"@en ;
              rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -675,7 +682,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                         owl:FunctionalProperty ;
                rdfs:domain :Conflict ;
                rdfs:range xsd:integer ;
-               rdfs:comment "The number of reported fatalities which occurred during the event"@en ;
+               rdfs:comment "The number of reported fatalities which occurred during the event."@en ;
                rdfs:label "has fatalities"@en .
 
 
@@ -684,7 +691,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  owl:FunctionalProperty ;
         rdfs:domain :Company ;
         rdfs:range xsd:string ;
-        rdfs:comment "a fax number"@en ;
+        rdfs:comment "A company's fax number."@en ;
         rdfs:label "has fax"@en ;
         rdfs:seeAlso schema:faxNumber .
 
@@ -694,7 +701,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                           owl:FunctionalProperty ;
                  rdfs:domain :Company ;
                  rdfs:range xsd:dateTime ;
-                 rdfs:comment "the founding date of a company"@en ;
+                 rdfs:comment "The founding date of a company."@en ;
                  rdfs:label "has founding date"@en ;
                  rdfs:seeAlso schema:foundingDate .
 
@@ -704,8 +711,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Disaster ;
             rdfs:range xsd:string ;
-            rdfs:comment "the Global Identifier numbers according to GLIDEnumber.net"@en ;
-            rdfs:label "has glide id"@en .
+            rdfs:comment "The Global Identifier number of a company."@en ;
+            rdfs:label "has glide id"@en ;
+            rdfs:seeAlso "https://glidenumber.net/" .
 
 
 ###  https://schema.coypu.org/global#hasHrCourt
@@ -713,7 +721,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Company ;
             rdfs:range xsd:string ;
-            rdfs:comment "the German court where a company is registered"@en ;
+            rdfs:comment "The German court where a company is registered."@en ;
             rdfs:label "has hr court"@en .
 
 
@@ -722,7 +730,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                   owl:FunctionalProperty ;
          rdfs:domain :Company ;
          rdfs:range xsd:string ;
-         rdfs:comment "a German company register id"@en ;
+         rdfs:comment "A German company register id."@en ;
          rdfs:label "has hr id"@en .
 
 
@@ -731,7 +739,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                     owl:FunctionalProperty ;
            rdfs:domain :Company ;
            rdfs:range xsd:string ;
-           rdfs:comment "the type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)"@en ;
+           rdfs:comment "The type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)."@en ;
            rdfs:label "has hr type"@en .
 
 
@@ -740,7 +748,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                     owl:FunctionalProperty ;
            rdfs:domain :Product ;
            rdfs:range xsd:string ;
-           rdfs:comment "a product code as defined in the EU harmonized system"@en ;
+           rdfs:comment "A product code as defined in the EU harmonized system."@en ;
            rdfs:label "has hs code"@en .
 
 
@@ -749,7 +757,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                 owl:FunctionalProperty ;
        rdfs:domain owl:Thing ;
        rdfs:range xsd:string ;
-       rdfs:comment "a unique identifier"@en ;
+       rdfs:comment "A unique identifier, preferably taken from an entity's source dataset."@en ;
        rdfs:label "has id"@en ;
        rdfs:seeAlso schema:identifier .
 
@@ -759,8 +767,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                 owl:FunctionalProperty ;
                        rdfs:domain :Infrastructure ;
                        rdfs:range xsd:string ;
-                       rdfs:comment "the type of critical infrastructure (like airport, port or powerplant)"@en ;
-                       rdfs:label "has infrastructure type"@en .
+                       rdfs:comment "The type of critical infrastructure (like airport, port or powerplant)."@en ;
+                       rdfs:label "has infrastructure type"@en ;
+                       owl:deprecated "Annotate as rdf:type instead." .
 
 
 ###  https://schema.coypu.org/global#hasIso2Code
@@ -768,9 +777,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range xsd:string ;
-             rdfs:comment "a country code as defined in ISO 3166-2"@en ;
+             rdfs:comment "A country code as defined in ISO 3166-2."@en ;
              rdfs:label "has iso code (2 digits)"@en ;
-             owl:deprecated "use gn:countryCode instead" .
+             owl:deprecated "Use gn:countryCode instead." .
 
 
 ###  https://schema.coypu.org/global#hasIsoCode
@@ -778,9 +787,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain owl:Thing ;
             rdfs:range xsd:string ;
-            rdfs:comment "a country code as defined in ISO 3166-3"@en ;
+            rdfs:comment "A country code as defined in ISO 3166-3."@en ;
             rdfs:label "has iso code"@en ;
-            owl:deprecated "use gn:countryCode instead" .
+            owl:deprecated "Use gn:countryCode instead." .
 
 
 ###  https://schema.coypu.org/global#hasLanguage
@@ -788,7 +797,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Country ;
              rdfs:range xsd:string ;
-             rdfs:comment "a language spoken in a country"@en ;
+             rdfs:comment "A language spoken in a country."@en ;
              rdfs:label "has language"@en .
 
 
@@ -797,7 +806,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain :Location ;
              rdfs:range xsd:decimal ;
-             rdfs:comment "a latitude as defined in WGS 84"@en ;
+             rdfs:comment "A latitude as defined in WGS 84."@en ;
              rdfs:label "has latitude"@en ;
              rdfs:seeAlso geo:lat ,
                           schema:latitude ,
@@ -809,7 +818,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Company ;
               rdfs:range xsd:string ;
-              rdfs:comment "the legal form of a company"@en ;
+              rdfs:comment "The legal form of a company."@en ;
               rdfs:label "has legal form"@en .
 
 
@@ -818,7 +827,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Company ;
               rdfs:range xsd:string ;
-              rdfs:comment "the legal name of a company"@en ;
+              rdfs:comment "The legal name of a company."@en ;
               rdfs:label "has legal name"@en ;
               rdfs:seeAlso schema:legalName .
 
@@ -828,7 +837,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Company ;
             rdfs:range xsd:string ;
-            rdfs:comment "a legal entity identifier as defined in ISO 17442"@en ;
+            rdfs:comment "A legal entity identifier as defined in ISO 17442."@en ;
             rdfs:label "has lei code"@en ;
             rdfs:seeAlso schema:leiCode .
 
@@ -838,7 +847,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Location ;
               rdfs:range xsd:decimal ;
-              rdfs:comment "a longitude as defined in WGS 84"@en ;
+              rdfs:comment "A longitude as defined in WGS 84."@en ;
               rdfs:label "has longitude"@en ;
               rdfs:seeAlso geo:long ,
                            schema:longitude ,
@@ -858,7 +867,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                    owl:FunctionalProperty ;
                           rdfs:domain owl:Thing ;
                           rdfs:range xsd:dateTime ;
-                          rdfs:comment "the timestamp of the last modification"@en ;
+                          rdfs:comment "The instance of the last modification."@en ;
                           rdfs:label "has modification timestamp"@en .
 
 
@@ -867,7 +876,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                       owl:FunctionalProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range xsd:string ;
-             rdfs:comment "an industrial sector code as defined in the EU NACE standart"@en ;
+             rdfs:comment "An industrial sector code as defined in the EU NACE standard."@en ;
              rdfs:label "has nace code"@en .
 
 
@@ -876,11 +885,11 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                   owl:FunctionalProperty ;
          rdfs:domain owl:Thing ;
          rdfs:range xsd:string ;
-         rdfs:comment "the name of a thing"@en ;
+         rdfs:comment "The name of a thing."@en ;
          rdfs:label "has name"@en ;
          rdfs:seeAlso <http://dbpedia.org/property/name> ,
                       schema:name ;
-         owl:deprecated "use rdfs:label instead" .
+         owl:deprecated "Use rdfs:label instead." .
 
 
 ###  https://schema.coypu.org/global#hasNumberOfEmployees
@@ -888,7 +897,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                owl:FunctionalProperty ;
                       rdfs:domain :Company ;
                       rdfs:range xsd:positiveInteger ;
-                      rdfs:comment "the number of employees of a company (in a specified year)"@en ;
+                      rdfs:comment "The number of employees of a company (in a specified year)."@en ;
                       rdfs:label "has number of employees"@en ;
                       rdfs:seeAlso <http://dbpedia.org/property/numEmployees> ,
                                    schema:numberOfEmployees .
@@ -900,7 +909,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                 rdf:type owl:FunctionalProperty ;
                 rdfs:domain :Timespan ;
                 rdfs:range xsd:boolean ;
-                rdfs:comment "denotes an event as ongoing"@en ;
+                rdfs:comment "The timespan denoting an event as ongoing."@en ;
                 rdfs:label "has ongoing span"@en .
 
 
@@ -934,7 +943,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain :Company ;
                 rdfs:range xsd:string ;
-                rdfs:comment "a phone number (should be normalized)"@en ;
+                rdfs:comment "A company's phone number (should be normalized)."@en ;
                 rdfs:label "has phone number"@en ;
                 rdfs:seeAlso schema:telephone .
 
@@ -942,9 +951,9 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#hasPopulation
 :hasPopulation rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
-               rdfs:domain :Country ;
+               rdfs:domain owl:Thing ;
                rdfs:range xsd:positiveInteger ;
-               rdfs:comment "the number of people inhabiting a country"@en ;
+               rdfs:comment "The number of people inhabiting a country or city."@en ;
                rdfs:label "has population"@en .
 
 
@@ -953,7 +962,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                    owl:FunctionalProperty ;
           rdfs:domain :Product ;
           rdfs:range xsd:decimal ;
-          rdfs:comment "a product price (at a specified date in a specified currency)"@en ;
+          rdfs:comment "The monetary value of a product (at a specified date in a specified currency)."@en ;
           rdfs:label "has price"@en .
 
 
@@ -962,7 +971,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                     owl:FunctionalProperty ;
            rdfs:domain :Company ;
            rdfs:range xsd:decimal ;
-           rdfs:comment "the profit of a company (for a specified year in a specified currency)"@en ;
+           rdfs:comment "The profit of a company (for a specified year in a specified currency)."@en ;
            rdfs:label "has profit"@en .
 
 
@@ -971,7 +980,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Event ;
               rdfs:range xsd:string ;
-              rdfs:comment "the publisher of an event"@en ;
+              rdfs:comment "The originating entity of an event snippet."@en ;
               rdfs:label "has publisher"@en .
 
 
@@ -980,7 +989,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Company ;
             rdfs:range xsd:string ;
-            rdfs:comment "the stated purpose of an organization"@en ;
+            rdfs:comment "The stated purpose of an organization."@en ;
             rdfs:label "has purpose"@en .
 
 
@@ -989,7 +998,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain owl:Thing ;
             rdfs:range xsd:string ;
-            rdfs:comment "HTML code of a web extract"@en ;
+            rdfs:comment "The HTML code of a web extract."@en ;
             rdfs:label "has raw html"@en .
 
 
@@ -1006,7 +1015,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      owl:FunctionalProperty ;
             rdfs:domain :Company ;
             rdfs:range xsd:decimal ;
-            rdfs:comment "the revenue of a company (for a specified year in a specified currency)"@en ;
+            rdfs:comment "The revenue of a company (for a specified year in a specified currency)."@en ;
             rdfs:label "has revenue"@en ;
             rdfs:seeAlso schema:yearlyRevenue .
 
@@ -1016,7 +1025,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Country ;
               rdfs:range xsd:decimal ;
-              rdfs:comment "the risk level of a country as defined by Weltrisikobericht"@en ;
+              rdfs:comment "The risk level of a country as defined by Weltrisikobericht."@en ;
               rdfs:label "has risk level"@en ;
               rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -1026,7 +1035,6 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Event ;
               rdfs:range xsd:decimal ;
-              rdfs:comment "the risk score of an event"@en ;
               rdfs:label "has risk score"@en .
 
 
@@ -1035,7 +1043,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                             owl:FunctionalProperty ;
                    rdfs:domain :Company ;
                    rdfs:range xsd:anyURI ;
-                   rdfs:comment "a company social media profile url"@en ;
+                   rdfs:comment "A company's social media profile identifier."@en ;
                    rdfs:label "has social media url"@en .
 
 
@@ -1044,7 +1052,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
            rdfs:subPropertyOf owl:topDataProperty ;
            rdf:type owl:FunctionalProperty ;
            rdfs:domain owl:Thing ;
-           rdfs:comment "the source url or dataset of an entity"@en ;
+           rdfs:comment "The source IRI, URL or dataset of an entity."@en ;
            rdfs:label "has source"@en .
 
 
@@ -1069,7 +1077,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                     owl:FunctionalProperty ;
            rdfs:domain :Company ;
            rdfs:range xsd:string ;
-           rdfs:comment "a street address"@en ;
+           rdfs:comment "A street address."@en ;
            rdfs:label "has street"@en ;
            rdfs:seeAlso schema:streetAddress .
 
@@ -1079,7 +1087,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                             owl:FunctionalProperty ;
                    rdfs:domain :Country ;
                    rdfs:range xsd:decimal ;
-                   rdfs:comment "the susceptibility of a country as defined by Weltrisikobericht"@en ;
+                   rdfs:comment "The susceptibility of a country as defined by Weltrisikobericht."@en ;
                    rdfs:label "has susceptibility"@en ;
                    rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -1089,7 +1097,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  owl:FunctionalProperty ;
         rdfs:domain owl:Thing ;
         rdfs:range xsd:string ;
-        rdfs:comment "a tag used for grouping and sorting (like \"corona\" or \"covid-19\")"@en ;
+        rdfs:comment "A tag used for grouping and sorting (like \"corona\" or \"covid-19\")."@en ;
         rdfs:label "has tag"@en .
 
 
@@ -1098,7 +1106,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                        owl:FunctionalProperty ;
               rdfs:domain :Event ;
               rdfs:range xsd:dateTime ;
-              rdfs:comment "the timestamp of an event"@en ;
+              rdfs:comment "The instant an event happened or was processed."@en ;
               rdfs:label "has timestamp"@en .
 
 
@@ -1114,7 +1122,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  owl:FunctionalProperty ;
         rdfs:domain owl:Thing ;
         rdfs:range xsd:anyURI ;
-        rdfs:comment "the url of a web resource"@en ;
+        rdfs:comment "The IRI of a web resource."@en ;
         rdfs:label "has url"@en ;
         rdfs:seeAlso <http://dbpedia.org/property/website> ,
                      schema:url .
@@ -1132,7 +1140,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  owl:FunctionalProperty ;
         rdfs:domain :Company ;
         rdfs:range xsd:string ;
-        rdfs:comment "the vat id of a company"@en ;
+        rdfs:comment "The VAT ID of a company."@en ;
         rdfs:label "has vat"@en ;
         rdfs:seeAlso schema:vatID .
 
@@ -1142,7 +1150,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                         owl:FunctionalProperty ;
                rdfs:domain :Product ;
                rdfs:range xsd:decimal ;
-               rdfs:comment "the volatility of a product price (at a specified date)"@en ;
+               rdfs:comment "The volatility of a product price (at a specified date)."@en ;
                rdfs:label "has volatility"@en .
 
 
@@ -1151,7 +1159,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                            owl:FunctionalProperty ;
                   rdfs:domain :Country ;
                   rdfs:range xsd:decimal ;
-                  rdfs:comment "the vulnerability of a country as defined by Weltrisikobericht"@en ;
+                  rdfs:comment "The vulnerability of a country as defined by Weltrisikobericht."@en ;
                   rdfs:label "has vulnerability"@en ;
                   rdfs:seeAlso <https://weltrisikobericht.de> .
 
@@ -1161,7 +1169,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                  owl:FunctionalProperty ;
         rdfs:domain :Company ;
         rdfs:range xsd:string ;
-        rdfs:comment "a zip code"@en ;
+        rdfs:comment "The ZIP code of an address."@en ;
         rdfs:label "has zip"@en ;
         rdfs:seeAlso schema:postalCode .
 
@@ -1171,7 +1179,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                    owl:FunctionalProperty ;
           rdfs:domain :Company ;
           rdfs:range xsd:boolean ;
-          rdfs:comment "the economic status of a company (active or inactive)"@en ;
+          rdfs:comment "The economic status of a company (active or inactive)."@en ;
           rdfs:label "is active"@en .
 
 
@@ -1199,7 +1207,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Airport
 :Airport rdf:type owl:Class ;
          rdfs:subClassOf :Infrastructure ;
-         rdfs:comment "a logistics hub for air freight"@en ;
+         rdfs:comment "A logistics hub for air freight."@en ;
          rdfs:label "Airport"@en ;
          rdfs:seeAlso "http://www.wikidata.org/entity/Q1248784" .
 
@@ -1225,7 +1233,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Battle
 :Battle rdf:type owl:Class ;
         rdfs:subClassOf :ViolentEvent ;
-        rdfs:comment "ACLED defines a battle as “a violent interaction between two politically organized armed groups at a particular time and location.”"@en ;
+        rdfs:comment "A violent interaction between two politically organized armed groups at a particular time and location."@en ;
         rdfs:label "Battle"@en .
 
 
@@ -1239,7 +1247,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#City
 :City rdf:type owl:Class ;
       rdfs:subClassOf :Location ;
-      rdfs:comment "a center of population, commerce, and culture; a town of significant size and importance"@en ;
+      rdfs:comment "A center of population, commerce, and culture; a town of significant size and importance."@en ;
       rdfs:label "City"@en ;
       rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
                    schema:City ,
@@ -1249,7 +1257,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Commodity
 :Commodity rdf:type owl:Class ;
            rdfs:subClassOf :Product ;
-           rdfs:comment "a commodity good or production material"@en ;
+           rdfs:comment "A commodity good or production material."@en ;
            rdfs:label "Commodity"@en ;
            rdfs:seeAlso "http://www.wikidata.org/entity/Q317088" .
 
@@ -1257,7 +1265,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Company
 :Company rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
-         rdfs:comment "an organization engaged in economic activities"@en ;
+         rdfs:comment "An organization engaged in economic activities."@en ;
          rdfs:label "Company"@en ;
          rdfs:seeAlso dbo:Company ,
                       schema:Corporation ,
@@ -1267,14 +1275,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Conflict
 :Conflict rdf:type owl:Class ;
           rdfs:subClassOf :Event ;
-          rdfs:comment "Armed Conflict Location & Event Data"@en ;
+          rdfs:comment "An event of disagreement or disharmony between organizations, persons or ideas."@en ;
           rdfs:label "Conflict"@en .
 
 
 ###  https://schema.coypu.org/global#Continent
 :Continent rdf:type owl:Class ;
            rdfs:subClassOf :Location ;
-           rdfs:comment "a large landmass of the globe, usually comprising several countries"@en ;
+           rdfs:comment "A large landmass of the globe, usually comprising several countries."@en ;
            rdfs:label "Continent"@en ;
            rdfs:seeAlso "https://schema.org/Continent"@en .
 
@@ -1282,7 +1290,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Country
 :Country rdf:type owl:Class ;
          rdfs:subClassOf :Location ;
-         rdfs:comment "the territory under jurisdiction of a nation state"@en ;
+         rdfs:comment "The territory under jurisdiction of a nation state."@en ;
          rdfs:label "Country"@en ;
          rdfs:seeAlso <https://dbpedia.org/ontology/Country> ,
                       schema:Country .
@@ -1291,13 +1299,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#CountryStatistic
 :CountryStatistic rdf:type owl:Class ;
                   rdfs:subClassOf :Feature ;
+                  rdfs:comment "An annotation for the United Nations Sustainable Development Goals dataset."@en ;
                   rdfs:label "CountryStatistic"@en .
 
 
 ###  https://schema.coypu.org/global#Customer
 :Customer rdf:type owl:Class ;
           rdfs:subClassOf :Company ;
-          rdfs:comment "Organization that sources something needed such as a product or service from another organization"@en ;
+          rdfs:comment "An organization that sources something needed such as a product or service from another organization."@en ;
           rdfs:label "Customer"@en .
 
 
@@ -1310,7 +1319,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Disaster
 :Disaster rdf:type owl:Class ;
           rdfs:subClassOf :Event ;
-          rdfs:comment "a natural or technological disaster"@en ;
+          rdfs:comment "An occurrence causing widespread destruction and distress."@en ;
           rdfs:label "Disaster"@en ;
           rdfs:seeAlso <https://www.emdat.be/guidelines> ,
                        "http://www.wikidata.org/entity/Q3839081" .
@@ -1325,9 +1334,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Event
 :Event rdf:type owl:Class ;
        rdfs:subClassOf owl:Thing ;
-       rdfs:comment "an event related to a specific location with a singular occurence"@en ;
-       rdfs:label "Ereignis"@de ,
-                  "Event"@en ;
+       rdfs:comment "An event related to a specific location with a singular occurence."@en ;
+       rdfs:label "Event"@en ;
        rdfs:seeAlso <https://dbpedia.org/ontology/Event> ,
                     schema:Event ,
                     "http://www.cidoc-crm.org/cidoc-crm/E5_Event"@en .
@@ -1342,21 +1350,21 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#ExiobaseIndustry
 :ExiobaseIndustry rdf:type owl:Class ;
                   rdfs:subClassOf :Industry ;
-                  rdfs:comment "a sector classification from the Exiobase dataset"@en ;
+                  rdfs:comment "A sector classification from the Exiobase dataset."@en ;
                   rdfs:label "ExiobaseIndustry"@en .
 
 
 ###  https://schema.coypu.org/global#Factory
 :Factory rdf:type owl:Class ;
          rdfs:subClassOf :Infrastructure ;
-         rdfs:comment "a factory or production site"@en ;
+         rdfs:comment "A factory or production site."@en ;
          rdfs:label "Factory"@en ;
          rdfs:seeAlso "http://www.wikidata.org/entity/Q83405" .
 
 
 ###  https://schema.coypu.org/global#Feature
 :Feature rdf:type owl:Class ;
-         rdfs:comment "an annotation or reification class for specific datasets"@en ;
+         rdfs:comment "An annotation or reification class for specific datasets."@en ;
          rdfs:label "Feature"@en .
 
 
@@ -1381,9 +1389,8 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Industry
 :Industry rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
-          rdfs:comment "an industry or economic sector"@en ;
-          rdfs:label "Industry"@en ,
-                     "Wirtschaftszweig"@de ;
+          rdfs:comment "An industry or economic sector."@en ;
+          rdfs:label "Industry"@en ;
           rdfs:seeAlso "http://www.wikidata.org/entity/Q8148" ;
           skos:prefLabel "Sector"@en .
 
@@ -1391,13 +1398,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Infrastructure
 :Infrastructure rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing ;
-                rdfs:comment "a facility providing critical infrastructure for production or logistics"@en ;
+                rdfs:comment "A facility providing critical infrastructure for production or logistics."@en ;
                 rdfs:label "Infrastructure"@en ;
                 rdfs:seeAlso "http://www.wikidata.org/entity/Q121359" .
 
 
 ###  https://schema.coypu.org/global#Location
 :Location rdf:type owl:Class ;
+          rdfs:comment "A place on the globe."@en ;
           rdfs:label "Location"@en ;
           rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"@en .
 
@@ -1405,7 +1413,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Material
 :Material rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
-          rdfs:comment "a substance or resource which is required for producing other goods"@en ;
+          rdfs:comment "A substance or resource which is required for producing other goods."@en ;
           rdfs:label "Material"@en .
 
 
@@ -1418,7 +1426,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#News
 :News rdf:type owl:Class ;
       rdfs:subClassOf :Event ;
-      rdfs:comment "a newspaper article, social media posting or press release"@en ;
+      rdfs:comment "A newspaper article, social media posting or press release."@en ;
       rdfs:label "News"@en ;
       rdfs:seeAlso "http://www.wikidata.org/entity/Q38926" .
 
@@ -1444,7 +1452,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#OsmElement
 :OsmElement rdf:type owl:Class ;
             rdfs:subClassOf :Feature ;
-            rdfs:comment "an Open Street Map reference"@en ;
+            rdfs:comment "An Open Street Map reference."@en ;
             rdfs:label "OsmElement"@en .
 
 
@@ -1463,14 +1471,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Pipeline
 :Pipeline rdf:type owl:Class ;
           rdfs:subClassOf :Infrastructure ;
-          rdfs:comment "a gas, oil or hydrogen pipeline"@en ;
+          rdfs:comment "A gas, oil or hydrogen pipeline."@en ;
           rdfs:label "Pipeline"@en .
 
 
 ###  https://schema.coypu.org/global#Port
 :Port rdf:type owl:Class ;
       rdfs:subClassOf :Infrastructure ;
-      rdfs:comment "a logictics hub for shipping"@en ;
+      rdfs:comment "A logictics hub for shipping."@en ;
       rdfs:label "Port"@en ;
       rdfs:seeAlso "http://www.wikidata.org/entity/Q44782" .
 
@@ -1478,7 +1486,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Powerplant
 :Powerplant rdf:type owl:Class ;
             rdfs:subClassOf :Infrastructure ;
-            rdfs:comment "a facility for generating electric power"@en ;
+            rdfs:comment "A facility for generating electric power."@en ;
             rdfs:label "Powerplant"@en ;
             rdfs:seeAlso "http://www.wikidata.org/entity/Q159719" .
 
@@ -1486,7 +1494,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Product
 :Product rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
-         rdfs:comment "a product is any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user"@en ;
+         rdfs:comment "Any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en ;
          rdfs:label "Product"@en ;
          rdfs:seeAlso dbr:Material ,
                       schema:Product .
@@ -1505,10 +1513,17 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          rdfs:label "Protest with intervention"@en .
 
 
+###  https://schema.coypu.org/global#RailwaySegment
+:RailwaySegment rdf:type owl:Class ;
+                rdfs:subClassOf :Infrastructure ;
+                rdfs:comment "A railway track between train stations."@en ;
+                rdfs:label "RailwaySegment"@en .
+
+
 ###  https://schema.coypu.org/global#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :Location ;
-        rdfs:comment "an administrative or economic area"@en ;
+        rdfs:comment "An administrative or economic area."@en ;
         rdfs:label "Region"@en ;
         rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
                      schema:AdministrativeArea ,
@@ -1518,21 +1533,21 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#RegionalIndustry
 :RegionalIndustry rdf:type owl:Class ;
                   rdfs:subClassOf :Industry ;
-                  rdfs:comment "a country- or region-specific instance of an industry"@en ;
+                  rdfs:comment "A regional instance of an industry."@en ;
                   rdfs:label "RegionalIndustry"@en .
 
 
 ###  https://schema.coypu.org/global#RegionalIndustryCoefficient
 :RegionalIndustryCoefficient rdf:type owl:Class ;
                              rdfs:subClassOf :Feature ;
-                             rdfs:comment "the quantified dependency of a RegionalIndustry to another"@en ;
+                             rdfs:comment "The quantified dependency of a RegionalIndustry to another, from the Exiobase dataset."@en ;
                              rdfs:label "RegionalIndustryCoefficient"@en .
 
 
 ###  https://schema.coypu.org/global#Riot
 :Riot rdf:type owl:Class ;
       rdfs:subClassOf :Demonstration ;
-      rdfs:comment "‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts, including but not limited to rock throwing, property destruction, etc."@en ;
+      rdfs:comment "A violent event where demonstrators or mobs engage in disruptive acts, including but not limited to rock throwing, property destruction, etc."@en ;
       rdfs:label "Riot"@en .
 
 
@@ -1546,7 +1561,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
-         rdfs:comment "an economic activity that is done for others as an occupation or business"@en ;
+         rdfs:comment "An economic activity that is done for others as an occupation or business."@en ;
          rdfs:label "Service"@en .
 
 
@@ -1559,6 +1574,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#SocioPoliticalEvent
 :SocioPoliticalEvent rdf:type owl:Class ;
                      rdfs:subClassOf :Event ;
+                     rdfs:comment "An event of socio-political relevance, from the IECWS dataset."@en ;
                      rdfs:label "SocioPoliticalEvent" ;
                      rdfs:seeAlso "https://dataverse.harvard.edu/dataverse/icews" .
 
@@ -1566,7 +1582,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#StrategicDevelopment
 :StrategicDevelopment rdf:type owl:Class ;
                       rdfs:subClassOf :NonViolentAction ;
-                      rdfs:comment "This event type captures contextually important information regarding the activities of violent groups that is not itself recorded as political violence, yet may trigger future events or contribute to political dynamics within and across states."@en ;
+                      rdfs:comment "An activity of a violent group that is not itself recorded as political violence, yet may trigger future events or contribute to political dynamics within and across states."@en ;
                       rdfs:label "StrategicDevelopments"@en .
 
 
@@ -1579,7 +1595,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Supplier
 :Supplier rdf:type owl:Class ;
           rdfs:subClassOf :Company ;
-          rdfs:comment "Organization that provides something needed such as a product or service"@en ;
+          rdfs:comment "An organization that provides something needed such as a product or service to another organization."@en ;
           rdfs:label "Supplier"@en ;
           rdfs:seeAlso "http://www.w3id.org/ecsel-dr-OM#Supplier"@en .
 
@@ -1587,28 +1603,28 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Terminal
 :Terminal rdf:type owl:Class ;
           rdfs:subClassOf :Infrastructure ;
-          rdfs:comment "a terminal to connect gas pipelines"@en ;
+          rdfs:comment "A terminal to connect pipelines."@en ;
           rdfs:label "Terminal"@en .
 
 
 ###  https://schema.coypu.org/global#Timespan
 :Timespan rdf:type owl:Class ;
           rdfs:subClassOf :Feature ;
-          rdfs:comment "a period or duration"@en ;
+          rdfs:comment "A period or duration."@en ;
           rdfs:label "Timespan"@en .
 
 
-###  https://schema.coypu.org/global#Trainstation
-:Trainstation rdf:type owl:Class ;
+###  https://schema.coypu.org/global#TrainStation
+:TrainStation rdf:type owl:Class ;
               rdfs:subClassOf :Infrastructure ;
-              rdfs:comment "a logistics hub for rail freight"@en ;
-              rdfs:label "Trainstation"@en .
+              rdfs:comment "A logistics hub for rail freight."@en ;
+              rdfs:label "TrainStation"@en .
 
 
 ###  https://schema.coypu.org/global#ViolenceAgainstCivilians
 :ViolenceAgainstCivilians rdf:type owl:Class ;
                           rdfs:subClassOf :ViolentEvent ;
-                          rdfs:comment "ACLED defines a battle as “a violent interaction between two politically organized armed groups at a particular time and location."@en ;
+                          rdfs:comment "A violent interaction between two politically organized armed groups at a particular time and location."@en ;
                           rdfs:label "Violence against civilians"@en .
 
 
@@ -1621,14 +1637,13 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#ViolentEvent
 :ViolentEvent rdf:type owl:Class ;
               rdfs:subClassOf :Conflict ;
-              rdfs:comment "an armed conflict, battle, explosion or violence against civilians" ;
               rdfs:label "ViolentEvent"@en .
 
 
 ###  https://schema.coypu.org/global#WikiNews
 :WikiNews rdf:type owl:Class ;
           rdfs:subClassOf :Event ;
-          rdfs:comment "a current news event extracted from Wikipedia"@en ;
+          rdfs:comment "A current news event extracted from Wikipedia."@en ;
           rdfs:label "WikiNews"@en ;
           rdfs:seeAlso "https://en.wikipedia.org/wiki/Portal:Current_events" .
 
@@ -1654,7 +1669,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#Explosion%2FRemoteViolence
 <https://schema.coypu.org/global#Explosion%2FRemoteViolence> rdf:type owl:Class ;
                                                              rdfs:subClassOf :ViolentEvent ;
-                                                             rdfs:comment "ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond”."@en ;
+                                                             rdfs:comment "A one-sided violent event in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond."@en ;
                                                              rdfs:label "Explosion or remote violence"@en .
 
 
@@ -1679,13 +1694,14 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/gta#GlobalTradeAlert
 <https://schema.coypu.org/gta#GlobalTradeAlert> rdf:type owl:Class ;
                                                 rdfs:subClassOf :Event ;
+                                                rdfs:comment "An event of economic disturbance, from the GTA dataset."@en ;
                                                 rdfs:label "GlobalTradeAlert"@en .
 
 
 ###  https://schema.coypu.org/gta#GlobalTradeAlertFeature
 <https://schema.coypu.org/gta#GlobalTradeAlertFeature> rdf:type owl:Class ;
                                                        rdfs:subClassOf :Feature ;
-                                                       rdfs:comment "annotation for the Global Trade Alert dataset"@en ;
+                                                       rdfs:comment "An annotation for the Global Trade Alert dataset."@en ;
                                                        rdfs:label "GlobalTradeAlertFeature"@en .
 
 
@@ -1699,7 +1715,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/world-port-index#PortFeature
 <https://schema.coypu.org/world-port-index#PortFeature> rdf:type owl:Class ;
                                                         rdfs:subClassOf :Feature ;
-                                                        rdfs:comment "annotation for the World Port Index dataset"@en ;
+                                                        rdfs:comment "An annotation for the World Port Index dataset."@en ;
                                                         rdfs:label "PortFeature"@en .
 
 

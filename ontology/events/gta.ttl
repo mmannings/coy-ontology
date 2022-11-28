@@ -154,7 +154,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                                   ]
                                                 )
                          ] ;
-              rdfs:comment "The GTA uses the Harmonised System (HS, version 2012) at the 6-digit level. At this level, the Harmonised System includes more than 5’000 different products. Each product is commonly referred to as its own “tariff line”. The details of this classification and its correspondence to others are available from the World Customs Organisation. The United Nations Statistics Division published a helpful summary."@en ;
+              rdfs:comment "The GTA uses the Harmonised System (HS, version 2012) at the 6-digit level. At this level, the Harmonised System includes more than 5000 different products. Each product is commonly referred to as its own 'tariff line'. The details of this classification and its correspondence to others are available from the World Customs Organisation."@en ;
               rdfs:label "has product id"@en .
 
 
@@ -250,8 +250,7 @@ removal date."""@en ;
 ###  https://schema.coypu.org/gta#AffectedCommercialFlow
 :AffectedCommercialFlow rdf:type owl:Class ;
                         rdfs:subClassOf :GlobalTradeAlertFeature ;
-                        rdfs:comment """The affected commercial flow field includes the predominantly affected flow direction. There are three
-potential values. Only one value can be assigned to each intervention."""@en ;
+                        rdfs:comment "The affected commercial flow field includes the predominantly affected flow direction. There are three potential values. Only one value can be assigned to each intervention."@en ;
                         rdfs:label "AffectedCommercialFlow"@en .
 
 
@@ -297,8 +296,7 @@ potential values. Only one value can be assigned to each intervention."""@en ;
 ###  https://schema.coypu.org/gta#ImplementationLevel
 :ImplementationLevel rdf:type owl:Class ;
                      rdfs:subClassOf :GlobalTradeAlertFeature ;
-                     rdfs:comment """The GTA database differentiates the announcements of different government levels or agencies. In total, it
-distinguishes 6 different actors."""@en ;
+                     rdfs:comment "The GTA database differentiates the announcements of different government levels or agencies. In total, it distinguishes 6 different actors."@en ;
                      rdfs:label "ImplementationLevel"@en .
 
 

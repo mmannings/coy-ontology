@@ -46,7 +46,7 @@ world-port-index:hasDryDock rdf:type owl:ObjectProperty ,
                                      owl:FunctionalProperty ;
                             rdfs:domain <https://schema.coypu.org/global#Port> ;
                             rdfs:range world-port-index:DryDockSizeClass ;
-                            rdfs:label "has dry dock size" .
+                            rdfs:label "has dry dock size"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#hasPortSize
@@ -54,15 +54,15 @@ world-port-index:hasPortSize rdf:type owl:ObjectProperty ,
                                       owl:FunctionalProperty ;
                              rdfs:domain <https://schema.coypu.org/global#Port> ;
                              rdfs:range world-port-index:SizeClass ;
-                             rdfs:comment "the harbor size class as defined by the World Port Index" ;
-                             rdfs:label "has harbor size" .
+                             rdfs:comment "The harbor size class as defined by the World Port Index dataset."@en ;
+                             rdfs:label "has harbor size"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#hasRailway
 world-port-index:hasRailway rdf:type owl:ObjectProperty ;
                             rdfs:domain <https://schema.coypu.org/global#Port> ;
                             rdfs:range world-port-index:MarineRailwaySizeClass ;
-                            rdfs:label "has marine railway size" .
+                            rdfs:label "has marine railway size"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#hasRepairs
@@ -70,8 +70,8 @@ world-port-index:hasRepairs rdf:type owl:ObjectProperty ,
                                      owl:FunctionalProperty ;
                             rdfs:domain <https://schema.coypu.org/global#Port> ;
                             rdfs:range world-port-index:RepairClass ;
-                            rdfs:comment "Repairs that can be made to ocean-going vessels" ;
-                            rdfs:label "has repair possibilities" .
+                            rdfs:comment "Repairs that can be made to ocean-going vessels"@en ;
+                            rdfs:label "has repair possibilities"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#hasShelter
@@ -79,20 +79,20 @@ world-port-index:hasShelter rdf:type owl:ObjectProperty ,
                                      owl:FunctionalProperty ;
                             rdfs:domain <https://schema.coypu.org/global#Port> ;
                             rdfs:range world-port-index:ShelterClass ;
-                            rdfs:comment "The shelter afforded from wind, sea, and swell, refers to the area where normal port operations are conducted, usually the wharf area. Shelter afforded the anchorage area is given for ports where cargo is handled by lighters" ;
-                            rdfs:label "has sheltered afforded" .
+                            rdfs:comment "The shelter afforded from wind, sea, and swell, refers to the area where normal port operations are conducted, usually the wharf area. Shelter afforded the anchorage area is given for ports where cargo is handled by lighters"@en ;
+                            rdfs:label "has sheltered afforded"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#isBetterThan
 world-port-index:isBetterThan rdf:type owl:ObjectProperty ;
                               rdfs:domain <https://schema.coypu.org/global#Port> ;
-                              rdfs:label "is better than" .
+                              rdfs:label "is better than"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#isLargerThan
 world-port-index:isLargerThan rdf:type owl:ObjectProperty ;
                               rdfs:domain <https://schema.coypu.org/global#Port> ;
-                              rdfs:label "is larger than" .
+                              rdfs:label "is larger than"@en .
 
 
 #################################################################
@@ -113,7 +113,7 @@ world-port-index:hasCargoDepth rdf:type owl:DatatypeProperty ,
                                         owl:FunctionalProperty ;
                                rdfs:domain <https://schema.coypu.org/global#Port> ;
                                rdfs:range xsd:decimal ;
-                               rdfs:comment "The greatest cargo pier/wharf depth in metres. The greatest depth at chart datum alongside the respective wharf/pier is given. If there is more than one wharf/pier, then the one which has greatest usable depth is shown. For example, if there are three cargo/container piers with depths of 23 feet (7.0 meters), 33 feet (10.1 meters), and 43 feet (13.1 meters), then Code H, representing the deepest depth of 43 feet (13.1 meters), would be entered into the World Port Index."@en ;
+                               rdfs:comment "The greatest cargo pier/wharf depth in metres. The greatest depth at chart datum alongside the respective wharf/pier is given. If there is more than one wharf/pier, then the one which has greatest usable depth is shown."@en ;
                                rdfs:label "has cargo depth"@en .
 
 
@@ -122,8 +122,7 @@ world-port-index:hasChannelDepth rdf:type owl:DatatypeProperty ,
                                           owl:FunctionalProperty ;
                                  rdfs:domain <https://schema.coypu.org/global#Port> ;
                                  rdfs:range xsd:decimal ;
-                                 rdfs:comment """The controlling depth of the deepest channel in metres. The controlling depth of the principal or deepest channel at chart datum is given. The channel selected should lead up to the anchorage if within the harbor or to the wharf/pier. If the channel depth decreases from the anchorage to the wharf/pier and cargo can be worked at the anchorage, then the depth leading to the anchorage is taken. Large ports may have sub-ports (smaller) which have their own number and entry in the World Port Index. The controlling depth of the channel should refer to a smaller channel (if present) leading from the main channel into the sub-port facilities and anchorages.
-Note.—The depth of small shoals is not a controlling depth unless it limits the passage of vessels. For example, if a channel is charted as having a depth of 39 feet (11.9 meters), but there are small shoals noted or charted with depths of 30 feet (9.1 meters), then the controlling depth is still 39 feet (11.9 meters) unless a ship with a draft of 39 feet (11.9 meters) cannot pass around the shoals and navigate the channel safely."""@en ;
+                                 rdfs:comment "The controlling depth of the deepest channel in metres. The controlling depth of the principal or deepest channel at chart datum is given. The channel selected should lead up to the anchorage if within the harbor or to the wharf/pier. If the channel depth decreases from the anchorage to the wharf/pier and cargo can be worked at the anchorage, then the depth leading to the anchorage is taken. Large ports may have sub-ports (smaller) which have their own number and entry in the World Port Index. The controlling depth of the channel should refer to a smaller channel (if present) leading from the main channel into the sub-port facilities and anchorages."@en ;
                                  rdfs:label "has channel depth"@en .
 
 
@@ -132,7 +131,7 @@ world-port-index:hasDepthMaximum rdf:type owl:DatatypeProperty ,
                                           owl:FunctionalProperty ;
                                  rdfs:domain <https://schema.coypu.org/global#Port> ;
                                  rdfs:range xsd:decimal ;
-                                 rdfs:comment "maximum depth in metres"@en ;
+                                 rdfs:comment "The maximum depth in metres."@en ;
                                  rdfs:label "has maximum depth"@en .
 
 
@@ -141,7 +140,7 @@ world-port-index:hasDepthMinimum rdf:type owl:DatatypeProperty ,
                                           owl:FunctionalProperty ;
                                  rdfs:domain <https://schema.coypu.org/global#Port> ;
                                  rdfs:range xsd:decimal ;
-                                 rdfs:comment "minimum depth in metres"@en ;
+                                 rdfs:comment "The minimum depth in metres."@en ;
                                  rdfs:label "has minimum depth"@en .
 
 
@@ -150,7 +149,7 @@ world-port-index:hasEntranceRestrictionIce rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
                                            rdfs:domain <https://schema.coypu.org/global#Port> ;
                                            rdfs:range xsd:boolean ;
-                                           rdfs:comment "Natural factor: ice restricting the entrance of vessels"@en ;
+                                           rdfs:comment "A natural factor of ice restricting the entrance of vessels."@en ;
                                            rdfs:label "has entrance restriction due to ice"@en .
 
 
@@ -159,7 +158,7 @@ world-port-index:hasEntranceRestrictionOther rdf:type owl:DatatypeProperty ,
                                                       owl:FunctionalProperty ;
                                              rdfs:domain <https://schema.coypu.org/global#Port> ;
                                              rdfs:range xsd:boolean ;
-                                             rdfs:comment "Other natural factors restricting the entrance of vessels"@en ;
+                                             rdfs:comment "Other natural factors restricting the entrance of vessels."@en ;
                                              rdfs:label "has other entrance restriction"@en .
 
 
@@ -168,7 +167,7 @@ world-port-index:hasEntranceRestrictionSwell rdf:type owl:DatatypeProperty ,
                                                       owl:FunctionalProperty ;
                                              rdfs:domain <https://schema.coypu.org/global#Port> ;
                                              rdfs:range xsd:boolean ;
-                                             rdfs:comment "Natural factor: heavy swell restricting the entrance of vessels"@en ;
+                                             rdfs:comment "A natural factor of heavy swell restricting the entrance of vessels."@en ;
                                              rdfs:label "has entrance restriction due to swell"@en .
 
 
@@ -177,7 +176,7 @@ world-port-index:hasEntranceRestrictionTide rdf:type owl:DatatypeProperty ,
                                                      owl:FunctionalProperty ;
                                             rdfs:domain <https://schema.coypu.org/global#Port> ;
                                             rdfs:range xsd:boolean ;
-                                            rdfs:comment "Natural factor: tide restricting the entrance of vessels"@en ;
+                                            rdfs:comment "A natural factor of tide restricting the entrance of vessels."@en ;
                                             rdfs:label "has entrance restriction due to tide"@en .
 
 
@@ -186,14 +185,14 @@ world-port-index:hasGoodHoldingGround rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
                                       rdfs:domain <https://schema.coypu.org/global#Port> ;
                                       rdfs:range xsd:boolean ;
-                                      rdfs:comment "Good Holding Ground: This is indicated only where actual anchorage conditions have been reported."@en ;
+                                      rdfs:comment "This is indicated only where actual anchorage conditions have been reported."@en ;
                                       rdfs:label "has good holding ground"@en .
 
 
 ###  https://schema.coypu.org/world-port-index#hasIndexNumber
 world-port-index:hasIndexNumber rdf:type owl:DatatypeProperty ,
                                          owl:FunctionalProperty ;
-                                rdfs:comment "Unique index assigned in the World Port Index"@en ;
+                                rdfs:comment "An unique index assigned in the World Port Index dataset."@en ;
                                 rdfs:isDefinedBy <https://msi.nga.mil/Publications/WPI> ;
                                 rdfs:label "has index number"@en .
 
@@ -203,7 +202,7 @@ world-port-index:hasLengthMaximum rdf:type owl:DatatypeProperty ,
                                            owl:FunctionalProperty ;
                                   rdfs:domain <https://schema.coypu.org/global#Port> ;
                                   rdfs:range xsd:decimal ;
-                                  rdfs:comment "maximum length in metres"@en ;
+                                  rdfs:comment "The maximum length in metres."@en ;
                                   rdfs:label "has maximum length"@en .
 
 
@@ -212,7 +211,7 @@ world-port-index:hasLengthMinimum rdf:type owl:DatatypeProperty ,
                                            owl:FunctionalProperty ;
                                   rdfs:domain <https://schema.coypu.org/global#Port> ;
                                   rdfs:range xsd:decimal ;
-                                  rdfs:comment "minimum length in metres"@en ;
+                                  rdfs:comment "The minimum length in metres."@en ;
                                   rdfs:label "has minimum length"@en .
 
 
@@ -245,7 +244,7 @@ world-port-index:hasOverheadLimitations rdf:type owl:DatatypeProperty ,
 ###  https://schema.coypu.org/world-port-index#hasPortName
 world-port-index:hasPortName rdf:type owl:DatatypeProperty ;
                              rdfs:domain <https://schema.coypu.org/global#Port> ;
-                             rdfs:comment "port name as listed in World Port Index"@en ;
+                             rdfs:comment "A port name as listed in the World Port Index dataset."@en ;
                              rdfs:label "has port name"@en .
 
 
@@ -254,8 +253,7 @@ world-port-index:hasTidesRange rdf:type owl:DatatypeProperty ,
                                         owl:FunctionalProperty ;
                                rdfs:domain <https://schema.coypu.org/global#Port> ;
                                rdfs:comment """The mean tides range in meters.
-The mean range is normally given for all ports outside of United States (U.S.) jurisdiction, but the mean rise is substituted if range data is not available. The distinction between range and rise can be disregarded without affecting the general utility of this publication.
-Note.—In the original data source, the mean range is given in feet for all US ports and ports under U.S. jurisdiction (Trust Territories, etc). For this mapping, US ports have their tides range converted to meters."""@en ;
+The mean range is normally given for all ports outside of United States (U.S.) jurisdiction, but the mean rise is substituted if range data is not available. The distinction between range and rise can be disregarded without affecting the general utility of this publication."""@en ;
                                rdfs:label "has tides range"@en .
 
 
@@ -264,7 +262,7 @@ world-port-index:hasTurningArea rdf:type owl:DatatypeProperty ,
                                          owl:FunctionalProperty ;
                                 rdfs:domain <https://schema.coypu.org/global#Port> ;
                                 rdfs:range xsd:boolean ;
-                                rdfs:comment "An indication that a turning basin or other water area for turning vessels is available in the port" ;
+                                rdfs:comment "An indication that a turning basin or other water area for turning vessels is available in the port." ;
                                 rdfs:label "has turning area"@en .
 
 
@@ -273,7 +271,7 @@ world-port-index:hasWeightMaximum rdf:type owl:DatatypeProperty ,
                                            owl:FunctionalProperty ;
                                   rdfs:domain <https://schema.coypu.org/global#Port> ;
                                   rdfs:range xsd:decimal ;
-                                  rdfs:comment "maximum weight in tons"@en ;
+                                  rdfs:comment "The maximum weight in tons."@en ;
                                   rdfs:label "has maximum weight"@en .
 
 
@@ -282,7 +280,7 @@ world-port-index:hasWeightMinimum rdf:type owl:DatatypeProperty ,
                                            owl:FunctionalProperty ;
                                   rdfs:domain <https://schema.coypu.org/global#Port> ;
                                   rdfs:range xsd:decimal ;
-                                  rdfs:comment "minimum weight in tons"@en ;
+                                  rdfs:comment "The minimum weight in tons."@en ;
                                   rdfs:label "has minimum weight"@en .
 
 

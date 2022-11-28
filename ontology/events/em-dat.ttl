@@ -47,7 +47,7 @@
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdf:type owl:FunctionalProperty ;
                     rdfs:domain coy:Disaster ;
-                    rdfs:comment "the GLIDE hazard code"@en ;
+                    rdfs:comment "The GLIDE hazard code."@en ;
                     rdfs:label "has glide hazard code"@en .
 
 
@@ -55,7 +55,7 @@
 :hasReliefWebIdentifier rdf:type owl:DatatypeProperty ,
                                  owl:FunctionalProperty ;
                         rdfs:domain coy:Disaster ;
-                        rdfs:comment "the ID of the corresponding distaster type in the ReliefWeb API V1"@en ;
+                        rdfs:comment "The ID of a corresponding distaster type from the ReliefWeb dataset."@en ;
                         rdfs:label "has reliefweb identifier"@en .
 
 
@@ -93,11 +93,7 @@
 ###  https://schema.coypu.org/em-dat#Avalanche
 :Avalanche rdf:type owl:Class ;
            rdfs:subClassOf :HydrologicalDisaster ;
-           rdfs:comment """A large mass of loosened earth material, snow, or ice that slides, flows or falls rapidly down a mountainside under the force of gravity.
-
-- Snow Avalanche: Rapid downslope movement of a mix of snow and ice.
-- Debris Avalanche: The sudden and very rapid downslope movement of unsorted mass of rock and soil. There are two general types of debris avalanches 
-- Cold-debris Avalanche usually results from an unstable slope suddenly collapsing whereas a hot debris avalanche results from volcanic activity leading to slope instability and collapse."""@en ;
+           rdfs:comment "A large mass of loosened earth material, snow, or ice that slides, flows or falls rapidly down a mountainside under the force of gravity."@en ;
            rdfs:label "Avalanche"@en .
 
 
@@ -326,7 +322,7 @@
 ###  https://schema.coypu.org/em-dat#IndustrialAccident
 :IndustrialAccident rdf:type owl:Class ;
                     rdfs:subClassOf :TechnologicalDisaster ;
-                    rdfs:comment "Disaster type term used in EM-DAT to describe technological accidents of an industrial nature/involving industrial buildings (e.g. factories)."@en ;
+                    rdfs:comment "A disaster involving entities of an industrial nature (e.g. factories)."@en ;
                     rdfs:label "Industrial accident"@en .
 
 
@@ -345,7 +341,7 @@
 ###  https://schema.coypu.org/em-dat#LandFire
 :LandFire rdf:type owl:Class ;
           rdfs:subClassOf :Wildfire ;
-          rdfs:comment "brush, bush, pasture" ;
+          rdfs:comment "A fire engulfing a brush, bush or pasture." ;
           rdfs:label "Land fire"@en .
 
 
@@ -364,7 +360,7 @@
 ###  https://schema.coypu.org/em-dat#LightningOrThunderstorm
 :LightningOrThunderstorm rdf:type owl:Class ;
                          rdfs:subClassOf :ConvectiveStorm ;
-                         rdfs:comment "Hazards/losses caused by lightning stroke. Lightning is an atmospheric discharge of electricity, which typically occurs during thunderstorms, and sometimes during volcanic eruptions or dust storms."@en ;
+                         rdfs:comment "Hazards or losses caused by lightning stroke. Lightning is an atmospheric discharge of electricity, which typically occurs during thunderstorms, and sometimes during volcanic eruptions or dust storms."@en ;
                          rdfs:label "Lightning or thunderstorm"@en .
 
 
@@ -391,7 +387,7 @@
 ###  https://schema.coypu.org/em-dat#MiscellanousAccident
 :MiscellanousAccident rdf:type owl:Class ;
                       rdfs:subClassOf :TechnologicalDisaster ;
-                      rdfs:comment "Disaster type term used in EM-DAT to describe technological accidents of a non-industrial or transport nature (e.g. houses)."@en ;
+                      rdfs:comment "A disaster related to non-industrial or transport entities (e.g. houses)."@en ;
                       rdfs:label "Miscellanous accident"@en .
 
 
@@ -492,7 +488,7 @@
 ###  https://schema.coypu.org/em-dat#SandOrDustStorm
 :SandOrDustStorm rdf:type owl:Class ;
                  rdfs:subClassOf :ConvectiveStorm ;
-                 rdfs:comment "A sandstorm/dust storm typically occurs in arid or semi-arid regions if high wind speeds cause the transportation of small particles like sand or fine clastic sediment by saltation and/or suspension. e.g. in deserts."@en ;
+                 rdfs:comment "A sandstorm or dust storm typically occurs in arid or semi-arid regions if high wind speeds cause the transportation of small particles like sand or fine clastic sediment by saltation and/or suspension. e.g. in deserts."@en ;
                  rdfs:label "Sand or dust storm"@en .
 
 
@@ -565,7 +561,7 @@
 ###  https://schema.coypu.org/em-dat#TransportAccident
 :TransportAccident rdf:type owl:Class ;
                    rdfs:subClassOf :TechnologicalDisaster ;
-                   rdfs:comment "Disaster type term used in EM-DAT to describe technological transport accidents involving mechanised modes of transport. It comprises of four disaster subsets: accidents involving aeroplanes, helicopters, airships and balloons « Transport:Air »; accidents involving sailing boats, ferries, cruise ships, other boats « Transport:Boat »; accidents involving trains « Transport:Rail »; and accidents involving motor vehicles on roads and tracks « Transport:Road »."@en ;
+                   rdfs:comment "A disaster involving motorized vehicles."@en ;
                    rdfs:label "Transport accident"@en .
 
 
@@ -617,7 +613,7 @@
 ###  https://schema.coypu.org/em-dat#WinterStormOrBlizzard
 :WinterStormOrBlizzard rdf:type owl:Class ;
                        rdfs:subClassOf :ConvectiveStorm ;
-                       rdfs:comment "A low pressure system in winter months with signiﬁcant accumulations of snow, freezing rain, sleet or ice. A blizzard is a severe snow storm with winds exceeding 35 mph (56 km/h) for three or more hours, producing reduced visibility (less than 0.25 mile (400 m))."@en ;
+                       rdfs:comment "A low pressure system in winter months with signiﬁcant accumulations of snow, freezing rain, sleet or ice. A blizzard is a severe snow storm with winds exceeding 50km/h for three or more hours, producing reduced visibility)."@en ;
                        rdfs:label "Winter storm or blizzard"@en .
 
 
@@ -763,8 +759,8 @@ coy:Disaster rdf:type owl:Class .
           rdfs:label "Cold wave"@en .
 
 
-:Drought rdfs:label "Drought"@en ;
-         rdfs:comment "An extended period of unusually low precipitation that produces a shortage of water for people, animals and plants. Drought is diﬀerent from most other hazards in that it develops slowly, sometimes even over years, and its onset is generally diﬃcult to detect. Drought is not solely a physical phenomenon because its impacts can be exacerbated by human activities and water supply demands. Drought is therefore often deﬁned both conceptually and operationally. Operational deﬁnitions of drought, meaning the degree of precipitation reduction that constitutes a drought, vary by locality, climate and environmental sector."@en .
+:Drought rdfs:comment "An extended period of unusually low precipitation that produces a shortage of water for people, animals and plants."@en ;
+         rdfs:label "Drought"@en .
 
 
 :Earthquake rdfs:comment "Sudden movement of a block of the Earth’s crust along a geological fault and associated ground shaking."@en ;
@@ -775,16 +771,16 @@ coy:Disaster rdf:type owl:Class .
           rdfs:comment "Either an unusual increase in the number of cases of an infectious disease, which already exists in the region or population concerned; or the appearance of an infection previously absent from a region."@en .
 
 
-:Extra-tropicalStorm rdfs:comment "A type of low-pressure cyclonic system in the middle and high latitudes (also called mid-latitude cyclone) that primarily gets its energy from the horizontal temperature contrasts (fronts) in the atmosphere. When associated with cold fronts, extratropical cyclones may be particularly damaging (e.g. European winter/windstorm, Nor’easter)."@en ;
-                     rdfs:label "Extra-tropical storm"@en .
+:Extra-tropicalStorm rdfs:label "Extra-tropical storm"@en ;
+                     rdfs:comment "A type of low-pressure cyclonic system in the middle and high latitudes (also called mid-latitude cyclone) that primarily gets its energy from the horizontal temperature contrasts (fronts) in the atmosphere. When associated with cold fronts, extratropical cyclones may be particularly damaging."@en .
 
 
 :Fire rdfs:comment "Urban fire involving buildings or structures. Can either involve industrial structures or domestic / non-industrial structures."@en ;
       rdfs:label "Fire"@en .
 
 
-:FlashFlood rdfs:comment "Rapid inland floods due to intense rainfall A flash flood describes sudden flooding with short duration. In sloped terrain the water flows rapidly with a high destruction potential. In flat terrain the rainwater cannot infiltrate into the ground or run off (due to small slope) as quickly as it falls. Flash floods typically are associated with thunderstorms. A flash flood can occur at virtually any place."@en ;
-            rdfs:label "Flash flood"@en .
+:FlashFlood rdfs:label "Flash flood"@en ;
+            rdfs:comment "Rapid inland floods due to intense rainfall A flash flood describes sudden flooding with short duration. In sloped terrain the water flows rapidly with a high destruction potential. In flat terrain the rainwater cannot infiltrate into the ground or run off (due to small slope) as quickly as it falls. Flash floods typically are associated with thunderstorms."@en .
 
 
 :Flood rdfs:comment "A general term for the overﬂow of water from a stream channel onto normally dry land in the ﬂoodplain (riverine ﬂooding), higher-than- normal levels along the coast and in lakes or reservoirs (coastal ﬂooding) as well as ponding of water at or near the point where the rain fell (ﬂash ﬂoods)."@en ;
@@ -802,8 +798,8 @@ coy:Disaster rdf:type owl:Class .
            rdfs:label "Landslide"@en .
 
 
-:Mudslide rdfs:label "Mudslide"@en ;
-          rdfs:comment "Mud slide (GLIDE hazard code: MS) is defined as a type of landslide, which occurs when the slope is saturated with water. This more destructive flow can pick up rocks, trees, houses and cars. As the debris moves into river and stream beds, bridges can become blocked or even collapse, making a temporary dam that can flood neighbouring areas."@en .
+:Mudslide rdfs:comment "A mud slide is defined as a type of landslide, which occurs when the slope is saturated with water. This more destructive flow can pick up rocks, trees, houses and cars. As the debris moves into river and stream beds, bridges can become blocked or even collapse, making a temporary dam that can flood neighbouring areas."@en ;
+          rdfs:label "Mudslide"@en .
 
 
 :Other rdfs:label "Other"@en .
@@ -827,7 +823,7 @@ coy:Disaster rdf:type owl:Class .
 
 
 :Tsunami rdfs:label "Tsunami"@en ;
-         rdfs:comment "« wave in the port » in Japanese: A series of waves (with long wavelengths when traveling across the deep ocean) that are generated by a displacement of massive amounts of water through underwater earthquakes, volcanic eruptions or landslides. Tsunami waves travel at very high speed across the ocean but as they begin to reach shallow water they slow down and the wave grows steeper."@en .
+         rdfs:comment "A series of waves (with long wavelengths when traveling across the deep ocean) that are generated by a displacement of massive amounts of water through underwater earthquakes, volcanic eruptions or landslides. Tsunami waves travel at very high speed across the ocean but as they begin to reach shallow water they slow down and the wave grows steeper."@en .
 
 
 :VolcanicActivity rdfs:comment "A type of volcanic event near an opening/vent in the Earth’s surface including volcanic eruptions of lava, ash, hot vapour, gas, and pyroclastic material."@en ;
