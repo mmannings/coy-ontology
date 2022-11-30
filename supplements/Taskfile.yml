@@ -10,7 +10,7 @@ vars:
 
   ONTOLOGY_IRI: https://schema.coypu.org/global#
   SCHEMA_FILE: "coy"
-  SCHEMA_DIR: {{.SHELL_PWD}}/../ontology/global
+  SCHEMA_DIR: '{{.SHELL_PWD}}/../ontology/global'
 
   DOCKER_PWD: /data
   DOCKER_DIRS: -v "{{.SCHEMA_DIR}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
