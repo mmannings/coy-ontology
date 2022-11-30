@@ -14,9 +14,20 @@
 #    Object Properties
 #################################################################
 
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#hasExports
+:hasExports rdf:type owl:ObjectProperty ;
+            rdfs:range :ExportsCountry ;
+            rdfs:label "has exports" .
+
+
 ###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#hasFinalDemand
 :hasFinalDemand rdf:type owl:ObjectProperty ;
                 rdfs:label "has final demand" .
+
+
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#hasImports
+:hasImports rdf:type owl:ObjectProperty ;
+            rdfs:label "has imports" .
 
 
 ###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#hasIndustryCode
@@ -45,9 +56,14 @@
 #    Classes
 #################################################################
 
-###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#FinalDemand
-:FinalDemand rdf:type owl:Class ;
-             rdfs:label "Final demand" .
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#ExportsCountry
+:ExportsCountry rdf:type owl:Class ;
+                rdfs:label "Exports" .
+
+
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#FinalDemandCountry
+:FinalDemandCountry rdf:type owl:Class ;
+                    rdfs:label "Final demand" .
 
 
 ###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#ISIC
@@ -56,6 +72,21 @@
       rdfs:comment "International standard industrial classification of all economic activities(ISIC), Rev. 4" ;
       rdfs:label "ISIC4" ;
       rdfs:seeAlso "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf" .
+
+
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#Imports
+:Imports rdf:type owl:Class ;
+         rdfs:label "Imports" .
+
+
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#OriginOfValueAddedInGrossExports
+:OriginOfValueAddedInGrossExports rdf:type owl:Class ;
+                                  rdfs:label "Origin of value added in gross exports" .
+
+
+###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#TradeInValueAdded
+:TradeInValueAdded rdf:type owl:Class ;
+                   rdfs:label "Trade in value added" .
 
 
 ###  https://schema.coypu.org/ontology/fdva-bcsi/fdva#ValueAddedOrigin
