@@ -30,7 +30,8 @@
                                                        "Natanael Arndt"@en ,
                                                        "Nenad Krdzavac"@en ,
                                                        "Simon Bin"@en ,
-                                                       "Till Grabo"@en ;
+                                                       "Till Grabo"@en ,
+                                                       "Malte Weber"@en ;
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
@@ -302,7 +303,8 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#hasRequirement
 :hasRequirement rdf:type owl:ObjectProperty ;
                 rdfs:domain :RegionalIndustryCoefficient ;
-                rdfs:range :RegionalIndustryCoefficient ;
+                rdfs:range :RegionalIndustry ;
+                rdfs:comment "The RegionalIndustry which produces the required preliminary product"@en ;
                 rdfs:label "has requirement"@en .
 
 
@@ -431,7 +433,8 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#isRequiredBy
 :isRequiredBy rdf:type owl:ObjectProperty ;
               rdfs:domain :RegionalIndustryCoefficient ;
-              rdfs:range :RegionalIndustryCoefficient ;
+              rdfs:range :RegionalIndustry ;
+              rdfs:comment "The RegionalIndustry which requires the preliminary product"@en ;
               rdfs:label "is required by"@en .
 
 
