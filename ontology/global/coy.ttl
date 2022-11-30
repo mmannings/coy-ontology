@@ -27,11 +27,11 @@
                                    dcterms:contributor "Andreas Schaefer"@en ,
                                                        "Felix Engel"@en ,
                                                        "Lorenz Bühmann"@en ,
+                                                       "Malte Weber"@en ,
                                                        "Natanael Arndt"@en ,
                                                        "Nenad Krdzavac"@en ,
                                                        "Simon Bin"@en ,
-                                                       "Till Grabo"@en ,
-                                                       "Malte Weber"@en ;
+                                                       "Till Grabo"@en ;
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
                                    dcterms:isVersionOf <https://schema.coypu.org/global> ;
@@ -251,7 +251,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
              owl:inverseOf :isLocationOf ;
              rdfs:domain owl:Thing ;
              rdfs:range :Location ;
-             rdfs:comment "The location an event, company or critical infrastructure is located at."@en ;
+             rdfs:comment "The place an event, company or critical infrastructure is located at."@en ;
              rdfs:label "has location"@en ;
              rdfs:seeAlso schema:location ,
                           "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" .
@@ -296,7 +296,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain :Industry ;
                      rdfs:range :RegionalIndustry ;
-                     rdfs:comment "A sector located in a specific country, from the Exiobase dataset."@en ;
+                     rdfs:comment "The related regional sector, from the Exiobase dataset."@en ;
                      rdfs:label "has regional industry"@en .
 
 
@@ -304,7 +304,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasRequirement rdf:type owl:ObjectProperty ;
                 rdfs:domain :RegionalIndustryCoefficient ;
                 rdfs:range :RegionalIndustry ;
-                rdfs:comment "The RegionalIndustry which produces the required preliminary product"@en ;
+                rdfs:comment "The RegionalIndustry which produces a required preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en ;
                 rdfs:label "has requirement"@en .
 
 
@@ -321,6 +321,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasSubRegion rdf:type owl:ObjectProperty ;
               rdfs:domain :Location ;
               rdfs:range :Region ;
+              rdfs:comment "A geographical or administrative subset of a larger region or country."@en ;
               rdfs:label "has sub region"@en .
 
 
@@ -434,7 +435,7 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :isRequiredBy rdf:type owl:ObjectProperty ;
               rdfs:domain :RegionalIndustryCoefficient ;
               rdfs:range :RegionalIndustry ;
-              rdfs:comment "The RegionalIndustry which requires the preliminary product"@en ;
+              rdfs:comment "The RegionalIndustry which requires a preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en ;
               rdfs:label "is required by"@en .
 
 
@@ -541,7 +542,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                          owl:FunctionalProperty ;
                 rdfs:domain :RegionalIndustry ;
                 rdfs:range xsd:decimal ;
-                rdfs:comment "The CO2 emissions of a regional industry in Gg."@en ;
+                rdfs:comment "The CO2 emissions of a regional industry in Gg, from the Exiobase dataset."@en ;
                 rdfs:label "has co2 emission"@en .
 
 
@@ -639,7 +640,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasEndDate rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Event ;
-            rdfs:range xsd:dateTime ;
+            rdfs:range xsd:date ;
             rdfs:label "has end date"@en .
 
 
@@ -861,7 +862,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasMentionDate rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain owl:Thing ;
-                rdfs:range xsd:dateTime ;
+                rdfs:range xsd:date ;
                 rdfs:label "has mention date"@en .
 
 
@@ -1063,7 +1064,7 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 :hasStartDate rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Event ;
-              rdfs:range xsd:dateTime ;
+              rdfs:range xsd:date ;
               rdfs:label "has start date"@en .
 
 
@@ -1353,7 +1354,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#ExiobaseIndustry
 :ExiobaseIndustry rdf:type owl:Class ;
                   rdfs:subClassOf :Industry ;
-                  rdfs:comment "A sector classification from the Exiobase dataset."@en ;
+                  rdfs:comment "An economic sector from the Exiobase dataset."@en ;
                   rdfs:label "ExiobaseIndustry"@en .
 
 
@@ -1536,7 +1537,7 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 ###  https://schema.coypu.org/global#RegionalIndustry
 :RegionalIndustry rdf:type owl:Class ;
                   rdfs:subClassOf :Industry ;
-                  rdfs:comment "A regional instance of an industry."@en ;
+                  rdfs:comment "An economic sector located in a specific country or region, from the Exiobase dataset."@en ;
                   rdfs:label "RegionalIndustry"@en .
 
 
