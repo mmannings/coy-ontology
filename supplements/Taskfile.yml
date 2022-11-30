@@ -28,7 +28,7 @@ tasks:
     desc: Upload the ontology file to the CMEM vocabulary catalog
     cmds:
       - task: helper:cmemc:import_vocabulary
-        vars: { FILE: '{{.SCHEMAFILE}}' }
+        vars: { FILE: '{{.SCHEMA_FILE}}' }
 
   helper:cmemc:import_vocabulary:
     cmds:
