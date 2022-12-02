@@ -34,16 +34,14 @@
                                                        "Till Grabo"@en ;
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
                                    dcterms:modified "2022-11-21" ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                                   rdfs:isDefinedBy <https://schema.coypu.org/global> ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion 2.0 ;
+                                   owl:priorVersion <https://schema.coypu.org/global/2.0> ;
                                    owl:versionInfo 2.1 .
 
 #################################################################
@@ -64,10 +62,6 @@ dcterms:created rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/isVersionOf
-dcterms:isVersionOf rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
@@ -145,11 +139,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
-                      rdfs:label "topObjectProperty"@en .
-
 
 ###  https://schema.coypu.org/global#hasAffiliation
 :hasAffiliation rdf:type owl:ObjectProperty ;
@@ -458,11 +447,6 @@ owl:topObjectProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://www.w3.org/2002/07/owl#topDataProperty
-owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
-                    rdfs:label "topDataProperty"@en .
-
 
 ###  https://schema.coypu.org/global#hasAcledID
 :hasAcledID rdf:type owl:DatatypeProperty ,
@@ -1190,11 +1174,6 @@ owl:topDataProperty rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.w3.org/2002/07/owl#Thing
-owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
-          rdfs:label "Thing"@en .
-
 
 ###  https://schema.coypu.org/global#AdministrativeRegion
 :AdministrativeRegion rdf:type owl:Class ;
