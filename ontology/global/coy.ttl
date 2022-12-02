@@ -15,36 +15,36 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://schema.coypu.org/world-port-index/1.0> .
+@base <https://schema.coypu.org/global> .
 
-<https://schema.coypu.org/world-port-index/1.0> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://schema.coypu.org/global/2.1> ;
-                                                 owl:imports <https://schema.coypu.org/em-dat/1.0> ,
-                                                             <https://schema.coypu.org/gta/1.0> ,
-                                                             <https://schema.coypu.org/ta/1.0> ,
-                                                             <https://schema.coypu.org/world-port-index/1.0> ;
-                                                 cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                                 dcterms:contributor "Andreas Schaefer"@en ,
-                                                                     "Felix Engel"@en ,
-                                                                     "Lorenz Bühmann"@en ,
-                                                                     "Malte Weber"@en ,
-                                                                     "Natanael Arndt"@en ,
-                                                                     "Nenad Krdzavac"@en ,
-                                                                     "Simon Bin"@en ,
-                                                                     "Till Grabo"@en ;
-                                                 dcterms:created "2021-09-06" ;
-                                                 dcterms:creator "Nils Steinert"@en ;
-                                                 dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                                 dcterms:modified "2022-11-21" ;
-                                                 dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
-                                                 dcterms:title "CoyPu Ontology"@en ;
-                                                 vann:preferredNamespacePrefix "coy" ;
-                                                 vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
-                                                 rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                                                 rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                                                 rdfs:label "coy: CoyPu Ontology"@en ;
-                                                 owl:priorVersion 2.0 ;
-                                                 owl:versionInfo 2.1 .
+<https://schema.coypu.org/global> rdf:type owl:Ontology ;
+                                   owl:versionIRI <https://schema.coypu.org/global/2.1> ;
+                                   owl:imports <https://schema.coypu.org/em-dat/1.0> ,
+                                               <https://schema.coypu.org/gta/1.0> ,
+                                               <https://schema.coypu.org/ta/1.0> ,
+                                               <https://schema.coypu.org/world-port-index/1.0> ;
+                                   cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                   dcterms:contributor "Andreas Schaefer"@en ,
+                                                       "Felix Engel"@en ,
+                                                       "Lorenz Bühmann"@en ,
+                                                       "Malte Weber"@en ,
+                                                       "Natanael Arndt"@en ,
+                                                       "Nenad Krdzavac"@en ,
+                                                       "Simon Bin"@en ,
+                                                       "Till Grabo"@en ;
+                                   dcterms:created "2021-09-06" ;
+                                   dcterms:creator "Nils Steinert"@en ;
+                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
+                                   dcterms:modified "2022-11-21" ;
+                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
+                                   dcterms:title "CoyPu Ontology"@en ;
+                                   vann:preferredNamespacePrefix "coy" ;
+                                   vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
+                                   rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
+                                   rdfs:isDefinedBy <https://schema.coypu.org/global> ;
+                                   rdfs:label "coy: CoyPu Ontology"@en ;
+                                   owl:priorVersion 2.0 ;
+                                   owl:versionInfo 2.1 .
 
 #################################################################
 #    Annotation properties
