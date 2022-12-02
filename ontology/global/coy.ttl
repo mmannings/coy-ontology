@@ -15,36 +15,36 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://schema.coypu.org/global> .
+@base <https://schema.coypu.org/world-port-index/1.0> .
 
-<https://schema.coypu.org/global> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://schema.coypu.org/global/2.1> ;
-                                   owl:imports <https://schema.coypu.org/em-dat/1.0> ,
-                                               <https://schema.coypu.org/gta/1.0> ,
-                                               <https://schema.coypu.org/ta/1.0> ,
-                                               <https://schema.coypu.org/world-port-index/1.0> ;
-                                   cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                   dcterms:contributor "Andreas Schaefer"@en ,
-                                                       "Felix Engel"@en ,
-                                                       "Lorenz Bühmann"@en ,
-                                                       "Malte Weber"@en ,
-                                                       "Natanael Arndt"@en ,
-                                                       "Nenad Krdzavac"@en ,
-                                                       "Simon Bin"@en ,
-                                                       "Till Grabo"@en ;
-                                   dcterms:created "2021-09-06" ;
-                                   dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:isVersionOf <https://schema.coypu.org/global> ;
-                                   dcterms:modified "2022-11-21" ;
-                                   dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
-                                   dcterms:title "CoyPu Ontology"@en ;
-                                   vann:preferredNamespacePrefix "coy" ;
-                                   vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
-                                   rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
-                                   rdfs:isDefinedBy <https://schema.coypu.org/global> ;
-                                   rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion 2.0 ;
-                                   owl:versionInfo 2.1 .
+<https://schema.coypu.org/world-port-index/1.0> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://schema.coypu.org/global/2.1> ;
+                                                 owl:imports <https://schema.coypu.org/em-dat/1.0> ,
+                                                             <https://schema.coypu.org/gta/1.0> ,
+                                                             <https://schema.coypu.org/ta/1.0> ,
+                                                             <https://schema.coypu.org/world-port-index/1.0> ;
+                                                 cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                 dcterms:contributor "Andreas Schaefer"@en ,
+                                                                     "Felix Engel"@en ,
+                                                                     "Lorenz Bühmann"@en ,
+                                                                     "Malte Weber"@en ,
+                                                                     "Natanael Arndt"@en ,
+                                                                     "Nenad Krdzavac"@en ,
+                                                                     "Simon Bin"@en ,
+                                                                     "Till Grabo"@en ;
+                                                 dcterms:created "2021-09-06" ;
+                                                 dcterms:creator "Nils Steinert"@en ;
+                                                 dcterms:isVersionOf <https://schema.coypu.org/global> ;
+                                                 dcterms:modified "2022-11-21" ;
+                                                 dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
+                                                 dcterms:title "CoyPu Ontology"@en ;
+                                                 vann:preferredNamespacePrefix "coy" ;
+                                                 vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
+                                                 rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
+                                                 rdfs:isDefinedBy <https://schema.coypu.org/global> ;
+                                                 rdfs:label "coy: CoyPu Ontology"@en ;
+                                                 owl:priorVersion 2.0 ;
+                                                 owl:versionInfo 2.1 .
 
 #################################################################
 #    Annotation properties
@@ -1695,18 +1695,19 @@ owl:Thing rdfs:isDefinedBy "http://www.w3.org/2002/07/owl#" ;
                                                                        rdfs:label "Shelling or artillery or missile attack"@en .
 
 
-###  https://schema.coypu.org/gta#GlobalTradeAlert
-<https://schema.coypu.org/gta#GlobalTradeAlert> rdf:type owl:Class ;
-                                                rdfs:subClassOf :Event ;
-                                                rdfs:comment "An event of economic disturbance, from the GTA dataset."@en ;
-                                                rdfs:label "GlobalTradeAlert"@en .
-
-
 ###  https://schema.coypu.org/gta#GlobalTradeAlertFeature
 <https://schema.coypu.org/gta#GlobalTradeAlertFeature> rdf:type owl:Class ;
                                                        rdfs:subClassOf :Feature ;
                                                        rdfs:comment "An annotation for the Global Trade Alert dataset."@en ;
                                                        rdfs:label "GlobalTradeAlertFeature"@en .
+
+
+###  https://schema.coypu.org/gta#StateAct
+<https://schema.coypu.org/gta#StateAct> rdf:type owl:Class ;
+                                        rdfs:subClassOf :Event ;
+                                        rdfs:comment """For the GTA database, a state act is equivalent to an announcement by a government body. Each announcement documented by the GTA team includes at least one new and credible promise for change in market conditions at home or abroad.
+Each state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."""@en ;
+                                        rdfs:label "StateAct"@en .
 
 
 ###  https://schema.coypu.org/ta#TradeAgreement

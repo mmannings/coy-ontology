@@ -285,10 +285,6 @@ removal date."""@en ;
                rdfs:label "Evaluation"@en .
 
 
-###  https://schema.coypu.org/gta#GlobalTradeAlert
-:GlobalTradeAlert rdf:type owl:Class .
-
-
 ###  https://schema.coypu.org/gta#GlobalTradeAlertFeature
 :GlobalTradeAlertFeature rdf:type owl:Class .
 
@@ -350,11 +346,7 @@ removal date."""@en ;
 
 
 ###  https://schema.coypu.org/gta#StateAct
-:StateAct rdf:type owl:Class ;
-          rdfs:subClassOf :GlobalTradeAlertFeature ;
-          rdfs:comment """For the GTA database, a state act is equivalent to an announcement by a government body. Each announcement documented by the GTA team includes at least one new and credible promise for change in market conditions at home or abroad.
-Each state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."""@en ;
-          rdfs:label "StateAct"@en .
+:StateAct rdf:type owl:Class .
 
 
 ###  https://schema.coypu.org/gta#SubsidiesAndStateAid
