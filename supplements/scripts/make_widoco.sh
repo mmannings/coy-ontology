@@ -1,5 +1,6 @@
 #!/bin/bash
 set -eu
+shopt -s extglob
 
 ROOT=https://schema.coypu.org
 all_ontos=(
@@ -53,15 +54,35 @@ for ont_file in "${all_ontos[@]}"; do
     rpt integrate --out-format=ntriples "$ont_file" '
         construct {
             ?s a owl:Ontology ;
-                <urn:x-tmp:filename> "'"$ont_file"'"
-        } { ?s a owl:Ontology }'
+                <urn:x-tmp:filename> "'"$ont_file"'" ;
+                owl:versionIRI ?ver ;
+        } { ?s a owl:Ontology . optional { ?s owl:versionIRI ?ver } }'
 done > $T0/allOntologies.nt
+
+cat >$T0/widoco_master/.htaccess <<T
+Options +MultiViews
+
+AddType text/html .html
+AddType application/rdf+xml .rdf
+AddType text/turtle .ttl
+AddType application/n-triples .nt
+AddType application/ld+json .jsonld
+
+T
 
 for input in "${all_ontos[@]}"; do
     mybase="$(awk '$2 == "<urn:x-tmp:filename>" && $3 == "\"'"$input"'\"" { gsub("[#/]>",">",$1); gsub("[<>]","",$1); print $1 }' $T0/allOntologies.nt)"
+    myver="$(awk '$1 == "<'"$mybase"'>" && $2 == "<http://www.w3.org/2002/07/owl#versionIRI>"{ gsub("[#/]>",">",$3); gsub("[<>]","",$3); print $3 }' $T0/allOntologies.nt)"
+    if [[ -z "$myver" ]]; then
+	myver=$mybase
+    fi
     pathname="$(basename "$mybase")"
+    basefname="${mybase/#*:\/\/*([^\/])\/}"
+    ontfname="${myver/#*:\/\/*([^\/])\/}"
+    ontfname_frag=${ontfname//\//-}
+    ontf_up="$(dirname "${ontfname//+([^\/])/..}")"
     echo "#####################################################################" >&2
-    echo "... processing $input <$mybase> => $pathname ..." >&2
+    echo "... processing $input <$mybase> => $ontfname ..." >&2
     T=$T0/"$pathname"
     mkdir -p $T
 
@@ -118,22 +139,39 @@ for input in "${all_ontos[@]}"; do
 \\
     addHl();\
 " \
-	-e 's|"ontology\.|"'"$pathname"'.|g' \
-	-e 's|"sections/|"'"$pathname"'-sections/|g' \
-	-e 's|"provenance/|"'"$pathname"'-provenance/|g' \
+	-e 's|"ontology\.|"'"$ontf_up/$ontfname"'.|g' \
+	-e 's|"sections/|"'"$ontf_up/$ontfname_frag"'-sections/|g' \
+	-e 's|"provenance/|"'"$ontf_up/$ontfname_frag"'-provenance/|g' \
 	$T/widoco_out/index-en.html
-    sed -i -e 's|webvowl/index.html|webvowl/index.html#'"$pathname"'|' $T/widoco_out/sections/overview-en.html
-    for ont_file in $T/widoco_out/webvowl/data/ontology.json $T/widoco_out/ontology.*; do
-	mv -v "$ont_file" "${ont_file/\/ontology./\/"$pathname".}"
+    #sed -i -e 's|webvowl/index.html|webvowl/index.html#'"$ontfname_frag"'|' $T/widoco_out/sections/overview-en.html
+    sed -i -e 's|webvowl/index.html|'"$ontf_up/webvowl/index.html#$ontfname_frag"'|' $T/widoco_out/sections/overview-en.html
+    perl -i -p -e 's{\b(href|src)="([^"]+?)"}{
+        my ($attr, $link) = ($1, $2);
+        $link = "'"$ontf_up"'/$link"
+          unless $link =~ m{://} || $link =~ m{^[/#.]};
+        qq{$attr="$link"}
+      }ge' $T/widoco_out/index-en.html
+
+    mkdir -p $T/widoco_out/"$(dirname "$ontfname")"
+    for ont_file in $T/widoco_out/webvowl/data/ontology.json; do
+	mv -v "$ont_file" "${ont_file/\/ontology./\/"$ontfname_frag".}"
+    done
+    for ont_file in $T/widoco_out/ontology.*; do
+	mv -v "$ont_file" "${ont_file/\/ontology./\/"$ontfname".}"
     done
     mv -v $T/widoco_out_annot/sections/crossref-*.html $T/widoco_out/sections
     rm -fr $T/widoco_out_annot
-    mv -v $T/widoco_out/sections $T/widoco_out/"$pathname"-sections
-    mv -v $T/widoco_out/provenance $T/widoco_out/"$pathname"-provenance
-    mv -v $T/widoco_out/index-en.html $T/widoco_out/"$pathname".html
+    mv -v $T/widoco_out/sections $T/widoco_out/"$ontfname_frag"-sections
+    mv -v $T/widoco_out/provenance $T/widoco_out/"$ontfname_frag"-provenance
+    mv -v $T/widoco_out/index-en.html $T/widoco_out/"$ontfname".html
     rsync -a $T/widoco_out// $T0/widoco_master//
-    echo "<dt><tt>$mybase</tt><dd><a href='$pathname'>$pathname</a>" >> $T0/widoco_master/index.html
+    echo "<dt><tt>$mybase</tt><dd><a href='$basefname'>$basefname</a>" >> $T0/widoco_master/index.html
+    if [[ "$mybase" != "$myver" ]]; then
+	echo RedirectMatch temp '"(/'"$basefname"')/?(\.[^/]*|$)"' '"/'"$ontfname"'$2"' >> $T0/widoco_master/.htaccess
+    fi
 done
+
+echo "</dl><p><small><i>Last update: $(LANG=C TZ=UTC date)</i> <i>Git version: $(LANG=C git rev-parse --short HEAD)</i></small>" >> $T0/widoco_master/index.html
 
 rm -fr widoco_master.old || :
 mv widoco_master widoco_master.old 2>/dev/null || :
