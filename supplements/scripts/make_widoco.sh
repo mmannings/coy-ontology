@@ -9,6 +9,7 @@ ontology/events/gta.ttl
 ontology/events/rta.ttl
 ontology/infrastructure/world-port-index.ttl
 ontology/mapping/coy_wikidata.ttl
+ontology/meta/template.ttl
 ontology/global/coy.ttl
 )
 STATS_FILE=void.stats.ttl
