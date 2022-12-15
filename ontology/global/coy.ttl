@@ -776,8 +776,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:domain owl:Thing ;
             rdfs:range xsd:string ;
             rdfs:comment "A country code as defined in ISO 3166-3."@en ;
-            rdfs:label "has iso code"@en ;
-            owl:deprecated "Use gn:countryCode instead." .
+            rdfs:label "has iso code"@en .
 
 
 ###  https://schema.coypu.org/global#hasLanguage
@@ -1398,6 +1397,13 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Product ;
           rdfs:comment "A substance or resource which is required for producing other goods."@en ;
           rdfs:label "Material"@en .
+
+
+###  https://schema.coypu.org/global#Mine
+:Mine rdf:type owl:Class ;
+      rdfs:subClassOf :Infrastructure ;
+      rdfs:comment "An extraction site for natural resources, like copper, iron or bauxite."@en ;
+      rdfs:label "Mine"@en .
 
 
 ###  https://schema.coypu.org/global#MobViolence
