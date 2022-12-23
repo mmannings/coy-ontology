@@ -18,7 +18,7 @@
 @base <https://schema.coypu.org/global> .
 
 <https://schema.coypu.org/global> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://schema.coypu.org/global/2.1> ;
+                                   owl:versionIRI <https://schema.coypu.org/global/2.2> ;
                                    owl:imports <https://schema.coypu.org/em-dat/1.0> ,
                                                <https://schema.coypu.org/gta/1.0> ,
                                                <https://schema.coypu.org/ta/1.0> ,
@@ -41,8 +41,8 @@
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion <https://schema.coypu.org/global/2.0> ;
-                                   owl:versionInfo 2.1 .
+                                   owl:priorVersion <https://schema.coypu.org/global/2.1> ;
+                                   owl:versionInfo 2.2 .
 
 #################################################################
 #    Annotation properties
@@ -356,8 +356,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://schema.coypu.org/global#isIdentifiedBy
-:isIdentifiedBy rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ;
+:isIdentifiedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain owl:Thing ;
                 rdfs:range owl:Thing ;
                 rdfs:label "is identified by"@en ;
@@ -447,15 +446,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Data properties
 #################################################################
-
-###  https://schema.coypu.org/global#hasAcledID
-:hasAcledID rdf:type owl:DatatypeProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain :Conflict ;
-            rdfs:range xsd:integer ;
-            rdfs:comment "A unique identified used in the ACLED dataset."@en ;
-            rdfs:label "has acled data id"@en .
-
 
 ###  https://schema.coypu.org/global#hasActor
 :hasActor rdf:type owl:DatatypeProperty ,
@@ -1174,6 +1164,12 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  https://schema.coypu.org/global#AbductionOrForcedDisappearance
+:AbductionOrForcedDisappearance rdf:type owl:Class ;
+                                rdfs:subClassOf :ViolenceAgainstCivilians ;
+                                rdfs:label "Abduction or forced disappearance"@en .
+
+
 ###  https://schema.coypu.org/global#AdministrativeRegion
 :AdministrativeRegion rdf:type owl:Class ;
                       rdfs:subClassOf :Region ;
@@ -1184,6 +1180,12 @@ xsd:date rdf:type rdfs:Datatype .
 :Agreement rdf:type owl:Class ;
            rdfs:subClassOf :StrategicDevelopment ;
            rdfs:label "Agreement"@en .
+
+
+###  https://schema.coypu.org/global#AirOrDroneStrike
+:AirOrDroneStrike rdf:type owl:Class ;
+                  rdfs:subClassOf :ExplosionOrRemoteViolence ;
+                  rdfs:label "Air or drone strike"@en .
 
 
 ###  https://schema.coypu.org/global#Airport
@@ -1219,9 +1221,15 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Battle"@en .
 
 
+###  https://schema.coypu.org/global#ChangeToGroupOrActivity
+:ChangeToGroupOrActivity rdf:type owl:Class ;
+                         rdfs:subClassOf :StrategicDevelopment ;
+                         rdfs:label "Change to group or activity"@en .
+
+
 ###  https://schema.coypu.org/global#ChemicalWeapon
 :ChemicalWeapon rdf:type owl:Class ;
-                rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+                rdfs:subClassOf :ExplosionOrRemoteViolence ;
                 rdfs:comment "all substances listed in the Schedule 1 of the Chemical Weapons Convention"@en ;
                 rdfs:label "Chemical weapon"@en .
 
@@ -1336,6 +1344,13 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "ExiobaseIndustry"@en .
 
 
+###  https://schema.coypu.org/global#ExplosionOrRemoteViolence
+:ExplosionOrRemoteViolence rdf:type owl:Class ;
+                           rdfs:subClassOf :ViolentEvent ;
+                           rdfs:comment "A one-sided violent event in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond."@en ;
+                           rdfs:label "Explosion or remote violence"@en .
+
+
 ###  https://schema.coypu.org/global#Factory
 :Factory rdf:type owl:Class ;
          rdfs:subClassOf :Infrastructure ;
@@ -1358,7 +1373,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/global#Grenade
 :Grenade rdf:type owl:Class ;
-         rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+         rdfs:subClassOf :ExplosionOrRemoteViolence ;
          rdfs:label "Grenade"@en .
 
 
@@ -1385,11 +1400,24 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:seeAlso "http://www.wikidata.org/entity/Q121359" .
 
 
+###  https://schema.coypu.org/global#InternationalOrganization
+:InternationalOrganization rdf:type owl:Class ;
+                           rdfs:subClassOf :Feature ;
+                           rdfs:comment "A multinational conglomerate, a supranational state actor or a cross-border non-governmental organization."@en ;
+                           rdfs:label "InternationalOrganization"@en .
+
+
 ###  https://schema.coypu.org/global#Location
 :Location rdf:type owl:Class ;
           rdfs:comment "A place on the globe."@en ;
           rdfs:label "Location"@en ;
           rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"@en .
+
+
+###  https://schema.coypu.org/global#LootingOrPropertyDestruction
+:LootingOrPropertyDestruction rdf:type owl:Class ;
+                              rdfs:subClassOf :StrategicDevelopment ;
+                              rdfs:label "Looting or property destruction"@en .
 
 
 ###  https://schema.coypu.org/global#Material
@@ -1426,16 +1454,16 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:label "Non-state actor overtakes territory"@en .
 
 
-###  https://schema.coypu.org/global#Non-ViolentTransferOfTerritory
-:Non-ViolentTransferOfTerritory rdf:type owl:Class ;
-                                rdfs:subClassOf :StrategicDevelopment ;
-                                rdfs:label "Non-violent transfer of territory"@en .
-
-
 ###  https://schema.coypu.org/global#NonViolentAction
 :NonViolentAction rdf:type owl:Class ;
                   rdfs:subClassOf :Conflict ;
                   rdfs:label "NonViolentAction"@en .
+
+
+###  https://schema.coypu.org/global#NonViolentTransferOfTerritory
+:NonViolentTransferOfTerritory rdf:type owl:Class ;
+                               rdfs:subClassOf :StrategicDevelopment ;
+                               rdfs:label "Non-violent transfer of territory"@en .
 
 
 ###  https://schema.coypu.org/global#OsmElement
@@ -1533,6 +1561,12 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "RegionalIndustryCoefficient"@en .
 
 
+###  https://schema.coypu.org/global#RemoteExplosiveOrLandmine
+:RemoteExplosiveOrLandmine rdf:type owl:Class ;
+                           rdfs:subClassOf :ExplosionOrRemoteViolence ;
+                           rdfs:label "Remote explosive or landmine"@en .
+
+
 ###  https://schema.coypu.org/global#Riot
 :Riot rdf:type owl:Class ;
       rdfs:subClassOf :Demonstration ;
@@ -1560,6 +1594,12 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "Sexual violence"@en .
 
 
+###  https://schema.coypu.org/global#ShellingOrArtilleryOrMissileAttack
+:ShellingOrArtilleryOrMissileAttack rdf:type owl:Class ;
+                                    rdfs:subClassOf :ExplosionOrRemoteViolence ;
+                                    rdfs:label "Shelling or artillery or missile attack"@en .
+
+
 ###  https://schema.coypu.org/global#SocioPoliticalEvent
 :SocioPoliticalEvent rdf:type owl:Class ;
                      rdfs:subClassOf :Event ;
@@ -1577,7 +1617,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/global#SuicideBomb
 :SuicideBomb rdf:type owl:Class ;
-             rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
+             rdfs:subClassOf :ExplosionOrRemoteViolence ;
              rdfs:label "Suicide bomb"@en .
 
 
@@ -1635,49 +1675,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "A current news event extracted from Wikipedia."@en ;
           rdfs:label "WikiNews"@en ;
           rdfs:seeAlso "https://en.wikipedia.org/wiki/Portal:Current_events" .
-
-
-###  https://schema.coypu.org/global#Abduction%2FForcedDisappearance
-<https://schema.coypu.org/global#Abduction%2FForcedDisappearance> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf :ViolenceAgainstCivilians ;
-                                                                  rdfs:label "Abduction or forced disappearance"@en .
-
-
-###  https://schema.coypu.org/global#Air%2FDroneStrike
-<https://schema.coypu.org/global#Air%2FDroneStrike> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                    rdfs:label "Air or drone strike"@en .
-
-
-###  https://schema.coypu.org/global#ChangeToGroup%2FActivity
-<https://schema.coypu.org/global#ChangeToGroup%2FActivity> rdf:type owl:Class ;
-                                                           rdfs:subClassOf :StrategicDevelopment ;
-                                                           rdfs:label "Change to group or activity"@en .
-
-
-###  https://schema.coypu.org/global#Explosion%2FRemoteViolence
-<https://schema.coypu.org/global#Explosion%2FRemoteViolence> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :ViolentEvent ;
-                                                             rdfs:comment "A one-sided violent event in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond."@en ;
-                                                             rdfs:label "Explosion or remote violence"@en .
-
-
-###  https://schema.coypu.org/global#Looting%2FPropertyDestruction
-<https://schema.coypu.org/global#Looting%2FPropertyDestruction> rdf:type owl:Class ;
-                                                                rdfs:subClassOf :StrategicDevelopment ;
-                                                                rdfs:label "Looting or property destruction"@en .
-
-
-###  https://schema.coypu.org/global#RemoteExplosive%2FLandmine%2FIED
-<https://schema.coypu.org/global#RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                                   rdfs:label "Remote explosive or landmine"@en .
-
-
-###  https://schema.coypu.org/global#Shelling%2FArtillery%2FMissileAttack
-<https://schema.coypu.org/global#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
-                                                                       rdfs:subClassOf <https://schema.coypu.org/global#Explosion%2FRemoteViolence> ;
-                                                                       rdfs:label "Shelling or artillery or missile attack"@en .
 
 
 ###  https://schema.coypu.org/gta#GlobalTradeAlertFeature

@@ -129,8 +129,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                        rdfs:label "has implementation date"@en .
 
 
-###  https://schema.coypu.org/gta#hasInterventionID
-:hasInterventionID rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/gta#hasInterventionId
+:hasInterventionId rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Intervention ;
                    rdfs:label "has intervention id"@en .
@@ -144,8 +144,8 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                             rdfs:label "has investigation status date"@en .
 
 
-###  https://schema.coypu.org/gta#hasProductID
-:hasProductID rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/gta#hasProductId
+:hasProductId rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain owl:Thing ;
               rdfs:range [ rdf:type rdfs:Datatype ;
@@ -196,8 +196,8 @@ removal date."""@en ;
                 rdfs:label "has removal date"@en .
 
 
-###  https://schema.coypu.org/gta#hasSectorID
-:hasSectorID rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/gta#hasSectorId
+:hasSectorId rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Sector ;
              rdfs:range [ rdf:type rdfs:Datatype ;
@@ -210,8 +210,8 @@ removal date."""@en ;
              rdfs:label "has sector id"@en .
 
 
-###  https://schema.coypu.org/gta#hasStateActID
-:hasStateActID rdf:type owl:DatatypeProperty ,
+###  https://schema.coypu.org/gta#hasStateActId
+:hasStateActId rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :StateAct ;
                rdfs:label "has state act id"@en .
