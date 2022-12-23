@@ -34,7 +34,7 @@
                                                        "Till Grabo"@en ;
                                    dcterms:created "2021-09-06" ;
                                    dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:modified "2022-11-21" ;
+                                   dcterms:modified "2022-12-23"^^xsd:date ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
