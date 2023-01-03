@@ -57,44 +57,46 @@ cd:
     - git clone "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" repo && cd repo && cp ../docu/_site/index.html ./public/index.html
     - git add . && git commit -am "CD" && git push "https://bot_push_coypu:$GITLAB_PAC_PUSH@gitlab.com/coypu-project/coy-documentation.git" HEAD:main
 
-# distribute_to_cmem:
-#   stage: cd
-#   needs: ["syntax", "download"]
-#   dependencies:
-#     - syntax
-#     - download
-#   rules:
-#     - if: $CI_COMMIT_TAG =~ /^verified20/
-#   image:
-#     name: docker:latest
-#   parallel:
-#     matrix:
-#     - INST:
-#       - IPS
-#       - TIB
-#       - PM
-#       # - INFAI
-#   variables:
-#     # Tell docker CLI how to talk to Docker daemon; see
-#     # https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker-executor
-#     DOCKER_TLS_CERTDIR: ""
-#     # List the instances
-#     IPS_INSTANCE: implisense.coypu.org
-#     INFAI_INSTANCE: infai.coypu.org
-#     TIB_INSTANCE: tib.coypu.org
-#     PM_INSTANCE: pm.coypu.org
-#   script:
-#     - apk add --update curl && rm -rf /var/cache/apk/*
-#     - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin && PATH=$HOME/.local/bin:$PATH
-#     - |
-#       INSTANCE_VAR="${INST}_INSTANCE"
-#       eval INSTANCE="\$${INSTANCE_VAR}"
-#       # CMEMC Setup
-#       INST_SECRET_CMEM_OAUTH_CLIENT_ID="${INST}_CMEM_OAUTH_CLIENT_ID"
-#       INST_SECRET_CMEM_OAUTH_CLIENT_SECRET="${INST}_CMEM_OAUTH_CLIENT_SECRET"
-#       CMEM_BASE_URI=https://${INSTANCE}/
-#       OAUTH_GRANT_TYPE=client_credentials
-#       eval OAUTH_CLIENT_ID="\$${INST_SECRET_CMEM_OAUTH_CLIENT_ID}"
-#       eval OAUTH_CLIENT_SECRET="\$${INST_SECRET_CMEM_OAUTH_CLIENT_SECRET}"
-#       export CMEM_BASE_URI OAUTH_GRANT_TYPE OAUTH_CLIENT_ID OAUTH_CLIENT_SECRET
-#     - "cd supplements && task sync:upload_ontology"
+distribute_to_cmem:
+  stage: cd
+  needs: ["syntax", "download"]
+  dependencies:
+    - syntax
+    - download
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^verified20/
+  image:
+    name: docker:latest
+  parallel:
+    matrix:
+    - INST:
+      - IPS
+      - TIB
+      - PM
+      # - INFAI
+  variables:
+    # Tell docker CLI how to talk to Docker daemon; see
+    # https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker-executor
+    DOCKER_TLS_CERTDIR: ""
+    # List the instances
+    IPS_INSTANCE: implisense.coypu.org
+    INFAI_INSTANCE: infai.coypu.org
+    TIB_INSTANCE: tib.coypu.org
+    PM_INSTANCE: pm.coypu.org
+    OAUTH_TOKEN_URI: https://pm.coypu.org/auth/realms/cmem/protocol/openid-connect/token
+  script:
+    - apk add --update curl && rm -rf /var/cache/apk/*
+    - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin && PATH=$HOME/.local/bin:$PATH
+    - |
+      INSTANCE_VAR="${INST}_INSTANCE"
+      eval INSTANCE="\$${INSTANCE_VAR}"
+      # CMEMC Setup
+      INST_SECRET_CMEM_OAUTH_CLIENT_ID="${INST}_CMEM_OAUTH_CLIENT_ID"
+      INST_SECRET_CMEM_OAUTH_CLIENT_SECRET="${INST}_CMEM_OAUTH_CLIENT_SECRET"
+      CMEM_BASE_URI=https://${INSTANCE}/
+      OAUTH_GRANT_TYPE=client_credentials
+      OAUTH_TOKEN_URI=${OAUTH_TOKEN_URI}
+      eval OAUTH_CLIENT_ID="\$${INST_SECRET_CMEM_OAUTH_CLIENT_ID}"
+      eval OAUTH_CLIENT_SECRET="\$${INST_SECRET_CMEM_OAUTH_CLIENT_SECRET}"
+      export CMEM_BASE_URI OAUTH_GRANT_TYPE OAUTH_CLIENT_ID OAUTH_CLIENT_SECRET OAUTH_TOKEN_URI
+    - "cd supplements && task sync:upload_ontology"
