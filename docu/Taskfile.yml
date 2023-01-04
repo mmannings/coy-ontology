@@ -2,14 +2,15 @@ version: '3'
 
 vars:
   ONTOLOGY: coy
-  RAPPER: rapper
+  BASE_URL: https://schema.coypu.org/global
+  JOD_TITLE: "coy: CoyPu Ontology"
   DOCU_PATH: .
+  JOD_IMAGE: ghcr.io/eccenca/jod:main
+  DOCKER_DIRS: "-v ./coy.ttl:/data/ontology.ttl -v ./_site:/data/_site"
 
 tasks:
 
   default:
-    - task: helper:check_turtle
-      vars: { FILE: '{{.ONTOLOGY}}' }
     - task: docu:build
       vars: { DOCU_PATH: '{{.DOCU_PATH}}' }
 
@@ -21,8 +22,8 @@ tasks:
   docu:build:
     desc: Build the HTML documentation page for an ontology.
     cmds:
-      - task: helper:install_jekyll
-      - bundle exec jekyll build
+      - mkdir -p {{.DOCU_PATH}}/_site
+      - docker run --rm -e JOD_URL={{.BASE_URL}} -e JOD_TITLE="{{.JOD_TITLE}}" -e JOD_RESTRICTION_URL=True {{.DOCKER_DIRS}} {{.JOD_IMAGE}}
 
   docu:serve:
     - python -m http.server --directory docu-ontology/_site
@@ -31,8 +32,3 @@ tasks:
     desc: Verify the correct syntax of a Turtle file.
     cmds:
       - '{{ .RAPPER }} -i turtle -c {{.FILE}}.ttl'
-
-  helper:install_jekyll:
-    desc: Install Jekyll and JekyllRDF
-    cmds:
-      - bundle install
