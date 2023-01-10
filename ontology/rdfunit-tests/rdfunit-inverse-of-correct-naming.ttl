@@ -22,7 +22,8 @@ rutt:inverse-of-correct-naming
     rut:references rdf:Property, owl:DatatypeProperty, owl:ObjectProperty ;
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
     rut:sparqlWhere """ {
-      ?this owl:inverseOf ?i
+      ?this owl:inverseOf ?i .
+	    FILTER(?this != ?i)
 
       # obtain local names
       BIND(REPLACE(STR(?i), "^([^/#]*[/#])*([^/#]+)$", "$2") AS ?actual)
@@ -32,12 +33,12 @@ rutt:inverse-of-correct-naming
       BIND(CONCAT(UCASE(SUBSTR(?raw2, 1, 1)), SUBSTR(?raw2, 2)) AS ?raw3)
       BIND(CONCAT("is", ?raw3, "Of") AS ?expected)
 
-      FILTER(?actual != ?expected)
+  	  FILTER(?actual != ?expected)
          }""" ;
     rut:sparqlPrevalence """ SELECT (count(?i) AS ?total) WHERE {
       ?this owl:inverseOf ?i
 
-      FILTER(?actual != ?expected)
+      FILTER(?this != ?i)
           } """ ;
 
     rut:testCaseLogLevel
