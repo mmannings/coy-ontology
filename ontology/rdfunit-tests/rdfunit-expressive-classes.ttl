@@ -23,11 +23,12 @@ rutt:expressive-classes
     rut:source <http://www.w3.org/2000/01/rdf-schema#> ;
     rut:sparqlWhere """ {
       ?this a owl:Class .
-      ?ontology a owl:Ontology.
+      ?ontology a owl:Ontology ;
+        <http://purl.org/vocab/vann/preferredNamespaceUri> ?ontologyURI .
       FILTER (
         strStarts(str(?this), str(?ontology))
       )
-      bind(substr(str(?this), strlen(str(?ontology))) as ?className)
+      bind(substr(str(?this), strlen(str(?ontologyURI))+1) as ?className)
       FILTER (
         REGEX(STR(?className), "class", "i")
       )
