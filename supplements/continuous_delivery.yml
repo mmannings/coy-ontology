@@ -27,7 +27,7 @@ jod:
       - "docu/_site/index.html"
     public: false
   script:
-    - apt-get update && apt-get install -y curl
+    - apk add --update curl git moreutils && rm -rf /var/cache/apk/*
     - sh -c "$(curl -k --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin
     - cd docu && /root/.local/bin/task
     - |
