@@ -1,12 +1,14 @@
 version: '3'
 
 vars:
+  SHELL_PWD:
+    sh: pwd
   ONTOLOGY: coy
   BASE_URL: https://schema.coypu.org/global
   JOD_TITLE: "coy: CoyPu Ontology"
   DOCU_PATH: .
   JOD_IMAGE: ghcr.io/eccenca/jod:main
-  DOCKER_DIRS: "-v ./coy.ttl:/data/ontology.ttl -v ./_site:/data/_site"
+  DOCKER_DIRS: "-v {{.SHELL_PWD}}/coy.ttl:/data/ontology.ttl -v {{.SHELL_PWD}}/_site:/data/_site"
 
 tasks:
 
