@@ -1,5 +1,15 @@
-PREFIX vaem: <http://www.linkedmodel.org/schema/vaem#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vaem: <http://www.linkedmodel.org/schema/vaem#>
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
   ?cls a owl:Class ;
@@ -11,11 +21,21 @@ CONSTRUCT {
     [] void:class ?cls .
 
     FILTER(!regex(str(?cls),concat("^(",
-      str(rdfs:),"|",
-      str(owl:),"|",
-      str(void:),"|",
-      str(rdf:),"|",
+      str(dcat:),"|",
+      str(dct:),"|",
       str(geo:),"|",
+      str(nif:),"|",
+      str(prov:),"|",
+      str(owl:),"|",
+      str(rdf:),"|",
+      str(rdfs:),"|",
+      str(schema:),"|",
+      str(skos:),"|",
+      str(time:),"|",
+      str(void:),"|",
+      str(wgs84:),"|",
+      str(xkos:),"|",
+      str(xsd:),"|",
     "(?!))")))
     
     FILTER NOT EXISTS {
@@ -25,11 +45,21 @@ CONSTRUCT {
     [] void:property ?prop .
 
     FILTER(!regex(str(?prop),concat("^(",
-      str(rdfs:),"|",
-      str(owl:),"|",
-      str(void:),"|",
-      str(rdf:),"|",
+      str(dcat:),"|",
+      str(dct:),"|",
       str(geo:),"|",
+      str(nif:),"|",
+      str(prov:),"|",
+      str(owl:),"|",
+      str(rdf:),"|",
+      str(rdfs:),"|",
+      str(schema:),"|",
+      str(skos:),"|",
+      str(time:),"|",
+      str(void:),"|",
+      str(wgs84:),"|",
+      str(xkos:),"|",
+      str(xsd:),"|",
     "(?!))")))
 
     FILTER NOT EXISTS {
