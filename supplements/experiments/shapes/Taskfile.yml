@@ -3,7 +3,7 @@ version: '3'
 vars:
   ONTOLOGY_IRI: https://schema.coypu.org/global#
   SHAPE_IRI: https://schema.coypu.org/global_shapes#
-  SCHEMAFILE: "../../../ontology/global/coy"
+  SCHEMA_FILE: "coy"
   SHAPEFILE: "shapes"
 
   UID:
@@ -13,8 +13,11 @@ vars:
   SHELL_PWD:
     sh: pwd
 
+  SCHEMA_DIR: '{{.SHELL_PWD}}/../../../ontology/global'
+
   DOCKER_PWD: /data
-  DOCKER_DIRS: -v "{{.SHELL_PWD}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
+  DOCKER_SCHEMA_DIR: /schema
+  DOCKER_DIRS: -v "{{.SCHEMA_DIR}}:{{.DOCKER_SCHEMA_DIR}}" -v "{{.SHELL_PWD}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
   DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
   DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
 
@@ -32,7 +35,7 @@ tasks:
     - task: check_turtle
 
   check_turtle:
-    - "{{ .RAPPER_CMD }} -i turtle -c {{.SCHEMAFILE}}.ttl"
+    - "{{ .RAPPER_CMD }} -i turtle -c {{.DOCKER_SCHEMA_DIR}}/{{.SCHEMA_FILE}}.ttl"
 
   generate_shapes:
     - task: extract:generate_shapes:from_ontology
@@ -44,7 +47,7 @@ tasks:
   extract:generate_shapes:from_ontology:
     desc: Generate the shapes from the ontology
     cmds:
-      - "{{.GRAMO_DOCKER}} extractor --ontology --graph {{.DOCKER_PWD}}/{{.SCHEMAFILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
+      - "{{.GRAMO_DOCKER}} extractor --ontology --graph {{.DOCKER_SCHEMA_DIR}}/{{.SCHEMA_FILE}}.ttl --shape {{.DOCKER_PWD}}/{{.SHAPEFILE}}_extracted_ontology.ttl --namespace coy-sh: --prefixes {{.DOCKER_PWD}}/prefixes.ttl"
 
   extract:reshape:merge:
     desc: Merge two shape graphs into a new shape graph

@@ -155,6 +155,7 @@ generate_shapes:
   script:
     - apk add --update curl git moreutils && rm -rf /var/cache/apk/*
     - sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b ~/.local/bin && PATH=$HOME/.local/bin:$PATH
+    - cd supplements/experiments/shapes
     - task generate_shapes
 
 reasoner:
