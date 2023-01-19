@@ -1,3 +1,1101 @@
 @base <https://schema.coypu.org/global_shapes#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix coy: <global#> .
+@prefix coy-sh: <> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eventKG: <http://eventKG.l3s.uni-hannover.de/schema/> .
+@prefix beAWARE_ontology: <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+coy-sh:coy_AbductionOrForcedDisappearance
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:AbductionOrForcedDisappearance .
+
+coy-sh:coy_AdministrativeRegion
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:AdministrativeRegion .
+
+coy-sh:coy_Agreement
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Agreement .
+
+coy-sh:coy_AirOrDroneStrike
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:AirOrDroneStrike .
+
+coy-sh:coy_Airport
+    a sh:NodeShape ;
+    sh:description "A logistics hub for air freight."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Airport .
+
+coy-sh:coy_ArmedClash
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ArmedClash .
+
+coy-sh:coy_Arrest
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Arrest .
+
+coy-sh:coy_Attack
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Attack .
+
+coy-sh:coy_Battle
+    a sh:NodeShape ;
+    sh:description "A violent interaction between two politically organized armed groups at a particular time and location."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Battle .
+
+coy-sh:coy_ChangeToGroupOrActivity
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ChangeToGroupOrActivity .
+
+coy-sh:coy_ChemicalWeapon
+    a sh:NodeShape ;
+    sh:description "all substances listed in the Schedule 1 of the Chemical Weapons Convention"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ChemicalWeapon .
+
+coy-sh:coy_City
+    a sh:NodeShape ;
+    sh:description "A center of population, commerce, and culture; a town of significant size and importance."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:City .
+
+coy-sh:coy_Commodity
+    a sh:NodeShape ;
+    sh:description "A commodity good or production material."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Commodity .
+
+coy-sh:coy_Company
+    a sh:NodeShape ;
+    sh:description "An organization engaged in economic activities."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasAffiliation, coy-sh:coy_hasBalanceSheetTotal, coy-sh:coy_hasBranchOffices, coy-sh:coy_hasCapital, coy-sh:coy_hasCompanySize, coy-sh:coy_hasCustomer, coy-sh:coy_hasDissolutionDate, coy-sh:coy_hasEbidCode, coy-sh:coy_hasEmail, coy-sh:coy_hasFactory, coy-sh:coy_hasFax, coy-sh:coy_hasFoundingDate, coy-sh:coy_hasHeadquarter, coy-sh:coy_hasHrCourt, coy-sh:coy_hasHrId, coy-sh:coy_hasHrType, coy-sh:coy_hasIndustry, coy-sh:coy_hasLegalAffiliation, coy-sh:coy_hasLegalForm, coy-sh:coy_hasLegalName, coy-sh:coy_hasLeiCode, coy-sh:coy_hasManagementAffiliation, coy-sh:coy_hasNumberOfEmployees, coy-sh:coy_hasPhoneNumber, coy-sh:coy_hasProduct, coy-sh:coy_hasProfit, coy-sh:coy_hasPurpose, coy-sh:coy_hasRevenue, coy-sh:coy_hasSameAddressAffiliation, coy-sh:coy_hasSocialMediaUrl, coy-sh:coy_hasStreet, coy-sh:coy_hasSupplier, coy-sh:coy_hasVat, coy-sh:coy_hasWeblinkAffiliation, coy-sh:coy_hasZip, coy-sh:coy_isActive, coy-sh:coy_isCustomerOf, coy-sh:coy_isPartOf, coy-sh:coy_isSupplierOf ;
+    sh:targetClass coy:Company .
+
+coy-sh:coy_Conflict
+    a sh:NodeShape ;
+    sh:description "An event of disagreement or disharmony between organizations, persons or ideas."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasActor, coy-sh:coy_hasFatalities ;
+    sh:targetClass coy:Conflict .
+
+coy-sh:coy_Continent
+    a sh:NodeShape ;
+    sh:description "A large landmass of the globe, usually comprising several countries."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Continent .
+
+coy-sh:coy_Country
+    a sh:NodeShape ;
+    sh:description "The territory under jurisdiction of a nation state."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasAdaptiveCapability, coy-sh:coy_hasCopingCapability, coy-sh:coy_hasCurrency, coy-sh:coy_hasExposure, coy-sh:coy_hasLanguage, coy-sh:coy_hasRiskLevel, coy-sh:coy_hasSusceptibility, coy-sh:coy_hasVulnerability ;
+    sh:targetClass coy:Country .
+
+coy-sh:coy_CountryStatistic
+    a sh:NodeShape ;
+    sh:description "An annotation for the United Nations Sustainable Development Goals dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:CountryStatistic .
+
+coy-sh:coy_Customer
+    a sh:NodeShape ;
+    sh:description "An organization that sources something needed such as a product or service from another organization."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Customer .
+
+coy-sh:coy_Demonstration
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Demonstration .
+
+coy-sh:coy_Disaster
+    a sh:NodeShape ;
+    sh:description "An occurrence causing widespread destruction and distress."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasGlideId ;
+    sh:targetClass coy:Disaster .
+
+coy-sh:coy_DisruptedWeaponUse
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:DisruptedWeaponUse .
+
+coy-sh:coy_Event
+    a sh:NodeShape ;
+    sh:description "An event related to a specific location with a singular occurence."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasAlertScore, coy-sh:coy_hasEndDate, coy-sh:coy_hasEndTime, coy-sh:coy_hasEventStatus, coy-sh:coy_hasEventType, coy-sh:coy_hasImpactOn, coy-sh:coy_hasPublisher, coy-sh:coy_hasRiskScore, coy-sh:coy_hasStartDate, coy-sh:coy_hasStartTime, coy-sh:coy_hasTimespan, coy-sh:coy_hasTimestamp ;
+    sh:targetClass coy:Event .
+
+coy-sh:coy_ExcessiveForceAgainstProtesters
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ExcessiveForceAgainstProtesters .
+
+coy-sh:coy_ExiobaseIndustry
+    a sh:NodeShape ;
+    sh:description "An economic sector from the Exiobase dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ExiobaseIndustry .
+
+coy-sh:coy_ExplosionOrRemoteViolence
+    a sh:NodeShape ;
+    sh:description "A one-sided violent event in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ExplosionOrRemoteViolence .
+
+coy-sh:coy_Factory
+    a sh:NodeShape ;
+    sh:description "A factory or production site."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Factory .
+
+coy-sh:coy_Feature
+    a sh:NodeShape ;
+    sh:description "An annotation or reification class for specific datasets."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Feature .
+
+coy-sh:coy_GovernmentRegainsTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:GovernmentRegainsTerritory .
+
+coy-sh:coy_Grenade
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Grenade .
+
+coy-sh:coy_HeadquartersOrBaseEstablished
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:HeadquartersOrBaseEstablished .
+
+coy-sh:coy_Industry
+    a sh:NodeShape ;
+    sh:description "An industry or economic sector."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasRegionalIndustry, coy-sh:coy_isIndustryOf ;
+    sh:targetClass coy:Industry .
+
+coy-sh:coy_Infrastructure
+    a sh:NodeShape ;
+    sh:description "A facility providing critical infrastructure for production or logistics."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasCapacity, coy-sh:coy_hasInfrastructureType ;
+    sh:targetClass coy:Infrastructure .
+
+coy-sh:coy_InternationalOrganization
+    a sh:NodeShape ;
+    sh:description "A multinational conglomerate, a supranational state actor or a cross-border non-governmental organization."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:InternationalOrganization .
+
+coy-sh:coy_Location
+    a sh:NodeShape ;
+    sh:description "A place on the globe."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasLatitude, coy-sh:coy_hasLongitude, coy-sh:coy_hasSubRegion, coy-sh:coy_isLocationOf ;
+    sh:targetClass coy:Location .
+
+coy-sh:coy_LootingOrPropertyDestruction
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:LootingOrPropertyDestruction .
+
+coy-sh:coy_Material
+    a sh:NodeShape ;
+    sh:description "A substance or resource which is required for producing other goods."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Material .
+
+coy-sh:coy_Mine
+    a sh:NodeShape ;
+    sh:description "An extraction site for natural resources, like copper, iron or bauxite."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Mine .
+
+coy-sh:coy_MobViolence
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:MobViolence .
+
+coy-sh:coy_News
+    a sh:NodeShape ;
+    sh:description "A newspaper article, social media posting or press release."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:News .
+
+coy-sh:coy_Non-StateActorOvertakesTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Non-StateActorOvertakesTerritory .
+
+coy-sh:coy_NonViolentAction
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:NonViolentAction .
+
+coy-sh:coy_NonViolentTransferOfTerritory
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:NonViolentTransferOfTerritory .
+
+coy-sh:coy_OsmElement
+    a sh:NodeShape ;
+    sh:description "An Open Street Map reference."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasOsmId, coy-sh:coy_hasOsmType ;
+    sh:targetClass coy:OsmElement .
+
+coy-sh:coy_Other
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Other .
+
+coy-sh:coy_PeacefulProtest
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:PeacefulProtest .
+
+coy-sh:coy_Pipeline
+    a sh:NodeShape ;
+    sh:description "A gas, oil or hydrogen pipeline."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Pipeline .
+
+coy-sh:coy_Port
+    a sh:NodeShape ;
+    sh:description "A logictics hub for shipping."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Port .
+
+coy-sh:coy_Powerplant
+    a sh:NodeShape ;
+    sh:description "A facility for generating electric power."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Powerplant .
+
+coy-sh:coy_Product
+    a sh:NodeShape ;
+    sh:description "Any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasCpaCode, coy-sh:coy_hasHsCode, coy-sh:coy_hasPrice, coy-sh:coy_hasVolatility, coy-sh:coy_isProductOf, coy-sh:coy_isUsedIn ;
+    sh:targetClass coy:Product .
+
+coy-sh:coy_Protest
+    a sh:NodeShape ;
+    sh:description "A protest is defined as a public demonstration in which the participants do not engage in violence, though violence may be used against them."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Protest .
+
+coy-sh:coy_ProtestWithIntervention
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ProtestWithIntervention .
+
+coy-sh:coy_RailwaySegment
+    a sh:NodeShape ;
+    sh:description "A railway track between train stations."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:RailwaySegment .
+
+coy-sh:coy_Region
+    a sh:NodeShape ;
+    sh:description "An administrative or economic area."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Region .
+
+coy-sh:coy_RegionalIndustry
+    a sh:NodeShape ;
+    sh:description "An economic sector located in a specific country or region, from the Exiobase dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasCo2Emission, coy-sh:coy_hasRequiredQuantity ;
+    sh:targetClass coy:RegionalIndustry .
+
+coy-sh:coy_RegionalIndustryCoefficient
+    a sh:NodeShape ;
+    sh:description "The quantified dependency of a RegionalIndustry to another, from the Exiobase dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasRequirement, coy-sh:coy_isRequiredBy ;
+    sh:targetClass coy:RegionalIndustryCoefficient .
+
+coy-sh:coy_RemoteExplosiveOrLandmine
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:RemoteExplosiveOrLandmine .
+
+coy-sh:coy_Riot
+    a sh:NodeShape ;
+    sh:description "A violent event where demonstrators or mobs engage in disruptive acts, including but not limited to rock throwing, property destruction, etc."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Riot .
+
+coy-sh:coy_River
+    a sh:NodeShape ;
+    sh:description "A large natural stream of water emptying into an ocean, lake, or other body of water and usually fed along its course by converging tributaries. Often providing critial logistics infrastructure."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:River .
+
+coy-sh:coy_Service
+    a sh:NodeShape ;
+    sh:description "An economic activity that is done for others as an occupation or business."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Service .
+
+coy-sh:coy_SexualViolence
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:SexualViolence .
+
+coy-sh:coy_ShellingOrArtilleryOrMissileAttack
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ShellingOrArtilleryOrMissileAttack .
+
+coy-sh:coy_SocioPoliticalEvent
+    a sh:NodeShape ;
+    sh:description "An event of socio-political relevance, from the IECWS dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:SocioPoliticalEvent .
+
+coy-sh:coy_StrategicDevelopment
+    a sh:NodeShape ;
+    sh:description "An activity of a violent group that is not itself recorded as political violence, yet may trigger future events or contribute to political dynamics within and across states."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:StrategicDevelopment .
+
+coy-sh:coy_SuicideBomb
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:SuicideBomb .
+
+coy-sh:coy_Supplier
+    a sh:NodeShape ;
+    sh:description "An organization that provides something needed such as a product or service to another organization."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Supplier .
+
+coy-sh:coy_Terminal
+    a sh:NodeShape ;
+    sh:description "A terminal to connect pipelines."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:Terminal .
+
+coy-sh:coy_Timespan
+    a sh:NodeShape ;
+    sh:description "A period or duration."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property coy-sh:coy_hasOngoingSpan ;
+    sh:targetClass coy:Timespan .
+
+coy-sh:coy_TrainStation
+    a sh:NodeShape ;
+    sh:description "A logistics hub for rail freight."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:TrainStation .
+
+coy-sh:coy_ViolenceAgainstCivilians
+    a sh:NodeShape ;
+    sh:description "A violent interaction between two politically organized armed groups at a particular time and location."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolenceAgainstCivilians .
+
+coy-sh:coy_ViolentDemonstration
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolentDemonstration .
+
+coy-sh:coy_ViolentEvent
+    a sh:NodeShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:ViolentEvent .
+
+coy-sh:coy_WikiNews
+    a sh:NodeShape ;
+    sh:description "A current news event extracted from Wikipedia."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass coy:WikiNews .
+
+coy-sh:coy_hasActor
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The named actor involved in the event."@en ;
+    sh:maxCount 1 ;
+    sh:name "has actor"@en ;
+    sh:path coy:hasActor .
+
+coy-sh:coy_hasAdaptiveCapability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The adaptive capability of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has adaptive capability"@en ;
+    sh:path coy:hasAdaptiveCapability .
+
+coy-sh:coy_hasAffiliation
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A relationship between two companies."@en ;
+    sh:name "has affiliation"@en ;
+    sh:path coy:hasAffiliation .
+
+coy-sh:coy_hasAlertScore
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The alert level score of an event (eg. 0/1/2 or green/orange/red)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has alert score"@en ;
+    sh:path coy:hasAlertScore .
+
+coy-sh:coy_hasBalanceSheetTotal
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The balance sheet total of a company (at a specified date in a specified currency)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has balance sheet total"@en ;
+    sh:path coy:hasBalanceSheetTotal .
+
+coy-sh:coy_hasBranchOffices
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A local or international branch of a company."@en ;
+    sh:name "has branch offices"@en ;
+    sh:path coy:hasBranchOffices .
+
+coy-sh:coy_hasCapacity
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "The capacity in tonnes of a facility (eg. ports or airports)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has capacity"@en ;
+    sh:path coy:hasCapacity .
+
+coy-sh:coy_hasCapital
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The monetary capital of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has capital"@en ;
+    sh:path coy:hasCapital .
+
+coy-sh:coy_hasCo2Emission
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The CO2 emissions of a regional industry in Gg, from the Exiobase dataset."@en ;
+    sh:maxCount 1 ;
+    sh:name "has co2 emission"@en ;
+    sh:path coy:hasCo2Emission .
+
+coy-sh:coy_hasCompanySize
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The size of a company according to the EU SME definition."@en ;
+    sh:maxCount 1 ;
+    sh:name "has company size"@en ;
+    sh:path coy:hasCompanySize .
+
+coy-sh:coy_hasCopingCapability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The coping capability of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has coping capability"@en ;
+    sh:path coy:hasCopingCapability .
+
+coy-sh:coy_hasCpaCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A product code as defined in CPA."@en ;
+    sh:maxCount 1 ;
+    sh:name "has cpa code"@en ;
+    sh:path coy:hasCpaCode .
+
+coy-sh:coy_hasCurrency
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The currency of a country or monetary value."@en ;
+    sh:maxCount 1 ;
+    sh:name "has currency"@en ;
+    sh:path coy:hasCurrency .
+
+coy-sh:coy_hasCustomer
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company receiving a product, material, resource or service to another company, usually for monetary compensation."@en ;
+    sh:name "has customer"@en ;
+    sh:path coy:hasCustomer .
+
+coy-sh:coy_hasDissolutionDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The dissolution date of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has dissolution date"@en ;
+    sh:path coy:hasDissolutionDate .
+
+coy-sh:coy_hasEbidCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The European Business Identifier of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has ebid code"@en ;
+    sh:path coy:hasEbidCode .
+
+coy-sh:coy_hasEmail
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A company's email address."@en ;
+    sh:maxCount 1 ;
+    sh:name "has email"@en ;
+    sh:path coy:hasEmail .
+
+coy-sh:coy_hasEndDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount 1 ;
+    sh:name "has end date"@en ;
+    sh:path coy:hasEndDate .
+
+coy-sh:coy_hasEndTime
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:name "has end time"@en ;
+    sh:path coy:hasEndTime .
+
+coy-sh:coy_hasEventStatus
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The status of an event (eg. current or past)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has event status"@en ;
+    sh:path coy:hasEventStatus .
+
+coy-sh:coy_hasEventType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The type of an event (like earthquake or cyber attack)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has event type"@en ;
+    sh:path coy:hasEventType .
+
+coy-sh:coy_hasExposure
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The exposure of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has exposure"@en ;
+    sh:path coy:hasExposure .
+
+coy-sh:coy_hasFactory
+    a sh:PropertyShape ;
+    sh:class coy:Factory ;
+    sh:description "A production site or manufactoring hub of a company."@en ;
+    sh:name "has factory"@en ;
+    sh:path coy:hasFactory .
+
+coy-sh:coy_hasFatalities
+    a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:description "The number of reported fatalities which occurred during the event."@en ;
+    sh:maxCount 1 ;
+    sh:name "has fatalities"@en ;
+    sh:path coy:hasFatalities .
+
+coy-sh:coy_hasFax
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A company's fax number."@en ;
+    sh:maxCount 1 ;
+    sh:name "has fax"@en ;
+    sh:path coy:hasFax .
+
+coy-sh:coy_hasFoundingDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The founding date of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has founding date"@en ;
+    sh:path coy:hasFoundingDate .
+
+coy-sh:coy_hasGlideId
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The Global Identifier number of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has glide id"@en ;
+    sh:path coy:hasGlideId .
+
+coy-sh:coy_hasHeadquarter
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The main or singular office of a company."@en ;
+    sh:name "has headquarter"@en ;
+    sh:path coy:hasHeadquarter .
+
+coy-sh:coy_hasHrCourt
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The German court where a company is registered."@en ;
+    sh:maxCount 1 ;
+    sh:name "has hr court"@en ;
+    sh:path coy:hasHrCourt .
+
+coy-sh:coy_hasHrId
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A German company register id."@en ;
+    sh:maxCount 1 ;
+    sh:name "has hr id"@en ;
+    sh:path coy:hasHrId .
+
+coy-sh:coy_hasHrType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has hr type"@en ;
+    sh:path coy:hasHrType .
+
+coy-sh:coy_hasHsCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A product code as defined in the EU harmonized system."@en ;
+    sh:maxCount 1 ;
+    sh:name "has hs code"@en ;
+    sh:path coy:hasHsCode .
+
+coy-sh:coy_hasImpactOn
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:description "The thing impacted by an event."@en ;
+    sh:name "has impact on"@en ;
+    sh:path coy:hasImpactOn .
+
+coy-sh:coy_hasIndustry
+    a sh:PropertyShape ;
+    sh:class coy:Industry ;
+    sh:description "The sector or industry a company is active in."@en ;
+    sh:name "has industry"@en ;
+    sh:path coy:hasIndustry .
+
+coy-sh:coy_hasInfrastructureType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The type of critical infrastructure (like airport, port or powerplant)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has infrastructure type"@en ;
+    sh:path coy:hasInfrastructureType .
+
+coy-sh:coy_hasLanguage
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A language spoken in a country."@en ;
+    sh:maxCount 1 ;
+    sh:name "has language"@en ;
+    sh:path coy:hasLanguage .
+
+coy-sh:coy_hasLatitude
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "A latitude as defined in WGS 84."@en ;
+    sh:maxCount 1 ;
+    sh:name "has latitude"@en ;
+    sh:path coy:hasLatitude .
+
+coy-sh:coy_hasLegalAffiliation
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A legal relationship between two companies."@en ;
+    sh:name "has legal affiliation"@en ;
+    sh:path coy:hasLegalAffiliation .
+
+coy-sh:coy_hasLegalForm
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The legal form of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has legal form"@en ;
+    sh:path coy:hasLegalForm .
+
+coy-sh:coy_hasLegalName
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The legal name of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has legal name"@en ;
+    sh:path coy:hasLegalName .
+
+coy-sh:coy_hasLeiCode
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A legal entity identifier as defined in ISO 17442."@en ;
+    sh:maxCount 1 ;
+    sh:name "has lei code"@en ;
+    sh:path coy:hasLeiCode .
+
+coy-sh:coy_hasLongitude
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "A longitude as defined in WGS 84."@en ;
+    sh:maxCount 1 ;
+    sh:name "has longitude"@en ;
+    sh:path coy:hasLongitude .
+
+coy-sh:coy_hasManagementAffiliation
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A managerial relationship between two companies."@en ;
+    sh:name "has management affiliation"@en ;
+    sh:path coy:hasManagementAffiliation .
+
+coy-sh:coy_hasNumberOfEmployees
+    a sh:PropertyShape ;
+    sh:datatype xsd:positiveInteger ;
+    sh:description "The number of employees of a company (in a specified year)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has number of employees"@en ;
+    sh:path coy:hasNumberOfEmployees .
+
+coy-sh:coy_hasOngoingSpan
+    a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:description "The timespan denoting an event as ongoing."@en ;
+    sh:maxCount 1 ;
+    sh:name "has ongoing span"@en ;
+    sh:path coy:hasOngoingSpan .
+
+coy-sh:coy_hasOsmId
+    a sh:PropertyShape ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:name "has osm id"@en ;
+    sh:path coy:hasOsmId .
+
+coy-sh:coy_hasOsmType
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:name "has osm type"@en ;
+    sh:path coy:hasOsmType .
+
+coy-sh:coy_hasPhoneNumber
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A company's phone number (should be normalized)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has phone number"@en ;
+    sh:path coy:hasPhoneNumber .
+
+coy-sh:coy_hasPrice
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The monetary value of a product (at a specified date in a specified currency)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has price"@en ;
+    sh:path coy:hasPrice .
+
+coy-sh:coy_hasProduct
+    a sh:PropertyShape ;
+    sh:class coy:Product ;
+    sh:description "The material, resource or service a company produces."@en ;
+    sh:name "has product"@en ;
+    sh:path coy:hasProduct .
+
+coy-sh:coy_hasProfit
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The profit of a company (for a specified year in a specified currency)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has profit"@en ;
+    sh:path coy:hasProfit .
+
+coy-sh:coy_hasPublisher
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The originating entity of an event snippet."@en ;
+    sh:maxCount 1 ;
+    sh:name "has publisher"@en ;
+    sh:path coy:hasPublisher .
+
+coy-sh:coy_hasPurpose
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The stated purpose of an organization."@en ;
+    sh:maxCount 1 ;
+    sh:name "has purpose"@en ;
+    sh:path coy:hasPurpose .
+
+coy-sh:coy_hasRegionalIndustry
+    a sh:PropertyShape ;
+    sh:class coy:RegionalIndustry ;
+    sh:description "The related regional sector, from the Exiobase dataset."@en ;
+    sh:name "has regional industry"@en ;
+    sh:path coy:hasRegionalIndustry .
+
+coy-sh:coy_hasRequiredQuantity
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+    sh:name "has required quantity"@en ;
+    sh:path coy:hasRequiredQuantity .
+
+coy-sh:coy_hasRequirement
+    a sh:PropertyShape ;
+    sh:class coy:RegionalIndustry ;
+    sh:description "The RegionalIndustry which produces a required preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en ;
+    sh:name "has requirement"@en ;
+    sh:path coy:hasRequirement .
+
+coy-sh:coy_hasRevenue
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The revenue of a company (for a specified year in a specified currency)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has revenue"@en ;
+    sh:path coy:hasRevenue .
+
+coy-sh:coy_hasRiskLevel
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The risk level of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has risk level"@en ;
+    sh:path coy:hasRiskLevel .
+
+coy-sh:coy_hasRiskScore
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:maxCount 1 ;
+    sh:name "has risk score"@en ;
+    sh:path coy:hasRiskScore .
+
+coy-sh:coy_hasSameAddressAffiliation
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A relationship between two companies sharing the same address."@en ;
+    sh:name "has same address affiiation"@en ;
+    sh:path coy:hasSameAddressAffiliation .
+
+coy-sh:coy_hasSocialMediaUrl
+    a sh:PropertyShape ;
+    sh:class xsd:anyURI ;
+    sh:description "A company's social media profile identifier."@en ;
+    sh:maxCount 1 ;
+    sh:name "has social media url"@en ;
+    sh:path coy:hasSocialMediaUrl .
+
+coy-sh:coy_hasStartDate
+    a sh:PropertyShape ;
+    sh:datatype xsd:date ;
+    sh:maxCount 1 ;
+    sh:name "has start date"@en ;
+    sh:path coy:hasStartDate .
+
+coy-sh:coy_hasStartTime
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+    sh:name "has start time"@en ;
+    sh:path coy:hasStartTime .
+
+coy-sh:coy_hasStreet
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "A street address."@en ;
+    sh:maxCount 1 ;
+    sh:name "has street"@en ;
+    sh:path coy:hasStreet .
+
+coy-sh:coy_hasSubRegion
+    a sh:PropertyShape ;
+    sh:class coy:Region ;
+    sh:description "A geographical or administrative subset of a larger region or country."@en ;
+    sh:name "has sub region"@en ;
+    sh:path coy:hasSubRegion .
+
+coy-sh:coy_hasSupplier
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company supplying a product, material, resource or service to another company."@en ;
+    sh:name "has supplier"@en ;
+    sh:path coy:hasSupplier .
+
+coy-sh:coy_hasSusceptibility
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The susceptibility of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has susceptibility"@en ;
+    sh:path coy:hasSusceptibility .
+
+coy-sh:coy_hasTimespan
+    a sh:PropertyShape ;
+    sh:class coy:Timespan ;
+    sh:description "The peroid of duration of an event."@en ;
+    sh:name "has timespan"@en ;
+    sh:path coy:hasTimespan .
+
+coy-sh:coy_hasTimestamp
+    a sh:PropertyShape ;
+    sh:datatype xsd:dateTime ;
+    sh:description "The instant an event happened or was processed."@en ;
+    sh:maxCount 1 ;
+    sh:name "has timestamp"@en ;
+    sh:path coy:hasTimestamp .
+
+coy-sh:coy_hasVat
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The VAT ID of a company."@en ;
+    sh:maxCount 1 ;
+    sh:name "has vat"@en ;
+    sh:path coy:hasVat .
+
+coy-sh:coy_hasVolatility
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The volatility of a product price (at a specified date)."@en ;
+    sh:maxCount 1 ;
+    sh:name "has volatility"@en ;
+    sh:path coy:hasVolatility .
+
+coy-sh:coy_hasVulnerability
+    a sh:PropertyShape ;
+    sh:datatype xsd:decimal ;
+    sh:description "The vulnerability of a country as defined by Weltrisikobericht."@en ;
+    sh:maxCount 1 ;
+    sh:name "has vulnerability"@en ;
+    sh:path coy:hasVulnerability .
+
+coy-sh:coy_hasWeblinkAffiliation
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "A relationship between two companies expressed by a website link."@en ;
+    sh:name "has weblink affiliation"@en ;
+    sh:path coy:hasWeblinkAffiliation .
+
+coy-sh:coy_hasZip
+    a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:description "The ZIP code of an address."@en ;
+    sh:maxCount 1 ;
+    sh:name "has zip"@en ;
+    sh:path coy:hasZip .
+
+coy-sh:coy_isActive
+    a sh:PropertyShape ;
+    sh:datatype xsd:boolean ;
+    sh:description "The economic status of a company (active or inactive)."@en ;
+    sh:maxCount 1 ;
+    sh:name "is active"@en ;
+    sh:path coy:isActive .
+
+coy-sh:coy_isCustomerOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company sourcing a product, material, resource or service from another company."@en ;
+    sh:name "is customer of"@en ;
+    sh:path coy:isCustomerOf .
+
+coy-sh:coy_isIndustryOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company active in a sector or industry."@en ;
+    sh:name "is industry of"@en ;
+    sh:path coy:isIndustryOf .
+
+coy-sh:coy_isLocationOf
+    a sh:PropertyShape ;
+    sh:class owl:Thing ;
+    sh:description "The event, company or critical infrastructure at a certain location."@en ;
+    sh:name "is location of"@en ;
+    sh:path coy:isLocationOf .
+
+coy-sh:coy_isPartOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The concern or group a company is part of."@en ;
+    sh:name "is part of"@en ;
+    sh:path coy:isPartOf .
+
+coy-sh:coy_isProductOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company producing a material, resource or service."@en ;
+    sh:name "is product of"@en ;
+    sh:path coy:isProductOf .
+
+coy-sh:coy_isRequiredBy
+    a sh:PropertyShape ;
+    sh:class coy:RegionalIndustry ;
+    sh:description "The RegionalIndustry which requires a preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en ;
+    sh:name "is required by"@en ;
+    sh:path coy:isRequiredBy .
+
+coy-sh:coy_isSupplierOf
+    a sh:PropertyShape ;
+    sh:class coy:Company ;
+    sh:description "The company supplied with a product, material, resource or service by another company."@en ;
+    sh:name "is supplier of"@en ;
+    sh:path coy:isSupplierOf .
+
+coy-sh:coy_isUsedIn
+    a sh:PropertyShape ;
+    sh:class coy:Product ;
+    sh:description "A product, material or resource used in production of another material, resource or product."@en ;
+    sh:name "is used in"@en ;
+    sh:path coy:isUsedIn .
+
+coy-sh:ns3_GlobalTradeAlertFeature
+    a sh:NodeShape ;
+    sh:description "An annotation for the Global Trade Alert dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <gta#GlobalTradeAlertFeature> .
+
+coy-sh:ns3_StateAct
+    a sh:NodeShape ;
+    sh:description """For the GTA database, a state act is equivalent to an announcement by a government body. Each announcement documented by the GTA team includes at least one new and credible promise for change in market conditions at home or abroad.
+Each state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."""@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <gta#StateAct> .
+
+coy-sh:ns4_TradeAgreement
+    a sh:NodeShape ;
+    sh:description "A trade agreement (also known as trade pact) is a wide-ranging taxes, tariff and trade treaty that often includes investment guarantees. It exists when two or more countries agree on terms that help them trade with each other. The most common trade agreements are of the preferential and free trade types, which are concluded in order to reduce (or eliminate) tariffs,  quotas and other trade restrictions on items traded between the signatories."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <ta#TradeAgreement> .
+
+coy-sh:ns5_PortFeature
+    a sh:NodeShape ;
+    sh:description "An annotation for the World Port Index dataset."@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:targetClass <world-port-index#PortFeature> .
 

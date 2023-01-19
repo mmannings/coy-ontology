@@ -1,6 +1,9 @@
 version: '3'
 
 vars:
+  GIT_USER_NAME: bot_push_coypu
+  GIT_USER_EMAIL: kjunghanns@informatik.uni-leipzig.de
+
   ONTOLOGY_IRI: https://schema.coypu.org/global#
   SHAPE_IRI: https://schema.coypu.org/global_shapes#
   SCHEMA_FILE: "coy"
@@ -24,9 +27,9 @@ vars:
   GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
   GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
 
-  RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
+  RAPPER_IMAGE: docker.io/pheyvaer/raptor
   RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
-  RAPPER_CMD: '{{.RAPPER_DOCKER}} rapper'
+  RAPPER_CMD: '{{.RAPPER_DOCKER}}'
 
 
 tasks:
@@ -61,9 +64,8 @@ tasks:
   sync:commit_shapes:
     desc: Commit the current state of the shape file to the current branch
     cmds:
-      - git config --global user.email "kjunghanns@informatik.uni-leipzig.de" &&  git config --global user.name "bot_push_coypu"
       - git add {{.SHAPEFILE}}.ttl {{.SHAPEFILE}}.nt
-      - cmd: 'git commit -m "Bot update shapes: {{.MSG_ADD}} [skip ci]"'
+      - cmd: 'git -c user.name="{{.GIT_USER_NAME}}" -c user.email="{{.GIT_USER_EMAIL}}" commit -m "Bot update shapes: {{.MSG_ADD}} [skip ci]"'
         ignore_error: true
 
   sync:git_push:
@@ -73,7 +75,8 @@ tasks:
 
   helper:normalize_turtle:
     cmds:
-      - cat prefixes.ttl {{.FILE}}.ttl | {{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} - | sponge {{.FILE}}.ttl
+      - cat prefixes.ttl {{.FILE}}.ttl | sponge {{.FILE}}.ttl
+      - '{{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | sponge {{.FILE}}.ttl'
 
   helper:sync_turtle_nt:
     cmds:
