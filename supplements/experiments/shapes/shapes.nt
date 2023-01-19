@@ -1,0 +1,828 @@
+<https://schema.coypu.org/global_shapes#coy_AbductionOrForcedDisappearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_AbductionOrForcedDisappearance> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_AbductionOrForcedDisappearance> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#AbductionOrForcedDisappearance> .
+<https://schema.coypu.org/global_shapes#coy_AdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_AdministrativeRegion> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_AdministrativeRegion> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#AdministrativeRegion> .
+<https://schema.coypu.org/global_shapes#coy_Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Agreement> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Agreement> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Agreement> .
+<https://schema.coypu.org/global_shapes#coy_AirOrDroneStrike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_AirOrDroneStrike> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_AirOrDroneStrike> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#AirOrDroneStrike> .
+<https://schema.coypu.org/global_shapes#coy_Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Airport> <http://www.w3.org/ns/shacl#description> "A logistics hub for air freight."@en .
+<https://schema.coypu.org/global_shapes#coy_Airport> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Airport> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Airport> .
+<https://schema.coypu.org/global_shapes#coy_ArmedClash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ArmedClash> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ArmedClash> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ArmedClash> .
+<https://schema.coypu.org/global_shapes#coy_Arrest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Arrest> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Arrest> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Arrest> .
+<https://schema.coypu.org/global_shapes#coy_Attack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Attack> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Attack> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Attack> .
+<https://schema.coypu.org/global_shapes#coy_Battle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Battle> <http://www.w3.org/ns/shacl#description> "A violent interaction between two politically organized armed groups at a particular time and location."@en .
+<https://schema.coypu.org/global_shapes#coy_Battle> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Battle> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Battle> .
+<https://schema.coypu.org/global_shapes#coy_ChangeToGroupOrActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ChangeToGroupOrActivity> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ChangeToGroupOrActivity> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ChangeToGroupOrActivity> .
+<https://schema.coypu.org/global_shapes#coy_ChemicalWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ChemicalWeapon> <http://www.w3.org/ns/shacl#description> "all substances listed in the Schedule 1 of the Chemical Weapons Convention"@en .
+<https://schema.coypu.org/global_shapes#coy_ChemicalWeapon> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ChemicalWeapon> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ChemicalWeapon> .
+<https://schema.coypu.org/global_shapes#coy_City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_City> <http://www.w3.org/ns/shacl#description> "A center of population, commerce, and culture; a town of significant size and importance."@en .
+<https://schema.coypu.org/global_shapes#coy_City> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_City> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#City> .
+<https://schema.coypu.org/global_shapes#coy_Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Commodity> <http://www.w3.org/ns/shacl#description> "A commodity good or production material."@en .
+<https://schema.coypu.org/global_shapes#coy_Commodity> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Commodity> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Commodity> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#description> "An organization engaged in economic activities."@en .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasBranchOffices> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCapital> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCompanySize> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCustomer> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEbidCode> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEmail> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasFactory> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasFax> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasFoundingDate> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasHeadquarter> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasHrCourt> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasHrId> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasHrType> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasIndustry> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLegalForm> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLegalName> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLeiCode> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasProduct> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasProfit> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasPurpose> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRevenue> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasStreet> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasSupplier> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasVat> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasZip> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isActive> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isCustomerOf> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isPartOf> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isSupplierOf> .
+<https://schema.coypu.org/global_shapes#coy_Company> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/ns/shacl#description> "An event of disagreement or disharmony between organizations, persons or ideas."@en .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasActor> .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasFatalities> .
+<https://schema.coypu.org/global_shapes#coy_Conflict> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Conflict> .
+<https://schema.coypu.org/global_shapes#coy_Continent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Continent> <http://www.w3.org/ns/shacl#description> "A large landmass of the globe, usually comprising several countries."@en .
+<https://schema.coypu.org/global_shapes#coy_Continent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Continent> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Continent> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#description> "The territory under jurisdiction of a nation state."@en .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCopingCapability> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCurrency> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasExposure> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLanguage> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRiskLevel> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasSusceptibility> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasVulnerability> .
+<https://schema.coypu.org/global_shapes#coy_Country> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Country> .
+<https://schema.coypu.org/global_shapes#coy_CountryStatistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_CountryStatistic> <http://www.w3.org/ns/shacl#description> "An annotation for the United Nations Sustainable Development Goals dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_CountryStatistic> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_CountryStatistic> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#CountryStatistic> .
+<https://schema.coypu.org/global_shapes#coy_Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Customer> <http://www.w3.org/ns/shacl#description> "An organization that sources something needed such as a product or service from another organization."@en .
+<https://schema.coypu.org/global_shapes#coy_Customer> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Customer> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Customer> .
+<https://schema.coypu.org/global_shapes#coy_Demonstration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Demonstration> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Demonstration> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Demonstration> .
+<https://schema.coypu.org/global_shapes#coy_Disaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Disaster> <http://www.w3.org/ns/shacl#description> "An occurrence causing widespread destruction and distress."@en .
+<https://schema.coypu.org/global_shapes#coy_Disaster> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Disaster> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasGlideId> .
+<https://schema.coypu.org/global_shapes#coy_Disaster> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Disaster> .
+<https://schema.coypu.org/global_shapes#coy_DisruptedWeaponUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_DisruptedWeaponUse> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_DisruptedWeaponUse> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#DisruptedWeaponUse> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#description> "An event related to a specific location with a singular occurence."@en .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasAlertScore> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEndDate> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEndTime> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEventStatus> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasEventType> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasImpactOn> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasPublisher> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRiskScore> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasStartDate> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasStartTime> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasTimespan> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasTimestamp> .
+<https://schema.coypu.org/global_shapes#coy_Event> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Event> .
+<https://schema.coypu.org/global_shapes#coy_ExcessiveForceAgainstProtesters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ExcessiveForceAgainstProtesters> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ExcessiveForceAgainstProtesters> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ExcessiveForceAgainstProtesters> .
+<https://schema.coypu.org/global_shapes#coy_ExiobaseIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ExiobaseIndustry> <http://www.w3.org/ns/shacl#description> "An economic sector from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_ExiobaseIndustry> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ExiobaseIndustry> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ExiobaseIndustry> .
+<https://schema.coypu.org/global_shapes#coy_ExplosionOrRemoteViolence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ExplosionOrRemoteViolence> <http://www.w3.org/ns/shacl#description> "A one-sided violent event in which the tool for engaging in conflict creates asymmetry by taking away the ability of the target to respond."@en .
+<https://schema.coypu.org/global_shapes#coy_ExplosionOrRemoteViolence> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ExplosionOrRemoteViolence> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ExplosionOrRemoteViolence> .
+<https://schema.coypu.org/global_shapes#coy_Factory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Factory> <http://www.w3.org/ns/shacl#description> "A factory or production site."@en .
+<https://schema.coypu.org/global_shapes#coy_Factory> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Factory> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Factory> .
+<https://schema.coypu.org/global_shapes#coy_Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Feature> <http://www.w3.org/ns/shacl#description> "An annotation or reification class for specific datasets."@en .
+<https://schema.coypu.org/global_shapes#coy_Feature> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Feature> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Feature> .
+<https://schema.coypu.org/global_shapes#coy_GovernmentRegainsTerritory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_GovernmentRegainsTerritory> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_GovernmentRegainsTerritory> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#GovernmentRegainsTerritory> .
+<https://schema.coypu.org/global_shapes#coy_Grenade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Grenade> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Grenade> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Grenade> .
+<https://schema.coypu.org/global_shapes#coy_HeadquartersOrBaseEstablished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_HeadquartersOrBaseEstablished> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_HeadquartersOrBaseEstablished> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#HeadquartersOrBaseEstablished> .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/ns/shacl#description> "An industry or economic sector."@en .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isIndustryOf> .
+<https://schema.coypu.org/global_shapes#coy_Industry> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Industry> .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/ns/shacl#description> "A facility providing critical infrastructure for production or logistics."@en .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCapacity> .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> .
+<https://schema.coypu.org/global_shapes#coy_Infrastructure> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Infrastructure> .
+<https://schema.coypu.org/global_shapes#coy_InternationalOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_InternationalOrganization> <http://www.w3.org/ns/shacl#description> "A multinational conglomerate, a supranational state actor or a cross-border non-governmental organization."@en .
+<https://schema.coypu.org/global_shapes#coy_InternationalOrganization> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_InternationalOrganization> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#InternationalOrganization> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#description> "A place on the globe."@en .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLatitude> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasLongitude> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasSubRegion> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isLocationOf> .
+<https://schema.coypu.org/global_shapes#coy_Location> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Location> .
+<https://schema.coypu.org/global_shapes#coy_LootingOrPropertyDestruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_LootingOrPropertyDestruction> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_LootingOrPropertyDestruction> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#LootingOrPropertyDestruction> .
+<https://schema.coypu.org/global_shapes#coy_Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Material> <http://www.w3.org/ns/shacl#description> "A substance or resource which is required for producing other goods."@en .
+<https://schema.coypu.org/global_shapes#coy_Material> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Material> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Material> .
+<https://schema.coypu.org/global_shapes#coy_Mine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Mine> <http://www.w3.org/ns/shacl#description> "An extraction site for natural resources, like copper, iron or bauxite."@en .
+<https://schema.coypu.org/global_shapes#coy_Mine> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Mine> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Mine> .
+<https://schema.coypu.org/global_shapes#coy_MobViolence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_MobViolence> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_MobViolence> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#MobViolence> .
+<https://schema.coypu.org/global_shapes#coy_News> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_News> <http://www.w3.org/ns/shacl#description> "A newspaper article, social media posting or press release."@en .
+<https://schema.coypu.org/global_shapes#coy_News> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_News> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#News> .
+<https://schema.coypu.org/global_shapes#coy_Non-StateActorOvertakesTerritory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Non-StateActorOvertakesTerritory> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Non-StateActorOvertakesTerritory> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Non-StateActorOvertakesTerritory> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentAction> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentAction> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#NonViolentAction> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentTransferOfTerritory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentTransferOfTerritory> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_NonViolentTransferOfTerritory> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#NonViolentTransferOfTerritory> .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/ns/shacl#description> "An Open Street Map reference."@en .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasOsmId> .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasOsmType> .
+<https://schema.coypu.org/global_shapes#coy_OsmElement> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#OsmElement> .
+<https://schema.coypu.org/global_shapes#coy_Other> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Other> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Other> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Other> .
+<https://schema.coypu.org/global_shapes#coy_PeacefulProtest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_PeacefulProtest> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_PeacefulProtest> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#PeacefulProtest> .
+<https://schema.coypu.org/global_shapes#coy_Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Pipeline> <http://www.w3.org/ns/shacl#description> "A gas, oil or hydrogen pipeline."@en .
+<https://schema.coypu.org/global_shapes#coy_Pipeline> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Pipeline> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Pipeline> .
+<https://schema.coypu.org/global_shapes#coy_Port> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Port> <http://www.w3.org/ns/shacl#description> "A logictics hub for shipping."@en .
+<https://schema.coypu.org/global_shapes#coy_Port> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Port> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Port> .
+<https://schema.coypu.org/global_shapes#coy_Powerplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Powerplant> <http://www.w3.org/ns/shacl#description> "A facility for generating electric power."@en .
+<https://schema.coypu.org/global_shapes#coy_Powerplant> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Powerplant> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Powerplant> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#description> "Any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCpaCode> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasHsCode> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasPrice> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasVolatility> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isProductOf> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isUsedIn> .
+<https://schema.coypu.org/global_shapes#coy_Product> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Product> .
+<https://schema.coypu.org/global_shapes#coy_Protest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Protest> <http://www.w3.org/ns/shacl#description> "A protest is defined as a public demonstration in which the participants do not engage in violence, though violence may be used against them."@en .
+<https://schema.coypu.org/global_shapes#coy_Protest> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Protest> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Protest> .
+<https://schema.coypu.org/global_shapes#coy_ProtestWithIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ProtestWithIntervention> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ProtestWithIntervention> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ProtestWithIntervention> .
+<https://schema.coypu.org/global_shapes#coy_RailwaySegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_RailwaySegment> <http://www.w3.org/ns/shacl#description> "A railway track between train stations."@en .
+<https://schema.coypu.org/global_shapes#coy_RailwaySegment> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_RailwaySegment> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#RailwaySegment> .
+<https://schema.coypu.org/global_shapes#coy_Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Region> <http://www.w3.org/ns/shacl#description> "An administrative or economic area."@en .
+<https://schema.coypu.org/global_shapes#coy_Region> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Region> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Region> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/ns/shacl#description> "An economic sector located in a specific country or region, from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasCo2Emission> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustry> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#RegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/ns/shacl#description> "The quantified dependency of a RegionalIndustry to another, from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasRequirement> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_isRequiredBy> .
+<https://schema.coypu.org/global_shapes#coy_RegionalIndustryCoefficient> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#RegionalIndustryCoefficient> .
+<https://schema.coypu.org/global_shapes#coy_RemoteExplosiveOrLandmine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_RemoteExplosiveOrLandmine> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_RemoteExplosiveOrLandmine> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#RemoteExplosiveOrLandmine> .
+<https://schema.coypu.org/global_shapes#coy_Riot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Riot> <http://www.w3.org/ns/shacl#description> "A violent event where demonstrators or mobs engage in disruptive acts, including but not limited to rock throwing, property destruction, etc."@en .
+<https://schema.coypu.org/global_shapes#coy_Riot> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Riot> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Riot> .
+<https://schema.coypu.org/global_shapes#coy_River> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_River> <http://www.w3.org/ns/shacl#description> "A large natural stream of water emptying into an ocean, lake, or other body of water and usually fed along its course by converging tributaries. Often providing critial logistics infrastructure."@en .
+<https://schema.coypu.org/global_shapes#coy_River> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_River> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#River> .
+<https://schema.coypu.org/global_shapes#coy_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Service> <http://www.w3.org/ns/shacl#description> "An economic activity that is done for others as an occupation or business."@en .
+<https://schema.coypu.org/global_shapes#coy_Service> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Service> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Service> .
+<https://schema.coypu.org/global_shapes#coy_SexualViolence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_SexualViolence> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_SexualViolence> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#SexualViolence> .
+<https://schema.coypu.org/global_shapes#coy_ShellingOrArtilleryOrMissileAttack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ShellingOrArtilleryOrMissileAttack> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ShellingOrArtilleryOrMissileAttack> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ShellingOrArtilleryOrMissileAttack> .
+<https://schema.coypu.org/global_shapes#coy_SocioPoliticalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_SocioPoliticalEvent> <http://www.w3.org/ns/shacl#description> "An event of socio-political relevance, from the IECWS dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_SocioPoliticalEvent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_SocioPoliticalEvent> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#SocioPoliticalEvent> .
+<https://schema.coypu.org/global_shapes#coy_StrategicDevelopment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_StrategicDevelopment> <http://www.w3.org/ns/shacl#description> "An activity of a violent group that is not itself recorded as political violence, yet may trigger future events or contribute to political dynamics within and across states."@en .
+<https://schema.coypu.org/global_shapes#coy_StrategicDevelopment> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_StrategicDevelopment> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#StrategicDevelopment> .
+<https://schema.coypu.org/global_shapes#coy_SuicideBomb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_SuicideBomb> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_SuicideBomb> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#SuicideBomb> .
+<https://schema.coypu.org/global_shapes#coy_Supplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Supplier> <http://www.w3.org/ns/shacl#description> "An organization that provides something needed such as a product or service to another organization."@en .
+<https://schema.coypu.org/global_shapes#coy_Supplier> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Supplier> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Supplier> .
+<https://schema.coypu.org/global_shapes#coy_Terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Terminal> <http://www.w3.org/ns/shacl#description> "A terminal to connect pipelines."@en .
+<https://schema.coypu.org/global_shapes#coy_Terminal> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Terminal> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Terminal> .
+<https://schema.coypu.org/global_shapes#coy_Timespan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_Timespan> <http://www.w3.org/ns/shacl#description> "A period or duration."@en .
+<https://schema.coypu.org/global_shapes#coy_Timespan> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_Timespan> <http://www.w3.org/ns/shacl#property> <https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> .
+<https://schema.coypu.org/global_shapes#coy_Timespan> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#Timespan> .
+<https://schema.coypu.org/global_shapes#coy_TrainStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_TrainStation> <http://www.w3.org/ns/shacl#description> "A logistics hub for rail freight."@en .
+<https://schema.coypu.org/global_shapes#coy_TrainStation> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_TrainStation> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#TrainStation> .
+<https://schema.coypu.org/global_shapes#coy_ViolenceAgainstCivilians> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ViolenceAgainstCivilians> <http://www.w3.org/ns/shacl#description> "A violent interaction between two politically organized armed groups at a particular time and location."@en .
+<https://schema.coypu.org/global_shapes#coy_ViolenceAgainstCivilians> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ViolenceAgainstCivilians> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ViolenceAgainstCivilians> .
+<https://schema.coypu.org/global_shapes#coy_ViolentDemonstration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ViolentDemonstration> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ViolentDemonstration> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ViolentDemonstration> .
+<https://schema.coypu.org/global_shapes#coy_ViolentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_ViolentEvent> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_ViolentEvent> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#ViolentEvent> .
+<https://schema.coypu.org/global_shapes#coy_WikiNews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#coy_WikiNews> <http://www.w3.org/ns/shacl#description> "A current news event extracted from Wikipedia."@en .
+<https://schema.coypu.org/global_shapes#coy_WikiNews> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#coy_WikiNews> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/global#WikiNews> .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/ns/shacl#description> "The named actor involved in the event."@en .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/ns/shacl#name> "has actor"@en .
+<https://schema.coypu.org/global_shapes#coy_hasActor> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasActor> .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/ns/shacl#description> "The adaptive capability of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/ns/shacl#name> "has adaptive capability"@en .
+<https://schema.coypu.org/global_shapes#coy_hasAdaptiveCapability> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasAdaptiveCapability> .
+<https://schema.coypu.org/global_shapes#coy_hasAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasAffiliation> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasAffiliation> <http://www.w3.org/ns/shacl#description> "A relationship between two companies."@en .
+<https://schema.coypu.org/global_shapes#coy_hasAffiliation> <http://www.w3.org/ns/shacl#name> "has affiliation"@en .
+<https://schema.coypu.org/global_shapes#coy_hasAffiliation> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/ns/shacl#description> "The alert level score of an event (eg. 0/1/2 or green/orange/red)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/ns/shacl#name> "has alert score"@en .
+<https://schema.coypu.org/global_shapes#coy_hasAlertScore> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasAlertScore> .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/ns/shacl#description> "The balance sheet total of a company (at a specified date in a specified currency)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/ns/shacl#name> "has balance sheet total"@en .
+<https://schema.coypu.org/global_shapes#coy_hasBalanceSheetTotal> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasBalanceSheetTotal> .
+<https://schema.coypu.org/global_shapes#coy_hasBranchOffices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasBranchOffices> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasBranchOffices> <http://www.w3.org/ns/shacl#description> "A local or international branch of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasBranchOffices> <http://www.w3.org/ns/shacl#name> "has branch offices"@en .
+<https://schema.coypu.org/global_shapes#coy_hasBranchOffices> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasBranchOffices> .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/ns/shacl#description> "The capacity in tonnes of a facility (eg. ports or airports)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/ns/shacl#name> "has capacity"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCapacity> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCapacity> .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/ns/shacl#description> "The monetary capital of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/ns/shacl#name> "has capital"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCapital> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCapital> .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/ns/shacl#description> "The CO2 emissions of a regional industry in Gg, from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/ns/shacl#name> "has co2 emission"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCo2Emission> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCo2Emission> .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/ns/shacl#description> "The size of a company according to the EU SME definition."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/ns/shacl#name> "has company size"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCompanySize> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCompanySize> .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/ns/shacl#description> "The coping capability of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/ns/shacl#name> "has coping capability"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCopingCapability> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCopingCapability> .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/ns/shacl#description> "A product code as defined in CPA."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/ns/shacl#name> "has cpa code"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCpaCode> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCpaCode> .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/ns/shacl#description> "The currency of a country or monetary value."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/ns/shacl#name> "has currency"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCurrency> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCurrency> .
+<https://schema.coypu.org/global_shapes#coy_hasCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasCustomer> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasCustomer> <http://www.w3.org/ns/shacl#description> "The company receiving a product, material, resource or service to another company, usually for monetary compensation."@en .
+<https://schema.coypu.org/global_shapes#coy_hasCustomer> <http://www.w3.org/ns/shacl#name> "has customer"@en .
+<https://schema.coypu.org/global_shapes#coy_hasCustomer> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasCustomer> .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/ns/shacl#description> "The dissolution date of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/ns/shacl#name> "has dissolution date"@en .
+<https://schema.coypu.org/global_shapes#coy_hasDissolutionDate> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasDissolutionDate> .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/ns/shacl#description> "The European Business Identifier of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/ns/shacl#name> "has ebid code"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEbidCode> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEbidCode> .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/ns/shacl#description> "A company's email address."@en .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/ns/shacl#name> "has email"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEmail> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEmail> .
+<https://schema.coypu.org/global_shapes#coy_hasEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEndDate> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date> .
+<https://schema.coypu.org/global_shapes#coy_hasEndDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEndDate> <http://www.w3.org/ns/shacl#name> "has end date"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEndDate> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEndDate> .
+<https://schema.coypu.org/global_shapes#coy_hasEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEndTime> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.coypu.org/global_shapes#coy_hasEndTime> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEndTime> <http://www.w3.org/ns/shacl#name> "has end time"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEndTime> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEndTime> .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/ns/shacl#description> "The status of an event (eg. current or past)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/ns/shacl#name> "has event status"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEventStatus> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEventStatus> .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/ns/shacl#description> "The type of an event (like earthquake or cyber attack)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/ns/shacl#name> "has event type"@en .
+<https://schema.coypu.org/global_shapes#coy_hasEventType> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasEventType> .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/ns/shacl#description> "The exposure of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/ns/shacl#name> "has exposure"@en .
+<https://schema.coypu.org/global_shapes#coy_hasExposure> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasExposure> .
+<https://schema.coypu.org/global_shapes#coy_hasFactory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasFactory> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Factory> .
+<https://schema.coypu.org/global_shapes#coy_hasFactory> <http://www.w3.org/ns/shacl#description> "A production site or manufactoring hub of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasFactory> <http://www.w3.org/ns/shacl#name> "has factory"@en .
+<https://schema.coypu.org/global_shapes#coy_hasFactory> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasFactory> .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/ns/shacl#description> "The number of reported fatalities which occurred during the event."@en .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/ns/shacl#name> "has fatalities"@en .
+<https://schema.coypu.org/global_shapes#coy_hasFatalities> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasFatalities> .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/ns/shacl#description> "A company's fax number."@en .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/ns/shacl#name> "has fax"@en .
+<https://schema.coypu.org/global_shapes#coy_hasFax> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasFax> .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/ns/shacl#description> "The founding date of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/ns/shacl#name> "has founding date"@en .
+<https://schema.coypu.org/global_shapes#coy_hasFoundingDate> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasFoundingDate> .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/ns/shacl#description> "The Global Identifier number of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/ns/shacl#name> "has glide id"@en .
+<https://schema.coypu.org/global_shapes#coy_hasGlideId> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasGlideId> .
+<https://schema.coypu.org/global_shapes#coy_hasHeadquarter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasHeadquarter> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasHeadquarter> <http://www.w3.org/ns/shacl#description> "The main or singular office of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasHeadquarter> <http://www.w3.org/ns/shacl#name> "has headquarter"@en .
+<https://schema.coypu.org/global_shapes#coy_hasHeadquarter> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasHeadquarter> .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/ns/shacl#description> "The German court where a company is registered."@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/ns/shacl#name> "has hr court"@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrCourt> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasHrCourt> .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/ns/shacl#description> "A German company register id."@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/ns/shacl#name> "has hr id"@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrId> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasHrId> .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/ns/shacl#description> "The type of a Handelsregisterbekanntmachung (HRA, HRB, AR, GnR, PR or VR)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/ns/shacl#name> "has hr type"@en .
+<https://schema.coypu.org/global_shapes#coy_hasHrType> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasHrType> .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/ns/shacl#description> "A product code as defined in the EU harmonized system."@en .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/ns/shacl#name> "has hs code"@en .
+<https://schema.coypu.org/global_shapes#coy_hasHsCode> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasHsCode> .
+<https://schema.coypu.org/global_shapes#coy_hasImpactOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasImpactOn> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2002/07/owl#Thing> .
+<https://schema.coypu.org/global_shapes#coy_hasImpactOn> <http://www.w3.org/ns/shacl#description> "The thing impacted by an event."@en .
+<https://schema.coypu.org/global_shapes#coy_hasImpactOn> <http://www.w3.org/ns/shacl#name> "has impact on"@en .
+<https://schema.coypu.org/global_shapes#coy_hasImpactOn> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasImpactOn> .
+<https://schema.coypu.org/global_shapes#coy_hasIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasIndustry> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Industry> .
+<https://schema.coypu.org/global_shapes#coy_hasIndustry> <http://www.w3.org/ns/shacl#description> "The sector or industry a company is active in."@en .
+<https://schema.coypu.org/global_shapes#coy_hasIndustry> <http://www.w3.org/ns/shacl#name> "has industry"@en .
+<https://schema.coypu.org/global_shapes#coy_hasIndustry> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasIndustry> .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/ns/shacl#description> "The type of critical infrastructure (like airport, port or powerplant)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/ns/shacl#name> "has infrastructure type"@en .
+<https://schema.coypu.org/global_shapes#coy_hasInfrastructureType> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasInfrastructureType> .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/ns/shacl#description> "A language spoken in a country."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/ns/shacl#name> "has language"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLanguage> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLanguage> .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/ns/shacl#description> "A latitude as defined in WGS 84."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/ns/shacl#name> "has latitude"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLatitude> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLatitude> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> <http://www.w3.org/ns/shacl#description> "A legal relationship between two companies."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> <http://www.w3.org/ns/shacl#name> "has legal affiliation"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalAffiliation> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLegalAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/ns/shacl#description> "The legal form of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/ns/shacl#name> "has legal form"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalForm> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLegalForm> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/ns/shacl#description> "The legal name of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/ns/shacl#name> "has legal name"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLegalName> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLegalName> .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/ns/shacl#description> "A legal entity identifier as defined in ISO 17442."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/ns/shacl#name> "has lei code"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLeiCode> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLeiCode> .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/ns/shacl#description> "A longitude as defined in WGS 84."@en .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/ns/shacl#name> "has longitude"@en .
+<https://schema.coypu.org/global_shapes#coy_hasLongitude> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasLongitude> .
+<https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> <http://www.w3.org/ns/shacl#description> "A managerial relationship between two companies."@en .
+<https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> <http://www.w3.org/ns/shacl#name> "has management affiliation"@en .
+<https://schema.coypu.org/global_shapes#coy_hasManagementAffiliation> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasManagementAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/ns/shacl#description> "The number of employees of a company (in a specified year)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/ns/shacl#name> "has number of employees"@en .
+<https://schema.coypu.org/global_shapes#coy_hasNumberOfEmployees> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasNumberOfEmployees> .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/ns/shacl#description> "The timespan denoting an event as ongoing."@en .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/ns/shacl#name> "has ongoing span"@en .
+<https://schema.coypu.org/global_shapes#coy_hasOngoingSpan> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasOngoingSpan> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmId> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmId> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmId> <http://www.w3.org/ns/shacl#name> "has osm id"@en .
+<https://schema.coypu.org/global_shapes#coy_hasOsmId> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasOsmId> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmType> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasOsmType> <http://www.w3.org/ns/shacl#name> "has osm type"@en .
+<https://schema.coypu.org/global_shapes#coy_hasOsmType> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasOsmType> .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/ns/shacl#description> "A company's phone number (should be normalized)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/ns/shacl#name> "has phone number"@en .
+<https://schema.coypu.org/global_shapes#coy_hasPhoneNumber> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasPhoneNumber> .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/ns/shacl#description> "The monetary value of a product (at a specified date in a specified currency)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/ns/shacl#name> "has price"@en .
+<https://schema.coypu.org/global_shapes#coy_hasPrice> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasPrice> .
+<https://schema.coypu.org/global_shapes#coy_hasProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasProduct> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Product> .
+<https://schema.coypu.org/global_shapes#coy_hasProduct> <http://www.w3.org/ns/shacl#description> "The material, resource or service a company produces."@en .
+<https://schema.coypu.org/global_shapes#coy_hasProduct> <http://www.w3.org/ns/shacl#name> "has product"@en .
+<https://schema.coypu.org/global_shapes#coy_hasProduct> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasProduct> .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/ns/shacl#description> "The profit of a company (for a specified year in a specified currency)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/ns/shacl#name> "has profit"@en .
+<https://schema.coypu.org/global_shapes#coy_hasProfit> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasProfit> .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/ns/shacl#description> "The originating entity of an event snippet."@en .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/ns/shacl#name> "has publisher"@en .
+<https://schema.coypu.org/global_shapes#coy_hasPublisher> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasPublisher> .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/ns/shacl#description> "The stated purpose of an organization."@en .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/ns/shacl#name> "has purpose"@en .
+<https://schema.coypu.org/global_shapes#coy_hasPurpose> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasPurpose> .
+<https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#RegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> <http://www.w3.org/ns/shacl#description> "The related regional sector, from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> <http://www.w3.org/ns/shacl#name> "has regional industry"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRegionalIndustry> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> <http://www.w3.org/ns/shacl#name> "has required quantity"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRequiredQuantity> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRequiredQuantity> .
+<https://schema.coypu.org/global_shapes#coy_hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRequirement> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#RegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_hasRequirement> <http://www.w3.org/ns/shacl#description> "The RegionalIndustry which produces a required preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_hasRequirement> <http://www.w3.org/ns/shacl#name> "has requirement"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRequirement> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRequirement> .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/ns/shacl#description> "The revenue of a company (for a specified year in a specified currency)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/ns/shacl#name> "has revenue"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRevenue> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRevenue> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/ns/shacl#description> "The risk level of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/ns/shacl#name> "has risk level"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRiskLevel> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRiskLevel> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskScore> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskScore> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasRiskScore> <http://www.w3.org/ns/shacl#name> "has risk score"@en .
+<https://schema.coypu.org/global_shapes#coy_hasRiskScore> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasRiskScore> .
+<https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> <http://www.w3.org/ns/shacl#description> "A relationship between two companies sharing the same address."@en .
+<https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> <http://www.w3.org/ns/shacl#name> "has same address affiiation"@en .
+<https://schema.coypu.org/global_shapes#coy_hasSameAddressAffiliation> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasSameAddressAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/ns/shacl#description> "A company's social media profile identifier."@en .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/ns/shacl#name> "has social media url"@en .
+<https://schema.coypu.org/global_shapes#coy_hasSocialMediaUrl> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasSocialMediaUrl> .
+<https://schema.coypu.org/global_shapes#coy_hasStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasStartDate> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date> .
+<https://schema.coypu.org/global_shapes#coy_hasStartDate> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasStartDate> <http://www.w3.org/ns/shacl#name> "has start date"@en .
+<https://schema.coypu.org/global_shapes#coy_hasStartDate> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasStartDate> .
+<https://schema.coypu.org/global_shapes#coy_hasStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasStartTime> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.coypu.org/global_shapes#coy_hasStartTime> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasStartTime> <http://www.w3.org/ns/shacl#name> "has start time"@en .
+<https://schema.coypu.org/global_shapes#coy_hasStartTime> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasStartTime> .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/ns/shacl#description> "A street address."@en .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/ns/shacl#name> "has street"@en .
+<https://schema.coypu.org/global_shapes#coy_hasStreet> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasStreet> .
+<https://schema.coypu.org/global_shapes#coy_hasSubRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasSubRegion> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Region> .
+<https://schema.coypu.org/global_shapes#coy_hasSubRegion> <http://www.w3.org/ns/shacl#description> "A geographical or administrative subset of a larger region or country."@en .
+<https://schema.coypu.org/global_shapes#coy_hasSubRegion> <http://www.w3.org/ns/shacl#name> "has sub region"@en .
+<https://schema.coypu.org/global_shapes#coy_hasSubRegion> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasSubRegion> .
+<https://schema.coypu.org/global_shapes#coy_hasSupplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasSupplier> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasSupplier> <http://www.w3.org/ns/shacl#description> "The company supplying a product, material, resource or service to another company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasSupplier> <http://www.w3.org/ns/shacl#name> "has supplier"@en .
+<https://schema.coypu.org/global_shapes#coy_hasSupplier> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasSupplier> .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/ns/shacl#description> "The susceptibility of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/ns/shacl#name> "has susceptibility"@en .
+<https://schema.coypu.org/global_shapes#coy_hasSusceptibility> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasSusceptibility> .
+<https://schema.coypu.org/global_shapes#coy_hasTimespan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasTimespan> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Timespan> .
+<https://schema.coypu.org/global_shapes#coy_hasTimespan> <http://www.w3.org/ns/shacl#description> "The peroid of duration of an event."@en .
+<https://schema.coypu.org/global_shapes#coy_hasTimespan> <http://www.w3.org/ns/shacl#name> "has timespan"@en .
+<https://schema.coypu.org/global_shapes#coy_hasTimespan> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasTimespan> .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/ns/shacl#description> "The instant an event happened or was processed."@en .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/ns/shacl#name> "has timestamp"@en .
+<https://schema.coypu.org/global_shapes#coy_hasTimestamp> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasTimestamp> .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/ns/shacl#description> "The VAT ID of a company."@en .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/ns/shacl#name> "has vat"@en .
+<https://schema.coypu.org/global_shapes#coy_hasVat> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasVat> .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/ns/shacl#description> "The volatility of a product price (at a specified date)."@en .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/ns/shacl#name> "has volatility"@en .
+<https://schema.coypu.org/global_shapes#coy_hasVolatility> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasVolatility> .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/ns/shacl#description> "The vulnerability of a country as defined by Weltrisikobericht."@en .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/ns/shacl#name> "has vulnerability"@en .
+<https://schema.coypu.org/global_shapes#coy_hasVulnerability> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasVulnerability> .
+<https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> <http://www.w3.org/ns/shacl#description> "A relationship between two companies expressed by a website link."@en .
+<https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> <http://www.w3.org/ns/shacl#name> "has weblink affiliation"@en .
+<https://schema.coypu.org/global_shapes#coy_hasWeblinkAffiliation> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasWeblinkAffiliation> .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/ns/shacl#description> "The ZIP code of an address."@en .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/ns/shacl#name> "has zip"@en .
+<https://schema.coypu.org/global_shapes#coy_hasZip> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#hasZip> .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/ns/shacl#description> "The economic status of a company (active or inactive)."@en .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/ns/shacl#name> "is active"@en .
+<https://schema.coypu.org/global_shapes#coy_isActive> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isActive> .
+<https://schema.coypu.org/global_shapes#coy_isCustomerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isCustomerOf> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_isCustomerOf> <http://www.w3.org/ns/shacl#description> "The company sourcing a product, material, resource or service from another company."@en .
+<https://schema.coypu.org/global_shapes#coy_isCustomerOf> <http://www.w3.org/ns/shacl#name> "is customer of"@en .
+<https://schema.coypu.org/global_shapes#coy_isCustomerOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isCustomerOf> .
+<https://schema.coypu.org/global_shapes#coy_isIndustryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isIndustryOf> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_isIndustryOf> <http://www.w3.org/ns/shacl#description> "The company active in a sector or industry."@en .
+<https://schema.coypu.org/global_shapes#coy_isIndustryOf> <http://www.w3.org/ns/shacl#name> "is industry of"@en .
+<https://schema.coypu.org/global_shapes#coy_isIndustryOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isIndustryOf> .
+<https://schema.coypu.org/global_shapes#coy_isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isLocationOf> <http://www.w3.org/ns/shacl#class> <http://www.w3.org/2002/07/owl#Thing> .
+<https://schema.coypu.org/global_shapes#coy_isLocationOf> <http://www.w3.org/ns/shacl#description> "The event, company or critical infrastructure at a certain location."@en .
+<https://schema.coypu.org/global_shapes#coy_isLocationOf> <http://www.w3.org/ns/shacl#name> "is location of"@en .
+<https://schema.coypu.org/global_shapes#coy_isLocationOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isLocationOf> .
+<https://schema.coypu.org/global_shapes#coy_isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isPartOf> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_isPartOf> <http://www.w3.org/ns/shacl#description> "The concern or group a company is part of."@en .
+<https://schema.coypu.org/global_shapes#coy_isPartOf> <http://www.w3.org/ns/shacl#name> "is part of"@en .
+<https://schema.coypu.org/global_shapes#coy_isPartOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isPartOf> .
+<https://schema.coypu.org/global_shapes#coy_isProductOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isProductOf> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_isProductOf> <http://www.w3.org/ns/shacl#description> "The company producing a material, resource or service."@en .
+<https://schema.coypu.org/global_shapes#coy_isProductOf> <http://www.w3.org/ns/shacl#name> "is product of"@en .
+<https://schema.coypu.org/global_shapes#coy_isProductOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isProductOf> .
+<https://schema.coypu.org/global_shapes#coy_isRequiredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isRequiredBy> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#RegionalIndustry> .
+<https://schema.coypu.org/global_shapes#coy_isRequiredBy> <http://www.w3.org/ns/shacl#description> "The RegionalIndustry which requires a preliminary product (expressed by it's RegionalIndustryCoefficient), from the Exiobase dataset."@en .
+<https://schema.coypu.org/global_shapes#coy_isRequiredBy> <http://www.w3.org/ns/shacl#name> "is required by"@en .
+<https://schema.coypu.org/global_shapes#coy_isRequiredBy> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isRequiredBy> .
+<https://schema.coypu.org/global_shapes#coy_isSupplierOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isSupplierOf> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Company> .
+<https://schema.coypu.org/global_shapes#coy_isSupplierOf> <http://www.w3.org/ns/shacl#description> "The company supplied with a product, material, resource or service by another company."@en .
+<https://schema.coypu.org/global_shapes#coy_isSupplierOf> <http://www.w3.org/ns/shacl#name> "is supplier of"@en .
+<https://schema.coypu.org/global_shapes#coy_isSupplierOf> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isSupplierOf> .
+<https://schema.coypu.org/global_shapes#coy_isUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://schema.coypu.org/global_shapes#coy_isUsedIn> <http://www.w3.org/ns/shacl#class> <https://schema.coypu.org/global#Product> .
+<https://schema.coypu.org/global_shapes#coy_isUsedIn> <http://www.w3.org/ns/shacl#description> "A product, material or resource used in production of another material, resource or product."@en .
+<https://schema.coypu.org/global_shapes#coy_isUsedIn> <http://www.w3.org/ns/shacl#name> "is used in"@en .
+<https://schema.coypu.org/global_shapes#coy_isUsedIn> <http://www.w3.org/ns/shacl#path> <https://schema.coypu.org/global#isUsedIn> .
+<https://schema.coypu.org/global_shapes#ns3_GlobalTradeAlertFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#ns3_GlobalTradeAlertFeature> <http://www.w3.org/ns/shacl#description> "An annotation for the Global Trade Alert dataset."@en .
+<https://schema.coypu.org/global_shapes#ns3_GlobalTradeAlertFeature> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#ns3_GlobalTradeAlertFeature> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/gta#GlobalTradeAlertFeature> .
+<https://schema.coypu.org/global_shapes#ns3_StateAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#ns3_StateAct> <http://www.w3.org/ns/shacl#description> "For the GTA database, a state act is equivalent to an announcement by a government body. Each announcement documented by the GTA team includes at least one new and credible promise for change in market conditions at home or abroad.\nEach state act in the GTA database consists of one or more interventions. The interventions represent the used policy instrument plus the direction of the induced change (liberalising or harmful). The clear majority of GTA database entries are state acts with a single associated intervention. For example, the announcement of a new production subsidy to steel producers would be recorded as one state act with one intervention."@en .
+<https://schema.coypu.org/global_shapes#ns3_StateAct> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#ns3_StateAct> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/gta#StateAct> .
+<https://schema.coypu.org/global_shapes#ns4_TradeAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#ns4_TradeAgreement> <http://www.w3.org/ns/shacl#description> "A trade agreement (also known as trade pact) is a wide-ranging taxes, tariff and trade treaty that often includes investment guarantees. It exists when two or more countries agree on terms that help them trade with each other. The most common trade agreements are of the preferential and free trade types, which are concluded in order to reduce (or eliminate) tariffs,  quotas and other trade restrictions on items traded between the signatories."@en .
+<https://schema.coypu.org/global_shapes#ns4_TradeAgreement> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#ns4_TradeAgreement> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/ta#TradeAgreement> .
+<https://schema.coypu.org/global_shapes#ns5_PortFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://schema.coypu.org/global_shapes#ns5_PortFeature> <http://www.w3.org/ns/shacl#description> "An annotation for the World Port Index dataset."@en .
+<https://schema.coypu.org/global_shapes#ns5_PortFeature> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://schema.coypu.org/global_shapes#ns5_PortFeature> <http://www.w3.org/ns/shacl#targetClass> <https://schema.coypu.org/world-port-index#PortFeature> .
