@@ -27,9 +27,9 @@ vars:
   GRAMO_IMAGE: docker-registry.eccenca.com/eccenca-gramophon:1.0.0-rc.4
   GRAMO_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.GRAMO_IMAGE}}
 
-  RAPPER_IMAGE: docker.io/whitegecko/raptor2-utils:alpine
+  RAPPER_IMAGE: docker.io/pheyvaer/raptor
   RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
-  RAPPER_CMD: '{{.RAPPER_DOCKER}} rapper'
+  RAPPER_CMD: '{{.RAPPER_DOCKER}}'
 
 
 tasks:
@@ -75,7 +75,8 @@ tasks:
 
   helper:normalize_turtle:
     cmds:
-      - cat prefixes.ttl {{.FILE}}.ttl | {{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} - | sponge {{.FILE}}.ttl
+      - cat prefixes.ttl {{.FILE}}.ttl | sponge {{.FILE}}.ttl
+      - '{{ .RAPPER_CMD }} -i turtle -o turtle --input-uri {{.DEFAULT_GRAPH_IRI}} {{.FILE}}.ttl | sponge {{.FILE}}.ttl'
 
   helper:sync_turtle_nt:
     cmds:
