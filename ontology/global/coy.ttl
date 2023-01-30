@@ -569,6 +569,14 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:seeAlso schema:currency .
 
 
+###  https://schema.coypu.org/global#hasCurrentTimestamp
+:hasCurrentTimestamp rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Event ;
+                     rdfs:range xsd:dateTime ;
+                     rdfs:label "has current timestamp"@en .
+
+
 ###  https://schema.coypu.org/global#hasDescription
 :hasDescription rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
@@ -618,12 +626,12 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "has end date"@en .
 
 
-###  https://schema.coypu.org/global#hasEndTime
-:hasEndTime rdf:type owl:DatatypeProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:domain :Event ;
-            rdfs:range xsd:dateTime ;
-            rdfs:label "has end time"@en .
+###  https://schema.coypu.org/global#hasEndTimestamp
+:hasEndTimestamp rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Event ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:label "has end timestamp"@en .
 
 
 ###  https://schema.coypu.org/global#hasEventStatus
@@ -756,8 +764,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain owl:Thing ;
              rdfs:range xsd:string ;
              rdfs:comment "A country code as defined in ISO 3166-2."@en ;
-             rdfs:label "has iso code (2 digits)"@en ;
-             owl:deprecated "Use gn:countryCode instead." .
+             rdfs:label "has iso code (2 digits)"@en .
 
 
 ###  https://schema.coypu.org/global#hasIsoCode
@@ -1041,12 +1048,12 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "has start date"@en .
 
 
-###  https://schema.coypu.org/global#hasStartTime
-:hasStartTime rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain :Event ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "has start time"@en .
+###  https://schema.coypu.org/global#hasStartTimestamp
+:hasStartTimestamp rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Event ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:label "has start timestamp"@en .
 
 
 ###  https://schema.coypu.org/global#hasStreet
