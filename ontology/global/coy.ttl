@@ -1218,6 +1218,12 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Arrest"@en .
 
 
+###  https://schema.coypu.org/global#ArticleTopic
+:ArticleTopic rdf:type owl:Class ;
+              rdfs:subClassOf :TextTopic ;
+              rdfs:label "ArticleTopic"@en .
+
+
 ###  https://schema.coypu.org/global#Attack
 :Attack rdf:type owl:Class ;
         rdfs:subClassOf :ViolenceAgainstCivilians ;
@@ -1458,6 +1464,12 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:seeAlso "http://www.wikidata.org/entity/Q38926" .
 
 
+###  https://schema.coypu.org/global#NewsSummary
+:NewsSummary rdf:type owl:Class ;
+             rdfs:subClassOf :WikiNews ;
+             rdfs:label "NewsSummary"@en .
+
+
 ###  https://schema.coypu.org/global#Non-StateActorOvertakesTerritory
 :Non-StateActorOvertakesTerritory rdf:type owl:Class ;
                                   rdfs:subClassOf :Battle ;
@@ -1644,6 +1656,12 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Infrastructure ;
           rdfs:comment "A terminal to connect pipelines."@en ;
           rdfs:label "Terminal"@en .
+
+
+###  https://schema.coypu.org/global#TextTopic
+:TextTopic rdf:type owl:Class ;
+           rdfs:subClassOf :WikiNews ;
+           rdfs:label "TextTopic"@en .
 
 
 ###  https://schema.coypu.org/global#Timespan
