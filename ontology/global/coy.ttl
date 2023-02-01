@@ -26,10 +26,13 @@
                                    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor "Andreas Schaefer"@en ,
                                                        "Felix Engel"@en ,
+                                                       "Jan Reineke"@en ,
+                                                       "Lars Michaelis"@en ,
                                                        "Lorenz Bühmann"@en ,
                                                        "Malte Weber"@en ,
                                                        "Natanael Arndt"@en ,
                                                        "Nenad Krdzavac"@en ,
+                                                       "Ricardo Usbeck"@en ,
                                                        "Simon Bin"@en ,
                                                        "Till Grabo"@en ;
                                    dcterms:created "2021-09-06" ;
