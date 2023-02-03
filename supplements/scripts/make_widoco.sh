@@ -220,6 +220,91 @@ for pathname in "${target_paths[@]}"; do
     rsync -a "$T"/widoco_out// "$T0"/widoco_master//
 done
 
+# add coypu style
+cat <<CSS >> "$T0"/widoco_master/resources/extra.css
+html { font-size: 14px !important; scroll-behavior: smooth; }
+
+@media (min-width: 31.25rem) { html { font-size: 16px !important; } }
+
+body { font-family: "Red Hat Display", sans-serif; font-size: inherit; line-height: 1.4; color: #5c5962; background-color: #fff; overflow-wrap: break-word; padding: 1em; }
+
+@media (min-width: 31.25rem) { body { padding: 1em 2em; } }
+
+h1 { font-size: 32px !important; line-height: 1.25; font-weight: 300; }
+
+@media (min-width: 31.25rem) { h1 { font-size: 36px !important; } }
+
+h2 { font-size: 18px !important; }
+
+@media (min-width: 31.25rem) { h2 { font-size: 24px !important; line-height: 1.25; } }
+
+h3 { font-size: 16px !important; }
+
+@media (min-width: 31.25rem) { h3 { font-size: 18px !important; } }
+
+h4 { font-size: 11px !important; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+
+@media (min-width: 31.25rem) { h4 { font-size: 12px !important; } }
+
+h5 { font-size: 12px !important; }
+
+@media (min-width: 31.25rem) { h5 { font-size: 14px !important; } }
+
+h6 { font-size: 11px !important; }
+
+@media (min-width: 31.25rem) { h6 { font-size: 12px !important; } }
+
+::selection { color: #fff; background: #005c83; }
+
+a { color: #005c83; text-decoration: none; }
+
+a:not([class]) { text-decoration: underline; text-decoration-color: #eeebee; text-underline-offset: 2px; }
+
+a:not([class]):hover { text-decoration-color: rgba(0, 92, 131, 0.45); }
+
+tt, code { font-family: "Red Hat Mono", monospace; font-size: 0.75em; line-height: 1.4; }
+
+a:hover, a:focus { color: #ed8b00; }
+
+a:not([class]):hover, a:not([class]):focus { text-decoration-color: rgba(237, 139, 0, 0.45); }
+
+h1, h2, h3, h4, h5, h6, .section-heading { font-family: "Red Hat Display", sans-serif; font-weight: 900; }
+
+tt, code { font-size: 13.6px; }
+
+:not(pre, figure) > code { padding: 0 0.15em 0.1em; }
+
+/* red-hat-display-regular - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: normal; font-weight: 400; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-regular.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-display-500 - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: normal; font-weight: 500; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-display-900 - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: normal; font-weight: 900; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-display-italic - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: italic; font-weight: 400; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-italic.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-display-500italic - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: italic; font-weight: 500; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-500italic.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-display-900italic - latin */
+@font-face { font-family: 'Red Hat Display'; font-style: italic; font-weight: 900; src: url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.woff") format("woff"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-display/red-hat-display-v7-latin-900italic.svg#RedHatDisplay") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-mono-regular - latin */
+@font-face { font-family: 'Red Hat Mono'; font-style: normal; font-weight: 400; src: url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.woff") format("woff"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-regular.svg#RedHatMono") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-mono-600 - latin */
+@font-face { font-family: 'Red Hat Mono'; font-style: normal; font-weight: 600; src: url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.woff") format("woff"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600.svg#RedHatMono") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-mono-italic - latin */
+@font-face { font-family: 'Red Hat Mono'; font-style: italic; font-weight: 400; src: url("../red-hat-mono/font/red-hat-mono-v3-latin-italic.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-italic.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-italic.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-italic.woff") format("woff"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-italic.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-italic.svg#RedHatMono") format("svg"); /* Legacy iOS */ }
+
+/* red-hat-mono-600italic - latin */
+@font-face { font-family: 'Red Hat Mono'; font-style: italic; font-weight: 600; src: url("//coypu.org/assets/font/red-hat-mono-v3-latin-600italic.eot"); /* IE9 Compat Modes */ src: local(""), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600italic.eot?#iefix") format("embedded-opentype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600italic.woff2") format("woff2"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600italic.woff") format("woff"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600italic.ttf") format("truetype"), url("//coypu.org/assets/font/red-hat-mono/red-hat-mono-v3-latin-600italic.svg#RedHatMono") format("svg"); /* Legacy iOS */ }
+CSS
+
 echo "</dl><p><small><i>Last update: $(LANG=C TZ=UTC date)</i> <i>Git version: $(LANG=C git rev-parse --short HEAD)</i></small>" >> "$T0"/widoco_master/index.html
 if [[ -d dataset-stats/.git ]]; then
     echo " <small><i>(usage stats: $(LANG=C TZ=UTC git -C dataset-stats/ log -1 --format=%cd --date=short))</i></small>" >> "$T0"/widoco_master/index.html
