@@ -221,6 +221,9 @@ for pathname in "${target_paths[@]}"; do
 done
 
 echo "</dl><p><small><i>Last update: $(LANG=C TZ=UTC date)</i> <i>Git version: $(LANG=C git rev-parse --short HEAD)</i></small>" >> "$T0"/widoco_master/index.html
+if [[ -d dataset-stats/.git ]]; then
+    echo " <small><i>(usage stats: $(LANG=C TZ=UTC git -C dataset-stats/ log -1 --format=%cd --date=short))</i></small>" >> "$T0"/widoco_master/index.html
+fi
 
 rm -fr widoco_master.old || :
 mv widoco_master widoco_master.old 2>/dev/null || :
