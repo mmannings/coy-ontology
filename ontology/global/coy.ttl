@@ -195,6 +195,15 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has customer"@en .
 
 
+###  https://schema.coypu.org/global#hasExiobaseIndustry
+:hasExiobaseIndustry rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasIndustry ;
+                     rdfs:domain :RegionalIndustry ;
+                     rdfs:range :ExiobaseIndustry ;
+                     rdfs:comment "The Exiobase industry a regional sector is part of."@en ;
+                     rdfs:label "has exiobase industry"@en .
+
+
 ###  https://schema.coypu.org/global#hasFactory
 :hasFactory rdf:type owl:ObjectProperty ;
             rdfs:domain :Company ;
@@ -222,8 +231,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/global#hasIndustry
 :hasIndustry rdf:type owl:ObjectProperty ;
-             owl:inverseOf :isIndustryOf ;
-             rdfs:domain :Company ;
              rdfs:range :Industry ;
              rdfs:comment "The sector or industry a company is active in."@en ;
              rdfs:label "has industry"@en .
@@ -281,15 +288,6 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:range :Region ;
                    rdfs:comment "The region a city, event, company or critical infrastructure is located at."@en ;
                    rdfs:label "has region location"@en .
-
-
-###  https://schema.coypu.org/global#hasRegionalIndustry
-:hasRegionalIndustry rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain :Industry ;
-                     rdfs:range :RegionalIndustry ;
-                     rdfs:comment "The related regional sector, from the Exiobase dataset."@en ;
-                     rdfs:label "has regional industry"@en .
 
 
 ###  https://schema.coypu.org/global#hasRequirement
@@ -372,14 +370,6 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:range :Event ;
               rdfs:comment "The event impacting a thing."@en ;
               rdfs:label "is impacted by"@en .
-
-
-###  https://schema.coypu.org/global#isIndustryOf
-:isIndustryOf rdf:type owl:ObjectProperty ;
-              rdfs:domain :Industry ;
-              rdfs:range :Company ;
-              rdfs:comment "The company active in a sector or industry."@en ;
-              rdfs:label "is industry of"@en .
 
 
 ###  https://schema.coypu.org/global#isLocatedIn
