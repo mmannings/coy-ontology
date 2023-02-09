@@ -1087,6 +1087,14 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "has timestamp"@en .
 
 
+###  https://schema.coypu.org/global#hasTransportNetwork
+:hasTransportNetwork rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Infrastructure ;
+              rdfs:range xsd:string ;
+              rdfs:comment "A network the infrastructure is a part of. A transport network usually comprises a system of routes typically maintained or designated by a single agency or organization."@en ;
+              rdfs:label "has transport network"@en .
+
+
 ###  https://schema.coypu.org/global#hasUnit
 :hasUnit rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
