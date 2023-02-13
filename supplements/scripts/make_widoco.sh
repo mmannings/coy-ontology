@@ -9,7 +9,13 @@ STATS_FILE=void.stats.ttl
 
 myid=$$
 
-mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V)
+mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V | while read file; do
+			     echo "$file"
+			     if [[ "$file" == *.owl ]]; then
+				 ln -frs "$file" "$file.ttl"
+				 echo "$file.ttl"
+			     fi
+			done)
 
 rpt() {
     java -jar rpt-1.9.2-rc1.jar "$@"
