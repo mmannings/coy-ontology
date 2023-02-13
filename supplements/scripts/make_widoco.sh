@@ -9,7 +9,13 @@ STATS_FILE=void.stats.ttl
 
 myid=$$
 
-mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V)
+mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V | while read file; do
+			     echo "$file"
+			     if [[ "$file" == *.owl ]]; then
+				 ln -frs "$file" "$file.ttl"
+				 echo "$file.ttl"
+			     fi
+			done)
 
 rpt() {
     java -jar rpt-1.9.2-rc1.jar "$@"
@@ -60,7 +66,7 @@ for file in "${all_files[@]}"; do
     mybase="$(awk '$2 == "<urn:x-tmp:filename>" && $3 == "\"'"$file"'\"" { gsub("[#/]>",">",$1); gsub("[<>]","",$1); print $1 }' "$T0"/allOntologies.nt)"
     if [[ -n "$mybase" ]]; then
         if [[ "$mybase" == *$'\n'* ]]; then
-            echo "ERROR: multiple ontologies defined in $file" >&2
+            echo "ERROR: multiple ontologies defined in $file: [ ${mybase//$'\n'/, } ]" >&2
             exit 1
         fi
 
