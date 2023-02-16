@@ -26,21 +26,6 @@
 dcterms:contributor rdf:type owl:AnnotationProperty .
 
 #################################################################
-#    Data properties
-#################################################################
-
-###  https://schema.coypu.org/global#hasValue
-coy:hasValue rdf:type owl:DatatypeProperty ;
-             #rdfs:range xsd:double ;
-             rdfs:label "has value" .
-
-
-###  https://schema.coypu.org/tiva#hasYear
-:hasYear rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:dateTime;
-         rdfs:label "has year" .
-
-#################################################################
 #    Object Properties
 #################################################################
 
