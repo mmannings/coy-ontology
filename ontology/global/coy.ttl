@@ -29,6 +29,7 @@
                                                        "Eva Hoerster"@en ,
                                                        "Felix Engel"@en ,
                                                        "Jan Reineke"@en ,
+                                                       "Justus Rathschlag"@en ,
                                                        "Lars Michaelis"@en ,
                                                        "Lorenz Bühmann"@en ,
                                                        "Malte Weber"@en ,
@@ -40,9 +41,9 @@
                                                        "Sabine Gründer-Fahrer"@en ,
                                                        "Simon Bin"@en ,
                                                        "Till Grabo"@en ;
-                                   dcterms:created "2021-09-06"^^xsd:date  ;
+                                   dcterms:created "2021-09-06"^^xsd:date ;
                                    dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:modified "2022-02-13"^^xsd:date  ;
+                                   dcterms:modified "2022-02-13"^^xsd:date ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
@@ -1152,6 +1153,13 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:comment "The vulnerability of a country as defined by Weltrisikobericht."@en ;
                   rdfs:label "has vulnerability"@en ;
                   rdfs:seeAlso <https://weltrisikobericht.de> .
+
+
+###  https://schema.coypu.org/global#hasYear
+:hasYear rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain owl:Thing ;
+         rdfs:label "has year"@en .
 
 
 ###  https://schema.coypu.org/global#hasZip
