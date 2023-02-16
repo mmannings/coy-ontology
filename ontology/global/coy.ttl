@@ -21,8 +21,8 @@
                                    owl:versionIRI <https://schema.coypu.org/global/2.3> ;
                                    owl:imports <https://schema.coypu.org/em-dat/1.0> ,
                                                <https://schema.coypu.org/gta/1.0> ,
-                                               <https://schema.coypu.org/ontology/tiva/1.2> ,
                                                <https://schema.coypu.org/ta/1.0> ,
+                                               <https://schema.coypu.org/tiva/1.2> ,
                                                <https://schema.coypu.org/world-port-index/1.0> ;
                                    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor "Andreas Schaefer"@en ,
@@ -753,8 +753,7 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:domain :Infrastructure ;
                        rdfs:range xsd:string ;
                        rdfs:comment "The type of critical infrastructure (like airport, port or powerplant)."@en ;
-                       rdfs:label "has infrastructure type"@en ;
-                       owl:deprecated "Annotate as rdf:type instead." .
+                       rdfs:label "has infrastructure type"@en .
 
 
 ###  https://schema.coypu.org/global#hasIso2Code
@@ -773,6 +772,15 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range xsd:string ;
             rdfs:comment "A country code as defined in ISO 3166-3."@en ;
             rdfs:label "has iso code"@en .
+
+
+###  https://schema.coypu.org/global#hasIsoNumericalCode
+:hasIsoNumericalCode rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain owl:Thing ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "A country code as defined in ISO 3166-1."@en ;
+                     rdfs:label "has iso numerical code"@en .
 
 
 ###  https://schema.coypu.org/global#hasLanguage
@@ -1550,7 +1558,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://schema.coypu.org/global#Product
 :Product rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing ;
-         rdfs:comment "Any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user."@en ;
+         rdfs:comment "Any tangible output or service that is a result of a process and that is intended for delivery to a customer or end user based on the HS classification scheme."@en ;
          rdfs:label "Product"@en ;
          rdfs:seeAlso dbr:Material ,
                       schema:Product .
