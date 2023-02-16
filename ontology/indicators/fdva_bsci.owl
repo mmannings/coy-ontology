@@ -78,10 +78,6 @@ coy:hasValue rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://schema.coypu.org/tiva#TradeInValueAdded
-:TradeInValueAdded rdf:type owl:Class .
-
-
 ###  https://schema.coypu.org/tiva#ExgrBsci
 :ExgrBsci rdf:type owl:Class ;
           rdfs:subClassOf :TradeInValueAdded ;
