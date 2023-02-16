@@ -11,7 +11,7 @@
 @prefix coy: <https://schema.coypu.org/global#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix tiva: <https://schema.coypu.org/ontology/tiva#> .
+@prefix tiva: <https://schema.coypu.org/tiva#> .
 @prefix fibo: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> .
 
 # Remove file apsolute path and use only file name to run RDFizer.
@@ -22,41 +22,41 @@
 						];
 	rr:subjectMap [
 		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_fdexgrva";
-		rr:class tiva:fdexgrva;
+		rr:class tiva:FdExgrVa;
 	];		
 	rr:predicateObjectMap [
 		rr:predicate tiva:hasValueAddedOrigin;
 		rr:objectMap [
-			rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{country_p}_{year}_{sum}_value_added_origin";
-			rr:class tiva:vao;
+			rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_value_added_origin";
+			rr:class tiva:Vao;
 		]
 	];		
 	rr:predicateObjectMap [
 		rr:predicate tiva:hasExport;
 		rr:objectMap [
-			rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{year}_{sum}_exports";
-			rr:class tiva:export;
+			rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_exports";
+			rr:class tiva:Export;
 		]
 	];
 	rr:predicateObjectMap [
 	rr:predicate tiva:hasFinalDemand;
 	rr:objectMap [
-		rr:template "https://schema.coypu.org/global#{country_p}_{country_s}_{country_c}_{year}_{sum}_final_demand";
-		rr:class tiva:fd ;
+		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_final_demand";
+		rr:class tiva:Fd ;
 		]
 	];
     rr:predicateObjectMap [
         rr:predicate coy:hasValue;
         rr:objectMap [
            rml:reference "sum";
-           rr:datatype xsd:string;
+           rr:datatype xsd:double;
       ]
     ];	
 	rr:predicateObjectMap [
-        rr:predicate tiva:hasYear;
+        rr:predicate coy:hasYear;
         rr:objectMap [
            rml:reference "year";
-           rr:datatype xsd:string;
+           rr:datatype xsd:dateTime;
       ]
     ].
 <TriplesMap2>
@@ -64,8 +64,8 @@
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
-		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{country_p}_{year}_{sum}_value_added_origin";
-		rr:class tiva:vao;		
+		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_value_added_origin";
+		rr:class tiva:Vao;		
 	];	
 	rr:predicateObjectMap [
 		rr:predicate coy:hasCountryLocation;
@@ -79,8 +79,8 @@
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
-		rr:template "https://schema.coypu.org/global#{country_p}_{country_s}_{country_c}_{year}_{sum}_final_demand";
-		rr:class tiva:fd;
+		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_final_demand";
+		rr:class tiva:Fd;
 	];	
 	rr:predicateObjectMap [
 		rr:predicate coy:hasCountryLocation;
@@ -94,8 +94,8 @@
 						rml:referenceFormulation ql:CSV
 						];
 	rr:subjectMap [
-		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{year}_{sum}_exports";
-		rr:class tiva:export;
+		rr:template "https://schema.coypu.org/global#{country_s}_{country_c}_{industry_code_i}_{country_p}_{year}_{sum}_exports";
+		rr:class tiva:Export;
 	];	
 	rr:predicateObjectMap [
 		rr:predicate coy:hasCountryLocation;
