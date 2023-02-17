@@ -29,6 +29,12 @@ dcterms:contributor rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  https://schema.coypu.org/global#hasCountryLocation
+coy:hasCountryLocation rdf:type owl:ObjectProperty ;
+                       rdfs:range coy:Country ;
+                       rdfs:label "has country location" .
+
+
 ###  https://schema.coypu.org/tiva#hasExport
 :hasExport rdf:type owl:ObjectProperty ;
            rdfs:range :Export ;
@@ -57,6 +63,21 @@ dcterms:contributor rdf:type owl:AnnotationProperty .
 :hasValueAddedOrigin rdf:type owl:ObjectProperty ;
                      rdfs:range :Vao ;
                      rdfs:label "has value added origin" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.coypu.org/global#hasValue
+coy:hasValue rdf:type owl:DatatypeProperty ;
+             rdfs:label "has value" .
+
+
+###  https://schema.coypu.org/tiva#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:label "has year" .
 
 
 #################################################################
@@ -112,9 +133,8 @@ Resource: https://www.treasury.sa.gov.au/economy,-taxes-and-rebates/economic-bri
 ###  https://schema.coypu.org/tiva#Isic
 :Isic rdf:type owl:Class ;
       rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme> ;
-      rdfs:comment "International standard industrial classification of all economic activities(ISIC), Rev. 4" ;
-      rdfs:label "ISIC4" ;
-      rdfs:seeAlso "https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf" .
+      rdfs:comment "International standard industrial classification of all economic activities(ISIC), Rev. 4. Source: https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf"@en ;
+      rdfs:label "ISIC4" .
 
 
 ###  https://schema.coypu.org/tiva#Vao
