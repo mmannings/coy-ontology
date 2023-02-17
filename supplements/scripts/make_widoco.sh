@@ -12,6 +12,7 @@ myid=$$
 mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V | while read file; do
 			     echo "$file"
 			     if [[ "$file" == *.owl ]]; then
+				 ### symlink .owl files to .ttl files in case they are in turtle format
 				 ln -frs "$file" "$file.ttl"
 				 echo "$file.ttl"
 			     fi
@@ -28,7 +29,7 @@ rpt_skip_lines=$(rpt ngs map -d /dev/null 2>/dev/null |wc -l)
 
 rpt() {
     set -o pipefail
-    java -jar rpt-1.9.2-rc1.jar "$@" \
+    java -jar rpt-1.9.3-rc1.jar "$@" \
         | tail -n +$((rpt_skip_lines+1))
     set +o pipefail
 }
@@ -119,7 +120,14 @@ for input in "${all_ontos[@]}"; do
     cp "$T0"/allOntologies.nt "$T"/
     target_paths+=("$pathname")
 
-    echo "<dt><tt>$mybase</tt><dd><a href='$basefname'>$basefname</a>" >> "$T0"/widoco_master/index.html
+
+    if [[ "$input" == ontology/mapping/* ]]; then
+	: ### skip all "mapping" files from appearing on the index
+	echo "not indexing \"$input\" because it is in the ontology/mapping folder" >&2
+    else
+	echo "<dt><tt>$mybase</tt><dd><a href='$basefname'>$basefname</a>" >> "$T0"/widoco_master/index.html
+    fi
+
     if [[ "$mybase" != "$myver" ]]; then
         echo RedirectMatch temp '"(/'"$basefname"')/?(\.[^/]*|$)"' '"/'"$ontfname"'$2"' >> "$T0"/widoco_master/.htaccess
     fi
