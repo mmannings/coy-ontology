@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://schema.coypu.org/tiva/1.2" uri="https://gitlab.com/coypu-project/coy-ontology/-/raw/main/ontology/indicators/fdva_bsci.owl"/>
     <uri id="Imports Wizard Entry" name="https://schema.coypu.org/ontology/tiva/1.2" uri="https://gitlab.com/coypu-project/coy-ontology/-/raw/main/ontology/indicators/fdva_bsci.owl"/>
     <uri id="Imports Wizard Entry" name="https://schema.coypu.org/world-port-index/1.0" uri="https://gitlab.com/coypu-project/coy-ontology/-/raw/main/ontology/infrastructure/world-port-index.ttl"/>
     <uri id="Imports Wizard Entry" name="https://schema.coypu.org/ta/1.0" uri="https://gitlab.com/coypu-project/coy-ontology/-/raw/main/ontology/events/rta.ttl"/>
