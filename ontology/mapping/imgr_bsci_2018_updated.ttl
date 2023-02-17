@@ -56,7 +56,7 @@
         rr:predicate coy:hasYear;
         rr:objectMap [
            rml:reference "year";
-           rr:datatype xsd:dateTime;
+           rr:datatype xsd:string;
       ]
     ].
 <TriplesMap2>	
