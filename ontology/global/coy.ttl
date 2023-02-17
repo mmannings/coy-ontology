@@ -22,7 +22,7 @@
                                    owl:imports <https://schema.coypu.org/em-dat/1.0> ,
                                                <https://schema.coypu.org/gta/1.0> ,
                                                <https://schema.coypu.org/ta/1.0> ,
-                                               <https://schema.coypu.org/tiva/1.2> ,
+                                               <https://schema.coypu.org/tiva/1.4> ,
                                                <https://schema.coypu.org/world-port-index/1.0> ;
                                    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor "Andreas Schaefer"@en ,
