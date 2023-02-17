@@ -10,13 +10,13 @@
 @base <https://schema.coypu.org/tiva> .
 
 <https://schema.coypu.org/tiva> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://schema.coypu.org/tiva/1.3> ;
+                                 owl:versionIRI <https://schema.coypu.org/tiva/1.4> ;
                                  dcterms:contributor "Felix Engel"@en ,
                                                      "Nenad Krdzavac"@en ,
                                                      "Nils Steinert"@en ;
                                  rdfs:comment "An ontology for modeling international trade flows."@en ;
                                  rdfs:label "OECD TIVA Ontology"@en ;
-                                 owl:versionInfo "1.3"@en .
+                                 owl:versionInfo 1.4 .
 
 #################################################################
 #    Annotation properties
