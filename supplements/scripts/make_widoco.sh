@@ -53,13 +53,19 @@ echo "<link rel='stylesheet' href='resources/primer.css' media='screen' /><link 
 
 for file in "${all_files[@]}"; do
     { {
-        rpt integrate --out-format=ntriples "$file" '
+        roqet -D "$file" -i sparql11-query -e '
+            PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             construct {
                 ?s a owl:Ontology ;
                     <urn:x-tmp:filename> "'"$file"'" ;
                     owl:versionIRI ?ver ;
-            } { ?s a owl:Ontology . optional { ?s owl:versionIRI ?ver } } order by ?ver ?s'
-    } 2>&1 >&3 | head >&2; } 3>&1
+                    rdfs:comment ?description ;
+            } { ?s a owl:Ontology .
+                optional { ?s owl:versionIRI ?ver }
+                optional { ?s rdfs:comment ?description }
+            } order by ?ver ?s'
+    } 2>&1 >&3 | tail >&2; } 3>&1
 done > "$T0"/allOntologies.nt
 
 all_ontos=()
@@ -120,12 +126,19 @@ for input in "${all_ontos[@]}"; do
     cp "$T0"/allOntologies.nt "$T"/
     target_paths+=("$pathname")
 
+    ont_description="$(roqet -r csv -D "$T0"/allOntologies.nt -e 'select * { <'"$mybase"'> <http://www.w3.org/2000/01/rdf-schema#comment> ?d }' | dos2unix | tail -n +2)"
+    if [[ -z "$ont_description" ]]; then
+	ont_description="$basefname"
+    elif [[ "$ont_description" == \"*\" ]]; then
+	# unquote
+	ont_description="$(echo "$ont_description" | jq -r .)"
+    fi
 
     if [[ "$input" == ontology/mapping/* ]]; then
 	: ### skip all "mapping" files from appearing on the index
 	echo "not indexing \"$input\" because it is in the ontology/mapping folder" >&2
     else
-	echo "<dt><tt>$mybase</tt><dd><a href='$basefname'>$basefname</a>" >> "$T0"/widoco_master/index.html
+	echo "<dt><a href='$basefname'><tt>$mybase</tt></a></dt><dd>$ont_description</dd>" >> "$T0"/widoco_master/index.html
     fi
 
     if [[ "$mybase" != "$myver" ]]; then

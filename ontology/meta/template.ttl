@@ -6,7 +6,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://schema.coypu.org/metadata-template> .
 
-<https://schema.coypu.org/metadata-template> rdf:type owl:Ontology .
+<https://schema.coypu.org/metadata-template> rdf:type owl:Ontology ;
+                                              rdfs:comment "An ontology for describing our meta data catalog." .
 
 #################################################################
 #    Object Properties

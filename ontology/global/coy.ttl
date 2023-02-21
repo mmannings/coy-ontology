@@ -48,7 +48,7 @@
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
-                                   rdfs:comment "Ontology to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
+                                   rdfs:comment "The main ontology for the CoyPu project, used to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
                                    owl:priorVersion <https://schema.coypu.org/global/2.1> ;
                                    owl:versionInfo 2.3 .
