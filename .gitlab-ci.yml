@@ -29,7 +29,7 @@ workflow:
         - ontology/events/rta.ttl
         - ontology/infrastructure/world-port-index.ttl
         - ontology/mapping/coy_wikidata.ttl
-        - ontology/rdfunit-tests
+        - supplements/rdfunit-tests
         - .gitlab-ci.yml
         - supplements
         - docu
@@ -56,15 +56,15 @@ syntax: # Has to run everytime because it prepares the RDF files
   artifacts:
     when: always
     paths:
-      - "./rdfunit-tests/ontology/allTests.ttl"
+      - "./supplements/rdfunit-tests/allTests.ttl"
       - "./main.ttl"
       - "./main.xml"
     public: false
   script:
     # Concatenation
-    - rapper -o ntriples -i turtle ontology/events/em-dat.ttl > main.n3
-    - rapper -o ntriples -i turtle ontology/events/gta.ttl > main.n3
-    - rapper -o ntriples -i turtle ontology/events/rta.ttl > main.n3
+    - rapper -o ntriples -i turtle ontology/events/em-dat.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontology/events/gta.ttl >> main.n3
+    - rapper -o ntriples -i turtle ontology/events/rta.ttl >> main.n3
     - rapper -o ntriples -i turtle ontology/global/coy.ttl >> main.n3
     #- rapper -o ntriples -i turtle ontology/mapping/coy_wikidata.ttl >> main.n3
     - rapper -o ntriples -i turtle ontology/infrastructure/world-port-index.ttl >> main.n3
@@ -72,8 +72,8 @@ syntax: # Has to run everytime because it prepares the RDF files
     - rapper -o turtle -i ntriples main.n3 > main.ttl
     - rapper -o rdfxml -i ntriples main.n3 > main.xml
     # Preparing tests
-    - rm -f ./ontology/rdfunit-tests/allTests* && cat ./ontology/rdfunit-tests/*.ttl > ./ontology/rdfunit-tests/allTests_.ttl
-    - rapper -o turtle -i turtle ./ontology/rdfunit-tests/allTests_.ttl > ./ontology/rdfunit-tests/allTests.ttl
+    - rm -f ./supplements/rdfunit-tests/allTests* && cat ./supplements/rdfunit-tests/*.ttl > ./supplements/rdfunit-tests/allTests_.ttl
+    - rapper -o turtle -i turtle ./supplements/rdfunit-tests/allTests_.ttl > ./supplements/rdfunit-tests/allTests.ttl
 
 
 rdfunit:
@@ -94,7 +94,7 @@ rdfunit:
     - java -jar /app/rdfunit-validate.jar -d ./main.ttl -f /tmp/ -o json-ld -s owl,rdfs -r shacl
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_results.jsonld
     - cat ./RDFUnit_results.jsonld
-    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./ontology/rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
+    - java -jar /app/rdfunit-validate.jar -A -v -d ./main.ttl -s ./supplements/rdfunit-tests/allTests.ttl -r shacl -o json-ld -C -f /tmp/
     - cp /tmp/results/._main.ttl.shaclTestCaseResult.jsonld ./RDFUnit_manual_results.jsonld
     - cat ./RDFUnit_manual_results.jsonld
 
