@@ -258,8 +258,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:range :Location ;
              rdfs:comment "The place an event, company or critical infrastructure is located at."@en ;
              rdfs:label "has location"@en ;
-             rdfs:seeAlso schema:location ,
-                          "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" .
+             rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> ,
+                          schema:location .
 
 
 ###  https://schema.coypu.org/global#hasManagementAffiliation
@@ -336,7 +336,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:range :Timespan ;
              rdfs:comment "The peroid of duration of an event."@en ;
              rdfs:label "has timespan"@en ;
-             rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span" .
+             rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> .
 
 
 ###  https://schema.coypu.org/global#hasWeblinkAffiliation
@@ -367,7 +367,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:domain owl:Thing ;
                 rdfs:range owl:Thing ;
                 rdfs:label "is identified by"@en ;
-                rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"@en .
+                rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> .
 
 
 ###  https://schema.coypu.org/global#isImpactedBy
@@ -383,7 +383,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain owl:Thing ;
              rdfs:range :Location ;
              rdfs:label "is located in"@en ;
-             rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" .
+             rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> .
 
 
 ###  https://schema.coypu.org/global#isLocationOf
@@ -399,7 +399,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:domain owl:Thing ;
                   rdfs:range owl:Thing ;
                   rdfs:label "is occuring during"@en ;
-                  rdfs:seeAlso "http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during" .
+                  rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/P117_occurs_during> .
 
 
 ###  https://schema.coypu.org/global#isPartOf
@@ -546,7 +546,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range xsd:string ;
             rdfs:comment "A product code as defined in CPA."@en ;
             rdfs:label "has cpa code"@en ;
-            rdfs:seeAlso "https://ec.europa.eu/eurostat/web/cpa" .
+            rdfs:seeAlso <https://ec.europa.eu/eurostat/web/cpa> .
 
 
 ###  https://schema.coypu.org/global#hasCreationTimestamp
@@ -698,7 +698,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range xsd:string ;
             rdfs:comment "The Global Identifier number of a company."@en ;
             rdfs:label "has glide id"@en ;
-            rdfs:seeAlso "https://glidenumber.net/" .
+            rdfs:seeAlso <https://glidenumber.net/> .
 
 
 ###  https://schema.coypu.org/global#hasHrCourt
@@ -1222,7 +1222,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :Infrastructure ;
          rdfs:comment "A logistics hub for air freight."@en ;
          rdfs:label "Airport"@en ;
-         rdfs:seeAlso "http://www.wikidata.org/entity/Q1248784" .
+         rdfs:seeAlso <http://www.wikidata.org/entity/Q1248784> .
 
 
 ###  https://schema.coypu.org/global#ArmedClash
@@ -1274,9 +1274,9 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:subClassOf :Location ;
       rdfs:comment "A center of population, commerce, and culture; a town of significant size and importance."@en ;
       rdfs:label "City"@en ;
-      rdfs:seeAlso <https://dbpedia.org/ontology/City> ,
-                   schema:City ,
-                   "http://www.wikidata.org/entity/Q515" .
+      rdfs:seeAlso <http://www.wikidata.org/entity/Q515> ,
+                   <https://dbpedia.org/ontology/City> ,
+                   schema:City .
 
 
 ###  https://schema.coypu.org/global#Civilians
@@ -1290,7 +1290,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :Product ;
            rdfs:comment "A commodity good or production material."@en ;
            rdfs:label "Commodity"@en ;
-           rdfs:seeAlso "http://www.wikidata.org/entity/Q317088" .
+           rdfs:seeAlso <http://www.wikidata.org/entity/Q317088> .
 
 
 ###  https://schema.coypu.org/global#Company
@@ -1315,7 +1315,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :Location ;
            rdfs:comment "A large landmass of the globe, usually comprising several countries."@en ;
            rdfs:label "Continent"@en ;
-           rdfs:seeAlso "https://schema.org/Continent"@en .
+           rdfs:seeAlso schema:Continent .
 
 
 ###  https://schema.coypu.org/global#Country
@@ -1352,8 +1352,8 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Event ;
           rdfs:comment "An occurrence causing widespread destruction and distress."@en ;
           rdfs:label "Disaster"@en ;
-          rdfs:seeAlso <https://www.emdat.be/guidelines> ,
-                       "http://www.wikidata.org/entity/Q3839081" .
+          rdfs:seeAlso <http://www.wikidata.org/entity/Q3839081> ,
+                       <https://www.emdat.be/guidelines> .
 
 
 ###  https://schema.coypu.org/global#DisruptedWeaponsUse
@@ -1367,9 +1367,9 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:subClassOf owl:Thing ;
        rdfs:comment "An event related to a specific location with a singular occurence."@en ;
        rdfs:label "Event"@en ;
-       rdfs:seeAlso <https://dbpedia.org/ontology/Event> ,
-                    schema:Event ,
-                    "http://www.cidoc-crm.org/cidoc-crm/E5_Event"@en .
+       rdfs:seeAlso <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ,
+                    <https://dbpedia.org/ontology/Event> ,
+                    schema:Event .
 
 
 ###  https://schema.coypu.org/global#ExcessiveForceAgainstProtesters
@@ -1397,7 +1397,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :Infrastructure ;
          rdfs:comment "A factory or production site."@en ;
          rdfs:label "Factory"@en ;
-         rdfs:seeAlso "http://www.wikidata.org/entity/Q83405" .
+         rdfs:seeAlso <http://www.wikidata.org/entity/Q83405> .
 
 
 ###  https://schema.coypu.org/global#Feature
@@ -1429,7 +1429,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "An industry or economic sector."@en ;
           rdfs:label "Industry"@en ;
-          rdfs:seeAlso "http://www.wikidata.org/entity/Q8148" ;
+          rdfs:seeAlso <http://www.wikidata.org/entity/Q8148> ;
           skos:prefLabel "Sector"@en .
 
 
@@ -1438,7 +1438,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:subClassOf owl:Thing ;
                 rdfs:comment "A facility providing critical infrastructure for production or logistics."@en ;
                 rdfs:label "Infrastructure"@en ;
-                rdfs:seeAlso "http://www.wikidata.org/entity/Q121359" .
+                rdfs:seeAlso <http://www.wikidata.org/entity/Q121359> .
 
 
 ###  https://schema.coypu.org/global#InternationalOrganization
@@ -1452,7 +1452,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Location rdf:type owl:Class ;
           rdfs:comment "A place on the globe."@en ;
           rdfs:label "Location"@en ;
-          rdfs:seeAlso "https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location"@en .
+          rdfs:seeAlso <https://raw.githubusercontent.com/beAWARE-project/ontology/master/beAWARE_ontology#Location> .
 
 
 ###  https://schema.coypu.org/global#LootingOrPropertyDestruction
@@ -1486,7 +1486,7 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:subClassOf :Event ;
       rdfs:comment "A newspaper article, social media posting or press release."@en ;
       rdfs:label "News"@en ;
-      rdfs:seeAlso "http://www.wikidata.org/entity/Q38926" .
+      rdfs:seeAlso <http://www.wikidata.org/entity/Q38926> .
 
 
 ###  https://schema.coypu.org/global#NewsSummary
@@ -1544,7 +1544,7 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:subClassOf :Infrastructure ;
       rdfs:comment "A logictics hub for shipping."@en ;
       rdfs:label "Port"@en ;
-      rdfs:seeAlso "http://www.wikidata.org/entity/Q44782" .
+      rdfs:seeAlso <http://www.wikidata.org/entity/Q44782> .
 
 
 ###  https://schema.coypu.org/global#Powerplant
@@ -1552,7 +1552,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:subClassOf :Infrastructure ;
             rdfs:comment "A facility for generating electric power."@en ;
             rdfs:label "Powerplant"@en ;
-            rdfs:seeAlso "http://www.wikidata.org/entity/Q159719" .
+            rdfs:seeAlso <http://www.wikidata.org/entity/Q159719> .
 
 
 ###  https://schema.coypu.org/global#Product
@@ -1589,9 +1589,9 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subClassOf :Location ;
         rdfs:comment "An administrative or economic area."@en ;
         rdfs:label "Region"@en ;
-        rdfs:seeAlso <https://dbpedia.org/ontology/AdministrativeRegion> ,
-                     schema:AdministrativeArea ,
-                     "http://www.wikidata.org/entity/Q82794" .
+        rdfs:seeAlso <http://www.wikidata.org/entity/Q82794> ,
+                     <https://dbpedia.org/ontology/AdministrativeRegion> ,
+                     schema:AdministrativeArea .
 
 
 ###  https://schema.coypu.org/global#RegionalIndustry
@@ -1652,7 +1652,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:subClassOf :Event ;
                      rdfs:comment "An event of socio-political relevance, from the IECWS dataset."@en ;
                      rdfs:label "SocioPoliticalEvent" ;
-                     rdfs:seeAlso "https://dataverse.harvard.edu/dataverse/icews" .
+                     rdfs:seeAlso <https://dataverse.harvard.edu/dataverse/icews> .
 
 
 ###  https://schema.coypu.org/global#StrategicDevelopment
@@ -1727,7 +1727,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Event ;
           rdfs:comment "A current news event extracted from Wikipedia."@en ;
           rdfs:label "WikiNews"@en ;
-          rdfs:seeAlso "https://en.wikipedia.org/wiki/Portal:Current_events" .
+          rdfs:seeAlso <https://en.wikipedia.org/wiki/Portal:Current_events> .
 
 
 ###  https://schema.coypu.org/global#Wildfire
