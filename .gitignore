@@ -6,3 +6,5 @@ docu-ontology/.vendor
 docu-ontology/Gemfile.lock
 docu-ontology/_site
 shapes_extracted_ontology.ttl
+
+ontology/global/catalog-v001.xml

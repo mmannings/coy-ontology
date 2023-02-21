@@ -1651,7 +1651,7 @@ xsd:date rdf:type rdfs:Datatype .
 :SocioPoliticalEvent rdf:type owl:Class ;
                      rdfs:subClassOf :Event ;
                      rdfs:comment "An event of socio-political relevance, from the IECWS dataset."@en ;
-                     rdfs:label "SocioPoliticalEvent" ;
+                     rdfs:label "SocioPoliticalEvent"@en ;
                      rdfs:seeAlso <https://dataverse.harvard.edu/dataverse/icews> .
 
 
@@ -1673,7 +1673,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Company ;
           rdfs:comment "An organization that provides something needed such as a product or service to another organization."@en ;
           rdfs:label "Supplier"@en ;
-          rdfs:seeAlso "http://www.w3id.org/ecsel-dr-OM#Supplier"@en .
+          rdfs:seeAlso <http://www.w3id.org/ecsel-dr-OM#Supplier> .
 
 
 ###  https://schema.coypu.org/global#Terminal
