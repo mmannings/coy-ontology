@@ -1299,8 +1299,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:comment "An organization engaged in economic activities."@en ;
          rdfs:label "Company"@en ;
          rdfs:seeAlso dbo:Company ,
-                      schema:Corporation ,
-                      "http://www.wikidata.org/entity/Q783794" .
+                      <http://www.wikidata.org/entity/Q783794> ,
+                      schema:Corporation .
 
 
 ###  https://schema.coypu.org/global#Conflict
