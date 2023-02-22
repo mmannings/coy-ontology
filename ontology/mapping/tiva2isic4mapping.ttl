@@ -1,6 +1,6 @@
 # baseURI: https://schema.coypu.org/taxonomy/tiva21isic4mapping
 # imports: https://data.coypu.org/classification/isic_r4/
-# imports: https://data.coypu.org/classificaiton/tiva-21/
+# imports: https://data.coypu.org/classificaiton/tiva-21
 
 @prefix : <https://data.coypu.org/mapping/tiva21isic4mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -190,6 +190,6 @@ tiva-21:D97T98
 <https://schema.coypu.org/taxonomy/tiva21isic4mapping>
   rdf:type owl:Ontology ;
   owl:imports <https://data.coypu.org/classification/isic_r4/> ;
-  owl:imports <https://data.coypu.org/classificaiton/tiva-21/> ;
+  owl:imports <https://data.coypu.org/classificaiton/tiva-21> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
