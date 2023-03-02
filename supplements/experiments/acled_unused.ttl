@@ -1,10 +1,10 @@
-@prefix : <https://schema.coypu.org/acled#/> .
+@prefix : <https://schema.coypu.org/acled#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://schema.coypu.org/acled#/> .
+@base <https://schema.coypu.org/acled#> .
 
 <https://schema.coypu.org/acled#> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://schema.coypu.org/acled/0.1.0> ;
@@ -37,26 +37,27 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasActor
 :hasActor rdf:type owl:ObjectProperty ;
-          rdfs:domain :ACLEDEvent ;
+          rdfs:domain :Conflict ;
           rdfs:range :Actor ;
           rdfs:comment "A named actor involved in the event."@en ;
           rdfs:label "has actor"@en .
 
 
 ###  https://schema.coypu.org/acled#hasAssociatedActor
-:hasAssociatedActor rdf:type owl:ObjectProperty .
+:hasAssociatedActor rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Actor .
 
 
 ###  https://schema.coypu.org/acled#hasInteractionType
 :hasInteractionType rdf:type owl:ObjectProperty ;
-                    rdfs:domain :ACLEDEvent ;
+                    rdfs:domain :Conflict ;
                     rdfs:comment "The type of interaction between the types of ACTOR1 and ACTOR2."@en ;
                     rdfs:label "has Interaction type"@en .
 
 
 ###  https://schema.coypu.org/acled#hasSource
 :hasSource rdf:type owl:ObjectProperty ;
-           rdfs:domain :ACLEDEvent ;
+           rdfs:domain :Conflict ;
            rdfs:range :Source ;
            rdfs:comment "The source of the event report"@en ;
            rdfs:label "has source"@en .
@@ -68,7 +69,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasAdministrativeRegion
 :hasAdministrativeRegion rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :ACLEDEvent ;
+                         rdfs:domain :Conflict ;
                          rdfs:range xsd:string ;
                          rdfs:comment """The largest/second-largest/third-largest sub-national administrative region in which the
    event took place"""@en ;
@@ -77,27 +78,26 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasAssociatedActor
 :hasAssociatedActor rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Actor ;
                     rdfs:range xsd:string .
 
 
 ###  https://schema.coypu.org/acled#hasDataID
 :hasDataID rdf:type owl:DatatypeProperty ;
-           rdfs:domain :ACLEDEvent ;
+           rdfs:domain :Conflict ;
            rdfs:range xsd:integer ;
            rdfs:label "has data ID"@en .
 
 
 ###  https://schema.coypu.org/acled#hasEventDate
 :hasEventDate rdf:type owl:DatatypeProperty ;
-              rdfs:domain :ACLEDEvent ;
+              rdfs:domain :Conflict ;
               rdfs:range xsd:dateTime ;
               rdfs:label "has event date"@en .
 
 
 ###  https://schema.coypu.org/acled#hasEventIdCnty
 :hasEventIdCnty rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ACLEDEvent ;
+                rdfs:domain :Conflict ;
                 rdfs:range xsd:string ;
                 rdfs:comment "An individual event identifier by number and country acronym."@en ;
                 rdfs:label "has event ID with Country"@en .
@@ -105,7 +105,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasEventIdNoCnty
 :hasEventIdNoCnty rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :ACLEDEvent ;
+                  rdfs:domain :Conflict ;
                   rdfs:range xsd:integer ;
                   rdfs:comment "An individual event numeric identifier."@en ;
                   rdfs:label "has event ID No Country"@en .
@@ -113,7 +113,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasFatalities
 :hasFatalities rdf:type owl:DatatypeProperty ;
-               rdfs:domain :ACLEDEvent ;
+               rdfs:domain :Conflict ;
                rdfs:range xsd:integer ;
                rdfs:comment "The number of reported fatalities which occurred during the event"@en ;
                rdfs:label "has fatalities"@en .
@@ -122,7 +122,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://schema.coypu.org/acled#hasGeoPrecision
 :hasGeoPrecision rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
-                 rdfs:domain :ACLEDEvent ;
+                 rdfs:domain :Conflict ;
                  rdfs:range xsd:integer ;
                  rdfs:comment """If the report notes a particular town, and coordinates are available for that town, the
    highest precision level “1” is recorded. If the source material notes that activity took
@@ -148,7 +148,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://schema.coypu.org/acled#hasInteractionCode
 :hasInteractionCode rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :ACLEDEvent ;
+                    rdfs:domain :Conflict ;
                     rdfs:range xsd:integer ;
                     rdfs:comment """The joined interaction code is the combination of the two ‘INTER’ codes associated with
 the two main actors. Single actor type codes are recorded in ‘INTER1’ and ‘INTER2’
@@ -161,7 +161,7 @@ is recorded as “13”."""@en ;
 
 ###  https://schema.coypu.org/acled#hasRegion
 :hasRegion rdf:type owl:DatatypeProperty ;
-           rdfs:domain :ACLEDEvent ;
+           rdfs:domain :Conflict ;
            rdfs:range xsd:string ;
            rdfs:comment "The region of the world where the event took place"@en ;
            rdfs:label "has region"@en .
@@ -177,7 +177,7 @@ is recorded as “13”."""@en ;
 
 ###  https://schema.coypu.org/acled#hasTimePrecision
 :hasTimePrecision rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :ACLEDEvent ;
+                  rdfs:domain :Conflict ;
                   rdfs:range xsd:integer ;
                   rdfs:comment """If sources include an actual date of an event, a time precision code of “1” is entered. If
 sources note that an event happened during a specific week or in the weekend, “2” is
@@ -192,7 +192,7 @@ events with less temporal information."""@en ;
 
 ###  https://schema.coypu.org/acled#hasYear
 :hasYear rdf:type owl:DatatypeProperty ;
-         rdfs:domain :ACLEDEvent ;
+         rdfs:domain :Conflict ;
          rdfs:range xsd:gYear ;
          rdfs:label "has year"@en .
 
@@ -200,11 +200,6 @@ events with less temporal information."""@en ;
 #################################################################
 #    Classes
 #################################################################
-
-###  https://schema.coypu.org/acled#ACLEDEvent
-:ACLEDEvent rdf:type owl:Class ;
-            rdfs:label "ACLEDEvent"@en .
-
 
 ###  https://schema.coypu.org/acled#Actor
 :Actor rdf:type owl:Class ;
@@ -259,9 +254,14 @@ groups at a particular time and location.”"""@en ;
            :hasInterCodeAnnotation "7" .
 
 
+###  https://schema.coypu.org/acled#Conflict
+:Conflict rdf:type owl:Class ;
+          rdfs:label "Conflict"@en .
+
+
 ###  https://schema.coypu.org/acled#Demonstrations
 :Demonstrations rdf:type owl:Class ;
-                rdfs:subClassOf :ACLEDEvent ;
+                rdfs:subClassOf :Conflict ;
                 rdfs:label "Demonstrations"@en .
 
 
@@ -325,7 +325,7 @@ groups at a particular time and location.”"""@en ;
 
 ###  https://schema.coypu.org/acled#NonViolentActions
 :NonViolentActions rdf:type owl:Class ;
-                   rdfs:subClassOf :ACLEDEvent ;
+                   rdfs:subClassOf :Conflict ;
                    rdfs:label "Non-violent actions"@en .
 
 
@@ -441,7 +441,7 @@ groups at a particular time and location."""@en ;
 
 ###  https://schema.coypu.org/acled#ViolentEvents
 :ViolentEvents rdf:type owl:Class ;
-               rdfs:subClassOf :ACLEDEvent ;
+               rdfs:subClassOf :Conflict ;
                rdfs:label "Violent events"@en .
 
 
