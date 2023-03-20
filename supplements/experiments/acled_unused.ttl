@@ -1,400 +1,130 @@
-@prefix : <https://schema.coypu.org/acled/> .
+@prefix : <https://schema.coypu.org/acled#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://schema.coypu.org/acled/> .
+@base <https://schema.coypu.org/acled#> .
 
-<https://schema.coypu.org/acled/> rdf:type owl:Ontology ;
-                                  owl:versionIRI <https://schema.coypu.org/acled/0.1.0> ;
-                                  rdfs:comment "An ontology for modeling the armed conflict location & event data."@en ;
-                                  rdfs:label "Armed Conflict Location  Event Data Ontology"@en ;
-                                  rdfs:seeAlso <https://acleddata.com> ;
-                                  owl:versionInfo "v0.1.0" .
+<https://schema.coypu.org/acled#> rdf:type owl:Ontology ;
+                                   owl:versionIRI <https://schema.coypu.org/acled/0.1.0> ;
+                                   rdfs:comment "An ontology for modeling the armed conflict location & event data."@en ;
+                                   rdfs:label "Armed Conflict Location  Event Data Ontology"@en ;
+                                   rdfs:seeAlso <https://acleddata.com> ;
+                                   owl:versionInfo "v0.1.0" .
 
-############################ Classes
+#################################################################
+#    Annotation properties
+#################################################################
 
-# https://schema.coypu.org/acled/ACLEDEvent
-:ACLEDEvent rdf:type owl:Class ;            
-            rdfs:label "ACLEDEvent"@en .
-
-# https://schema.coypu.org/acled/EventType
-:EventType rdf:type owl:Class ;
-           rdfs:label "Event type"@en .
-
-
-# https://schema.coypu.org/acled/ViolentEvents
-:ViolentEvents rdf:type owl:Class ;
-            rdfs:subClassOf :EventType ;
-            rdfs:label "Violent events"@en .
-
-# https://schema.coypu.org/acled/Battles
-:Battles rdf:type owl:Class ;
-            rdfs:subClassOf :ViolentEvents ;
-            rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
-groups at a particular time and location.”"""@en ;
-            rdfs:label "Battles"@en .
-
-# https://schema.coypu.org/acled/ArmedClash
-:ArmedClash rdf:type owl:Class ;
-            rdfs:subClassOf :Battles ;
-            rdfs:label "Armed clash"@en .
-
-# https://schema.coypu.org/acled/GovernmentRegainsTerritory
-:GovernmentRegainsTerritory rdf:type owl:Class ;
-                            rdfs:subClassOf :Battles ;
-                            rdfs:label "Government regains territory"@en .
-
-# https://schema.coypu.org/acled/Non-StateActorOvertakesTerritory
-:Non-StateActorOvertakesTerritory rdf:type owl:Class ;
-                                  rdfs:subClassOf :Battles ;
-                                  rdfs:label "Non-state actor overtakes territory"@en .
-
-# https://schema.coypu.org/acled/Explosions%2FRemoteViolence
-<https://schema.coypu.org/acled/Explosions%2FRemoteViolence> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :ViolentEvents ;
-                                                             rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
-tool for engaging in conflict creates asymmetry by taking away the ability of the target to
-respond”."""@en ;
-                                                             rdfs:label "Explosions/remote violence"@en .
-
-
-# https://schema.coypu.org/acled/ChemicalWeapon
-:ChemicalWeapon rdf:type owl:Class ;
-                rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-                rdfs:comment """all substances
-listed in the Schedule 1 of the Chemical Weapons Convention"""@en ;
-                rdfs:label "Chemical weapon"@en .
-
-# https://schema.coypu.org/acled/Air%2FDroneStrike
-<https://schema.coypu.org/acled/Air%2FDroneStrike> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-                                                   rdfs:label "Air/drone strike"@en .
-
-# https://schema.coypu.org/acled/SuicideBomb
-:SuicideBomb rdf:type owl:Class ;
-             rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-             rdfs:label "Suicide bomb"@en .
-
-# https://schema.coypu.org/acled/Shelling%2FArtillery%2FMissileAttack
-<https://schema.coypu.org/acled/Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-                                                                      rdfs:label "Shelling/artillery/missile attack"@en .
-
-# https://schema.coypu.org/acled/RemoteExplosive%2FLandmine%2FIED
-<https://schema.coypu.org/acled/RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-                                                                  rdfs:label "Remote explosive/landmine/IED"@en .
-
-# https://schema.coypu.org/acled/Grenade
-:Grenade rdf:type owl:Class ;
-         rdfs:subClassOf <https://schema.coypu.org/acled/Explosions%2FRemoteViolence> ;
-         rdfs:label "Grenade"@en .
-
-# https://schema.coypu.org/acled/ViolenceAgainstCivilians
-:ViolenceAgainstCivilians rdf:type owl:Class ;
-                             rdfs:subClassOf :ViolentEvents ;
-                             rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
-groups at a particular time and location."""@en ;
-                             rdfs:label "Violence against civilians"@en .
-
-# https://schema.coypu.org/acled/SexualViolence
-:SexualViolence rdf:type owl:Class ;
-                rdfs:subClassOf :ViolenceAgainstCivilians ;
-                rdfs:label "Sexual violence"@en .
-
-# https://schema.coypu.org/acled/Attack
-:Attack rdf:type owl:Class ;
-        rdfs:subClassOf :ViolenceAgainstCivilians ;
-        rdfs:label "Attack"@en .
-
-# https://schema.coypu.org/acled/Abduction%2FForcedDisappearance
-<https://schema.coypu.org/acled/Abduction%2FForcedDisappearance> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf :ViolenceAgainstCivilians ;
-                                                                 rdfs:label "Abduction/forced disappearance"@en .
-
-# https://schema.coypu.org/acled/Demonstrations
-:Demonstrations rdf:type owl:Class ;
-                   rdfs:subClassOf :EventType ;
-                   rdfs:label "Demonstrations"@en .
-
-# https://schema.coyput.org/acled/Protests
-:Protests rdf:type owl:Class ;
-             rdfs:subClassOf :Demonstrations ;
-             rdfs:comment """A protest is defined as a public demonstration in which the participants do not engage in
-violence, though violence may be used against them."""@en ;
-             rdfs:label "Protests"@en .
-
-# https://schema.coypu.org/acled/PeacefulProtest
-:PeacefulProtest rdf:type owl:Class ;
-                 rdfs:subClassOf :Protests ;
-                 rdfs:label "Peaceful protest"@en .
-
-# https://schema.coypu.org/acled/ProtestWithIntervention
-:ProtestWithIntervention rdf:type owl:Class ;
-                         rdfs:subClassOf :Protests ;
-                         rdfs:label "Protest with intervention"@en .
-
-# https://schema.coypu.org/acled/ExcessiveForceAgainstProtesters
-:ExcessiveForceAgainstProtesters rdf:type owl:Class ;
-                                 rdfs:subClassOf :Protests ;
-                                 rdfs:label "Excessive force against protesters"@en .
-
-
-# https://schema.coypu.org/acled/Riots
-:Riots rdf:type owl:Class ;
-          rdfs:subClassOf :Demonstrations ;
-          rdfs:comment """‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts,
-including but not limited to rock throwing, property destruction, etc."""@en ;
-          rdfs:label "Riots"@en .
-
-# https://schema.coypu.org/acled/ViolentDemonstration
-:ViolentDemonstration rdf:type owl:Class ;
-                      rdfs:subClassOf :Riots ;
-                      rdfs:label "Violent demonstration"@en .
-
-# https://schema.coypu.org/acled/MobViolence
-:MobViolence rdf:type owl:Class ;
-                      rdfs:subClassOf :Riots ;
-                      rdfs:label "Mob violence"@en .
-
-# https://schema.coypu.org/acled/NonViolentActions
-:NonViolentActions rdf:type owl:Class ;
-                   rdfs:subClassOf :EventType ;
-                   rdfs:label "Non-violent actions"@en .
-
-# https://schema.coypu.org/acled/StrategicDevelopments
-:StrategicDevelopments rdf:type owl:Class ;
-                       rdfs:subClassOf :NonViolentActions ;
-                       rdfs:comment """This event type captures contextually important information regarding the activities of
-violent groups that is not itself recorded as political violence, yet may trigger future
-events or contribute to political dynamics within and across states. """@en ;
-                          rdfs:label "Strategic developments"@en .
-
-# https://schema.coypu.org/acled/Agreement
-:Agreement rdf:type owl:Class ;
-           rdfs:subClassOf :StrategicDevelopments ;
-           rdfs:label "Agreement"@en .
-
-# https://schema.coypu.org/acled/Arrests
-:Arrests rdf:type owl:Class ;
-         rdfs:subClassOf :StrategicDevelopments ;
-         rdfs:label "Arrests"@en .
-
-# https://schema.coypu.org/acled/ChangeToGroup%2FActivity
-<https://schema.coypu.org/acled/ChangeToGroup%2FActivity> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :StrategicDevelopments ;
-                                                          rdfs:label "Change to group/activity"@en .
-
-# https://schema.coypu.org/acled/DisruptedWeaponUse
-:DisruptedWeaponUse rdf:type owl:Class ;
-                    rdfs:subClassOf :StrategicDevelopments ;
-                    rdfs:label "Disrupted qeapon use"@en .
-
-# https://schema.coypu.org/acled/HeadquartersOrBaseEstablished
-:HeadquartersOrBaseEstablished rdf:type owl:Class ;
-                               rdfs:subClassOf :StrategicDevelopments ;
-                               rdfs:label "Headquarters or base established"@en .
-
-# https://schema.coypu.org/acled/Looting%2FPropertyDestruction
-<https://schema.coypu.org/acled/Looting%2FPropertyDestruction> rdf:type owl:Class ;
-                                                               rdfs:subClassOf :StrategicDevelopments ;
-                                                               rdfs:label "Looting/property destruction"@en .
-
-# https://schema.coypu.org/acled/Non-ViolentTransferOfTerritory
-:Non-ViolentTransferOfTerritory rdf:type owl:Class ;
-                                rdfs:subClassOf :StrategicDevelopments ;
-                                rdfs:label "Non-violent transfer of territory"@en .
-
-# https://schema.coypu.org/acled/Other
-:Other rdf:type owl:Class ;
-       rdfs:subClassOf :StrategicDevelopments ;
-       rdfs:label "Other"@en .
-
-# https://schema.coypu.org/acled/InterCode
-:InterCode rdf:type owl:Class ;
-           rdfs:comment "A numeric code indicating the type of Actor"@en ;
-           rdfs:label "Inter code"@en .
-
-# https://schema.coypu.org/acled/Source
-:Source rdf:type owl:Class ;
-        rdfs:comment "The source of the event report"@en ;
-        rdfs:label "Source"@en .
-
-# https://schema.coypu.org/acled/StateForces
-:StateForces rdf:type owl:Class ;
-             rdfs:subClassOf :InterCode ;
-             rdfs:label "State Forces"@en ;
-             :hasInterCodeAnnotation "1" .
-
-# https://schema.coypu.org/acled/RebelGroups
-:RebelGroups rdf:type owl:Class ;
-             rdfs:subClassOf :InterCode ;
-             rdfs:label "Rebel Groups"@en ;
-             :hasInterCodeAnnotation "2" .
-
-# https;//schema.coypu.org/acled/PoliticalMilitias
-:PoliticalMilitias rdf:type owl:Class ;
-                   rdfs:subClassOf :InterCode ;
-                   rdfs:label "Political Militias"@en ;
-                   :hasInterCodeAnnotation "3" .
-
-# https://schema.coypu.org/acled/IdentityMilitias
-:IdentityMilitias rdf:type owl:Class ;
-                  rdfs:subClassOf :InterCode ;
-                  rdfs:label "Identity Militias"@en ;
-                  :hasInterCodeAnnotation "4" .
-
-# https:schema.coypu.org/acled/Rioters
-:Rioters rdf:type owl:Class ;
-         rdfs:subClassOf :InterCode ;
-         rdfs:label "Rioters"@en ;
-         :hasInterCodeAnnotation "5" .
-
-# https://schema.coypu.org/acled/Protesters
-:Protesters rdf:type owl:Class ;
-            rdfs:subClassOf :InterCode ;
-            rdfs:label "Protestors"@en ;
-            :hasInterCodeAnnotation "6" .
-
-# https://schema.coypu.org/acled/Civilians
-:Civilians rdf:type owl:Class ;
-           rdfs:subClassOf :InterCode ;
-           rdfs:label "Civilians"@en ;
-           :hasInterCodeAnnotation "7" .
-
-# https://schema.coypu.org/acled/External%2FOtherForces
-<https://schema.coypu.org/acled/External%2FOtherForces> rdf:type owl:Class ;
-                                                        rdfs:subClassOf :InterCode ;
-                                                        rdfs:label "External/Other Forces"@en ;
-                                                        :hasInterCodeAnnotation "8" .
-
-
-############################ AnnotationProperty
-
-# https://schema.coypu.org/aled/hasInterCodeAnnotation
+###  https://schema.coypu.org/acled#hasInterCodeAnnotation
 :hasInterCodeAnnotation rdf:type owl:AnnotationProperty ;
-              rdfs:comment "A numeric code indicating the type of ACTOR"@en ;
-              rdfs:label "Inter"@en .
+                        rdfs:comment "A numeric code indicating the type of ACTOR"@en ;
+                        rdfs:label "Inter"@en .
 
 
-############################ Object properties
+#################################################################
+#    Datatypes
+#################################################################
 
-# https://schema.coypu.org/acled/hasEventType
-:hasEventType rdf:type owl:ObjectProperty ;
-              rdfs:domain :ACLEDEvent ;
-              rdfs:range :EventType ;
-              rdfs:label "hasEventType"@en .
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
 
-# https://schema.coypu.org/acled/hasInterCode
-:hasInterCode rdf:type owl:ObjectProperty ;
-              rdfs:domain :ACLEDEvent ;
-              rdfs:range :InterCode ;
-              rdfs:label "has Inter Code"@en .
 
-# https://schema.coypu.org/acled/hasSource
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.coypu.org/acled#hasActor
+:hasActor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Conflict ;
+          rdfs:range :Actor ;
+          rdfs:comment "A named actor involved in the event."@en ;
+          rdfs:label "has actor"@en .
+
+
+###  https://schema.coypu.org/acled#hasAssociatedActor
+:hasAssociatedActor rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Actor .
+
+
+###  https://schema.coypu.org/acled#hasInteractionType
+:hasInteractionType rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Conflict ;
+                    rdfs:comment "The type of interaction between the types of ACTOR1 and ACTOR2."@en ;
+                    rdfs:label "has Interaction type"@en .
+
+
+###  https://schema.coypu.org/acled#hasSource
 :hasSource rdf:type owl:ObjectProperty ;
-           rdfs:domain :ACLEDEvent ;
+           rdfs:domain :Conflict ;
            rdfs:range :Source ;
            rdfs:comment "The source of the event report"@en ;
-           rdfs:label "has Source"@en .
+           rdfs:label "has source"@en .
 
 
-############################ Data properties
+#################################################################
+#    Data properties
+#################################################################
 
-# https://schema.coypu.org/acled/hasEventDate
-:hasEventDate rdf:type owl:DatatypeProperty ;
-              rdfs:domain :ACLEDEvent ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "has Event Date"@en .
-
-# https://schema.coypu.org/acled/hasYear
-:hasYear rdf:type owl:DatatypeProperty ;
-         rdfs:domain :ACLEDEvent ;
-         rdfs:range xsd:integer ;
-         rdfs:label "has Year"@en .
+###  https://schema.coypu.org/acled#hasAdministrativeRegion
+:hasAdministrativeRegion rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Conflict ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment """The largest/second-largest/third-largest sub-national administrative region in which the
+   event took place"""@en ;
+                         rdfs:label "has administrative region"@en .
 
 
-# https://schema.coypu.org/acled/hasDataID
+###  https://schema.coypu.org/acled#hasAssociatedActor
+:hasAssociatedActor rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string .
+
+
+###  https://schema.coypu.org/acled#hasDataID
 :hasDataID rdf:type owl:DatatypeProperty ;
-           rdfs:domain :ACLEDEvent ;
+           rdfs:domain :Conflict ;
            rdfs:range xsd:integer ;
-           rdfs:label "has Data ID"@en .
+           rdfs:label "has data ID"@en .
 
-# https://schema.coypu.org/acled/hasEventIdCnty
+
+###  https://schema.coypu.org/acled#hasEventDate
+:hasEventDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Conflict ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "has event date"@en .
+
+
+###  https://schema.coypu.org/acled#hasEventIdCnty
 :hasEventIdCnty rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ACLEDEvent ;
+                rdfs:domain :Conflict ;
                 rdfs:range xsd:string ;
-                rdfs:label "has Event Id Cnty"@en .
+                rdfs:comment "An individual event identifier by number and country acronym."@en ;
+                rdfs:label "has event ID with Country"@en .
 
-# https://schema.coypu.org/acled/hasEventIdNoCnty
+
+###  https://schema.coypu.org/acled#hasEventIdNoCnty
 :hasEventIdNoCnty rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :ACLEDEvent ;
+                  rdfs:domain :Conflict ;
                   rdfs:range xsd:integer ;
-                  rdfs:label "has Event Id No Cnty"@en .
-
-# https://schema.copu.org/acled/hasSourceScale
-:hasSourceScale rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Source ;
-                rdfs:range xsd:string ;
-                rdfs:comment "The scale (local, regional, national, international) of the source"@en ;
-                rdfs:label "Source scale"@en .
-
-# https://schema.coypu.org/acled/hasInteraction
-:hasInteraction rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ACLEDEvent ;
-                rdfs:range xsd:integer ;
-                rdfs:comment """The joined interaction code is the combination of the two ‘INTER’ codes associated with
-the two main actors. Single actor type codes are recorded in ‘INTER1’ and ‘INTER2’
-columns, and the compounded number is recorded in the ‘INTERACTION’ column. For
-example, if a country’s military fights a political militia group, and the respective
-‘INTER1’ and ‘INTER2’ codes are “1” and “3”, respectively, the compounded Interaction
-is recorded as “13”."""@en ;
-                rdfs:label "has Interaction"@en .
+                  rdfs:comment "An individual event numeric identifier."@en ;
+                  rdfs:label "has event ID No Country"@en .
 
 
-# https://schema.coypu.org/acled/hasFatalities
+###  https://schema.coypu.org/acled#hasFatalities
 :hasFatalities rdf:type owl:DatatypeProperty ;
-               rdfs:domain :ACLEDEvent ;
+               rdfs:domain :Conflict ;
                rdfs:range xsd:integer ;
                rdfs:comment "The number of reported fatalities which occurred during the event"@en ;
-               rdfs:label "has Fatalities"@en .
+               rdfs:label "has fatalities"@en .
 
-# https://schema.coypu.org/acled/hasNotes
-:hasNotes rdf:type owl:DatatypeProperty ;
-          rdfs:domain :ACLEDEvent ;
-          rdfs:range xsd:string ;
-          rdfs:comment "A short description of the event"@en ;
-          rdfs:label "has Notes"@en .
 
-# https://schema.coypu.org/acled/hasActor
-:hasActor rdf:type owl:DatatypeProperty ;
-          rdfs:domain :ACLEDEvent ;
-          rdfs:range xsd:string ;
-          rdfs:comment "The named actor involved in the event"@en ;
-          rdfs:label "has Actor"@en .
-
-# https://schema.coypu.org/acled/hasAssocActor
-:hasAssocActor rdf:type owl:DatatypeProperty ;
-               rdfs:domain :ACLEDEvent ;
-               rdfs:range xsd:string ;
-               rdfs:comment "The named actor associated with or identifying Actor"@en ;
-               rdfs:label "has Assoc Actor"@en .
-
-# https://schema.coypu.org/acled/hasAdmin
-:hasAdmin rdf:type owl:DatatypeProperty ;
-          rdfs:domain :ACLEDEvent ;
-          rdfs:range xsd:string ;
-          rdfs:comment """The largest/second-largest/third-largest sub-national administrative region in which the
-   event took place"""@en ;
-          rdfs:label "has Admin"@en .
-
-# https://schema.coypu.org/acled/hasGeoPrecission
-:hasGeoPrecission rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :ACLEDEvent ;
-                  rdfs:range xsd:integer ;
-                  rdfs:comment """If the report notes a particular town, and coordinates are available for that town, the
+###  https://schema.coypu.org/acled#hasGeoPrecision
+:hasGeoPrecision rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Conflict ;
+                 rdfs:range xsd:integer ;
+                 rdfs:comment """If the report notes a particular town, and coordinates are available for that town, the
    highest precision level “1” is recorded. If the source material notes that activity took
    place in a small part of a region, and notes a general area, a town with georeferenced
    coordinates to represent that area is chosen and the geo-precision code will note “2” for
@@ -404,13 +134,52 @@ is recorded as “13”."""@en ;
    or a provincial capital is used if no other information at all is available – and is noted
    with precision level “3”. No ACLED event is associated with the “country” as the smallest
    location unit available."""@en ;
-                  rdfs:label "has geo precission"@en .
+                 rdfs:label "has geo precision"@en .
 
-# https://schema.coypu.org/acled/hasTimePrecission
-:hasTimePrecission rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :ACLEDEvent ;
-                   rdfs:range xsd:integer ;
-                   rdfs:comment """If sources include an actual date of an event, a time precision code of “1” is entered. If
+
+###  https://schema.coypu.org/acled#hasInteractionActorCode
+:hasInteractionActorCode rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Actor ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "A numeric code indicating the type of actor"@en ;
+                         rdfs:label "has interaction actor code"@en .
+
+
+###  https://schema.coypu.org/acled#hasInteractionCode
+:hasInteractionCode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Conflict ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment """The joined interaction code is the combination of the two ‘INTER’ codes associated with
+the two main actors. Single actor type codes are recorded in ‘INTER1’ and ‘INTER2’
+columns, and the compounded number is recorded in the ‘INTERACTION’ column. For
+example, if a country’s military fights a political militia group, and the respective
+‘INTER1’ and ‘INTER2’ codes are “1” and “3”, respectively, the compounded Interaction
+is recorded as “13”."""@en ;
+                    rdfs:label "has interaction code"@en .
+
+
+###  https://schema.coypu.org/acled#hasRegion
+:hasRegion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Conflict ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The region of the world where the event took place"@en ;
+           rdfs:label "has region"@en .
+
+
+###  https://schema.coypu.org/acled#hasSourceScale
+:hasSourceScale rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Source ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The scale (local, regional, national, international) of the source"@en ;
+                rdfs:label "has source scale"@en .
+
+
+###  https://schema.coypu.org/acled#hasTimePrecision
+:hasTimePrecision rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Conflict ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment """If sources include an actual date of an event, a time precision code of “1” is entered. If
 sources note that an event happened during a specific week or in the weekend, “2” is
 noted in the time precision field and the middle of that week (or of the weekend) is used
 as the reference date. If sources note only that an event took place within a particular
@@ -418,11 +187,322 @@ month, without reference to the particular date, the month mid-point is chosen u
 the beginning or end of the month is noted (in which case, the first and last date are
 used, respectively) and “3” is noted as the time precision level. ACLED does not include
 events with less temporal information."""@en ;
-                   rdfs:label "has time precission"@en .
+                  rdfs:label "has time precision"@en .
 
-# https://schema.coypu.org/acled/hasRegion
-:hasRegion rdf:type owl:DatatypeProperty ;
-           rdfs:domain :ACLEDEvent ;
-           rdfs:range xsd:string ;
-           rdfs:comment "The region of the world where the event took place"@en ;
-           rdfs:label "has region"@en .
+
+###  https://schema.coypu.org/acled#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Conflict ;
+         rdfs:range xsd:gYear ;
+         rdfs:label "has year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.coypu.org/acled#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:comment "A named actor involved in an event"@en ;
+       rdfs:label "Actor"@en .
+
+
+###  https://schema.coypu.org/acled#Agreement
+:Agreement rdf:type owl:Class ;
+           rdfs:subClassOf :StrategicDevelopments ;
+           rdfs:label "Agreement"@en .
+
+
+###  https://schema.coypu.org/acled#ArmedClash
+:ArmedClash rdf:type owl:Class ;
+            rdfs:subClassOf :Battles ;
+            rdfs:comment "If armed, organized groups engage in a battle, and no reports indicate a change in territorial control, the correct sub-event type is an ‘Armed clash’."@en ;
+            rdfs:label "Armed clash"@en .
+
+
+###  https://schema.coypu.org/acled#Arrests
+:Arrests rdf:type owl:Class ;
+         rdfs:subClassOf :StrategicDevelopments ;
+         rdfs:label "Arrests"@en .
+
+
+###  https://schema.coypu.org/acled#Attack
+:Attack rdf:type owl:Class ;
+        rdfs:subClassOf :ViolenceAgainstCivilians ;
+        rdfs:label "Attack"@en .
+
+
+###  https://schema.coypu.org/acled#Battles
+:Battles rdf:type owl:Class ;
+         rdfs:subClassOf :ViolentEvents ;
+         rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
+groups at a particular time and location.”"""@en ;
+         rdfs:label "Battles"@en .
+
+
+###  https://schema.coypu.org/acled#ChemicalWeapon
+:ChemicalWeapon rdf:type owl:Class ;
+                rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+                rdfs:comment "Whenever chemical weapons are used in warfare in the absence of any other engagement. ACLED considers chemical weapons all substances listed in the Schedule 1 of the Chemical Weapons Convention, including sarin gas, mustard gas, chlorine gas, and anthrax. Napalm, white phosphorous, as well as tear gas and other non-lethal crowd control substances, are not considered to be chemical weapons within this sub-event type."@en ;
+                rdfs:label "Chemical weapon"@en .
+
+
+###  https://schema.coypu.org/acled#Civilians
+:Civilians rdf:type owl:Class ;
+           rdfs:subClassOf :Actor ;
+           rdfs:label "Civilians"@en ;
+           :hasInterCodeAnnotation "7" .
+
+
+###  https://schema.coypu.org/acled#Conflict
+:Conflict rdf:type owl:Class ;
+          rdfs:label "Conflict"@en .
+
+
+###  https://schema.coypu.org/acled#Demonstrations
+:Demonstrations rdf:type owl:Class ;
+                rdfs:subClassOf :Conflict ;
+                rdfs:label "Demonstrations"@en .
+
+
+###  https://schema.coypu.org/acled#DisruptedWeaponUse
+:DisruptedWeaponUse rdf:type owl:Class ;
+                    rdfs:subClassOf :StrategicDevelopments ;
+                    rdfs:label "Disrupted qeapon use"@en .
+
+
+###  https://schema.coypu.org/acled#ExcessiveForceAgainstProtesters
+:ExcessiveForceAgainstProtesters rdf:type owl:Class ;
+                                 rdfs:subClassOf :Protests ;
+                                 rdfs:label "Excessive force against protesters"@en .
+
+
+###  https://schema.coypu.org/acled#GovernmentRegainsTerritory
+:GovernmentRegainsTerritory rdf:type owl:Class ;
+                            rdfs:subClassOf :Battles ;
+                            rdfs:comment "This sub-event type is used to describe cases where government forces or their affiliates fighting against competing state forces or against a non-state group regain control of a location. This code is only used for re-establishment of government control and not for dual non-state violence. Short-lived territorial exchanges that do not last for more than one day are coded as ‘Armed clash’."@en ;
+                            rdfs:label "Government regains territory"@en .
+
+
+###  https://schema.coypu.org/acled#Grenade
+:Grenade rdf:type owl:Class ;
+         rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+         rdfs:comment "When a grenade or another explosive is thrown in the absence of any other engagement. Events involving “crude bombs” (such as Molotov cocktails, firecrackers, cherry bombs, petrol bombs, etc.) as well as ‘stun grenades’ are not coded in this category but are included under either ‘Riots’ or ‘Strategic developments’ depending on the context where they occurred."@en ;
+         rdfs:label "Grenade"@en .
+
+
+###  https://schema.coypu.org/acled#HeadquartersOrBaseEstablished
+:HeadquartersOrBaseEstablished rdf:type owl:Class ;
+                               rdfs:subClassOf :StrategicDevelopments ;
+                               rdfs:label "Headquarters or base established"@en .
+
+
+###  https://schema.coypu.org/acled#IdentityMilitias
+:IdentityMilitias rdf:type owl:Class ;
+                  rdfs:subClassOf :Actor ;
+                  rdfs:label "Identity Militias"@en ;
+                  :hasInterCodeAnnotation "4" .
+
+
+###  https://schema.coypu.org/acled#MobViolence
+:MobViolence rdf:type owl:Class ;
+             rdfs:subClassOf :Riots ;
+             rdfs:label "Mob violence"@en .
+
+
+###  https://schema.coypu.org/acled#Non-StateActorOvertakesTerritory
+:Non-StateActorOvertakesTerritory rdf:type owl:Class ;
+                                  rdfs:subClassOf :Battles ;
+                                  rdfs:comment "When a non-state actor wins control and/or subdues government forces, and/or has won territory in which they can now act with impunity and are regarded as having a monopoly of force within that territory, ‘Non-state actor overtakes territory’ is the correct sub-event type. Short-lived territorial exchanges that do not last for more than one day are coded as ‘Armed clash’."@en ;
+                                  rdfs:label "Non-state actor overtakes territory"@en .
+
+
+###  https://schema.coypu.org/acled#Non-ViolentTransferOfTerritory
+:Non-ViolentTransferOfTerritory rdf:type owl:Class ;
+                                rdfs:subClassOf :StrategicDevelopments ;
+                                rdfs:label "Non-violent transfer of territory"@en .
+
+
+###  https://schema.coypu.org/acled#NonViolentActions
+:NonViolentActions rdf:type owl:Class ;
+                   rdfs:subClassOf :Conflict ;
+                   rdfs:label "Non-violent actions"@en .
+
+
+###  https://schema.coypu.org/acled#Other
+:Other rdf:type owl:Class ;
+       rdfs:subClassOf :StrategicDevelopments ;
+       rdfs:label "Other"@en .
+
+
+###  https://schema.coypu.org/acled#PeacefulProtest
+:PeacefulProtest rdf:type owl:Class ;
+                 rdfs:subClassOf :Protests ;
+                 rdfs:label "Peaceful protest"@en .
+
+
+###  https://schema.coypu.org/acled#PoliticalMilitias
+:PoliticalMilitias rdf:type owl:Class ;
+                   rdfs:subClassOf :Actor ;
+                   rdfs:label "Political Militias"@en ;
+                   :hasInterCodeAnnotation "3" .
+
+
+###  https://schema.coypu.org/acled#ProtestWithIntervention
+:ProtestWithIntervention rdf:type owl:Class ;
+                         rdfs:subClassOf :Protests ;
+                         rdfs:label "Protest with intervention"@en .
+
+
+###  https://schema.coypu.org/acled#Protesters
+:Protesters rdf:type owl:Class ;
+            rdfs:subClassOf :Actor ;
+            rdfs:label "Protestors"@en ;
+            :hasInterCodeAnnotation "6" .
+
+
+###  https://schema.coypu.org/acled#Protests
+:Protests rdf:type owl:Class ;
+          rdfs:subClassOf :Demonstrations ;
+          rdfs:comment "A protest is defined as a public demonstration in which the participants do not engage in violence, though violence may be used against them."@en ;
+          rdfs:label "Protests"@en .
+
+
+###  https://schema.coypu.org/acled#RebelGroups
+:RebelGroups rdf:type owl:Class ;
+             rdfs:subClassOf :Actor ;
+             rdfs:label "Rebel Groups"@en ;
+             :hasInterCodeAnnotation "2" .
+
+
+###  https://schema.coypu.org/acled#Rioters
+:Rioters rdf:type owl:Class ;
+         rdfs:subClassOf :Actor ;
+         rdfs:label "Rioters"@en ;
+         :hasInterCodeAnnotation "5" .
+
+
+###  https://schema.coypu.org/acled#Riots
+:Riots rdf:type owl:Class ;
+       rdfs:subClassOf :Demonstrations ;
+       rdfs:comment "‘Riots’ are violent events where demonstrators or mobs engage in disruptive acts, including but not limited to rock throwing, property destruction, etc."@en ;
+       rdfs:label "Riots"@en .
+
+
+###  https://schema.coypu.org/acled#SexualViolence
+:SexualViolence rdf:type owl:Class ;
+                rdfs:subClassOf :ViolenceAgainstCivilians ;
+                rdfs:label "Sexual violence"@en .
+
+
+###  https://schema.coypu.org/acled#Source
+:Source rdf:type owl:Class ;
+        rdfs:comment "The source of the event report"@en ;
+        rdfs:label "Source"@en .
+
+
+###  https://schema.coypu.org/acled#StateForces
+:StateForces rdf:type owl:Class ;
+             rdfs:subClassOf :Actor ;
+             rdfs:label "State Forces"@en ;
+             :hasInterCodeAnnotation "1" .
+
+
+###  https://schema.coypu.org/acled#StrategicDevelopments
+:StrategicDevelopments rdf:type owl:Class ;
+                       rdfs:subClassOf :NonViolentActions ;
+                       rdfs:comment """This event type captures contextually important information regarding the activities of
+violent groups that is not itself recorded as political violence, yet may trigger future
+events or contribute to political dynamics within and across states. """@en ;
+                       rdfs:label "Strategic developments"@en .
+
+
+###  https://schema.coypu.org/acled#SuicideBomb
+:SuicideBomb rdf:type owl:Class ;
+             rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+             rdfs:comment """Whenever a suicide bombing occurs in the absence of any other engagement (other engagement could include gun fire against other armed groups
+or civilians). It also includes suicide vehicle-borne improvised explosive device (SVBIED) attacks."""@en ;
+             rdfs:label "Suicide bomb"@en .
+
+
+###  https://schema.coypu.org/acled#ViolenceAgainstCivilians
+:ViolenceAgainstCivilians rdf:type owl:Class ;
+                          rdfs:subClassOf :ViolentEvents ;
+                          rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
+groups at a particular time and location."""@en ;
+                          rdfs:label "Violence against civilians"@en .
+
+
+###  https://schema.coypu.org/acled#ViolentDemonstration
+:ViolentDemonstration rdf:type owl:Class ;
+                      rdfs:subClassOf :Riots ;
+                      rdfs:label "Violent demonstration"@en .
+
+
+###  https://schema.coypu.org/acled#ViolentEvents
+:ViolentEvents rdf:type owl:Class ;
+               rdfs:subClassOf :Conflict ;
+               rdfs:label "Violent events"@en .
+
+
+###  https://schema.coypu.org/acled#Abduction%2FForcedDisappearance
+<https://schema.coypu.org/acled#Abduction%2FForcedDisappearance> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :ViolenceAgainstCivilians ;
+                                                                 rdfs:label "Abduction/forced disappearance"@en .
+
+
+###  https://schema.coypu.org/acled#Air%2FDroneStrike
+<https://schema.coypu.org/acled#Air%2FDroneStrike> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+                                                   rdfs:label "Air/drone strike"@en .
+
+
+###  https://schema.coypu.org/acled#ChangeToGroup%2FActivity
+<https://schema.coypu.org/acled#ChangeToGroup%2FActivity> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :StrategicDevelopments ;
+                                                          rdfs:label "Change to group/activity"@en .
+
+
+###  https://schema.coypu.org/acled#Explosions%2FRemoteViolence
+<https://schema.coypu.org/acled#Explosions%2FRemoteViolence> rdf:type owl:Class ;
+                                                             rdfs:subClassOf :ViolentEvents ;
+                                                             rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
+tool for engaging in conflict creates asymmetry by taking away the ability of the target to
+respond”."""@en ;
+                                                             rdfs:label "Explosions/remote violence"@en .
+
+
+###  https://schema.coypu.org/acled#External%2FOtherForces
+<https://schema.coypu.org/acled#External%2FOtherForces> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :Actor ;
+                                                        rdfs:label "External/Other Forces"@en ;
+                                                        :hasInterCodeAnnotation "8" .
+
+
+###  https://schema.coypu.org/acled#Looting%2FPropertyDestruction
+<https://schema.coypu.org/acled#Looting%2FPropertyDestruction> rdf:type owl:Class ;
+                                                               rdfs:subClassOf :StrategicDevelopments ;
+                                                               rdfs:label "Looting/property destruction"@en .
+
+
+###  https://schema.coypu.org/acled#RemoteExplosive%2FLandmine%2FIED
+<https://schema.coypu.org/acled#RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+                                                                  rdfs:label "Remote explosive/landmine/IED"@en .
+
+
+###  https://schema.coypu.org/acled#Shelling%2FArtillery%2FMissileAttack
+<https://schema.coypu.org/acled#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+                                                                      rdfs:label "Shelling/artillery/missile attack"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasAssociatedActor rdfs:comment "The named actor associated with or identifying with actor in one specific event."@en ;
+                    rdfs:label "has associated actor"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
