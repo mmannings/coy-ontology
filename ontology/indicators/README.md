@@ -7,7 +7,7 @@ The TiVA indicators represents global flows and services. It has four views [1].
  3. Importers,
  4. Final consumers.
 
-Each of these views can be represented using tables [1]. To express TiVA 2021 indicators as an ontology, we modeled each view as a tree structure. 
+Each of these views can be represented using tables [1]. To express TiVA 2021 indicators as an ontology, we modeled each view as a tree structure desing pattern. 
 
  # Publication
 
