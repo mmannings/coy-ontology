@@ -16,6 +16,14 @@ Origin of value added in gross exports provides estimates of total gross exports
 ![ExgrBsci](./docs/exgr_bsci.png)
 Figure 1. Origin of value added in gross exports tree structure.
 
+
+### Origin of value added in gross imports
+Origin of value added in gross imports provides estimates of the value added in gross  imports by country c of goods and services from industry i originating from partner country/region p broken down by value added originating from country/region s (see page 41 in [1]).
+
+![ImgrBsci](./docs/imgr_bsci.png)
+Figure 1. Origin of value added in gross imports tree structure.
+
+
  # Publication
 
  1. Guide to OECD TiVA Indicators, 2021 edition. Online available: https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en
