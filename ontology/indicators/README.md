@@ -14,6 +14,7 @@ Origin of value added in gross exports provides estimates of total gross exports
 
 
 ![ExgrBsci](./docs/exgr_bsci.png)
+Figure 1. Origin of value added in gross exports tree structure.
 
  # Publication
 
