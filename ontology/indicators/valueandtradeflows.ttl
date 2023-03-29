@@ -54,10 +54,77 @@ vtf:hasIndustryCode rdf:type owl:ObjectProperty ;
                     rdfs:label "has industry code"@en .
 
 
+###  https://schema.coypu.org/vtf#hasTrade
+vtf:hasTrade rdf:type owl:ObjectProperty ;
+             owl:inverseOf vtf:hasTradeValueAdded ;
+             rdfs:domain vtf:TradeInValueAdded ;
+             rdfs:range vtf:Trade ;
+             rdfs:label "has trade"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeAmount
+vtf:hasTradeAmount rdf:type owl:ObjectProperty ;
+                   rdfs:range vtf:TradeAmount ;
+                   rdfs:label "has trade amount"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAddedProduct
+vtf:hasTradeInValueAddedProduct rdf:type owl:ObjectProperty ;
+                                owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                         ]
+                                                         vtf:isTrade
+                                                         vtf:hasTradeProduct
+                                                       ) ;
+                                rdfs:label "has trade in value added product"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAddedTradeAmount
+vtf:hasTradeInValueAddedTradeAmount rdf:type owl:ObjectProperty ;
+                                    owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                             ]
+                                                             vtf:isTrade
+                                                             vtf:hasTradeAmount
+                                                           ) ;
+                                    rdfs:label "has trade in value added trade amount"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAdedTradeValue
+vtf:hasTradeInValueAdedTradeValue rdf:type owl:ObjectProperty ;
+                                  owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                           ]
+                                                           vtf:isTrade
+                                                           vtf:hasTradeValue
+                                                         ) ;
+                                  rdfs:label "has trade in value added trade value"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeProduct
+vtf:hasTradeProduct rdf:type owl:ObjectProperty ;
+                    rdfs:domain vtf:Trade ;
+                    rdfs:label "has trade product"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeValue
+vtf:hasTradeValue rdf:type owl:ObjectProperty ;
+                  rdfs:range vtf:TradeValue ;
+                  rdfs:label "has trade value"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeValueAdded
+vtf:hasTradeValueAdded rdf:type owl:ObjectProperty ;
+                       rdfs:range vtf:TradeInValueAdded ;
+                       rdfs:label "has trade value added"@en .
+
+
 ###  https://schema.coypu.org/vtf#hasValueAddedOrigin
 vtf:hasValueAddedOrigin rdf:type owl:ObjectProperty ;
                         rdfs:range vtf:Vao ;
                         rdfs:label "has value added origin"@en .
+
+
+###  https://schema.coypu.org/vtf#isTrade
+vtf:isTrade rdf:type owl:ObjectProperty ;
+            rdfs:label "is trade"@en .
 
 
 #################################################################
