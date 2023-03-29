@@ -14,6 +14,7 @@ Origin of value added in gross exports provides estimates of total gross exports
 
 
 ![ExgrBsci](./docs/exgr_bsci.png)
+
 Figure 1. Origin of value added in gross exports tree structure.
 
 
@@ -21,6 +22,7 @@ Figure 1. Origin of value added in gross exports tree structure.
 Origin of value added in gross imports provides estimates of the value added in gross  imports by country **c** of goods and services from industry i originating from partner country/region **p** broken down by value added originating from country/region **s** (see page 41 in [1]).
 
 ![ImgrBsci](./docs/imgr_bsci.png)
+
 Figure 2. Origin of value added in gross imports tree structure.
 
 
@@ -29,6 +31,7 @@ Figure 2. Origin of value added in gross imports tree structure.
 This indicator presents gross exports of final and intermediate products by industry i in country **c**, broken down by both the source country/region **s** origin of value added and, according to final demand destination country/region **p** (see page 44 in [1]).
 
 ![FdExgrVa](./docs/fd_exgr_va.png)
+
 Figure 3. Gross exports by origin of value added and final destination tree structure.
 
 
@@ -37,6 +40,7 @@ Origin of value added in final demand provides estimates of value added for fina
 
 
 ![FdvaBsci](./docs/fdva_bsci.png)
+
 Figure 4. Origin of value added in final demand tree structure.
 
  # Publication
