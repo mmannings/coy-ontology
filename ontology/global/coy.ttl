@@ -1768,6 +1768,39 @@ Each state act in the GTA database consists of one or more interventions. The in
                                                   rdfs:label "TradeInValueAdded"@en .
 
 
+###  https://schema.coypu.org/vtf#ExgrDva
+<https://schema.coypu.org/vtf#ExgrDva> owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://schema.coypu.org/vtf#hasTrade> ;
+                                                             owl:someValuesFrom <https://schema.coypu.org/vtf#Trade>
+                                                           ] .
+
+
+###  https://schema.coypu.org/vtf#Trade
+<https://schema.coypu.org/vtf#Trade> owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeAmount> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeAmount>
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeProduct> ;
+                                                                                  owl:someValuesFrom :Product
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeValue> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeValue>
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeValueAdded> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeInValueAdded>
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://schema.coypu.org/vtf#isTrade> ;
+                                                           owl:hasSelf "true"^^xsd:boolean
+                                                         ] .
+
+
 ###  https://schema.coypu.org/world-port-index#PortFeature
 <https://schema.coypu.org/world-port-index#PortFeature> rdf:type owl:Class ;
                                                         rdfs:subClassOf :Feature ;
