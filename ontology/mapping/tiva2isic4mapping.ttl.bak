@@ -2,12 +2,12 @@
 # imports: https://data.coypu.org/classification/isic_r4/
 # imports: https://data.coypu.org/classification/tiva-21
 
-@prefix : <https://data.coypu.org/mapping/tiva21isic4mapping#> .
+@prefix : <https://data.coypu.org/classification/tiva21isic4mapping/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix tiva-21: <https://data.coypu.org/classification/tiva-21#> .
+@prefix tiva-21: <https://data.coypu.org/classification/tiva-21/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 tiva-21:D01T02
@@ -187,7 +187,7 @@ tiva-21:D97T98
   skos:closeMatch <https://data.coypu.org/classification/isic_r4/97> ;
   skos:closeMatch <https://data.coypu.org/classification/isic_r4/98> ;
 .
-<https://schema.coypu.org/taxonomy/tiva21isic4mapping>
+<https://data.coypu.org/classification/tiva21isic4mapping>
   rdf:type owl:Ontology ;
   owl:imports <https://data.coypu.org/classification/isic_r4/> ;
   owl:imports <https://data.coypu.org/classification/tiva-21> ;

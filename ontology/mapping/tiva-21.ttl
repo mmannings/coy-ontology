@@ -1,326 +1,230 @@
-@prefix : <https://data.coypu.org/classification/tiva-21/> .
+# baseURI: https://data.coypu.org/classification/tiva-21
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix : <https://data.coypu.org/classification/tiva-21#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://data.coypu.org/classification/tiva-21> .
-
-<https://data.coypu.org/classification/tiva-21> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://data.coypu.org/classification/tiva-21/1.1> ;
-                                                 owl:imports <http://www.w3.org/2004/02/skos/core> ;
-                                                 <http://purl.org/dc/terms/contributor> "Felix Engel"@en ,
-                                                                                        "Nenad Krdzavac"@en ;
-                                                 owl:versionInfo "Created with TopBraid Composer" .
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://data.coypu.org/classification/tiva-21/D01T02
-:D01T02 rdf:type owl:NamedIndividual ,
-                 skos:Concept .
-
-
-###  https://data.coypu.org/classification/tiva-21/D03
-:D03 rdf:type owl:NamedIndividual ,
-              skos:Concept .
-
-
-###  https://data.coypu.org/classification/tiva-21/D05T06
-:D05T06 rdf:type owl:NamedIndividual ,
-                 skos:Concept .
-
-
-###  https://data.coypu.org/classification/tiva-21/D07T08
-:D07T08 rdf:type owl:NamedIndividual ,
-                 skos:Concept .
-
-
-###  https://data.coypu.org/classification/tiva-21/D09
-:D09 rdf:type owl:NamedIndividual ,
-              skos:Concept .
-
-
-###  https://data.coypu.org/classification/tiva-21/D10T12
-:D10T12 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition " Food products, beverages and tobacco" ;
-        skos:prefLabel "D10T12" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D13T15
-:D13T15 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Textiles, textile products, leather and footwear" ;
-        skos:prefLabel "D13T15" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D16
-:D16 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition " Wood and products of wood and cork" ;
-     skos:prefLabel "D16" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D17T18
-:D17T18 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Paper products and printing" ;
-        skos:prefLabel "D17T18" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D19
-:D19 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Coke and refined petroleum products" ;
-     skos:prefLabel "D19" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D20
-:D20 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Chemical and chemical products" ;
-     skos:prefLabel "D20" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D21
-:D21 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Pharmaceuticals, medicinal chemical and botanical products" ;
-     skos:prefLabel "D21" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D22
-:D22 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Rubber and plastics products" ;
-     skos:prefLabel "D22" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D23
-:D23 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Other non-metallic mineral products" ;
-     skos:prefLabel "D23" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D24
-:D24 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Basic metals" ;
-     skos:prefLabel "D24" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D25
-:D25 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Fabricated metal products" ;
-     skos:prefLabel "D25" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D26
-:D26 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Computer, electronic and optical equipment" ;
-     skos:prefLabel "D26" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D27
-:D27 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Electrical equipment" ;
-     skos:prefLabel "D27" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D28
-:D28 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Machinery and equipment, nec" ;
-     skos:prefLabel "D28" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D29
-:D29 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Motor vehicles, trailers and semi-trailers" ;
-     skos:prefLabel "D29" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D30
-:D30 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Other transport equipment" ;
-     skos:prefLabel "D30" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D31T33
-:D31T33 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Manufacturing nec; repair and installation of machinery and equipment " ;
-        skos:prefLabel "D31T33" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D35
-:D35 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Electricity, gas, steam and air conditioning supply" ;
-     skos:prefLabel "D35" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D36T39
-:D36T39 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Water supply; sewerage, waste management and remediation activities" ;
-        skos:prefLabel "D36T39" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D41T43
-:D41T43 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Construction" ;
-        skos:prefLabel "D41T43" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D45T47
-:D45T47 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Wholesale and retail trade; repair of motor vehicles" ;
-        skos:prefLabel "D45T47" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D49
-:D49 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Land transport and transport via pipelines " ;
-     skos:prefLabel "D49" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D50
-:D50 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Water transport" ;
-     skos:prefLabel "D50" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D51
-:D51 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Air transport" ;
-     skos:prefLabel "D51" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D52
-:D52 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Warehousing and support activities for transportation" ;
-     skos:prefLabel "D52" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D53
-:D53 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Postal and courier activities" ;
-     skos:prefLabel "D53" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D55T56
-:D55T56 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Accommodation and food service activities" ;
-        skos:prefLabel "D55T56" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D58T60
-:D58T60 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Publishing, audiovisual and broadcasting activities" ;
-        skos:prefLabel "D58T60" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D61
-:D61 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Telecommunications" ;
-     skos:prefLabel "D61" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D62T63
-:D62T63 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "IT and other information services" ;
-        skos:prefLabel "D62T63" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D64T66
-:D64T66 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Financial and insurance activities" ;
-        skos:prefLabel "D64T66" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D68
-:D68 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Real estate activities" ;
-     skos:prefLabel "D68" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D69T75
-:D69T75 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Professional, scientific and technical activities" ;
-        skos:prefLabel "D69T75" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D77T82
-:D77T82 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Administrative and support services" ;
-        skos:prefLabel "D77T82" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D84
-:D84 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Public administration and defence; compulsory social security" ;
-     skos:prefLabel "D84" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D85
-:D85 rdf:type owl:NamedIndividual ,
-              skos:Concept ;
-     skos:definition "Education" ;
-     skos:prefLabel "D85" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D86T88
-:D86T88 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Human health and social work activities" ;
-        skos:prefLabel "D86T88" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D90T93
-:D90T93 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Arts, entertainment and recreation" ;
-        skos:prefLabel "D90T93" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D94T96
-:D94T96 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Other service activities" ;
-        skos:prefLabel "D94T96" .
-
-
-###  https://data.coypu.org/classification/tiva-21/D97T98
-:D97T98 rdf:type owl:NamedIndividual ,
-                 skos:Concept ;
-        skos:definition "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use" ;
-        skos:prefLabel "D97T98" .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.coypu.org/classification/tiva-21>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+:D01T02
+  rdf:type skos:Concept ;
+.
+:D03
+  rdf:type skos:Concept ;
+.
+:D05T06
+  rdf:type skos:Concept ;
+.
+:D07T08
+  rdf:type skos:Concept ;
+.
+:D09
+  rdf:type skos:Concept ;
+.
+:D10T12
+  rdf:type skos:Concept ;
+  skos:definition " Food products, beverages and tobacco" ;
+  skos:prefLabel "D10T12" ;
+.
+:D13T15
+  rdf:type skos:Concept ;
+  skos:definition "Textiles, textile products, leather and footwear" ;
+  skos:prefLabel "D13T15" ;
+.
+:D16
+  rdf:type skos:Concept ;
+  skos:definition " Wood and products of wood and cork" ;
+  skos:prefLabel "D16" ;
+.
+:D17T18
+  rdf:type skos:Concept ;
+  skos:definition "Paper products and printing" ;
+  skos:prefLabel "D17T18" ;
+.
+:D19
+  rdf:type skos:Concept ;
+  skos:definition "Coke and refined petroleum products" ;
+  skos:prefLabel "D19" ;
+.
+:D20
+  rdf:type skos:Concept ;
+  skos:definition "Chemical and chemical products" ;
+  skos:prefLabel "D20" ;
+.
+:D21
+  rdf:type skos:Concept ;
+  skos:definition "Pharmaceuticals, medicinal chemical and botanical products" ;
+  skos:prefLabel "D21" ;
+.
+:D22
+  rdf:type skos:Concept ;
+  skos:definition "Rubber and plastics products" ;
+  skos:prefLabel "D22" ;
+.
+:D23
+  rdf:type skos:Concept ;
+  skos:definition "Other non-metallic mineral products" ;
+  skos:prefLabel "D23" ;
+.
+:D24
+  rdf:type skos:Concept ;
+  skos:definition "Basic metals" ;
+  skos:prefLabel "D24" ;
+.
+:D25
+  rdf:type skos:Concept ;
+  skos:definition "Fabricated metal products" ;
+  skos:prefLabel "D25" ;
+.
+:D26
+  rdf:type skos:Concept ;
+  skos:definition "Computer, electronic and optical equipment" ;
+  skos:prefLabel "D26" ;
+.
+:D27
+  rdf:type skos:Concept ;
+  skos:definition "Electrical equipment" ;
+  skos:prefLabel "D27" ;
+.
+:D28
+  rdf:type skos:Concept ;
+  skos:definition "Machinery and equipment, nec" ;
+  skos:prefLabel "D28" ;
+.
+:D29
+  rdf:type skos:Concept ;
+  skos:definition "Motor vehicles, trailers and semi-trailers" ;
+  skos:prefLabel "D29" ;
+.
+:D30
+  rdf:type skos:Concept ;
+  skos:definition "Other transport equipment" ;
+  skos:prefLabel "D30" ;
+.
+:D31T33
+  rdf:type skos:Concept ;
+  skos:definition "Manufacturing nec; repair and installation of machinery and equipment " ;
+  skos:prefLabel "D31T33" ;
+.
+:D35
+  rdf:type skos:Concept ;
+  skos:definition "Electricity, gas, steam and air conditioning supply" ;
+  skos:prefLabel "D35" ;
+.
+:D36T39
+  rdf:type skos:Concept ;
+  skos:definition "Water supply; sewerage, waste management and remediation activities" ;
+  skos:prefLabel "D36T39" ;
+.
+:D41T43
+  rdf:type skos:Concept ;
+  skos:definition "Construction" ;
+  skos:prefLabel "D41T43" ;
+.
+:D45T47
+  rdf:type skos:Concept ;
+  skos:definition "Wholesale and retail trade; repair of motor vehicles" ;
+  skos:prefLabel "D45T47" ;
+.
+:D49
+  rdf:type skos:Concept ;
+  skos:definition "Land transport and transport via pipelines " ;
+  skos:prefLabel "D49" ;
+.
+:D50
+  rdf:type skos:Concept ;
+  skos:definition "Water transport" ;
+  skos:prefLabel "D50" ;
+.
+:D51
+  rdf:type skos:Concept ;
+  skos:definition "Air transport" ;
+  skos:prefLabel "D51" ;
+.
+:D52
+  rdf:type skos:Concept ;
+  skos:definition "Warehousing and support activities for transportation" ;
+  skos:prefLabel "D52" ;
+.
+:D53
+  rdf:type skos:Concept ;
+  skos:definition "Postal and courier activities" ;
+  skos:prefLabel "D53" ;
+.
+:D55T56
+  rdf:type skos:Concept ;
+  skos:definition "Accommodation and food service activities" ;
+  skos:prefLabel "D55T56" ;
+.
+:D58T60
+  rdf:type skos:Concept ;
+  skos:definition "Publishing, audiovisual and broadcasting activities" ;
+  skos:prefLabel "D58T60" ;
+.
+:D61
+  rdf:type skos:Concept ;
+  skos:definition "Telecommunications" ;
+  skos:prefLabel "D61" ;
+.
+:D62T63
+  rdf:type skos:Concept ;
+  skos:definition "IT and other information services" ;
+  skos:prefLabel "D62T63" ;
+.
+:D64T66
+  rdf:type skos:Concept ;
+  skos:definition "Financial and insurance activities" ;
+  skos:prefLabel "D64T66" ;
+.
+:D68
+  rdf:type skos:Concept ;
+  skos:definition "Real estate activities" ;
+  skos:prefLabel "D68" ;
+.
+:D69T75
+  rdf:type skos:Concept ;
+  skos:definition "Professional, scientific and technical activities" ;
+  skos:prefLabel "D69T75" ;
+.
+:D77T82
+  rdf:type skos:Concept ;
+  skos:definition "Administrative and support services" ;
+  skos:prefLabel "D77T82" ;
+.
+:D84
+  rdf:type skos:Concept ;
+  skos:definition "Public administration and defence; compulsory social security" ;
+  skos:prefLabel "D84" ;
+.
+:D85
+  rdf:type skos:Concept ;
+  skos:definition "Education" ;
+  skos:prefLabel "D85" ;
+.
+:D86T88
+  rdf:type skos:Concept ;
+  skos:definition "Human health and social work activities" ;
+  skos:prefLabel "D86T88" ;
+.
+:D90T93
+  rdf:type skos:Concept ;
+  skos:definition "Arts, entertainment and recreation" ;
+  skos:prefLabel "D90T93" ;
+.
+:D94T96
+  rdf:type skos:Concept ;
+  skos:definition "Other service activities" ;
+  skos:prefLabel "D94T96" ;
+.
+:D97T98
+  rdf:type skos:Concept ;
+  skos:definition "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use" ;
+  skos:prefLabel "D97T98" ;
+.
