@@ -43,14 +43,14 @@
                                                        "Till Grabo"@en ;
                                    dcterms:created "2021-09-06"^^xsd:date ;
                                    dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:modified "2022-02-13"^^xsd:date ;
+                                   dcterms:modified "2023-02-13"^^xsd:date ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "The main ontology for the CoyPu project, used to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion <https://schema.coypu.org/global/2.1> ;
+                                   owl:priorVersion <https://schema.coypu.org/global/2.2> ;
                                    owl:versionInfo 2.3 .
 
 #################################################################
