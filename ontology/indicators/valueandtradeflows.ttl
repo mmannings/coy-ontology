@@ -1,0 +1,239 @@
+@prefix : <https://schema.coypu.org/vtf#> .
+@prefix coy: <https://schema.coypu.org/global#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vtf: <https://schema.coypu.org/vtf#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://schema.coypu.org/vtf> .
+
+<https://schema.coypu.org/vtf> rdf:type owl:Ontology ;
+                                owl:versionIRI <https://schema.coypu.org/vtf/1.4> ;
+                                dcterms:contributor "Felix Engel"@en ,
+                                                    "Nenad Krdzavac"@en ,
+                                                    "Nils Steinert"@en ;
+                                rdfs:comment "An ontology for modeling international trade flows."@en ;
+                                rdfs:label "OECD TIVA Ontology"@en ;
+                                owl:versionInfo 1.4 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.coypu.org/vtf#hasExport
+vtf:hasExport rdf:type owl:ObjectProperty ;
+              rdfs:range vtf:Export ;
+              rdfs:label "has export"@en .
+
+
+###  https://schema.coypu.org/vtf#hasFinalDemand
+vtf:hasFinalDemand rdf:type owl:ObjectProperty ;
+                   rdfs:range vtf:Fd ;
+                   rdfs:label "has final demand"@en .
+
+
+###  https://schema.coypu.org/vtf#hasImport
+vtf:hasImport rdf:type owl:ObjectProperty ;
+              rdfs:range vtf:Import ;
+              rdfs:label "has import"@en .
+
+
+###  https://schema.coypu.org/vtf#hasIndustryCode
+vtf:hasIndustryCode rdf:type owl:ObjectProperty ;
+                    rdfs:range <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme> ;
+                    rdfs:label "has industry code"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTrade
+vtf:hasTrade rdf:type owl:ObjectProperty ;
+             owl:inverseOf vtf:hasTradeValueAdded ;
+             rdfs:domain vtf:TradeInValueAdded ;
+             rdfs:range vtf:Trade ;
+             rdfs:label "has trade"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeAmount
+vtf:hasTradeAmount rdf:type owl:ObjectProperty ;
+                   rdfs:range vtf:TradeAmount ;
+                   rdfs:label "has trade amount"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAddedProduct
+vtf:hasTradeInValueAddedProduct rdf:type owl:ObjectProperty ;
+                                owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                         ]
+                                                         vtf:isTrade
+                                                         vtf:hasTradeProduct
+                                                       ) ;
+                                rdfs:label "has trade in value added product"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAddedTradeAmount
+vtf:hasTradeInValueAddedTradeAmount rdf:type owl:ObjectProperty ;
+                                    owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                             ]
+                                                             vtf:isTrade
+                                                             vtf:hasTradeAmount
+                                                           ) ;
+                                    rdfs:label "has trade in value added trade amount"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeInValueAdedTradeValue
+vtf:hasTradeInValueAdedTradeValue rdf:type owl:ObjectProperty ;
+                                  owl:propertyChainAxiom ( [ owl:inverseOf vtf:hasTradeValueAdded
+                                                           ]
+                                                           vtf:isTrade
+                                                           vtf:hasTradeValue
+                                                         ) ;
+                                  rdfs:label "has trade in value added trade value"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeProduct
+vtf:hasTradeProduct rdf:type owl:ObjectProperty ;
+                    rdfs:domain vtf:Trade ;
+                    rdfs:label "has trade product"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeValue
+vtf:hasTradeValue rdf:type owl:ObjectProperty ;
+                  rdfs:range vtf:TradeValue ;
+                  rdfs:label "has trade value"@en .
+
+
+###  https://schema.coypu.org/vtf#hasTradeValueAdded
+vtf:hasTradeValueAdded rdf:type owl:ObjectProperty ;
+                       rdfs:range vtf:TradeInValueAdded ;
+                       rdfs:label "has trade value added"@en .
+
+
+###  https://schema.coypu.org/vtf#hasValueAddedOrigin
+vtf:hasValueAddedOrigin rdf:type owl:ObjectProperty ;
+                        rdfs:range vtf:Vao ;
+                        rdfs:label "has value added origin"@en .
+
+
+###  https://schema.coypu.org/vtf#isTrade
+vtf:isTrade rdf:type owl:ObjectProperty ;
+            rdfs:label "is trade"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.coypu.org/vtf#ExgrBsci
+vtf:ExgrBsci rdf:type owl:Class ;
+             rdfs:subClassOf vtf:TradeInValueAdded ;
+             rdfs:comment "Origin of value added in gross exports provides estimates of total gross exports by exporting industry I in country C broken down by the value added generated by source industry H in country P."@en ;
+             rdfs:label "OriginOfValueAddedGrossExports"@en ;
+             rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#ExgrDva
+vtf:ExgrDva rdf:type owl:Class ;
+            rdfs:subClassOf vtf:TradeInValueAdded ;
+            rdfs:comment "Domestic Value Added content of exports, by industry i in country/region c to partner country/region p, represents the exported value added that has been generated anywhere in the domestic economy (i.e. not just by the exporting industry)."@en ;
+            rdfs:label "DomesticValueAddedContentOfGrossExports"@en ;
+            rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#Export
+vtf:Export rdf:type owl:Class ;
+           rdfs:comment "Presents gross exports of final products by industry I in country C, broken down by both the source country/region S origin of value added and according to final demand destination country/region P."@en ;
+           rdfs:label "Exports"@en .
+
+
+###  https://schema.coypu.org/vtf#Fd
+vtf:Fd rdf:type owl:Class ;
+       rdfs:comment """Domestic Final Demand (DFD): A measure of spending. Specifically, the sum of final consumption, investment and stock building expenditures, by both private and government sectors
+
+State Final Demand (SFD): State Final Demand measures the total value of goods and services that are sold in a state to buyers (who wish to consume them or retain them in the form of Capital Assets). SFD is the state-level equivalent of DFD."""@en ;
+       rdfs:label "FinalDemand"@en ;
+       rdfs:seeAlso <https://www.treasury.sa.gov.au/economy,-taxes-and-rebates/economic-briefs/glossary#:~:text=Domestic%20Final%20Demand%20(DFD),both%20private%20and%20government%20sectors.> .
+
+
+###  https://schema.coypu.org/vtf#FdExgrVa
+vtf:FdExgrVa rdf:type owl:Class ;
+             rdfs:subClassOf vtf:TradeInValueAdded ;
+             rdfs:comment "This indicator (FD_EXGR_VA) presents gross exports of final and intermediate products by industry I in country C, broken down by both the source country/region s origin of value  added and, according to final demand destination country/region P."@en ;
+             rdfs:label "GrossExports"@en ;
+             rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#FdVaBsci
+vtf:FdVaBsci rdf:type owl:Class ;
+             rdfs:subClassOf vtf:TradeInValueAdded ;
+             rdfs:comment "Origin of value added in final demand provides estimates of value added for final demand in country P for industry H for final goods and services broken down by the value added generated by source industry I in VA source country C."@en ;
+             rdfs:label "OriginOfValueAddedFinalDemand"@en ;
+             rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#ImgrBsci
+vtf:ImgrBsci rdf:type owl:Class ;
+             rdfs:subClassOf vtf:TradeInValueAdded ;
+             rdfs:comment "Origin of value added in gross imports provides estimates of the value added in gross imports by country C of goods and services from industry I originating from partner country/region P broken down by value added originating from country/region S."@en ;
+             rdfs:label "OriginOfValueAddedGrossImports"@en ;
+             rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#Import
+vtf:Import rdf:type owl:Class ;
+           rdfs:comment "Domestic value added content of gross imports reveals the value added generated in country C that returns to country C embodied in gross imports from industry I in partner country P."@en ;
+           rdfs:label "Imports"@en ;
+           rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://schema.coypu.org/vtf#Isic
+vtf:Isic rdf:type owl:Class ;
+         rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme> ;
+         rdfs:comment "International standard industrial classification of all economic activities (ISIC), Rev. 4."@en ;
+         rdfs:label "ISIC4" ;
+         rdfs:seeAlso <https://unstats.un.org/unsd/publication/seriesm/seriesm_4rev4e.pdf> .
+
+
+###  https://schema.coypu.org/vtf#Trade
+vtf:Trade rdf:type owl:Class ;
+          rdfs:comment "Definition si missing in the context of TiVA 2021 indicators."@en ;
+          rdfs:label "Trade"@en .
+
+
+###  https://schema.coypu.org/vtf#TradeAmount
+vtf:TradeAmount rdf:type owl:Class ;
+                rdfs:comment "Definition is missing here in the context of TiVA 2021 indicators."@en ;
+                rdfs:label "TradeAmount"@en .
+
+
+###  https://schema.coypu.org/vtf#TradeInValueAdded
+vtf:TradeInValueAdded rdf:type owl:Class ;
+                      rdfs:label "TradeInValueAdded"@en .
+
+
+###  https://schema.coypu.org/vtf#TradeValue
+vtf:TradeValue rdf:type owl:Class ;
+               rdfs:comment "Definition is missing here in the context of TiVA 2021 indicators."@en ;
+               rdfs:label "TradeValue"@en .
+
+
+###  https://schema.coypu.org/vtf#Vao
+vtf:Vao rdf:type owl:Class ;
+        rdfs:comment "Domestic value added origin is shown where source country P=C, additionally represented by source country = “DXD: Domestic”."@en ;
+        rdfs:label "ValueAddedOrigin"@en ;
+        rdfs:seeAlso <https://stats.oecd.org/fileview2.aspx?IDFile=eefca001-71ab-497e-9abd-5e0c58c27ed4> .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme
+<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/IndustrySectorClassificationScheme> rdf:type owl:Class ;
+                                                                                                                      rdfs:label "SectorClassificationScheme"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

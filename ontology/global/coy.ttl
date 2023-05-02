@@ -22,7 +22,7 @@
                                    owl:imports <https://schema.coypu.org/em-dat/1.0> ,
                                                <https://schema.coypu.org/gta/1.0> ,
                                                <https://schema.coypu.org/ta/1.0> ,
-                                               <https://schema.coypu.org/tiva/1.4> ,
+                                               <https://schema.coypu.org/vtf/1.4> ,
                                                <https://schema.coypu.org/world-port-index/1.0> ;
                                    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    dcterms:contributor "Andreas Schaefer"@en ,
@@ -43,14 +43,14 @@
                                                        "Till Grabo"@en ;
                                    dcterms:created "2021-09-06"^^xsd:date ;
                                    dcterms:creator "Nils Steinert"@en ;
-                                   dcterms:modified "2022-02-13"^^xsd:date ;
+                                   dcterms:modified "2023-02-13"^^xsd:date ;
                                    dcterms:rights "CC BY 4.0 - CoyPu Project"@en ;
                                    dcterms:title "CoyPu Ontology"@en ;
                                    vann:preferredNamespacePrefix "coy" ;
                                    vann:preferredNamespaceUri "https://schema.coypu.org/global#" ;
                                    rdfs:comment "The main ontology for the CoyPu project, used to describe companies and their supply network, employees, products, production materials, industries, events and relations."@en ;
                                    rdfs:label "coy: CoyPu Ontology"@en ;
-                                   owl:priorVersion <https://schema.coypu.org/global/2.1> ;
+                                   owl:priorVersion <https://schema.coypu.org/global/2.2> ;
                                    owl:versionInfo 2.3 .
 
 #################################################################
@@ -1465,7 +1465,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Material rdf:type owl:Class ;
           rdfs:subClassOf :Product ;
           rdfs:comment "A substance or resource which is required for producing other goods."@en ;
-          rdfs:label "Material"@en .
+          rdfs:label "Material"@en ;
+          rdfs:seeAlso <http://www.wikidata.org/entity/Q214609> .
 
 
 ###  https://schema.coypu.org/global#Mine
@@ -1632,7 +1633,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "An economic activity that is done for others as an occupation or business."@en ;
-         rdfs:label "Service"@en .
+         rdfs:label "Service"@en ;
+         rdfs:seeAlso <http://www.wikidata.org/entity/Q7406919> .
 
 
 ###  https://schema.coypu.org/global#SexualViolence
@@ -1766,11 +1768,57 @@ Each state act in the GTA database consists of one or more interventions. The in
                                                   rdfs:label "TradeInValueAdded"@en .
 
 
+###  https://schema.coypu.org/vtf#ExgrDva
+<https://schema.coypu.org/vtf#ExgrDva> owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://schema.coypu.org/vtf#hasTrade> ;
+                                                             owl:someValuesFrom <https://schema.coypu.org/vtf#Trade>
+                                                           ] .
+
+
+###  https://schema.coypu.org/vtf#Trade
+<https://schema.coypu.org/vtf#Trade> owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeAmount> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeAmount>
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeProduct> ;
+                                                                                  owl:someValuesFrom :Product
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeValue> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeValue>
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://schema.coypu.org/vtf#hasTradeValueAdded> ;
+                                                                                  owl:someValuesFrom <https://schema.coypu.org/vtf#TradeInValueAdded>
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://schema.coypu.org/vtf#isTrade> ;
+                                                           owl:hasSelf "true"^^xsd:boolean
+                                                         ] .
+
+
 ###  https://schema.coypu.org/world-port-index#PortFeature
 <https://schema.coypu.org/world-port-index#PortFeature> rdf:type owl:Class ;
                                                         rdfs:subClassOf :Feature ;
                                                         rdfs:comment "An annotation for the World Port Index dataset."@en ;
                                                         rdfs:label "PortFeature"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://schema.coypu.org/em-dat#IndustrialAccident> rdfs:seeAlso <http://www.wikidata.org/entity/Q68800046> .
+
+
+<https://schema.coypu.org/em-dat#TechnologicalDisaster> rdfs:seeAlso <http://www.wikidata.org/entity/Q37282022> .
+
+
+<https://schema.coypu.org/em-dat#TransportAccident> rdfs:seeAlso <http://www.wikidata.org/entity/Q11822042> .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
