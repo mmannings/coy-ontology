@@ -1,0 +1,30 @@
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sys: <http://jsa.aksw.org/fn/sys/>
+
+PREFIX cpc: <https://data.coypu.org/classification/cpc_v2.1/>
+PREFIX hs: <https://data.coypu.org/classification/hs_2012/>
+PREFIX nace1: <https://data.coypu.org/classification/nace_r1.1/>
+PREFIX nace2: <https://data.coypu.org/classification/nace_r2/>
+PREFIX isic: <https://data.coypu.org/classification/isic_r4/>
+
+CONSTRUCT {
+  ?from skos:closeMatch ?to
+  
+} WHERE {
+  VALUES (?url ?from_col ?to_col ?from_ns ?to_ns) {
+    (<env://INPUT> "NACE_1_1_CODE" "NACE_2007_CODE" nace1: nace2:)
+  } 
+  
+  ?url csv:parse (?rowJsonObj "-ho") .
+  BIND(json:path(?rowJsonObj, "$." + ?from_col) AS ?from_code)
+  BIND(json:path(?rowJsonObj, "$." + ?to_col) AS ?to_code)
+  BIND(URI(CONCAT(STR(?from_ns), ?from_code)) AS ?from)
+  BIND(URI(CONCAT(STR(?to_ns), ?to_code)) AS ?to)
+}
+#LIMIT 100

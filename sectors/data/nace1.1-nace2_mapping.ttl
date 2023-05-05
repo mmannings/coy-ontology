@@ -1,0 +1,1540 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix nace2: <https://data.coypu.org/classification/nace_r2/> .
+@prefix nace1: <https://data.coypu.org/classification/nace_r1.1/> .
+
+nace1:1.11  skos:closeMatch  nace2:1.11 ;
+        skos:closeMatch  nace2:1.12 ;
+        skos:closeMatch  nace2:1.13 ;
+        skos:closeMatch  nace2:1.14 ;
+        skos:closeMatch  nace2:1.15 ;
+        skos:closeMatch  nace2:1.16 ;
+        skos:closeMatch  nace2:1.19 ;
+        skos:closeMatch  nace2:1.26 ;
+        skos:closeMatch  nace2:1.28 ;
+        skos:closeMatch  nace2:1.29 ;
+        skos:closeMatch  nace2:1.63 ;
+        skos:closeMatch  nace2:1.64 .
+
+nace1:1.12  skos:closeMatch  nace2:1.11 ;
+        skos:closeMatch  nace2:1.13 ;
+        skos:closeMatch  nace2:1.19 ;
+        skos:closeMatch  nace2:1.25 ;
+        skos:closeMatch  nace2:1.28 ;
+        skos:closeMatch  nace2:1.3 ;
+        skos:closeMatch  nace2:1.64 ;
+        skos:closeMatch  nace2:2.1 ;
+        skos:closeMatch  nace2:2.3 .
+
+nace1:1.13  skos:closeMatch  nace2:1.21 ;
+        skos:closeMatch  nace2:1.22 ;
+        skos:closeMatch  nace2:1.23 ;
+        skos:closeMatch  nace2:1.24 ;
+        skos:closeMatch  nace2:1.25 ;
+        skos:closeMatch  nace2:1.26 ;
+        skos:closeMatch  nace2:1.27 ;
+        skos:closeMatch  nace2:1.28 ;
+        skos:closeMatch  nace2:1.63 ;
+        skos:closeMatch  nace2:1.64 ;
+        skos:closeMatch  nace2:2.3 ;
+        skos:closeMatch  nace2:10.41 ;
+        skos:closeMatch  nace2:11.02 .
+
+nace1:1.21  skos:closeMatch  nace2:1.41 ;
+        skos:closeMatch  nace2:1.42 .
+
+nace1:1.22  skos:closeMatch  nace2:1.43 ;
+        skos:closeMatch  nace2:1.45 ;
+        skos:closeMatch  nace2:1.49 .
+
+nace1:1.23  skos:closeMatch  nace2:1.46 .
+
+nace1:1.24  skos:closeMatch  nace2:1.47 .
+
+nace1:1.25  skos:closeMatch  nace2:1.44 ;
+        skos:closeMatch  nace2:1.49 ;
+        skos:closeMatch  nace2:3.22 .
+
+nace1:1.3  skos:closeMatch  nace2:1.5 .
+
+nace1:1.41  skos:closeMatch  nace2:1.61 ;
+        skos:closeMatch  nace2:1.63 ;
+        skos:closeMatch  nace2:1.64 ;
+        skos:closeMatch  nace2:10.39 ;
+        skos:closeMatch  nace2:81.3 .
+
+nace1:1.42  skos:closeMatch  nace2:1.62 .
+
+nace1:1.5  skos:closeMatch  nace2:1.7 ;
+        skos:closeMatch  nace2:94.99 .
+
+nace1:2.01  skos:closeMatch  nace2:1.29 ;
+        skos:closeMatch  nace2:2.1 ;
+        skos:closeMatch  nace2:2.2 ;
+        skos:closeMatch  nace2:2.3 ;
+        skos:closeMatch  nace2:16.1 .
+
+nace1:2.02  skos:closeMatch  nace2:2.4 .
+
+nace1:5.01  skos:closeMatch  nace2:3.11 ;
+        skos:closeMatch  nace2:3.12 ;
+        skos:closeMatch  nace2:70.22 .
+
+nace1:5.02  skos:closeMatch  nace2:3.21 ;
+        skos:closeMatch  nace2:3.22 .
+
+nace1:10.1  skos:closeMatch  nace2:5.1 ;
+        skos:closeMatch  nace2:9.9 ;
+        skos:closeMatch  nace2:19.2 .
+
+nace1:10.2  skos:closeMatch  nace2:5.2 ;
+        skos:closeMatch  nace2:9.9 ;
+        skos:closeMatch  nace2:19.2 .
+
+nace1:10.3  skos:closeMatch  nace2:8.92 ;
+        skos:closeMatch  nace2:9.9 ;
+        skos:closeMatch  nace2:19.2 .
+
+nace1:11.1  skos:closeMatch  nace2:6.1 ;
+        skos:closeMatch  nace2:6.2 ;
+        skos:closeMatch  nace2:9.1 ;
+        skos:closeMatch  nace2:52.21 ;
+        skos:closeMatch  nace2:52.22 .
+
+nace1:11.2  skos:closeMatch  nace2:9.1 .
+
+nace1:12  skos:closeMatch  nace2:7.21 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:13.1  skos:closeMatch  nace2:7.1 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:13.2  skos:closeMatch  nace2:7.29 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.11  skos:closeMatch  nace2:8.11 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.12  skos:closeMatch  nace2:8.11 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.13  skos:closeMatch  nace2:8.11 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.21  skos:closeMatch  nace2:8.12 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.22  skos:closeMatch  nace2:8.12 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.3  skos:closeMatch  nace2:8.91 ;
+        skos:closeMatch  nace2:9.9 .
+
+nace1:14.4  skos:closeMatch  nace2:8.93 ;
+        skos:closeMatch  nace2:9.9 ;
+        skos:closeMatch  nace2:10.84 .
+
+nace1:14.5  skos:closeMatch  nace2:8.99 ;
+        skos:closeMatch  nace2:9.9 ;
+        skos:closeMatch  nace2:38.21 .
+
+nace1:15.11  skos:closeMatch  nace2:10.11 .
+
+nace1:15.12  skos:closeMatch  nace2:10.11 ;
+        skos:closeMatch  nace2:10.12 .
+
+nace1:15.13  skos:closeMatch  nace2:10.13 ;
+        skos:closeMatch  nace2:10.85 ;
+        skos:closeMatch  nace2:10.89 .
+
+nace1:15.2  skos:closeMatch  nace2:10.2 ;
+        skos:closeMatch  nace2:10.85 .
+
+nace1:15.31  skos:closeMatch  nace2:10.31 .
+
+nace1:15.32  skos:closeMatch  nace2:10.32 .
+
+nace1:15.33  skos:closeMatch  nace2:10.39 ;
+        skos:closeMatch  nace2:10.85 .
+
+nace1:15.41  skos:closeMatch  nace2:10.41 .
+
+nace1:15.42  skos:closeMatch  nace2:10.41 .
+
+nace1:15.43  skos:closeMatch  nace2:10.42 .
+
+nace1:15.51  skos:closeMatch  nace2:10.51 .
+
+nace1:15.52  skos:closeMatch  nace2:10.52 .
+
+nace1:15.61  skos:closeMatch  nace2:10.61 .
+
+nace1:15.62  skos:closeMatch  nace2:10.62 ;
+        skos:closeMatch  nace2:10.89 .
+
+nace1:15.71  skos:closeMatch  nace2:10.91 .
+
+nace1:15.72  skos:closeMatch  nace2:10.92 .
+
+nace1:15.81  skos:closeMatch  nace2:10.71 ;
+        skos:closeMatch  nace2:10.85 ;
+        skos:closeMatch  nace2:10.89 .
+
+nace1:15.82  skos:closeMatch  nace2:10.72 .
+
+nace1:15.83  skos:closeMatch  nace2:10.81 .
+
+nace1:15.84  skos:closeMatch  nace2:10.82 .
+
+nace1:15.85  skos:closeMatch  nace2:10.73 ;
+        skos:closeMatch  nace2:10.85 .
+
+nace1:15.86  skos:closeMatch  nace2:10.83 .
+
+nace1:15.87  skos:closeMatch  nace2:10.84 .
+
+nace1:15.88  skos:closeMatch  nace2:10.86 .
+
+nace1:15.89  skos:closeMatch  nace2:10.89 .
+
+nace1:15.91  skos:closeMatch  nace2:11.01 .
+
+nace1:15.92  skos:closeMatch  nace2:11.01 ;
+        skos:closeMatch  nace2:20.14 .
+
+nace1:15.93  skos:closeMatch  nace2:11.02 .
+
+nace1:15.94  skos:closeMatch  nace2:11.03 .
+
+nace1:15.95  skos:closeMatch  nace2:11.04 .
+
+nace1:15.96  skos:closeMatch  nace2:11.05 .
+
+nace1:15.97  skos:closeMatch  nace2:11.06 .
+
+nace1:15.98  skos:closeMatch  nace2:11.07 .
+
+nace1:16  skos:closeMatch  nace2:12 .
+
+nace1:17.11  skos:closeMatch  nace2:13.1 .
+
+nace1:17.12  skos:closeMatch  nace2:13.1 .
+
+nace1:17.13  skos:closeMatch  nace2:13.1 .
+
+nace1:17.14  skos:closeMatch  nace2:13.1 .
+
+nace1:17.15  skos:closeMatch  nace2:13.1 .
+
+nace1:17.16  skos:closeMatch  nace2:13.1 .
+
+nace1:17.17  skos:closeMatch  nace2:13.1 .
+
+nace1:17.21  skos:closeMatch  nace2:13.2 .
+
+nace1:17.22  skos:closeMatch  nace2:13.2 .
+
+nace1:17.23  skos:closeMatch  nace2:13.2 .
+
+nace1:17.24  skos:closeMatch  nace2:13.2 .
+
+nace1:17.25  skos:closeMatch  nace2:13.2 .
+
+nace1:17.3  skos:closeMatch  nace2:13.3 .
+
+nace1:17.4  skos:closeMatch  nace2:13.92 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:95.29 .
+
+nace1:17.51  skos:closeMatch  nace2:13.93 .
+
+nace1:17.52  skos:closeMatch  nace2:13.94 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:17.53  skos:closeMatch  nace2:13.95 .
+
+nace1:17.54  skos:closeMatch  nace2:13.96 ;
+        skos:closeMatch  nace2:13.99 ;
+        skos:closeMatch  nace2:17.22 .
+
+nace1:17.6  skos:closeMatch  nace2:13.91 .
+
+nace1:17.71  skos:closeMatch  nace2:14.19 ;
+        skos:closeMatch  nace2:14.31 .
+
+nace1:17.72  skos:closeMatch  nace2:14.39 .
+
+nace1:18.1  skos:closeMatch  nace2:14.11 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:18.21  skos:closeMatch  nace2:14.12 .
+
+nace1:18.22  skos:closeMatch  nace2:14.13 .
+
+nace1:18.23  skos:closeMatch  nace2:14.14 .
+
+nace1:18.24  skos:closeMatch  nace2:14.19 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:18.3  skos:closeMatch  nace2:13.2 ;
+        skos:closeMatch  nace2:13.91 ;
+        skos:closeMatch  nace2:14.2 ;
+        skos:closeMatch  nace2:15.11 .
+
+nace1:19.1  skos:closeMatch  nace2:15.11 .
+
+nace1:19.2  skos:closeMatch  nace2:15.12 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:19.3  skos:closeMatch  nace2:15.2 ;
+        skos:closeMatch  nace2:16.29 ;
+        skos:closeMatch  nace2:22.19 ;
+        skos:closeMatch  nace2:22.29 .
+
+nace1:20.1  skos:closeMatch  nace2:16.1 .
+
+nace1:20.2  skos:closeMatch  nace2:16.21 .
+
+nace1:20.3  skos:closeMatch  nace2:16.22 ;
+        skos:closeMatch  nace2:16.23 ;
+        skos:closeMatch  nace2:41.2 ;
+        skos:closeMatch  nace2:43.32 ;
+        skos:closeMatch  nace2:43.91 .
+
+nace1:20.4  skos:closeMatch  nace2:16.24 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:20.51  skos:closeMatch  nace2:16.29 ;
+        skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:20.52  skos:closeMatch  nace2:16.29 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:21.11  skos:closeMatch  nace2:17.11 .
+
+nace1:21.12  skos:closeMatch  nace2:17.12 .
+
+nace1:21.21  skos:closeMatch  nace2:17.21 .
+
+nace1:21.22  skos:closeMatch  nace2:17.22 ;
+        skos:closeMatch  nace2:18.12 .
+
+nace1:21.23  skos:closeMatch  nace2:17.23 .
+
+nace1:21.24  skos:closeMatch  nace2:17.24 .
+
+nace1:21.25  skos:closeMatch  nace2:17.29 ;
+        skos:closeMatch  nace2:18.12 .
+
+nace1:22.11  skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:58.11 ;
+        skos:closeMatch  nace2:58.12 .
+
+nace1:22.12  skos:closeMatch  nace2:58.13 .
+
+nace1:22.13  skos:closeMatch  nace2:58.14 .
+
+nace1:22.14  skos:closeMatch  nace2:59.2 .
+
+nace1:22.15  skos:closeMatch  nace2:58.19 .
+
+nace1:22.21  skos:closeMatch  nace2:18.11 .
+
+nace1:22.22  skos:closeMatch  nace2:17.23 ;
+        skos:closeMatch  nace2:18.12 ;
+        skos:closeMatch  nace2:58.19 .
+
+nace1:22.23  skos:closeMatch  nace2:18.14 .
+
+nace1:22.24  skos:closeMatch  nace2:18.13 .
+
+nace1:22.25  skos:closeMatch  nace2:18.13 .
+
+nace1:22.31  skos:closeMatch  nace2:18.2 .
+
+nace1:22.32  skos:closeMatch  nace2:18.2 .
+
+nace1:22.33  skos:closeMatch  nace2:18.2 .
+
+nace1:23.1  skos:closeMatch  nace2:19.1 .
+
+nace1:23.2  skos:closeMatch  nace2:19.2 .
+
+nace1:23.3  skos:closeMatch  nace2:20.13 ;
+        skos:closeMatch  nace2:21.2 ;
+        skos:closeMatch  nace2:24.46 ;
+        skos:closeMatch  nace2:38.12 ;
+        skos:closeMatch  nace2:38.22 .
+
+nace1:24.11  skos:closeMatch  nace2:20.11 .
+
+nace1:24.12  skos:closeMatch  nace2:20.12 .
+
+nace1:24.13  skos:closeMatch  nace2:20.13 .
+
+nace1:24.14  skos:closeMatch  nace2:19.1 ;
+        skos:closeMatch  nace2:20.14 .
+
+nace1:24.15  skos:closeMatch  nace2:20.15 ;
+        skos:closeMatch  nace2:38.21 .
+
+nace1:24.16  skos:closeMatch  nace2:20.16 .
+
+nace1:24.17  skos:closeMatch  nace2:20.17 .
+
+nace1:24.2  skos:closeMatch  nace2:20.2 .
+
+nace1:24.3  skos:closeMatch  nace2:20.3 .
+
+nace1:24.41  skos:closeMatch  nace2:21.1 .
+
+nace1:24.42  skos:closeMatch  nace2:21.2 ;
+        skos:closeMatch  nace2:32.5 .
+
+nace1:24.51  skos:closeMatch  nace2:20.41 ;
+        skos:closeMatch  nace2:20.42 .
+
+nace1:24.52  skos:closeMatch  nace2:20.42 .
+
+nace1:24.61  skos:closeMatch  nace2:20.51 .
+
+nace1:24.62  skos:closeMatch  nace2:20.52 ;
+        skos:closeMatch  nace2:20.59 .
+
+nace1:24.63  skos:closeMatch  nace2:20.53 .
+
+nace1:24.64  skos:closeMatch  nace2:20.59 .
+
+nace1:24.65  skos:closeMatch  nace2:26.8 .
+
+nace1:24.66  skos:closeMatch  nace2:20.59 ;
+        skos:closeMatch  nace2:26.11 .
+
+nace1:24.7  skos:closeMatch  nace2:20.6 .
+
+nace1:25.11  skos:closeMatch  nace2:22.11 .
+
+nace1:25.12  skos:closeMatch  nace2:22.11 .
+
+nace1:25.13  skos:closeMatch  nace2:22.19 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:25.21  skos:closeMatch  nace2:22.21 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:33.2 .
+
+nace1:25.22  skos:closeMatch  nace2:22.22 .
+
+nace1:25.23  skos:closeMatch  nace2:22.23 ;
+        skos:closeMatch  nace2:27.33 ;
+        skos:closeMatch  nace2:41.2 ;
+        skos:closeMatch  nace2:43.32 .
+
+nace1:25.24  skos:closeMatch  nace2:22.29 ;
+        skos:closeMatch  nace2:27.33 ;
+        skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:26.11  skos:closeMatch  nace2:23.11 .
+
+nace1:26.12  skos:closeMatch  nace2:23.12 .
+
+nace1:26.13  skos:closeMatch  nace2:23.13 .
+
+nace1:26.14  skos:closeMatch  nace2:23.14 .
+
+nace1:26.15  skos:closeMatch  nace2:23.19 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:33.2 .
+
+nace1:26.21  skos:closeMatch  nace2:23.41 .
+
+nace1:26.22  skos:closeMatch  nace2:23.42 .
+
+nace1:26.23  skos:closeMatch  nace2:23.43 .
+
+nace1:26.24  skos:closeMatch  nace2:23.44 .
+
+nace1:26.25  skos:closeMatch  nace2:23.49 .
+
+nace1:26.26  skos:closeMatch  nace2:23.2 .
+
+nace1:26.3  skos:closeMatch  nace2:23.31 .
+
+nace1:26.4  skos:closeMatch  nace2:23.32 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:33.2 .
+
+nace1:26.51  skos:closeMatch  nace2:23.51 .
+
+nace1:26.52  skos:closeMatch  nace2:23.52 .
+
+nace1:26.53  skos:closeMatch  nace2:23.52 .
+
+nace1:26.61  skos:closeMatch  nace2:23.61 .
+
+nace1:26.62  skos:closeMatch  nace2:23.62 .
+
+nace1:26.63  skos:closeMatch  nace2:23.63 .
+
+nace1:26.64  skos:closeMatch  nace2:23.64 .
+
+nace1:26.65  skos:closeMatch  nace2:23.65 .
+
+nace1:26.66  skos:closeMatch  nace2:23.69 .
+
+nace1:26.7  skos:closeMatch  nace2:23.7 .
+
+nace1:26.81  skos:closeMatch  nace2:23.91 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:33.2 .
+
+nace1:26.82  skos:closeMatch  nace2:23.99 .
+
+nace1:27.1  skos:closeMatch  nace2:24.1 .
+
+nace1:27.21  skos:closeMatch  nace2:24.51 .
+
+nace1:27.22  skos:closeMatch  nace2:24.2 .
+
+nace1:27.31  skos:closeMatch  nace2:24.31 .
+
+nace1:27.32  skos:closeMatch  nace2:24.32 .
+
+nace1:27.33  skos:closeMatch  nace2:24.33 .
+
+nace1:27.34  skos:closeMatch  nace2:24.34 .
+
+nace1:27.41  skos:closeMatch  nace2:24.41 .
+
+nace1:27.42  skos:closeMatch  nace2:24.42 .
+
+nace1:27.43  skos:closeMatch  nace2:24.43 ;
+        skos:closeMatch  nace2:25.99 .
+
+nace1:27.44  skos:closeMatch  nace2:24.44 .
+
+nace1:27.45  skos:closeMatch  nace2:24.45 .
+
+nace1:27.51  skos:closeMatch  nace2:24.51 .
+
+nace1:27.52  skos:closeMatch  nace2:24.52 .
+
+nace1:27.53  skos:closeMatch  nace2:24.53 .
+
+nace1:27.54  skos:closeMatch  nace2:24.54 .
+
+nace1:28  skos:closeMatch  nace2:33.2 .
+
+nace1:28.11  skos:closeMatch  nace2:24.33 ;
+        skos:closeMatch  nace2:25.11 ;
+        skos:closeMatch  nace2:33.11 ;
+        skos:closeMatch  nace2:41.2 .
+
+nace1:28.12  skos:closeMatch  nace2:25.12 ;
+        skos:closeMatch  nace2:43.32 .
+
+nace1:28.21  skos:closeMatch  nace2:25.29 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.22  skos:closeMatch  nace2:25.21 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.3  skos:closeMatch  nace2:25.3 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.4  skos:closeMatch  nace2:25.5 .
+
+nace1:28.51  skos:closeMatch  nace2:25.61 .
+
+nace1:28.52  skos:closeMatch  nace2:25.62 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:28.61  skos:closeMatch  nace2:25.71 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.62  skos:closeMatch  nace2:25.73 ;
+        skos:closeMatch  nace2:28.41 ;
+        skos:closeMatch  nace2:28.49 ;
+        skos:closeMatch  nace2:28.92 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.63  skos:closeMatch  nace2:25.72 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.71  skos:closeMatch  nace2:25.91 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:28.72  skos:closeMatch  nace2:25.92 .
+
+nace1:28.73  skos:closeMatch  nace2:25.93 .
+
+nace1:28.74  skos:closeMatch  nace2:25.93 ;
+        skos:closeMatch  nace2:25.94 .
+
+nace1:28.75  skos:closeMatch  nace2:25.71 ;
+        skos:closeMatch  nace2:25.72 ;
+        skos:closeMatch  nace2:25.99 ;
+        skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:29  skos:closeMatch  nace2:33.2 .
+
+nace1:29.11  skos:closeMatch  nace2:28.11 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.12  skos:closeMatch  nace2:28.11 ;
+        skos:closeMatch  nace2:28.12 ;
+        skos:closeMatch  nace2:28.13 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.13  skos:closeMatch  nace2:28.12 ;
+        skos:closeMatch  nace2:28.14 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.14  skos:closeMatch  nace2:28.15 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.21  skos:closeMatch  nace2:28.21 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.22  skos:closeMatch  nace2:28.22 ;
+        skos:closeMatch  nace2:33.12 ;
+        skos:closeMatch  nace2:43.29 .
+
+nace1:29.23  skos:closeMatch  nace2:28.25 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.24  skos:closeMatch  nace2:28.29 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:33.12 ;
+        skos:closeMatch  nace2:33.13 .
+
+nace1:29.31  skos:closeMatch  nace2:28.3 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.32  skos:closeMatch  nace2:28.3 ;
+        skos:closeMatch  nace2:33.12 ;
+        skos:closeMatch  nace2:95.22 .
+
+nace1:29.41  skos:closeMatch  nace2:28.24 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.42  skos:closeMatch  nace2:28.41 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.43  skos:closeMatch  nace2:27.9 ;
+        skos:closeMatch  nace2:28.29 ;
+        skos:closeMatch  nace2:28.49 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.51  skos:closeMatch  nace2:28.91 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.52  skos:closeMatch  nace2:28.92 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.53  skos:closeMatch  nace2:28.3 ;
+        skos:closeMatch  nace2:28.93 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.54  skos:closeMatch  nace2:28.94 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.55  skos:closeMatch  nace2:28.95 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.56  skos:closeMatch  nace2:25.73 ;
+        skos:closeMatch  nace2:28.94 ;
+        skos:closeMatch  nace2:28.96 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:33.12 .
+
+nace1:29.6  skos:closeMatch  nace2:25.4 ;
+        skos:closeMatch  nace2:30.3 ;
+        skos:closeMatch  nace2:30.4 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:29.71  skos:closeMatch  nace2:27.51 ;
+        skos:closeMatch  nace2:28.21 ;
+        skos:closeMatch  nace2:28.25 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:29.72  skos:closeMatch  nace2:27.52 ;
+        skos:closeMatch  nace2:28.21 .
+
+nace1:30  skos:closeMatch  nace2:33.2 .
+
+nace1:30.01  skos:closeMatch  nace2:28.23 .
+
+nace1:30.02  skos:closeMatch  nace2:26.2 ;
+        skos:closeMatch  nace2:62.09 .
+
+nace1:31  skos:closeMatch  nace2:33.2 .
+
+nace1:31.1  skos:closeMatch  nace2:26.11 ;
+        skos:closeMatch  nace2:27.11 ;
+        skos:closeMatch  nace2:33.13 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:31.2  skos:closeMatch  nace2:26.11 ;
+        skos:closeMatch  nace2:27.12 ;
+        skos:closeMatch  nace2:27.33 ;
+        skos:closeMatch  nace2:27.9 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:31.3  skos:closeMatch  nace2:26.11 ;
+        skos:closeMatch  nace2:27.31 ;
+        skos:closeMatch  nace2:27.32 ;
+        skos:closeMatch  nace2:27.9 .
+
+nace1:31.4  skos:closeMatch  nace2:27.2 .
+
+nace1:31.5  skos:closeMatch  nace2:27.4 .
+
+nace1:31.61  skos:closeMatch  nace2:27.4 ;
+        skos:closeMatch  nace2:29.31 .
+
+nace1:31.62  skos:closeMatch  nace2:23.44 ;
+        skos:closeMatch  nace2:25.99 ;
+        skos:closeMatch  nace2:26.3 ;
+        skos:closeMatch  nace2:26.51 ;
+        skos:closeMatch  nace2:27.11 ;
+        skos:closeMatch  nace2:27.4 ;
+        skos:closeMatch  nace2:27.9 ;
+        skos:closeMatch  nace2:28.49 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:29.31 ;
+        skos:closeMatch  nace2:30.2 ;
+        skos:closeMatch  nace2:33.13 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:32  skos:closeMatch  nace2:33.2 .
+
+nace1:32.1  skos:closeMatch  nace2:26.11 ;
+        skos:closeMatch  nace2:26.12 ;
+        skos:closeMatch  nace2:27.9 ;
+        skos:closeMatch  nace2:33.13 .
+
+nace1:32.2  skos:closeMatch  nace2:26.3 ;
+        skos:closeMatch  nace2:95.12 .
+
+nace1:32.3  skos:closeMatch  nace2:26.11 ;
+        skos:closeMatch  nace2:26.2 ;
+        skos:closeMatch  nace2:26.3 ;
+        skos:closeMatch  nace2:26.4 ;
+        skos:closeMatch  nace2:26.7 ;
+        skos:closeMatch  nace2:28.23 ;
+        skos:closeMatch  nace2:33.13 .
+
+nace1:33  skos:closeMatch  nace2:33.2 .
+
+nace1:33.1  skos:closeMatch  nace2:26.6 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:32.99 ;
+        skos:closeMatch  nace2:33.13 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:33.2  skos:closeMatch  nace2:26.51 ;
+        skos:closeMatch  nace2:26.7 ;
+        skos:closeMatch  nace2:28.29 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:33.13 ;
+        skos:closeMatch  nace2:33.14 .
+
+nace1:33.3  skos:closeMatch  nace2:33.2 .
+
+nace1:33.4  skos:closeMatch  nace2:26.7 ;
+        skos:closeMatch  nace2:27.31 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:32.5 ;
+        skos:closeMatch  nace2:33.13 .
+
+nace1:33.5  skos:closeMatch  nace2:26.52 ;
+        skos:closeMatch  nace2:32.12 ;
+        skos:closeMatch  nace2:32.13 ;
+        skos:closeMatch  nace2:33.13 .
+
+nace1:34  skos:closeMatch  nace2:33.2 .
+
+nace1:34.1  skos:closeMatch  nace2:28.92 ;
+        skos:closeMatch  nace2:29.1 ;
+        skos:closeMatch  nace2:30.91 .
+
+nace1:34.2  skos:closeMatch  nace2:29.2 ;
+        skos:closeMatch  nace2:33.11 .
+
+nace1:34.3  skos:closeMatch  nace2:28.11 ;
+        skos:closeMatch  nace2:29.32 .
+
+nace1:35  skos:closeMatch  nace2:33.2 .
+
+nace1:35.11  skos:closeMatch  nace2:30.11 ;
+        skos:closeMatch  nace2:33.15 .
+
+nace1:35.12  skos:closeMatch  nace2:30.12 ;
+        skos:closeMatch  nace2:33.15 .
+
+nace1:35.2  skos:closeMatch  nace2:30.2 ;
+        skos:closeMatch  nace2:33.17 .
+
+nace1:35.3  skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:30.3 ;
+        skos:closeMatch  nace2:33.16 .
+
+nace1:35.41  skos:closeMatch  nace2:30.91 .
+
+nace1:35.42  skos:closeMatch  nace2:30.92 .
+
+nace1:35.43  skos:closeMatch  nace2:30.92 ;
+        skos:closeMatch  nace2:33.17 .
+
+nace1:35.5  skos:closeMatch  nace2:28.22 ;
+        skos:closeMatch  nace2:30.99 ;
+        skos:closeMatch  nace2:31.01 ;
+        skos:closeMatch  nace2:33.11 ;
+        skos:closeMatch  nace2:33.17 .
+
+nace1:36  skos:closeMatch  nace2:33.2 .
+
+nace1:36.11  skos:closeMatch  nace2:29.32 ;
+        skos:closeMatch  nace2:30.11 ;
+        skos:closeMatch  nace2:30.2 ;
+        skos:closeMatch  nace2:30.3 ;
+        skos:closeMatch  nace2:31.01 ;
+        skos:closeMatch  nace2:31.02 ;
+        skos:closeMatch  nace2:31.09 ;
+        skos:closeMatch  nace2:95.24 .
+
+nace1:36.12  skos:closeMatch  nace2:28.23 ;
+        skos:closeMatch  nace2:31.01 ;
+        skos:closeMatch  nace2:95.24 .
+
+nace1:36.13  skos:closeMatch  nace2:31.02 ;
+        skos:closeMatch  nace2:95.24 .
+
+nace1:36.14  skos:closeMatch  nace2:31.09 ;
+        skos:closeMatch  nace2:95.24 .
+
+nace1:36.15  skos:closeMatch  nace2:31.03 .
+
+nace1:36.21  skos:closeMatch  nace2:32.11 .
+
+nace1:36.22  skos:closeMatch  nace2:32.12 .
+
+nace1:36.3  skos:closeMatch  nace2:32.2 ;
+        skos:closeMatch  nace2:33.19 ;
+        skos:closeMatch  nace2:95.29 .
+
+nace1:36.4  skos:closeMatch  nace2:32.3 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:36.5  skos:closeMatch  nace2:26.4 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:32.4 ;
+        skos:closeMatch  nace2:33.19 .
+
+nace1:36.61  skos:closeMatch  nace2:32.13 .
+
+nace1:36.62  skos:closeMatch  nace2:22.19 ;
+        skos:closeMatch  nace2:32.91 .
+
+nace1:36.63  skos:closeMatch  nace2:13.99 ;
+        skos:closeMatch  nace2:15.12 ;
+        skos:closeMatch  nace2:16.29 ;
+        skos:closeMatch  nace2:17.29 ;
+        skos:closeMatch  nace2:20.51 ;
+        skos:closeMatch  nace2:22.19 ;
+        skos:closeMatch  nace2:22.23 ;
+        skos:closeMatch  nace2:22.29 ;
+        skos:closeMatch  nace2:25.99 ;
+        skos:closeMatch  nace2:28.99 ;
+        skos:closeMatch  nace2:30.92 ;
+        skos:closeMatch  nace2:32.99 .
+
+nace1:37.1  skos:closeMatch  nace2:38.31 ;
+        skos:closeMatch  nace2:38.32 .
+
+nace1:37.2  skos:closeMatch  nace2:38.32 .
+
+nace1:40.11  skos:closeMatch  nace2:35.11 ;
+        skos:closeMatch  nace2:38.12 .
+
+nace1:40.12  skos:closeMatch  nace2:35.12 .
+
+nace1:40.13  skos:closeMatch  nace2:35.13 ;
+        skos:closeMatch  nace2:35.14 .
+
+nace1:40.21  skos:closeMatch  nace2:35.21 .
+
+nace1:40.22  skos:closeMatch  nace2:35.22 ;
+        skos:closeMatch  nace2:35.23 .
+
+nace1:40.3  skos:closeMatch  nace2:35.3 .
+
+nace1:41  skos:closeMatch  nace2:36 .
+
+nace1:45.11  skos:closeMatch  nace2:43.11 ;
+        skos:closeMatch  nace2:43.12 .
+
+nace1:45.12  skos:closeMatch  nace2:43.13 .
+
+nace1:45.21  skos:closeMatch  nace2:41.2 ;
+        skos:closeMatch  nace2:42.12 ;
+        skos:closeMatch  nace2:42.13 ;
+        skos:closeMatch  nace2:42.21 ;
+        skos:closeMatch  nace2:42.22 ;
+        skos:closeMatch  nace2:42.99 ;
+        skos:closeMatch  nace2:43.99 .
+
+nace1:45.22  skos:closeMatch  nace2:43.91 ;
+        skos:closeMatch  nace2:43.99 .
+
+nace1:45.23  skos:closeMatch  nace2:41.2 ;
+        skos:closeMatch  nace2:42.11 ;
+        skos:closeMatch  nace2:42.12 ;
+        skos:closeMatch  nace2:42.99 .
+
+nace1:45.24  skos:closeMatch  nace2:42.21 ;
+        skos:closeMatch  nace2:42.91 ;
+        skos:closeMatch  nace2:43.99 .
+
+nace1:45.25  skos:closeMatch  nace2:42.21 ;
+        skos:closeMatch  nace2:43.99 .
+
+nace1:45.31  skos:closeMatch  nace2:43.21 ;
+        skos:closeMatch  nace2:43.22 ;
+        skos:closeMatch  nace2:43.29 ;
+        skos:closeMatch  nace2:80.2 .
+
+nace1:45.32  skos:closeMatch  nace2:43.29 .
+
+nace1:45.33  skos:closeMatch  nace2:43.22 .
+
+nace1:45.34  skos:closeMatch  nace2:43.21 ;
+        skos:closeMatch  nace2:43.29 .
+
+nace1:45.41  skos:closeMatch  nace2:43.31 .
+
+nace1:45.42  skos:closeMatch  nace2:43.32 .
+
+nace1:45.43  skos:closeMatch  nace2:43.33 .
+
+nace1:45.44  skos:closeMatch  nace2:43.34 .
+
+nace1:45.45  skos:closeMatch  nace2:43.39 ;
+        skos:closeMatch  nace2:43.99 .
+
+nace1:45.5  skos:closeMatch  nace2:43.99 .
+
+nace1:50.1  skos:closeMatch  nace2:45.11 ;
+        skos:closeMatch  nace2:45.19 .
+
+nace1:50.2  skos:closeMatch  nace2:45.2 ;
+        skos:closeMatch  nace2:52.21 .
+
+nace1:50.3  skos:closeMatch  nace2:45.31 ;
+        skos:closeMatch  nace2:45.32 .
+
+nace1:50.4  skos:closeMatch  nace2:45.4 .
+
+nace1:50.5  skos:closeMatch  nace2:47.3 .
+
+nace1:51.11  skos:closeMatch  nace2:46.11 .
+
+nace1:51.12  skos:closeMatch  nace2:46.12 .
+
+nace1:51.13  skos:closeMatch  nace2:46.13 .
+
+nace1:51.14  skos:closeMatch  nace2:46.14 .
+
+nace1:51.15  skos:closeMatch  nace2:46.15 .
+
+nace1:51.16  skos:closeMatch  nace2:46.16 .
+
+nace1:51.17  skos:closeMatch  nace2:46.17 .
+
+nace1:51.18  skos:closeMatch  nace2:46.18 .
+
+nace1:51.19  skos:closeMatch  nace2:46.19 .
+
+nace1:51.21  skos:closeMatch  nace2:46.21 .
+
+nace1:51.22  skos:closeMatch  nace2:46.22 .
+
+nace1:51.23  skos:closeMatch  nace2:46.23 .
+
+nace1:51.24  skos:closeMatch  nace2:46.24 .
+
+nace1:51.25  skos:closeMatch  nace2:46.21 .
+
+nace1:51.31  skos:closeMatch  nace2:10.39 ;
+        skos:closeMatch  nace2:46.31 .
+
+nace1:51.32  skos:closeMatch  nace2:46.32 .
+
+nace1:51.33  skos:closeMatch  nace2:46.33 .
+
+nace1:51.34  skos:closeMatch  nace2:11.01 ;
+        skos:closeMatch  nace2:11.02 ;
+        skos:closeMatch  nace2:46.34 .
+
+nace1:51.35  skos:closeMatch  nace2:46.35 .
+
+nace1:51.36  skos:closeMatch  nace2:46.36 .
+
+nace1:51.37  skos:closeMatch  nace2:46.37 .
+
+nace1:51.38  skos:closeMatch  nace2:46.31 ;
+        skos:closeMatch  nace2:46.38 .
+
+nace1:51.39  skos:closeMatch  nace2:46.39 .
+
+nace1:51.41  skos:closeMatch  nace2:46.41 .
+
+nace1:51.42  skos:closeMatch  nace2:46.42 .
+
+nace1:51.43  skos:closeMatch  nace2:46.43 ;
+        skos:closeMatch  nace2:46.47 ;
+        skos:closeMatch  nace2:46.52 .
+
+nace1:51.44  skos:closeMatch  nace2:46.44 ;
+        skos:closeMatch  nace2:46.49 ;
+        skos:closeMatch  nace2:46.73 .
+
+nace1:51.45  skos:closeMatch  nace2:46.45 .
+
+nace1:51.46  skos:closeMatch  nace2:46.46 .
+
+nace1:51.47  skos:closeMatch  nace2:46.43 ;
+        skos:closeMatch  nace2:46.47 ;
+        skos:closeMatch  nace2:46.48 ;
+        skos:closeMatch  nace2:46.49 ;
+        skos:closeMatch  nace2:46.73 .
+
+nace1:51.51  skos:closeMatch  nace2:46.71 .
+
+nace1:51.52  skos:closeMatch  nace2:46.72 .
+
+nace1:51.53  skos:closeMatch  nace2:46.73 .
+
+nace1:51.54  skos:closeMatch  nace2:46.74 .
+
+nace1:51.55  skos:closeMatch  nace2:46.75 ;
+        skos:closeMatch  nace2:46.76 .
+
+nace1:51.56  skos:closeMatch  nace2:46.76 .
+
+nace1:51.57  skos:closeMatch  nace2:46.77 .
+
+nace1:51.81  skos:closeMatch  nace2:46.62 .
+
+nace1:51.82  skos:closeMatch  nace2:46.63 .
+
+nace1:51.83  skos:closeMatch  nace2:46.64 .
+
+nace1:51.84  skos:closeMatch  nace2:46.51 .
+
+nace1:51.85  skos:closeMatch  nace2:46.65 ;
+        skos:closeMatch  nace2:46.66 .
+
+nace1:51.86  skos:closeMatch  nace2:46.52 .
+
+nace1:51.87  skos:closeMatch  nace2:46.69 .
+
+nace1:51.88  skos:closeMatch  nace2:46.61 .
+
+nace1:51.9  skos:closeMatch  nace2:46.9 .
+
+nace1:52.11  skos:closeMatch  nace2:47.11 .
+
+nace1:52.12  skos:closeMatch  nace2:47.19 .
+
+nace1:52.21  skos:closeMatch  nace2:47.21 .
+
+nace1:52.22  skos:closeMatch  nace2:47.22 .
+
+nace1:52.23  skos:closeMatch  nace2:47.23 .
+
+nace1:52.24  skos:closeMatch  nace2:47.24 .
+
+nace1:52.25  skos:closeMatch  nace2:47.25 .
+
+nace1:52.26  skos:closeMatch  nace2:47.26 .
+
+nace1:52.27  skos:closeMatch  nace2:47.21 ;
+        skos:closeMatch  nace2:47.29 .
+
+nace1:52.31  skos:closeMatch  nace2:47.73 .
+
+nace1:52.32  skos:closeMatch  nace2:47.74 .
+
+nace1:52.33  skos:closeMatch  nace2:47.75 .
+
+nace1:52.41  skos:closeMatch  nace2:47.51 .
+
+nace1:52.42  skos:closeMatch  nace2:47.71 .
+
+nace1:52.43  skos:closeMatch  nace2:47.72 .
+
+nace1:52.44  skos:closeMatch  nace2:47.53 ;
+        skos:closeMatch  nace2:47.59 .
+
+nace1:52.45  skos:closeMatch  nace2:47.43 ;
+        skos:closeMatch  nace2:47.54 ;
+        skos:closeMatch  nace2:47.59 ;
+        skos:closeMatch  nace2:47.63 .
+
+nace1:52.46  skos:closeMatch  nace2:47.52 .
+
+nace1:52.47  skos:closeMatch  nace2:47.61 ;
+        skos:closeMatch  nace2:47.62 .
+
+nace1:52.48  skos:closeMatch  nace2:47.41 ;
+        skos:closeMatch  nace2:47.42 ;
+        skos:closeMatch  nace2:47.53 ;
+        skos:closeMatch  nace2:47.59 ;
+        skos:closeMatch  nace2:47.64 ;
+        skos:closeMatch  nace2:47.65 ;
+        skos:closeMatch  nace2:47.76 ;
+        skos:closeMatch  nace2:47.77 ;
+        skos:closeMatch  nace2:47.78 .
+
+nace1:52.5  skos:closeMatch  nace2:47.79 .
+
+nace1:52.61  skos:closeMatch  nace2:47.91 .
+
+nace1:52.62  skos:closeMatch  nace2:47.81 ;
+        skos:closeMatch  nace2:47.82 ;
+        skos:closeMatch  nace2:47.89 .
+
+nace1:52.63  skos:closeMatch  nace2:47.79 ;
+        skos:closeMatch  nace2:47.91 ;
+        skos:closeMatch  nace2:47.99 .
+
+nace1:52.71  skos:closeMatch  nace2:95.23 .
+
+nace1:52.72  skos:closeMatch  nace2:95.21 ;
+        skos:closeMatch  nace2:95.22 .
+
+nace1:52.73  skos:closeMatch  nace2:95.25 .
+
+nace1:52.74  skos:closeMatch  nace2:13.3 ;
+        skos:closeMatch  nace2:95.12 ;
+        skos:closeMatch  nace2:95.23 ;
+        skos:closeMatch  nace2:95.29 .
+
+nace1:55.1  skos:closeMatch  nace2:55.1 .
+
+nace1:55.21  skos:closeMatch  nace2:55.2 ;
+        skos:closeMatch  nace2:55.3 .
+
+nace1:55.22  skos:closeMatch  nace2:55.3 .
+
+nace1:55.23  skos:closeMatch  nace2:55.2 ;
+        skos:closeMatch  nace2:55.9 .
+
+nace1:55.3  skos:closeMatch  nace2:56.1 .
+
+nace1:55.4  skos:closeMatch  nace2:56.3 .
+
+nace1:55.51  skos:closeMatch  nace2:56.29 .
+
+nace1:55.52  skos:closeMatch  nace2:56.21 ;
+        skos:closeMatch  nace2:56.29 .
+
+nace1:60.1  skos:closeMatch  nace2:49.1 ;
+        skos:closeMatch  nace2:49.2 ;
+        skos:closeMatch  nace2:52.21 .
+
+nace1:60.21  skos:closeMatch  nace2:49.31 ;
+        skos:closeMatch  nace2:49.39 .
+
+nace1:60.22  skos:closeMatch  nace2:49.32 .
+
+nace1:60.23  skos:closeMatch  nace2:49.39 .
+
+nace1:60.24  skos:closeMatch  nace2:49.41 ;
+        skos:closeMatch  nace2:49.42 .
+
+nace1:60.3  skos:closeMatch  nace2:49.5 .
+
+nace1:61.1  skos:closeMatch  nace2:50.1 ;
+        skos:closeMatch  nace2:50.2 ;
+        skos:closeMatch  nace2:52.22 .
+
+nace1:61.2  skos:closeMatch  nace2:50.3 ;
+        skos:closeMatch  nace2:50.4 ;
+        skos:closeMatch  nace2:52.22 .
+
+nace1:62.1  skos:closeMatch  nace2:51.1 ;
+        skos:closeMatch  nace2:51.21 .
+
+nace1:62.2  skos:closeMatch  nace2:51.1 ;
+        skos:closeMatch  nace2:51.21 .
+
+nace1:62.3  skos:closeMatch  nace2:51.22 ;
+        skos:closeMatch  nace2:52.23 .
+
+nace1:63.11  skos:closeMatch  nace2:52.24 .
+
+nace1:63.12  skos:closeMatch  nace2:52.1 .
+
+nace1:63.21  skos:closeMatch  nace2:52.21 .
+
+nace1:63.22  skos:closeMatch  nace2:52.22 ;
+        skos:closeMatch  nace2:85.32 .
+
+nace1:63.23  skos:closeMatch  nace2:52.23 ;
+        skos:closeMatch  nace2:85.32 .
+
+nace1:63.3  skos:closeMatch  nace2:79.11 ;
+        skos:closeMatch  nace2:79.12 ;
+        skos:closeMatch  nace2:79.9 .
+
+nace1:63.4  skos:closeMatch  nace2:52.29 ;
+        skos:closeMatch  nace2:74.9 .
+
+nace1:64.11  skos:closeMatch  nace2:53.1 ;
+        skos:closeMatch  nace2:82.19 .
+
+nace1:64.12  skos:closeMatch  nace2:53.2 .
+
+nace1:64.2  skos:closeMatch  nace2:60.1 ;
+        skos:closeMatch  nace2:60.2 ;
+        skos:closeMatch  nace2:61.1 ;
+        skos:closeMatch  nace2:61.2 ;
+        skos:closeMatch  nace2:61.3 ;
+        skos:closeMatch  nace2:61.9 .
+
+nace1:65.11  skos:closeMatch  nace2:64.11 .
+
+nace1:65.12  skos:closeMatch  nace2:64.19 .
+
+nace1:65.21  skos:closeMatch  nace2:64.91 .
+
+nace1:65.22  skos:closeMatch  nace2:64.92 ;
+        skos:closeMatch  nace2:64.99 .
+
+nace1:65.23  skos:closeMatch  nace2:64.2 ;
+        skos:closeMatch  nace2:64.3 ;
+        skos:closeMatch  nace2:64.99 .
+
+nace1:66.01  skos:closeMatch  nace2:65.11 ;
+        skos:closeMatch  nace2:65.2 .
+
+nace1:66.02  skos:closeMatch  nace2:65.2 ;
+        skos:closeMatch  nace2:65.3 .
+
+nace1:66.03  skos:closeMatch  nace2:65.12 ;
+        skos:closeMatch  nace2:65.2 .
+
+nace1:67.11  skos:closeMatch  nace2:66.11 .
+
+nace1:67.12  skos:closeMatch  nace2:66.12 ;
+        skos:closeMatch  nace2:66.3 .
+
+nace1:67.13  skos:closeMatch  nace2:66.12 ;
+        skos:closeMatch  nace2:66.19 .
+
+nace1:67.2  skos:closeMatch  nace2:66.21 ;
+        skos:closeMatch  nace2:66.22 ;
+        skos:closeMatch  nace2:66.29 .
+
+nace1:70.11  skos:closeMatch  nace2:41.1 ;
+        skos:closeMatch  nace2:42 .
+
+nace1:70.12  skos:closeMatch  nace2:68.1 .
+
+nace1:70.2  skos:closeMatch  nace2:68.2 .
+
+nace1:70.31  skos:closeMatch  nace2:68.31 .
+
+nace1:70.32  skos:closeMatch  nace2:68.32 ;
+        skos:closeMatch  nace2:81.1 .
+
+nace1:71.1  skos:closeMatch  nace2:77.11 .
+
+nace1:71.21  skos:closeMatch  nace2:77.12 ;
+        skos:closeMatch  nace2:77.39 .
+
+nace1:71.22  skos:closeMatch  nace2:77.34 .
+
+nace1:71.23  skos:closeMatch  nace2:77.35 .
+
+nace1:71.31  skos:closeMatch  nace2:77.31 .
+
+nace1:71.32  skos:closeMatch  nace2:77.32 ;
+        skos:closeMatch  nace2:77.39 .
+
+nace1:71.33  skos:closeMatch  nace2:77.33 .
+
+nace1:71.34  skos:closeMatch  nace2:77.39 .
+
+nace1:71.4  skos:closeMatch  nace2:77.21 ;
+        skos:closeMatch  nace2:77.22 ;
+        skos:closeMatch  nace2:77.29 .
+
+nace1:72.1  skos:closeMatch  nace2:62.02 .
+
+nace1:72.21  skos:closeMatch  nace2:58.21 ;
+        skos:closeMatch  nace2:58.29 ;
+        skos:closeMatch  nace2:62.01 .
+
+nace1:72.22  skos:closeMatch  nace2:62.01 ;
+        skos:closeMatch  nace2:62.02 ;
+        skos:closeMatch  nace2:62.09 .
+
+nace1:72.3  skos:closeMatch  nace2:62.03 ;
+        skos:closeMatch  nace2:63.11 .
+
+nace1:72.4  skos:closeMatch  nace2:58.11 ;
+        skos:closeMatch  nace2:58.12 ;
+        skos:closeMatch  nace2:58.13 ;
+        skos:closeMatch  nace2:58.14 ;
+        skos:closeMatch  nace2:58.19 ;
+        skos:closeMatch  nace2:58.21 ;
+        skos:closeMatch  nace2:58.29 ;
+        skos:closeMatch  nace2:59.2 ;
+        skos:closeMatch  nace2:60.1 ;
+        skos:closeMatch  nace2:60.2 ;
+        skos:closeMatch  nace2:62.01 ;
+        skos:closeMatch  nace2:63.11 ;
+        skos:closeMatch  nace2:63.12 .
+
+nace1:72.5  skos:closeMatch  nace2:33.12 ;
+        skos:closeMatch  nace2:95.11 .
+
+nace1:72.6  skos:closeMatch  nace2:62.09 .
+
+nace1:73.1  skos:closeMatch  nace2:72.11 ;
+        skos:closeMatch  nace2:72.19 ;
+        skos:closeMatch  nace2:72.2 .
+
+nace1:73.2  skos:closeMatch  nace2:72.2 .
+
+nace1:74.11  skos:closeMatch  nace2:69.1 .
+
+nace1:74.12  skos:closeMatch  nace2:69.2 .
+
+nace1:74.13  skos:closeMatch  nace2:73.2 .
+
+nace1:74.14  skos:closeMatch  nace2:2.4 ;
+        skos:closeMatch  nace2:70.21 ;
+        skos:closeMatch  nace2:70.22 ;
+        skos:closeMatch  nace2:74.9 ;
+        skos:closeMatch  nace2:85.6 .
+
+nace1:74.15  skos:closeMatch  nace2:64.2 ;
+        skos:closeMatch  nace2:70.1 .
+
+nace1:74.2  skos:closeMatch  nace2:71.11 ;
+        skos:closeMatch  nace2:71.12 ;
+        skos:closeMatch  nace2:74.2 ;
+        skos:closeMatch  nace2:74.9 .
+
+nace1:74.3  skos:closeMatch  nace2:71.2 .
+
+nace1:74.4  skos:closeMatch  nace2:73.11 ;
+        skos:closeMatch  nace2:73.12 .
+
+nace1:74.5  skos:closeMatch  nace2:78.1 ;
+        skos:closeMatch  nace2:78.2 ;
+        skos:closeMatch  nace2:78.3 .
+
+nace1:74.6  skos:closeMatch  nace2:74.9 ;
+        skos:closeMatch  nace2:80.1 ;
+        skos:closeMatch  nace2:80.2 ;
+        skos:closeMatch  nace2:80.3 .
+
+nace1:74.7  skos:closeMatch  nace2:81.21 ;
+        skos:closeMatch  nace2:81.22 ;
+        skos:closeMatch  nace2:81.29 .
+
+nace1:74.81  skos:closeMatch  nace2:74.2 .
+
+nace1:74.82  skos:closeMatch  nace2:82.92 .
+
+nace1:74.85  skos:closeMatch  nace2:74.3 ;
+        skos:closeMatch  nace2:82.11 ;
+        skos:closeMatch  nace2:82.19 ;
+        skos:closeMatch  nace2:82.99 .
+
+nace1:74.86  skos:closeMatch  nace2:82.2 .
+
+nace1:74.87  skos:closeMatch  nace2:59.2 ;
+        skos:closeMatch  nace2:63.99 ;
+        skos:closeMatch  nace2:74.1 ;
+        skos:closeMatch  nace2:74.9 ;
+        skos:closeMatch  nace2:77.4 ;
+        skos:closeMatch  nace2:82.3 ;
+        skos:closeMatch  nace2:82.91 ;
+        skos:closeMatch  nace2:82.99 .
+
+nace1:75.11  skos:closeMatch  nace2:84.11 .
+
+nace1:75.12  skos:closeMatch  nace2:84.12 .
+
+nace1:75.13  skos:closeMatch  nace2:82.99 ;
+        skos:closeMatch  nace2:84.13 .
+
+nace1:75.14  skos:closeMatch  nace2:81.1 ;
+        skos:closeMatch  nace2:84.11 ;
+        skos:closeMatch  nace2:91.01 .
+
+nace1:75.21  skos:closeMatch  nace2:84.21 ;
+        skos:closeMatch  nace2:88.99 .
+
+nace1:75.22  skos:closeMatch  nace2:84.22 .
+
+nace1:75.23  skos:closeMatch  nace2:84.23 .
+
+nace1:75.24  skos:closeMatch  nace2:84.24 .
+
+nace1:75.25  skos:closeMatch  nace2:84.25 .
+
+nace1:75.3  skos:closeMatch  nace2:84.3 .
+
+nace1:80.1  skos:closeMatch  nace2:85.1 ;
+        skos:closeMatch  nace2:85.2 .
+
+nace1:80.21  skos:closeMatch  nace2:85.31 .
+
+nace1:80.22  skos:closeMatch  nace2:85.32 .
+
+nace1:80.3  skos:closeMatch  nace2:85.41 ;
+        skos:closeMatch  nace2:85.42 .
+
+nace1:80.41  skos:closeMatch  nace2:85.53 .
+
+nace1:80.42  skos:closeMatch  nace2:85.32 ;
+        skos:closeMatch  nace2:85.51 ;
+        skos:closeMatch  nace2:85.52 ;
+        skos:closeMatch  nace2:85.59 .
+
+nace1:85.11  skos:closeMatch  nace2:86.1 ;
+        skos:closeMatch  nace2:87.2 .
+
+nace1:85.12  skos:closeMatch  nace2:86.21 ;
+        skos:closeMatch  nace2:86.22 .
+
+nace1:85.13  skos:closeMatch  nace2:86.23 .
+
+nace1:85.14  skos:closeMatch  nace2:86.9 ;
+        skos:closeMatch  nace2:87.1 ;
+        skos:closeMatch  nace2:87.2 ;
+        skos:closeMatch  nace2:87.3 .
+
+nace1:85.2  skos:closeMatch  nace2:75 .
+
+nace1:85.31  skos:closeMatch  nace2:87.2 ;
+        skos:closeMatch  nace2:87.3 ;
+        skos:closeMatch  nace2:87.9 .
+
+nace1:85.32  skos:closeMatch  nace2:88.1 ;
+        skos:closeMatch  nace2:88.91 ;
+        skos:closeMatch  nace2:88.99 .
+
+nace1:90.01  skos:closeMatch  nace2:37 .
+
+nace1:90.02  skos:closeMatch  nace2:38.11 ;
+        skos:closeMatch  nace2:38.12 ;
+        skos:closeMatch  nace2:38.21 ;
+        skos:closeMatch  nace2:38.22 .
+
+nace1:90.03  skos:closeMatch  nace2:38.11 ;
+        skos:closeMatch  nace2:39 ;
+        skos:closeMatch  nace2:81.29 .
+
+nace1:91.11  skos:closeMatch  nace2:94.11 .
+
+nace1:91.12  skos:closeMatch  nace2:94.12 .
+
+nace1:91.2  skos:closeMatch  nace2:94.2 .
+
+nace1:91.31  skos:closeMatch  nace2:94.91 .
+
+nace1:91.32  skos:closeMatch  nace2:94.92 .
+
+nace1:91.33  skos:closeMatch  nace2:94.99 .
+
+nace1:92.11  skos:closeMatch  nace2:59.11 ;
+        skos:closeMatch  nace2:59.12 ;
+        skos:closeMatch  nace2:59.2 .
+
+nace1:92.12  skos:closeMatch  nace2:59.13 .
+
+nace1:92.13  skos:closeMatch  nace2:59.14 .
+
+nace1:92.2  skos:closeMatch  nace2:59.11 ;
+        skos:closeMatch  nace2:59.2 ;
+        skos:closeMatch  nace2:60.1 ;
+        skos:closeMatch  nace2:60.2 .
+
+nace1:92.31  skos:closeMatch  nace2:90.01 ;
+        skos:closeMatch  nace2:90.02 ;
+        skos:closeMatch  nace2:90.03 .
+
+nace1:92.32  skos:closeMatch  nace2:79.9 ;
+        skos:closeMatch  nace2:90.02 ;
+        skos:closeMatch  nace2:90.04 .
+
+nace1:92.33  skos:closeMatch  nace2:93.21 .
+
+nace1:92.34  skos:closeMatch  nace2:79.9 ;
+        skos:closeMatch  nace2:85.52 ;
+        skos:closeMatch  nace2:90.01 ;
+        skos:closeMatch  nace2:90.02 ;
+        skos:closeMatch  nace2:93.29 .
+
+nace1:92.4  skos:closeMatch  nace2:63.91 ;
+        skos:closeMatch  nace2:74.2 ;
+        skos:closeMatch  nace2:90.03 .
+
+nace1:92.51  skos:closeMatch  nace2:91.01 .
+
+nace1:92.52  skos:closeMatch  nace2:91.02 ;
+        skos:closeMatch  nace2:91.03 .
+
+nace1:92.53  skos:closeMatch  nace2:91.04 .
+
+nace1:92.61  skos:closeMatch  nace2:93.11 .
+
+nace1:92.62  skos:closeMatch  nace2:79.9 ;
+        skos:closeMatch  nace2:85.51 ;
+        skos:closeMatch  nace2:93.11 ;
+        skos:closeMatch  nace2:93.12 ;
+        skos:closeMatch  nace2:93.19 ;
+        skos:closeMatch  nace2:93.29 .
+
+nace1:92.71  skos:closeMatch  nace2:92 .
+
+nace1:92.72  skos:closeMatch  nace2:1.62 ;
+        skos:closeMatch  nace2:78.1 ;
+        skos:closeMatch  nace2:79.9 ;
+        skos:closeMatch  nace2:93.29 .
+
+nace1:93.01  skos:closeMatch  nace2:96.01 .
+
+nace1:93.02  skos:closeMatch  nace2:96.02 .
+
+nace1:93.03  skos:closeMatch  nace2:96.03 .
+
+nace1:93.04  skos:closeMatch  nace2:93.13 ;
+        skos:closeMatch  nace2:96.04 .
+
+nace1:93.05  skos:closeMatch  nace2:85.51 ;
+        skos:closeMatch  nace2:96.09 .
+
+nace1:95  skos:closeMatch  nace2:97 .
+
+nace1:96  skos:closeMatch  nace2:98.1 .
+
+nace1:97  skos:closeMatch  nace2:98.2 .
+
+nace1:99  skos:closeMatch  nace2:99 .

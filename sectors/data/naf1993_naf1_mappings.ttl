@@ -1,0 +1,389 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix naf1993: <https://data.coypu.org/classification/naf_1993/> .
+@prefix naf1: <https://data.coypu.org/classification/naf_r1/> .
+
+naf1993:27.1Z  skos:closeMatch  naf1:27.1Y ;
+        skos:notation    "27.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:27.1Y  skos:notation  "27.1Y" ;
+        skos:inScheme  naf1: .
+
+naf1993:27.3J  skos:closeMatch  naf1:27.1Y ;
+        skos:notation    "27.3J" ;
+        skos:inScheme    naf1993: .
+
+naf1:27.1Y  skos:notation  "27.1Y" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.2A  skos:closeMatch  naf1:28.2C ;
+        skos:notation    "28.2A" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.2C  skos:notation  "28.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.2B  skos:closeMatch  naf1:28.2C ;
+        skos:notation    "28.2B" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.2C  skos:notation  "28.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.7M  skos:closeMatch  naf1:28.7Q ;
+        skos:notation    "28.7M" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.7Q  skos:notation  "28.7Q" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.7P  skos:closeMatch  naf1:28.7Q ;
+        skos:notation    "28.7P" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.7Q  skos:notation  "28.7Q" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.1C  skos:closeMatch  naf1:29.1B ;
+        skos:notation    "29.1C" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.1B  skos:notation  "29.1B" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.1C  skos:closeMatch  naf1:29.1E ;
+        skos:notation    "29.1C" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.1E  skos:notation  "29.1E" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.2K  skos:closeMatch  naf1:29.2L ;
+        skos:notation    "29.2K" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.2L  skos:notation  "29.2L" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.2K  skos:closeMatch  naf1:29.2M ;
+        skos:notation    "29.2K" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.2M  skos:notation  "29.2M" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.5C  skos:closeMatch  naf1:29.5B ;
+        skos:notation    "29.5C" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.5B  skos:notation  "29.5B" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.5C  skos:closeMatch  naf1:29.5D ;
+        skos:notation    "29.5C" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.5D  skos:notation  "29.5D" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.5P  skos:closeMatch  naf1:29.5Q ;
+        skos:notation    "29.5P" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.5Q  skos:notation  "29.5Q" ;
+        skos:inScheme  naf1: .
+
+naf1993:29.5P  skos:closeMatch  naf1:29.5R ;
+        skos:notation    "29.5P" ;
+        skos:inScheme    naf1993: .
+
+naf1:29.5R  skos:notation  "29.5R" ;
+        skos:inScheme  naf1: .
+
+naf1993:32.1B  skos:closeMatch  naf1:32.1C ;
+        skos:notation    "32.1B" ;
+        skos:inScheme    naf1993: .
+
+naf1:32.1C  skos:notation  "32.1C" ;
+        skos:inScheme  naf1: .
+
+naf1993:32.1B  skos:closeMatch  naf1:32.1D ;
+        skos:notation    "32.1B" ;
+        skos:inScheme    naf1993: .
+
+naf1:32.1D  skos:notation  "32.1D" ;
+        skos:inScheme  naf1: .
+
+naf1993:40.1Z  skos:closeMatch  naf1:40.1A ;
+        skos:notation    "40.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:40.1A  skos:notation  "40.1A" ;
+        skos:inScheme  naf1: .
+
+naf1993:40.1Z  skos:closeMatch  naf1:40.1C ;
+        skos:notation    "40.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:40.1C  skos:notation  "40.1C" ;
+        skos:inScheme  naf1: .
+
+naf1993:40.1Z  skos:closeMatch  naf1:40.1E ;
+        skos:notation    "40.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:40.1E  skos:notation  "40.1E" ;
+        skos:inScheme  naf1: .
+
+naf1993:40.2Z  skos:closeMatch  naf1:40.2A ;
+        skos:notation    "40.2Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:40.2A  skos:notation  "40.2A" ;
+        skos:inScheme  naf1: .
+
+naf1993:40.2Z  skos:closeMatch  naf1:40.2C ;
+        skos:notation    "40.2Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:40.2C  skos:notation  "40.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6A  skos:closeMatch  naf1:51.8A ;
+        skos:notation    "51.6A" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8A  skos:notation  "51.8A" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6C  skos:closeMatch  naf1:51.8C ;
+        skos:notation    "51.6C" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8C  skos:notation  "51.8C" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6E  skos:closeMatch  naf1:51.8E ;
+        skos:notation    "51.6E" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8E  skos:notation  "51.8E" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6G  skos:closeMatch  naf1:51.8G ;
+        skos:notation    "51.6G" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8G  skos:notation  "51.8G" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6G  skos:closeMatch  naf1:51.8H ;
+        skos:notation    "51.6G" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8H  skos:notation  "51.8H" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6J  skos:closeMatch  naf1:51.8J ;
+        skos:notation    "51.6J" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8J  skos:notation  "51.8J" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6J  skos:closeMatch  naf1:51.8L ;
+        skos:notation    "51.6J" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8L  skos:notation  "51.8L" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6K  skos:closeMatch  naf1:51.8M ;
+        skos:notation    "51.6K" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8M  skos:notation  "51.8M" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6L  skos:closeMatch  naf1:51.8N ;
+        skos:notation    "51.6L" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8N  skos:notation  "51.8N" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.6N  skos:closeMatch  naf1:51.8P ;
+        skos:notation    "51.6N" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.8P  skos:notation  "51.8P" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.7Z  skos:closeMatch  naf1:51.9A ;
+        skos:notation    "51.7Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.9A  skos:notation  "51.9A" ;
+        skos:inScheme  naf1: .
+
+naf1993:51.7Z  skos:closeMatch  naf1:51.9B ;
+        skos:notation    "51.7Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:51.9B  skos:notation  "51.9B" ;
+        skos:inScheme  naf1: .
+
+naf1993:55.1D  skos:closeMatch  naf1:55.1E ;
+        skos:notation    "55.1D" ;
+        skos:inScheme    naf1993: .
+
+naf1:55.1E  skos:notation  "55.1E" ;
+        skos:inScheme  naf1: .
+
+naf1993:64.2A  skos:closeMatch  naf1:64.2C ;
+        skos:notation    "64.2A" ;
+        skos:inScheme    naf1993: .
+
+naf1:64.2C  skos:notation  "64.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:64.2A  skos:closeMatch  naf1:64.2D ;
+        skos:notation    "64.2A" ;
+        skos:inScheme    naf1993: .
+
+naf1:64.2D  skos:notation  "64.2D" ;
+        skos:inScheme  naf1: .
+
+naf1993:64.2B  skos:closeMatch  naf1:64.2C ;
+        skos:notation    "64.2B" ;
+        skos:inScheme    naf1993: .
+
+naf1:64.2C  skos:notation  "64.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:64.2B  skos:closeMatch  naf1:64.2D ;
+        skos:notation    "64.2B" ;
+        skos:inScheme    naf1993: .
+
+naf1:64.2D  skos:notation  "64.2D" ;
+        skos:inScheme  naf1: .
+
+naf1993:71.1Z  skos:closeMatch  naf1:71.1A ;
+        skos:notation    "71.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:71.1A  skos:notation  "71.1A" ;
+        skos:inScheme  naf1: .
+
+naf1993:71.1Z  skos:closeMatch  naf1:71.1B ;
+        skos:notation    "71.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:71.1B  skos:notation  "71.1B" ;
+        skos:inScheme  naf1: .
+
+naf1993:72.2Z  skos:closeMatch  naf1:72.2A ;
+        skos:notation    "72.2Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:72.2A  skos:notation  "72.2A" ;
+        skos:inScheme  naf1: .
+
+naf1993:72.2Z  skos:closeMatch  naf1:72.2C ;
+        skos:notation    "72.2Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:72.2C  skos:notation  "72.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:90.0C  skos:closeMatch  naf1:90.0E ;
+        skos:notation    "90.0C" ;
+        skos:inScheme    naf1993: .
+
+naf1:90.0E  skos:notation  "90.0E" ;
+        skos:inScheme  naf1: .
+
+naf1993:90.0C  skos:closeMatch  naf1:90.0G ;
+        skos:notation    "90.0C" ;
+        skos:inScheme    naf1993: .
+
+naf1:90.0G  skos:notation  "90.0G" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.2C  skos:closeMatch  naf1:92.2D ;
+        skos:notation    "92.2C" ;
+        skos:inScheme    naf1993: .
+
+naf1:92.2D  skos:notation  "92.2D" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.2C  skos:closeMatch  naf1:92.2E ;
+        skos:notation    "92.2C" ;
+        skos:inScheme    naf1993: .
+
+naf1:92.2E  skos:notation  "92.2E" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.2C  skos:closeMatch  naf1:92.2F ;
+        skos:notation    "92.2C" ;
+        skos:inScheme    naf1993: .
+
+naf1:92.2F  skos:notation  "92.2F" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.3H  skos:closeMatch  naf1:55.4C ;
+        skos:notation    "92.3H" ;
+        skos:inScheme    naf1993: .
+
+naf1:55.4C  skos:notation  "55.4C" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.3H  skos:closeMatch  naf1:92.3K ;
+        skos:notation    "92.3H" ;
+        skos:inScheme    naf1993: .
+
+naf1:92.3K  skos:notation  "92.3K" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.3J  skos:closeMatch  naf1:55.4C ;
+        skos:notation    "92.3J" ;
+        skos:inScheme    naf1993: .
+
+naf1:55.4C  skos:notation  "55.4C" ;
+        skos:inScheme  naf1: .
+
+naf1993:92.3J  skos:closeMatch  naf1:92.3K ;
+        skos:notation    "92.3J" ;
+        skos:inScheme    naf1993: .
+
+naf1:92.3K  skos:notation  "92.3K" ;
+        skos:inScheme  naf1: .
+
+naf1993:27.1Z  skos:closeMatch  naf1:27.1Y ;
+        skos:notation    "27.1Z" ;
+        skos:inScheme    naf1993: .
+
+naf1:27.1Y  skos:notation  "27.1Y" ;
+        skos:inScheme  naf1: .
+
+naf1993:27.3J  skos:closeMatch  naf1:27.1Y ;
+        skos:notation    "27.3J" ;
+        skos:inScheme    naf1993: .
+
+naf1:27.1Y  skos:notation  "27.1Y" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.2A  skos:closeMatch  naf1:28.2C ;
+        skos:notation    "28.2A" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.2C  skos:notation  "28.2C" ;
+        skos:inScheme  naf1: .
+
+naf1993:28.2B  skos:closeMatch  naf1:28.2C ;
+        skos:notation    "28.2B" ;
+        skos:inScheme    naf1993: .
+
+naf1:28.2C  skos:notation  "28.2C" ;
+        skos:inScheme  naf1: .

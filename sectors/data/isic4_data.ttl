@@ -1,0 +1,3834 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+isic:A  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Agriculture, forestry and fishing"@en ;
+        skos:notation   "A" .
+
+isic:01  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Crop and animal production, hunting and related service activities"@en ;
+        skos:notation   "01" .
+
+isic:011  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of non-perennial crops"@en ;
+        skos:notation   "011" .
+
+isic:0111  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of cereals (except rice), leguminous crops and oil seeds"@en ;
+        skos:notation   "0111" .
+
+isic:0112  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of rice"@en ;
+        skos:notation   "0112" .
+
+isic:0113  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of vegetables and melons, roots and tubers"@en ;
+        skos:notation   "0113" .
+
+isic:0114  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of sugar cane"@en ;
+        skos:notation   "0114" .
+
+isic:0115  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of tobacco"@en ;
+        skos:notation   "0115" .
+
+isic:0116  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of fibre crops"@en ;
+        skos:notation   "0116" .
+
+isic:0119  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of other non-perennial crops"@en ;
+        skos:notation   "0119" .
+
+isic:012  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of perennial crops"@en ;
+        skos:notation   "012" .
+
+isic:0121  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of grapes"@en ;
+        skos:notation   "0121" .
+
+isic:0122  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of tropical and subtropical fruits"@en ;
+        skos:notation   "0122" .
+
+isic:0123  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of citrus fruits"@en ;
+        skos:notation   "0123" .
+
+isic:0124  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of pome fruits and stone fruits"@en ;
+        skos:notation   "0124" .
+
+isic:0125  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of other tree and bush fruits and nuts"@en ;
+        skos:notation   "0125" .
+
+isic:0126  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of oleaginous fruits"@en ;
+        skos:notation   "0126" .
+
+isic:0127  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of beverage crops"@en ;
+        skos:notation   "0127" .
+
+isic:0128  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of spices, aromatic, drug and pharmaceutical crops"@en ;
+        skos:notation   "0128" .
+
+isic:0129  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Growing of other perennial crops"@en ;
+        skos:notation   "0129" .
+
+isic:013  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Plant propagation"@en ;
+        skos:notation   "013" .
+
+isic:0130  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Plant propagation"@en ;
+        skos:notation   "0130" .
+
+isic:014  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Animal production"@en ;
+        skos:notation   "014" .
+
+isic:0141  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of cattle and buffaloes"@en ;
+        skos:notation   "0141" .
+
+isic:0142  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of horses and other equines"@en ;
+        skos:notation   "0142" .
+
+isic:0143  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of camels and camelids"@en ;
+        skos:notation   "0143" .
+
+isic:0144  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of sheep and goats"@en ;
+        skos:notation   "0144" .
+
+isic:0145  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of swine/pigs"@en ;
+        skos:notation   "0145" .
+
+isic:0146  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of poultry"@en ;
+        skos:notation   "0146" .
+
+isic:0149  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Raising of other animals"@en ;
+        skos:notation   "0149" .
+
+isic:015  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mixed farming"@en ;
+        skos:notation   "015" .
+
+isic:0150  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mixed farming"@en ;
+        skos:notation   "0150" .
+
+isic:016  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities to agriculture and post-harvest crop activities"@en ;
+        skos:notation   "016" .
+
+isic:0161  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for crop production"@en ;
+        skos:notation   "0161" .
+
+isic:0162  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for animal production"@en ;
+        skos:notation   "0162" .
+
+isic:0163  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Post-harvest crop activities"@en ;
+        skos:notation   "0163" .
+
+isic:0164  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Seed processing for propagation"@en ;
+        skos:notation   "0164" .
+
+isic:017  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Hunting, trapping and related service activities"@en ;
+        skos:notation   "017" .
+
+isic:0170  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Hunting, trapping and related service activities"@en ;
+        skos:notation   "0170" .
+
+isic:02  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Forestry and logging"@en ;
+        skos:notation   "02" .
+
+isic:021  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Silviculture and other forestry activities"@en ;
+        skos:notation   "021" .
+
+isic:0210  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Silviculture and other forestry activities"@en ;
+        skos:notation   "0210" .
+
+isic:022  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Logging"@en ;
+        skos:notation   "022" .
+
+isic:0220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Logging"@en ;
+        skos:notation   "0220" .
+
+isic:023  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Gathering of non-wood forest products"@en ;
+        skos:notation   "023" .
+
+isic:0230  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Gathering of non-wood forest products"@en ;
+        skos:notation   "0230" .
+
+isic:024  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support services to forestry"@en ;
+        skos:notation   "024" .
+
+isic:0240  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support services to forestry"@en ;
+        skos:notation   "0240" .
+
+isic:03  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Fishing and aquaculture"@en ;
+        skos:notation   "03" .
+
+isic:031  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Fishing"@en ;
+        skos:notation   "031" .
+
+isic:0311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Marine fishing"@en ;
+        skos:notation   "0311" .
+
+isic:0312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freshwater fishing"@en ;
+        skos:notation   "0312" .
+
+isic:032  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Aquaculture"@en ;
+        skos:notation   "032" .
+
+isic:0321  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Marine aquaculture"@en ;
+        skos:notation   "0321" .
+
+isic:0322  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freshwater aquaculture"@en ;
+        skos:notation   "0322" .
+
+isic:B  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining and quarrying"@en ;
+        skos:notation   "B" .
+
+isic:05  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of coal and lignite"@en ;
+        skos:notation   "05" .
+
+isic:051  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of hard coal"@en ;
+        skos:notation   "051" .
+
+isic:0510  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of hard coal"@en ;
+        skos:notation   "0510" .
+
+isic:052  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of lignite"@en ;
+        skos:notation   "052" .
+
+isic:0520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of lignite"@en ;
+        skos:notation   "0520" .
+
+isic:06  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of crude petroleum and natural gas"@en ;
+        skos:notation   "06" .
+
+isic:061  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of crude petroleum"@en ;
+        skos:notation   "061" .
+
+isic:0610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of crude petroleum"@en ;
+        skos:notation   "0610" .
+
+isic:062  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of natural gas"@en ;
+        skos:notation   "062" .
+
+isic:0620  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of natural gas"@en ;
+        skos:notation   "0620" .
+
+isic:07  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of metal ores"@en ;
+        skos:notation   "07" .
+
+isic:071  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of iron ores"@en ;
+        skos:notation   "071" .
+
+isic:0710  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of iron ores"@en ;
+        skos:notation   "0710" .
+
+isic:072  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of non-ferrous metal ores"@en ;
+        skos:notation   "072" .
+
+isic:0721  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of uranium and thorium ores"@en ;
+        skos:notation   "0721" .
+
+isic:0729  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of other non-ferrous metal ores"@en ;
+        skos:notation   "0729" .
+
+isic:08  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other mining and quarrying"@en ;
+        skos:notation   "08" .
+
+isic:081  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Quarrying of stone, sand and clay"@en ;
+        skos:notation   "081" .
+
+isic:0810  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Quarrying of stone, sand and clay"@en ;
+        skos:notation   "0810" .
+
+isic:089  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining and quarrying n.e.c."@en ;
+        skos:notation   "089" .
+
+isic:0891  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining of chemical and fertilizer minerals"@en ;
+        skos:notation   "0891" .
+
+isic:0892  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of peat"@en ;
+        skos:notation   "0892" .
+
+isic:0893  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Extraction of salt"@en ;
+        skos:notation   "0893" .
+
+isic:0899  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other mining and quarrying n.e.c."@en ;
+        skos:notation   "0899" .
+
+isic:09  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Mining support service activities"@en ;
+        skos:notation   "09" .
+
+isic:091  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for petroleum and natural gas extraction"@en ;
+        skos:notation   "091" .
+
+isic:0910  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for petroleum and natural gas extraction"@en ;
+        skos:notation   "0910" .
+
+isic:099  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for other mining and quarrying"@en ;
+        skos:notation   "099" .
+
+isic:0990  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for other mining and quarrying"@en ;
+        skos:notation   "0990" .
+
+isic:C  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacturing"@en ;
+        skos:notation   "C" .
+
+isic:10  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of food products"@en ;
+        skos:notation   "10" .
+
+isic:101  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of meat"@en ;
+        skos:notation   "101" .
+
+isic:1010  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of meat"@en ;
+        skos:notation   "1010" .
+
+isic:102  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of fish, crustaceans and molluscs"@en ;
+        skos:notation   "102" .
+
+isic:1020  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of fish, crustaceans and molluscs"@en ;
+        skos:notation   "1020" .
+
+isic:103  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of fruit and vegetables"@en ;
+        skos:notation   "103" .
+
+isic:1030  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Processing and preserving of fruit and vegetables"@en ;
+        skos:notation   "1030" .
+
+isic:104  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of vegetable and animal oils and fats"@en ;
+        skos:notation   "104" .
+
+isic:1040  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of vegetable and animal oils and fats"@en ;
+        skos:notation   "1040" .
+
+isic:105  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of dairy products"@en ;
+        skos:notation   "105" .
+
+isic:1050  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of dairy products"@en ;
+        skos:notation   "1050" .
+
+isic:106  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of grain mill products, starches and starch products"@en ;
+        skos:notation   "106" .
+
+isic:1061  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of grain mill products"@en ;
+        skos:notation   "1061" .
+
+isic:1062  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of starches and starch products"@en ;
+        skos:notation   "1062" .
+
+isic:107  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other food products"@en ;
+        skos:notation   "107" .
+
+isic:1071  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of bakery products"@en ;
+        skos:notation   "1071" .
+
+isic:1072  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of sugar"@en ;
+        skos:notation   "1072" .
+
+isic:1073  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of cocoa, chocolate and sugar confectionery"@en ;
+        skos:notation   "1073" .
+
+isic:1074  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of macaroni, noodles, couscous and similar farinaceous products"@en ;
+        skos:notation   "1074" .
+
+isic:1075  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of prepared meals and dishes"@en ;
+        skos:notation   "1075" .
+
+isic:1079  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other food products n.e.c."@en ;
+        skos:notation   "1079" .
+
+isic:108  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of prepared animal feeds"@en ;
+        skos:notation   "108" .
+
+isic:1080  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of prepared animal feeds"@en ;
+        skos:notation   "1080" .
+
+isic:11  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of beverages"@en ;
+        skos:notation   "11" .
+
+isic:110  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of beverages"@en ;
+        skos:notation   "110" .
+
+isic:1101  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Distilling, rectifying and blending of spirits"@en ;
+        skos:notation   "1101" .
+
+isic:1102  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wines"@en ;
+        skos:notation   "1102" .
+
+isic:1103  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of malt liquors and malt"@en ;
+        skos:notation   "1103" .
+
+isic:1104  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of soft drinks; production of mineral waters and other bottled waters"@en ;
+        skos:notation   "1104" .
+
+isic:12  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of tobacco products"@en ;
+        skos:notation   "12" .
+
+isic:120  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of tobacco products"@en ;
+        skos:notation   "120" .
+
+isic:1200  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of tobacco products"@en ;
+        skos:notation   "1200" .
+
+isic:13  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of textiles"@en ;
+        skos:notation   "13" .
+
+isic:131  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Spinning, weaving and finishing of textiles"@en ;
+        skos:notation   "131" .
+
+isic:1311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Preparation and spinning of textile fibres"@en ;
+        skos:notation   "1311" .
+
+isic:1312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Weaving of textiles"@en ;
+        skos:notation   "1312" .
+
+isic:1313  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Finishing of textiles"@en ;
+        skos:notation   "1313" .
+
+isic:139  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other textiles"@en ;
+        skos:notation   "139" .
+
+isic:1391  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of knitted and crocheted fabrics"@en ;
+        skos:notation   "1391" .
+
+isic:1392  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of made-up textile articles, except apparel"@en ;
+        skos:notation   "1392" .
+
+isic:1393  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of carpets and rugs"@en ;
+        skos:notation   "1393" .
+
+isic:1394  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of cordage, rope, twine and netting"@en ;
+        skos:notation   "1394" .
+
+isic:1399  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other textiles n.e.c."@en ;
+        skos:notation   "1399" .
+
+isic:14  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wearing apparel"@en ;
+        skos:notation   "14" .
+
+isic:141  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wearing apparel, except fur apparel"@en ;
+        skos:notation   "141" .
+
+isic:1410  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wearing apparel, except fur apparel"@en ;
+        skos:notation   "1410" .
+
+isic:142  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of articles of fur"@en ;
+        skos:notation   "142" .
+
+isic:1420  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of articles of fur"@en ;
+        skos:notation   "1420" .
+
+isic:143  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of knitted and crocheted apparel"@en ;
+        skos:notation   "143" .
+
+isic:1430  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of knitted and crocheted apparel"@en ;
+        skos:notation   "1430" .
+
+isic:15  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of leather and related products"@en ;
+        skos:notation   "15" .
+
+isic:151  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Tanning and dressing of leather; manufacture of luggage, handbags, saddlery and harness; dressing and dyeing of fur"@en ;
+        skos:notation   "151" .
+
+isic:1511  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Tanning and dressing of leather; dressing and dyeing of fur"@en ;
+        skos:notation   "1511" .
+
+isic:1512  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of luggage, handbags and the like, saddlery and harness"@en ;
+        skos:notation   "1512" .
+
+isic:152  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of footwear"@en ;
+        skos:notation   "152" .
+
+isic:1520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of footwear"@en ;
+        skos:notation   "1520" .
+
+isic:16  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"@en ;
+        skos:notation   "16" .
+
+isic:161  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sawmilling and planing of wood"@en ;
+        skos:notation   "161" .
+
+isic:1610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sawmilling and planing of wood"@en ;
+        skos:notation   "1610" .
+
+isic:162  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of products of wood, cork, straw and plaiting materials"@en ;
+        skos:notation   "162" .
+
+isic:1621  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of veneer sheets and wood-based panels"@en ;
+        skos:notation   "1621" .
+
+isic:1622  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of builders' carpentry and joinery"@en ;
+        skos:notation   "1622" .
+
+isic:1623  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wooden containers"@en ;
+        skos:notation   "1623" .
+
+isic:1629  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other products of wood; manufacture of articles of cork, straw and plaiting materials"@en ;
+        skos:notation   "1629" .
+
+isic:17  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of paper and paper products"@en ;
+        skos:notation   "17" .
+
+isic:170  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of paper and paper products"@en ;
+        skos:notation   "170" .
+
+isic:1701  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of pulp, paper and paperboard"@en ;
+        skos:notation   "1701" .
+
+isic:1702  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"@en ;
+        skos:notation   "1702" .
+
+isic:1709  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other articles of paper and paperboard"@en ;
+        skos:notation   "1709" .
+
+isic:18  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Printing and reproduction of recorded media"@en ;
+        skos:notation   "18" .
+
+isic:181  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Printing and service activities related to printing"@en ;
+        skos:notation   "181" .
+
+isic:1811  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Printing"@en ;
+        skos:notation   "1811" .
+
+isic:1812  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Service activities related to printing"@en ;
+        skos:notation   "1812" .
+
+isic:182  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Reproduction of recorded media"@en ;
+        skos:notation   "182" .
+
+isic:1820  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Reproduction of recorded media"@en ;
+        skos:notation   "1820" .
+
+isic:19  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of coke and refined petroleum products"@en ;
+        skos:notation   "19" .
+
+isic:191  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of coke oven products"@en ;
+        skos:notation   "191" .
+
+isic:1910  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of coke oven products"@en ;
+        skos:notation   "1910" .
+
+isic:192  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of refined petroleum products"@en ;
+        skos:notation   "192" .
+
+isic:1920  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of refined petroleum products"@en ;
+        skos:notation   "1920" .
+
+isic:20  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of chemicals and chemical products"@en ;
+        skos:notation   "20" .
+
+isic:201  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic chemicals, fertilizers and nitrogen compounds, plastics and synthetic rubber in primary forms"@en ;
+        skos:notation   "201" .
+
+isic:2011  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic chemicals"@en ;
+        skos:notation   "2011" .
+
+isic:2012  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of fertilizers and nitrogen compounds"@en ;
+        skos:notation   "2012" .
+
+isic:2013  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of plastics and synthetic rubber in primary forms"@en ;
+        skos:notation   "2013" .
+
+isic:202  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other chemical products"@en ;
+        skos:notation   "202" .
+
+isic:2021  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of pesticides and other agrochemical products"@en ;
+        skos:notation   "2021" .
+
+isic:2022  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of paints, varnishes and similar coatings, printing ink and mastics"@en ;
+        skos:notation   "2022" .
+
+isic:2023  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations"@en ;
+        skos:notation   "2023" .
+
+isic:2029  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other chemical products n.e.c."@en ;
+        skos:notation   "2029" .
+
+isic:203  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of man-made fibres"@en ;
+        skos:notation   "203" .
+
+isic:2030  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of man-made fibres"@en ;
+        skos:notation   "2030" .
+
+isic:21  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic pharmaceutical products and pharmaceutical preparations"@en ;
+        skos:notation   "21" .
+
+isic:210  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of pharmaceuticals, medicinal chemical and botanical products"@en ;
+        skos:notation   "210" .
+
+isic:2100  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of pharmaceuticals, medicinal chemical and botanical products"@en ;
+        skos:notation   "2100" .
+
+isic:22  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of rubber and plastics products"@en ;
+        skos:notation   "22" .
+
+isic:221  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of rubber products"@en ;
+        skos:notation   "221" .
+
+isic:2211  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres"@en ;
+        skos:notation   "2211" .
+
+isic:2219  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other rubber products"@en ;
+        skos:notation   "2219" .
+
+isic:222  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of plastics products"@en ;
+        skos:notation   "222" .
+
+isic:2220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of plastics products"@en ;
+        skos:notation   "2220" .
+
+isic:23  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other non-metallic mineral products"@en ;
+        skos:notation   "23" .
+
+isic:231  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of glass and glass products"@en ;
+        skos:notation   "231" .
+
+isic:2310  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of glass and glass products"@en ;
+        skos:notation   "2310" .
+
+isic:239  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of non-metallic mineral products n.e.c."@en ;
+        skos:notation   "239" .
+
+isic:2391  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of refractory products"@en ;
+        skos:notation   "2391" .
+
+isic:2392  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of clay building materials"@en ;
+        skos:notation   "2392" .
+
+isic:2393  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other porcelain and ceramic products"@en ;
+        skos:notation   "2393" .
+
+isic:2394  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of cement, lime and plaster"@en ;
+        skos:notation   "2394" .
+
+isic:2395  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of articles of concrete, cement and plaster"@en ;
+        skos:notation   "2395" .
+
+isic:2396  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Cutting, shaping and finishing of stone"@en ;
+        skos:notation   "2396" .
+
+isic:2399  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other non-metallic mineral products n.e.c."@en ;
+        skos:notation   "2399" .
+
+isic:24  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic metals"@en ;
+        skos:notation   "24" .
+
+isic:241  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic iron and steel"@en ;
+        skos:notation   "241" .
+
+isic:2410  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic iron and steel"@en ;
+        skos:notation   "2410" .
+
+isic:242  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic precious and other non-ferrous metals"@en ;
+        skos:notation   "242" .
+
+isic:2420  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of basic precious and other non-ferrous metals"@en ;
+        skos:notation   "2420" .
+
+isic:243  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Casting of metals"@en ;
+        skos:notation   "243" .
+
+isic:2431  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Casting of iron and steel"@en ;
+        skos:notation   "2431" .
+
+isic:2432  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Casting of non-ferrous metals"@en ;
+        skos:notation   "2432" .
+
+isic:25  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of fabricated metal products, except machinery and equipment"@en ;
+        skos:notation   "25" .
+
+isic:251  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of structural metal products, tanks, reservoirs and steam generators"@en ;
+        skos:notation   "251" .
+
+isic:2511  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of structural metal products"@en ;
+        skos:notation   "2511" .
+
+isic:2512  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of tanks, reservoirs and containers of metal"@en ;
+        skos:notation   "2512" .
+
+isic:2513  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of steam generators, except central heating hot water boilers"@en ;
+        skos:notation   "2513" .
+
+isic:252  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of weapons and ammunition"@en ;
+        skos:notation   "252" .
+
+isic:2520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of weapons and ammunition"@en ;
+        skos:notation   "2520" .
+
+isic:259  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other fabricated metal products; metalworking service activities"@en ;
+        skos:notation   "259" .
+
+isic:2591  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Forging, pressing, stamping and roll-forming of metal; powder metallurgy"@en ;
+        skos:notation   "2591" .
+
+isic:2592  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Treatment and coating of metals; machining"@en ;
+        skos:notation   "2592" .
+
+isic:2593  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of cutlery, hand tools and general hardware"@en ;
+        skos:notation   "2593" .
+
+isic:2599  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other fabricated metal products n.e.c."@en ;
+        skos:notation   "2599" .
+
+isic:26  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of computer, electronic and optical products"@en ;
+        skos:notation   "26" .
+
+isic:261  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electronic components and boards"@en ;
+        skos:notation   "261" .
+
+isic:2610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electronic components and boards"@en ;
+        skos:notation   "2610" .
+
+isic:262  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of computers and peripheral equipment"@en ;
+        skos:notation   "262" .
+
+isic:2620  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of computers and peripheral equipment"@en ;
+        skos:notation   "2620" .
+
+isic:263  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of communication equipment"@en ;
+        skos:notation   "263" .
+
+isic:2630  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of communication equipment"@en ;
+        skos:notation   "2630" .
+
+isic:264  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of consumer electronics"@en ;
+        skos:notation   "264" .
+
+isic:2640  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of consumer electronics"@en ;
+        skos:notation   "2640" .
+
+isic:265  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of measuring, testing, navigating and control equipment; watches and clocks"@en ;
+        skos:notation   "265" .
+
+isic:2651  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of measuring, testing, navigating and control equipment"@en ;
+        skos:notation   "2651" .
+
+isic:2652  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of watches and clocks"@en ;
+        skos:notation   "2652" .
+
+isic:266  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of irradiation, electromedical and electrotherapeutic equipment"@en ;
+        skos:notation   "266" .
+
+isic:2660  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of irradiation, electromedical and electrotherapeutic equipment"@en ;
+        skos:notation   "2660" .
+
+isic:267  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of optical instruments and photographic equipment"@en ;
+        skos:notation   "267" .
+
+isic:2670  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of optical instruments and photographic equipment"@en ;
+        skos:notation   "2670" .
+
+isic:268  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of magnetic and optical media"@en ;
+        skos:notation   "268" .
+
+isic:2680  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of magnetic and optical media"@en ;
+        skos:notation   "2680" .
+
+isic:27  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electrical equipment"@en ;
+        skos:notation   "27" .
+
+isic:271  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus"@en ;
+        skos:notation   "271" .
+
+isic:2710  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus"@en ;
+        skos:notation   "2710" .
+
+isic:272  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of batteries and accumulators"@en ;
+        skos:notation   "272" .
+
+isic:2720  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of batteries and accumulators"@en ;
+        skos:notation   "2720" .
+
+isic:273  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wiring and wiring devices"@en ;
+        skos:notation   "273" .
+
+isic:2731  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of fibre optic cables"@en ;
+        skos:notation   "2731" .
+
+isic:2732  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other electronic and electric wires and cables"@en ;
+        skos:notation   "2732" .
+
+isic:2733  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of wiring devices"@en ;
+        skos:notation   "2733" .
+
+isic:274  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electric lighting equipment"@en ;
+        skos:notation   "274" .
+
+isic:2740  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of electric lighting equipment"@en ;
+        skos:notation   "2740" .
+
+isic:275  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of domestic appliances"@en ;
+        skos:notation   "275" .
+
+isic:2750  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of domestic appliances"@en ;
+        skos:notation   "2750" .
+
+isic:279  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other electrical equipment"@en ;
+        skos:notation   "279" .
+
+isic:2790  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other electrical equipment"@en ;
+        skos:notation   "2790" .
+
+isic:28  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of machinery and equipment n.e.c."@en ;
+        skos:notation   "28" .
+
+isic:281  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of general-purpose machinery"@en ;
+        skos:notation   "281" .
+
+isic:2811  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of engines and turbines, except aircraft, vehicle and cycle engines"@en ;
+        skos:notation   "2811" .
+
+isic:2812  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of fluid power equipment"@en ;
+        skos:notation   "2812" .
+
+isic:2813  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other pumps, compressors, taps and valves"@en ;
+        skos:notation   "2813" .
+
+isic:2814  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of bearings, gears, gearing and driving elements"@en ;
+        skos:notation   "2814" .
+
+isic:2815  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of ovens, furnaces and furnace burners"@en ;
+        skos:notation   "2815" .
+
+isic:2816  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of lifting and handling equipment"@en ;
+        skos:notation   "2816" .
+
+isic:2817  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of office machinery and equipment (except computers and peripheral equipment)"@en ;
+        skos:notation   "2817" .
+
+isic:2818  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of power-driven hand tools"@en ;
+        skos:notation   "2818" .
+
+isic:2819  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other general-purpose machinery"@en ;
+        skos:notation   "2819" .
+
+isic:282  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of special-purpose machinery"@en ;
+        skos:notation   "282" .
+
+isic:2821  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of agricultural and forestry machinery"@en ;
+        skos:notation   "2821" .
+
+isic:2822  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of metal-forming machinery and machine tools"@en ;
+        skos:notation   "2822" .
+
+isic:2823  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of machinery for metallurgy"@en ;
+        skos:notation   "2823" .
+
+isic:2824  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of machinery for mining, quarrying and construction"@en ;
+        skos:notation   "2824" .
+
+isic:2825  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of machinery for food, beverage and tobacco processing"@en ;
+        skos:notation   "2825" .
+
+isic:2826  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of machinery for textile, apparel and leather production"@en ;
+        skos:notation   "2826" .
+
+isic:2829  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other special-purpose machinery"@en ;
+        skos:notation   "2829" .
+
+isic:29  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of motor vehicles, trailers and semi-trailers"@en ;
+        skos:notation   "29" .
+
+isic:291  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of motor vehicles"@en ;
+        skos:notation   "291" .
+
+isic:2910  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of motor vehicles"@en ;
+        skos:notation   "2910" .
+
+isic:292  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"@en ;
+        skos:notation   "292" .
+
+isic:2920  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"@en ;
+        skos:notation   "2920" .
+
+isic:293  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of parts and accessories for motor vehicles"@en ;
+        skos:notation   "293" .
+
+isic:2930  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of parts and accessories for motor vehicles"@en ;
+        skos:notation   "2930" .
+
+isic:30  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other transport equipment"@en ;
+        skos:notation   "30" .
+
+isic:301  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Building of ships and boats"@en ;
+        skos:notation   "301" .
+
+isic:3011  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Building of ships and floating structures"@en ;
+        skos:notation   "3011" .
+
+isic:3012  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Building of pleasure and sporting boats"@en ;
+        skos:notation   "3012" .
+
+isic:302  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of railway locomotives and rolling stock"@en ;
+        skos:notation   "302" .
+
+isic:3020  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of railway locomotives and rolling stock"@en ;
+        skos:notation   "3020" .
+
+isic:303  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of air and spacecraft and related machinery"@en ;
+        skos:notation   "303" .
+
+isic:3030  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of air and spacecraft and related machinery"@en ;
+        skos:notation   "3030" .
+
+isic:304  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of military fighting vehicles"@en ;
+        skos:notation   "304" .
+
+isic:3040  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of military fighting vehicles"@en ;
+        skos:notation   "3040" .
+
+isic:309  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of transport equipment n.e.c."@en ;
+        skos:notation   "309" .
+
+isic:3091  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of motorcycles"@en ;
+        skos:notation   "3091" .
+
+isic:3092  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of bicycles and invalid carriages"@en ;
+        skos:notation   "3092" .
+
+isic:3099  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of other transport equipment n.e.c."@en ;
+        skos:notation   "3099" .
+
+isic:31  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of furniture"@en ;
+        skos:notation   "31" .
+
+isic:310  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of furniture"@en ;
+        skos:notation   "310" .
+
+isic:3100  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of furniture"@en ;
+        skos:notation   "3100" .
+
+isic:32  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other manufacturing"@en ;
+        skos:notation   "32" .
+
+isic:321  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of jewellery, bijouterie and related articles"@en ;
+        skos:notation   "321" .
+
+isic:3211  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of jewellery and related articles"@en ;
+        skos:notation   "3211" .
+
+isic:3212  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of imitation jewellery and related articles"@en ;
+        skos:notation   "3212" .
+
+isic:322  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of musical instruments"@en ;
+        skos:notation   "322" .
+
+isic:3220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of musical instruments"@en ;
+        skos:notation   "3220" .
+
+isic:323  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of sports goods"@en ;
+        skos:notation   "323" .
+
+isic:3230  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of sports goods"@en ;
+        skos:notation   "3230" .
+
+isic:324  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of games and toys"@en ;
+        skos:notation   "324" .
+
+isic:3240  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of games and toys"@en ;
+        skos:notation   "3240" .
+
+isic:325  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of medical and dental instruments and supplies"@en ;
+        skos:notation   "325" .
+
+isic:3250  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of medical and dental instruments and supplies"@en ;
+        skos:notation   "3250" .
+
+isic:329  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other manufacturing n.e.c."@en ;
+        skos:notation   "329" .
+
+isic:3290  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other manufacturing n.e.c."@en ;
+        skos:notation   "3290" .
+
+isic:33  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair and installation of machinery and equipment"@en ;
+        skos:notation   "33" .
+
+isic:331  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of fabricated metal products, machinery and equipment"@en ;
+        skos:notation   "331" .
+
+isic:3311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of fabricated metal products"@en ;
+        skos:notation   "3311" .
+
+isic:3312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of machinery"@en ;
+        skos:notation   "3312" .
+
+isic:3313  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of electronic and optical equipment"@en ;
+        skos:notation   "3313" .
+
+isic:3314  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of electrical equipment"@en ;
+        skos:notation   "3314" .
+
+isic:3315  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of transport equipment, except motor vehicles"@en ;
+        skos:notation   "3315" .
+
+isic:3319  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of other equipment"@en ;
+        skos:notation   "3319" .
+
+isic:332  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Installation of industrial machinery and equipment"@en ;
+        skos:notation   "332" .
+
+isic:3320  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Installation of industrial machinery and equipment"@en ;
+        skos:notation   "3320" .
+
+isic:D  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electricity, gas, steam and air conditioning supply"@en ;
+        skos:notation   "D" .
+
+isic:35  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electricity, gas, steam and air conditioning supply"@en ;
+        skos:notation   "35" .
+
+isic:351  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electric power generation, transmission and distribution"@en ;
+        skos:notation   "351" .
+
+isic:3510  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electric power generation, transmission and distribution"@en ;
+        skos:notation   "3510" .
+
+isic:352  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of gas; distribution of gaseous fuels through mains"@en ;
+        skos:notation   "352" .
+
+isic:3520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Manufacture of gas; distribution of gaseous fuels through mains"@en ;
+        skos:notation   "3520" .
+
+isic:353  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Steam and air conditioning supply"@en ;
+        skos:notation   "353" .
+
+isic:3530  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Steam and air conditioning supply"@en ;
+        skos:notation   "3530" .
+
+isic:E  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Water supply; sewerage, waste management and remediation activities"@en ;
+        skos:notation   "E" .
+
+isic:36  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Water collection, treatment and supply"@en ;
+        skos:notation   "36" .
+
+isic:360  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Water collection, treatment and supply"@en ;
+        skos:notation   "360" .
+
+isic:3600  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Water collection, treatment and supply"@en ;
+        skos:notation   "3600" .
+
+isic:37  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sewerage"@en ;
+        skos:notation   "37" .
+
+isic:370  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sewerage"@en ;
+        skos:notation   "370" .
+
+isic:3700  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sewerage"@en ;
+        skos:notation   "3700" .
+
+isic:38  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Waste collection, treatment and disposal activities; materials recovery"@en ;
+        skos:notation   "38" .
+
+isic:381  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Waste collection"@en ;
+        skos:notation   "381" .
+
+isic:3811  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Collection of non-hazardous waste"@en ;
+        skos:notation   "3811" .
+
+isic:3812  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Collection of hazardous waste"@en ;
+        skos:notation   "3812" .
+
+isic:382  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Waste treatment and disposal"@en ;
+        skos:notation   "382" .
+
+isic:3821  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Treatment and disposal of non-hazardous waste"@en ;
+        skos:notation   "3821" .
+
+isic:3822  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Treatment and disposal of hazardous waste"@en ;
+        skos:notation   "3822" .
+
+isic:383  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Materials recovery"@en ;
+        skos:notation   "383" .
+
+isic:3830  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Materials recovery"@en ;
+        skos:notation   "3830" .
+
+isic:39  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Remediation activities and other waste management services"@en ;
+        skos:notation   "39" .
+
+isic:390  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Remediation activities and other waste management services"@en ;
+        skos:notation   "390" .
+
+isic:3900  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Remediation activities and other waste management services"@en ;
+        skos:notation   "3900" .
+
+isic:F  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction"@en ;
+        skos:notation   "F" .
+
+isic:41  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of buildings"@en ;
+        skos:notation   "41" .
+
+isic:410  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of buildings"@en ;
+        skos:notation   "410" .
+
+isic:4100  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of buildings"@en ;
+        skos:notation   "4100" .
+
+isic:42  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Civil engineering"@en ;
+        skos:notation   "42" .
+
+isic:421  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of roads and railways"@en ;
+        skos:notation   "421" .
+
+isic:4210  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of roads and railways"@en ;
+        skos:notation   "4210" .
+
+isic:422  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of utility projects"@en ;
+        skos:notation   "422" .
+
+isic:4220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of utility projects"@en ;
+        skos:notation   "4220" .
+
+isic:429  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of other civil engineering projects"@en ;
+        skos:notation   "429" .
+
+isic:4290  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Construction of other civil engineering projects"@en ;
+        skos:notation   "4290" .
+
+isic:43  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Specialized construction activities"@en ;
+        skos:notation   "43" .
+
+isic:431  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Demolition and site preparation"@en ;
+        skos:notation   "431" .
+
+isic:4311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Demolition"@en ;
+        skos:notation   "4311" .
+
+isic:4312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Site preparation"@en ;
+        skos:notation   "4312" .
+
+isic:432  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electrical, plumbing and other construction installation activities"@en ;
+        skos:notation   "432" .
+
+isic:4321  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Electrical installation"@en ;
+        skos:notation   "4321" .
+
+isic:4322  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Plumbing, heat and air-conditioning installation"@en ;
+        skos:notation   "4322" .
+
+isic:4329  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other construction installation"@en ;
+        skos:notation   "4329" .
+
+isic:433  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Building completion and finishing"@en ;
+        skos:notation   "433" .
+
+isic:4330  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Building completion and finishing"@en ;
+        skos:notation   "4330" .
+
+isic:439  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other specialized construction activities"@en ;
+        skos:notation   "439" .
+
+isic:4390  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other specialized construction activities"@en ;
+        skos:notation   "4390" .
+
+isic:G  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale and retail trade; repair of motor vehicles and motorcycles"@en ;
+        skos:notation   "G" .
+
+isic:45  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale and retail trade and repair of motor vehicles and motorcycles"@en ;
+        skos:notation   "45" .
+
+isic:451  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale of motor vehicles"@en ;
+        skos:notation   "451" .
+
+isic:4510  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale of motor vehicles"@en ;
+        skos:notation   "4510" .
+
+isic:452  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Maintenance and repair of motor vehicles"@en ;
+        skos:notation   "452" .
+
+isic:4520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Maintenance and repair of motor vehicles"@en ;
+        skos:notation   "4520" .
+
+isic:453  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale of motor vehicle parts and accessories"@en ;
+        skos:notation   "453" .
+
+isic:4530  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale of motor vehicle parts and accessories"@en ;
+        skos:notation   "4530" .
+
+isic:454  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale, maintenance and repair of motorcycles and related parts and accessories"@en ;
+        skos:notation   "454" .
+
+isic:4540  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sale, maintenance and repair of motorcycles and related parts and accessories"@en ;
+        skos:notation   "4540" .
+
+isic:46  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale trade, except of motor vehicles and motorcycles"@en ;
+        skos:notation   "46" .
+
+isic:461  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale on a fee or contract basis"@en ;
+        skos:notation   "461" .
+
+isic:4610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale on a fee or contract basis"@en ;
+        skos:notation   "4610" .
+
+isic:462  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of agricultural raw materials and live animals"@en ;
+        skos:notation   "462" .
+
+isic:4620  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of agricultural raw materials and live animals"@en ;
+        skos:notation   "4620" .
+
+isic:463  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of food, beverages and tobacco"@en ;
+        skos:notation   "463" .
+
+isic:4630  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of food, beverages and tobacco"@en ;
+        skos:notation   "4630" .
+
+isic:464  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of household goods"@en ;
+        skos:notation   "464" .
+
+isic:4641  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of textiles, clothing and footwear"@en ;
+        skos:notation   "4641" .
+
+isic:4649  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of other household goods"@en ;
+        skos:notation   "4649" .
+
+isic:465  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of machinery, equipment and supplies"@en ;
+        skos:notation   "465" .
+
+isic:4651  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of computers, computer peripheral equipment and software"@en ;
+        skos:notation   "4651" .
+
+isic:4652  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of electronic and telecommunications equipment and parts"@en ;
+        skos:notation   "4652" .
+
+isic:4653  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of agricultural machinery, equipment and supplies"@en ;
+        skos:notation   "4653" .
+
+isic:4659  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of other machinery and equipment"@en ;
+        skos:notation   "4659" .
+
+isic:466  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other specialized wholesale"@en ;
+        skos:notation   "466" .
+
+isic:4661  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of solid, liquid and gaseous fuels and related products"@en ;
+        skos:notation   "4661" .
+
+isic:4662  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of metals and metal ores"@en ;
+        skos:notation   "4662" .
+
+isic:4663  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of construction materials, hardware, plumbing and heating equipment and supplies"@en ;
+        skos:notation   "4663" .
+
+isic:4669  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wholesale of waste and scrap and other products n.e.c."@en ;
+        skos:notation   "4669" .
+
+isic:469  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Non-specialized wholesale trade"@en ;
+        skos:notation   "469" .
+
+isic:4690  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Non-specialized wholesale trade"@en ;
+        skos:notation   "4690" .
+
+isic:47  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail trade, except of motor vehicles and motorcycles"@en ;
+        skos:notation   "47" .
+
+isic:471  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale in non-specialized stores"@en ;
+        skos:notation   "471" .
+
+isic:4711  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale in non-specialized stores with food, beverages or tobacco predominating"@en ;
+        skos:notation   "4711" .
+
+isic:4719  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other retail sale in non-specialized stores"@en ;
+        skos:notation   "4719" .
+
+isic:472  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of food, beverages and tobacco in specialized stores"@en ;
+        skos:notation   "472" .
+
+isic:4721  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of food in specialized stores"@en ;
+        skos:notation   "4721" .
+
+isic:4722  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of beverages in specialized stores"@en ;
+        skos:notation   "4722" .
+
+isic:4723  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of tobacco products in specialized stores"@en ;
+        skos:notation   "4723" .
+
+isic:473  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of automotive fuel in specialized stores"@en ;
+        skos:notation   "473" .
+
+isic:4730  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of automotive fuel in specialized stores"@en ;
+        skos:notation   "4730" .
+
+isic:474  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of information and communications equipment in specialized stores"@en ;
+        skos:notation   "474" .
+
+isic:4741  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of computers, peripheral units, software and telecommunications equipment in specialized stores"@en ;
+        skos:notation   "4741" .
+
+isic:4742  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of audio and video equipment in specialized stores"@en ;
+        skos:notation   "4742" .
+
+isic:475  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of other household equipment in specialized stores"@en ;
+        skos:notation   "475" .
+
+isic:4751  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of textiles in specialized stores"@en ;
+        skos:notation   "4751" .
+
+isic:4752  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of hardware, paints and glass in specialized stores"@en ;
+        skos:notation   "4752" .
+
+isic:4753  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of carpets, rugs, wall and floor coverings in specialized stores"@en ;
+        skos:notation   "4753" .
+
+isic:4759  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of electrical household appliances, furniture, lighting equipment and other household articles in specialized stores"@en ;
+        skos:notation   "4759" .
+
+isic:476  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of cultural and recreation goods in specialized stores"@en ;
+        skos:notation   "476" .
+
+isic:4761  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of books, newspapers and stationary in specialized stores"@en ;
+        skos:notation   "4761" .
+
+isic:4762  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of music and video recordings in specialized stores"@en ;
+        skos:notation   "4762" .
+
+isic:4763  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of sporting equipment in specialized stores"@en ;
+        skos:notation   "4763" .
+
+isic:4764  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of games and toys in specialized stores"@en ;
+        skos:notation   "4764" .
+
+isic:477  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of other goods in specialized stores"@en ;
+        skos:notation   "477" .
+
+isic:4771  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of clothing, footwear and leather articles in specialized stores"@en ;
+        skos:notation   "4771" .
+
+isic:4772  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles in specialized stores"@en ;
+        skos:notation   "4772" .
+
+isic:4773  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other retail sale of new goods in specialized stores"@en ;
+        skos:notation   "4773" .
+
+isic:4774  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale of second-hand goods"@en ;
+        skos:notation   "4774" .
+
+isic:478  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale via stalls and markets"@en ;
+        skos:notation   "478" .
+
+isic:4781  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale via stalls and markets of food, beverages and tobacco products"@en ;
+        skos:notation   "4781" .
+
+isic:4782  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale via stalls and markets of textiles, clothing and footwear"@en ;
+        skos:notation   "4782" .
+
+isic:4789  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale via stalls and markets of other goods"@en ;
+        skos:notation   "4789" .
+
+isic:479  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail trade not in stores, stalls or markets"@en ;
+        skos:notation   "479" .
+
+isic:4791  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Retail sale via mail order houses or via Internet"@en ;
+        skos:notation   "4791" .
+
+isic:4799  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other retail sale not in stores, stalls or markets"@en ;
+        skos:notation   "4799" .
+
+isic:H  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Transportation and storage"@en ;
+        skos:notation   "H" .
+
+isic:49  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Land transport and transport via pipelines"@en ;
+        skos:notation   "49" .
+
+isic:491  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Transport via railways"@en ;
+        skos:notation   "491" .
+
+isic:4911  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Passenger rail transport, interurban"@en ;
+        skos:notation   "4911" .
+
+isic:4912  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freight rail transport"@en ;
+        skos:notation   "4912" .
+
+isic:492  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other land transport"@en ;
+        skos:notation   "492" .
+
+isic:4921  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Urban and suburban passenger land transport"@en ;
+        skos:notation   "4921" .
+
+isic:4922  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other passenger land transport"@en ;
+        skos:notation   "4922" .
+
+isic:4923  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freight transport by road"@en ;
+        skos:notation   "4923" .
+
+isic:493  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Transport via pipeline"@en ;
+        skos:notation   "493" .
+
+isic:4930  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Transport via pipeline"@en ;
+        skos:notation   "4930" .
+
+isic:50  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Water transport"@en ;
+        skos:notation   "50" .
+
+isic:501  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sea and coastal water transport"@en ;
+        skos:notation   "501" .
+
+isic:5011  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sea and coastal passenger water transport"@en ;
+        skos:notation   "5011" .
+
+isic:5012  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sea and coastal freight water transport"@en ;
+        skos:notation   "5012" .
+
+isic:502  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Inland water transport"@en ;
+        skos:notation   "502" .
+
+isic:5021  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Inland passenger water transport"@en ;
+        skos:notation   "5021" .
+
+isic:5022  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Inland freight water transport"@en ;
+        skos:notation   "5022" .
+
+isic:51  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Air transport"@en ;
+        skos:notation   "51" .
+
+isic:511  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Passenger air transport"@en ;
+        skos:notation   "511" .
+
+isic:5110  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Passenger air transport"@en ;
+        skos:notation   "5110" .
+
+isic:512  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freight air transport"@en ;
+        skos:notation   "512" .
+
+isic:5120  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Freight air transport"@en ;
+        skos:notation   "5120" .
+
+isic:52  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Warehousing and support activities for transportation"@en ;
+        skos:notation   "52" .
+
+isic:521  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Warehousing and storage"@en ;
+        skos:notation   "521" .
+
+isic:5210  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Warehousing and storage"@en ;
+        skos:notation   "5210" .
+
+isic:522  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Support activities for transportation"@en ;
+        skos:notation   "522" .
+
+isic:5221  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Service activities incidental to land transportation"@en ;
+        skos:notation   "5221" .
+
+isic:5222  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Service activities incidental to water transportation"@en ;
+        skos:notation   "5222" .
+
+isic:5223  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Service activities incidental to air transportation"@en ;
+        skos:notation   "5223" .
+
+isic:5224  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Cargo handling"@en ;
+        skos:notation   "5224" .
+
+isic:5229  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other transportation support activities"@en ;
+        skos:notation   "5229" .
+
+isic:53  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Postal and courier activities"@en ;
+        skos:notation   "53" .
+
+isic:531  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Postal activities"@en ;
+        skos:notation   "531" .
+
+isic:5310  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Postal activities"@en ;
+        skos:notation   "5310" .
+
+isic:532  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Courier activities"@en ;
+        skos:notation   "532" .
+
+isic:5320  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Courier activities"@en ;
+        skos:notation   "5320" .
+
+isic:I  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Accommodation and food service activities"@en ;
+        skos:notation   "I" .
+
+isic:55  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Accommodation"@en ;
+        skos:notation   "55" .
+
+isic:551  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Short term accommodation activities"@en ;
+        skos:notation   "551" .
+
+isic:5510  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Short term accommodation activities"@en ;
+        skos:notation   "5510" .
+
+isic:552  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Camping grounds, recreational vehicle parks and trailer parks"@en ;
+        skos:notation   "552" .
+
+isic:5520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Camping grounds, recreational vehicle parks and trailer parks"@en ;
+        skos:notation   "5520" .
+
+isic:559  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other accommodation"@en ;
+        skos:notation   "559" .
+
+isic:5590  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other accommodation"@en ;
+        skos:notation   "5590" .
+
+isic:56  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Food and beverage service activities"@en ;
+        skos:notation   "56" .
+
+isic:561  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Restaurants and mobile food service activities"@en ;
+        skos:notation   "561" .
+
+isic:5610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Restaurants and mobile food service activities"@en ;
+        skos:notation   "5610" .
+
+isic:562  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Event catering and other food service activities"@en ;
+        skos:notation   "562" .
+
+isic:5621  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Event catering"@en ;
+        skos:notation   "5621" .
+
+isic:5629  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other food service activities"@en ;
+        skos:notation   "5629" .
+
+isic:563  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Beverage serving activities"@en ;
+        skos:notation   "563" .
+
+isic:5630  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Beverage serving activities"@en ;
+        skos:notation   "5630" .
+
+isic:J  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Information and communication"@en ;
+        skos:notation   "J" .
+
+isic:58  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Publishing activities"@en ;
+        skos:notation   "58" .
+
+isic:581  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Publishing of books, periodicals and other publishing activities"@en ;
+        skos:notation   "581" .
+
+isic:5811  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Book publishing"@en ;
+        skos:notation   "5811" .
+
+isic:5812  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Publishing of directories and mailing lists"@en ;
+        skos:notation   "5812" .
+
+isic:5813  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Publishing of newspapers, journals and periodicals"@en ;
+        skos:notation   "5813" .
+
+isic:5819  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other publishing activities"@en ;
+        skos:notation   "5819" .
+
+isic:582  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Software publishing"@en ;
+        skos:notation   "582" .
+
+isic:5820  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Software publishing"@en ;
+        skos:notation   "5820" .
+
+isic:59  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture, video and television programme production, sound recording and music publishing activities"@en ;
+        skos:notation   "59" .
+
+isic:591  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture, video and television programme activities"@en ;
+        skos:notation   "591" .
+
+isic:5911  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture, video and television programme production activities"@en ;
+        skos:notation   "5911" .
+
+isic:5912  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture, video and television programme post-production activities"@en ;
+        skos:notation   "5912" .
+
+isic:5913  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture, video and television programme distribution activities"@en ;
+        skos:notation   "5913" .
+
+isic:5914  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Motion picture projection activities"@en ;
+        skos:notation   "5914" .
+
+isic:592  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sound recording and music publishing activities"@en ;
+        skos:notation   "592" .
+
+isic:5920  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sound recording and music publishing activities"@en ;
+        skos:notation   "5920" .
+
+isic:60  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Programming and broadcasting activities"@en ;
+        skos:notation   "60" .
+
+isic:601  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Radio broadcasting"@en ;
+        skos:notation   "601" .
+
+isic:6010  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Radio broadcasting"@en ;
+        skos:notation   "6010" .
+
+isic:602  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Television programming and broadcasting activities"@en ;
+        skos:notation   "602" .
+
+isic:6020  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Television programming and broadcasting activities"@en ;
+        skos:notation   "6020" .
+
+isic:61  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Telecommunications"@en ;
+        skos:notation   "61" .
+
+isic:611  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wired telecommunications activities"@en ;
+        skos:notation   "611" .
+
+isic:6110  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wired telecommunications activities"@en ;
+        skos:notation   "6110" .
+
+isic:612  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wireless telecommunications activities"@en ;
+        skos:notation   "612" .
+
+isic:6120  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Wireless telecommunications activities"@en ;
+        skos:notation   "6120" .
+
+isic:613  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Satellite telecommunications activities"@en ;
+        skos:notation   "613" .
+
+isic:6130  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Satellite telecommunications activities"@en ;
+        skos:notation   "6130" .
+
+isic:619  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other telecommunications activities"@en ;
+        skos:notation   "619" .
+
+isic:6190  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other telecommunications activities"@en ;
+        skos:notation   "6190" .
+
+isic:62  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Computer programming, consultancy and related activities"@en ;
+        skos:notation   "62" .
+
+isic:620  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Computer programming, consultancy and related activities"@en ;
+        skos:notation   "620" .
+
+isic:6201  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Computer programming activities"@en ;
+        skos:notation   "6201" .
+
+isic:6202  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Computer consultancy and computer facilities management activities"@en ;
+        skos:notation   "6202" .
+
+isic:6209  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other information technology and computer service activities"@en ;
+        skos:notation   "6209" .
+
+isic:63  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Information service activities"@en ;
+        skos:notation   "63" .
+
+isic:631  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Data processing, hosting and related activities; web portals"@en ;
+        skos:notation   "631" .
+
+isic:6311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Data processing, hosting and related activities"@en ;
+        skos:notation   "6311" .
+
+isic:6312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Web portals"@en ;
+        skos:notation   "6312" .
+
+isic:639  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other information service activities"@en ;
+        skos:notation   "639" .
+
+isic:6391  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "News agency activities"@en ;
+        skos:notation   "6391" .
+
+isic:6399  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other information service activities n.e.c."@en ;
+        skos:notation   "6399" .
+
+isic:K  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Financial and insurance activities"@en ;
+        skos:notation   "K" .
+
+isic:64  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Financial service activities, except insurance and pension funding"@en ;
+        skos:notation   "64" .
+
+isic:641  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Monetary intermediation"@en ;
+        skos:notation   "641" .
+
+isic:6411  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Central banking"@en ;
+        skos:notation   "6411" .
+
+isic:6419  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other monetary intermediation"@en ;
+        skos:notation   "6419" .
+
+isic:642  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of holding companies"@en ;
+        skos:notation   "642" .
+
+isic:6420  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of holding companies"@en ;
+        skos:notation   "6420" .
+
+isic:643  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Trusts, funds and similar financial entities"@en ;
+        skos:notation   "643" .
+
+isic:6430  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Trusts, funds and similar financial entities"@en ;
+        skos:notation   "6430" .
+
+isic:649  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other financial service activities, except insurance and pension funding activities"@en ;
+        skos:notation   "649" .
+
+isic:6491  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Financial leasing"@en ;
+        skos:notation   "6491" .
+
+isic:6492  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other credit granting"@en ;
+        skos:notation   "6492" .
+
+isic:6499  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other financial service activities, except insurance and pension funding activities, n.e.c."@en ;
+        skos:notation   "6499" .
+
+isic:65  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Insurance, reinsurance and pension funding, except compulsory social security"@en ;
+        skos:notation   "65" .
+
+isic:651  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Insurance"@en ;
+        skos:notation   "651" .
+
+isic:6511  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Life insurance"@en ;
+        skos:notation   "6511" .
+
+isic:6512  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Non-life insurance"@en ;
+        skos:notation   "6512" .
+
+isic:652  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Reinsurance"@en ;
+        skos:notation   "652" .
+
+isic:6520  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Reinsurance"@en ;
+        skos:notation   "6520" .
+
+isic:653  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Pension funding"@en ;
+        skos:notation   "653" .
+
+isic:6530  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Pension funding"@en ;
+        skos:notation   "6530" .
+
+isic:66  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities auxiliary to financial service and insurance activities"@en ;
+        skos:notation   "66" .
+
+isic:661  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities auxiliary to financial service activities, except insurance and pension funding"@en ;
+        skos:notation   "661" .
+
+isic:6611  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Administration of financial markets"@en ;
+        skos:notation   "6611" .
+
+isic:6612  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Security and commodity contracts brokerage"@en ;
+        skos:notation   "6612" .
+
+isic:6619  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other activities auxiliary to financial service activities"@en ;
+        skos:notation   "6619" .
+
+isic:662  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities auxiliary to insurance and pension funding"@en ;
+        skos:notation   "662" .
+
+isic:6621  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Risk and damage evaluation"@en ;
+        skos:notation   "6621" .
+
+isic:6622  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of insurance agents and brokers"@en ;
+        skos:notation   "6622" .
+
+isic:6629  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other activities auxiliary to insurance and pension funding"@en ;
+        skos:notation   "6629" .
+
+isic:663  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Fund management activities"@en ;
+        skos:notation   "663" .
+
+isic:6630  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Fund management activities"@en ;
+        skos:notation   "6630" .
+
+isic:L  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities"@en ;
+        skos:notation   "L" .
+
+isic:68  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities"@en ;
+        skos:notation   "68" .
+
+isic:681  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities with own or leased property"@en ;
+        skos:notation   "681" .
+
+isic:6810  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities with own or leased property"@en ;
+        skos:notation   "6810" .
+
+isic:682  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities on a fee or contract basis"@en ;
+        skos:notation   "682" .
+
+isic:6820  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Real estate activities on a fee or contract basis"@en ;
+        skos:notation   "6820" .
+
+isic:M  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Professional, scientific and technical activities"@en ;
+        skos:notation   "M" .
+
+isic:69  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Legal and accounting activities"@en ;
+        skos:notation   "69" .
+
+isic:691  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Legal activities"@en ;
+        skos:notation   "691" .
+
+isic:6910  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Legal activities"@en ;
+        skos:notation   "6910" .
+
+isic:692  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Accounting, bookkeeping and auditing activities; tax consultancy"@en ;
+        skos:notation   "692" .
+
+isic:6920  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Accounting, bookkeeping and auditing activities; tax consultancy"@en ;
+        skos:notation   "6920" .
+
+isic:70  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of head offices; management consultancy activities"@en ;
+        skos:notation   "70" .
+
+isic:701  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of head offices"@en ;
+        skos:notation   "701" .
+
+isic:7010  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of head offices"@en ;
+        skos:notation   "7010" .
+
+isic:702  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Management consultancy activities"@en ;
+        skos:notation   "702" .
+
+isic:7020  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Management consultancy activities"@en ;
+        skos:notation   "7020" .
+
+isic:71  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Architectural and engineering activities; technical testing and analysis"@en ;
+        skos:notation   "71" .
+
+isic:711  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Architectural and engineering activities and related technical consultancy"@en ;
+        skos:notation   "711" .
+
+isic:7110  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Architectural and engineering activities and related technical consultancy"@en ;
+        skos:notation   "7110" .
+
+isic:712  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Technical testing and analysis"@en ;
+        skos:notation   "712" .
+
+isic:7120  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Technical testing and analysis"@en ;
+        skos:notation   "7120" .
+
+isic:72  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Scientific research and development"@en ;
+        skos:notation   "72" .
+
+isic:721  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Research and experimental development on natural sciences and engineering"@en ;
+        skos:notation   "721" .
+
+isic:7210  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Research and experimental development on natural sciences and engineering"@en ;
+        skos:notation   "7210" .
+
+isic:722  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Research and experimental development on social sciences and humanities"@en ;
+        skos:notation   "722" .
+
+isic:7220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Research and experimental development on social sciences and humanities"@en ;
+        skos:notation   "7220" .
+
+isic:73  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Advertising and market research"@en ;
+        skos:notation   "73" .
+
+isic:731  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Advertising"@en ;
+        skos:notation   "731" .
+
+isic:7310  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Advertising"@en ;
+        skos:notation   "7310" .
+
+isic:732  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Market research and public opinion polling"@en ;
+        skos:notation   "732" .
+
+isic:7320  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Market research and public opinion polling"@en ;
+        skos:notation   "7320" .
+
+isic:74  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other professional, scientific and technical activities"@en ;
+        skos:notation   "74" .
+
+isic:741  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Specialized design activities"@en ;
+        skos:notation   "741" .
+
+isic:7410  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Specialized design activities"@en ;
+        skos:notation   "7410" .
+
+isic:742  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Photographic activities"@en ;
+        skos:notation   "742" .
+
+isic:7420  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Photographic activities"@en ;
+        skos:notation   "7420" .
+
+isic:749  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other professional, scientific and technical activities n.e.c."@en ;
+        skos:notation   "749" .
+
+isic:7490  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other professional, scientific and technical activities n.e.c."@en ;
+        skos:notation   "7490" .
+
+isic:75  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Veterinary activities"@en ;
+        skos:notation   "75" .
+
+isic:750  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Veterinary activities"@en ;
+        skos:notation   "750" .
+
+isic:7500  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Veterinary activities"@en ;
+        skos:notation   "7500" .
+
+isic:N  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Administrative and support service activities"@en ;
+        skos:notation   "N" .
+
+isic:77  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Rental and leasing activities"@en ;
+        skos:notation   "77" .
+
+isic:771  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of motor vehicles"@en ;
+        skos:notation   "771" .
+
+isic:7710  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of motor vehicles"@en ;
+        skos:notation   "7710" .
+
+isic:772  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of personal and household goods"@en ;
+        skos:notation   "772" .
+
+isic:7721  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of recreational and sports goods"@en ;
+        skos:notation   "7721" .
+
+isic:7722  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting of video tapes and disks"@en ;
+        skos:notation   "7722" .
+
+isic:7729  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of other personal and household goods"@en ;
+        skos:notation   "7729" .
+
+isic:773  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of other machinery, equipment and tangible goods"@en ;
+        skos:notation   "773" .
+
+isic:7730  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Renting and leasing of other machinery, equipment and tangible goods"@en ;
+        skos:notation   "7730" .
+
+isic:774  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Leasing of intellectual property and similar products, except copyrighted works"@en ;
+        skos:notation   "774" .
+
+isic:7740  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Leasing of intellectual property and similar products, except copyrighted works"@en ;
+        skos:notation   "7740" .
+
+isic:78  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Employment activities"@en ;
+        skos:notation   "78" .
+
+isic:781  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of employment placement agencies"@en ;
+        skos:notation   "781" .
+
+isic:7810  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of employment placement agencies"@en ;
+        skos:notation   "7810" .
+
+isic:782  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Temporary employment agency activities"@en ;
+        skos:notation   "782" .
+
+isic:7820  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Temporary employment agency activities"@en ;
+        skos:notation   "7820" .
+
+isic:783  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other human resources provision"@en ;
+        skos:notation   "783" .
+
+isic:7830  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other human resources provision"@en ;
+        skos:notation   "7830" .
+
+isic:79  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Travel agency, tour operator, reservation service and related activities"@en ;
+        skos:notation   "79" .
+
+isic:791  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Travel agency and tour operator activities"@en ;
+        skos:notation   "791" .
+
+isic:7911  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Travel agency activities"@en ;
+        skos:notation   "7911" .
+
+isic:7912  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Tour operator activities"@en ;
+        skos:notation   "7912" .
+
+isic:799  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other reservation service and related activities"@en ;
+        skos:notation   "799" .
+
+isic:7990  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other reservation service and related activities"@en ;
+        skos:notation   "7990" .
+
+isic:80  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Security and investigation activities"@en ;
+        skos:notation   "80" .
+
+isic:801  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Private security activities"@en ;
+        skos:notation   "801" .
+
+isic:8010  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Private security activities"@en ;
+        skos:notation   "8010" .
+
+isic:802  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Security systems service activities"@en ;
+        skos:notation   "802" .
+
+isic:8020  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Security systems service activities"@en ;
+        skos:notation   "8020" .
+
+isic:803  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Investigation activities"@en ;
+        skos:notation   "803" .
+
+isic:8030  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Investigation activities"@en ;
+        skos:notation   "8030" .
+
+isic:81  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Services to buildings and landscape activities"@en ;
+        skos:notation   "81" .
+
+isic:811  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Combined facilities support activities"@en ;
+        skos:notation   "811" .
+
+isic:8110  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Combined facilities support activities"@en ;
+        skos:notation   "8110" .
+
+isic:812  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Cleaning activities"@en ;
+        skos:notation   "812" .
+
+isic:8121  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "General cleaning of buildings"@en ;
+        skos:notation   "8121" .
+
+isic:8129  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other building and industrial cleaning activities"@en ;
+        skos:notation   "8129" .
+
+isic:813  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Landscape care and maintenance service activities"@en ;
+        skos:notation   "813" .
+
+isic:8130  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Landscape care and maintenance service activities"@en ;
+        skos:notation   "8130" .
+
+isic:82  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Office administrative, office support and other business support activities"@en ;
+        skos:notation   "82" .
+
+isic:821  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Office administrative and support activities"@en ;
+        skos:notation   "821" .
+
+isic:8211  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Combined office administrative service activities"@en ;
+        skos:notation   "8211" .
+
+isic:8219  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Photocopying, document preparation and other specialized office support activities"@en ;
+        skos:notation   "8219" .
+
+isic:822  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of call centres"@en ;
+        skos:notation   "822" .
+
+isic:8220  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of call centres"@en ;
+        skos:notation   "8220" .
+
+isic:823  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Organization of conventions and trade shows"@en ;
+        skos:notation   "823" .
+
+isic:8230  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Organization of conventions and trade shows"@en ;
+        skos:notation   "8230" .
+
+isic:829  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Business support service activities n.e.c."@en ;
+        skos:notation   "829" .
+
+isic:8291  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of collection agencies and credit bureaus"@en ;
+        skos:notation   "8291" .
+
+isic:8292  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Packaging activities"@en ;
+        skos:notation   "8292" .
+
+isic:8299  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other business support service activities n.e.c."@en ;
+        skos:notation   "8299" .
+
+isic:O  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Public administration and defence; compulsory social security"@en ;
+        skos:notation   "O" .
+
+isic:84  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Public administration and defence; compulsory social security"@en ;
+        skos:notation   "84" .
+
+isic:841  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Administration of the State and the economic and social policy of the community"@en ;
+        skos:notation   "841" .
+
+isic:8411  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "General public administration activities"@en ;
+        skos:notation   "8411" .
+
+isic:8412  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security"@en ;
+        skos:notation   "8412" .
+
+isic:8413  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Regulation of and contribution to more efficient operation of businesses"@en ;
+        skos:notation   "8413" .
+
+isic:842  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Provision of services to the community as a whole"@en ;
+        skos:notation   "842" .
+
+isic:8421  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Foreign affairs"@en ;
+        skos:notation   "8421" .
+
+isic:8422  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Defence activities"@en ;
+        skos:notation   "8422" .
+
+isic:8423  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Public order and safety activities"@en ;
+        skos:notation   "8423" .
+
+isic:843  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Compulsory social security activities"@en ;
+        skos:notation   "843" .
+
+isic:8430  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Compulsory social security activities"@en ;
+        skos:notation   "8430" .
+
+isic:P  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Education"@en ;
+        skos:notation   "P" .
+
+isic:85  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Education"@en ;
+        skos:notation   "85" .
+
+isic:851  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Pre-primary and primary education"@en ;
+        skos:notation   "851" .
+
+isic:8510  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Pre-primary and primary education"@en ;
+        skos:notation   "8510" .
+
+isic:852  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Secondary education"@en ;
+        skos:notation   "852" .
+
+isic:8521  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "General secondary education"@en ;
+        skos:notation   "8521" .
+
+isic:8522  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Technical and vocational secondary education"@en ;
+        skos:notation   "8522" .
+
+isic:853  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Higher education"@en ;
+        skos:notation   "853" .
+
+isic:8530  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Higher education"@en ;
+        skos:notation   "8530" .
+
+isic:854  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other education"@en ;
+        skos:notation   "854" .
+
+isic:8541  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sports and recreation education"@en ;
+        skos:notation   "8541" .
+
+isic:8542  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Cultural education"@en ;
+        skos:notation   "8542" .
+
+isic:8549  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other education n.e.c."@en ;
+        skos:notation   "8549" .
+
+isic:855  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Educational support activities"@en ;
+        skos:notation   "855" .
+
+isic:8550  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Educational support activities"@en ;
+        skos:notation   "8550" .
+
+isic:Q  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Human health and social work activities"@en ;
+        skos:notation   "Q" .
+
+isic:86  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Human health activities"@en ;
+        skos:notation   "86" .
+
+isic:861  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Hospital activities"@en ;
+        skos:notation   "861" .
+
+isic:8610  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Hospital activities"@en ;
+        skos:notation   "8610" .
+
+isic:862  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Medical and dental practice activities"@en ;
+        skos:notation   "862" .
+
+isic:8620  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Medical and dental practice activities"@en ;
+        skos:notation   "8620" .
+
+isic:869  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other human health activities"@en ;
+        skos:notation   "869" .
+
+isic:8690  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other human health activities"@en ;
+        skos:notation   "8690" .
+
+isic:87  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential care activities"@en ;
+        skos:notation   "87" .
+
+isic:871  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential nursing care facilities"@en ;
+        skos:notation   "871" .
+
+isic:8710  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential nursing care facilities"@en ;
+        skos:notation   "8710" .
+
+isic:872  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential care activities for mental retardation, mental health and substance abuse"@en ;
+        skos:notation   "872" .
+
+isic:8720  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential care activities for mental retardation, mental health and substance abuse"@en ;
+        skos:notation   "8720" .
+
+isic:873  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential care activities for the elderly and disabled"@en ;
+        skos:notation   "873" .
+
+isic:8730  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Residential care activities for the elderly and disabled"@en ;
+        skos:notation   "8730" .
+
+isic:879  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other residential care activities"@en ;
+        skos:notation   "879" .
+
+isic:8790  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other residential care activities"@en ;
+        skos:notation   "8790" .
+
+isic:88  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Social work activities without accommodation"@en ;
+        skos:notation   "88" .
+
+isic:881  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Social work activities without accommodation for the elderly and disabled"@en ;
+        skos:notation   "881" .
+
+isic:8810  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Social work activities without accommodation for the elderly and disabled"@en ;
+        skos:notation   "8810" .
+
+isic:889  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other social work activities without accommodation"@en ;
+        skos:notation   "889" .
+
+isic:8890  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other social work activities without accommodation"@en ;
+        skos:notation   "8890" .
+
+isic:R  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Arts, entertainment and recreation"@en ;
+        skos:notation   "R" .
+
+isic:90  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Creative, arts and entertainment activities"@en ;
+        skos:notation   "90" .
+
+isic:900  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Creative, arts and entertainment activities"@en ;
+        skos:notation   "900" .
+
+isic:9000  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Creative, arts and entertainment activities"@en ;
+        skos:notation   "9000" .
+
+isic:91  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Libraries, archives, museums and other cultural activities"@en ;
+        skos:notation   "91" .
+
+isic:910  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Libraries, archives, museums and other cultural activities"@en ;
+        skos:notation   "910" .
+
+isic:9101  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Library and archives activities"@en ;
+        skos:notation   "9101" .
+
+isic:9102  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Museums activities and operation of historical sites and buildings"@en ;
+        skos:notation   "9102" .
+
+isic:9103  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Botanical and zoological gardens and nature reserves activities"@en ;
+        skos:notation   "9103" .
+
+isic:92  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Gambling and betting activities"@en ;
+        skos:notation   "92" .
+
+isic:920  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Gambling and betting activities"@en ;
+        skos:notation   "920" .
+
+isic:9200  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Gambling and betting activities"@en ;
+        skos:notation   "9200" .
+
+isic:93  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sports activities and amusement and recreation activities"@en ;
+        skos:notation   "93" .
+
+isic:931  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Sports activities"@en ;
+        skos:notation   "931" .
+
+isic:9311  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Operation of sports facilities"@en ;
+        skos:notation   "9311" .
+
+isic:9312  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of sports clubs"@en ;
+        skos:notation   "9312" .
+
+isic:9319  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other sports activities"@en ;
+        skos:notation   "9319" .
+
+isic:932  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other amusement and recreation activities"@en ;
+        skos:notation   "932" .
+
+isic:9321  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of amusement parks and theme parks"@en ;
+        skos:notation   "9321" .
+
+isic:9329  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other amusement and recreation activities n.e.c."@en ;
+        skos:notation   "9329" .
+
+isic:S  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other service activities"@en ;
+        skos:notation   "S" .
+
+isic:94  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of membership organizations"@en ;
+        skos:notation   "94" .
+
+isic:941  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of business, employers and professional membership organizations"@en ;
+        skos:notation   "941" .
+
+isic:9411  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of business and employers membership organizations"@en ;
+        skos:notation   "9411" .
+
+isic:9412  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of professional membership organizations"@en ;
+        skos:notation   "9412" .
+
+isic:942  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of trade unions"@en ;
+        skos:notation   "942" .
+
+isic:9420  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of trade unions"@en ;
+        skos:notation   "9420" .
+
+isic:949  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of other membership organizations"@en ;
+        skos:notation   "949" .
+
+isic:9491  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of religious organizations"@en ;
+        skos:notation   "9491" .
+
+isic:9492  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of political organizations"@en ;
+        skos:notation   "9492" .
+
+isic:9499  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of other membership organizations n.e.c."@en ;
+        skos:notation   "9499" .
+
+isic:95  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of computers and personal and household goods"@en ;
+        skos:notation   "95" .
+
+isic:951  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of computers and communication equipment"@en ;
+        skos:notation   "951" .
+
+isic:9511  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of computers and peripheral equipment"@en ;
+        skos:notation   "9511" .
+
+isic:9512  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of communication equipment"@en ;
+        skos:notation   "9512" .
+
+isic:952  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of personal and household goods"@en ;
+        skos:notation   "952" .
+
+isic:9521  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of consumer electronics"@en ;
+        skos:notation   "9521" .
+
+isic:9522  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of household appliances and home and garden equipment"@en ;
+        skos:notation   "9522" .
+
+isic:9523  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of footwear and leather goods"@en ;
+        skos:notation   "9523" .
+
+isic:9524  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of furniture and home furnishings"@en ;
+        skos:notation   "9524" .
+
+isic:9529  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Repair of other personal and household goods"@en ;
+        skos:notation   "9529" .
+
+isic:96  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other personal service activities"@en ;
+        skos:notation   "96" .
+
+isic:960  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other personal service activities"@en ;
+        skos:notation   "960" .
+
+isic:9601  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Washing and (dry-) cleaning of textile and fur products"@en ;
+        skos:notation   "9601" .
+
+isic:9602  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Hairdressing and other beauty treatment"@en ;
+        skos:notation   "9602" .
+
+isic:9603  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Funeral and related activities"@en ;
+        skos:notation   "9603" .
+
+isic:9609  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Other personal service activities n.e.c."@en ;
+        skos:notation   "9609" .
+
+isic:T  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use"@en ;
+        skos:notation   "T" .
+
+isic:97  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of households as employers of domestic personnel"@en ;
+        skos:notation   "97" .
+
+isic:970  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of households as employers of domestic personnel"@en ;
+        skos:notation   "970" .
+
+isic:9700  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of households as employers of domestic personnel"@en ;
+        skos:notation   "9700" .
+
+isic:98  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Undifferentiated goods- and services-producing activities of private households for own use"@en ;
+        skos:notation   "98" .
+
+isic:981  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Undifferentiated goods-producing activities of private households for own use"@en ;
+        skos:notation   "981" .
+
+isic:9810  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Undifferentiated goods-producing activities of private households for own use"@en ;
+        skos:notation   "9810" .
+
+isic:982  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Undifferentiated service-producing activities of private households for own use"@en ;
+        skos:notation   "982" .
+
+isic:9820  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Undifferentiated service-producing activities of private households for own use"@en ;
+        skos:notation   "9820" .
+
+isic:U  rdf:type        skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of extraterritorial organizations and bodies"@en ;
+        skos:notation   "U" .
+
+isic:99  rdf:type       skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of extraterritorial organizations and bodies"@en ;
+        skos:notation   "99" .
+
+isic:990  rdf:type      skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of extraterritorial organizations and bodies"@en ;
+        skos:notation   "990" .
+
+isic:9900  rdf:type     skos:Concept ;
+        skos:inScheme   isic: ;
+        skos:prefLabel  "Activities of extraterritorial organizations and bodies"@en ;
+        skos:notation   "9900" .

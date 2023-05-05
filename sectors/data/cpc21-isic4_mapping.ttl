@@ -1,0 +1,5112 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix cpc: <https://data.coypu.org/classification/cpc_v2.1/> .
+
+cpc:01111  skos:closeMatch  isic:0111 .
+
+cpc:01112  skos:closeMatch  isic:0111 .
+
+cpc:01121  skos:closeMatch  isic:0111 .
+
+cpc:01122  skos:closeMatch  isic:0111 .
+
+cpc:01131  skos:closeMatch  isic:0112 .
+
+cpc:01132  skos:closeMatch  isic:0112 .
+
+cpc:01141  skos:closeMatch  isic:0111 .
+
+cpc:01142  skos:closeMatch  isic:0111 .
+
+cpc:01151  skos:closeMatch  isic:0111 .
+
+cpc:01152  skos:closeMatch  isic:0111 .
+
+cpc:01161  skos:closeMatch  isic:0111 .
+
+cpc:01162  skos:closeMatch  isic:0111 .
+
+cpc:01171  skos:closeMatch  isic:0111 .
+
+cpc:01172  skos:closeMatch  isic:0111 .
+
+cpc:01181  skos:closeMatch  isic:0111 .
+
+cpc:01182  skos:closeMatch  isic:0111 .
+
+cpc:01191  skos:closeMatch  isic:0111 .
+
+cpc:01192  skos:closeMatch  isic:0111 .
+
+cpc:01193  skos:closeMatch  isic:0111 .
+
+cpc:01194  skos:closeMatch  isic:0111 .
+
+cpc:01195  skos:closeMatch  isic:0111 .
+
+cpc:01199  skos:closeMatch  isic:0111 .
+
+cpc:01211  skos:closeMatch  isic:0113 .
+
+cpc:01212  skos:closeMatch  isic:0113 .
+
+cpc:01213  skos:closeMatch  isic:0113 .
+
+cpc:01214  skos:closeMatch  isic:0113 .
+
+cpc:01215  skos:closeMatch  isic:0113 .
+
+cpc:01216  skos:closeMatch  isic:0113 .
+
+cpc:01219  skos:closeMatch  isic:0113 .
+
+cpc:01221  skos:closeMatch  isic:0113 .
+
+cpc:01229  skos:closeMatch  isic:0113 .
+
+cpc:01231  skos:closeMatch  isic:0128 .
+
+cpc:01232  skos:closeMatch  isic:0113 .
+
+cpc:01233  skos:closeMatch  isic:0113 .
+
+cpc:01234  skos:closeMatch  isic:0113 .
+
+cpc:01235  skos:closeMatch  isic:0113 .
+
+cpc:01239  skos:closeMatch  isic:0113 .
+
+cpc:01241  skos:closeMatch  isic:0111 .
+
+cpc:01242  skos:closeMatch  isic:0111 .
+
+cpc:01243  skos:closeMatch  isic:0111 .
+
+cpc:01249  skos:closeMatch  isic:0111 .
+
+cpc:01251  skos:closeMatch  isic:0113 .
+
+cpc:01252  skos:closeMatch  isic:0113 .
+
+cpc:01253  skos:closeMatch  isic:0113 .
+
+cpc:01254  skos:closeMatch  isic:0113 .
+
+cpc:01259  skos:closeMatch  isic:0113 .
+
+cpc:01260  skos:closeMatch  isic:0113 .
+
+cpc:01270  skos:closeMatch  isic:0113 ;
+        skos:closeMatch  isic:0230 .
+
+cpc:01290  skos:closeMatch  isic:0113 .
+
+cpc:01311  skos:closeMatch  isic:0122 .
+
+cpc:01312  skos:closeMatch  isic:0122 .
+
+cpc:01313  skos:closeMatch  isic:0122 .
+
+cpc:01314  skos:closeMatch  isic:0122 .
+
+cpc:01315  skos:closeMatch  isic:0122 .
+
+cpc:01316  skos:closeMatch  isic:0122 .
+
+cpc:01317  skos:closeMatch  isic:0122 .
+
+cpc:01318  skos:closeMatch  isic:0122 .
+
+cpc:01319  skos:closeMatch  isic:0122 .
+
+cpc:01321  skos:closeMatch  isic:0123 .
+
+cpc:01322  skos:closeMatch  isic:0123 .
+
+cpc:01323  skos:closeMatch  isic:0123 .
+
+cpc:01324  skos:closeMatch  isic:0123 .
+
+cpc:01329  skos:closeMatch  isic:0123 .
+
+cpc:01330  skos:closeMatch  isic:0121 .
+
+cpc:01341  skos:closeMatch  isic:0124 .
+
+cpc:01342  skos:closeMatch  isic:0124 .
+
+cpc:01343  skos:closeMatch  isic:0124 .
+
+cpc:01344  skos:closeMatch  isic:0124 .
+
+cpc:01345  skos:closeMatch  isic:0124 .
+
+cpc:01346  skos:closeMatch  isic:0124 .
+
+cpc:01349  skos:closeMatch  isic:0124 .
+
+cpc:01351  skos:closeMatch  isic:0125 .
+
+cpc:01352  skos:closeMatch  isic:0125 .
+
+cpc:01353  skos:closeMatch  isic:0125 .
+
+cpc:01354  skos:closeMatch  isic:0125 .
+
+cpc:01355  skos:closeMatch  isic:0125 ;
+        skos:closeMatch  isic:0230 .
+
+cpc:01356  skos:closeMatch  isic:0125 .
+
+cpc:01359  skos:closeMatch  isic:0125 .
+
+cpc:01360  skos:closeMatch  isic:0125 .
+
+cpc:01371  skos:closeMatch  isic:0125 .
+
+cpc:01372  skos:closeMatch  isic:0125 .
+
+cpc:01373  skos:closeMatch  isic:0125 .
+
+cpc:01374  skos:closeMatch  isic:0125 .
+
+cpc:01375  skos:closeMatch  isic:0125 .
+
+cpc:01376  skos:closeMatch  isic:0125 .
+
+cpc:01377  skos:closeMatch  isic:0125 .
+
+cpc:01379  skos:closeMatch  isic:0125 .
+
+cpc:01411  skos:closeMatch  isic:0111 .
+
+cpc:01412  skos:closeMatch  isic:0111 .
+
+cpc:01421  skos:closeMatch  isic:0111 .
+
+cpc:01422  skos:closeMatch  isic:0111 .
+
+cpc:01431  skos:closeMatch  isic:0111 .
+
+cpc:01432  skos:closeMatch  isic:0111 .
+
+cpc:01441  skos:closeMatch  isic:0111 .
+
+cpc:01442  skos:closeMatch  isic:0111 .
+
+cpc:01443  skos:closeMatch  isic:0111 .
+
+cpc:01444  skos:closeMatch  isic:0111 .
+
+cpc:01445  skos:closeMatch  isic:0111 .
+
+cpc:01446  skos:closeMatch  isic:0111 .
+
+cpc:01447  skos:closeMatch  isic:0111 .
+
+cpc:01448  skos:closeMatch  isic:0111 .
+
+cpc:01449  skos:closeMatch  isic:0111 .
+
+cpc:01450  skos:closeMatch  isic:0126 .
+
+cpc:01460  skos:closeMatch  isic:0126 .
+
+cpc:01491  skos:closeMatch  isic:0126 .
+
+cpc:01492  skos:closeMatch  isic:0126 .
+
+cpc:01499  skos:closeMatch  isic:0126 .
+
+cpc:01510  skos:closeMatch  isic:0113 .
+
+cpc:01520  skos:closeMatch  isic:0113 .
+
+cpc:01530  skos:closeMatch  isic:0113 .
+
+cpc:01540  skos:closeMatch  isic:0113 .
+
+cpc:01550  skos:closeMatch  isic:0113 .
+
+cpc:01591  skos:closeMatch  isic:0113 .
+
+cpc:01599  skos:closeMatch  isic:0113 .
+
+cpc:01610  skos:closeMatch  isic:0127 .
+
+cpc:01620  skos:closeMatch  isic:0127 .
+
+cpc:01630  skos:closeMatch  isic:0127 .
+
+cpc:01640  skos:closeMatch  isic:0127 .
+
+cpc:01651  skos:closeMatch  isic:0128 .
+
+cpc:01652  skos:closeMatch  isic:0128 .
+
+cpc:01653  skos:closeMatch  isic:0128 .
+
+cpc:01654  skos:closeMatch  isic:0128 .
+
+cpc:01655  skos:closeMatch  isic:0128 .
+
+cpc:01656  skos:closeMatch  isic:0128 .
+
+cpc:01657  skos:closeMatch  isic:0128 .
+
+cpc:01658  skos:closeMatch  isic:0128 .
+
+cpc:01659  skos:closeMatch  isic:0128 .
+
+cpc:01691  skos:closeMatch  isic:0128 .
+
+cpc:01699  skos:closeMatch  isic:0128 .
+
+cpc:01701  skos:closeMatch  isic:0111 .
+
+cpc:01702  skos:closeMatch  isic:0111 .
+
+cpc:01703  skos:closeMatch  isic:0111 .
+
+cpc:01704  skos:closeMatch  isic:0111 .
+
+cpc:01705  skos:closeMatch  isic:0111 .
+
+cpc:01706  skos:closeMatch  isic:0111 .
+
+cpc:01707  skos:closeMatch  isic:0111 .
+
+cpc:01708  skos:closeMatch  isic:0111 .
+
+cpc:01709  skos:closeMatch  isic:0111 .
+
+cpc:01801  skos:closeMatch  isic:0113 .
+
+cpc:01802  skos:closeMatch  isic:0114 .
+
+cpc:01803  skos:closeMatch  isic:0113 .
+
+cpc:01809  skos:closeMatch  isic:0125 ;
+        skos:closeMatch  isic:0129 .
+
+cpc:01911  skos:closeMatch  isic:0119 .
+
+cpc:01912  skos:closeMatch  isic:0119 .
+
+cpc:01913  skos:closeMatch  isic:0111 .
+
+cpc:01919  skos:closeMatch  isic:0119 .
+
+cpc:01921  skos:closeMatch  isic:0116 .
+
+cpc:01922  skos:closeMatch  isic:0116 .
+
+cpc:01929  skos:closeMatch  isic:0116 .
+
+cpc:01930  skos:closeMatch  isic:0128 .
+
+cpc:01940  skos:closeMatch  isic:0119 .
+
+cpc:01950  skos:closeMatch  isic:0129 ;
+        skos:closeMatch  isic:0230 .
+
+cpc:01961  skos:closeMatch  isic:0130 .
+
+cpc:01962  skos:closeMatch  isic:0119 .
+
+cpc:01963  skos:closeMatch  isic:0119 .
+
+cpc:01970  skos:closeMatch  isic:0115 .
+
+cpc:01990  skos:closeMatch  isic:0119 ;
+        skos:closeMatch  isic:0129 .
+
+cpc:02111  skos:closeMatch  isic:0141 .
+
+cpc:02112  skos:closeMatch  isic:0141 .
+
+cpc:02119  skos:closeMatch  isic:0141 .
+
+cpc:02121  skos:closeMatch  isic:0143 .
+
+cpc:02122  skos:closeMatch  isic:0144 .
+
+cpc:02123  skos:closeMatch  isic:0144 .
+
+cpc:02129  skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02131  skos:closeMatch  isic:0142 .
+
+cpc:02132  skos:closeMatch  isic:0142 .
+
+cpc:02133  skos:closeMatch  isic:0142 .
+
+cpc:02140  skos:closeMatch  isic:0145 .
+
+cpc:02151  skos:closeMatch  isic:0146 .
+
+cpc:02152  skos:closeMatch  isic:0146 .
+
+cpc:02153  skos:closeMatch  isic:0146 .
+
+cpc:02154  skos:closeMatch  isic:0146 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02155  skos:closeMatch  isic:0146 .
+
+cpc:02191  skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02192  skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02193  skos:closeMatch  isic:0149 .
+
+cpc:02194  skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02195  skos:closeMatch  isic:0149 .
+
+cpc:02196  skos:closeMatch  isic:0149 .
+
+cpc:02199  skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:02211  skos:closeMatch  isic:0141 .
+
+cpc:02212  skos:closeMatch  isic:0141 .
+
+cpc:02291  skos:closeMatch  isic:0144 .
+
+cpc:02292  skos:closeMatch  isic:0144 .
+
+cpc:02293  skos:closeMatch  isic:0143 .
+
+cpc:02299  skos:closeMatch  isic:0142 ;
+        skos:closeMatch  isic:0149 .
+
+cpc:02311  skos:closeMatch  isic:0146 .
+
+cpc:02312  skos:closeMatch  isic:0146 .
+
+cpc:02321  skos:closeMatch  isic:0146 ;
+        skos:closeMatch  isic:0149 .
+
+cpc:02322  skos:closeMatch  isic:0146 ;
+        skos:closeMatch  isic:0149 .
+
+cpc:02411  skos:closeMatch  isic:0141 .
+
+cpc:02419  skos:closeMatch  isic:0144 ;
+        skos:closeMatch  isic:0145 ;
+        skos:closeMatch  isic:0149 .
+
+cpc:02420  skos:closeMatch  isic:0141 ;
+        skos:closeMatch  isic:0142 .
+
+cpc:02910  skos:closeMatch  isic:0149 .
+
+cpc:02920  skos:closeMatch  isic:0149 .
+
+cpc:02930  skos:closeMatch  isic:0149 .
+
+cpc:02941  skos:closeMatch  isic:0144 .
+
+cpc:02942  skos:closeMatch  isic:0144 .
+
+cpc:02943  skos:closeMatch  isic:0141 ;
+        skos:closeMatch  isic:0143 ;
+        skos:closeMatch  isic:0144 ;
+        skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0170 .
+
+cpc:02944  skos:closeMatch  isic:0149 .
+
+cpc:02951  skos:closeMatch  isic:1010 .
+
+cpc:02952  skos:closeMatch  isic:1010 .
+
+cpc:02953  skos:closeMatch  isic:1010 .
+
+cpc:02954  skos:closeMatch  isic:1010 .
+
+cpc:02955  skos:closeMatch  isic:1010 .
+
+cpc:02959  skos:closeMatch  isic:1010 .
+
+cpc:02960  skos:closeMatch  isic:1040 .
+
+cpc:03110  skos:closeMatch  isic:0210 ;
+        skos:closeMatch  isic:0220 .
+
+cpc:03120  skos:closeMatch  isic:0210 ;
+        skos:closeMatch  isic:0220 .
+
+cpc:03131  skos:closeMatch  isic:0220 .
+
+cpc:03132  skos:closeMatch  isic:0220 .
+
+cpc:03211  skos:closeMatch  isic:0230 .
+
+cpc:03219  skos:closeMatch  isic:0230 .
+
+cpc:03220  skos:closeMatch  isic:0230 .
+
+cpc:03230  skos:closeMatch  isic:0230 .
+
+cpc:03241  skos:closeMatch  isic:0129 .
+
+cpc:03249  skos:closeMatch  isic:0230 .
+
+cpc:03250  skos:closeMatch  isic:0129 .
+
+cpc:04111  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04112  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04191  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04192  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04211  skos:closeMatch  isic:0312 .
+
+cpc:04212  skos:closeMatch  isic:0322 .
+
+cpc:04221  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04222  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04231  skos:closeMatch  isic:0311 .
+
+cpc:04232  skos:closeMatch  isic:0321 .
+
+cpc:04241  skos:closeMatch  isic:0311 .
+
+cpc:04242  skos:closeMatch  isic:0321 .
+
+cpc:04251  skos:closeMatch  isic:0311 .
+
+cpc:04252  skos:closeMatch  isic:0321 .
+
+cpc:04261  skos:closeMatch  isic:0311 .
+
+cpc:04262  skos:closeMatch  isic:0321 .
+
+cpc:04291  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04292  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04311  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04312  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04321  skos:closeMatch  isic:0311 .
+
+cpc:04322  skos:closeMatch  isic:0321 .
+
+cpc:04331  skos:closeMatch  isic:0311 .
+
+cpc:04332  skos:closeMatch  isic:0321 .
+
+cpc:04341  skos:closeMatch  isic:0311 .
+
+cpc:04342  skos:closeMatch  isic:0321 .
+
+cpc:04351  skos:closeMatch  isic:0311 .
+
+cpc:04352  skos:closeMatch  isic:0321 .
+
+cpc:04361  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04362  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04391  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04392  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04411  skos:closeMatch  isic:0311 .
+
+cpc:04412  skos:closeMatch  isic:0321 .
+
+cpc:04421  skos:closeMatch  isic:0311 .
+
+cpc:04422  skos:closeMatch  isic:0321 .
+
+cpc:04431  skos:closeMatch  isic:0311 .
+
+cpc:04432  skos:closeMatch  isic:0321 .
+
+cpc:04441  skos:closeMatch  isic:0311 .
+
+cpc:04442  skos:closeMatch  isic:0321 .
+
+cpc:04451  skos:closeMatch  isic:0311 .
+
+cpc:04452  skos:closeMatch  isic:0312 .
+
+cpc:04461  skos:closeMatch  isic:0321 .
+
+cpc:04462  skos:closeMatch  isic:0322 .
+
+cpc:04471  skos:closeMatch  isic:0311 .
+
+cpc:04472  skos:closeMatch  isic:0321 .
+
+cpc:04491  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04492  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04511  skos:closeMatch  isic:0311 .
+
+cpc:04512  skos:closeMatch  isic:0321 .
+
+cpc:04521  skos:closeMatch  isic:0311 .
+
+cpc:04522  skos:closeMatch  isic:0321 .
+
+cpc:04530  skos:closeMatch  isic:0311 .
+
+cpc:04590  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 ;
+        skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04911  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 ;
+        skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04912  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04913  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04920  skos:closeMatch  isic:0311 .
+
+cpc:04931  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04932  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:04933  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:04934  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:11010  skos:closeMatch  isic:0510 .
+
+cpc:11020  skos:closeMatch  isic:1920 .
+
+cpc:11030  skos:closeMatch  isic:0520 .
+
+cpc:11040  skos:closeMatch  isic:1920 .
+
+cpc:11050  skos:closeMatch  isic:0892 .
+
+cpc:12010  skos:closeMatch  isic:0610 .
+
+cpc:12020  skos:closeMatch  isic:0620 .
+
+cpc:12030  skos:closeMatch  isic:0610 .
+
+cpc:13000  skos:closeMatch  isic:0721 .
+
+cpc:14100  skos:closeMatch  isic:0710 .
+
+cpc:14210  skos:closeMatch  isic:0729 .
+
+cpc:14220  skos:closeMatch  isic:0729 .
+
+cpc:14230  skos:closeMatch  isic:0729 .
+
+cpc:14240  skos:closeMatch  isic:0729 .
+
+cpc:14290  skos:closeMatch  isic:0729 .
+
+cpc:15110  skos:closeMatch  isic:0810 .
+
+cpc:15120  skos:closeMatch  isic:0810 .
+
+cpc:15130  skos:closeMatch  isic:0810 .
+
+cpc:15200  skos:closeMatch  isic:0810 .
+
+cpc:15310  skos:closeMatch  isic:0810 .
+
+cpc:15320  skos:closeMatch  isic:0810 .
+
+cpc:15330  skos:closeMatch  isic:0899 .
+
+cpc:15400  skos:closeMatch  isic:0810 .
+
+cpc:16110  skos:closeMatch  isic:0891 .
+
+cpc:16120  skos:closeMatch  isic:0891 .
+
+cpc:16190  skos:closeMatch  isic:0891 .
+
+cpc:16200  skos:closeMatch  isic:0893 ;
+        skos:closeMatch  isic:1079 .
+
+cpc:16310  skos:closeMatch  isic:0899 .
+
+cpc:16320  skos:closeMatch  isic:0899 .
+
+cpc:16330  skos:closeMatch  isic:0810 .
+
+cpc:16390  skos:closeMatch  isic:0899 .
+
+cpc:17100  skos:closeMatch  isic:3510 .
+
+cpc:17200  skos:closeMatch  isic:3520 .
+
+cpc:17300  skos:closeMatch  isic:3530 .
+
+cpc:17400  skos:closeMatch  isic:3530 .
+
+cpc:18000  skos:closeMatch  isic:3600 .
+
+cpc:21111  skos:closeMatch  isic:1010 .
+
+cpc:21112  skos:closeMatch  isic:1010 .
+
+cpc:21113  skos:closeMatch  isic:1010 .
+
+cpc:21114  skos:closeMatch  isic:1010 .
+
+cpc:21115  skos:closeMatch  isic:1010 .
+
+cpc:21116  skos:closeMatch  isic:1010 .
+
+cpc:21117  skos:closeMatch  isic:1010 .
+
+cpc:21118  skos:closeMatch  isic:1010 .
+
+cpc:21119  skos:closeMatch  isic:1010 .
+
+cpc:21121  skos:closeMatch  isic:1010 .
+
+cpc:21122  skos:closeMatch  isic:1010 .
+
+cpc:21123  skos:closeMatch  isic:1010 .
+
+cpc:21124  skos:closeMatch  isic:1010 .
+
+cpc:21125  skos:closeMatch  isic:1010 .
+
+cpc:21131  skos:closeMatch  isic:1010 .
+
+cpc:21132  skos:closeMatch  isic:1010 .
+
+cpc:21133  skos:closeMatch  isic:1010 .
+
+cpc:21134  skos:closeMatch  isic:1010 .
+
+cpc:21135  skos:closeMatch  isic:1010 .
+
+cpc:21136  skos:closeMatch  isic:1010 .
+
+cpc:21137  skos:closeMatch  isic:1010 .
+
+cpc:21138  skos:closeMatch  isic:1010 .
+
+cpc:21139  skos:closeMatch  isic:1010 .
+
+cpc:21141  skos:closeMatch  isic:1010 .
+
+cpc:21142  skos:closeMatch  isic:1010 .
+
+cpc:21143  skos:closeMatch  isic:1010 .
+
+cpc:21144  skos:closeMatch  isic:1010 .
+
+cpc:21145  skos:closeMatch  isic:1010 .
+
+cpc:21151  skos:closeMatch  isic:1010 .
+
+cpc:21152  skos:closeMatch  isic:1010 .
+
+cpc:21153  skos:closeMatch  isic:1010 .
+
+cpc:21155  skos:closeMatch  isic:1010 .
+
+cpc:21156  skos:closeMatch  isic:1010 .
+
+cpc:21159  skos:closeMatch  isic:1010 .
+
+cpc:21160  skos:closeMatch  isic:1010 .
+
+cpc:21170  skos:closeMatch  isic:1010 .
+
+cpc:21181  skos:closeMatch  isic:1010 .
+
+cpc:21182  skos:closeMatch  isic:1010 .
+
+cpc:21183  skos:closeMatch  isic:1010 .
+
+cpc:21184  skos:closeMatch  isic:1010 .
+
+cpc:21185  skos:closeMatch  isic:1079 .
+
+cpc:21186  skos:closeMatch  isic:1075 .
+
+cpc:21189  skos:closeMatch  isic:1010 .
+
+cpc:21190  skos:closeMatch  isic:1010 .
+
+cpc:21211  skos:closeMatch  isic:1020 .
+
+cpc:21212  skos:closeMatch  isic:1020 .
+
+cpc:21213  skos:closeMatch  isic:1020 .
+
+cpc:21214  skos:closeMatch  isic:1020 .
+
+cpc:21215  skos:closeMatch  isic:1020 .
+
+cpc:21216  skos:closeMatch  isic:1020 .
+
+cpc:21219  skos:closeMatch  isic:1020 .
+
+cpc:21221  skos:closeMatch  isic:1020 .
+
+cpc:21222  skos:closeMatch  isic:1020 .
+
+cpc:21223  skos:closeMatch  isic:1020 .
+
+cpc:21224  skos:closeMatch  isic:1020 .
+
+cpc:21225  skos:closeMatch  isic:1020 .
+
+cpc:21226  skos:closeMatch  isic:1020 .
+
+cpc:21227  skos:closeMatch  isic:1020 .
+
+cpc:21231  skos:closeMatch  isic:1020 .
+
+cpc:21232  skos:closeMatch  isic:1020 .
+
+cpc:21233  skos:closeMatch  isic:1020 .
+
+cpc:21234  skos:closeMatch  isic:1020 .
+
+cpc:21241  skos:closeMatch  isic:1075 .
+
+cpc:21242  skos:closeMatch  isic:1020 .
+
+cpc:21243  skos:closeMatch  isic:1020 .
+
+cpc:21251  skos:closeMatch  isic:1020 .
+
+cpc:21252  skos:closeMatch  isic:1020 .
+
+cpc:21253  skos:closeMatch  isic:1020 .
+
+cpc:21254  skos:closeMatch  isic:1020 .
+
+cpc:21255  skos:closeMatch  isic:1020 .
+
+cpc:21256  skos:closeMatch  isic:1020 .
+
+cpc:21259  skos:closeMatch  isic:1020 .
+
+cpc:21261  skos:closeMatch  isic:1020 .
+
+cpc:21262  skos:closeMatch  isic:1020 .
+
+cpc:21263  skos:closeMatch  isic:1020 .
+
+cpc:21264  skos:closeMatch  isic:1020 .
+
+cpc:21265  skos:closeMatch  isic:1020 .
+
+cpc:21266  skos:closeMatch  isic:1020 .
+
+cpc:21267  skos:closeMatch  isic:1020 .
+
+cpc:21268  skos:closeMatch  isic:1020 .
+
+cpc:21269  skos:closeMatch  isic:1020 .
+
+cpc:21270  skos:closeMatch  isic:1020 .
+
+cpc:21280  skos:closeMatch  isic:1020 .
+
+cpc:21291  skos:closeMatch  isic:1020 .
+
+cpc:21299  skos:closeMatch  isic:1020 .
+
+cpc:21311  skos:closeMatch  isic:1030 .
+
+cpc:21312  skos:closeMatch  isic:1030 .
+
+cpc:21313  skos:closeMatch  isic:1030 .
+
+cpc:21319  skos:closeMatch  isic:1030 .
+
+cpc:21321  skos:closeMatch  isic:1030 .
+
+cpc:21329  skos:closeMatch  isic:1030 .
+
+cpc:21330  skos:closeMatch  isic:1030 .
+
+cpc:21340  skos:closeMatch  isic:1030 .
+
+cpc:21391  skos:closeMatch  isic:1075 .
+
+cpc:21392  skos:closeMatch  isic:1030 .
+
+cpc:21393  skos:closeMatch  isic:1030 .
+
+cpc:21394  skos:closeMatch  isic:1030 .
+
+cpc:21395  skos:closeMatch  isic:1030 .
+
+cpc:21396  skos:closeMatch  isic:1030 .
+
+cpc:21397  skos:closeMatch  isic:1030 .
+
+cpc:21399  skos:closeMatch  isic:1030 .
+
+cpc:21411  skos:closeMatch  isic:1030 .
+
+cpc:21412  skos:closeMatch  isic:1030 .
+
+cpc:21419  skos:closeMatch  isic:1030 .
+
+cpc:21421  skos:closeMatch  isic:1030 .
+
+cpc:21422  skos:closeMatch  isic:1030 .
+
+cpc:21423  skos:closeMatch  isic:1030 .
+
+cpc:21424  skos:closeMatch  isic:1030 .
+
+cpc:21429  skos:closeMatch  isic:1030 .
+
+cpc:21431  skos:closeMatch  isic:1030 .
+
+cpc:21432  skos:closeMatch  isic:1030 .
+
+cpc:21433  skos:closeMatch  isic:1030 .
+
+cpc:21434  skos:closeMatch  isic:1030 .
+
+cpc:21435  skos:closeMatch  isic:1030 .
+
+cpc:21439  skos:closeMatch  isic:1030 .
+
+cpc:21491  skos:closeMatch  isic:1030 .
+
+cpc:21492  skos:closeMatch  isic:1030 .
+
+cpc:21493  skos:closeMatch  isic:1030 .
+
+cpc:21494  skos:closeMatch  isic:1030 .
+
+cpc:21495  skos:closeMatch  isic:1030 .
+
+cpc:21496  skos:closeMatch  isic:1030 .
+
+cpc:21499  skos:closeMatch  isic:1030 .
+
+cpc:21511  skos:closeMatch  isic:1010 .
+
+cpc:21512  skos:closeMatch  isic:1010 .
+
+cpc:21513  skos:closeMatch  isic:1010 .
+
+cpc:21514  skos:closeMatch  isic:1010 .
+
+cpc:21515  skos:closeMatch  isic:1010 .
+
+cpc:21519  skos:closeMatch  isic:1010 .
+
+cpc:21521  skos:closeMatch  isic:1010 .
+
+cpc:21522  skos:closeMatch  isic:1010 .
+
+cpc:21523  skos:closeMatch  isic:1040 .
+
+cpc:21524  skos:closeMatch  isic:1040 .
+
+cpc:21525  skos:closeMatch  isic:1040 .
+
+cpc:21526  skos:closeMatch  isic:1040 .
+
+cpc:21529  skos:closeMatch  isic:1040 .
+
+cpc:21590  skos:closeMatch  isic:1040 .
+
+cpc:21611  skos:closeMatch  isic:1040 .
+
+cpc:21612  skos:closeMatch  isic:1040 .
+
+cpc:21621  skos:closeMatch  isic:1040 .
+
+cpc:21622  skos:closeMatch  isic:1040 .
+
+cpc:21631  skos:closeMatch  isic:1040 .
+
+cpc:21632  skos:closeMatch  isic:1040 .
+
+cpc:21641  skos:closeMatch  isic:1040 .
+
+cpc:21642  skos:closeMatch  isic:1040 .
+
+cpc:21651  skos:closeMatch  isic:1040 .
+
+cpc:21652  skos:closeMatch  isic:1040 .
+
+cpc:21661  skos:closeMatch  isic:1040 .
+
+cpc:21662  skos:closeMatch  isic:1040 .
+
+cpc:21671  skos:closeMatch  isic:1040 .
+
+cpc:21672  skos:closeMatch  isic:1040 .
+
+cpc:21673  skos:closeMatch  isic:1040 .
+
+cpc:21681  skos:closeMatch  isic:1040 .
+
+cpc:21682  skos:closeMatch  isic:1040 .
+
+cpc:21691  skos:closeMatch  isic:1040 ;
+        skos:closeMatch  isic:1062 .
+
+cpc:21693  skos:closeMatch  isic:1040 .
+
+cpc:21700  skos:closeMatch  isic:1040 .
+
+cpc:21800  skos:closeMatch  isic:1040 .
+
+cpc:21910  skos:closeMatch  isic:1040 .
+
+cpc:21920  skos:closeMatch  isic:1040 .
+
+cpc:21931  skos:closeMatch  isic:1040 .
+
+cpc:21932  skos:closeMatch  isic:1040 .
+
+cpc:22110  skos:closeMatch  isic:1050 .
+
+cpc:22120  skos:closeMatch  isic:1050 .
+
+cpc:22130  skos:closeMatch  isic:1050 .
+
+cpc:22211  skos:closeMatch  isic:1050 .
+
+cpc:22212  skos:closeMatch  isic:1050 .
+
+cpc:22219  skos:closeMatch  isic:1050 .
+
+cpc:22221  skos:closeMatch  isic:1050 .
+
+cpc:22222  skos:closeMatch  isic:1050 .
+
+cpc:22229  skos:closeMatch  isic:1050 .
+
+cpc:22230  skos:closeMatch  isic:1050 .
+
+cpc:22241  skos:closeMatch  isic:1050 .
+
+cpc:22242  skos:closeMatch  isic:1050 .
+
+cpc:22249  skos:closeMatch  isic:1050 .
+
+cpc:22251  skos:closeMatch  isic:1050 .
+
+cpc:22252  skos:closeMatch  isic:1050 .
+
+cpc:22253  skos:closeMatch  isic:1050 .
+
+cpc:22254  skos:closeMatch  isic:1050 .
+
+cpc:22259  skos:closeMatch  isic:1050 .
+
+cpc:22260  skos:closeMatch  isic:1050 .
+
+cpc:22270  skos:closeMatch  isic:1050 .
+
+cpc:22290  skos:closeMatch  isic:1050 .
+
+cpc:22300  skos:closeMatch  isic:1079 .
+
+cpc:23110  skos:closeMatch  isic:1061 .
+
+cpc:23120  skos:closeMatch  isic:1061 .
+
+cpc:23130  skos:closeMatch  isic:1061 .
+
+cpc:23140  skos:closeMatch  isic:1061 .
+
+cpc:23161  skos:closeMatch  isic:1061 .
+
+cpc:23162  skos:closeMatch  isic:1061 .
+
+cpc:23170  skos:closeMatch  isic:1061 .
+
+cpc:23180  skos:closeMatch  isic:1061 .
+
+cpc:23210  skos:closeMatch  isic:1050 ;
+        skos:closeMatch  isic:1062 ;
+        skos:closeMatch  isic:1079 .
+
+cpc:23220  skos:closeMatch  isic:1062 .
+
+cpc:23230  skos:closeMatch  isic:1062 .
+
+cpc:23311  skos:closeMatch  isic:1080 .
+
+cpc:23319  skos:closeMatch  isic:1080 .
+
+cpc:23320  skos:closeMatch  isic:1080 .
+
+cpc:23410  skos:closeMatch  isic:1071 .
+
+cpc:23420  skos:closeMatch  isic:1071 .
+
+cpc:23430  skos:closeMatch  isic:1071 .
+
+cpc:23490  skos:closeMatch  isic:1071 .
+
+cpc:23511  skos:closeMatch  isic:1072 .
+
+cpc:23512  skos:closeMatch  isic:1072 .
+
+cpc:23520  skos:closeMatch  isic:1072 .
+
+cpc:23530  skos:closeMatch  isic:1072 .
+
+cpc:23540  skos:closeMatch  isic:1072 .
+
+cpc:23610  skos:closeMatch  isic:1073 .
+
+cpc:23620  skos:closeMatch  isic:1073 .
+
+cpc:23630  skos:closeMatch  isic:1073 .
+
+cpc:23640  skos:closeMatch  isic:1073 .
+
+cpc:23650  skos:closeMatch  isic:1073 .
+
+cpc:23660  skos:closeMatch  isic:1073 .
+
+cpc:23670  skos:closeMatch  isic:1073 .
+
+cpc:23710  skos:closeMatch  isic:1074 .
+
+cpc:23721  skos:closeMatch  isic:1074 .
+
+cpc:23722  skos:closeMatch  isic:1075 .
+
+cpc:23911  skos:closeMatch  isic:1079 .
+
+cpc:23912  skos:closeMatch  isic:1079 .
+
+cpc:23913  skos:closeMatch  isic:1079 .
+
+cpc:23914  skos:closeMatch  isic:1079 .
+
+cpc:23921  skos:closeMatch  isic:1079 .
+
+cpc:23922  skos:closeMatch  isic:1079 .
+
+cpc:23923  skos:closeMatch  isic:1079 .
+
+cpc:23924  skos:closeMatch  isic:1079 .
+
+cpc:23925  skos:closeMatch  isic:1079 .
+
+cpc:23926  skos:closeMatch  isic:1079 .
+
+cpc:23927  skos:closeMatch  isic:1079 .
+
+cpc:23928  skos:closeMatch  isic:1079 .
+
+cpc:23929  skos:closeMatch  isic:1079 .
+
+cpc:23991  skos:closeMatch  isic:1079 .
+
+cpc:23992  skos:closeMatch  isic:1079 .
+
+cpc:23993  skos:closeMatch  isic:1079 .
+
+cpc:23994  skos:closeMatch  isic:1079 .
+
+cpc:23995  skos:closeMatch  isic:1079 .
+
+cpc:23996  skos:closeMatch  isic:1079 .
+
+cpc:23997  skos:closeMatch  isic:1075 .
+
+cpc:23999  skos:closeMatch  isic:1079 .
+
+cpc:24110  skos:closeMatch  isic:2011 .
+
+cpc:24131  skos:closeMatch  isic:1101 .
+
+cpc:24139  skos:closeMatch  isic:1101 .
+
+cpc:24211  skos:closeMatch  isic:1102 .
+
+cpc:24212  skos:closeMatch  isic:1102 .
+
+cpc:24220  skos:closeMatch  isic:1102 .
+
+cpc:24230  skos:closeMatch  isic:1102 .
+
+cpc:24310  skos:closeMatch  isic:1103 .
+
+cpc:24320  skos:closeMatch  isic:1103 .
+
+cpc:24410  skos:closeMatch  isic:1104 .
+
+cpc:24490  skos:closeMatch  isic:1104 .
+
+cpc:25010  skos:closeMatch  isic:1200 .
+
+cpc:25020  skos:closeMatch  isic:1200 .
+
+cpc:25090  skos:closeMatch  isic:1200 .
+
+cpc:26110  skos:closeMatch  isic:1311 .
+
+cpc:26130  skos:closeMatch  isic:1311 .
+
+cpc:26140  skos:closeMatch  isic:1311 .
+
+cpc:26150  skos:closeMatch  isic:1311 .
+
+cpc:26160  skos:closeMatch  isic:1311 .
+
+cpc:26170  skos:closeMatch  isic:1311 .
+
+cpc:26190  skos:closeMatch  isic:1311 .
+
+cpc:26210  skos:closeMatch  isic:1311 .
+
+cpc:26220  skos:closeMatch  isic:1311 .
+
+cpc:26310  skos:closeMatch  isic:1311 .
+
+cpc:26320  skos:closeMatch  isic:1311 .
+
+cpc:26330  skos:closeMatch  isic:1311 .
+
+cpc:26340  skos:closeMatch  isic:1311 .
+
+cpc:26350  skos:closeMatch  isic:1311 .
+
+cpc:26360  skos:closeMatch  isic:1311 .
+
+cpc:26370  skos:closeMatch  isic:1311 .
+
+cpc:26380  skos:closeMatch  isic:1311 .
+
+cpc:26410  skos:closeMatch  isic:1311 .
+
+cpc:26421  skos:closeMatch  isic:1311 .
+
+cpc:26422  skos:closeMatch  isic:1311 .
+
+cpc:26430  skos:closeMatch  isic:1311 .
+
+cpc:26440  skos:closeMatch  isic:1311 .
+
+cpc:26450  skos:closeMatch  isic:1311 .
+
+cpc:26461  skos:closeMatch  isic:1311 .
+
+cpc:26462  skos:closeMatch  isic:1311 .
+
+cpc:26510  skos:closeMatch  isic:1312 .
+
+cpc:26520  skos:closeMatch  isic:1312 .
+
+cpc:26530  skos:closeMatch  isic:1312 .
+
+cpc:26540  skos:closeMatch  isic:1312 .
+
+cpc:26550  skos:closeMatch  isic:1312 .
+
+cpc:26560  skos:closeMatch  isic:1312 .
+
+cpc:26570  skos:closeMatch  isic:1312 .
+
+cpc:26590  skos:closeMatch  isic:1312 .
+
+cpc:26610  skos:closeMatch  isic:1312 .
+
+cpc:26620  skos:closeMatch  isic:1312 .
+
+cpc:26630  skos:closeMatch  isic:1312 .
+
+cpc:26690  skos:closeMatch  isic:1312 .
+
+cpc:26710  skos:closeMatch  isic:1312 .
+
+cpc:26720  skos:closeMatch  isic:1312 .
+
+cpc:26730  skos:closeMatch  isic:1312 .
+
+cpc:26740  skos:closeMatch  isic:1312 .
+
+cpc:26750  skos:closeMatch  isic:1312 .
+
+cpc:26760  skos:closeMatch  isic:1312 .
+
+cpc:26770  skos:closeMatch  isic:1312 .
+
+cpc:26790  skos:closeMatch  isic:1312 .
+
+cpc:26810  skos:closeMatch  isic:1312 .
+
+cpc:26820  skos:closeMatch  isic:1312 .
+
+cpc:26830  skos:closeMatch  isic:1312 .
+
+cpc:26840  skos:closeMatch  isic:1312 .
+
+cpc:26850  skos:closeMatch  isic:1312 .
+
+cpc:26860  skos:closeMatch  isic:1312 .
+
+cpc:26880  skos:closeMatch  isic:1312 .
+
+cpc:26890  skos:closeMatch  isic:1312 .
+
+cpc:27110  skos:closeMatch  isic:1392 .
+
+cpc:27120  skos:closeMatch  isic:1392 .
+
+cpc:27130  skos:closeMatch  isic:1392 .
+
+cpc:27140  skos:closeMatch  isic:1392 .
+
+cpc:27150  skos:closeMatch  isic:1392 .
+
+cpc:27160  skos:closeMatch  isic:1392 .
+
+cpc:27170  skos:closeMatch  isic:1392 .
+
+cpc:27180  skos:closeMatch  isic:1392 .
+
+cpc:27190  skos:closeMatch  isic:1392 .
+
+cpc:27210  skos:closeMatch  isic:1393 .
+
+cpc:27220  skos:closeMatch  isic:1393 .
+
+cpc:27230  skos:closeMatch  isic:1393 .
+
+cpc:27290  skos:closeMatch  isic:1393 .
+
+cpc:27310  skos:closeMatch  isic:1394 .
+
+cpc:27320  skos:closeMatch  isic:1394 .
+
+cpc:27911  skos:closeMatch  isic:1399 .
+
+cpc:27912  skos:closeMatch  isic:1399 .
+
+cpc:27913  skos:closeMatch  isic:1399 .
+
+cpc:27921  skos:closeMatch  isic:1399 .
+
+cpc:27922  skos:closeMatch  isic:1399 .
+
+cpc:27991  skos:closeMatch  isic:1399 ;
+        skos:closeMatch  isic:1709 .
+
+cpc:27992  skos:closeMatch  isic:1399 .
+
+cpc:27993  skos:closeMatch  isic:1399 .
+
+cpc:27994  skos:closeMatch  isic:1399 .
+
+cpc:27995  skos:closeMatch  isic:1399 .
+
+cpc:27996  skos:closeMatch  isic:1399 .
+
+cpc:27997  skos:closeMatch  isic:1399 .
+
+cpc:27998  skos:closeMatch  isic:1399 .
+
+cpc:27999  skos:closeMatch  isic:1399 .
+
+cpc:28110  skos:closeMatch  isic:1391 .
+
+cpc:28190  skos:closeMatch  isic:1391 .
+
+cpc:28210  skos:closeMatch  isic:1430 .
+
+cpc:28221  skos:closeMatch  isic:1410 .
+
+cpc:28222  skos:closeMatch  isic:1410 .
+
+cpc:28223  skos:closeMatch  isic:1410 .
+
+cpc:28224  skos:closeMatch  isic:1410 .
+
+cpc:28225  skos:closeMatch  isic:1410 ;
+        skos:closeMatch  isic:1430 .
+
+cpc:28226  skos:closeMatch  isic:1430 .
+
+cpc:28227  skos:closeMatch  isic:1410 .
+
+cpc:28228  skos:closeMatch  isic:1410 .
+
+cpc:28229  skos:closeMatch  isic:1410 .
+
+cpc:28231  skos:closeMatch  isic:1410 .
+
+cpc:28232  skos:closeMatch  isic:1410 .
+
+cpc:28233  skos:closeMatch  isic:1410 .
+
+cpc:28234  skos:closeMatch  isic:1410 .
+
+cpc:28235  skos:closeMatch  isic:1410 .
+
+cpc:28236  skos:closeMatch  isic:1410 .
+
+cpc:28237  skos:closeMatch  isic:1410 .
+
+cpc:28238  skos:closeMatch  isic:1410 .
+
+cpc:28241  skos:closeMatch  isic:1410 .
+
+cpc:28242  skos:closeMatch  isic:1410 .
+
+cpc:28243  skos:closeMatch  isic:1410 ;
+        skos:closeMatch  isic:2220 .
+
+cpc:28250  skos:closeMatch  isic:1410 .
+
+cpc:28261  skos:closeMatch  isic:1410 .
+
+cpc:28262  skos:closeMatch  isic:1410 .
+
+cpc:28269  skos:closeMatch  isic:1410 .
+
+cpc:28310  skos:closeMatch  isic:1511 .
+
+cpc:28320  skos:closeMatch  isic:1420 .
+
+cpc:28330  skos:closeMatch  isic:1420 .
+
+cpc:29110  skos:closeMatch  isic:1511 .
+
+cpc:29120  skos:closeMatch  isic:1511 .
+
+cpc:29130  skos:closeMatch  isic:1511 .
+
+cpc:29210  skos:closeMatch  isic:1512 .
+
+cpc:29220  skos:closeMatch  isic:1512 .
+
+cpc:29230  skos:closeMatch  isic:1512 .
+
+cpc:29290  skos:closeMatch  isic:1512 .
+
+cpc:29310  skos:closeMatch  isic:1520 .
+
+cpc:29320  skos:closeMatch  isic:1520 .
+
+cpc:29330  skos:closeMatch  isic:1520 .
+
+cpc:29340  skos:closeMatch  isic:1520 .
+
+cpc:29410  skos:closeMatch  isic:3230 .
+
+cpc:29420  skos:closeMatch  isic:1520 .
+
+cpc:29490  skos:closeMatch  isic:1520 .
+
+cpc:29510  skos:closeMatch  isic:1520 .
+
+cpc:29520  skos:closeMatch  isic:1520 .
+
+cpc:29600  skos:closeMatch  isic:1520 ;
+        skos:closeMatch  isic:1629 ;
+        skos:closeMatch  isic:2219 ;
+        skos:closeMatch  isic:2220 .
+
+cpc:31101  skos:closeMatch  isic:1610 .
+
+cpc:31102  skos:closeMatch  isic:1610 .
+
+cpc:31109  skos:closeMatch  isic:1610 .
+
+cpc:31211  skos:closeMatch  isic:1610 .
+
+cpc:31212  skos:closeMatch  isic:1610 .
+
+cpc:31219  skos:closeMatch  isic:1610 .
+
+cpc:31220  skos:closeMatch  isic:1610 .
+
+cpc:31230  skos:closeMatch  isic:1610 .
+
+cpc:31310  skos:closeMatch  isic:1610 .
+
+cpc:31320  skos:closeMatch  isic:1610 .
+
+cpc:31330  skos:closeMatch  isic:1610 .
+
+cpc:31411  skos:closeMatch  isic:1621 .
+
+cpc:31412  skos:closeMatch  isic:1621 .
+
+cpc:31421  skos:closeMatch  isic:1621 .
+
+cpc:31422  skos:closeMatch  isic:1621 .
+
+cpc:31431  skos:closeMatch  isic:1621 .
+
+cpc:31432  skos:closeMatch  isic:1621 .
+
+cpc:31439  skos:closeMatch  isic:1621 .
+
+cpc:31441  skos:closeMatch  isic:1621 .
+
+cpc:31442  skos:closeMatch  isic:1621 .
+
+cpc:31449  skos:closeMatch  isic:1621 .
+
+cpc:31450  skos:closeMatch  isic:1621 .
+
+cpc:31511  skos:closeMatch  isic:1621 .
+
+cpc:31512  skos:closeMatch  isic:1621 .
+
+cpc:31520  skos:closeMatch  isic:1621 .
+
+cpc:31600  skos:closeMatch  isic:1622 .
+
+cpc:31700  skos:closeMatch  isic:1623 .
+
+cpc:31911  skos:closeMatch  isic:1629 .
+
+cpc:31912  skos:closeMatch  isic:1629 .
+
+cpc:31913  skos:closeMatch  isic:1629 .
+
+cpc:31914  skos:closeMatch  isic:1629 .
+
+cpc:31921  skos:closeMatch  isic:1629 .
+
+cpc:31922  skos:closeMatch  isic:1629 .
+
+cpc:31923  skos:closeMatch  isic:1629 .
+
+cpc:32111  skos:closeMatch  isic:1701 .
+
+cpc:32112  skos:closeMatch  isic:1701 .
+
+cpc:32113  skos:closeMatch  isic:1701 .
+
+cpc:32121  skos:closeMatch  isic:1701 .
+
+cpc:32122  skos:closeMatch  isic:1701 .
+
+cpc:32129  skos:closeMatch  isic:1701 .
+
+cpc:32131  skos:closeMatch  isic:1701 .
+
+cpc:32132  skos:closeMatch  isic:1701 .
+
+cpc:32133  skos:closeMatch  isic:1701 .
+
+cpc:32134  skos:closeMatch  isic:1701 .
+
+cpc:32135  skos:closeMatch  isic:1701 .
+
+cpc:32136  skos:closeMatch  isic:1701 .
+
+cpc:32137  skos:closeMatch  isic:1701 .
+
+cpc:32141  skos:closeMatch  isic:1701 .
+
+cpc:32142  skos:closeMatch  isic:1701 .
+
+cpc:32143  skos:closeMatch  isic:1701 .
+
+cpc:32149  skos:closeMatch  isic:1701 .
+
+cpc:32151  skos:closeMatch  isic:1702 .
+
+cpc:32152  skos:closeMatch  isic:1702 .
+
+cpc:32153  skos:closeMatch  isic:1702 .
+
+cpc:32191  skos:closeMatch  isic:1709 .
+
+cpc:32192  skos:closeMatch  isic:1709 .
+
+cpc:32193  skos:closeMatch  isic:1709 .
+
+cpc:32194  skos:closeMatch  isic:1709 .
+
+cpc:32195  skos:closeMatch  isic:1709 .
+
+cpc:32196  skos:closeMatch  isic:1709 .
+
+cpc:32197  skos:closeMatch  isic:1709 .
+
+cpc:32198  skos:closeMatch  isic:1709 .
+
+cpc:32199  skos:closeMatch  isic:1709 .
+
+cpc:32210  skos:closeMatch  isic:5811 .
+
+cpc:32220  skos:closeMatch  isic:5811 .
+
+cpc:32230  skos:closeMatch  isic:5812 .
+
+cpc:32291  skos:closeMatch  isic:5811 .
+
+cpc:32292  skos:closeMatch  isic:5811 .
+
+cpc:32299  skos:closeMatch  isic:5811 .
+
+cpc:32300  skos:closeMatch  isic:5813 .
+
+cpc:32410  skos:closeMatch  isic:5813 .
+
+cpc:32420  skos:closeMatch  isic:5813 .
+
+cpc:32490  skos:closeMatch  isic:5813 .
+
+cpc:32511  skos:closeMatch  isic:5811 .
+
+cpc:32512  skos:closeMatch  isic:3290 .
+
+cpc:32520  skos:closeMatch  isic:5920 .
+
+cpc:32530  skos:closeMatch  isic:5819 .
+
+cpc:32540  skos:closeMatch  isic:5819 .
+
+cpc:32550  skos:closeMatch  isic:7110 .
+
+cpc:32610  skos:closeMatch  isic:5310 ;
+        skos:closeMatch  isic:6411 .
+
+cpc:32620  skos:closeMatch  isic:5819 .
+
+cpc:32630  skos:closeMatch  isic:5819 .
+
+cpc:32690  skos:closeMatch  isic:1811 .
+
+cpc:32700  skos:closeMatch  isic:1709 .
+
+cpc:32800  skos:closeMatch  isic:1812 .
+
+cpc:33100  skos:closeMatch  isic:1910 .
+
+cpc:33200  skos:closeMatch  isic:1910 .
+
+cpc:33311  skos:closeMatch  isic:1920 .
+
+cpc:33312  skos:closeMatch  isic:1920 .
+
+cpc:33320  skos:closeMatch  isic:1920 .
+
+cpc:33330  skos:closeMatch  isic:1920 .
+
+cpc:33342  skos:closeMatch  isic:1920 .
+
+cpc:33349  skos:closeMatch  isic:1920 .
+
+cpc:33350  skos:closeMatch  isic:1920 .
+
+cpc:33360  skos:closeMatch  isic:1920 .
+
+cpc:33370  skos:closeMatch  isic:1920 .
+
+cpc:33380  skos:closeMatch  isic:1920 .
+
+cpc:33390  skos:closeMatch  isic:1920 .
+
+cpc:33410  skos:closeMatch  isic:1920 .
+
+cpc:33421  skos:closeMatch  isic:1920 .
+
+cpc:33429  skos:closeMatch  isic:1920 .
+
+cpc:33500  skos:closeMatch  isic:1920 .
+
+cpc:33610  skos:closeMatch  isic:2011 .
+
+cpc:33620  skos:closeMatch  isic:2011 .
+
+cpc:33630  skos:closeMatch  isic:2011 .
+
+cpc:33690  skos:closeMatch  isic:2011 .
+
+cpc:33710  skos:closeMatch  isic:2011 .
+
+cpc:33720  skos:closeMatch  isic:3510 .
+
+cpc:34110  skos:closeMatch  isic:2011 .
+
+cpc:34120  skos:closeMatch  isic:2011 .
+
+cpc:34131  skos:closeMatch  isic:2011 .
+
+cpc:34139  skos:closeMatch  isic:2011 .
+
+cpc:34140  skos:closeMatch  isic:2011 .
+
+cpc:34150  skos:closeMatch  isic:2011 .
+
+cpc:34160  skos:closeMatch  isic:2011 .
+
+cpc:34170  skos:closeMatch  isic:2011 .
+
+cpc:34180  skos:closeMatch  isic:2011 .
+
+cpc:34210  skos:closeMatch  isic:2011 .
+
+cpc:34220  skos:closeMatch  isic:2011 .
+
+cpc:34231  skos:closeMatch  isic:2011 .
+
+cpc:34232  skos:closeMatch  isic:2011 .
+
+cpc:34233  skos:closeMatch  isic:2012 .
+
+cpc:34240  skos:closeMatch  isic:2011 .
+
+cpc:34250  skos:closeMatch  isic:2011 .
+
+cpc:34260  skos:closeMatch  isic:2011 .
+
+cpc:34270  skos:closeMatch  isic:2011 .
+
+cpc:34280  skos:closeMatch  isic:2011 .
+
+cpc:34290  skos:closeMatch  isic:2011 .
+
+cpc:34310  skos:closeMatch  isic:2011 .
+
+cpc:34320  skos:closeMatch  isic:2011 .
+
+cpc:34330  skos:closeMatch  isic:2011 .
+
+cpc:34340  skos:closeMatch  isic:2011 .
+
+cpc:34400  skos:closeMatch  isic:2011 .
+
+cpc:34510  skos:closeMatch  isic:0220 ;
+        skos:closeMatch  isic:2011 .
+
+cpc:34520  skos:closeMatch  isic:2011 .
+
+cpc:34530  skos:closeMatch  isic:2011 .
+
+cpc:34540  skos:closeMatch  isic:2011 .
+
+cpc:34550  skos:closeMatch  isic:2029 .
+
+cpc:34560  skos:closeMatch  isic:2399 .
+
+cpc:34570  skos:closeMatch  isic:2011 ;
+        skos:closeMatch  isic:2023 .
+
+cpc:34611  skos:closeMatch  isic:2012 .
+
+cpc:34612  skos:closeMatch  isic:2012 .
+
+cpc:34613  skos:closeMatch  isic:2012 .
+
+cpc:34614  skos:closeMatch  isic:2012 .
+
+cpc:34615  skos:closeMatch  isic:2012 .
+
+cpc:34616  skos:closeMatch  isic:2012 .
+
+cpc:34619  skos:closeMatch  isic:2012 .
+
+cpc:34621  skos:closeMatch  isic:2012 .
+
+cpc:34629  skos:closeMatch  isic:2012 .
+
+cpc:34631  skos:closeMatch  isic:2012 .
+
+cpc:34632  skos:closeMatch  isic:2012 .
+
+cpc:34639  skos:closeMatch  isic:0891 ;
+        skos:closeMatch  isic:2012 .
+
+cpc:34641  skos:closeMatch  isic:2012 .
+
+cpc:34642  skos:closeMatch  isic:2012 .
+
+cpc:34643  skos:closeMatch  isic:2012 .
+
+cpc:34644  skos:closeMatch  isic:2012 .
+
+cpc:34645  skos:closeMatch  isic:2012 .
+
+cpc:34646  skos:closeMatch  isic:2012 .
+
+cpc:34649  skos:closeMatch  isic:2012 .
+
+cpc:34651  skos:closeMatch  isic:2012 .
+
+cpc:34652  skos:closeMatch  isic:2012 .
+
+cpc:34653  skos:closeMatch  isic:2012 .
+
+cpc:34654  skos:closeMatch  isic:0141 ;
+        skos:closeMatch  isic:0142 ;
+        skos:closeMatch  isic:0143 ;
+        skos:closeMatch  isic:0144 ;
+        skos:closeMatch  isic:0145 ;
+        skos:closeMatch  isic:0146 ;
+        skos:closeMatch  isic:0149 ;
+        skos:closeMatch  isic:0891 .
+
+cpc:34659  skos:closeMatch  isic:2012 .
+
+cpc:34661  skos:closeMatch  isic:2021 .
+
+cpc:34662  skos:closeMatch  isic:2021 .
+
+cpc:34663  skos:closeMatch  isic:2021 .
+
+cpc:34664  skos:closeMatch  isic:2021 .
+
+cpc:34666  skos:closeMatch  isic:2021 .
+
+cpc:34669  skos:closeMatch  isic:2021 .
+
+cpc:34710  skos:closeMatch  isic:2013 .
+
+cpc:34720  skos:closeMatch  isic:2013 .
+
+cpc:34730  skos:closeMatch  isic:2013 .
+
+cpc:34740  skos:closeMatch  isic:2013 .
+
+cpc:34790  skos:closeMatch  isic:2013 .
+
+cpc:34800  skos:closeMatch  isic:2013 .
+
+cpc:35110  skos:closeMatch  isic:2022 .
+
+cpc:35120  skos:closeMatch  isic:2022 .
+
+cpc:35130  skos:closeMatch  isic:2022 .
+
+cpc:35140  skos:closeMatch  isic:2029 .
+
+cpc:35210  skos:closeMatch  isic:2100 .
+
+cpc:35220  skos:closeMatch  isic:2100 .
+
+cpc:35230  skos:closeMatch  isic:2100 .
+
+cpc:35240  skos:closeMatch  isic:2100 .
+
+cpc:35250  skos:closeMatch  isic:2100 .
+
+cpc:35260  skos:closeMatch  isic:2100 .
+
+cpc:35270  skos:closeMatch  isic:2100 .
+
+cpc:35290  skos:closeMatch  isic:3250 .
+
+cpc:35310  skos:closeMatch  isic:2023 .
+
+cpc:35321  skos:closeMatch  isic:2023 .
+
+cpc:35322  skos:closeMatch  isic:2023 .
+
+cpc:35323  skos:closeMatch  isic:2023 .
+
+cpc:35331  skos:closeMatch  isic:2023 .
+
+cpc:35332  skos:closeMatch  isic:2023 .
+
+cpc:35333  skos:closeMatch  isic:2023 .
+
+cpc:35334  skos:closeMatch  isic:2023 .
+
+cpc:35410  skos:closeMatch  isic:2029 .
+
+cpc:35420  skos:closeMatch  isic:2029 .
+
+cpc:35430  skos:closeMatch  isic:2029 .
+
+cpc:35440  skos:closeMatch  isic:2029 ;
+        skos:closeMatch  isic:3250 .
+
+cpc:35450  skos:closeMatch  isic:2029 .
+
+cpc:35460  skos:closeMatch  isic:2029 .
+
+cpc:35470  skos:closeMatch  isic:2029 .
+
+cpc:35491  skos:closeMatch  isic:2029 .
+
+cpc:35499  skos:closeMatch  isic:2029 .
+
+cpc:35510  skos:closeMatch  isic:2030 .
+
+cpc:35520  skos:closeMatch  isic:2030 .
+
+cpc:35530  skos:closeMatch  isic:2030 .
+
+cpc:35540  skos:closeMatch  isic:2030 .
+
+cpc:35550  skos:closeMatch  isic:2030 .
+
+cpc:35560  skos:closeMatch  isic:2030 .
+
+cpc:36111  skos:closeMatch  isic:2211 .
+
+cpc:36112  skos:closeMatch  isic:2211 .
+
+cpc:36113  skos:closeMatch  isic:2211 .
+
+cpc:36114  skos:closeMatch  isic:2211 .
+
+cpc:36115  skos:closeMatch  isic:2211 .
+
+cpc:36120  skos:closeMatch  isic:2211 .
+
+cpc:36210  skos:closeMatch  isic:3830 .
+
+cpc:36220  skos:closeMatch  isic:2219 .
+
+cpc:36230  skos:closeMatch  isic:2219 .
+
+cpc:36240  skos:closeMatch  isic:2219 .
+
+cpc:36250  skos:closeMatch  isic:2219 .
+
+cpc:36260  skos:closeMatch  isic:2219 .
+
+cpc:36270  skos:closeMatch  isic:2219 .
+
+cpc:36310  skos:closeMatch  isic:2220 .
+
+cpc:36320  skos:closeMatch  isic:2220 .
+
+cpc:36330  skos:closeMatch  isic:2220 .
+
+cpc:36390  skos:closeMatch  isic:2220 .
+
+cpc:36410  skos:closeMatch  isic:2220 .
+
+cpc:36490  skos:closeMatch  isic:2220 .
+
+cpc:36910  skos:closeMatch  isic:2220 .
+
+cpc:36920  skos:closeMatch  isic:2220 .
+
+cpc:36930  skos:closeMatch  isic:2220 .
+
+cpc:36940  skos:closeMatch  isic:2220 .
+
+cpc:36950  skos:closeMatch  isic:2220 .
+
+cpc:36960  skos:closeMatch  isic:2220 .
+
+cpc:36971  skos:closeMatch  isic:3290 .
+
+cpc:36972  skos:closeMatch  isic:2219 ;
+        skos:closeMatch  isic:2220 .
+
+cpc:36980  skos:closeMatch  isic:2220 .
+
+cpc:36990  skos:closeMatch  isic:2220 .
+
+cpc:37111  skos:closeMatch  isic:2310 .
+
+cpc:37112  skos:closeMatch  isic:2310 .
+
+cpc:37113  skos:closeMatch  isic:2310 .
+
+cpc:37114  skos:closeMatch  isic:2310 .
+
+cpc:37115  skos:closeMatch  isic:2310 .
+
+cpc:37116  skos:closeMatch  isic:2310 .
+
+cpc:37117  skos:closeMatch  isic:2310 .
+
+cpc:37121  skos:closeMatch  isic:2310 .
+
+cpc:37129  skos:closeMatch  isic:2310 .
+
+cpc:37191  skos:closeMatch  isic:2310 .
+
+cpc:37192  skos:closeMatch  isic:2310 .
+
+cpc:37193  skos:closeMatch  isic:2310 .
+
+cpc:37194  skos:closeMatch  isic:2310 .
+
+cpc:37195  skos:closeMatch  isic:2310 .
+
+cpc:37196  skos:closeMatch  isic:2310 .
+
+cpc:37197  skos:closeMatch  isic:2310 .
+
+cpc:37199  skos:closeMatch  isic:2310 .
+
+cpc:37210  skos:closeMatch  isic:2392 .
+
+cpc:37221  skos:closeMatch  isic:2393 .
+
+cpc:37222  skos:closeMatch  isic:2393 .
+
+cpc:37291  skos:closeMatch  isic:2393 .
+
+cpc:37292  skos:closeMatch  isic:2393 .
+
+cpc:37299  skos:closeMatch  isic:2393 .
+
+cpc:37310  skos:closeMatch  isic:2392 .
+
+cpc:37320  skos:closeMatch  isic:2391 .
+
+cpc:37330  skos:closeMatch  isic:2391 .
+
+cpc:37340  skos:closeMatch  isic:2391 .
+
+cpc:37350  skos:closeMatch  isic:2392 .
+
+cpc:37360  skos:closeMatch  isic:2392 .
+
+cpc:37370  skos:closeMatch  isic:2392 .
+
+cpc:37410  skos:closeMatch  isic:2394 .
+
+cpc:37420  skos:closeMatch  isic:2394 .
+
+cpc:37430  skos:closeMatch  isic:2394 .
+
+cpc:37440  skos:closeMatch  isic:2394 .
+
+cpc:37450  skos:closeMatch  isic:2394 .
+
+cpc:37510  skos:closeMatch  isic:2395 .
+
+cpc:37520  skos:closeMatch  isic:2395 .
+
+cpc:37530  skos:closeMatch  isic:2395 .
+
+cpc:37540  skos:closeMatch  isic:2395 .
+
+cpc:37550  skos:closeMatch  isic:2395 .
+
+cpc:37560  skos:closeMatch  isic:2395 .
+
+cpc:37570  skos:closeMatch  isic:2395 .
+
+cpc:37610  skos:closeMatch  isic:2396 .
+
+cpc:37690  skos:closeMatch  isic:2396 .
+
+cpc:37910  skos:closeMatch  isic:2399 .
+
+cpc:37920  skos:closeMatch  isic:2399 .
+
+cpc:37930  skos:closeMatch  isic:2399 .
+
+cpc:37940  skos:closeMatch  isic:2399 .
+
+cpc:37950  skos:closeMatch  isic:2399 .
+
+cpc:37960  skos:closeMatch  isic:2399 .
+
+cpc:37990  skos:closeMatch  isic:2399 .
+
+cpc:38111  skos:closeMatch  isic:2930 ;
+        skos:closeMatch  isic:3020 ;
+        skos:closeMatch  isic:3030 ;
+        skos:closeMatch  isic:3100 .
+
+cpc:38112  skos:closeMatch  isic:3100 .
+
+cpc:38119  skos:closeMatch  isic:3100 .
+
+cpc:38121  skos:closeMatch  isic:3100 .
+
+cpc:38122  skos:closeMatch  isic:3100 .
+
+cpc:38130  skos:closeMatch  isic:3100 .
+
+cpc:38140  skos:closeMatch  isic:3100 .
+
+cpc:38150  skos:closeMatch  isic:3100 .
+
+cpc:38160  skos:closeMatch  isic:3100 .
+
+cpc:38210  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0321 .
+
+cpc:38220  skos:closeMatch  isic:3211 .
+
+cpc:38230  skos:closeMatch  isic:3211 .
+
+cpc:38240  skos:closeMatch  isic:3211 .
+
+cpc:38250  skos:closeMatch  isic:3211 .
+
+cpc:38310  skos:closeMatch  isic:3220 .
+
+cpc:38320  skos:closeMatch  isic:3220 .
+
+cpc:38330  skos:closeMatch  isic:3220 .
+
+cpc:38340  skos:closeMatch  isic:3220 .
+
+cpc:38350  skos:closeMatch  isic:3220 .
+
+cpc:38360  skos:closeMatch  isic:3220 .
+
+cpc:38410  skos:closeMatch  isic:3230 .
+
+cpc:38420  skos:closeMatch  isic:3230 .
+
+cpc:38430  skos:closeMatch  isic:3230 .
+
+cpc:38440  skos:closeMatch  isic:3230 .
+
+cpc:38450  skos:closeMatch  isic:3230 .
+
+cpc:38510  skos:closeMatch  isic:3240 .
+
+cpc:38520  skos:closeMatch  isic:3240 .
+
+cpc:38530  skos:closeMatch  isic:3240 .
+
+cpc:38540  skos:closeMatch  isic:3240 .
+
+cpc:38550  skos:closeMatch  isic:3240 .
+
+cpc:38560  skos:closeMatch  isic:3240 .
+
+cpc:38570  skos:closeMatch  isic:3240 .
+
+cpc:38581  skos:closeMatch  isic:2640 .
+
+cpc:38582  skos:closeMatch  isic:5820 .
+
+cpc:38590  skos:closeMatch  isic:3240 .
+
+cpc:38600  skos:closeMatch  isic:2829 .
+
+cpc:38701  skos:closeMatch  isic:1622 .
+
+cpc:38702  skos:closeMatch  isic:2511 .
+
+cpc:38703  skos:closeMatch  isic:2220 .
+
+cpc:38704  skos:closeMatch  isic:2395 .
+
+cpc:38911  skos:closeMatch  isic:3290 .
+
+cpc:38912  skos:closeMatch  isic:3290 .
+
+cpc:38921  skos:closeMatch  isic:1512 ;
+        skos:closeMatch  isic:3290 .
+
+cpc:38922  skos:closeMatch  isic:3290 .
+
+cpc:38923  skos:closeMatch  isic:3290 .
+
+cpc:38924  skos:closeMatch  isic:3290 .
+
+cpc:38930  skos:closeMatch  isic:2220 .
+
+cpc:38941  skos:closeMatch  isic:7420 .
+
+cpc:38942  skos:closeMatch  isic:7420 .
+
+cpc:38950  skos:closeMatch  isic:5911 .
+
+cpc:38961  skos:closeMatch  isic:9000 .
+
+cpc:38962  skos:closeMatch  isic:5310 .
+
+cpc:38963  skos:closeMatch  isic:9102 .
+
+cpc:38971  skos:closeMatch  isic:3290 .
+
+cpc:38972  skos:closeMatch  isic:3290 .
+
+cpc:38991  skos:closeMatch  isic:3290 .
+
+cpc:38992  skos:closeMatch  isic:3092 .
+
+cpc:38993  skos:closeMatch  isic:3290 .
+
+cpc:38994  skos:closeMatch  isic:3290 .
+
+cpc:38995  skos:closeMatch  isic:3290 .
+
+cpc:38996  skos:closeMatch  isic:3290 .
+
+cpc:38997  skos:closeMatch  isic:3212 .
+
+cpc:38998  skos:closeMatch  isic:2029 .
+
+cpc:38999  skos:closeMatch  isic:3290 .
+
+cpc:41111  skos:closeMatch  isic:2410 .
+
+cpc:41112  skos:closeMatch  isic:2410 .
+
+cpc:41113  skos:closeMatch  isic:2410 .
+
+cpc:41114  skos:closeMatch  isic:2410 .
+
+cpc:41115  skos:closeMatch  isic:2410 .
+
+cpc:41116  skos:closeMatch  isic:2410 .
+
+cpc:41117  skos:closeMatch  isic:2410 .
+
+cpc:41121  skos:closeMatch  isic:2410 .
+
+cpc:41122  skos:closeMatch  isic:2410 .
+
+cpc:41211  skos:closeMatch  isic:2410 .
+
+cpc:41212  skos:closeMatch  isic:2410 .
+
+cpc:41213  skos:closeMatch  isic:2410 .
+
+cpc:41214  skos:closeMatch  isic:2410 .
+
+cpc:41221  skos:closeMatch  isic:2410 .
+
+cpc:41222  skos:closeMatch  isic:2410 .
+
+cpc:41223  skos:closeMatch  isic:2410 .
+
+cpc:41224  skos:closeMatch  isic:2410 .
+
+cpc:41231  skos:closeMatch  isic:2410 .
+
+cpc:41232  skos:closeMatch  isic:2410 .
+
+cpc:41233  skos:closeMatch  isic:2410 .
+
+cpc:41234  skos:closeMatch  isic:2410 .
+
+cpc:41239  skos:closeMatch  isic:2410 .
+
+cpc:41241  skos:closeMatch  isic:2410 .
+
+cpc:41242  skos:closeMatch  isic:2410 .
+
+cpc:41243  skos:closeMatch  isic:2410 .
+
+cpc:41244  skos:closeMatch  isic:2410 .
+
+cpc:41251  skos:closeMatch  isic:2410 .
+
+cpc:41252  skos:closeMatch  isic:2410 .
+
+cpc:41253  skos:closeMatch  isic:2410 .
+
+cpc:41261  skos:closeMatch  isic:2410 .
+
+cpc:41262  skos:closeMatch  isic:2410 .
+
+cpc:41263  skos:closeMatch  isic:2410 .
+
+cpc:41264  skos:closeMatch  isic:2410 .
+
+cpc:41265  skos:closeMatch  isic:2410 .
+
+cpc:41266  skos:closeMatch  isic:2410 .
+
+cpc:41267  skos:closeMatch  isic:2410 .
+
+cpc:41271  skos:closeMatch  isic:2410 .
+
+cpc:41272  skos:closeMatch  isic:2410 .
+
+cpc:41273  skos:closeMatch  isic:2410 .
+
+cpc:41281  skos:closeMatch  isic:2431 .
+
+cpc:41282  skos:closeMatch  isic:2431 .
+
+cpc:41283  skos:closeMatch  isic:2431 .
+
+cpc:41284  skos:closeMatch  isic:2431 .
+
+cpc:41285  skos:closeMatch  isic:2410 .
+
+cpc:41286  skos:closeMatch  isic:2410 .
+
+cpc:41287  skos:closeMatch  isic:2410 .
+
+cpc:41288  skos:closeMatch  isic:2410 .
+
+cpc:41289  skos:closeMatch  isic:2410 .
+
+cpc:41291  skos:closeMatch  isic:2431 .
+
+cpc:41292  skos:closeMatch  isic:2431 .
+
+cpc:41293  skos:closeMatch  isic:2431 .
+
+cpc:41310  skos:closeMatch  isic:2420 .
+
+cpc:41320  skos:closeMatch  isic:2420 .
+
+cpc:41330  skos:closeMatch  isic:2420 .
+
+cpc:41340  skos:closeMatch  isic:2420 .
+
+cpc:41350  skos:closeMatch  isic:2420 .
+
+cpc:41411  skos:closeMatch  isic:2420 .
+
+cpc:41412  skos:closeMatch  isic:2420 .
+
+cpc:41413  skos:closeMatch  isic:2420 .
+
+cpc:41421  skos:closeMatch  isic:2420 .
+
+cpc:41422  skos:closeMatch  isic:2420 .
+
+cpc:41431  skos:closeMatch  isic:2420 .
+
+cpc:41432  skos:closeMatch  isic:2420 .
+
+cpc:41441  skos:closeMatch  isic:2420 .
+
+cpc:41442  skos:closeMatch  isic:2420 .
+
+cpc:41443  skos:closeMatch  isic:2420 .
+
+cpc:41511  skos:closeMatch  isic:2420 .
+
+cpc:41512  skos:closeMatch  isic:2420 .
+
+cpc:41513  skos:closeMatch  isic:2420 .
+
+cpc:41514  skos:closeMatch  isic:2420 .
+
+cpc:41515  skos:closeMatch  isic:2420 .
+
+cpc:41516  skos:closeMatch  isic:2420 .
+
+cpc:41521  skos:closeMatch  isic:2420 .
+
+cpc:41522  skos:closeMatch  isic:2420 .
+
+cpc:41523  skos:closeMatch  isic:2420 .
+
+cpc:41524  skos:closeMatch  isic:2420 .
+
+cpc:41531  skos:closeMatch  isic:2420 .
+
+cpc:41532  skos:closeMatch  isic:2420 .
+
+cpc:41533  skos:closeMatch  isic:2420 .
+
+cpc:41534  skos:closeMatch  isic:2420 .
+
+cpc:41535  skos:closeMatch  isic:2420 .
+
+cpc:41536  skos:closeMatch  isic:2420 .
+
+cpc:41542  skos:closeMatch  isic:2420 .
+
+cpc:41544  skos:closeMatch  isic:2420 .
+
+cpc:41545  skos:closeMatch  isic:2420 .
+
+cpc:41547  skos:closeMatch  isic:2420 .
+
+cpc:41601  skos:closeMatch  isic:2420 .
+
+cpc:41602  skos:closeMatch  isic:2420 .
+
+cpc:41603  skos:closeMatch  isic:2420 .
+
+cpc:41604  skos:closeMatch  isic:2420 .
+
+cpc:42110  skos:closeMatch  isic:2511 .
+
+cpc:42120  skos:closeMatch  isic:2511 .
+
+cpc:42190  skos:closeMatch  isic:2511 .
+
+cpc:42210  skos:closeMatch  isic:2512 .
+
+cpc:42220  skos:closeMatch  isic:2512 .
+
+cpc:42310  skos:closeMatch  isic:2513 .
+
+cpc:42320  skos:closeMatch  isic:2513 .
+
+cpc:42330  skos:closeMatch  isic:2513 .
+
+cpc:42341  skos:closeMatch  isic:2513 .
+
+cpc:42342  skos:closeMatch  isic:2513 .
+
+cpc:42911  skos:closeMatch  isic:2599 .
+
+cpc:42912  skos:closeMatch  isic:2599 ;
+        skos:closeMatch  isic:2750 .
+
+cpc:42913  skos:closeMatch  isic:2593 .
+
+cpc:42914  skos:closeMatch  isic:2593 .
+
+cpc:42915  skos:closeMatch  isic:2593 .
+
+cpc:42916  skos:closeMatch  isic:2593 .
+
+cpc:42921  skos:closeMatch  isic:2593 .
+
+cpc:42922  skos:closeMatch  isic:2593 .
+
+cpc:42931  skos:closeMatch  isic:2599 .
+
+cpc:42932  skos:closeMatch  isic:2599 .
+
+cpc:42941  skos:closeMatch  isic:2599 .
+
+cpc:42942  skos:closeMatch  isic:2599 .
+
+cpc:42943  skos:closeMatch  isic:2599 .
+
+cpc:42944  skos:closeMatch  isic:2599 .
+
+cpc:42945  skos:closeMatch  isic:2599 .
+
+cpc:42946  skos:closeMatch  isic:2599 .
+
+cpc:42950  skos:closeMatch  isic:2599 .
+
+cpc:42991  skos:closeMatch  isic:2599 .
+
+cpc:42992  skos:closeMatch  isic:2593 .
+
+cpc:42993  skos:closeMatch  isic:2599 .
+
+cpc:42994  skos:closeMatch  isic:2599 .
+
+cpc:42995  skos:closeMatch  isic:2599 .
+
+cpc:42996  skos:closeMatch  isic:2599 .
+
+cpc:42997  skos:closeMatch  isic:2599 .
+
+cpc:42998  skos:closeMatch  isic:2599 .
+
+cpc:42999  skos:closeMatch  isic:2599 .
+
+cpc:43110  skos:closeMatch  isic:2811 .
+
+cpc:43121  skos:closeMatch  isic:2910 .
+
+cpc:43122  skos:closeMatch  isic:2910 .
+
+cpc:43123  skos:closeMatch  isic:2910 .
+
+cpc:43131  skos:closeMatch  isic:3030 .
+
+cpc:43132  skos:closeMatch  isic:3030 .
+
+cpc:43133  skos:closeMatch  isic:3030 .
+
+cpc:43134  skos:closeMatch  isic:2829 .
+
+cpc:43141  skos:closeMatch  isic:2811 .
+
+cpc:43142  skos:closeMatch  isic:2811 .
+
+cpc:43143  skos:closeMatch  isic:2811 .
+
+cpc:43151  skos:closeMatch  isic:2930 .
+
+cpc:43152  skos:closeMatch  isic:3030 .
+
+cpc:43153  skos:closeMatch  isic:2811 .
+
+cpc:43154  skos:closeMatch  isic:2811 .
+
+cpc:43155  skos:closeMatch  isic:3030 .
+
+cpc:43156  skos:closeMatch  isic:2811 .
+
+cpc:43211  skos:closeMatch  isic:2812 .
+
+cpc:43219  skos:closeMatch  isic:2812 .
+
+cpc:43220  skos:closeMatch  isic:2813 .
+
+cpc:43230  skos:closeMatch  isic:2813 .
+
+cpc:43240  skos:closeMatch  isic:2813 .
+
+cpc:43251  skos:closeMatch  isic:2812 .
+
+cpc:43252  skos:closeMatch  isic:2813 .
+
+cpc:43253  skos:closeMatch  isic:2813 .
+
+cpc:43254  skos:closeMatch  isic:2813 .
+
+cpc:43310  skos:closeMatch  isic:2814 .
+
+cpc:43320  skos:closeMatch  isic:2814 .
+
+cpc:43331  skos:closeMatch  isic:2814 .
+
+cpc:43332  skos:closeMatch  isic:2814 .
+
+cpc:43410  skos:closeMatch  isic:2815 .
+
+cpc:43420  skos:closeMatch  isic:2815 ;
+        skos:closeMatch  isic:3250 .
+
+cpc:43430  skos:closeMatch  isic:2815 .
+
+cpc:43510  skos:closeMatch  isic:2816 .
+
+cpc:43520  skos:closeMatch  isic:2816 .
+
+cpc:43530  skos:closeMatch  isic:2816 .
+
+cpc:43540  skos:closeMatch  isic:2816 .
+
+cpc:43550  skos:closeMatch  isic:2816 .
+
+cpc:43560  skos:closeMatch  isic:2816 .
+
+cpc:43570  skos:closeMatch  isic:2816 .
+
+cpc:43580  skos:closeMatch  isic:2816 .
+
+cpc:43911  skos:closeMatch  isic:2819 .
+
+cpc:43912  skos:closeMatch  isic:2819 .
+
+cpc:43913  skos:closeMatch  isic:2819 .
+
+cpc:43914  skos:closeMatch  isic:2819 .
+
+cpc:43915  skos:closeMatch  isic:2819 .
+
+cpc:43921  skos:closeMatch  isic:2819 .
+
+cpc:43922  skos:closeMatch  isic:2819 .
+
+cpc:43923  skos:closeMatch  isic:2819 .
+
+cpc:43924  skos:closeMatch  isic:2819 .
+
+cpc:43931  skos:closeMatch  isic:2819 .
+
+cpc:43932  skos:closeMatch  isic:2819 .
+
+cpc:43933  skos:closeMatch  isic:2819 .
+
+cpc:43934  skos:closeMatch  isic:2819 .
+
+cpc:43935  skos:closeMatch  isic:2819 .
+
+cpc:43941  skos:closeMatch  isic:2819 .
+
+cpc:43942  skos:closeMatch  isic:2819 .
+
+cpc:43943  skos:closeMatch  isic:2819 .
+
+cpc:43944  skos:closeMatch  isic:2819 .
+
+cpc:43949  skos:closeMatch  isic:2819 .
+
+cpc:44111  skos:closeMatch  isic:2821 .
+
+cpc:44112  skos:closeMatch  isic:2821 .
+
+cpc:44113  skos:closeMatch  isic:2821 .
+
+cpc:44114  skos:closeMatch  isic:2821 .
+
+cpc:44115  skos:closeMatch  isic:2821 .
+
+cpc:44119  skos:closeMatch  isic:2821 .
+
+cpc:44121  skos:closeMatch  isic:2821 .
+
+cpc:44122  skos:closeMatch  isic:2821 .
+
+cpc:44123  skos:closeMatch  isic:2821 .
+
+cpc:44124  skos:closeMatch  isic:2821 .
+
+cpc:44125  skos:closeMatch  isic:2821 .
+
+cpc:44126  skos:closeMatch  isic:2821 .
+
+cpc:44127  skos:closeMatch  isic:2821 .
+
+cpc:44128  skos:closeMatch  isic:2825 .
+
+cpc:44129  skos:closeMatch  isic:2821 .
+
+cpc:44131  skos:closeMatch  isic:2821 .
+
+cpc:44132  skos:closeMatch  isic:2825 .
+
+cpc:44139  skos:closeMatch  isic:2821 ;
+        skos:closeMatch  isic:2825 .
+
+cpc:44141  skos:closeMatch  isic:2821 .
+
+cpc:44142  skos:closeMatch  isic:2824 .
+
+cpc:44149  skos:closeMatch  isic:2821 .
+
+cpc:44150  skos:closeMatch  isic:2821 .
+
+cpc:44160  skos:closeMatch  isic:2821 .
+
+cpc:44191  skos:closeMatch  isic:2825 .
+
+cpc:44192  skos:closeMatch  isic:2821 .
+
+cpc:44193  skos:closeMatch  isic:2821 .
+
+cpc:44194  skos:closeMatch  isic:2821 .
+
+cpc:44198  skos:closeMatch  isic:2821 .
+
+cpc:44199  skos:closeMatch  isic:2821 .
+
+cpc:44211  skos:closeMatch  isic:2822 .
+
+cpc:44212  skos:closeMatch  isic:2822 .
+
+cpc:44213  skos:closeMatch  isic:2822 .
+
+cpc:44214  skos:closeMatch  isic:2822 .
+
+cpc:44215  skos:closeMatch  isic:2822 .
+
+cpc:44216  skos:closeMatch  isic:2822 .
+
+cpc:44217  skos:closeMatch  isic:2822 .
+
+cpc:44218  skos:closeMatch  isic:2822 .
+
+cpc:44221  skos:closeMatch  isic:2822 .
+
+cpc:44222  skos:closeMatch  isic:2822 .
+
+cpc:44231  skos:closeMatch  isic:2818 .
+
+cpc:44232  skos:closeMatch  isic:2818 .
+
+cpc:44241  skos:closeMatch  isic:2790 ;
+        skos:closeMatch  isic:2822 .
+
+cpc:44242  skos:closeMatch  isic:2819 .
+
+cpc:44251  skos:closeMatch  isic:2822 .
+
+cpc:44252  skos:closeMatch  isic:2822 .
+
+cpc:44253  skos:closeMatch  isic:2818 .
+
+cpc:44255  skos:closeMatch  isic:2790 ;
+        skos:closeMatch  isic:2822 .
+
+cpc:44256  skos:closeMatch  isic:2819 .
+
+cpc:44310  skos:closeMatch  isic:2823 .
+
+cpc:44320  skos:closeMatch  isic:2823 .
+
+cpc:44411  skos:closeMatch  isic:2824 .
+
+cpc:44412  skos:closeMatch  isic:2824 .
+
+cpc:44421  skos:closeMatch  isic:2824 .
+
+cpc:44422  skos:closeMatch  isic:2824 .
+
+cpc:44423  skos:closeMatch  isic:2824 .
+
+cpc:44424  skos:closeMatch  isic:2824 .
+
+cpc:44425  skos:closeMatch  isic:2824 .
+
+cpc:44426  skos:closeMatch  isic:2824 .
+
+cpc:44427  skos:closeMatch  isic:2824 .
+
+cpc:44428  skos:closeMatch  isic:2824 .
+
+cpc:44429  skos:closeMatch  isic:2824 .
+
+cpc:44430  skos:closeMatch  isic:2824 .
+
+cpc:44440  skos:closeMatch  isic:2824 .
+
+cpc:44461  skos:closeMatch  isic:2824 .
+
+cpc:44462  skos:closeMatch  isic:2824 .
+
+cpc:44511  skos:closeMatch  isic:2825 .
+
+cpc:44513  skos:closeMatch  isic:2825 .
+
+cpc:44515  skos:closeMatch  isic:2825 .
+
+cpc:44516  skos:closeMatch  isic:2825 .
+
+cpc:44517  skos:closeMatch  isic:2825 .
+
+cpc:44518  skos:closeMatch  isic:2825 .
+
+cpc:44522  skos:closeMatch  isic:2825 .
+
+cpc:44523  skos:closeMatch  isic:2825 .
+
+cpc:44611  skos:closeMatch  isic:2826 .
+
+cpc:44612  skos:closeMatch  isic:2826 .
+
+cpc:44613  skos:closeMatch  isic:2826 .
+
+cpc:44614  skos:closeMatch  isic:2826 .
+
+cpc:44621  skos:closeMatch  isic:2826 .
+
+cpc:44622  skos:closeMatch  isic:2826 .
+
+cpc:44629  skos:closeMatch  isic:2826 .
+
+cpc:44630  skos:closeMatch  isic:2826 .
+
+cpc:44640  skos:closeMatch  isic:2826 .
+
+cpc:44710  skos:closeMatch  isic:3040 .
+
+cpc:44720  skos:closeMatch  isic:2520 .
+
+cpc:44730  skos:closeMatch  isic:2520 .
+
+cpc:44740  skos:closeMatch  isic:2520 .
+
+cpc:44750  skos:closeMatch  isic:2593 .
+
+cpc:44760  skos:closeMatch  isic:2520 .
+
+cpc:44811  skos:closeMatch  isic:2750 .
+
+cpc:44812  skos:closeMatch  isic:2750 .
+
+cpc:44813  skos:closeMatch  isic:2750 .
+
+cpc:44814  skos:closeMatch  isic:2826 .
+
+cpc:44815  skos:closeMatch  isic:2750 .
+
+cpc:44816  skos:closeMatch  isic:2750 .
+
+cpc:44817  skos:closeMatch  isic:2750 .
+
+cpc:44818  skos:closeMatch  isic:2750 .
+
+cpc:44821  skos:closeMatch  isic:2750 .
+
+cpc:44822  skos:closeMatch  isic:2750 .
+
+cpc:44823  skos:closeMatch  isic:2512 .
+
+cpc:44824  skos:closeMatch  isic:2750 .
+
+cpc:44825  skos:closeMatch  isic:2512 .
+
+cpc:44826  skos:closeMatch  isic:2819 .
+
+cpc:44831  skos:closeMatch  isic:2750 .
+
+cpc:44832  skos:closeMatch  isic:2750 .
+
+cpc:44833  skos:closeMatch  isic:2512 .
+
+cpc:44911  skos:closeMatch  isic:2826 .
+
+cpc:44912  skos:closeMatch  isic:2829 .
+
+cpc:44913  skos:closeMatch  isic:2829 .
+
+cpc:44914  skos:closeMatch  isic:2829 .
+
+cpc:44915  skos:closeMatch  isic:2829 .
+
+cpc:44916  skos:closeMatch  isic:2593 .
+
+cpc:44917  skos:closeMatch  isic:2817 .
+
+cpc:44918  skos:closeMatch  isic:2829 .
+
+cpc:44919  skos:closeMatch  isic:2829 .
+
+cpc:44921  skos:closeMatch  isic:2829 .
+
+cpc:44922  skos:closeMatch  isic:2817 ;
+        skos:closeMatch  isic:2829 .
+
+cpc:44923  skos:closeMatch  isic:2829 .
+
+cpc:44929  skos:closeMatch  isic:2829 .
+
+cpc:45110  skos:closeMatch  isic:2817 .
+
+cpc:45130  skos:closeMatch  isic:2817 .
+
+cpc:45141  skos:closeMatch  isic:2817 .
+
+cpc:45142  skos:closeMatch  isic:2620 .
+
+cpc:45150  skos:closeMatch  isic:2817 .
+
+cpc:45160  skos:closeMatch  isic:2817 .
+
+cpc:45170  skos:closeMatch  isic:2817 .
+
+cpc:45180  skos:closeMatch  isic:2620 ;
+        skos:closeMatch  isic:2817 .
+
+cpc:45220  skos:closeMatch  isic:2620 .
+
+cpc:45230  skos:closeMatch  isic:2620 .
+
+cpc:45240  skos:closeMatch  isic:2620 .
+
+cpc:45250  skos:closeMatch  isic:2620 .
+
+cpc:45261  skos:closeMatch  isic:2620 .
+
+cpc:45262  skos:closeMatch  isic:2620 .
+
+cpc:45263  skos:closeMatch  isic:2620 .
+
+cpc:45264  skos:closeMatch  isic:2620 .
+
+cpc:45265  skos:closeMatch  isic:2620 .
+
+cpc:45266  skos:closeMatch  isic:2620 .
+
+cpc:45269  skos:closeMatch  isic:2620 .
+
+cpc:45271  skos:closeMatch  isic:2620 .
+
+cpc:45272  skos:closeMatch  isic:2620 .
+
+cpc:45281  skos:closeMatch  isic:2610 .
+
+cpc:45289  skos:closeMatch  isic:2620 .
+
+cpc:45290  skos:closeMatch  isic:2620 .
+
+cpc:46111  skos:closeMatch  isic:2710 .
+
+cpc:46112  skos:closeMatch  isic:2710 .
+
+cpc:46113  skos:closeMatch  isic:2710 .
+
+cpc:46121  skos:closeMatch  isic:2710 .
+
+cpc:46122  skos:closeMatch  isic:2710 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:46131  skos:closeMatch  isic:2710 .
+
+cpc:46132  skos:closeMatch  isic:2710 .
+
+cpc:46211  skos:closeMatch  isic:2710 .
+
+cpc:46212  skos:closeMatch  isic:2710 .
+
+cpc:46213  skos:closeMatch  isic:2710 .
+
+cpc:46214  skos:closeMatch  isic:2710 .
+
+cpc:46215  skos:closeMatch  isic:2610 .
+
+cpc:46220  skos:closeMatch  isic:2710 .
+
+cpc:46310  skos:closeMatch  isic:2732 .
+
+cpc:46320  skos:closeMatch  isic:2732 .
+
+cpc:46330  skos:closeMatch  isic:2732 ;
+        skos:closeMatch  isic:2930 .
+
+cpc:46340  skos:closeMatch  isic:2732 .
+
+cpc:46350  skos:closeMatch  isic:2732 .
+
+cpc:46360  skos:closeMatch  isic:2731 .
+
+cpc:46410  skos:closeMatch  isic:2720 .
+
+cpc:46420  skos:closeMatch  isic:2720 .
+
+cpc:46430  skos:closeMatch  isic:2720 .
+
+cpc:46510  skos:closeMatch  isic:2740 .
+
+cpc:46531  skos:closeMatch  isic:2740 .
+
+cpc:46532  skos:closeMatch  isic:2740 .
+
+cpc:46539  skos:closeMatch  isic:2740 .
+
+cpc:46541  skos:closeMatch  isic:2740 .
+
+cpc:46542  skos:closeMatch  isic:2740 .
+
+cpc:46910  skos:closeMatch  isic:2740 ;
+        skos:closeMatch  isic:2930 .
+
+cpc:46921  skos:closeMatch  isic:2630 .
+
+cpc:46929  skos:closeMatch  isic:2790 .
+
+cpc:46931  skos:closeMatch  isic:2599 .
+
+cpc:46932  skos:closeMatch  isic:2393 .
+
+cpc:46939  skos:closeMatch  isic:2790 .
+
+cpc:46940  skos:closeMatch  isic:2733 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:46950  skos:closeMatch  isic:2790 .
+
+cpc:46960  skos:closeMatch  isic:2630 ;
+        skos:closeMatch  isic:2740 ;
+        skos:closeMatch  isic:2790 ;
+        skos:closeMatch  isic:2930 .
+
+cpc:47110  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:47120  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:47130  skos:closeMatch  isic:2610 .
+
+cpc:47140  skos:closeMatch  isic:2610 .
+
+cpc:47150  skos:closeMatch  isic:2610 .
+
+cpc:47160  skos:closeMatch  isic:2610 .
+
+cpc:47171  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:47172  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2790 .
+
+cpc:47173  skos:closeMatch  isic:2610 .
+
+cpc:47211  skos:closeMatch  isic:2630 .
+
+cpc:47212  skos:closeMatch  isic:2630 .
+
+cpc:47213  skos:closeMatch  isic:2630 .
+
+cpc:47214  skos:closeMatch  isic:2640 .
+
+cpc:47215  skos:closeMatch  isic:2670 .
+
+cpc:47221  skos:closeMatch  isic:2630 .
+
+cpc:47222  skos:closeMatch  isic:2630 .
+
+cpc:47223  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2630 .
+
+cpc:47311  skos:closeMatch  isic:2640 .
+
+cpc:47312  skos:closeMatch  isic:2640 .
+
+cpc:47313  skos:closeMatch  isic:2640 .
+
+cpc:47314  skos:closeMatch  isic:2640 .
+
+cpc:47315  skos:closeMatch  isic:2620 .
+
+cpc:47321  skos:closeMatch  isic:2640 .
+
+cpc:47323  skos:closeMatch  isic:2640 .
+
+cpc:47330  skos:closeMatch  isic:2640 .
+
+cpc:47401  skos:closeMatch  isic:2630 .
+
+cpc:47402  skos:closeMatch  isic:2640 .
+
+cpc:47403  skos:closeMatch  isic:2630 ;
+        skos:closeMatch  isic:2640 ;
+        skos:closeMatch  isic:2651 .
+
+cpc:47530  skos:closeMatch  isic:2680 .
+
+cpc:47540  skos:closeMatch  isic:2680 .
+
+cpc:47550  skos:closeMatch  isic:2620 .
+
+cpc:47590  skos:closeMatch  isic:3290 .
+
+cpc:47610  skos:closeMatch  isic:5920 .
+
+cpc:47620  skos:closeMatch  isic:5911 .
+
+cpc:47691  skos:closeMatch  isic:5811 .
+
+cpc:47692  skos:closeMatch  isic:5811 ;
+        skos:closeMatch  isic:5812 ;
+        skos:closeMatch  isic:5813 .
+
+cpc:47699  skos:closeMatch  isic:5920 .
+
+cpc:47811  skos:closeMatch  isic:5820 .
+
+cpc:47812  skos:closeMatch  isic:5820 .
+
+cpc:47813  skos:closeMatch  isic:5820 .
+
+cpc:47814  skos:closeMatch  isic:5820 .
+
+cpc:47821  skos:closeMatch  isic:5820 .
+
+cpc:47822  skos:closeMatch  isic:5820 .
+
+cpc:47829  skos:closeMatch  isic:5820 .
+
+cpc:47910  skos:closeMatch  isic:2680 .
+
+cpc:47920  skos:closeMatch  isic:2610 .
+
+cpc:48110  skos:closeMatch  isic:2660 .
+
+cpc:48121  skos:closeMatch  isic:2660 .
+
+cpc:48122  skos:closeMatch  isic:2660 .
+
+cpc:48130  skos:closeMatch  isic:3250 .
+
+cpc:48140  skos:closeMatch  isic:3250 .
+
+cpc:48150  skos:closeMatch  isic:3250 .
+
+cpc:48160  skos:closeMatch  isic:3250 .
+
+cpc:48171  skos:closeMatch  isic:3250 .
+
+cpc:48172  skos:closeMatch  isic:2660 .
+
+cpc:48180  skos:closeMatch  isic:3250 .
+
+cpc:48211  skos:closeMatch  isic:2651 .
+
+cpc:48212  skos:closeMatch  isic:2651 .
+
+cpc:48219  skos:closeMatch  isic:2651 .
+
+cpc:48220  skos:closeMatch  isic:2651 .
+
+cpc:48231  skos:closeMatch  isic:2651 .
+
+cpc:48232  skos:closeMatch  isic:2819 .
+
+cpc:48233  skos:closeMatch  isic:2651 .
+
+cpc:48241  skos:closeMatch  isic:2651 .
+
+cpc:48242  skos:closeMatch  isic:2651 .
+
+cpc:48243  skos:closeMatch  isic:2651 .
+
+cpc:48244  skos:closeMatch  isic:2651 .
+
+cpc:48249  skos:closeMatch  isic:2651 .
+
+cpc:48251  skos:closeMatch  isic:2651 .
+
+cpc:48252  skos:closeMatch  isic:2651 .
+
+cpc:48253  skos:closeMatch  isic:2651 .
+
+cpc:48261  skos:closeMatch  isic:2651 .
+
+cpc:48262  skos:closeMatch  isic:2651 .
+
+cpc:48263  skos:closeMatch  isic:2651 .
+
+cpc:48264  skos:closeMatch  isic:2651 .
+
+cpc:48266  skos:closeMatch  isic:2651 .
+
+cpc:48269  skos:closeMatch  isic:2651 .
+
+cpc:48281  skos:closeMatch  isic:2651 .
+
+cpc:48282  skos:closeMatch  isic:2651 .
+
+cpc:48283  skos:closeMatch  isic:2651 .
+
+cpc:48284  skos:closeMatch  isic:2651 .
+
+cpc:48285  skos:closeMatch  isic:2651 .
+
+cpc:48311  skos:closeMatch  isic:2670 ;
+        skos:closeMatch  isic:2731 .
+
+cpc:48312  skos:closeMatch  isic:3250 .
+
+cpc:48313  skos:closeMatch  isic:3250 .
+
+cpc:48314  skos:closeMatch  isic:2670 .
+
+cpc:48315  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2670 .
+
+cpc:48321  skos:closeMatch  isic:2670 .
+
+cpc:48322  skos:closeMatch  isic:2670 .
+
+cpc:48323  skos:closeMatch  isic:2670 .
+
+cpc:48329  skos:closeMatch  isic:2670 .
+
+cpc:48341  skos:closeMatch  isic:2029 .
+
+cpc:48342  skos:closeMatch  isic:2029 .
+
+cpc:48351  skos:closeMatch  isic:2670 .
+
+cpc:48352  skos:closeMatch  isic:3250 .
+
+cpc:48353  skos:closeMatch  isic:2670 .
+
+cpc:48354  skos:closeMatch  isic:2610 ;
+        skos:closeMatch  isic:2670 .
+
+cpc:48410  skos:closeMatch  isic:2652 .
+
+cpc:48420  skos:closeMatch  isic:2652 .
+
+cpc:48430  skos:closeMatch  isic:2652 .
+
+cpc:48440  skos:closeMatch  isic:2652 .
+
+cpc:48490  skos:closeMatch  isic:2652 ;
+        skos:closeMatch  isic:3211 ;
+        skos:closeMatch  isic:3212 .
+
+cpc:49111  skos:closeMatch  isic:2910 .
+
+cpc:49112  skos:closeMatch  isic:2910 .
+
+cpc:49113  skos:closeMatch  isic:2910 .
+
+cpc:49114  skos:closeMatch  isic:2910 .
+
+cpc:49115  skos:closeMatch  isic:2910 .
+
+cpc:49116  skos:closeMatch  isic:2910 .
+
+cpc:49119  skos:closeMatch  isic:2910 .
+
+cpc:49121  skos:closeMatch  isic:2910 .
+
+cpc:49129  skos:closeMatch  isic:2930 .
+
+cpc:49210  skos:closeMatch  isic:2920 .
+
+cpc:49221  skos:closeMatch  isic:2920 .
+
+cpc:49222  skos:closeMatch  isic:2920 .
+
+cpc:49229  skos:closeMatch  isic:2920 .
+
+cpc:49231  skos:closeMatch  isic:2930 .
+
+cpc:49232  skos:closeMatch  isic:2821 ;
+        skos:closeMatch  isic:2930 .
+
+cpc:49311  skos:closeMatch  isic:3011 .
+
+cpc:49312  skos:closeMatch  isic:3011 .
+
+cpc:49313  skos:closeMatch  isic:3011 .
+
+cpc:49314  skos:closeMatch  isic:3011 .
+
+cpc:49315  skos:closeMatch  isic:3011 .
+
+cpc:49316  skos:closeMatch  isic:3011 .
+
+cpc:49319  skos:closeMatch  isic:3011 .
+
+cpc:49320  skos:closeMatch  isic:3011 .
+
+cpc:49390  skos:closeMatch  isic:3011 .
+
+cpc:49410  skos:closeMatch  isic:3012 .
+
+cpc:49490  skos:closeMatch  isic:3012 .
+
+cpc:49511  skos:closeMatch  isic:3020 .
+
+cpc:49512  skos:closeMatch  isic:3020 .
+
+cpc:49519  skos:closeMatch  isic:3020 .
+
+cpc:49520  skos:closeMatch  isic:3020 .
+
+cpc:49531  skos:closeMatch  isic:3020 .
+
+cpc:49532  skos:closeMatch  isic:3020 .
+
+cpc:49533  skos:closeMatch  isic:3020 .
+
+cpc:49540  skos:closeMatch  isic:2599 ;
+        skos:closeMatch  isic:3020 .
+
+cpc:49610  skos:closeMatch  isic:3030 .
+
+cpc:49621  skos:closeMatch  isic:3030 .
+
+cpc:49622  skos:closeMatch  isic:3030 .
+
+cpc:49623  skos:closeMatch  isic:3030 .
+
+cpc:49630  skos:closeMatch  isic:3030 .
+
+cpc:49640  skos:closeMatch  isic:3030 .
+
+cpc:49911  skos:closeMatch  isic:3091 .
+
+cpc:49912  skos:closeMatch  isic:3091 .
+
+cpc:49913  skos:closeMatch  isic:3091 .
+
+cpc:49921  skos:closeMatch  isic:3092 .
+
+cpc:49922  skos:closeMatch  isic:3092 .
+
+cpc:49930  skos:closeMatch  isic:2816 ;
+        skos:closeMatch  isic:3099 .
+
+cpc:49941  skos:closeMatch  isic:3091 .
+
+cpc:49942  skos:closeMatch  isic:3092 .
+
+cpc:53111  skos:closeMatch  isic:4100 .
+
+cpc:53112  skos:closeMatch  isic:4100 .
+
+cpc:53121  skos:closeMatch  isic:4100 .
+
+cpc:53122  skos:closeMatch  isic:4100 .
+
+cpc:53129  skos:closeMatch  isic:4100 .
+
+cpc:53211  skos:closeMatch  isic:4210 .
+
+cpc:53212  skos:closeMatch  isic:4210 .
+
+cpc:53213  skos:closeMatch  isic:4210 .
+
+cpc:53221  skos:closeMatch  isic:4210 .
+
+cpc:53222  skos:closeMatch  isic:4210 .
+
+cpc:53231  skos:closeMatch  isic:4220 .
+
+cpc:53232  skos:closeMatch  isic:4290 .
+
+cpc:53233  skos:closeMatch  isic:4290 .
+
+cpc:53234  skos:closeMatch  isic:4220 .
+
+cpc:53241  skos:closeMatch  isic:4220 .
+
+cpc:53242  skos:closeMatch  isic:4220 .
+
+cpc:53251  skos:closeMatch  isic:4220 .
+
+cpc:53252  skos:closeMatch  isic:4220 .
+
+cpc:53253  skos:closeMatch  isic:4220 .
+
+cpc:53261  skos:closeMatch  isic:4290 .
+
+cpc:53262  skos:closeMatch  isic:4220 .
+
+cpc:53269  skos:closeMatch  isic:4290 .
+
+cpc:53270  skos:closeMatch  isic:4290 .
+
+cpc:53290  skos:closeMatch  isic:4290 .
+
+cpc:54111  skos:closeMatch  isic:4100 .
+
+cpc:54112  skos:closeMatch  isic:4100 .
+
+cpc:54121  skos:closeMatch  isic:4100 .
+
+cpc:54122  skos:closeMatch  isic:4100 .
+
+cpc:54129  skos:closeMatch  isic:4100 .
+
+cpc:54211  skos:closeMatch  isic:4210 .
+
+cpc:54212  skos:closeMatch  isic:4210 .
+
+cpc:54213  skos:closeMatch  isic:4210 .
+
+cpc:54221  skos:closeMatch  isic:4210 .
+
+cpc:54222  skos:closeMatch  isic:4210 .
+
+cpc:54231  skos:closeMatch  isic:4220 .
+
+cpc:54232  skos:closeMatch  isic:4290 .
+
+cpc:54233  skos:closeMatch  isic:4290 .
+
+cpc:54234  skos:closeMatch  isic:4220 .
+
+cpc:54241  skos:closeMatch  isic:4220 .
+
+cpc:54242  skos:closeMatch  isic:4220 .
+
+cpc:54251  skos:closeMatch  isic:4220 .
+
+cpc:54252  skos:closeMatch  isic:4220 .
+
+cpc:54253  skos:closeMatch  isic:4220 .
+
+cpc:54261  skos:closeMatch  isic:4290 .
+
+cpc:54262  skos:closeMatch  isic:4220 .
+
+cpc:54269  skos:closeMatch  isic:4290 .
+
+cpc:54270  skos:closeMatch  isic:4290 .
+
+cpc:54290  skos:closeMatch  isic:4290 .
+
+cpc:54310  skos:closeMatch  isic:4311 .
+
+cpc:54320  skos:closeMatch  isic:4312 .
+
+cpc:54330  skos:closeMatch  isic:4312 .
+
+cpc:54341  skos:closeMatch  isic:4220 .
+
+cpc:54342  skos:closeMatch  isic:4220 .
+
+cpc:54400  skos:closeMatch  isic:4100 .
+
+cpc:54511  skos:closeMatch  isic:4390 .
+
+cpc:54512  skos:closeMatch  isic:4390 .
+
+cpc:54521  skos:closeMatch  isic:4390 .
+
+cpc:54522  skos:closeMatch  isic:4390 .
+
+cpc:54530  skos:closeMatch  isic:4390 .
+
+cpc:54540  skos:closeMatch  isic:4390 .
+
+cpc:54550  skos:closeMatch  isic:4390 .
+
+cpc:54560  skos:closeMatch  isic:4390 .
+
+cpc:54570  skos:closeMatch  isic:4390 .
+
+cpc:54590  skos:closeMatch  isic:4390 .
+
+cpc:54611  skos:closeMatch  isic:4321 .
+
+cpc:54612  skos:closeMatch  isic:4321 .
+
+cpc:54613  skos:closeMatch  isic:4321 .
+
+cpc:54614  skos:closeMatch  isic:4321 .
+
+cpc:54619  skos:closeMatch  isic:3320 ;
+        skos:closeMatch  isic:4321 .
+
+cpc:54621  skos:closeMatch  isic:4322 .
+
+cpc:54622  skos:closeMatch  isic:4322 .
+
+cpc:54631  skos:closeMatch  isic:4322 .
+
+cpc:54632  skos:closeMatch  isic:4322 .
+
+cpc:54640  skos:closeMatch  isic:4322 .
+
+cpc:54650  skos:closeMatch  isic:4329 .
+
+cpc:54691  skos:closeMatch  isic:4329 .
+
+cpc:54699  skos:closeMatch  isic:4330 .
+
+cpc:54710  skos:closeMatch  isic:4330 .
+
+cpc:54720  skos:closeMatch  isic:4330 .
+
+cpc:54730  skos:closeMatch  isic:4330 .
+
+cpc:54740  skos:closeMatch  isic:4330 .
+
+cpc:54750  skos:closeMatch  isic:4330 .
+
+cpc:54760  skos:closeMatch  isic:4330 .
+
+cpc:54770  skos:closeMatch  isic:4330 .
+
+cpc:54790  skos:closeMatch  isic:4330 .
+
+cpc:63111  skos:closeMatch  isic:5510 .
+
+cpc:63112  skos:closeMatch  isic:5510 .
+
+cpc:63113  skos:closeMatch  isic:5510 .
+
+cpc:63114  skos:closeMatch  isic:5510 .
+
+cpc:63120  skos:closeMatch  isic:5520 .
+
+cpc:63130  skos:closeMatch  isic:5520 .
+
+cpc:63210  skos:closeMatch  isic:5590 .
+
+cpc:63220  skos:closeMatch  isic:5590 .
+
+cpc:63290  skos:closeMatch  isic:5590 .
+
+cpc:63310  skos:closeMatch  isic:5610 .
+
+cpc:63320  skos:closeMatch  isic:5610 .
+
+cpc:63391  skos:closeMatch  isic:5621 .
+
+cpc:63392  skos:closeMatch  isic:5629 .
+
+cpc:63393  skos:closeMatch  isic:5629 .
+
+cpc:63399  skos:closeMatch  isic:5610 .
+
+cpc:63400  skos:closeMatch  isic:5630 .
+
+cpc:64111  skos:closeMatch  isic:4921 .
+
+cpc:64112  skos:closeMatch  isic:4921 .
+
+cpc:64113  skos:closeMatch  isic:4921 .
+
+cpc:64114  skos:closeMatch  isic:4922 .
+
+cpc:64115  skos:closeMatch  isic:4922 .
+
+cpc:64116  skos:closeMatch  isic:4922 .
+
+cpc:64117  skos:closeMatch  isic:4922 .
+
+cpc:64118  skos:closeMatch  isic:4922 .
+
+cpc:64119  skos:closeMatch  isic:4922 .
+
+cpc:64121  skos:closeMatch  isic:5021 .
+
+cpc:64122  skos:closeMatch  isic:5021 .
+
+cpc:64129  skos:closeMatch  isic:5021 .
+
+cpc:64131  skos:closeMatch  isic:4911 .
+
+cpc:64132  skos:closeMatch  isic:4922 .
+
+cpc:64133  skos:closeMatch  isic:5011 ;
+        skos:closeMatch  isic:5021 .
+
+cpc:64134  skos:closeMatch  isic:5110 .
+
+cpc:64210  skos:closeMatch  isic:4911 .
+
+cpc:64221  skos:closeMatch  isic:4922 .
+
+cpc:64222  skos:closeMatch  isic:4922 .
+
+cpc:64223  skos:closeMatch  isic:4922 .
+
+cpc:64231  skos:closeMatch  isic:5011 .
+
+cpc:64232  skos:closeMatch  isic:5011 .
+
+cpc:64239  skos:closeMatch  isic:5011 .
+
+cpc:64241  skos:closeMatch  isic:5110 .
+
+cpc:64242  skos:closeMatch  isic:5110 .
+
+cpc:64243  skos:closeMatch  isic:5110 .
+
+cpc:64244  skos:closeMatch  isic:5110 .
+
+cpc:64250  skos:closeMatch  isic:5110 .
+
+cpc:65111  skos:closeMatch  isic:4923 .
+
+cpc:65112  skos:closeMatch  isic:4923 .
+
+cpc:65113  skos:closeMatch  isic:4923 .
+
+cpc:65114  skos:closeMatch  isic:4923 .
+
+cpc:65115  skos:closeMatch  isic:4923 .
+
+cpc:65116  skos:closeMatch  isic:4923 .
+
+cpc:65117  skos:closeMatch  isic:4923 .
+
+cpc:65118  skos:closeMatch  isic:4923 .
+
+cpc:65119  skos:closeMatch  isic:4923 .
+
+cpc:65121  skos:closeMatch  isic:4912 .
+
+cpc:65122  skos:closeMatch  isic:4912 .
+
+cpc:65123  skos:closeMatch  isic:4912 .
+
+cpc:65124  skos:closeMatch  isic:4912 .
+
+cpc:65125  skos:closeMatch  isic:4912 .
+
+cpc:65126  skos:closeMatch  isic:4912 .
+
+cpc:65129  skos:closeMatch  isic:4912 .
+
+cpc:65131  skos:closeMatch  isic:4930 .
+
+cpc:65139  skos:closeMatch  isic:4930 .
+
+cpc:65211  skos:closeMatch  isic:5012 .
+
+cpc:65212  skos:closeMatch  isic:5012 .
+
+cpc:65213  skos:closeMatch  isic:5012 .
+
+cpc:65219  skos:closeMatch  isic:5012 .
+
+cpc:65221  skos:closeMatch  isic:5022 .
+
+cpc:65222  skos:closeMatch  isic:5022 .
+
+cpc:65229  skos:closeMatch  isic:5022 .
+
+cpc:65311  skos:closeMatch  isic:5120 .
+
+cpc:65319  skos:closeMatch  isic:5120 .
+
+cpc:65320  skos:closeMatch  isic:5120 .
+
+cpc:66011  skos:closeMatch  isic:4922 .
+
+cpc:66012  skos:closeMatch  isic:4923 .
+
+cpc:66021  skos:closeMatch  isic:5011 .
+
+cpc:66022  skos:closeMatch  isic:5012 .
+
+cpc:66023  skos:closeMatch  isic:5021 .
+
+cpc:66024  skos:closeMatch  isic:5022 .
+
+cpc:66031  skos:closeMatch  isic:5110 .
+
+cpc:66032  skos:closeMatch  isic:5120 .
+
+cpc:67110  skos:closeMatch  isic:5224 .
+
+cpc:67190  skos:closeMatch  isic:5224 .
+
+cpc:67210  skos:closeMatch  isic:5210 .
+
+cpc:67220  skos:closeMatch  isic:5210 .
+
+cpc:67290  skos:closeMatch  isic:5210 .
+
+cpc:67310  skos:closeMatch  isic:5221 .
+
+cpc:67390  skos:closeMatch  isic:5221 .
+
+cpc:67410  skos:closeMatch  isic:5221 .
+
+cpc:67420  skos:closeMatch  isic:5221 .
+
+cpc:67430  skos:closeMatch  isic:5221 .
+
+cpc:67440  skos:closeMatch  isic:5221 .
+
+cpc:67490  skos:closeMatch  isic:5221 .
+
+cpc:67511  skos:closeMatch  isic:5222 .
+
+cpc:67512  skos:closeMatch  isic:5222 .
+
+cpc:67521  skos:closeMatch  isic:5222 .
+
+cpc:67522  skos:closeMatch  isic:5222 .
+
+cpc:67531  skos:closeMatch  isic:5222 .
+
+cpc:67532  skos:closeMatch  isic:5222 .
+
+cpc:67590  skos:closeMatch  isic:5222 .
+
+cpc:67610  skos:closeMatch  isic:5223 .
+
+cpc:67620  skos:closeMatch  isic:5223 .
+
+cpc:67630  skos:closeMatch  isic:5223 .
+
+cpc:67640  skos:closeMatch  isic:5223 .
+
+cpc:67910  skos:closeMatch  isic:5229 .
+
+cpc:67990  skos:closeMatch  isic:5221 ;
+        skos:closeMatch  isic:5229 ;
+        skos:closeMatch  isic:8522 .
+
+cpc:68011  skos:closeMatch  isic:5310 .
+
+cpc:68012  skos:closeMatch  isic:5310 .
+
+cpc:68013  skos:closeMatch  isic:5310 .
+
+cpc:68019  skos:closeMatch  isic:5310 .
+
+cpc:68021  skos:closeMatch  isic:5320 .
+
+cpc:68022  skos:closeMatch  isic:5320 .
+
+cpc:68030  skos:closeMatch  isic:5320 .
+
+cpc:69111  skos:closeMatch  isic:3510 .
+
+cpc:69112  skos:closeMatch  isic:3510 .
+
+cpc:69120  skos:closeMatch  isic:3520 .
+
+cpc:69210  skos:closeMatch  isic:3600 .
+
+cpc:69220  skos:closeMatch  isic:3530 .
+
+cpc:69230  skos:closeMatch  isic:3600 .
+
+cpc:71110  skos:closeMatch  isic:6411 .
+
+cpc:71121  skos:closeMatch  isic:6419 .
+
+cpc:71122  skos:closeMatch  isic:6419 .
+
+cpc:71131  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71132  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71133  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71134  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71135  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71139  skos:closeMatch  isic:6419 ;
+        skos:closeMatch  isic:6492 .
+
+cpc:71140  skos:closeMatch  isic:6491 .
+
+cpc:71190  skos:closeMatch  isic:6499 .
+
+cpc:71200  skos:closeMatch  isic:6499 .
+
+cpc:71311  skos:closeMatch  isic:6511 .
+
+cpc:71312  skos:closeMatch  isic:6530 .
+
+cpc:71313  skos:closeMatch  isic:6530 .
+
+cpc:71321  skos:closeMatch  isic:6511 .
+
+cpc:71322  skos:closeMatch  isic:6511 ;
+        skos:closeMatch  isic:6512 .
+
+cpc:71331  skos:closeMatch  isic:6512 .
+
+cpc:71332  skos:closeMatch  isic:6512 .
+
+cpc:71333  skos:closeMatch  isic:6512 .
+
+cpc:71334  skos:closeMatch  isic:6512 .
+
+cpc:71335  skos:closeMatch  isic:6512 .
+
+cpc:71336  skos:closeMatch  isic:6512 .
+
+cpc:71337  skos:closeMatch  isic:6512 .
+
+cpc:71339  skos:closeMatch  isic:6512 .
+
+cpc:71410  skos:closeMatch  isic:6520 .
+
+cpc:71420  skos:closeMatch  isic:6520 .
+
+cpc:71431  skos:closeMatch  isic:6520 .
+
+cpc:71432  skos:closeMatch  isic:6520 .
+
+cpc:71433  skos:closeMatch  isic:6520 .
+
+cpc:71434  skos:closeMatch  isic:6520 .
+
+cpc:71435  skos:closeMatch  isic:6520 .
+
+cpc:71436  skos:closeMatch  isic:6520 .
+
+cpc:71439  skos:closeMatch  isic:6520 .
+
+cpc:71511  skos:closeMatch  isic:6619 .
+
+cpc:71512  skos:closeMatch  isic:6619 .
+
+cpc:71519  skos:closeMatch  isic:6619 .
+
+cpc:71521  skos:closeMatch  isic:6612 .
+
+cpc:71522  skos:closeMatch  isic:6612 .
+
+cpc:71523  skos:closeMatch  isic:6619 .
+
+cpc:71530  skos:closeMatch  isic:6630 .
+
+cpc:71541  skos:closeMatch  isic:6619 .
+
+cpc:71542  skos:closeMatch  isic:6619 .
+
+cpc:71551  skos:closeMatch  isic:6611 .
+
+cpc:71552  skos:closeMatch  isic:6611 .
+
+cpc:71559  skos:closeMatch  isic:6611 .
+
+cpc:71591  skos:closeMatch  isic:6619 .
+
+cpc:71592  skos:closeMatch  isic:6612 .
+
+cpc:71593  skos:closeMatch  isic:6619 .
+
+cpc:71599  skos:closeMatch  isic:6619 .
+
+cpc:71610  skos:closeMatch  isic:6622 .
+
+cpc:71620  skos:closeMatch  isic:6621 .
+
+cpc:71630  skos:closeMatch  isic:6629 .
+
+cpc:71640  skos:closeMatch  isic:6630 .
+
+cpc:71690  skos:closeMatch  isic:6629 .
+
+cpc:71701  skos:closeMatch  isic:6420 .
+
+cpc:71702  skos:closeMatch  isic:6430 .
+
+cpc:72111  skos:closeMatch  isic:6810 .
+
+cpc:72112  skos:closeMatch  isic:6810 .
+
+cpc:72121  skos:closeMatch  isic:6810 .
+
+cpc:72122  skos:closeMatch  isic:6810 .
+
+cpc:72123  skos:closeMatch  isic:6810 .
+
+cpc:72130  skos:closeMatch  isic:6810 .
+
+cpc:72211  skos:closeMatch  isic:6820 .
+
+cpc:72212  skos:closeMatch  isic:6820 .
+
+cpc:72213  skos:closeMatch  isic:6820 .
+
+cpc:72221  skos:closeMatch  isic:6820 .
+
+cpc:72222  skos:closeMatch  isic:6820 .
+
+cpc:72223  skos:closeMatch  isic:6820 .
+
+cpc:72230  skos:closeMatch  isic:6820 .
+
+cpc:72240  skos:closeMatch  isic:6820 .
+
+cpc:73111  skos:closeMatch  isic:7710 .
+
+cpc:73112  skos:closeMatch  isic:7710 .
+
+cpc:73113  skos:closeMatch  isic:7730 .
+
+cpc:73114  skos:closeMatch  isic:7710 ;
+        skos:closeMatch  isic:7730 .
+
+cpc:73115  skos:closeMatch  isic:7730 .
+
+cpc:73116  skos:closeMatch  isic:7730 .
+
+cpc:73117  skos:closeMatch  isic:7730 .
+
+cpc:73121  skos:closeMatch  isic:7730 .
+
+cpc:73122  skos:closeMatch  isic:7730 .
+
+cpc:73123  skos:closeMatch  isic:7730 .
+
+cpc:73124  skos:closeMatch  isic:7730 .
+
+cpc:73125  skos:closeMatch  isic:7730 .
+
+cpc:73129  skos:closeMatch  isic:7730 .
+
+cpc:73210  skos:closeMatch  isic:7729 .
+
+cpc:73220  skos:closeMatch  isic:7722 .
+
+cpc:73230  skos:closeMatch  isic:7729 .
+
+cpc:73240  skos:closeMatch  isic:7721 .
+
+cpc:73250  skos:closeMatch  isic:7729 .
+
+cpc:73260  skos:closeMatch  isic:7729 .
+
+cpc:73270  skos:closeMatch  isic:7729 .
+
+cpc:73290  skos:closeMatch  isic:7729 .
+
+cpc:73311  skos:closeMatch  isic:5820 .
+
+cpc:73312  skos:closeMatch  isic:5812 .
+
+cpc:73320  skos:closeMatch  isic:5811 ;
+        skos:closeMatch  isic:5813 ;
+        skos:closeMatch  isic:5911 ;
+        skos:closeMatch  isic:5912 ;
+        skos:closeMatch  isic:5913 ;
+        skos:closeMatch  isic:5920 ;
+        skos:closeMatch  isic:9000 .
+
+cpc:73330  skos:closeMatch  isic:7740 .
+
+cpc:73340  skos:closeMatch  isic:7740 .
+
+cpc:73350  skos:closeMatch  isic:7740 .
+
+cpc:73390  skos:closeMatch  isic:7740 .
+
+cpc:81111  skos:closeMatch  isic:7210 .
+
+cpc:81112  skos:closeMatch  isic:7210 .
+
+cpc:81113  skos:closeMatch  isic:7210 .
+
+cpc:81114  skos:closeMatch  isic:7210 .
+
+cpc:81115  skos:closeMatch  isic:7210 .
+
+cpc:81116  skos:closeMatch  isic:7210 .
+
+cpc:81119  skos:closeMatch  isic:7210 .
+
+cpc:81121  skos:closeMatch  isic:7210 .
+
+cpc:81122  skos:closeMatch  isic:7210 .
+
+cpc:81123  skos:closeMatch  isic:7210 .
+
+cpc:81124  skos:closeMatch  isic:7210 .
+
+cpc:81125  skos:closeMatch  isic:7210 .
+
+cpc:81126  skos:closeMatch  isic:7210 .
+
+cpc:81129  skos:closeMatch  isic:7210 .
+
+cpc:81131  skos:closeMatch  isic:7210 .
+
+cpc:81132  skos:closeMatch  isic:7210 .
+
+cpc:81133  skos:closeMatch  isic:7210 .
+
+cpc:81134  skos:closeMatch  isic:7210 .
+
+cpc:81135  skos:closeMatch  isic:7210 .
+
+cpc:81136  skos:closeMatch  isic:7210 .
+
+cpc:81139  skos:closeMatch  isic:7210 .
+
+cpc:81211  skos:closeMatch  isic:7220 .
+
+cpc:81212  skos:closeMatch  isic:7220 .
+
+cpc:81213  skos:closeMatch  isic:7220 .
+
+cpc:81214  skos:closeMatch  isic:7220 .
+
+cpc:81219  skos:closeMatch  isic:7220 .
+
+cpc:81221  skos:closeMatch  isic:7220 .
+
+cpc:81222  skos:closeMatch  isic:7220 .
+
+cpc:81223  skos:closeMatch  isic:7220 .
+
+cpc:81224  skos:closeMatch  isic:7220 .
+
+cpc:81229  skos:closeMatch  isic:7220 .
+
+cpc:81231  skos:closeMatch  isic:7220 .
+
+cpc:81232  skos:closeMatch  isic:7220 .
+
+cpc:81233  skos:closeMatch  isic:7220 .
+
+cpc:81234  skos:closeMatch  isic:7220 .
+
+cpc:81239  skos:closeMatch  isic:7220 .
+
+cpc:81301  skos:closeMatch  isic:7210 ;
+        skos:closeMatch  isic:7220 .
+
+cpc:81302  skos:closeMatch  isic:7210 ;
+        skos:closeMatch  isic:7220 .
+
+cpc:81303  skos:closeMatch  isic:7210 ;
+        skos:closeMatch  isic:7220 .
+
+cpc:81400  skos:closeMatch  isic:7210 ;
+        skos:closeMatch  isic:7220 .
+
+cpc:82110  skos:closeMatch  isic:6910 .
+
+cpc:82120  skos:closeMatch  isic:6910 .
+
+cpc:82130  skos:closeMatch  isic:6910 .
+
+cpc:82191  skos:closeMatch  isic:6910 .
+
+cpc:82199  skos:closeMatch  isic:6910 .
+
+cpc:82210  skos:closeMatch  isic:6920 .
+
+cpc:82221  skos:closeMatch  isic:6920 .
+
+cpc:82222  skos:closeMatch  isic:6920 .
+
+cpc:82223  skos:closeMatch  isic:6920 .
+
+cpc:82310  skos:closeMatch  isic:6920 .
+
+cpc:82320  skos:closeMatch  isic:6920 .
+
+cpc:82400  skos:closeMatch  isic:7020 .
+
+cpc:83111  skos:closeMatch  isic:7020 .
+
+cpc:83112  skos:closeMatch  isic:7020 .
+
+cpc:83113  skos:closeMatch  isic:7020 .
+
+cpc:83114  skos:closeMatch  isic:7020 .
+
+cpc:83115  skos:closeMatch  isic:7020 .
+
+cpc:83116  skos:closeMatch  isic:7020 .
+
+cpc:83117  skos:closeMatch  isic:7020 .
+
+cpc:83118  skos:closeMatch  isic:7010 .
+
+cpc:83121  skos:closeMatch  isic:7020 .
+
+cpc:83129  skos:closeMatch  isic:7020 .
+
+cpc:83131  skos:closeMatch  isic:6202 .
+
+cpc:83132  skos:closeMatch  isic:6202 .
+
+cpc:83141  skos:closeMatch  isic:6201 .
+
+cpc:83142  skos:closeMatch  isic:6202 .
+
+cpc:83143  skos:closeMatch  isic:5820 .
+
+cpc:83151  skos:closeMatch  isic:6311 .
+
+cpc:83152  skos:closeMatch  isic:6311 .
+
+cpc:83159  skos:closeMatch  isic:6311 .
+
+cpc:83161  skos:closeMatch  isic:6202 .
+
+cpc:83162  skos:closeMatch  isic:6202 .
+
+cpc:83190  skos:closeMatch  isic:7020 .
+
+cpc:83211  skos:closeMatch  isic:7110 .
+
+cpc:83212  skos:closeMatch  isic:7110 .
+
+cpc:83213  skos:closeMatch  isic:7110 .
+
+cpc:83214  skos:closeMatch  isic:7110 .
+
+cpc:83221  skos:closeMatch  isic:7110 .
+
+cpc:83222  skos:closeMatch  isic:7110 .
+
+cpc:83223  skos:closeMatch  isic:7110 .
+
+cpc:83231  skos:closeMatch  isic:7110 .
+
+cpc:83232  skos:closeMatch  isic:7110 .
+
+cpc:83310  skos:closeMatch  isic:7110 .
+
+cpc:83321  skos:closeMatch  isic:7110 .
+
+cpc:83322  skos:closeMatch  isic:7110 .
+
+cpc:83323  skos:closeMatch  isic:7110 .
+
+cpc:83324  skos:closeMatch  isic:7110 .
+
+cpc:83325  skos:closeMatch  isic:7110 .
+
+cpc:83326  skos:closeMatch  isic:7110 .
+
+cpc:83327  skos:closeMatch  isic:7110 .
+
+cpc:83329  skos:closeMatch  isic:7110 .
+
+cpc:83330  skos:closeMatch  isic:7110 .
+
+cpc:83411  skos:closeMatch  isic:7110 .
+
+cpc:83412  skos:closeMatch  isic:7110 .
+
+cpc:83413  skos:closeMatch  isic:7110 .
+
+cpc:83421  skos:closeMatch  isic:7110 .
+
+cpc:83422  skos:closeMatch  isic:7110 .
+
+cpc:83430  skos:closeMatch  isic:7490 .
+
+cpc:83441  skos:closeMatch  isic:7120 .
+
+cpc:83442  skos:closeMatch  isic:7120 .
+
+cpc:83443  skos:closeMatch  isic:7120 .
+
+cpc:83444  skos:closeMatch  isic:7120 .
+
+cpc:83449  skos:closeMatch  isic:7120 .
+
+cpc:83510  skos:closeMatch  isic:7500 .
+
+cpc:83520  skos:closeMatch  isic:7500 .
+
+cpc:83590  skos:closeMatch  isic:7500 .
+
+cpc:83611  skos:closeMatch  isic:7310 .
+
+cpc:83612  skos:closeMatch  isic:7310 .
+
+cpc:83619  skos:closeMatch  isic:7310 .
+
+cpc:83620  skos:closeMatch  isic:7310 .
+
+cpc:83631  skos:closeMatch  isic:5812 ;
+        skos:closeMatch  isic:5813 .
+
+cpc:83632  skos:closeMatch  isic:6010 ;
+        skos:closeMatch  isic:6020 .
+
+cpc:83633  skos:closeMatch  isic:5813 ;
+        skos:closeMatch  isic:5819 ;
+        skos:closeMatch  isic:6311 ;
+        skos:closeMatch  isic:6312 .
+
+cpc:83639  skos:closeMatch  isic:5811 ;
+        skos:closeMatch  isic:5812 ;
+        skos:closeMatch  isic:7310 .
+
+cpc:83700  skos:closeMatch  isic:7320 .
+
+cpc:83811  skos:closeMatch  isic:7420 .
+
+cpc:83812  skos:closeMatch  isic:7420 .
+
+cpc:83813  skos:closeMatch  isic:7420 .
+
+cpc:83814  skos:closeMatch  isic:7420 .
+
+cpc:83815  skos:closeMatch  isic:7420 .
+
+cpc:83819  skos:closeMatch  isic:7420 .
+
+cpc:83820  skos:closeMatch  isic:7420 .
+
+cpc:83911  skos:closeMatch  isic:7410 .
+
+cpc:83912  skos:closeMatch  isic:7410 .
+
+cpc:83919  skos:closeMatch  isic:7410 .
+
+cpc:83920  skos:closeMatch  isic:7410 .
+
+cpc:83931  skos:closeMatch  isic:7490 .
+
+cpc:83939  skos:closeMatch  isic:7490 .
+
+cpc:83940  skos:closeMatch  isic:5812 .
+
+cpc:83950  skos:closeMatch  isic:7490 .
+
+cpc:83990  skos:closeMatch  isic:7490 .
+
+cpc:84110  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 .
+
+cpc:84120  skos:closeMatch  isic:6110 .
+
+cpc:84131  skos:closeMatch  isic:6120 .
+
+cpc:84132  skos:closeMatch  isic:6120 .
+
+cpc:84133  skos:closeMatch  isic:6120 .
+
+cpc:84140  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84150  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84190  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84210  skos:closeMatch  isic:6110 .
+
+cpc:84221  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84222  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84290  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 ;
+        skos:closeMatch  isic:6190 .
+
+cpc:84311  skos:closeMatch  isic:5811 .
+
+cpc:84312  skos:closeMatch  isic:5813 .
+
+cpc:84313  skos:closeMatch  isic:5812 .
+
+cpc:84321  skos:closeMatch  isic:5920 .
+
+cpc:84322  skos:closeMatch  isic:5920 .
+
+cpc:84331  skos:closeMatch  isic:5911 .
+
+cpc:84332  skos:closeMatch  isic:5911 .
+
+cpc:84341  skos:closeMatch  isic:5820 .
+
+cpc:84342  skos:closeMatch  isic:5820 .
+
+cpc:84391  skos:closeMatch  isic:5820 .
+
+cpc:84392  skos:closeMatch  isic:5820 .
+
+cpc:84393  skos:closeMatch  isic:5819 .
+
+cpc:84394  skos:closeMatch  isic:6312 .
+
+cpc:84399  skos:closeMatch  isic:5819 .
+
+cpc:84410  skos:closeMatch  isic:6391 .
+
+cpc:84420  skos:closeMatch  isic:6391 .
+
+cpc:84510  skos:closeMatch  isic:9101 .
+
+cpc:84520  skos:closeMatch  isic:9101 .
+
+cpc:84611  skos:closeMatch  isic:6010 .
+
+cpc:84612  skos:closeMatch  isic:6020 .
+
+cpc:84621  skos:closeMatch  isic:6010 .
+
+cpc:84622  skos:closeMatch  isic:6020 .
+
+cpc:84631  skos:closeMatch  isic:6010 ;
+        skos:closeMatch  isic:6020 .
+
+cpc:84632  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 .
+
+cpc:84633  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 .
+
+cpc:84634  skos:closeMatch  isic:6110 ;
+        skos:closeMatch  isic:6120 ;
+        skos:closeMatch  isic:6130 .
+
+cpc:85111  skos:closeMatch  isic:7810 .
+
+cpc:85112  skos:closeMatch  isic:7810 .
+
+cpc:85121  skos:closeMatch  isic:7810 .
+
+cpc:85122  skos:closeMatch  isic:7820 .
+
+cpc:85123  skos:closeMatch  isic:7830 .
+
+cpc:85124  skos:closeMatch  isic:7820 .
+
+cpc:85125  skos:closeMatch  isic:7830 .
+
+cpc:85210  skos:closeMatch  isic:8030 .
+
+cpc:85220  skos:closeMatch  isic:7490 .
+
+cpc:85230  skos:closeMatch  isic:8020 .
+
+cpc:85240  skos:closeMatch  isic:8010 .
+
+cpc:85250  skos:closeMatch  isic:8010 .
+
+cpc:85290  skos:closeMatch  isic:8010 .
+
+cpc:85310  skos:closeMatch  isic:8129 .
+
+cpc:85320  skos:closeMatch  isic:8129 .
+
+cpc:85330  skos:closeMatch  isic:8121 .
+
+cpc:85340  skos:closeMatch  isic:8129 .
+
+cpc:85400  skos:closeMatch  isic:8292 .
+
+cpc:85511  skos:closeMatch  isic:7911 .
+
+cpc:85512  skos:closeMatch  isic:7990 .
+
+cpc:85513  skos:closeMatch  isic:7990 .
+
+cpc:85514  skos:closeMatch  isic:7990 .
+
+cpc:85519  skos:closeMatch  isic:7990 .
+
+cpc:85521  skos:closeMatch  isic:7911 ;
+        skos:closeMatch  isic:7990 .
+
+cpc:85522  skos:closeMatch  isic:7990 .
+
+cpc:85523  skos:closeMatch  isic:7911 .
+
+cpc:85524  skos:closeMatch  isic:7911 .
+
+cpc:85531  skos:closeMatch  isic:7990 .
+
+cpc:85539  skos:closeMatch  isic:7990 .
+
+cpc:85540  skos:closeMatch  isic:7912 .
+
+cpc:85550  skos:closeMatch  isic:7990 .
+
+cpc:85561  skos:closeMatch  isic:7990 .
+
+cpc:85562  skos:closeMatch  isic:7990 .
+
+cpc:85910  skos:closeMatch  isic:8291 .
+
+cpc:85920  skos:closeMatch  isic:8291 .
+
+cpc:85931  skos:closeMatch  isic:8220 .
+
+cpc:85939  skos:closeMatch  isic:8220 .
+
+cpc:85940  skos:closeMatch  isic:8211 .
+
+cpc:85951  skos:closeMatch  isic:8219 .
+
+cpc:85952  skos:closeMatch  isic:8299 .
+
+cpc:85953  skos:closeMatch  isic:8219 .
+
+cpc:85954  skos:closeMatch  isic:8219 .
+
+cpc:85961  skos:closeMatch  isic:8230 .
+
+cpc:85962  skos:closeMatch  isic:8230 .
+
+cpc:85970  skos:closeMatch  isic:8130 .
+
+cpc:85991  skos:closeMatch  isic:6399 .
+
+cpc:85999  skos:closeMatch  isic:7490 ;
+        skos:closeMatch  isic:8299 .
+
+cpc:86111  skos:closeMatch  isic:0163 .
+
+cpc:86112  skos:closeMatch  isic:0164 .
+
+cpc:86113  skos:closeMatch  isic:0111 ;
+        skos:closeMatch  isic:0112 ;
+        skos:closeMatch  isic:0113 ;
+        skos:closeMatch  isic:0114 ;
+        skos:closeMatch  isic:0115 ;
+        skos:closeMatch  isic:0116 ;
+        skos:closeMatch  isic:0119 ;
+        skos:closeMatch  isic:0121 ;
+        skos:closeMatch  isic:0122 ;
+        skos:closeMatch  isic:0123 ;
+        skos:closeMatch  isic:0124 ;
+        skos:closeMatch  isic:0125 ;
+        skos:closeMatch  isic:0126 ;
+        skos:closeMatch  isic:0127 ;
+        skos:closeMatch  isic:0128 ;
+        skos:closeMatch  isic:0129 ;
+        skos:closeMatch  isic:0130 .
+
+cpc:86119  skos:closeMatch  isic:0161 .
+
+cpc:86121  skos:closeMatch  isic:0141 ;
+        skos:closeMatch  isic:0142 ;
+        skos:closeMatch  isic:0143 ;
+        skos:closeMatch  isic:0144 ;
+        skos:closeMatch  isic:0145 ;
+        skos:closeMatch  isic:0146 ;
+        skos:closeMatch  isic:0149 .
+
+cpc:86122  skos:closeMatch  isic:0162 .
+
+cpc:86129  skos:closeMatch  isic:9609 .
+
+cpc:86131  skos:closeMatch  isic:0170 .
+
+cpc:86132  skos:closeMatch  isic:0170 ;
+        skos:closeMatch  isic:9319 .
+
+cpc:86141  skos:closeMatch  isic:0210 ;
+        skos:closeMatch  isic:0220 ;
+        skos:closeMatch  isic:0240 .
+
+cpc:86142  skos:closeMatch  isic:0240 .
+
+cpc:86151  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:86152  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:86153  skos:closeMatch  isic:0311 ;
+        skos:closeMatch  isic:0312 .
+
+cpc:86154  skos:closeMatch  isic:0321 ;
+        skos:closeMatch  isic:0322 .
+
+cpc:86211  skos:closeMatch  isic:0910 .
+
+cpc:86219  skos:closeMatch  isic:0990 .
+
+cpc:86221  skos:closeMatch  isic:0610 ;
+        skos:closeMatch  isic:0620 .
+
+cpc:86229  skos:closeMatch  isic:0510 ;
+        skos:closeMatch  isic:0520 ;
+        skos:closeMatch  isic:0710 ;
+        skos:closeMatch  isic:0721 ;
+        skos:closeMatch  isic:0729 ;
+        skos:closeMatch  isic:0810 ;
+        skos:closeMatch  isic:0891 ;
+        skos:closeMatch  isic:0892 ;
+        skos:closeMatch  isic:0893 ;
+        skos:closeMatch  isic:0899 .
+
+cpc:86311  skos:closeMatch  isic:3510 .
+
+cpc:86312  skos:closeMatch  isic:3510 .
+
+cpc:86320  skos:closeMatch  isic:3520 .
+
+cpc:86330  skos:closeMatch  isic:3600 .
+
+cpc:86340  skos:closeMatch  isic:3530 .
+
+cpc:86350  skos:closeMatch  isic:3600 .
+
+cpc:87110  skos:closeMatch  isic:3311 .
+
+cpc:87120  skos:closeMatch  isic:3312 .
+
+cpc:87130  skos:closeMatch  isic:9511 .
+
+cpc:87141  skos:closeMatch  isic:4520 .
+
+cpc:87142  skos:closeMatch  isic:4540 .
+
+cpc:87143  skos:closeMatch  isic:4520 .
+
+cpc:87149  skos:closeMatch  isic:3315 .
+
+cpc:87151  skos:closeMatch  isic:9522 .
+
+cpc:87152  skos:closeMatch  isic:3314 .
+
+cpc:87153  skos:closeMatch  isic:9512 .
+
+cpc:87154  skos:closeMatch  isic:3313 .
+
+cpc:87155  skos:closeMatch  isic:9521 .
+
+cpc:87156  skos:closeMatch  isic:3312 .
+
+cpc:87157  skos:closeMatch  isic:4329 .
+
+cpc:87159  skos:closeMatch  isic:3319 .
+
+cpc:87210  skos:closeMatch  isic:9523 .
+
+cpc:87220  skos:closeMatch  isic:9529 .
+
+cpc:87230  skos:closeMatch  isic:9529 .
+
+cpc:87240  skos:closeMatch  isic:9524 .
+
+cpc:87290  skos:closeMatch  isic:3313 ;
+        skos:closeMatch  isic:9529 .
+
+cpc:87310  skos:closeMatch  isic:3320 .
+
+cpc:87320  skos:closeMatch  isic:3320 .
+
+cpc:87331  skos:closeMatch  isic:3320 .
+
+cpc:87332  skos:closeMatch  isic:6209 .
+
+cpc:87333  skos:closeMatch  isic:3320 .
+
+cpc:87340  skos:closeMatch  isic:3320 .
+
+cpc:87350  skos:closeMatch  isic:3320 .
+
+cpc:87360  skos:closeMatch  isic:3320 .
+
+cpc:87390  skos:closeMatch  isic:3320 ;
+        skos:closeMatch  isic:9521 .
+
+cpc:88110  skos:closeMatch  isic:1010 .
+
+cpc:88120  skos:closeMatch  isic:1020 .
+
+cpc:88130  skos:closeMatch  isic:1030 .
+
+cpc:88140  skos:closeMatch  isic:1040 .
+
+cpc:88150  skos:closeMatch  isic:1050 .
+
+cpc:88161  skos:closeMatch  isic:1061 .
+
+cpc:88162  skos:closeMatch  isic:1062 .
+
+cpc:88163  skos:closeMatch  isic:1071 .
+
+cpc:88164  skos:closeMatch  isic:1072 .
+
+cpc:88165  skos:closeMatch  isic:1073 .
+
+cpc:88166  skos:closeMatch  isic:1074 .
+
+cpc:88167  skos:closeMatch  isic:1075 .
+
+cpc:88169  skos:closeMatch  isic:1079 .
+
+cpc:88170  skos:closeMatch  isic:1080 .
+
+cpc:88181  skos:closeMatch  isic:1101 .
+
+cpc:88182  skos:closeMatch  isic:1102 .
+
+cpc:88183  skos:closeMatch  isic:1103 .
+
+cpc:88184  skos:closeMatch  isic:1104 .
+
+cpc:88190  skos:closeMatch  isic:1200 .
+
+cpc:88211  skos:closeMatch  isic:1311 .
+
+cpc:88212  skos:closeMatch  isic:1312 .
+
+cpc:88213  skos:closeMatch  isic:1313 .
+
+cpc:88214  skos:closeMatch  isic:1391 .
+
+cpc:88215  skos:closeMatch  isic:1392 .
+
+cpc:88216  skos:closeMatch  isic:1393 .
+
+cpc:88217  skos:closeMatch  isic:1394 .
+
+cpc:88219  skos:closeMatch  isic:1399 .
+
+cpc:88221  skos:closeMatch  isic:1410 .
+
+cpc:88222  skos:closeMatch  isic:1420 .
+
+cpc:88223  skos:closeMatch  isic:1430 .
+
+cpc:88231  skos:closeMatch  isic:1511 .
+
+cpc:88232  skos:closeMatch  isic:1512 .
+
+cpc:88233  skos:closeMatch  isic:1520 .
+
+cpc:88311  skos:closeMatch  isic:1610 .
+
+cpc:88312  skos:closeMatch  isic:1621 .
+
+cpc:88313  skos:closeMatch  isic:1622 .
+
+cpc:88314  skos:closeMatch  isic:1623 .
+
+cpc:88319  skos:closeMatch  isic:1629 .
+
+cpc:88321  skos:closeMatch  isic:1701 .
+
+cpc:88322  skos:closeMatch  isic:1702 .
+
+cpc:88329  skos:closeMatch  isic:1709 .
+
+cpc:88411  skos:closeMatch  isic:1910 .
+
+cpc:88412  skos:closeMatch  isic:1920 .
+
+cpc:88421  skos:closeMatch  isic:2011 .
+
+cpc:88422  skos:closeMatch  isic:2012 .
+
+cpc:88423  skos:closeMatch  isic:2013 .
+
+cpc:88424  skos:closeMatch  isic:2021 .
+
+cpc:88425  skos:closeMatch  isic:2022 .
+
+cpc:88426  skos:closeMatch  isic:2023 .
+
+cpc:88427  skos:closeMatch  isic:2029 .
+
+cpc:88429  skos:closeMatch  isic:2030 .
+
+cpc:88430  skos:closeMatch  isic:2100 .
+
+cpc:88511  skos:closeMatch  isic:2211 .
+
+cpc:88512  skos:closeMatch  isic:2219 .
+
+cpc:88520  skos:closeMatch  isic:2220 .
+
+cpc:88531  skos:closeMatch  isic:2310 .
+
+cpc:88532  skos:closeMatch  isic:2391 .
+
+cpc:88533  skos:closeMatch  isic:2392 .
+
+cpc:88534  skos:closeMatch  isic:2393 .
+
+cpc:88535  skos:closeMatch  isic:2394 .
+
+cpc:88536  skos:closeMatch  isic:2395 .
+
+cpc:88537  skos:closeMatch  isic:2396 .
+
+cpc:88539  skos:closeMatch  isic:2399 .
+
+cpc:88601  skos:closeMatch  isic:2410 .
+
+cpc:88602  skos:closeMatch  isic:2420 .
+
+cpc:88711  skos:closeMatch  isic:2511 .
+
+cpc:88712  skos:closeMatch  isic:2512 .
+
+cpc:88713  skos:closeMatch  isic:2513 .
+
+cpc:88720  skos:closeMatch  isic:2520 .
+
+cpc:88731  skos:closeMatch  isic:2592 .
+
+cpc:88732  skos:closeMatch  isic:2592 .
+
+cpc:88733  skos:closeMatch  isic:2593 .
+
+cpc:88739  skos:closeMatch  isic:2599 .
+
+cpc:88741  skos:closeMatch  isic:2610 .
+
+cpc:88742  skos:closeMatch  isic:2620 .
+
+cpc:88743  skos:closeMatch  isic:2630 .
+
+cpc:88744  skos:closeMatch  isic:2640 .
+
+cpc:88745  skos:closeMatch  isic:2651 .
+
+cpc:88746  skos:closeMatch  isic:2652 .
+
+cpc:88747  skos:closeMatch  isic:2660 .
+
+cpc:88748  skos:closeMatch  isic:2670 .
+
+cpc:88749  skos:closeMatch  isic:2680 .
+
+cpc:88751  skos:closeMatch  isic:2710 .
+
+cpc:88752  skos:closeMatch  isic:2720 .
+
+cpc:88753  skos:closeMatch  isic:2731 .
+
+cpc:88754  skos:closeMatch  isic:2732 .
+
+cpc:88755  skos:closeMatch  isic:2733 .
+
+cpc:88756  skos:closeMatch  isic:2740 .
+
+cpc:88757  skos:closeMatch  isic:2750 .
+
+cpc:88759  skos:closeMatch  isic:2790 .
+
+cpc:88761  skos:closeMatch  isic:2811 .
+
+cpc:88762  skos:closeMatch  isic:2812 .
+
+cpc:88763  skos:closeMatch  isic:2813 .
+
+cpc:88764  skos:closeMatch  isic:2814 .
+
+cpc:88765  skos:closeMatch  isic:2815 .
+
+cpc:88766  skos:closeMatch  isic:2816 .
+
+cpc:88767  skos:closeMatch  isic:2817 .
+
+cpc:88768  skos:closeMatch  isic:2818 .
+
+cpc:88769  skos:closeMatch  isic:2819 .
+
+cpc:88771  skos:closeMatch  isic:2821 .
+
+cpc:88772  skos:closeMatch  isic:2822 .
+
+cpc:88773  skos:closeMatch  isic:2823 .
+
+cpc:88774  skos:closeMatch  isic:2824 .
+
+cpc:88775  skos:closeMatch  isic:2825 .
+
+cpc:88776  skos:closeMatch  isic:2826 .
+
+cpc:88779  skos:closeMatch  isic:2829 .
+
+cpc:88811  skos:closeMatch  isic:2910 .
+
+cpc:88812  skos:closeMatch  isic:2920 .
+
+cpc:88813  skos:closeMatch  isic:2930 .
+
+cpc:88821  skos:closeMatch  isic:3011 .
+
+cpc:88822  skos:closeMatch  isic:3012 .
+
+cpc:88823  skos:closeMatch  isic:3020 .
+
+cpc:88824  skos:closeMatch  isic:3030 .
+
+cpc:88825  skos:closeMatch  isic:3040 .
+
+cpc:88826  skos:closeMatch  isic:3091 .
+
+cpc:88827  skos:closeMatch  isic:3092 .
+
+cpc:88829  skos:closeMatch  isic:3099 .
+
+cpc:88901  skos:closeMatch  isic:3100 .
+
+cpc:88902  skos:closeMatch  isic:3211 .
+
+cpc:88903  skos:closeMatch  isic:3212 .
+
+cpc:88904  skos:closeMatch  isic:3220 .
+
+cpc:88905  skos:closeMatch  isic:3230 .
+
+cpc:88906  skos:closeMatch  isic:3240 .
+
+cpc:88907  skos:closeMatch  isic:3250 .
+
+cpc:88909  skos:closeMatch  isic:3290 .
+
+cpc:89110  skos:closeMatch  isic:5811 ;
+        skos:closeMatch  isic:5812 ;
+        skos:closeMatch  isic:5813 ;
+        skos:closeMatch  isic:5819 ;
+        skos:closeMatch  isic:5820 ;
+        skos:closeMatch  isic:5920 .
+
+cpc:89121  skos:closeMatch  isic:1811 .
+
+cpc:89122  skos:closeMatch  isic:1812 .
+
+cpc:89123  skos:closeMatch  isic:1820 .
+
+cpc:89200  skos:closeMatch  isic:2220 .
+
+cpc:89310  skos:closeMatch  isic:2431 .
+
+cpc:89320  skos:closeMatch  isic:2432 .
+
+cpc:89330  skos:closeMatch  isic:2591 .
+
+cpc:89410  skos:closeMatch  isic:3830 .
+
+cpc:89420  skos:closeMatch  isic:3830 .
+
+cpc:91111  skos:closeMatch  isic:8411 .
+
+cpc:91112  skos:closeMatch  isic:8411 .
+
+cpc:91113  skos:closeMatch  isic:8411 .
+
+cpc:91114  skos:closeMatch  isic:8411 .
+
+cpc:91119  skos:closeMatch  isic:8411 .
+
+cpc:91121  skos:closeMatch  isic:8412 .
+
+cpc:91122  skos:closeMatch  isic:8412 .
+
+cpc:91123  skos:closeMatch  isic:8412 .
+
+cpc:91124  skos:closeMatch  isic:8412 .
+
+cpc:91131  skos:closeMatch  isic:8413 .
+
+cpc:91132  skos:closeMatch  isic:8413 .
+
+cpc:91133  skos:closeMatch  isic:8413 .
+
+cpc:91134  skos:closeMatch  isic:8413 .
+
+cpc:91135  skos:closeMatch  isic:8413 .
+
+cpc:91136  skos:closeMatch  isic:8413 .
+
+cpc:91137  skos:closeMatch  isic:8413 .
+
+cpc:91138  skos:closeMatch  isic:8413 .
+
+cpc:91191  skos:closeMatch  isic:8411 .
+
+cpc:91199  skos:closeMatch  isic:8411 .
+
+cpc:91210  skos:closeMatch  isic:8421 .
+
+cpc:91220  skos:closeMatch  isic:8421 .
+
+cpc:91230  skos:closeMatch  isic:8421 .
+
+cpc:91240  skos:closeMatch  isic:8422 .
+
+cpc:91250  skos:closeMatch  isic:8422 .
+
+cpc:91260  skos:closeMatch  isic:8423 .
+
+cpc:91270  skos:closeMatch  isic:8423 .
+
+cpc:91280  skos:closeMatch  isic:8423 .
+
+cpc:91290  skos:closeMatch  isic:8423 .
+
+cpc:91310  skos:closeMatch  isic:8430 .
+
+cpc:91320  skos:closeMatch  isic:8430 .
+
+cpc:91330  skos:closeMatch  isic:8430 .
+
+cpc:91340  skos:closeMatch  isic:8430 .
+
+cpc:92100  skos:closeMatch  isic:8510 .
+
+cpc:92200  skos:closeMatch  isic:8510 .
+
+cpc:92310  skos:closeMatch  isic:8521 .
+
+cpc:92320  skos:closeMatch  isic:8522 .
+
+cpc:92330  skos:closeMatch  isic:8521 .
+
+cpc:92340  skos:closeMatch  isic:8522 .
+
+cpc:92410  skos:closeMatch  isic:8530 .
+
+cpc:92420  skos:closeMatch  isic:8530 .
+
+cpc:92510  skos:closeMatch  isic:8530 .
+
+cpc:92520  skos:closeMatch  isic:8530 .
+
+cpc:92911  skos:closeMatch  isic:8542 .
+
+cpc:92912  skos:closeMatch  isic:8541 .
+
+cpc:92919  skos:closeMatch  isic:8549 .
+
+cpc:92920  skos:closeMatch  isic:8550 .
+
+cpc:93111  skos:closeMatch  isic:8610 .
+
+cpc:93112  skos:closeMatch  isic:8610 .
+
+cpc:93113  skos:closeMatch  isic:8610 .
+
+cpc:93119  skos:closeMatch  isic:8610 .
+
+cpc:93121  skos:closeMatch  isic:8620 .
+
+cpc:93122  skos:closeMatch  isic:8620 .
+
+cpc:93123  skos:closeMatch  isic:8620 .
+
+cpc:93191  skos:closeMatch  isic:8690 .
+
+cpc:93192  skos:closeMatch  isic:8690 .
+
+cpc:93193  skos:closeMatch  isic:8690 .
+
+cpc:93194  skos:closeMatch  isic:8690 .
+
+cpc:93195  skos:closeMatch  isic:8690 .
+
+cpc:93196  skos:closeMatch  isic:8690 .
+
+cpc:93197  skos:closeMatch  isic:8690 .
+
+cpc:93199  skos:closeMatch  isic:8690 .
+
+cpc:93210  skos:closeMatch  isic:8710 .
+
+cpc:93221  skos:closeMatch  isic:8730 .
+
+cpc:93222  skos:closeMatch  isic:8730 .
+
+cpc:93223  skos:closeMatch  isic:8730 .
+
+cpc:93301  skos:closeMatch  isic:8720 .
+
+cpc:93302  skos:closeMatch  isic:8790 .
+
+cpc:93303  skos:closeMatch  isic:8720 .
+
+cpc:93304  skos:closeMatch  isic:8790 .
+
+cpc:93411  skos:closeMatch  isic:8810 .
+
+cpc:93412  skos:closeMatch  isic:8890 .
+
+cpc:93491  skos:closeMatch  isic:8810 .
+
+cpc:93492  skos:closeMatch  isic:8810 .
+
+cpc:93493  skos:closeMatch  isic:8810 .
+
+cpc:93510  skos:closeMatch  isic:8890 .
+
+cpc:93520  skos:closeMatch  isic:8890 .
+
+cpc:93530  skos:closeMatch  isic:8890 .
+
+cpc:93590  skos:closeMatch  isic:8890 .
+
+cpc:94110  skos:closeMatch  isic:3700 .
+
+cpc:94120  skos:closeMatch  isic:3700 .
+
+cpc:94211  skos:closeMatch  isic:3812 .
+
+cpc:94212  skos:closeMatch  isic:3812 .
+
+cpc:94219  skos:closeMatch  isic:3812 .
+
+cpc:94221  skos:closeMatch  isic:3811 .
+
+cpc:94229  skos:closeMatch  isic:3811 .
+
+cpc:94231  skos:closeMatch  isic:3811 .
+
+cpc:94239  skos:closeMatch  isic:3811 .
+
+cpc:94311  skos:closeMatch  isic:3812 .
+
+cpc:94312  skos:closeMatch  isic:3830 .
+
+cpc:94313  skos:closeMatch  isic:3811 .
+
+cpc:94319  skos:closeMatch  isic:3811 .
+
+cpc:94321  skos:closeMatch  isic:3822 .
+
+cpc:94322  skos:closeMatch  isic:3822 .
+
+cpc:94331  skos:closeMatch  isic:3821 .
+
+cpc:94332  skos:closeMatch  isic:3821 .
+
+cpc:94333  skos:closeMatch  isic:3821 .
+
+cpc:94339  skos:closeMatch  isic:3821 .
+
+cpc:94411  skos:closeMatch  isic:3900 .
+
+cpc:94412  skos:closeMatch  isic:3900 .
+
+cpc:94413  skos:closeMatch  isic:3900 .
+
+cpc:94420  skos:closeMatch  isic:3900 .
+
+cpc:94430  skos:closeMatch  isic:3900 .
+
+cpc:94490  skos:closeMatch  isic:3900 .
+
+cpc:94510  skos:closeMatch  isic:8129 .
+
+cpc:94590  skos:closeMatch  isic:8129 .
+
+cpc:94900  skos:closeMatch  isic:3900 .
+
+cpc:95110  skos:closeMatch  isic:9411 .
+
+cpc:95120  skos:closeMatch  isic:9412 .
+
+cpc:95200  skos:closeMatch  isic:9420 .
+
+cpc:95910  skos:closeMatch  isic:9491 .
+
+cpc:95920  skos:closeMatch  isic:9492 .
+
+cpc:95991  skos:closeMatch  isic:9499 .
+
+cpc:95992  skos:closeMatch  isic:9499 .
+
+cpc:95993  skos:closeMatch  isic:9499 .
+
+cpc:95994  skos:closeMatch  isic:9499 .
+
+cpc:95995  skos:closeMatch  isic:9499 .
+
+cpc:95996  skos:closeMatch  isic:9499 .
+
+cpc:95997  skos:closeMatch  isic:9499 .
+
+cpc:95998  skos:closeMatch  isic:9499 .
+
+cpc:95999  skos:closeMatch  isic:9499 .
+
+cpc:96111  skos:closeMatch  isic:5920 .
+
+cpc:96112  skos:closeMatch  isic:5920 .
+
+cpc:96113  skos:closeMatch  isic:5920 .
+
+cpc:96121  skos:closeMatch  isic:5911 ;
+        skos:closeMatch  isic:6020 .
+
+cpc:96122  skos:closeMatch  isic:5920 ;
+        skos:closeMatch  isic:6010 .
+
+cpc:96123  skos:closeMatch  isic:5911 ;
+        skos:closeMatch  isic:5920 .
+
+cpc:96131  skos:closeMatch  isic:5912 .
+
+cpc:96132  skos:closeMatch  isic:5912 .
+
+cpc:96133  skos:closeMatch  isic:5912 .
+
+cpc:96134  skos:closeMatch  isic:5912 .
+
+cpc:96135  skos:closeMatch  isic:5912 .
+
+cpc:96136  skos:closeMatch  isic:5912 .
+
+cpc:96137  skos:closeMatch  isic:5920 .
+
+cpc:96139  skos:closeMatch  isic:5912 .
+
+cpc:96140  skos:closeMatch  isic:5913 .
+
+cpc:96150  skos:closeMatch  isic:5914 .
+
+cpc:96210  skos:closeMatch  isic:9000 .
+
+cpc:96220  skos:closeMatch  isic:9000 .
+
+cpc:96230  skos:closeMatch  isic:9000 .
+
+cpc:96290  skos:closeMatch  isic:9000 .
+
+cpc:96310  skos:closeMatch  isic:9000 .
+
+cpc:96320  skos:closeMatch  isic:9000 .
+
+cpc:96330  skos:closeMatch  isic:9000 .
+
+cpc:96411  skos:closeMatch  isic:9102 .
+
+cpc:96412  skos:closeMatch  isic:9102 .
+
+cpc:96421  skos:closeMatch  isic:9103 .
+
+cpc:96422  skos:closeMatch  isic:9103 .
+
+cpc:96511  skos:closeMatch  isic:9319 .
+
+cpc:96512  skos:closeMatch  isic:9312 .
+
+cpc:96520  skos:closeMatch  isic:9311 .
+
+cpc:96590  skos:closeMatch  isic:9319 .
+
+cpc:96610  skos:closeMatch  isic:9319 .
+
+cpc:96620  skos:closeMatch  isic:9319 .
+
+cpc:96910  skos:closeMatch  isic:9321 .
+
+cpc:96921  skos:closeMatch  isic:9200 .
+
+cpc:96929  skos:closeMatch  isic:9200 .
+
+cpc:96930  skos:closeMatch  isic:9329 .
+
+cpc:96990  skos:closeMatch  isic:9329 .
+
+cpc:97110  skos:closeMatch  isic:9601 .
+
+cpc:97120  skos:closeMatch  isic:9601 .
+
+cpc:97130  skos:closeMatch  isic:9601 .
+
+cpc:97140  skos:closeMatch  isic:9601 .
+
+cpc:97150  skos:closeMatch  isic:9601 .
+
+cpc:97210  skos:closeMatch  isic:9602 .
+
+cpc:97220  skos:closeMatch  isic:9602 .
+
+cpc:97230  skos:closeMatch  isic:9609 .
+
+cpc:97290  skos:closeMatch  isic:9602 .
+
+cpc:97310  skos:closeMatch  isic:9603 .
+
+cpc:97320  skos:closeMatch  isic:9603 .
+
+cpc:97910  skos:closeMatch  isic:9609 .
+
+cpc:97990  skos:closeMatch  isic:9609 .
+
+cpc:98000  skos:closeMatch  isic:9700 .
+
+cpc:99000  skos:closeMatch  isic:9900 .
