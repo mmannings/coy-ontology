@@ -201,6 +201,12 @@ events with less temporal information."""@en ;
 #    Classes
 #################################################################
 
+###  https://schema.coypu.org/acled#AbductionOrForcedDisappearance
+:AbductionOrForcedDisappearance rdf:type owl:Class ;
+                                rdfs:subClassOf :ViolenceAgainstCivilians ;
+                                rdfs:label "Abduction/forced disappearance"@en .
+
+
 ###  https://schema.coypu.org/acled#Actor
 :Actor rdf:type owl:Class ;
        rdfs:comment "A named actor involved in an event"@en ;
@@ -210,7 +216,14 @@ events with less temporal information."""@en ;
 ###  https://schema.coypu.org/acled#Agreement
 :Agreement rdf:type owl:Class ;
            rdfs:subClassOf :StrategicDevelopments ;
+           rdfs:comment "This sub-event type is used to record any sort of agreement between different actors (such as governments and rebel groups). Examples include peace agreements/talks, ceasefires, evacuation deals, prisoner exchanges, negotiated territorial transfers, prisoner releases, surrenders, repatriations, etc."@en ;
            rdfs:label "Agreement"@en .
+
+
+###  https://schema.coypu.org/acled#AirOrDroneStrike
+:AirOrDroneStrike rdf:type owl:Class ;
+                  rdfs:subClassOf :ExplosionsOrRemoteViolence ;
+                  rdfs:label "Air/drone strike"@en .
 
 
 ###  https://schema.coypu.org/acled#ArmedClash
@@ -223,6 +236,7 @@ events with less temporal information."""@en ;
 ###  https://schema.coypu.org/acled#Arrests
 :Arrests rdf:type owl:Class ;
          rdfs:subClassOf :StrategicDevelopments ;
+         rdfs:comment "This sub-event type is used when state forces or other actors exercising de facto control over a territory either detain a particularly significant individual or engage in politically significant mass arrests."@en ;
          rdfs:label "Arrests"@en .
 
 
@@ -235,14 +249,20 @@ events with less temporal information."""@en ;
 ###  https://schema.coypu.org/acled#Battles
 :Battles rdf:type owl:Class ;
          rdfs:subClassOf :ViolentEvents ;
-         rdfs:comment """ACLED defines a battle as “a violent interaction between two politically organized armed
-groups at a particular time and location.”"""@en ;
+         rdfs:comment "ACLED defines a battle as “a violent interaction between two politically organized armed groups at a particular time and location."@en ;
          rdfs:label "Battles"@en .
+
+
+###  https://schema.coypu.org/acled#ChangeToGroupOrActivity
+:ChangeToGroupOrActivity rdf:type owl:Class ;
+                         rdfs:subClassOf :StrategicDevelopments ;
+                         rdfs:comment "This sub-event type is used to record significant changes in the activity or structure of armed groups. It can cover anything from the creation of a new rebel group or a paramilitary wing of the security forces, ‘voluntary’ recruitment drives, movement of forces, or any other non-violent security measures enacted by armed actors. This sub-event type can also be used if one armed group is absorbed into a different armed group or to track large-scale defections."@en ;
+                         rdfs:label "Change to group/activity"@en .
 
 
 ###  https://schema.coypu.org/acled#ChemicalWeapon
 :ChemicalWeapon rdf:type owl:Class ;
-                rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+                rdfs:subClassOf :ExplosionsOrRemoteViolence ;
                 rdfs:comment "Whenever chemical weapons are used in warfare in the absence of any other engagement. ACLED considers chemical weapons all substances listed in the Schedule 1 of the Chemical Weapons Convention, including sarin gas, mustard gas, chlorine gas, and anthrax. Napalm, white phosphorous, as well as tear gas and other non-lethal crowd control substances, are not considered to be chemical weapons within this sub-event type."@en ;
                 rdfs:label "Chemical weapon"@en .
 
@@ -256,6 +276,7 @@ groups at a particular time and location.”"""@en ;
 
 ###  https://schema.coypu.org/acled#Conflict
 :Conflict rdf:type owl:Class ;
+          rdfs:subClassOf <https://schema.coypu.org/global#Event> ;
           rdfs:label "Conflict"@en .
 
 
@@ -268,13 +289,28 @@ groups at a particular time and location.”"""@en ;
 ###  https://schema.coypu.org/acled#DisruptedWeaponUse
 :DisruptedWeaponUse rdf:type owl:Class ;
                     rdfs:subClassOf :StrategicDevelopments ;
-                    rdfs:label "Disrupted qeapon use"@en .
+                    rdfs:comment "This sub-event type is used to capture all instances in which an event of ‘Explosions/Remote violence’ is prevented from occurring, or when armed actors seize significant caches of weapons. It includes the safe defusal of an explosive, the accidental detonation of explosives by those allegedly responsible for planting it, the interception of explosives in the air, as well as the seizure of weapons or weapons platforms such as jets, helicopters, tanks, etc. Note that in cases where a group other than the one that planted an explosive is attempting to render an explosive harmless and it goes off, this is recorded under the ‘Explosions/Remote violence’ event type, as the explosive has harmed an actor other than the one that planted it."@en ;
+                    rdfs:label "Disrupted weapon use"@en .
 
 
 ###  https://schema.coypu.org/acled#ExcessiveForceAgainstProtesters
 :ExcessiveForceAgainstProtesters rdf:type owl:Class ;
                                  rdfs:subClassOf :Protests ;
                                  rdfs:label "Excessive force against protesters"@en .
+
+
+###  https://schema.coypu.org/acled#ExplosionsOrRemoteViolence
+:ExplosionsOrRemoteViolence rdf:type owl:Class ;
+                            rdfs:subClassOf :ViolentEvents ;
+                            rdfs:comment "ACLED defines ‘Explosions/Remote violence’ events as incidents in which one side uses weapon types that, by their nature, are at range and widely destructive. The weapons used in ‘Explosions/Remote violence’ events are explosive devices, including but not limited to: bombs, grenades, improvised explosive devices (IEDs), artillery fire or shelling, missile attacks, air or drone strikes, and other widely destructive heavy weapons or chemical weapons. Suicide attacks using explosives also fall under this category."@en ;
+                            rdfs:label "Explosions/remote violence"@en .
+
+
+###  https://schema.coypu.org/acled#ExternalOrOtherForces
+:ExternalOrOtherForces rdf:type owl:Class ;
+                       rdfs:subClassOf :Actor ;
+                       rdfs:label "External/Other Forces"@en ;
+                       :hasInterCodeAnnotation "8" .
 
 
 ###  https://schema.coypu.org/acled#GovernmentRegainsTerritory
@@ -286,7 +322,7 @@ groups at a particular time and location.”"""@en ;
 
 ###  https://schema.coypu.org/acled#Grenade
 :Grenade rdf:type owl:Class ;
-         rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+         rdfs:subClassOf :ExplosionsOrRemoteViolence ;
          rdfs:comment "When a grenade or another explosive is thrown in the absence of any other engagement. Events involving “crude bombs” (such as Molotov cocktails, firecrackers, cherry bombs, petrol bombs, etc.) as well as ‘stun grenades’ are not coded in this category but are included under either ‘Riots’ or ‘Strategic developments’ depending on the context where they occurred."@en ;
          rdfs:label "Grenade"@en .
 
@@ -294,6 +330,7 @@ groups at a particular time and location.”"""@en ;
 ###  https://schema.coypu.org/acled#HeadquartersOrBaseEstablished
 :HeadquartersOrBaseEstablished rdf:type owl:Class ;
                                rdfs:subClassOf :StrategicDevelopments ;
+                               rdfs:comment "This sub-event type is used when an organized armed group establishes a permanent or semi-permanent base or headquarters. There are few cases where opposition groups other than rebels can also establish a headquarters or base (e.g. AMISOM forces in Somalia)."@en ;
                                rdfs:label "Headquarters or base established"@en .
 
 
@@ -302,6 +339,13 @@ groups at a particular time and location.”"""@en ;
                   rdfs:subClassOf :Actor ;
                   rdfs:label "Identity Militias"@en ;
                   :hasInterCodeAnnotation "4" .
+
+
+###  https://schema.coypu.org/acled#LootingOrPropertyDestruction
+:LootingOrPropertyDestruction rdf:type owl:Class ;
+                              rdfs:subClassOf :StrategicDevelopments ;
+                              rdfs:comment "This sub-event type is used when actors engage in looting or seizing goods or property outside the context of other forms of violence or destruction, such as rioting or armed clashes. This excludes the seizure or destruction of weapons or weapons systems, which are captured under the ‘Disrupted weapons use’ sub-event type. This can occur during raiding or after the capture of villages or other populated places by armed groups that occur without reported violence."@en ;
+                              rdfs:label "Looting/property destruction"@en .
 
 
 ###  https://schema.coypu.org/acled#MobViolence
@@ -320,6 +364,7 @@ groups at a particular time and location.”"""@en ;
 ###  https://schema.coypu.org/acled#Non-ViolentTransferOfTerritory
 :Non-ViolentTransferOfTerritory rdf:type owl:Class ;
                                 rdfs:subClassOf :StrategicDevelopments ;
+                                rdfs:comment "This sub-event type is used in situations in which rebels, governments, or their affiliates acquire control of a location without engaging in a violent interaction with another group. Rebels establishing control of a location without any resistance is an example of this event."@en ;
                                 rdfs:label "Non-violent transfer of territory"@en .
 
 
@@ -332,6 +377,7 @@ groups at a particular time and location.”"""@en ;
 ###  https://schema.coypu.org/acled#Other
 :Other rdf:type owl:Class ;
        rdfs:subClassOf :StrategicDevelopments ;
+       rdfs:comment "This sub-event type is used to cover any significant development that does not fall into any of the other ‘Strategic developments’ sub-event types. Examples include the occurrence of a coup, the displacement of a civilian population as a result of fighting, or the discovery of mass graves."@en ;
        rdfs:label "Other"@en .
 
 
@@ -375,6 +421,12 @@ groups at a particular time and location.”"""@en ;
              :hasInterCodeAnnotation "2" .
 
 
+###  https://schema.coypu.org/acled#RemoteExplosiveOrLandmineOrIED
+:RemoteExplosiveOrLandmineOrIED rdf:type owl:Class ;
+                                rdfs:subClassOf :ExplosionsOrRemoteViolence ;
+                                rdfs:label "Remote explosive/landmine/IED"@en .
+
+
 ###  https://schema.coypu.org/acled#Rioters
 :Rioters rdf:type owl:Class ;
          rdfs:subClassOf :Actor ;
@@ -395,6 +447,12 @@ groups at a particular time and location.”"""@en ;
                 rdfs:label "Sexual violence"@en .
 
 
+###  https://schema.coypu.org/acled#ShellingOrArtilleryOrMissileAttack
+:ShellingOrArtilleryOrMissileAttack rdf:type owl:Class ;
+                                    rdfs:subClassOf :ExplosionsOrRemoteViolence ;
+                                    rdfs:label "Shelling/artillery/missile attack"@en .
+
+
 ###  https://schema.coypu.org/acled#Source
 :Source rdf:type owl:Class ;
         rdfs:comment "The source of the event report"@en ;
@@ -411,15 +469,13 @@ groups at a particular time and location.”"""@en ;
 ###  https://schema.coypu.org/acled#StrategicDevelopments
 :StrategicDevelopments rdf:type owl:Class ;
                        rdfs:subClassOf :NonViolentActions ;
-                       rdfs:comment """This event type captures contextually important information regarding the activities of
-violent groups that is not itself recorded as political violence, yet may trigger future
-events or contribute to political dynamics within and across states. """@en ;
+                       rdfs:comment "This event type captures contextually important information regarding the activities of violent groups that is not itself recorded as political violence, yet may trigger future events or contribute to political dynamics within and across states."@en ;
                        rdfs:label "Strategic developments"@en .
 
 
 ###  https://schema.coypu.org/acled#SuicideBomb
 :SuicideBomb rdf:type owl:Class ;
-             rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
+             rdfs:subClassOf :ExplosionsOrRemoteViolence ;
              rdfs:comment """Whenever a suicide bombing occurs in the absence of any other engagement (other engagement could include gun fire against other armed groups
 or civilians). It also includes suicide vehicle-borne improvised explosive device (SVBIED) attacks."""@en ;
              rdfs:label "Suicide bomb"@en .
@@ -445,56 +501,8 @@ groups at a particular time and location."""@en ;
                rdfs:label "Violent events"@en .
 
 
-###  https://schema.coypu.org/acled#Abduction%2FForcedDisappearance
-<https://schema.coypu.org/acled#Abduction%2FForcedDisappearance> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf :ViolenceAgainstCivilians ;
-                                                                 rdfs:label "Abduction/forced disappearance"@en .
-
-
-###  https://schema.coypu.org/acled#Air%2FDroneStrike
-<https://schema.coypu.org/acled#Air%2FDroneStrike> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
-                                                   rdfs:label "Air/drone strike"@en .
-
-
-###  https://schema.coypu.org/acled#ChangeToGroup%2FActivity
-<https://schema.coypu.org/acled#ChangeToGroup%2FActivity> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :StrategicDevelopments ;
-                                                          rdfs:label "Change to group/activity"@en .
-
-
-###  https://schema.coypu.org/acled#Explosions%2FRemoteViolence
-<https://schema.coypu.org/acled#Explosions%2FRemoteViolence> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :ViolentEvents ;
-                                                             rdfs:comment """ACLED defines ‘Explosions/Remote violence’ as “one-sided violent events in which the
-tool for engaging in conflict creates asymmetry by taking away the ability of the target to
-respond”."""@en ;
-                                                             rdfs:label "Explosions/remote violence"@en .
-
-
-###  https://schema.coypu.org/acled#External%2FOtherForces
-<https://schema.coypu.org/acled#External%2FOtherForces> rdf:type owl:Class ;
-                                                        rdfs:subClassOf :Actor ;
-                                                        rdfs:label "External/Other Forces"@en ;
-                                                        :hasInterCodeAnnotation "8" .
-
-
-###  https://schema.coypu.org/acled#Looting%2FPropertyDestruction
-<https://schema.coypu.org/acled#Looting%2FPropertyDestruction> rdf:type owl:Class ;
-                                                               rdfs:subClassOf :StrategicDevelopments ;
-                                                               rdfs:label "Looting/property destruction"@en .
-
-
-###  https://schema.coypu.org/acled#RemoteExplosive%2FLandmine%2FIED
-<https://schema.coypu.org/acled#RemoteExplosive%2FLandmine%2FIED> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
-                                                                  rdfs:label "Remote explosive/landmine/IED"@en .
-
-
-###  https://schema.coypu.org/acled#Shelling%2FArtillery%2FMissileAttack
-<https://schema.coypu.org/acled#Shelling%2FArtillery%2FMissileAttack> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://schema.coypu.org/acled#Explosions%2FRemoteViolence> ;
-                                                                      rdfs:label "Shelling/artillery/missile attack"@en .
+###  https://schema.coypu.org/global#Event
+<https://schema.coypu.org/global#Event> rdf:type owl:Class .
 
 
 #################################################################
