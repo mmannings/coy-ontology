@@ -1609,10 +1609,10 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "RegionalIndustryCoefficient"@en .
 
 
-###  https://schema.coypu.org/global#RemoteExplosiveOrLandmineOrIED
-:RemoteExplosiveOrLandmineOrIED rdf:type owl:Class ;
+###  https://schema.coypu.org/global#RemoteExplosiveOrLandmineOrIed
+:RemoteExplosiveOrLandmineOrIed rdf:type owl:Class ;
                                 rdfs:subClassOf :ExplosionOrRemoteViolence ;
-                                rdfs:label "Remote explosive or landmine"@en .
+                                rdfs:label "Remote explosive or landmine or IED"@en .
 
 
 ###  https://schema.coypu.org/global#Riot
