@@ -10,6 +10,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
+@prefix isic_r4: <https://data.coypu.org/classification/isic_r4/> .
+@prefix tiva-21: <https://data.coypu.org/classification/tiva-21#> .
 
 <TriplesMap1>
 	rml:logicalSource [ rml:source "mappings-between-isic4-and-tiva-21.csv";
