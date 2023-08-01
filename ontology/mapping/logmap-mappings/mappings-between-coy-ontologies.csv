@@ -1,0 +1,63 @@
+mappings between ontologies: (https://schema.coypu.org/em-dat/1.0.ttl , https://schema.coypu.org/gta/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/em-dat/1.0.ttl , https://schema.coypu.org/ta/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/em-dat/1.0.ttl , https://schema.coypu.org/vtf/1.4.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/em-dat/1.0.ttl , https://schema.coypu.org/world-port-index/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/em-dat/1.0.ttl , https://schema.coypu.org/global/2.3.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/gta/1.0.ttl , https://schema.coypu.org/ta/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/gta/1.0.ttl , https://schema.coypu.org/vtf/1.4.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/gta/1.0.ttl , https://schema.coypu.org/world-port-index/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/gta/1.0.ttl , https://schema.coypu.org/global/2.3.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/ta/1.0.ttl , https://schema.coypu.org/vtf/1.4.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/ta/1.0.ttl , https://schema.coypu.org/world-port-index/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/ta/1.0.ttl , https://schema.coypu.org/global/2.3.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/vtf/1.4.ttl , https://schema.coypu.org/world-port-index/1.0.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/vtf/1.4.ttl , https://schema.coypu.org/global/2.3.ttl), 
+source iri, target iri, type of mapping, mappings direction, mapping confidence,
+https://schema.coypu.org/vtf#TradeValue , https://schema.coypu.org/vtf#Trade , 0 , -2 , 0.405,
+https://schema.coypu.org/vtf#Trade , https://schema.coypu.org/vtf#TradeValue , 0 , -2 , 0.405,
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 2,
+Number of coflictive mappings: 0
+mappings between ontologies: (https://schema.coypu.org/world-port-index/1.0.ttl , https://schema.coypu.org/global/2.3.ttl), 
+-------------------------------------------------------------------------------------
+Number of mappings computed by LogMap: 0,
+Number of coflictive mappings: 0
