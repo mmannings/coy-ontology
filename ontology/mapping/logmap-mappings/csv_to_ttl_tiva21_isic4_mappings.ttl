@@ -8,6 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <TriplesMap1>
 	rml:logicalSource [ rml:source "mappings-between-isic4-and-tiva-21.csv";
@@ -18,7 +19,7 @@
 		rr:class owl:NamedIndividual;
 	];	
 	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
+		rr:predicate skos:exactMatch;
 		rr:objectMap [
 			rr:template "{target_iri}";
 			rr:class owl:NamedIndividual;

@@ -8,232 +8,233 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <https://data.coypu.org/classification/isic_r4/2920> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D29>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
 
 <https://data.coypu.org/classification/isic_r4/D> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D35>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
 
 <https://data.coypu.org/classification/isic_r4/2790> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D27>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
 
 <https://data.coypu.org/classification/isic_r4/51> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D51>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D51>.
 
 <https://data.coypu.org/classification/isic_r4/353> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D35>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
 
 <https://data.coypu.org/classification/isic_r4/6399> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D62T63>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
 
 <https://data.coypu.org/classification/isic_r4/3314> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D27>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
 
 <https://data.coypu.org/classification/isic_r4/M> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D69T75>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
 
 <https://data.coypu.org/classification/isic_r4/3099> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D30>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
 
 <https://data.coypu.org/classification/isic_r4/2399> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D23>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
 
 <https://data.coypu.org/classification/isic_r4/28> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D31T33>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D31T33>.
 
 <https://data.coypu.org/classification/isic_r4/P> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/192> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D19>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
 
 <https://data.coypu.org/classification/isic_r4/L> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/24> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D24>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D24>.
 
 <https://data.coypu.org/classification/isic_r4/N> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D77T82>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D77T82>.
 
 <https://data.coypu.org/classification/isic_r4/68> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/58> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D58T60>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D58T60>.
 
 <https://data.coypu.org/classification/isic_r4/29> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D29>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
 
 <https://data.coypu.org/classification/isic_r4/45> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D45T47>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
 
 <https://data.coypu.org/classification/isic_r4/1920> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D19>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
 
 <https://data.coypu.org/classification/isic_r4/853> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/19> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D19>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
 
 <https://data.coypu.org/classification/isic_r4/210> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D21>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
 
 <https://data.coypu.org/classification/isic_r4/309> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D30>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
 
 <https://data.coypu.org/classification/isic_r4/23> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D23>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
 
 <https://data.coypu.org/classification/isic_r4/49> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D49>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D49>.
 
 <https://data.coypu.org/classification/isic_r4/852> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/451> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D45T47>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
 
 <https://data.coypu.org/classification/isic_r4/53> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D53>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D53>.
 
 <https://data.coypu.org/classification/isic_r4/3311> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D25>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
 
 <https://data.coypu.org/classification/isic_r4/35> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D35>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
 
 <https://data.coypu.org/classification/isic_r4/30> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D30>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
 
 <https://data.coypu.org/classification/isic_r4/S> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D94T96>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D94T96>.
 
 <https://data.coypu.org/classification/isic_r4/E> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D36T39>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D36T39>.
 
 <https://data.coypu.org/classification/isic_r4/5310> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/F> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D41T43>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D41T43>.
 
 <https://data.coypu.org/classification/isic_r4/682> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/33> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D31T33>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D31T33>.
 
 <https://data.coypu.org/classification/isic_r4/4510> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D45T47>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
 
 <https://data.coypu.org/classification/isic_r4/8549> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/639> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D62T63>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
 
 <https://data.coypu.org/classification/isic_r4/279> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D27>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
 
 <https://data.coypu.org/classification/isic_r4/749> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D69T75>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
 
 <https://data.coypu.org/classification/isic_r4/681> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/O> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D84>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D84>.
 
 <https://data.coypu.org/classification/isic_r4/239> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D23>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
 
 <https://data.coypu.org/classification/isic_r4/T> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D97T98>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D97T98>.
 
 <https://data.coypu.org/classification/isic_r4/R> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D90T93>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D90T93>.
 
 <https://data.coypu.org/classification/isic_r4/8542> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/Q> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D86T88>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D86T88>.
 
 <https://data.coypu.org/classification/isic_r4/50> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D50>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D50>.
 
 <https://data.coypu.org/classification/isic_r4/531> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/854> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/63> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D62T63>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
 
 <https://data.coypu.org/classification/isic_r4/8530> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/74> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D69T75>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
 
 <https://data.coypu.org/classification/isic_r4/20> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D20>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D20>.
 
 <https://data.coypu.org/classification/isic_r4/K> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D64T66>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D64T66>.
 
 <https://data.coypu.org/classification/isic_r4/85> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D85>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
 <https://data.coypu.org/classification/isic_r4/2100> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D21>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
 
 <https://data.coypu.org/classification/isic_r4/3313> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D26>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D26>.
 
 <https://data.coypu.org/classification/isic_r4/5819> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D58T60>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D58T60>.
 
 <https://data.coypu.org/classification/isic_r4/3530> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D35>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
 
 <https://data.coypu.org/classification/isic_r4/G> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D45T47>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
 
 <https://data.coypu.org/classification/isic_r4/84> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D84>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D84>.
 
 <https://data.coypu.org/classification/isic_r4/7490> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D69T75>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
 
 <https://data.coypu.org/classification/isic_r4/61> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D61>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D61>.
 
 <https://data.coypu.org/classification/isic_r4/22> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D22>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D22>.
 
 <https://data.coypu.org/classification/isic_r4/27> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D27>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
 
 <https://data.coypu.org/classification/isic_r4/6810> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/2599> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D25>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
 
 <https://data.coypu.org/classification/isic_r4/52> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D52>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D52>.
 
 <https://data.coypu.org/classification/isic_r4/6820> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D68>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/I> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D55T56>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D55T56>.
 
 <https://data.coypu.org/classification/isic_r4/292> a owl:NamedIndividual;
-		owl:sameAs <https://data.coypu.org/classification/tiva-21#D29>.
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
 
