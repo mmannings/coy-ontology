@@ -1,0 +1,60 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
+@prefix : <https://data.coypu.org/mappings/tiva2isic#> .
+
+#Mappings from ISIC4 rev 4 classfication schema as CSV file to TTL file.
+#ISIC rev 4 classification schema is available at https://www.fao.org/statistics/caliper/tools/download/en
+
+<TriplesMap1>
+	rml:logicalSource [ rml:source "ISIC4-core.csv";
+						rml:referenceFormulation ql:CSV
+						];
+	rr:subjectMap [
+		rr:template "https://data.coypu.org/classification/isic_r4/{code}";
+		rr:class skos:Concept;
+	];
+	rr:predicateObjectMap [
+		rr:predicate skos:broader;
+		rr:objectMap [
+			rr:template "https://data.coypu.org/classification/isic_r4/{broader}";
+			rr:class skos:Concept;
+		]
+	];
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+           rml:reference "label_en";
+           rr:datatype xsd:string;
+      ]
+    ];	
+	rr:predicateObjectMap [
+        rr:predicate skos:prefLabel;
+        rr:objectMap [
+           rml:reference "label_en";
+           rr:datatype xsd:string;
+      ]
+    ].
+<TriplesMap2>
+	rml:logicalSource [ rml:source "ISIC4-core.csv";
+						rml:referenceFormulation ql:CSV
+						];
+	rr:subjectMap [
+		rr:template "https://data.coypu.org/classification/isic_r4/{code}";
+		rr:class skos:Concept;
+	].
+<TriplesMap3>
+	rml:logicalSource [ rml:source "ISIC4-core.csv";
+						rml:referenceFormulation ql:CSV
+						];
+	rr:subjectMap [
+		rr:template "https://data.coypu.org/classification/isic_r4/{broader}";
+		rr:class skos:Concept;
+	].

@@ -1,0 +1,2 @@
+#ISIC Rev 4 classification schema
+This classification schema as a csv file is available at [The Food and Agriculture Organization of the United Nations (FAO)](https://www.fao.org/statistics/caliper/tools/download/en).
