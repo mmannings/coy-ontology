@@ -52,11 +52,3 @@
 		rr:template "https://data.coypu.org/classification/isic_r4/{code}";
 		rr:class skos:Concept;
 	].
-<TriplesMap3>
-	rml:logicalSource [ rml:source "ISIC4-core.csv";
-						rml:referenceFormulation ql:CSV
-						];
-	rr:subjectMap [
-		rr:template "https://data.coypu.org/classification/isic_r4/{broader}";
-		rr:class skos:Concept;
-	].
