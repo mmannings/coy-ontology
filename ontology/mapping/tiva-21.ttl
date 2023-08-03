@@ -9,6 +9,7 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tiva-21: <https://data.coypu.org/classification/tiva-21> .
 
 <https://data.coypu.org/classification/tiva-21>
   rdf:type owl:Ontology ;
