@@ -9,6 +9,12 @@
 @prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
 @prefix : <https://data.coypu.org/mappings/tiva2isic#> .
 
+<https://data.coypu.org/mappings/tiva2isic#>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+
 <https://data.coypu.org/classification/isic_r4/2920> a skos:Concept;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
 
