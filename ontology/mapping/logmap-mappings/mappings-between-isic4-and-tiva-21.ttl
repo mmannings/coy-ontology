@@ -3,18 +3,19 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rev: <http://purl.org/stuff/rev#> .
-@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix tiva-21: <https://data.coypu.org/classification/tiva-21> .
 @prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
-@prefix isic_r4: <https://data.coypu.org/classification/isic_r4/> .
-@prefix tiva-21: <https://data.coypu.org/classification/tiva-21#> .
+@prefix : <https://data.coypu.org/mappings/tiva2isic#> .
 
 <https://data.coypu.org/classification/isic_r4/2920> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
+
+<https://data.coypu.org/classification/isic_r4/03> a owl:NamedIndividual;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D03>.
 
 <https://data.coypu.org/classification/isic_r4/D> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
@@ -78,6 +79,9 @@
 
 <https://data.coypu.org/classification/isic_r4/853> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
+
+<https://data.coypu.org/classification/isic_r4/B> a owl:NamedIndividual;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D05T06>.
 
 <https://data.coypu.org/classification/isic_r4/19> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
@@ -220,14 +224,17 @@
 <https://data.coypu.org/classification/isic_r4/22> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D22>.
 
-<https://data.coypu.org/classification/isic_r4/27> a owl:NamedIndividual;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
-
 <https://data.coypu.org/classification/isic_r4/6810> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
 <https://data.coypu.org/classification/isic_r4/2599> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
+
+<https://data.coypu.org/classification/isic_r4/27> a owl:NamedIndividual;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
+
+<https://data.coypu.org/classification/isic_r4/A> a owl:NamedIndividual;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D01T02>.
 
 <https://data.coypu.org/classification/isic_r4/52> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D52>.
@@ -240,4 +247,7 @@
 
 <https://data.coypu.org/classification/isic_r4/292> a owl:NamedIndividual;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
+
+<https://data.coypu.org/classification/isic_r4/09> a owl:NamedIndividual;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D09>.
 
