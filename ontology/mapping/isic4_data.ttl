@@ -9,6 +9,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix isic: <https://data.coypu.org/classification/isic_r4/>
 
+<https://data.coypu.org/classification/isic_r4/>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+
 <https://data.coypu.org/classification/isic_r4/01> a skos:Concept;
 		skos:broader <https://data.coypu.org/classification/isic_r4/A>;
 		rdfs:label "Crop and animal production, hunting and related service activities"@en;
