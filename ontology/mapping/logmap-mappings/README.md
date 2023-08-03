@@ -6,4 +6,6 @@ Mapping is generated automatically using [LogMap matcher tool](https://git.tib.e
 
 ## Mappings between ISIC-4 and TIVA-21 classifications
 
+![Mapping workflow](workflow-of-producing-mappings-between-tiva21-and-isic4.png)
+
 ## Notes
