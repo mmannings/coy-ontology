@@ -32,14 +32,16 @@
         rr:predicate rdfs:label;
         rr:objectMap [
            rml:reference "label_en";
-           rr:datatype xsd:string;
+           #rr:datatype xsd:string;
+		   rr:language "en";
       ]
     ];	
 	rr:predicateObjectMap [
         rr:predicate skos:prefLabel;
         rr:objectMap [
            rml:reference "label_en";
-           rr:datatype xsd:string;
+           #rr:datatype xsd:string;
+		   rr:language "en";
       ]
     ].
 <TriplesMap2>
