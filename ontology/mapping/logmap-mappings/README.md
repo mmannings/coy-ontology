@@ -8,7 +8,7 @@ Mapping is generated automatically using [LogMap matcher tool](https://git.tib.e
 ## Mappings between ISIC-4 and TIVA-21 classifications
 
 Producing and validating the mapping between ISIC Rev 4 and TIVA 21 classifications workflow is depicted in Figure 1. 
-There are five use case, such as 
+The workflow consists of the following five steps: 
 
 ---
 1. Create SKOS vocabulary from ISIC rev 4 classification.
