@@ -26,7 +26,7 @@ The ISIC4-core.csv file is available in **isic-rev4-data** folder within this gi
  The resulting **isic4_data.ttl** file is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
-against SKOS shapes running the following command
+against SKOS shapes when running the following command
 
 ```
 ./shaclvalidate.sh -datafile isic4_data.ttl -shapesfile skos.shapes.ttl
@@ -41,9 +41,9 @@ in the graph before using it in producing mappings between ISIC Rev 4 and TIVA c
 #### Step 2: Create SKOS vocabulary from TIVA-21 classification
 
 To prepare the TIVA classification for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
-Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from page 53 of the Guide. SHACL engine is used to
-validate TIVA generated TIVA graph. Created **tiva-21.ttl** file is available in **mapping** folder. To validate generated TIVA graph agains skos shapes
-one can run the following command:
+Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from page 53 of the TIVA guide. 
+Created **tiva-21.ttl** file is available in **mapping** folder of this git repository.  
+SHACL engine is used to validate generated TIVA graph  against skos shapes by running the following command:
 ```
 ./shaclvalidate.sh -datafile tiva-21.ttl -shapesfile skos.shapes.ttl
 ```
@@ -63,9 +63,17 @@ To generate mappings one should run '''MappingsBetweenIsicAndTiva.java''' file w
 - mapping_confidence: is a number that is in the range \[0,1\]. It denotes level of confidence for produced relations between source iri and target iri.
 '''
 
-Resulting **mappings-between-isic4-and-tiva-21.csv** file is available in **logmap-mappings** folder of this git repository.
+Result of mapping is saved in **mappings-between-isic4-and-tiva-21.csv** file that is available in **logmap-mappings** folder of this git repository.
 
 #### Step 4: Generate TTL file of mappings between TIVA 21 to ISIC rev 4
 
+RDFizer is used to transform **mappings-between-isic4-and-tiva-21.csv** file into corresponding ttl file. The **mappings-between-isic4-and-tiva-21.ttl** file is available in 
+**logmap-mappings** folder of this git repository. 
 
 #### Step 5: Mapping graph validation
+
+All generated graphs in this folder are vadalited  against SKOS shapes by using SHACL engine. The **mappings-between-isic4-and-tiva-21.ttl** graph 
+is validated by running the following command:
+```
+./shaclvalidate.sh -datafile mappings-between-isic4-and-tiva-21.ttl -shapesfile skos.shapes.ttl
+```
