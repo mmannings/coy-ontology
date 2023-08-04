@@ -20,9 +20,14 @@ The workflow consists of the following five steps:
 
 #### Create SKOS vocabulary from ISIC rev 4 csv file
 The ISIC Rev 4 classification is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
-The csv file is available in [isic-rev4-data](https://gitlab.com/coypu-project/coy-ontology/-/tree/93-automated-mappings-between-isic4-and-tiva/ontology/mapping/logmap-mappings/isic-rev4-data?ref_type=heads) folder.
-The RDFizer is used to generate **isic4_data**  TTL file from the csv file. The TTL file is available in **mapping** folder of this repository. 
-Each node in the ISIC Rev 4 graph is instance of a **skos:Concept** as well as instance of **rdfs:Class**. The SCHAL engine is used to validate
+The csv file is available in [isic-rev4-data](https://gitlab.com/coypu-project/coy-ontology/-/tree/main/ontology/mapping) folder.
+The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate **isic4_data**  TTL file from the csv file. The TTL file is available in **mapping** folder of this repository. 
+Each node in the ISIC Rev 4 graph is instance of a **skos:Concept** as well as instance of **rdfs:Class**. 
+The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph against SKOS shapes. One can reproduce ISIC Rev 4 validation 
+using the following command.
+
+
+
 
 
  
