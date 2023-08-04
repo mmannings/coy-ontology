@@ -77,3 +77,27 @@ is validated by running the following command:
 ```
 ./shaclvalidate.sh -datafile mappings-between-isic4-and-tiva-21.ttl -shapesfile skos.shapes.ttl
 ```
+Below is a report when SHACL engine vlidates gaprah sucessfuly.
+```
+@prefix :          <https://data.coypu.org/mappings/tiva2isic#> .
+@prefix dash:      <http://datashapes.org/dash#> .
+@prefix graphql:   <http://datashapes.org/graphql#> .
+@prefix isic:      <https://data.coypu.org/classification/isic_r4/> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix ql:        <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml:       <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr:        <http://www.w3.org/ns/r2rml#> .
+@prefix sh:        <http://www.w3.org/ns/shacl#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix swa:       <http://topbraid.org/swa#> .
+@prefix tiva-21:   <https://data.coypu.org/classification/tiva-21> .
+@prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
+@prefix tosh:      <http://topbraid.org/tosh#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+[ rdf:type     sh:ValidationReport ;
+  sh:conforms  true
+] .
+```
