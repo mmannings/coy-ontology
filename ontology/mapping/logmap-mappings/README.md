@@ -1,7 +1,8 @@
 # Automated mappings in CoyPu project
 
-This folder contains explanation of a mapping between [International Standard Industrial Classification of all Economic Activities (ISIC) Rev 4](https://www.fao.org/statistics/caliper/tools/download/en) and 
-[Trade in Value Added](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) classification schemas workflow. 
+This folder contains explanation of a mapping between 
+[International Standard Industrial Classification of all Economic Activities (ISIC) Rev 4](https://www.fao.org/statistics/caliper/tools/download/en) and 
+[Trade in Value Added (TIVA)](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) classification schemas workflow. 
 Mapping is generated automatically using [LogMap matcher tool](https://git.tib.eu/terminology/sandbox/logmap-matcher).
 
 ## Mappings between ISIC-4 and TIVA-21 classifications
@@ -17,7 +18,10 @@ There are five use case, such as
 5. Graphs Validation reports.
 ---
 
-As a fist step to create input TTL files for both ISIC4 and TIVA-21 classification schemas.
+The ISIC Rev 4 classification is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
+The [RDfizer](https://github.com/SDM-TIB/SDM-RDFizer) is emplyed to transform the ISIC Rev 4 csv file to TTL file (step 1). 
+Each node in the ISIC Rev 4 graph is instance of a **skos:Concept** as well as instance of **rdfs:Class**. 
+
 
  
 | ![Mapping workflow](workflow-of-producing-mappings-between-tiva21-and-isic4.png) | 
