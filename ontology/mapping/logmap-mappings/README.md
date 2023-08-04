@@ -20,7 +20,8 @@ The workflow consists of the following five steps:
 
 #### Step1: Create SKOS vocabulary from ISIC rev 4 csv file
 The ISIC Rev 4 classification schema is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
-The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate **isic4_data**  TTL file from the csv file that 
+The ISIC4-core.csv file is available i, **isic-rev4-data** folder within this git repository.
+ The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate **isic4_data**  TTL file from the csv file that 
 is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
