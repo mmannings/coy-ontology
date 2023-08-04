@@ -17,272 +17,272 @@
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 :D01T02
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Agriculture, hunting, forestry" ;
   skos:prefLabel "Agriculture, hunting, forestry" ;
 .
 :D03
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Fishing and aquaculture" ;
   skos:prefLabel "Fishing and aquaculture" ;
 .
 :D05T06
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Mining and quarrying, energy producing products" ;
   skos:prefLabel "Mining and quarrying, energy producing products" ;
 .
 :D07T08
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Mining and quarrying, non-energy producing products" ;
   skos:prefLabel "Mining and quarrying, non-energy producing products" ;
 .
 :D09
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Mining support service activities" ;
   skos:prefLabel "Mining support service activities" ;
 .
 :D10T12
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Food products, beverages and tobacco" ;
   skos:prefLabel "Food products, beverages and tobacco" ;
 .
 :D13T15
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Textiles, textile products, leather and footwear" ;
   skos:prefLabel "Textiles, textile products, leather and footwear" ;
 .
 :D16
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Wood and products of wood and cork" ;
   skos:prefLabel "Wood and products of wood and cork" ;
 .
 :D17T18
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Paper products and printing" ;
   skos:prefLabel "Paper products and printing" ;
 .
 :D19
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Coke and refined petroleum products" ;
   skos:prefLabel "Coke and refined petroleum products" ;
 .
 :D20
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Chemical and chemical products" ;
   skos:prefLabel "Chemical and chemical products" ;
 .
 :D21
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Pharmaceuticals, medicinal chemical and botanical products" ;
   skos:prefLabel "Pharmaceuticals, medicinal chemical and botanical products" ;
 .
 :D22
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Rubber and plastics products" ;
   skos:prefLabel "Rubber and plastics products" ;
 .
 :D23
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Other non-metallic mineral products" ;
   skos:prefLabel "Other non-metallic mineral products" ;
 .
 :D24
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Basic metals" ;
   skos:prefLabel "Basic metals" ;
 .
 :D25
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Fabricated metal products" ;
   skos:prefLabel "Fabricated metal products" ;
 .
 :D26
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Computer, electronic and optical equipment" ;
   skos:prefLabel "Computer, electronic and optical equipment" ;
 .
 :D27
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Electrical equipment" ;
   skos:prefLabel "Electrical equipment" ;
 .
 :D28
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Machinery and equipment, nec" ;
   skos:prefLabel "Machinery and equipment, nec" ;
 .
 :D29
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Motor vehicles, trailers and semi-trailers" ;
   skos:prefLabel "Motor vehicles, trailers and semi-trailers" ;
 .
 :D30
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Other transport equipment" ;
   skos:prefLabel "Other transport equipment" ;
 .
 :D31T33
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Manufacturing nec; repair and installation of machinery and equipment" ;
   skos:prefLabel "Manufacturing nec; repair and installation of machinery and equipment" ;
 .
 :D35
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Electricity, gas, steam and air conditioning supply" ;
   skos:prefLabel "Electricity, gas, steam and air conditioning supply" ;
 .
 :D36T39
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Water supply; sewerage, waste management and remediation activities" ;
   skos:prefLabel "Water supply; sewerage, waste management and remediation activities" ;
 .
 :D41T43
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Construction" ;
   skos:prefLabel "Construction" ;
 .
 :D45T47
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Wholesale and retail trade; repair of motor vehicles" ;
   skos:prefLabel "Wholesale and retail trade; repair of motor vehicles" ;
 .
 :D49
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Land transport and transport via pipelines" ;
   skos:prefLabel "Land transport and transport via pipelines" ;
 .
 :D50
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Water transport" ;
   skos:prefLabel "Water transport" ;
 .
 :D51
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Air transport" ;
   skos:prefLabel "Air transport" ;
 .
 :D52
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Warehousing and support activities for transportation" ;
   skos:prefLabel "Warehousing and support activities for transportation" ;
 .
 :D53
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Postal and courier activities" ;
   skos:prefLabel "Postal and courier activities" ;
 .
 :D55T56
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Accommodation and food service activities" ;
   skos:prefLabel "Accommodation and food service activities" ;
 .
 :D58T60
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Publishing, audiovisual and broadcasting activities" ;
   skos:prefLabel "Publishing, audiovisual and broadcasting activities" ;
 .
 :D61
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Telecommunications" ;
   skos:prefLabel "Telecommunications" ;
 .
 :D62T63
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "IT and other information services" ;
   skos:prefLabel "IT and other information services" ;
 .
 :D64T66
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Financial and insurance activities" ;
   skos:prefLabel "Financial and insurance activities" ;
 .
 :D68
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Real estate activities" ;
   skos:prefLabel "Real estate activities" ;
 .
 :D69T75
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Professional, scientific and technical activities" ;
   skos:prefLabel "Professional, scientific and technical activities" ;
 .
 :D77T82
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Administrative and support services" ;
   skos:prefLabel "Administrative and support services" ;
 .
 :D84
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Public administration and defence; compulsory social security" ;
   skos:prefLabel "Public administration and defence; compulsory social security" ;
 .
 :D85
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Education" ;
   skos:prefLabel "Education" ;
 .
 :D86T88
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Human health and social work activities" ;
   skos:prefLabel "Human health and social work activities" ;
 .
 :D90T93
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Arts, entertainment and recreation" ;
   skos:prefLabel "Arts, entertainment and recreation" ;
 .
 :D94T96
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Other service activities" ;
   skos:prefLabel "D94T96" ;
 .
 :D97T98
-  rdf:type owl:NamedIndividual ;
-  rdf:type skos:Concept ;
+  rdf:type owl:Thing;
+  
   rdfs:label "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use" ;
   skos:prefLabel "D97T98" ;
 .
