@@ -23,7 +23,7 @@ The ISIC Rev 4 classification schema is downloaded as a csv file from [this](htt
 The ISIC4-core.csv file is available in **isic-rev4-data** folder within this git repository.
  The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate TTL file from the csv file. 
  TDFizer mapping file **isic4_csv_to_ttl_mappings.ttl** is available in the **logmap-mappings** folder of this git repository.
- The resulting **isic4_data** TTL file is available in **mapping** folder of this repository. 
+ The resulting **isic4_data.ttl** file is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
 against SKOS shapes running the following command
@@ -52,7 +52,9 @@ As in Step 1, if TIVA graph does not pass validation then all issues should be r
 #### Step 3: Produce mappings between TIVA 21 and ISIC rev 4 (csv file)
 
 To produce semantic mappings between ISIC Rev 4 and TIVA SKOS classifications the [LogMap](https://git.tib.eu/terminology/sandbox/logmap-matcher) matcher tool is used. 
-Java code that runs LogMap is available within the LogMap project. Output of the mapping is a csv file that contains the following columns:
+Java code that runs LogMap is available within the LogMap project. Input ontologies for the mapping are TTL file created in Step 1 and Step 2, i.e. **isic4_data.ttl** and **tiva-21.ttl** files respectively.
+To generate mappings one should run '''MappingsBetweenIsicAndTiva.java''' file withing the LogMap project. Output of the mapping is a csv file that contains the following data:
+
 '''
 - source_iri: IRI for ISIC Rev 4 instance of SKOS concept.
 - target_iri:  IRI for TIVA instance of SKOS concept.
@@ -61,6 +63,9 @@ Java code that runs LogMap is available within the LogMap project. Output of the
 - mapping_confidence: is a number that is in the range \[0,1\]. It denotes level of confidence for produced relations between source iri and target iri.
 '''
 
+Resulting **mappings-between-isic4-and-tiva-21.csv** file is available in **logmap-mappings** folder of this git repository.
+
 #### Step 4: Generate TTL file of mappings between TIVA 21 to ISIC rev 4
 
-#### Step 5: Graphs Validation reports
+
+#### Step 5: Mapping graph validation
