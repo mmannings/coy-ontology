@@ -6,252 +6,122 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isic: <https://data.coypu.org/classification/isic_r4/> .
+@prefix tiva-21: <https://data.coypu.org/classification/tiva-21> .
 @prefix tiva2isic: <https://data.coypu.org/mappings/tiva2isic#> .
 @prefix : <https://data.coypu.org/mappings/tiva2isic#> .
 
-<https://data.coypu.org/mappings/tiva2isic#>
-  rdf:type owl:Ontology ;
-  owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
-.
-
-<https://data.coypu.org/classification/isic_r4/2920> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
-
-<https://data.coypu.org/classification/isic_r4/03> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/03> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D03>.
 
-<https://data.coypu.org/classification/isic_r4/D> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/D> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
 
-<https://data.coypu.org/classification/isic_r4/2790> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
-
-<https://data.coypu.org/classification/isic_r4/51> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D51>.
-
-<https://data.coypu.org/classification/isic_r4/353> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
-
-<https://data.coypu.org/classification/isic_r4/6399> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
-
-<https://data.coypu.org/classification/isic_r4/3314> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
-
-<https://data.coypu.org/classification/isic_r4/M> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
-
-<https://data.coypu.org/classification/isic_r4/3099> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
-
-<https://data.coypu.org/classification/isic_r4/2399> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
-
-<https://data.coypu.org/classification/isic_r4/28> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D31T33>.
-
-<https://data.coypu.org/classification/isic_r4/P> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/192> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
-
-<https://data.coypu.org/classification/isic_r4/L> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/24> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D24>.
-
-<https://data.coypu.org/classification/isic_r4/N> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D77T82>.
-
-<https://data.coypu.org/classification/isic_r4/68> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/58> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D58T60>.
-
-<https://data.coypu.org/classification/isic_r4/29> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
-
-<https://data.coypu.org/classification/isic_r4/45> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
-
-<https://data.coypu.org/classification/isic_r4/1920> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
-
-<https://data.coypu.org/classification/isic_r4/853> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/B> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D05T06>.
-
-<https://data.coypu.org/classification/isic_r4/19> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
-
-<https://data.coypu.org/classification/isic_r4/210> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
-
-<https://data.coypu.org/classification/isic_r4/309> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
-
-<https://data.coypu.org/classification/isic_r4/23> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
-
-<https://data.coypu.org/classification/isic_r4/49> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D49>.
-
-<https://data.coypu.org/classification/isic_r4/852> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/451> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
-
-<https://data.coypu.org/classification/isic_r4/53> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D53>.
-
-<https://data.coypu.org/classification/isic_r4/3311> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
-
-<https://data.coypu.org/classification/isic_r4/35> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
-
-<https://data.coypu.org/classification/isic_r4/30> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D30>.
-
-<https://data.coypu.org/classification/isic_r4/S> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D94T96>.
-
-<https://data.coypu.org/classification/isic_r4/E> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D36T39>.
-
-<https://data.coypu.org/classification/isic_r4/5310> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/F> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D41T43>.
-
-<https://data.coypu.org/classification/isic_r4/682> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/33> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D31T33>.
-
-<https://data.coypu.org/classification/isic_r4/4510> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
-
-<https://data.coypu.org/classification/isic_r4/8549> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/639> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
-
-<https://data.coypu.org/classification/isic_r4/279> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
-
-<https://data.coypu.org/classification/isic_r4/749> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
-
-<https://data.coypu.org/classification/isic_r4/681> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/O> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/O> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D84>.
 
-<https://data.coypu.org/classification/isic_r4/239> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D23>.
-
-<https://data.coypu.org/classification/isic_r4/T> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/T> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D97T98>.
 
-<https://data.coypu.org/classification/isic_r4/R> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/R> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D90T93>.
 
-<https://data.coypu.org/classification/isic_r4/8542> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
+<https://data.coypu.org/classification/isic_r4/51> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D51>.
 
-<https://data.coypu.org/classification/isic_r4/Q> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/Q> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D86T88>.
 
-<https://data.coypu.org/classification/isic_r4/50> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/50> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D50>.
 
-<https://data.coypu.org/classification/isic_r4/531> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/854> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/63> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D62T63>.
-
-<https://data.coypu.org/classification/isic_r4/8530> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/74> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
-
-<https://data.coypu.org/classification/isic_r4/20> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D20>.
-
-<https://data.coypu.org/classification/isic_r4/K> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D64T66>.
-
-<https://data.coypu.org/classification/isic_r4/85> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
-
-<https://data.coypu.org/classification/isic_r4/2100> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
-
-<https://data.coypu.org/classification/isic_r4/3313> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D26>.
-
-<https://data.coypu.org/classification/isic_r4/5819> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D58T60>.
-
-<https://data.coypu.org/classification/isic_r4/3530> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
-
-<https://data.coypu.org/classification/isic_r4/G> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
-
-<https://data.coypu.org/classification/isic_r4/84> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D84>.
-
-<https://data.coypu.org/classification/isic_r4/7490> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
-
-<https://data.coypu.org/classification/isic_r4/61> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D61>.
-
-<https://data.coypu.org/classification/isic_r4/22> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D22>.
-
-<https://data.coypu.org/classification/isic_r4/6810> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
-
-<https://data.coypu.org/classification/isic_r4/2599> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
-
-<https://data.coypu.org/classification/isic_r4/27> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/3314> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D27>.
 
-<https://data.coypu.org/classification/isic_r4/A> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D01T02>.
+<https://data.coypu.org/classification/isic_r4/M> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
 
-<https://data.coypu.org/classification/isic_r4/52> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D52>.
+<https://data.coypu.org/classification/isic_r4/854> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
-<https://data.coypu.org/classification/isic_r4/6820> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/74> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
+
+<https://data.coypu.org/classification/isic_r4/K> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D64T66>.
+
+<https://data.coypu.org/classification/isic_r4/P> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
+
+<https://data.coypu.org/classification/isic_r4/2100> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
+
+<https://data.coypu.org/classification/isic_r4/L> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
 
-<https://data.coypu.org/classification/isic_r4/I> a skos:Concept;
-		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D55T56>.
+<https://data.coypu.org/classification/isic_r4/85> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
 
-<https://data.coypu.org/classification/isic_r4/292> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/68> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D68>.
+
+<https://data.coypu.org/classification/isic_r4/29> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D29>.
 
-<https://data.coypu.org/classification/isic_r4/09> a skos:Concept;
+<https://data.coypu.org/classification/isic_r4/45> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
+
+<https://data.coypu.org/classification/isic_r4/19> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D19>.
+
+<https://data.coypu.org/classification/isic_r4/G> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D45T47>.
+
+<https://data.coypu.org/classification/isic_r4/210> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D21>.
+
+<https://data.coypu.org/classification/isic_r4/84> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D84>.
+
+<https://data.coypu.org/classification/isic_r4/7490> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
+
+<https://data.coypu.org/classification/isic_r4/61> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D61>.
+
+<https://data.coypu.org/classification/isic_r4/49> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D49>.
+
+<https://data.coypu.org/classification/isic_r4/53> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D53>.
+
+<https://data.coypu.org/classification/isic_r4/3311> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D25>.
+
+<https://data.coypu.org/classification/isic_r4/35> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D35>.
+
+<https://data.coypu.org/classification/isic_r4/52> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D52>.
+
+<https://data.coypu.org/classification/isic_r4/S> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D94T96>.
+
+<https://data.coypu.org/classification/isic_r4/E> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D36T39>.
+
+<https://data.coypu.org/classification/isic_r4/F> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D41T43>.
+
+<https://data.coypu.org/classification/isic_r4/I> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D55T56>.
+
+<https://data.coypu.org/classification/isic_r4/8549> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D85>.
+
+<https://data.coypu.org/classification/isic_r4/749> a owl:Thing;
+		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D69T75>.
+
+<https://data.coypu.org/classification/isic_r4/09> a owl:Thing;
 		skos:exactMatch <https://data.coypu.org/classification/tiva-21#D09>.
 

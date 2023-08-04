@@ -18,12 +18,12 @@
 						];
 	rr:subjectMap [
 		rr:template "{source_iri}";
-		rr:class skos:Concept;
+		rr:class owl:Thing;
 	];	
 	rr:predicateObjectMap [
 		rr:predicate skos:exactMatch;
 		rr:objectMap [
 			rr:template "{target_iri}";
-			rr:class skos:Concept;
+			rr:class owl:Thing;
 		]
 	]. 
