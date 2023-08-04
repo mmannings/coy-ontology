@@ -22,8 +22,8 @@ The workflow consists of the following five steps:
 The ISIC Rev 4 classification schema is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
 The ISIC4-core.csv file is available in **isic-rev4-data** folder within this git repository.
  The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate TTL file from the csv file. 
- TDFizer mapping file **isic4_csv_to_ttl_mappings.ttl** is available in the **logmap-mappings** of this git repository.
- The resulting **isic4_data** TTL file is is available in **mapping** folder of this repository. 
+ TDFizer mapping file **isic4_csv_to_ttl_mappings.ttl** is available in the **logmap-mappings** folder of this git repository.
+ The resulting **isic4_data** TTL file is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
 against SKOS shapes using the following command
@@ -31,7 +31,8 @@ against SKOS shapes using the following command
 ```
 ./shaclvalidate.sh -datafile isic4_data.ttl -shapesfile skos.shapes.ttl
 ```
-If the isic4_data.ttl does not pass echecking SCHAL engine validation then all issues should be fixed.
+If the isic4_data.ttl does not pass SCHAL engine validation then all issues should be fixed 
+in the graph before using it in producing mappings between ISIC Rev 4 and TIVA classificaitons.
 
 | ![Mapping workflow](workflow-of-producing-mappings-between-tiva21-and-isic4.png) | 
 |:--:| 
@@ -40,6 +41,6 @@ If the isic4_data.ttl does not pass echecking SCHAL engine validation then all i
 
 ## Step 2: Create SKOS vocabulary from TIVA-21 classification
 
-To prepare the TIVA classification for mappings starting point is [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
+To prepare the TIVA classification for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
 Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from the Guide. SHACL engine is used to
 validate TIVA generated TIVA graph. The  TTL file is available 
