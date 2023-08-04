@@ -14,8 +14,8 @@ The workflow consists of the following five steps:
 1. Create SKOS vocabulary from ISIC rev 4 csv file.
 2. Create SKOS vocabulary from TIVA-21 classification.
 3. Produce mappings between TIVA 21 and ISIC rev 4 (csv file).
-4. Generate TTL file of mappings between TIVA 21 to ISIC rev 4.
-5. Graphs Validation reports.
+4. Generate TTL file of mappings between TIVA 21 to ISIC Rev 4.
+5. Mapping graph validation
 ---
 
 #### Step1: Create SKOS vocabulary from ISIC rev 4 csv file
@@ -50,6 +50,16 @@ one can run the following command:
 As in Step 1, if TIVA graph does not pass validation then all issues should be resolved before using TIVA graph in producing mappings between TIVA and ISIC Rev 4 classifications.
 
 #### Step 3: Produce mappings between TIVA 21 and ISIC rev 4 (csv file)
+
+To produce semantic mappings between ISIC Rev 4 and TIVA SKOS classifications the [LogMap](https://git.tib.eu/terminology/sandbox/logmap-matcher) matcher tool is used. 
+Java code that runs LogMap is available within the LogMap project. Output of the mapping is a csv file that contains the following columns:
+'''
+- source_iri: IRI for ISIC Rev 4 instance of SKOS concept.
+- target_iri:  IRI for TIVA instance of SKOS concept.
+- type_of_mapping: is a number that represents whether it is mapping between classes, properties or individuals. In this case type of mapping is equal to number 3. It denotes mappings between individuals, i.e. instances of SKOS concept.
+- mappings_direction: is a number that denotes relations between source iri and target iri such as equivalence, same as, subsumption of or disjoint relations.
+- mapping_confidence: is a number that is in the range \[0,1\]. It denotes level of confidence for produced relations between source iri and target iri.
+'''
 
 #### Step 4: Generate TTL file of mappings between TIVA 21 to ISIC rev 4
 
