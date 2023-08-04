@@ -26,7 +26,7 @@ The ISIC4-core.csv file is available in **isic-rev4-data** folder within this gi
  The resulting **isic4_data** TTL file is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
-against SKOS shapes using the following command
+against SKOS shapes running the following command
 
 ```
 ./shaclvalidate.sh -datafile isic4_data.ttl -shapesfile skos.shapes.ttl
@@ -38,9 +38,19 @@ in the graph before using it in producing mappings between ISIC Rev 4 and TIVA c
 |:--:| 
 | *Figure 1. Mapping between ISIC rev 4 and TIVA 21 classifications workflow* |
 
-
-## Step 2: Create SKOS vocabulary from TIVA-21 classification
+#### Step 2: Create SKOS vocabulary from TIVA-21 classification
 
 To prepare the TIVA classification for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
-Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from the Guide. SHACL engine is used to
-validate TIVA generated TIVA graph. The  TTL file is available 
+Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from page 53 of the Guide. SHACL engine is used to
+validate TIVA generated TIVA graph. Created **tiva-21.ttl** file is available in **mapping** folder. To validate generated TIVA graph agains skos shapes
+one can run the following command:
+```
+./shaclvalidate.sh -datafile tiva-21.ttl -shapesfile skos.shapes.ttl
+```
+As in Step 1, if TIVA graph does not pass validation then all issues should be resolved before using TIVA graph in producing mappings between TIVA and ISIC Rev 4 classifications.
+
+#### Step 3: Produce mappings between TIVA 21 and ISIC rev 4 (csv file)
+
+#### Step 4: Generate TTL file of mappings between TIVA 21 to ISIC rev 4
+
+#### Step 5: Graphs Validation reports
