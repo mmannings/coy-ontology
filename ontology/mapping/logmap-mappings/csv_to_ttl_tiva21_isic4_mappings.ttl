@@ -27,3 +27,12 @@
 			rr:class owl:Thing;
 		]
 	]. 
+<TriplesMap4>
+	rml:logicalSource [ rml:source "mappings-between-isic4-and-tiva-21.csv";
+						rml:referenceFormulation ql:CSV
+						];
+	rr:subjectMap [
+		rr:template "{target_iri}";
+		rr:class owl:Thing;
+	].
+	
