@@ -55,13 +55,13 @@ To produce semantic mappings between ISIC Rev 4 and TIVA SKOS classifications th
 Java code that runs LogMap is available within the LogMap project. Input ontologies for the mapping are TTL file created in Step 1 and Step 2, i.e. **isic4_data.ttl** and **tiva-21.ttl** files respectively.
 To generate mappings one should run '''MappingsBetweenIsicAndTiva.java''' file withing the LogMap project. Output of the mapping is a csv file that contains the following data:
 
-'''
+
 - source_iri: IRI for ISIC Rev 4 instance of SKOS concept.
 - target_iri:  IRI for TIVA instance of SKOS concept.
 - type_of_mapping: is a number that represents whether it is mapping between classes, properties or individuals. In this case type of mapping is equal to number 3. It denotes mappings between individuals, i.e. instances of SKOS concept.
 - mappings_direction: is a number that denotes relations between source iri and target iri such as equivalence, same as, subsumption of or disjoint relations.
 - mapping_confidence: is a number that is in the range \[0,1\]. It denotes level of confidence for produced relations between source iri and target iri.
-'''
+
 
 Result of mapping is saved in **mappings-between-isic4-and-tiva-21.csv** file that is available in **logmap-mappings** folder of this git repository.
 
