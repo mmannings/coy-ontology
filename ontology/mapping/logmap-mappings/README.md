@@ -18,6 +18,7 @@ The workflow consists of the following five steps:
 5. Graphs Validation reports.
 ---
 
+### Create SKOS vocabulary from ISIC rev 4 classification.
 The ISIC Rev 4 classification is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
 The csv file is available in [isic-rev4-data](https://gitlab.com/coypu-project/coy-ontology/-/tree/93-automated-mappings-between-isic4-and-tiva/ontology/mapping/logmap-mappings/isic-rev4-data?ref_type=heads) folder.
 The RDFizer is used to generate **isic4_data**  TTL file from the csv file. The TTL file is available in **mapping** folder of this repository. 
