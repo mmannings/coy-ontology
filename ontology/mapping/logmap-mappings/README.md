@@ -3,7 +3,7 @@
 This folder contains explanation of a mapping between 
 [International Standard Industrial Classification of all Economic Activities (ISIC) Rev 4](https://www.fao.org/statistics/caliper/tools/download/en) and 
 [Trade in Value Added (TIVA)](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) classification schemas workflow. 
-Mapping is generated automatically using [LogMap matcher tool](https://git.tib.eu/terminology/sandbox/logmap-matcher).
+Mapping is generated automatically using [LogMap matcher tool](https://git.tib.eu/terminology/sandbox/logmap-matcher) and [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tools.
 
 ## Mappings between ISIC-4 and TIVA-21 classifications
 
@@ -19,8 +19,9 @@ The workflow consists of the following five steps:
 ---
 
 The ISIC Rev 4 classification is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
-The [RDfizer](https://github.com/SDM-TIB/SDM-RDFizer) is emplyed to transform the ISIC Rev 4 csv file to TTL file (step 1). 
-Each node in the ISIC Rev 4 graph is instance of a **skos:Concept** as well as instance of **rdfs:Class**. 
+The csv file is available in [isic-rev4-data](https://gitlab.com/coypu-project/coy-ontology/-/tree/93-automated-mappings-between-isic4-and-tiva/ontology/mapping/logmap-mappings/isic-rev4-data?ref_type=heads) folder.
+The RDFizer is used to generate **isic4_data**  TTL file from the csv file. The TTL file is available in **mapping** folder of this repository. 
+Each node in the ISIC Rev 4 graph is instance of a **skos:Concept** as well as instance of **rdfs:Class**. The SCHAL engine is used to validate
 
 
  
