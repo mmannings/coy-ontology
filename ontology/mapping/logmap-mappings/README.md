@@ -25,7 +25,7 @@ The ISIC4-core.csv file is available in **isic-rev4-data** folder within this gi
 is available in **mapping** folder of this repository. 
 Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
-using SKOS shapes using the following command
+against SKOS shapes using the following command
 
 ```
 ./shaclvalidate.sh -datafile isic4_data.ttl -shapesfile skos.shapes.ttl
