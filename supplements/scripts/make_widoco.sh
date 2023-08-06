@@ -9,7 +9,7 @@ STATS_FILE=void.stats.ttl
 
 myid=$$
 
-mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V)
+mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f \( -iname \*.ttl -o -iname \*.nt \) | sort -V)
 
 rpt() {
     java -jar rpt-1.9.2-rc1.jar "$@"
