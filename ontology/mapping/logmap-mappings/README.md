@@ -7,8 +7,8 @@ Mapping is generated automatically using [LogMap matcher tool](https://git.tib.e
 
 ## Mappings between ISIC-4 and TIVA-21 classifications
 
-Producing and validating the mapping between ISIC Rev 4 and TIVA 21 classifications workflow is depicted in Figure 1. 
-The workflow consists of the following five steps: 
+Producing and validating mapping between ISIC Rev 4 and TIVA 21 classifications workflow is depicted in Figure 1. 
+The workflow consists of the following steps: 
 
 ---
 1. Create SKOS vocabulary from ISIC rev 4 csv file.
@@ -20,18 +20,17 @@ The workflow consists of the following five steps:
 
 #### Step1: Create SKOS vocabulary from ISIC rev 4 csv file
 The ISIC Rev 4 classification schema is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
-The ISIC4-core.csv file is available in **isic-rev4-data** folder within this git repository.
- The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) is used to generate TTL file from the csv file. 
- TDFizer mapping file **isic4_csv_to_ttl_mappings.ttl** is available in the **logmap-mappings** folder of this git repository.
+The **ISIC4-core.csv** file is available in **isic-rev4-data** folder within this git repository.
+ The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool is used to generate ttl file from the **ISIC4-core.csv** csv file. 
+ RDFizer mapping file **isic4_csv_to_ttl_mappings.ttl** is available in the **logmap-mappings** folder of this git repository.
  The resulting **isic4_data.ttl** file is available in **mapping** folder of this repository. 
-Each node in the ISIC Rev 4 graph is instance of a **skos:Concept**. 
+Each node in the ISIC Rev 4 graph is instance of a **owl:Thing**. 
 The [SCHAL](https://github.com/TopQuadrant/shacl) engine is used to validate ISIC Rev 4 graph 
 against SKOS shapes when running the following command
-
 ```
 ./shaclvalidate.sh -datafile isic4_data.ttl -shapesfile skos.shapes.ttl
 ```
-If the isic4_data.ttl does not pass SCHAL engine validation then all issues should be fixed 
+If the **isic4_data.ttl** does not pass SCHAL engine validation then all issues should be fixed 
 in the graph before using it in producing mappings between ISIC Rev 4 and TIVA classificaitons.
 
 | ![Mapping workflow](workflow-of-producing-mappings-between-tiva21-and-isic4.png) | 
@@ -41,9 +40,9 @@ in the graph before using it in producing mappings between ISIC Rev 4 and TIVA c
 #### Step 2: Create SKOS vocabulary from TIVA-21 classification
 
 To prepare the TIVA classification for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
-Similar to the fist step, TIVA classification is created by using **Table A.3. Industry coverage** from page 53 of the TIVA guide. 
-Created **tiva-21.ttl** file is available in **mapping** folder of this git repository.  
-SHACL engine is used to validate generated TIVA graph  against skos shapes by running the following command:
+Similar to the fist step, TIVA classification schema is created by using **Table A.3. Industry coverage** from page 53 of the TIVA guide. 
+Created **tiva-21.ttl** file of that classification is available in **mapping** folder of this git repository.  
+SHACL engine is here also used to validate generated TIVA graph against skos shapes by running the following command:
 ```
 ./shaclvalidate.sh -datafile tiva-21.ttl -shapesfile skos.shapes.ttl
 ```
@@ -52,7 +51,7 @@ As in Step 1, if TIVA graph does not pass validation then all issues should be r
 #### Step 3: Produce mappings between TIVA 21 and ISIC rev 4 (csv file)
 
 To produce semantic mappings between ISIC Rev 4 and TIVA SKOS classifications the [LogMap](https://git.tib.eu/terminology/sandbox/logmap-matcher) matcher tool is used. 
-Java code that runs LogMap is available within the LogMap project. Input ontologies for the mapping are TTL file created in Step 1 and Step 2, i.e. **isic4_data.ttl** and **tiva-21.ttl** files respectively.
+Java code that runs LogMap is available within the LogMap project. Input ontologies for the mapping are ttl files created in Step 1 and Step 2, i.e. input files are **isic4_data.ttl** and **tiva-21.ttl** files respectively.
 To generate mappings one should run *MappingsBetweenIsicAndTiva.java* file located in *test* folder of the LogMap project. 
 Output of the mapping is a csv file that contains the following data:
 
