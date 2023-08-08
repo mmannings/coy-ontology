@@ -9,7 +9,7 @@ STATS_FILE=void.stats.ttl
 
 myid=$$
 
-mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f | sort -V)
+mapfile -t all_files < <(find "$ONTOLOGY_DIR" -type f \( -iname \*.ttl -o -iname \*.nt \) | sort -V)
 
 rpt() {
     java -jar rpt-1.9.2-rc1.jar "$@"
@@ -326,8 +326,15 @@ tt, code { font-size: 13.6px; }
 CSS
 
 echo "</dl><p><small><i>Last update: $(LANG=C TZ=UTC date)</i> <i>Git version: $(LANG=C git rev-parse --short HEAD)</i></small>" >> "$T0"/widoco_master/index.html
-if [[ -d dataset-stats/.git ]]; then
-    echo " <small><i>(usage stats: $(LANG=C TZ=UTC git -C dataset-stats/ log -1 --format=%cd --date=short))</i></small>" >> "$T0"/widoco_master/index.html
+if [[ -f void.stats.ttl ]]; then
+    void_date="$(roqet -q -r csv -D void.stats.ttl -i sparql11-query -e '
+      select * {
+          [] a <http://rdfs.org/ns/void#Dataset> ;
+             <http://purl.org/dc/terms/date> ?date
+      }' | dos2unix | tail -n +2 | head -1)"
+    if [[ -n "$void_date" ]]; then
+	echo " <small><i>(usage stats: ${void_date%T*})</i></small>" >> "$T0"/widoco_master/index.html
+    fi
 fi
 
 rm -fr widoco_master.old || :
