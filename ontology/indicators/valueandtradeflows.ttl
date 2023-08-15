@@ -98,6 +98,13 @@ vtf:hasTradeInValueAdedTradeValue rdf:type owl:ObjectProperty ;
                                   rdfs:label "has trade in value added trade value"@en .
 
 
+###  https://schema.coypu.org/vtf#hasTradeLocation
+vtf:hasTradeLocation rdf:type owl:ObjectProperty ;
+                     rdfs:domain vtf:TradeInValueAdded ;
+                     rdfs:range owl:Thing ;
+                     rdfs:label "has trade location"@en .
+
+
 ###  https://schema.coypu.org/vtf#hasTradeProduct
 vtf:hasTradeProduct rdf:type owl:ObjectProperty ;
                     rdfs:domain vtf:Trade ;
