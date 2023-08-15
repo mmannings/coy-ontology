@@ -442,6 +442,13 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "is used in"@en .
 
 
+###  https://schema.coypu.org/global#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Country ;
+          rdfs:range :InternationalOrganization ;
+          rdfs:label "member of"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
