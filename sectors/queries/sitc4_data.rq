@@ -31,5 +31,5 @@ WHERE {
 	BIND(strlang(?label_txt, "en") AS ?label)
 
 	BIND(json:path(?item, "$.parent") AS ?parent_code)
-	BIND(IF(?parent_code != "#", URI(CONCAT(str(hs:), ?parent_code)), COALESCE()) AS ?parent)
+	BIND(IF(?parent_code != "#", URI(CONCAT(str(sitc:), ?parent_code)), COALESCE()) AS ?parent)
 }
