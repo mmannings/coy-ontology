@@ -20,7 +20,8 @@ CONSTRUCT {
 
   ?url csv:parse (?rowJsonObj "-ho") .
   BIND(json:path(?rowJsonObj, "$." + ?col_from) AS ?code_from)
-  BIND(json:path(?rowJsonObj, "$." + ?col_to) AS ?code_to)
+  BIND(json:path(?rowJsonObj, "$." + ?col_to) AS ?code_to_)
+  BIND(REPLACE(?code_to_, "\\.", "") AS ?code_to)
   BIND(URI(CONCAT(STR(?ns_from), ?code_from)) AS ?from)
   BIND(URI(CONCAT(STR(?ns_to), ?code_to)) AS ?to)
 }
