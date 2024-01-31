@@ -1,0 +1,27 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX cpc: <https://data.coypu.org/classification/cpc_v2.1/>
+PREFIX hs: <https://data.coypu.org/classification/hs_2012/>
+PREFIX nace: <https://data.coypu.org/classification/nace_r2/>
+PREFIX isic: <https://data.coypu.org/classification/isic_r4/>
+PREFIX sitc: <https://data.coypu.org/classification/sitc_r4/>
+PREFIX cpa: <https://data.coypu.org/classification/cpa2.1/>
+
+CONSTRUCT {
+  ?from skos:closeMatch ?to
+} WHERE {
+  VALUES (?csv ?col_from ?col_to ?ns_from ?ns_to) {
+    (<../data/CPA_2_1-CPC_2_1_final_26_April_2021.csv> "CPA21code" "CPC21code" cpa: cpc:)
+  }
+
+  ?csv csv:parse (?rowJsonObj "-h" ) .
+  BIND(json:path(?rowJsonObj, "$." + ?col_to) AS ?code_to)
+  BIND(json:path(?rowJsonObj, "$." + ?col_from) AS ?code_from)
+  BIND(URI(CONCAT(STR(?ns_from), ?code_from)) AS ?from)
+  BIND(URI(CONCAT(STR(?ns_to), ?code_to)) AS ?to)
+}

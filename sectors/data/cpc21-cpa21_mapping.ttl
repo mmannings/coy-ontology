@@ -1,0 +1,4215 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cpa: <https://data.coypu.org/classification/cpa2.1/> .
+@prefix cpc: <https://data.coypu.org/classification/cpc_v2.1/> .
+
+cpa:01.11.11  skos:closeMatch  cpc:01111 ;
+        skos:closeMatch  cpc:01112 .
+
+cpa:01.11.12  skos:closeMatch  cpc:01111 ;
+        skos:closeMatch  cpc:01112 .
+
+cpa:01.11.20  skos:closeMatch  cpc:01121 ;
+        skos:closeMatch  cpc:01122 .
+
+cpa:01.11.31  skos:closeMatch  cpc:01151 ;
+        skos:closeMatch  cpc:01152 .
+
+cpa:01.11.32  skos:closeMatch  cpc:01161 ;
+        skos:closeMatch  cpc:01162 .
+
+cpa:01.11.33  skos:closeMatch  cpc:01171 ;
+        skos:closeMatch  cpc:01172 .
+
+cpa:01.11.41  skos:closeMatch  cpc:01141 ;
+        skos:closeMatch  cpc:01142 .
+
+cpa:01.11.42  skos:closeMatch  cpc:01181 ;
+        skos:closeMatch  cpc:01182 .
+
+cpa:01.11.43  skos:closeMatch  cpc:01191 .
+
+cpa:01.11.49  skos:closeMatch  cpc:01192 ;
+        skos:closeMatch  cpc:01193 ;
+        skos:closeMatch  cpc:01194 ;
+        skos:closeMatch  cpc:01195 ;
+        skos:closeMatch  cpc:01199 .
+
+cpa:01.11.50  skos:closeMatch  cpc:01913 .
+
+cpa:01.11.61  skos:closeMatch  cpc:01241 .
+
+cpa:01.11.62  skos:closeMatch  cpc:01242 .
+
+cpa:01.11.69  skos:closeMatch  cpc:01243 ;
+        skos:closeMatch  cpc:01249 .
+
+cpa:01.11.71  skos:closeMatch  cpc:01701 ;
+        skos:closeMatch  cpc:01708 .
+
+cpa:01.11.72  skos:closeMatch  cpc:01702 .
+
+cpa:01.11.73  skos:closeMatch  cpc:01703 .
+
+cpa:01.11.74  skos:closeMatch  cpc:01704 .
+
+cpa:01.11.75  skos:closeMatch  cpc:01705 .
+
+cpa:01.11.76  skos:closeMatch  cpc:01706 .
+
+cpa:01.11.77  skos:closeMatch  cpc:01707 .
+
+cpa:01.11.79  skos:closeMatch  cpc:01709 .
+
+cpa:01.11.81  skos:closeMatch  cpc:01411 ;
+        skos:closeMatch  cpc:01412 .
+
+cpa:01.11.82  skos:closeMatch  cpc:01421 ;
+        skos:closeMatch  cpc:01422 .
+
+cpa:01.11.91  skos:closeMatch  cpc:01441 .
+
+cpa:01.11.92  skos:closeMatch  cpc:01442 .
+
+cpa:01.11.93  skos:closeMatch  cpc:01443 .
+
+cpa:01.11.94  skos:closeMatch  cpc:01444 .
+
+cpa:01.11.95  skos:closeMatch  cpc:01445 .
+
+cpa:01.11.96  skos:closeMatch  cpc:01447 .
+
+cpa:01.11.99  skos:closeMatch  cpc:01446 ;
+        skos:closeMatch  cpc:01448 ;
+        skos:closeMatch  cpc:01449 ;
+        skos:closeMatch  cpc:01491 .
+
+cpa:01.12.10  skos:closeMatch  cpc:01131 ;
+        skos:closeMatch  cpc:01132 .
+
+cpa:01.13.11  skos:closeMatch  cpc:01211 .
+
+cpa:01.13.12  skos:closeMatch  cpc:01212 .
+
+cpa:01.13.13  skos:closeMatch  cpc:01213 .
+
+cpa:01.13.14  skos:closeMatch  cpc:01214 .
+
+cpa:01.13.15  skos:closeMatch  cpc:01214 .
+
+cpa:01.13.16  skos:closeMatch  cpc:01215 .
+
+cpa:01.13.17  skos:closeMatch  cpc:01216 .
+
+cpa:01.13.19  skos:closeMatch  cpc:01219 .
+
+cpa:01.13.21  skos:closeMatch  cpc:01221 .
+
+cpa:01.13.29  skos:closeMatch  cpc:01229 .
+
+cpa:01.13.31  skos:closeMatch  cpc:01231 .
+
+cpa:01.13.32  skos:closeMatch  cpc:01232 .
+
+cpa:01.13.33  skos:closeMatch  cpc:01233 .
+
+cpa:01.13.34  skos:closeMatch  cpc:01234 .
+
+cpa:01.13.39  skos:closeMatch  cpc:01235 ;
+        skos:closeMatch  cpc:01239 .
+
+cpa:01.13.41  skos:closeMatch  cpc:01251 .
+
+cpa:01.13.42  skos:closeMatch  cpc:01252 .
+
+cpa:01.13.43  skos:closeMatch  cpc:01253 .
+
+cpa:01.13.44  skos:closeMatch  cpc:01254 .
+
+cpa:01.13.49  skos:closeMatch  cpc:01259 .
+
+cpa:01.13.51  skos:closeMatch  cpc:01510 .
+
+cpa:01.13.52  skos:closeMatch  cpc:01530 .
+
+cpa:01.13.53  skos:closeMatch  cpc:01520 .
+
+cpa:01.13.54  skos:closeMatch  cpc:01550 .
+
+cpa:01.13.59  skos:closeMatch  cpc:01540 ;
+        skos:closeMatch  cpc:01591 ;
+        skos:closeMatch  cpc:01599 .
+
+cpa:01.13.60  skos:closeMatch  cpc:01260 .
+
+cpa:01.13.71  skos:closeMatch  cpc:01801 .
+
+cpa:01.13.72  skos:closeMatch  cpc:01803 .
+
+cpa:01.13.80  skos:closeMatch  cpc:01270 .
+
+cpa:01.13.90  skos:closeMatch  cpc:01290 .
+
+cpa:01.14.10  skos:closeMatch  cpc:01802 .
+
+cpa:01.15.10  skos:closeMatch  cpc:01970 .
+
+cpa:01.16.11  skos:closeMatch  cpc:01431 ;
+        skos:closeMatch  cpc:01432 ;
+        skos:closeMatch  cpc:01921 .
+
+cpa:01.16.12  skos:closeMatch  cpc:01922 .
+
+cpa:01.16.19  skos:closeMatch  cpc:01929 .
+
+cpa:01.19.10  skos:closeMatch  cpc:01911 ;
+        skos:closeMatch  cpc:01912 ;
+        skos:closeMatch  cpc:01919 .
+
+cpa:01.19.21  skos:closeMatch  cpc:01962 .
+
+cpa:01.19.22  skos:closeMatch  cpc:01963 .
+
+cpa:01.19.31  skos:closeMatch  cpc:01940 .
+
+cpa:01.19.39  skos:closeMatch  cpc:01809 ;
+        skos:closeMatch  cpc:01990 .
+
+cpa:01.21.11  skos:closeMatch  cpc:01330 .
+
+cpa:01.21.12  skos:closeMatch  cpc:01330 .
+
+cpa:01.22.11  skos:closeMatch  cpc:01311 .
+
+cpa:01.22.12  skos:closeMatch  cpc:01312 ;
+        skos:closeMatch  cpc:01313 .
+
+cpa:01.22.13  skos:closeMatch  cpc:01314 .
+
+cpa:01.22.14  skos:closeMatch  cpc:01315 .
+
+cpa:01.22.19  skos:closeMatch  cpc:01316 ;
+        skos:closeMatch  cpc:01317 ;
+        skos:closeMatch  cpc:01318 ;
+        skos:closeMatch  cpc:01319 .
+
+cpa:01.23.11  skos:closeMatch  cpc:01321 .
+
+cpa:01.23.12  skos:closeMatch  cpc:01322 .
+
+cpa:01.23.13  skos:closeMatch  cpc:01323 .
+
+cpa:01.23.14  skos:closeMatch  cpc:01324 .
+
+cpa:01.23.19  skos:closeMatch  cpc:01329 .
+
+cpa:01.24.10  skos:closeMatch  cpc:01341 .
+
+cpa:01.24.21  skos:closeMatch  cpc:01342 .
+
+cpa:01.24.22  skos:closeMatch  cpc:01342 .
+
+cpa:01.24.23  skos:closeMatch  cpc:01343 .
+
+cpa:01.24.24  skos:closeMatch  cpc:01344 .
+
+cpa:01.24.25  skos:closeMatch  cpc:01345 .
+
+cpa:01.24.26  skos:closeMatch  cpc:01345 .
+
+cpa:01.24.27  skos:closeMatch  cpc:01346 .
+
+cpa:01.24.28  skos:closeMatch  cpc:01346 .
+
+cpa:01.24.29  skos:closeMatch  cpc:01319 ;
+        skos:closeMatch  cpc:01349 .
+
+cpa:01.25.11  skos:closeMatch  cpc:01352 .
+
+cpa:01.25.12  skos:closeMatch  cpc:01353 .
+
+cpa:01.25.13  skos:closeMatch  cpc:01354 .
+
+cpa:01.25.19  skos:closeMatch  cpc:01351 ;
+        skos:closeMatch  cpc:01355 .
+
+cpa:01.25.20  skos:closeMatch  cpc:01360 .
+
+cpa:01.25.31  skos:closeMatch  cpc:01371 .
+
+<urn:x-arq:DefaultGraph> {
+    cpa:01.25.32  skos:closeMatch  cpc:01373 .
+    cpa:01.25.33  skos:closeMatch  cpc:01374 .
+    cpa:01.25.34  skos:closeMatch  cpc:01375 .
+    cpa:01.25.35  skos:closeMatch  cpc:01376 .
+    cpa:01.25.39  skos:closeMatch  cpc:01372 ;
+            skos:closeMatch  cpc:01377 ;
+            skos:closeMatch  cpc:01379 .
+    cpa:01.25.90  skos:closeMatch  cpc:01319 ;
+            skos:closeMatch  cpc:01356 ;
+            skos:closeMatch  cpc:01359 ;
+            skos:closeMatch  cpc:01990 .
+    cpa:01.26.11  skos:closeMatch  cpc:01450 .
+    cpa:01.26.12  skos:closeMatch  cpc:01450 .
+    cpa:01.26.20  skos:closeMatch  cpc:01460 ;
+            skos:closeMatch  cpc:21429 .
+    cpa:01.26.90  skos:closeMatch  cpc:01492 ;
+            skos:closeMatch  cpc:01499 .
+    cpa:01.27.11  skos:closeMatch  cpc:01610 .
+    cpa:01.27.12  skos:closeMatch  cpc:01620 .
+    cpa:01.27.13  skos:closeMatch  cpc:01630 .
+    cpa:01.27.14  skos:closeMatch  cpc:01640 .
+    cpa:01.28.11  skos:closeMatch  cpc:01651 .
+    cpa:01.28.12  skos:closeMatch  cpc:01652 .
+    cpa:01.28.13  skos:closeMatch  cpc:01653 .
+    cpa:01.28.14  skos:closeMatch  cpc:01654 .
+    cpa:01.28.15  skos:closeMatch  cpc:01655 .
+    cpa:01.28.16  skos:closeMatch  cpc:01656 .
+    cpa:01.28.17  skos:closeMatch  cpc:01657 .
+    cpa:01.28.18  skos:closeMatch  cpc:01658 .
+    cpa:01.28.19  skos:closeMatch  cpc:01691 ;
+            skos:closeMatch  cpc:01699 .
+    cpa:01.28.20  skos:closeMatch  cpc:01659 .
+    cpa:01.28.30  skos:closeMatch  cpc:01930 .
+    cpa:01.29.10  skos:closeMatch  cpc:01950 .
+    cpa:01.29.20  skos:closeMatch  cpc:03241 .
+    cpa:01.29.30  skos:closeMatch  cpc:03250 .
+    cpa:01.30.10  skos:closeMatch  cpc:01961 ;
+            skos:closeMatch  cpc:04912 ;
+            skos:closeMatch  cpc:04913 .
+    cpa:01.41.10  skos:closeMatch  cpc:02111 ;
+            skos:closeMatch  cpc:02112 .
+    cpa:01.41.20  skos:closeMatch  cpc:02211 ;
+            skos:closeMatch  cpc:02212 .
+    cpa:01.42.11  skos:closeMatch  cpc:02111 ;
+            skos:closeMatch  cpc:02112 ;
+            skos:closeMatch  cpc:02119 .
+    cpa:01.42.12  skos:closeMatch  cpc:02111 ;
+            skos:closeMatch  cpc:02112 .
+    cpa:01.42.20  skos:closeMatch  cpc:02411 .
+    cpa:01.43.11  skos:closeMatch  cpc:02131 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.43.12  skos:closeMatch  cpc:02132 ;
+            skos:closeMatch  cpc:02133 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.44.10  skos:closeMatch  cpc:02121 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.45.11  skos:closeMatch  cpc:02122 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.45.12  skos:closeMatch  cpc:02123 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.45.21  skos:closeMatch  cpc:02291 .
+    cpa:01.45.22  skos:closeMatch  cpc:02292 .
+    cpa:01.45.30  skos:closeMatch  cpc:02941 .
+    cpa:01.46.10  skos:closeMatch  cpc:02140 ;
+            skos:closeMatch  cpc:02419 .
+    cpa:01.47.11  skos:closeMatch  cpc:02151 .
+    cpa:01.47.12  skos:closeMatch  cpc:02152 .
+    cpa:01.47.13  skos:closeMatch  cpc:02153 .
+    cpa:01.47.14  skos:closeMatch  cpc:02154 ;
+            skos:closeMatch  cpc:02155 .
+    cpa:01.47.21  skos:closeMatch  cpc:02312 .
+    cpa:01.47.22  skos:closeMatch  cpc:02322 .
+    cpa:01.47.23  skos:closeMatch  cpc:02311 .
+    cpa:01.47.24  skos:closeMatch  cpc:02321 .
+    cpa:01.49.11  skos:closeMatch  cpc:02191 .
+    cpa:01.49.12  skos:closeMatch  cpc:02193 ;
+            skos:closeMatch  cpc:02194 .
+    cpa:01.49.13  skos:closeMatch  cpc:02195 .
+    cpa:01.49.19  skos:closeMatch  cpc:02129 ;
+            skos:closeMatch  cpc:02191 ;
+            skos:closeMatch  cpc:02192 ;
+            skos:closeMatch  cpc:02196 ;
+            skos:closeMatch  cpc:02199 .
+    cpa:01.49.21  skos:closeMatch  cpc:02910 .
+    cpa:01.49.22  skos:closeMatch  cpc:02293 ;
+            skos:closeMatch  cpc:02299 .
+    cpa:01.49.23  skos:closeMatch  cpc:02920 .
+    cpa:01.49.24  skos:closeMatch  cpc:02321 ;
+            skos:closeMatch  cpc:02322 ;
+            skos:closeMatch  cpc:02930 .
+    cpa:01.49.25  skos:closeMatch  cpc:02944 .
+    cpa:01.49.26  skos:closeMatch  cpc:02960 .
+    cpa:01.49.27  skos:closeMatch  cpc:02420 .
+    cpa:01.49.28  skos:closeMatch  cpc:02942 ;
+            skos:closeMatch  cpc:02943 .
+    cpa:01.49.31  skos:closeMatch  cpc:02955 .
+    cpa:01.49.32  skos:closeMatch  cpc:02955 .
+    cpa:01.49.39  skos:closeMatch  cpc:02959 .
+    cpa:01.61.10  skos:closeMatch  cpc:86113 ;
+            skos:closeMatch  cpc:86119 .
+    cpa:01.62.10  skos:closeMatch  cpc:86121 ;
+            skos:closeMatch  cpc:86122 .
+    cpa:01.63.10  skos:closeMatch  cpc:86111 .
+    cpa:01.64.10  skos:closeMatch  cpc:86112 .
+    cpa:01.70.10  skos:closeMatch  cpc:86131 ;
+            skos:closeMatch  cpc:86132 .
+    cpa:02.10.11  skos:closeMatch  cpc:01961 .
+    cpa:02.10.12  skos:closeMatch  cpc:01990 .
+    cpa:02.10.20  skos:closeMatch  cpc:86141 ;
+            skos:closeMatch  cpc:86142 .
+    cpa:02.10.30  skos:closeMatch  cpc:01961 .
+    cpa:02.20.11  skos:closeMatch  cpc:03110 .
+    cpa:02.20.12  skos:closeMatch  cpc:03120 .
+    cpa:02.20.13  skos:closeMatch  cpc:03120 .
+    cpa:02.20.14  skos:closeMatch  cpc:03131 .
+    cpa:02.20.15  skos:closeMatch  cpc:03132 .
+    cpa:02.30.11  skos:closeMatch  cpc:03211 .
+    cpa:02.30.12  skos:closeMatch  cpc:03219 .
+    cpa:02.30.20  skos:closeMatch  cpc:03220 .
+    cpa:02.30.30  skos:closeMatch  cpc:03249 .
+    cpa:02.30.40  skos:closeMatch  cpc:03230 .
+    cpa:02.40.10  skos:closeMatch  cpc:86141 ;
+            skos:closeMatch  cpc:86142 .
+    cpa:03.00.11  skos:closeMatch  cpc:04111 .
+    cpa:03.00.12  skos:closeMatch  cpc:04112 .
+    cpa:03.00.13  skos:closeMatch  cpc:04191 .
+    cpa:03.00.14  skos:closeMatch  cpc:04192 .
+    cpa:03.00.21  skos:closeMatch  cpc:04221 ;
+            skos:closeMatch  cpc:04231 ;
+            skos:closeMatch  cpc:04241 ;
+            skos:closeMatch  cpc:04251 ;
+            skos:closeMatch  cpc:04261 ;
+            skos:closeMatch  cpc:04291 .
+    cpa:03.00.22  skos:closeMatch  cpc:04211 ;
+            skos:closeMatch  cpc:04221 ;
+            skos:closeMatch  cpc:04261 ;
+            skos:closeMatch  cpc:04291 .
+    cpa:03.00.23  skos:closeMatch  cpc:04232 ;
+            skos:closeMatch  cpc:04242 ;
+            skos:closeMatch  cpc:04252 ;
+            skos:closeMatch  cpc:04262 ;
+            skos:closeMatch  cpc:04292 .
+    cpa:03.00.24  skos:closeMatch  cpc:04212 ;
+            skos:closeMatch  cpc:04222 ;
+            skos:closeMatch  cpc:04232 ;
+            skos:closeMatch  cpc:04262 ;
+            skos:closeMatch  cpc:04292 .
+    cpa:03.00.31  skos:closeMatch  cpc:04311 ;
+            skos:closeMatch  cpc:04321 ;
+            skos:closeMatch  cpc:04331 ;
+            skos:closeMatch  cpc:04341 ;
+            skos:closeMatch  cpc:04351 ;
+            skos:closeMatch  cpc:04361 ;
+            skos:closeMatch  cpc:04391 .
+    cpa:03.00.32  skos:closeMatch  cpc:04312 ;
+            skos:closeMatch  cpc:04322 ;
+            skos:closeMatch  cpc:04332 ;
+            skos:closeMatch  cpc:04342 ;
+            skos:closeMatch  cpc:04352 ;
+            skos:closeMatch  cpc:04362 ;
+            skos:closeMatch  cpc:04392 .
+    cpa:03.00.41  skos:closeMatch  cpc:04421 .
+    cpa:03.00.42  skos:closeMatch  cpc:04411 ;
+            skos:closeMatch  cpc:04431 ;
+            skos:closeMatch  cpc:04441 ;
+            skos:closeMatch  cpc:04451 ;
+            skos:closeMatch  cpc:04461 ;
+            skos:closeMatch  cpc:04471 ;
+            skos:closeMatch  cpc:04491 .
+    cpa:03.00.43  skos:closeMatch  cpc:04422 .
+    cpa:03.00.44  skos:closeMatch  cpc:04412 ;
+            skos:closeMatch  cpc:04432 ;
+            skos:closeMatch  cpc:04442 ;
+            skos:closeMatch  cpc:04452 ;
+            skos:closeMatch  cpc:04462 ;
+            skos:closeMatch  cpc:04472 ;
+            skos:closeMatch  cpc:04492 .
+    cpa:03.00.45  skos:closeMatch  cpc:04511 ;
+            skos:closeMatch  cpc:04521 ;
+            skos:closeMatch  cpc:04530 ;
+            skos:closeMatch  cpc:04590 .
+    cpa:03.00.46  skos:closeMatch  cpc:04512 ;
+            skos:closeMatch  cpc:04522 ;
+            skos:closeMatch  cpc:04530 ;
+            skos:closeMatch  cpc:04590 .
+    cpa:03.00.51  skos:closeMatch  cpc:38210 .
+    cpa:03.00.52  skos:closeMatch  cpc:38210 .
+    cpa:03.00.61  skos:closeMatch  cpc:04911 .
+    cpa:03.00.62  skos:closeMatch  cpc:04920 .
+    cpa:03.00.63  skos:closeMatch  cpc:04931 .
+    cpa:03.00.64  skos:closeMatch  cpc:04932 .
+    cpa:03.00.65  skos:closeMatch  cpc:04933 .
+    cpa:03.00.66  skos:closeMatch  cpc:04934 .
+    cpa:03.00.69  skos:closeMatch  cpc:02192 .
+    cpa:03.00.71  skos:closeMatch  cpc:86151 ;
+            skos:closeMatch  cpc:86153 .
+    cpa:03.00.72  skos:closeMatch  cpc:86152 ;
+            skos:closeMatch  cpc:86154 .
+    cpa:05.10.10  skos:closeMatch  cpc:11010 .
+    cpa:05.20.10  skos:closeMatch  cpc:11030 .
+    cpa:06.10.10  skos:closeMatch  cpc:12010 .
+    cpa:06.10.20  skos:closeMatch  cpc:12030 .
+    cpa:06.20.10  skos:closeMatch  cpc:12020 .
+    cpa:07.10.10  skos:closeMatch  cpc:14100 .
+    cpa:07.21.10  skos:closeMatch  cpc:13000 .
+    cpa:07.29.11  skos:closeMatch  cpc:14210 .
+    cpa:07.29.12  skos:closeMatch  cpc:14220 .
+    cpa:07.29.13  skos:closeMatch  cpc:14230 .
+    cpa:07.29.14  skos:closeMatch  cpc:14240 .
+    cpa:07.29.15  skos:closeMatch  cpc:14290 .
+    cpa:07.29.19  skos:closeMatch  cpc:14290 .
+    cpa:08.11.11  skos:closeMatch  cpc:15120 .
+    cpa:08.11.12  skos:closeMatch  cpc:15130 .
+    cpa:08.11.20  skos:closeMatch  cpc:15200 .
+    cpa:08.11.30  skos:closeMatch  cpc:16330 .
+    cpa:08.11.40  skos:closeMatch  cpc:15110 .
+    cpa:08.12.11  skos:closeMatch  cpc:15310 .
+    cpa:08.12.12  skos:closeMatch  cpc:15320 .
+    cpa:08.12.13  skos:closeMatch  cpc:15320 .
+    cpa:08.12.21  skos:closeMatch  cpc:15400 .
+    cpa:08.12.22  skos:closeMatch  cpc:15400 .
+    cpa:08.91.11  skos:closeMatch  cpc:16110 .
+    cpa:08.91.12  skos:closeMatch  cpc:16120 ;
+            skos:closeMatch  cpc:34520 .
+    cpa:08.91.19  skos:closeMatch  cpc:16190 .
+    cpa:08.92.10  skos:closeMatch  cpc:11050 .
+    cpa:08.93.10  skos:closeMatch  cpc:16200 .
+    cpa:08.99.10  skos:closeMatch  cpc:15330 .
+    cpa:08.99.21  skos:closeMatch  cpc:16310 .
+    cpa:08.99.22  skos:closeMatch  cpc:16320 .
+    cpa:08.99.29  skos:closeMatch  cpc:16390 .
+    cpa:09.10.11  skos:closeMatch  cpc:86211 ;
+            skos:closeMatch  cpc:86221 .
+    cpa:09.10.12  skos:closeMatch  cpc:86211 ;
+            skos:closeMatch  cpc:86221 .
+    cpa:09.10.13  skos:closeMatch  cpc:86211 ;
+            skos:closeMatch  cpc:86221 .
+    cpa:09.90.11  skos:closeMatch  cpc:86219 ;
+            skos:closeMatch  cpc:86229 .
+    cpa:09.90.19  skos:closeMatch  cpc:86219 ;
+            skos:closeMatch  cpc:86229 .
+    cpa:10.11.11  skos:closeMatch  cpc:21111 ;
+            skos:closeMatch  cpc:21112 .
+    cpa:10.11.12  skos:closeMatch  cpc:21113 .
+    cpa:10.11.13  skos:closeMatch  cpc:21115 .
+    cpa:10.11.14  skos:closeMatch  cpc:21116 .
+    cpa:10.11.15  skos:closeMatch  cpc:21118 .
+    cpa:10.11.20  skos:closeMatch  cpc:21151 ;
+            skos:closeMatch  cpc:21152 ;
+            skos:closeMatch  cpc:21153 ;
+            skos:closeMatch  cpc:21155 ;
+            skos:closeMatch  cpc:21156 ;
+            skos:closeMatch  cpc:21159 .
+    cpa:10.11.31  skos:closeMatch  cpc:21131 ;
+            skos:closeMatch  cpc:21132 .
+    cpa:10.11.32  skos:closeMatch  cpc:21133 .
+    cpa:10.11.33  skos:closeMatch  cpc:21135 .
+    cpa:10.11.34  skos:closeMatch  cpc:21136 .
+    cpa:10.11.35  skos:closeMatch  cpc:21138 .
+    cpa:10.11.39  skos:closeMatch  cpc:21114 ;
+            skos:closeMatch  cpc:21117 ;
+            skos:closeMatch  cpc:21119 ;
+            skos:closeMatch  cpc:21134 ;
+            skos:closeMatch  cpc:21137 ;
+            skos:closeMatch  cpc:21139 ;
+            skos:closeMatch  cpc:21151 ;
+            skos:closeMatch  cpc:21152 ;
+            skos:closeMatch  cpc:21153 ;
+            skos:closeMatch  cpc:21155 ;
+            skos:closeMatch  cpc:21156 ;
+            skos:closeMatch  cpc:21159 ;
+            skos:closeMatch  cpc:21170 .
+    cpa:10.11.41  skos:closeMatch  cpc:02942 .
+    cpa:10.11.42  skos:closeMatch  cpc:02951 ;
+            skos:closeMatch  cpc:02952 .
+    cpa:10.11.43  skos:closeMatch  cpc:02951 ;
+            skos:closeMatch  cpc:02952 .
+    cpa:10.11.44  skos:closeMatch  cpc:02953 .
+    cpa:10.11.45  skos:closeMatch  cpc:02954 .
+    cpa:10.11.50  skos:closeMatch  cpc:21511 ;
+            skos:closeMatch  cpc:21512 ;
+            skos:closeMatch  cpc:21513 ;
+            skos:closeMatch  cpc:21514 ;
+            skos:closeMatch  cpc:21515 ;
+            skos:closeMatch  cpc:21521 ;
+            skos:closeMatch  cpc:21523 .
+    cpa:10.11.60  skos:closeMatch  cpc:39110 .
+    cpa:10.11.99  skos:closeMatch  cpc:88110 .
+    cpa:10.12.10  skos:closeMatch  cpc:21121 ;
+            skos:closeMatch  cpc:21122 ;
+            skos:closeMatch  cpc:21123 ;
+            skos:closeMatch  cpc:21124 ;
+            skos:closeMatch  cpc:21125 .
+    cpa:10.12.20  skos:closeMatch  cpc:21141 ;
+            skos:closeMatch  cpc:21142 ;
+            skos:closeMatch  cpc:21143 ;
+            skos:closeMatch  cpc:21144 ;
+            skos:closeMatch  cpc:21145 .
+    cpa:10.12.30  skos:closeMatch  cpc:21511 ;
+            skos:closeMatch  cpc:21522 .
+    cpa:10.12.40  skos:closeMatch  cpc:21160 .
+    cpa:10.12.50  skos:closeMatch  cpc:39110 .
+    cpa:10.12.99  skos:closeMatch  cpc:88110 .
+    cpa:10.13.11  skos:closeMatch  cpc:21181 .
+    cpa:10.13.12  skos:closeMatch  cpc:21182 .
+    cpa:10.13.13  skos:closeMatch  cpc:21183 .
+    cpa:10.13.14  skos:closeMatch  cpc:21184 .
+    cpa:10.13.15  skos:closeMatch  cpc:21189 .
+    cpa:10.13.16  skos:closeMatch  cpc:21190 .
+    cpa:10.13.91  skos:closeMatch  cpc:88110 .
+    cpa:10.13.99  skos:closeMatch  cpc:88110 .
+    cpa:10.20.11  skos:closeMatch  cpc:21221 .
+    cpa:10.20.12  skos:closeMatch  cpc:21225 .
+    cpa:10.20.13  skos:closeMatch  cpc:21211 ;
+            skos:closeMatch  cpc:21212 ;
+            skos:closeMatch  cpc:21213 ;
+            skos:closeMatch  cpc:21214 ;
+            skos:closeMatch  cpc:21215 ;
+            skos:closeMatch  cpc:21216 ;
+            skos:closeMatch  cpc:21219 .
+    cpa:10.20.14  skos:closeMatch  cpc:21222 .
+    cpa:10.20.15  skos:closeMatch  cpc:21223 .
+    cpa:10.20.16  skos:closeMatch  cpc:21226 .
+    cpa:10.20.21  skos:closeMatch  cpc:21224 .
+    cpa:10.20.22  skos:closeMatch  cpc:21227 ;
+            skos:closeMatch  cpc:21233 ;
+            skos:closeMatch  cpc:21234 .
+    cpa:10.20.23  skos:closeMatch  cpc:21231 .
+    cpa:10.20.24  skos:closeMatch  cpc:21232 .
+    cpa:10.20.25  skos:closeMatch  cpc:21242 .
+    cpa:10.20.26  skos:closeMatch  cpc:21243 .
+    cpa:10.20.31  skos:closeMatch  cpc:21251 ;
+            skos:closeMatch  cpc:21252 ;
+            skos:closeMatch  cpc:21253 ;
+            skos:closeMatch  cpc:21254 ;
+            skos:closeMatch  cpc:21255 ;
+            skos:closeMatch  cpc:21256 ;
+            skos:closeMatch  cpc:21259 .
+    cpa:10.20.32  skos:closeMatch  cpc:21261 ;
+            skos:closeMatch  cpc:21262 ;
+            skos:closeMatch  cpc:21263 ;
+            skos:closeMatch  cpc:21264 ;
+            skos:closeMatch  cpc:21265 ;
+            skos:closeMatch  cpc:21266 ;
+            skos:closeMatch  cpc:21267 ;
+            skos:closeMatch  cpc:21268 .
+    cpa:10.20.33  skos:closeMatch  cpc:21269 .
+    cpa:10.20.34  skos:closeMatch  cpc:21270 ;
+            skos:closeMatch  cpc:21280 .
+    cpa:10.20.41  skos:closeMatch  cpc:21291 .
+    cpa:10.20.42  skos:closeMatch  cpc:21299 .
+    cpa:10.20.91  skos:closeMatch  cpc:88120 .
+    cpa:10.20.99  skos:closeMatch  cpc:88120 .
+    cpa:10.31.11  skos:closeMatch  cpc:21313 ;
+            skos:closeMatch  cpc:21394 .
+    cpa:10.31.12  skos:closeMatch  cpc:21393 .
+    cpa:10.31.13  skos:closeMatch  cpc:21392 .
+    cpa:10.31.14  skos:closeMatch  cpc:21340 ;
+            skos:closeMatch  cpc:21394 .
+    cpa:10.31.91  skos:closeMatch  cpc:88130 .
+    cpa:10.31.99  skos:closeMatch  cpc:88130 .
+    cpa:10.32.11  skos:closeMatch  cpc:21321 .
+    cpa:10.32.12  skos:closeMatch  cpc:21431 .
+    cpa:10.32.13  skos:closeMatch  cpc:21432 .
+    cpa:10.32.14  skos:closeMatch  cpc:21433 .
+    cpa:10.32.15  skos:closeMatch  cpc:21434 .
+    cpa:10.32.16  skos:closeMatch  cpc:21435 .
+    cpa:10.32.17  skos:closeMatch  cpc:21329 .
+    cpa:10.32.19  skos:closeMatch  cpc:21329 ;
+            skos:closeMatch  cpc:21439 .
+    cpa:10.32.99  skos:closeMatch  cpc:88130 .
+    cpa:10.39.11  skos:closeMatch  cpc:21311 ;
+            skos:closeMatch  cpc:21312 ;
+            skos:closeMatch  cpc:21319 .
+    cpa:10.39.12  skos:closeMatch  cpc:21330 .
+    cpa:10.39.13  skos:closeMatch  cpc:21393 .
+    cpa:10.39.14  skos:closeMatch  cpc:01212 ;
+            skos:closeMatch  cpc:01213 ;
+            skos:closeMatch  cpc:01214 ;
+            skos:closeMatch  cpc:01215 ;
+            skos:closeMatch  cpc:01216 ;
+            skos:closeMatch  cpc:01219 ;
+            skos:closeMatch  cpc:01221 ;
+            skos:closeMatch  cpc:01229 ;
+            skos:closeMatch  cpc:01231 ;
+            skos:closeMatch  cpc:01232 ;
+            skos:closeMatch  cpc:01233 ;
+            skos:closeMatch  cpc:01234 ;
+            skos:closeMatch  cpc:01235 ;
+            skos:closeMatch  cpc:01239 ;
+            skos:closeMatch  cpc:01241 ;
+            skos:closeMatch  cpc:01242 ;
+            skos:closeMatch  cpc:01243 ;
+            skos:closeMatch  cpc:01249 ;
+            skos:closeMatch  cpc:01251 ;
+            skos:closeMatch  cpc:01252 ;
+            skos:closeMatch  cpc:01253 ;
+            skos:closeMatch  cpc:01254 ;
+            skos:closeMatch  cpc:01259 ;
+            skos:closeMatch  cpc:01270 ;
+            skos:closeMatch  cpc:01290 ;
+            skos:closeMatch  cpc:01311 ;
+            skos:closeMatch  cpc:01312 ;
+            skos:closeMatch  cpc:01313 ;
+            skos:closeMatch  cpc:01314 ;
+            skos:closeMatch  cpc:01316 ;
+            skos:closeMatch  cpc:01317 ;
+            skos:closeMatch  cpc:01318 ;
+            skos:closeMatch  cpc:01319 ;
+            skos:closeMatch  cpc:01321 ;
+            skos:closeMatch  cpc:01322 ;
+            skos:closeMatch  cpc:01323 ;
+            skos:closeMatch  cpc:01324 ;
+            skos:closeMatch  cpc:01329 ;
+            skos:closeMatch  cpc:01341 ;
+            skos:closeMatch  cpc:01342 ;
+            skos:closeMatch  cpc:01343 ;
+            skos:closeMatch  cpc:01344 ;
+            skos:closeMatch  cpc:01345 ;
+            skos:closeMatch  cpc:01346 ;
+            skos:closeMatch  cpc:01349 ;
+            skos:closeMatch  cpc:01352 ;
+            skos:closeMatch  cpc:01354 ;
+            skos:closeMatch  cpc:01355 ;
+            skos:closeMatch  cpc:01359 ;
+            skos:closeMatch  cpc:01450 ;
+            skos:closeMatch  cpc:01510 .
+    cpa:10.39.15  skos:closeMatch  cpc:21395 .
+    cpa:10.39.16  skos:closeMatch  cpc:21396 .
+    cpa:10.39.17  skos:closeMatch  cpc:21397 ;
+            skos:closeMatch  cpc:21399 .
+    cpa:10.39.18  skos:closeMatch  cpc:21340 ;
+            skos:closeMatch  cpc:21499 .
+    cpa:10.39.21  skos:closeMatch  cpc:21493 .
+    cpa:10.39.22  skos:closeMatch  cpc:21494 .
+    cpa:10.39.23  skos:closeMatch  cpc:21495 .
+    cpa:10.39.24  skos:closeMatch  cpc:21496 .
+    cpa:10.39.25  skos:closeMatch  cpc:21421 ;
+            skos:closeMatch  cpc:21422 ;
+            skos:closeMatch  cpc:21423 ;
+            skos:closeMatch  cpc:21424 ;
+            skos:closeMatch  cpc:21429 .
+    cpa:10.39.29  skos:closeMatch  cpc:21411 ;
+            skos:closeMatch  cpc:21412 ;
+            skos:closeMatch  cpc:21419 ;
+            skos:closeMatch  cpc:21491 ;
+            skos:closeMatch  cpc:21492 ;
+            skos:closeMatch  cpc:21499 .
+    cpa:10.39.30  skos:closeMatch  cpc:39120 .
+    cpa:10.39.91  skos:closeMatch  cpc:88130 .
+    cpa:10.39.99  skos:closeMatch  cpc:88130 .
+    cpa:10.41.11  skos:closeMatch  cpc:21529 .
+    cpa:10.41.12  skos:closeMatch  cpc:21524 ;
+            skos:closeMatch  cpc:21525 ;
+            skos:closeMatch  cpc:21526 .
+    cpa:10.41.19  skos:closeMatch  cpc:21519 ;
+            skos:closeMatch  cpc:21529 .
+    cpa:10.41.21  skos:closeMatch  cpc:21621 .
+    cpa:10.41.22  skos:closeMatch  cpc:21671 .
+    cpa:10.41.23  skos:closeMatch  cpc:21631 .
+    cpa:10.41.24  skos:closeMatch  cpc:21641 .
+    cpa:10.41.25  skos:closeMatch  cpc:21651 .
+    cpa:10.41.29  skos:closeMatch  cpc:21611 ;
+            skos:closeMatch  cpc:21661 ;
+            skos:closeMatch  cpc:21681 ;
+            skos:closeMatch  cpc:21691 .
+    cpa:10.41.30  skos:closeMatch  cpc:21800 .
+    cpa:10.41.41  skos:closeMatch  cpc:21910 .
+    cpa:10.41.42  skos:closeMatch  cpc:21920 .
+    cpa:10.41.51  skos:closeMatch  cpc:21612 .
+    cpa:10.41.52  skos:closeMatch  cpc:21622 .
+    cpa:10.41.53  skos:closeMatch  cpc:21672 ;
+            skos:closeMatch  cpc:21673 .
+    cpa:10.41.54  skos:closeMatch  cpc:21632 .
+    cpa:10.41.55  skos:closeMatch  cpc:21682 .
+    cpa:10.41.56  skos:closeMatch  cpc:21642 .
+    cpa:10.41.57  skos:closeMatch  cpc:21652 .
+    cpa:10.41.58  skos:closeMatch  cpc:21662 .
+    cpa:10.41.59  skos:closeMatch  cpc:21691 .
+    cpa:10.41.60  skos:closeMatch  cpc:21590 ;
+            skos:closeMatch  cpc:21693 .
+    cpa:10.41.71  skos:closeMatch  cpc:21931 .
+    cpa:10.41.72  skos:closeMatch  cpc:21932 .
+    cpa:10.41.99  skos:closeMatch  cpc:88140 .
+    cpa:10.42.10  skos:closeMatch  cpc:21700 .
+    cpa:10.42.99  skos:closeMatch  cpc:88140 .
+    cpa:10.51.11  skos:closeMatch  cpc:22110 .
+    cpa:10.51.12  skos:closeMatch  cpc:22120 .
+    cpa:10.51.21  skos:closeMatch  cpc:22212 .
+    cpa:10.51.22  skos:closeMatch  cpc:22211 .
+    cpa:10.51.30  skos:closeMatch  cpc:22241 ;
+            skos:closeMatch  cpc:22242 ;
+            skos:closeMatch  cpc:22249 .
+    cpa:10.51.40  skos:closeMatch  cpc:22251 ;
+            skos:closeMatch  cpc:22252 ;
+            skos:closeMatch  cpc:22253 ;
+            skos:closeMatch  cpc:22254 ;
+            skos:closeMatch  cpc:22259 .
+    cpa:10.51.51  skos:closeMatch  cpc:22221 ;
+            skos:closeMatch  cpc:22222 ;
+            skos:closeMatch  cpc:22229 .
+    cpa:10.51.52  skos:closeMatch  cpc:22230 .
+    cpa:10.51.53  skos:closeMatch  cpc:22260 .
+    cpa:10.51.54  skos:closeMatch  cpc:23210 .
+    cpa:10.51.55  skos:closeMatch  cpc:22130 .
+    cpa:10.51.56  skos:closeMatch  cpc:22219 ;
+            skos:closeMatch  cpc:22290 .
+    cpa:10.51.99  skos:closeMatch  cpc:88150 .
+    cpa:10.52.10  skos:closeMatch  cpc:22270 .
+    cpa:10.52.99  skos:closeMatch  cpc:88150 .
+    cpa:10.61.11  skos:closeMatch  cpc:23162 .
+    cpa:10.61.12  skos:closeMatch  cpc:23161 .
+    cpa:10.61.21  skos:closeMatch  cpc:23110 .
+    cpa:10.61.22  skos:closeMatch  cpc:23120 .
+    cpa:10.61.23  skos:closeMatch  cpc:23170 .
+    cpa:10.61.24  skos:closeMatch  cpc:23180 .
+    cpa:10.61.31  skos:closeMatch  cpc:23130 .
+    cpa:10.61.32  skos:closeMatch  cpc:23130 .
+    cpa:10.61.33  skos:closeMatch  cpc:23140 .
+    cpa:10.61.40  skos:closeMatch  cpc:39120 .
+    cpa:10.61.99  skos:closeMatch  cpc:88161 .
+    cpa:10.62.11  skos:closeMatch  cpc:23220 .
+    cpa:10.62.12  skos:closeMatch  cpc:23230 .
+    cpa:10.62.13  skos:closeMatch  cpc:23210 .
+    cpa:10.62.14  skos:closeMatch  cpc:21691 .
+    cpa:10.62.20  skos:closeMatch  cpc:39130 .
+    cpa:10.62.99  skos:closeMatch  cpc:88162 .
+    cpa:10.71.11  skos:closeMatch  cpc:23490 .
+    cpa:10.71.12  skos:closeMatch  cpc:23430 .
+    cpa:10.71.99  skos:closeMatch  cpc:88163 .
+    cpa:10.72.11  skos:closeMatch  cpc:23410 .
+    cpa:10.72.12  skos:closeMatch  cpc:23420 .
+    cpa:10.72.19  skos:closeMatch  cpc:23430 ;
+            skos:closeMatch  cpc:23490 .
+    cpa:10.72.99  skos:closeMatch  cpc:88163 .
+    cpa:10.73.11  skos:closeMatch  cpc:23710 .
+    cpa:10.73.12  skos:closeMatch  cpc:23721 .
+    cpa:10.73.99  skos:closeMatch  cpc:88166 .
+    cpa:10.81.11  skos:closeMatch  cpc:23511 ;
+            skos:closeMatch  cpc:23512 .
+    cpa:10.81.12  skos:closeMatch  cpc:23520 .
+    cpa:10.81.13  skos:closeMatch  cpc:23530 .
+    cpa:10.81.14  skos:closeMatch  cpc:23540 .
+    cpa:10.81.20  skos:closeMatch  cpc:39141 ;
+            skos:closeMatch  cpc:39149 .
+    cpa:10.81.99  skos:closeMatch  cpc:88164 .
+    cpa:10.82.11  skos:closeMatch  cpc:23610 .
+    cpa:10.82.12  skos:closeMatch  cpc:23620 .
+    cpa:10.82.13  skos:closeMatch  cpc:23630 .
+    cpa:10.82.14  skos:closeMatch  cpc:23640 .
+    cpa:10.82.21  skos:closeMatch  cpc:23650 .
+    cpa:10.82.22  skos:closeMatch  cpc:23660 .
+    cpa:10.82.23  skos:closeMatch  cpc:23670 .
+    cpa:10.82.24  skos:closeMatch  cpc:23670 .
+    cpa:10.82.30  skos:closeMatch  cpc:39150 .
+    cpa:10.82.99  skos:closeMatch  cpc:88165 .
+    cpa:10.83.11  skos:closeMatch  cpc:23911 .
+    cpa:10.83.12  skos:closeMatch  cpc:23912 ;
+            skos:closeMatch  cpc:39150 .
+    cpa:10.83.13  skos:closeMatch  cpc:23913 .
+    cpa:10.83.14  skos:closeMatch  cpc:23914 .
+    cpa:10.83.15  skos:closeMatch  cpc:01930 .
+    cpa:10.83.99  skos:closeMatch  cpc:88169 .
+    cpa:10.84.11  skos:closeMatch  cpc:23994 .
+    cpa:10.84.12  skos:closeMatch  cpc:23995 .
+    cpa:10.84.21  skos:closeMatch  cpc:23921 .
+    cpa:10.84.22  skos:closeMatch  cpc:23922 .
+    cpa:10.84.23  skos:closeMatch  cpc:23923 ;
+            skos:closeMatch  cpc:23924 ;
+            skos:closeMatch  cpc:23925 ;
+            skos:closeMatch  cpc:23926 ;
+            skos:closeMatch  cpc:23927 ;
+            skos:closeMatch  cpc:23928 ;
+            skos:closeMatch  cpc:23929 .
+    cpa:10.84.30  skos:closeMatch  cpc:16200 .
+    cpa:10.84.99  skos:closeMatch  cpc:88169 .
+    cpa:10.85.11  skos:closeMatch  cpc:21186 .
+    cpa:10.85.12  skos:closeMatch  cpc:21241 .
+    cpa:10.85.13  skos:closeMatch  cpc:21391 .
+    cpa:10.85.14  skos:closeMatch  cpc:23721 ;
+            skos:closeMatch  cpc:23722 .
+    cpa:10.85.19  skos:closeMatch  cpc:23997 .
+    cpa:10.85.99  skos:closeMatch  cpc:88167 .
+    cpa:10.86.10  skos:closeMatch  cpc:23991 .
+    cpa:10.86.99  skos:closeMatch  cpc:88169 .
+    cpa:10.89.11  skos:closeMatch  cpc:23992 .
+    cpa:10.89.12  skos:closeMatch  cpc:22300 ;
+            skos:closeMatch  cpc:23993 .
+    cpa:10.89.13  skos:closeMatch  cpc:23996 .
+    cpa:10.89.14  skos:closeMatch  cpc:21185 .
+    cpa:10.89.15  skos:closeMatch  cpc:23999 .
+    cpa:10.89.16  skos:closeMatch  cpc:23430 .
+    cpa:10.89.17  skos:closeMatch  cpc:23999 .
+    cpa:10.89.19  skos:closeMatch  cpc:23210 ;
+            skos:closeMatch  cpc:23999 .
+    cpa:10.89.99  skos:closeMatch  cpc:88169 .
+    cpa:10.91.10  skos:closeMatch  cpc:23319 .
+    cpa:10.91.20  skos:closeMatch  cpc:23320 .
+    cpa:10.91.99  skos:closeMatch  cpc:88170 .
+    cpa:10.92.10  skos:closeMatch  cpc:23311 ;
+            skos:closeMatch  cpc:23319 .
+    cpa:10.92.99  skos:closeMatch  cpc:88170 .
+    cpa:11.01.10  skos:closeMatch  cpc:24131 ;
+            skos:closeMatch  cpc:24139 .
+    cpa:11.01.99  skos:closeMatch  cpc:88181 .
+    cpa:11.02.11  skos:closeMatch  cpc:24211 .
+    cpa:11.02.12  skos:closeMatch  cpc:24212 .
+    cpa:11.02.20  skos:closeMatch  cpc:39170 .
+    cpa:11.02.99  skos:closeMatch  cpc:88182 .
+    cpa:11.03.10  skos:closeMatch  cpc:24230 .
+    cpa:11.03.99  skos:closeMatch  cpc:88182 .
+    cpa:11.04.10  skos:closeMatch  cpc:24220 .
+    cpa:11.04.99  skos:closeMatch  cpc:88182 .
+    cpa:11.05.10  skos:closeMatch  cpc:24310 .
+    cpa:11.05.20  skos:closeMatch  cpc:39160 .
+    cpa:11.05.99  skos:closeMatch  cpc:88183 .
+    cpa:11.06.10  skos:closeMatch  cpc:24320 .
+    cpa:11.06.99  skos:closeMatch  cpc:88183 .
+    cpa:11.07.11  skos:closeMatch  cpc:24410 .
+    cpa:11.07.19  skos:closeMatch  cpc:24490 .
+    cpa:11.07.99  skos:closeMatch  cpc:88184 .
+    cpa:12.00.11  skos:closeMatch  cpc:25020 .
+    cpa:12.00.12  skos:closeMatch  cpc:25010 .
+    cpa:12.00.19  skos:closeMatch  cpc:25090 .
+    cpa:12.00.20  skos:closeMatch  cpc:39180 .
+    cpa:12.00.99  skos:closeMatch  cpc:88190 .
+    cpa:13.10.10  skos:closeMatch  cpc:21519 ;
+            skos:closeMatch  cpc:21529 .
+    cpa:13.10.21  skos:closeMatch  cpc:26110 .
+    cpa:13.10.22  skos:closeMatch  cpc:26130 .
+    cpa:13.10.23  skos:closeMatch  cpc:26140 .
+    cpa:13.10.24  skos:closeMatch  cpc:26150 .
+    cpa:13.10.25  skos:closeMatch  cpc:26160 .
+    cpa:13.10.26  skos:closeMatch  cpc:26170 .
+    cpa:13.10.29  skos:closeMatch  cpc:26190 .
+    cpa:13.10.31  skos:closeMatch  cpc:26210 .
+    cpa:13.10.32  skos:closeMatch  cpc:26220 .
+    cpa:13.10.40  skos:closeMatch  cpc:26310 .
+    cpa:13.10.50  skos:closeMatch  cpc:26320 ;
+            skos:closeMatch  cpc:26330 ;
+            skos:closeMatch  cpc:26340 .
+    cpa:13.10.61  skos:closeMatch  cpc:26360 ;
+            skos:closeMatch  cpc:26370 .
+    cpa:13.10.62  skos:closeMatch  cpc:26350 .
+    cpa:13.10.71  skos:closeMatch  cpc:26380 .
+    cpa:13.10.72  skos:closeMatch  cpc:26380 .
+    cpa:13.10.81  skos:closeMatch  cpc:26421 ;
+            skos:closeMatch  cpc:26422 .
+    cpa:13.10.82  skos:closeMatch  cpc:26430 .
+    cpa:13.10.83  skos:closeMatch  cpc:26440 .
+    cpa:13.10.84  skos:closeMatch  cpc:26450 ;
+            skos:closeMatch  cpc:26461 ;
+            skos:closeMatch  cpc:26462 .
+    cpa:13.10.85  skos:closeMatch  cpc:26410 .
+    cpa:13.10.91  skos:closeMatch  cpc:39213 .
+    cpa:13.10.92  skos:closeMatch  cpc:39215 .
+    cpa:13.10.93  skos:closeMatch  cpc:88211 .
+    cpa:13.10.99  skos:closeMatch  cpc:88211 .
+    cpa:13.20.11  skos:closeMatch  cpc:26510 .
+    cpa:13.20.12  skos:closeMatch  cpc:26520 ;
+            skos:closeMatch  cpc:26530 ;
+            skos:closeMatch  cpc:26540 ;
+            skos:closeMatch  cpc:26550 .
+    cpa:13.20.13  skos:closeMatch  cpc:26560 .
+    cpa:13.20.14  skos:closeMatch  cpc:26570 .
+    cpa:13.20.19  skos:closeMatch  cpc:26590 .
+    cpa:13.20.20  skos:closeMatch  cpc:26610 ;
+            skos:closeMatch  cpc:26620 ;
+            skos:closeMatch  cpc:26630 ;
+            skos:closeMatch  cpc:26690 .
+    cpa:13.20.31  skos:closeMatch  cpc:26710 ;
+            skos:closeMatch  cpc:26720 ;
+            skos:closeMatch  cpc:26730 .
+    cpa:13.20.32  skos:closeMatch  cpc:26740 ;
+            skos:closeMatch  cpc:26760 ;
+            skos:closeMatch  cpc:26770 ;
+            skos:closeMatch  cpc:26790 .
+    cpa:13.20.33  skos:closeMatch  cpc:26750 ;
+            skos:closeMatch  cpc:26760 ;
+            skos:closeMatch  cpc:26770 ;
+            skos:closeMatch  cpc:26790 .
+    cpa:13.20.41  skos:closeMatch  cpc:26810 ;
+            skos:closeMatch  cpc:26820 ;
+            skos:closeMatch  cpc:26830 .
+    cpa:13.20.42  skos:closeMatch  cpc:26840 .
+    cpa:13.20.43  skos:closeMatch  cpc:26850 .
+    cpa:13.20.44  skos:closeMatch  cpc:26860 .
+    cpa:13.20.45  skos:closeMatch  cpc:26880 .
+    cpa:13.20.46  skos:closeMatch  cpc:26890 .
+    cpa:13.20.50  skos:closeMatch  cpc:28330 .
+    cpa:13.20.99  skos:closeMatch  cpc:88212 .
+    cpa:13.30.11  skos:closeMatch  cpc:88213 .
+    cpa:13.30.12  skos:closeMatch  cpc:88213 .
+    cpa:13.30.13  skos:closeMatch  cpc:88213 .
+    cpa:13.30.19  skos:closeMatch  cpc:88213 .
+    cpa:13.91.11  skos:closeMatch  cpc:28110 .
+    cpa:13.91.19  skos:closeMatch  cpc:28190 ;
+            skos:closeMatch  cpc:28330 .
+    cpa:13.91.99  skos:closeMatch  cpc:88214 .
+    cpa:13.92.11  skos:closeMatch  cpc:27110 .
+    cpa:13.92.12  skos:closeMatch  cpc:27120 .
+    cpa:13.92.13  skos:closeMatch  cpc:27120 .
+    cpa:13.92.14  skos:closeMatch  cpc:27120 .
+    cpa:13.92.15  skos:closeMatch  cpc:27130 .
+    cpa:13.92.16  skos:closeMatch  cpc:27140 .
+    cpa:13.92.21  skos:closeMatch  cpc:27150 .
+    cpa:13.92.22  skos:closeMatch  cpc:27160 .
+    cpa:13.92.23  skos:closeMatch  cpc:27170 .
+    cpa:13.92.24  skos:closeMatch  cpc:27180 .
+    cpa:13.92.29  skos:closeMatch  cpc:27190 .
+    cpa:13.92.99  skos:closeMatch  cpc:88215 .
+    cpa:13.93.11  skos:closeMatch  cpc:27210 .
+    cpa:13.93.12  skos:closeMatch  cpc:27220 .
+    cpa:13.93.13  skos:closeMatch  cpc:27230 .
+    cpa:13.93.19  skos:closeMatch  cpc:27290 .
+    cpa:13.93.99  skos:closeMatch  cpc:88216 .
+    cpa:13.94.11  skos:closeMatch  cpc:27310 .
+    cpa:13.94.12  skos:closeMatch  cpc:27320 .
+    cpa:13.94.20  skos:closeMatch  cpc:39218 .
+    cpa:13.94.99  skos:closeMatch  cpc:88217 .
+    cpa:13.95.10  skos:closeMatch  cpc:27922 .
+    cpa:13.95.99  skos:closeMatch  cpc:88219 .
+    cpa:13.96.11  skos:closeMatch  cpc:27993 .
+    cpa:13.96.12  skos:closeMatch  cpc:27994 .
+    cpa:13.96.13  skos:closeMatch  cpc:27992 .
+    cpa:13.96.14  skos:closeMatch  cpc:27997 .
+    cpa:13.96.15  skos:closeMatch  cpc:27996 .
+    cpa:13.96.16  skos:closeMatch  cpc:27998 .
+    cpa:13.96.17  skos:closeMatch  cpc:27911 .
+    cpa:13.96.99  skos:closeMatch  cpc:88219 .
+    cpa:13.99.11  skos:closeMatch  cpc:27912 .
+    cpa:13.99.12  skos:closeMatch  cpc:27913 .
+    cpa:13.99.13  skos:closeMatch  cpc:27921 .
+    cpa:13.99.14  skos:closeMatch  cpc:27991 .
+    cpa:13.99.15  skos:closeMatch  cpc:27995 .
+    cpa:13.99.16  skos:closeMatch  cpc:27999 .
+    cpa:13.99.19  skos:closeMatch  cpc:38994 .
+    cpa:13.99.99  skos:closeMatch  cpc:88219 .
+    cpa:14.11.10  skos:closeMatch  cpc:28241 .
+    cpa:14.11.99  skos:closeMatch  cpc:88221 .
+    cpa:14.12.11  skos:closeMatch  cpc:28231 .
+    cpa:14.12.12  skos:closeMatch  cpc:28231 .
+    cpa:14.12.21  skos:closeMatch  cpc:28233 .
+    cpa:14.12.22  skos:closeMatch  cpc:28233 .
+    cpa:14.12.30  skos:closeMatch  cpc:28236 .
+    cpa:14.12.99  skos:closeMatch  cpc:88221 .
+    cpa:14.13.11  skos:closeMatch  cpc:28221 .
+    cpa:14.13.12  skos:closeMatch  cpc:28221 .
+    cpa:14.13.13  skos:closeMatch  cpc:28223 .
+    cpa:14.13.14  skos:closeMatch  cpc:28223 .
+    cpa:14.13.21  skos:closeMatch  cpc:28231 .
+    cpa:14.13.22  skos:closeMatch  cpc:28231 .
+    cpa:14.13.23  skos:closeMatch  cpc:28231 .
+    cpa:14.13.24  skos:closeMatch  cpc:28231 .
+    cpa:14.13.31  skos:closeMatch  cpc:28233 .
+    cpa:14.13.32  skos:closeMatch  cpc:28233 .
+    cpa:14.13.33  skos:closeMatch  cpc:28233 .
+    cpa:14.13.34  skos:closeMatch  cpc:28233 .
+    cpa:14.13.35  skos:closeMatch  cpc:28233 .
+    cpa:14.13.40  skos:closeMatch  cpc:39217 .
+    cpa:14.13.99  skos:closeMatch  cpc:88221 .
+    cpa:14.14.11  skos:closeMatch  cpc:28222 .
+    cpa:14.14.12  skos:closeMatch  cpc:28222 .
+    cpa:14.14.13  skos:closeMatch  cpc:28224 .
+    cpa:14.14.14  skos:closeMatch  cpc:28224 .
+    cpa:14.14.21  skos:closeMatch  cpc:28232 .
+    cpa:14.14.22  skos:closeMatch  cpc:28232 .
+    cpa:14.14.23  skos:closeMatch  cpc:28234 .
+    cpa:14.14.24  skos:closeMatch  cpc:28234 .
+    cpa:14.14.25  skos:closeMatch  cpc:28237 .
+    cpa:14.14.30  skos:closeMatch  cpc:28225 .
+    cpa:14.14.99  skos:closeMatch  cpc:88221 .
+    cpa:14.19.11  skos:closeMatch  cpc:28227 .
+    cpa:14.19.12  skos:closeMatch  cpc:28228 .
+    cpa:14.19.13  skos:closeMatch  cpc:28229 .
+    cpa:14.19.19  skos:closeMatch  cpc:28229 .
+    cpa:14.19.21  skos:closeMatch  cpc:28235 .
+    cpa:14.19.22  skos:closeMatch  cpc:28236 .
+    cpa:14.19.23  skos:closeMatch  cpc:28238 .
+    cpa:14.19.31  skos:closeMatch  cpc:28242 .
+    cpa:14.19.32  skos:closeMatch  cpc:28250 .
+    cpa:14.19.41  skos:closeMatch  cpc:28261 .
+    cpa:14.19.42  skos:closeMatch  cpc:28262 .
+    cpa:14.19.43  skos:closeMatch  cpc:28269 .
+    cpa:14.19.99  skos:closeMatch  cpc:88221 .
+    cpa:14.20.10  skos:closeMatch  cpc:28320 .
+    cpa:14.20.99  skos:closeMatch  cpc:88222 .
+    cpa:14.31.10  skos:closeMatch  cpc:28210 .
+    cpa:14.31.99  skos:closeMatch  cpc:88223 .
+    cpa:14.39.10  skos:closeMatch  cpc:28226 .
+    cpa:14.39.99  skos:closeMatch  cpc:88223 .
+    cpa:15.11.10  skos:closeMatch  cpc:28310 .
+    cpa:15.11.21  skos:closeMatch  cpc:29110 .
+    cpa:15.11.22  skos:closeMatch  cpc:29110 .
+    cpa:15.11.31  skos:closeMatch  cpc:29120 .
+    cpa:15.11.32  skos:closeMatch  cpc:29120 .
+    cpa:15.11.33  skos:closeMatch  cpc:29120 .
+    cpa:15.11.41  skos:closeMatch  cpc:29130 .
+    cpa:15.11.42  skos:closeMatch  cpc:29130 .
+    cpa:15.11.43  skos:closeMatch  cpc:29130 .
+    cpa:15.11.51  skos:closeMatch  cpc:29130 .
+    cpa:15.11.52  skos:closeMatch  cpc:29130 .
+    cpa:15.11.99  skos:closeMatch  cpc:88231 .
+    cpa:15.12.11  skos:closeMatch  cpc:29210 .
+    cpa:15.12.12  skos:closeMatch  cpc:29220 .
+    cpa:15.12.13  skos:closeMatch  cpc:29230 .
+    cpa:15.12.19  skos:closeMatch  cpc:29290 .
+    cpa:15.12.99  skos:closeMatch  cpc:88232 .
+    cpa:15.20.11  skos:closeMatch  cpc:29310 .
+    cpa:15.20.12  skos:closeMatch  cpc:29320 .
+    cpa:15.20.13  skos:closeMatch  cpc:29330 .
+    cpa:15.20.14  skos:closeMatch  cpc:29340 .
+    cpa:15.20.21  skos:closeMatch  cpc:29420 .
+    cpa:15.20.29  skos:closeMatch  cpc:29490 .
+    cpa:15.20.31  skos:closeMatch  cpc:29510 .
+    cpa:15.20.32  skos:closeMatch  cpc:29520 .
+    cpa:15.20.40  skos:closeMatch  cpc:29600 .
+    cpa:15.20.99  skos:closeMatch  cpc:88233 .
+    cpa:16.10.11  skos:closeMatch  cpc:31101 .
+    cpa:16.10.12  skos:closeMatch  cpc:31102 .
+    cpa:16.10.13  skos:closeMatch  cpc:31109 .
+    cpa:16.10.21  skos:closeMatch  cpc:31211 .
+    cpa:16.10.22  skos:closeMatch  cpc:31212 .
+    cpa:16.10.23  skos:closeMatch  cpc:31219 .
+    cpa:16.10.24  skos:closeMatch  cpc:31220 .
+    cpa:16.10.25  skos:closeMatch  cpc:31230 .
+    cpa:16.10.31  skos:closeMatch  cpc:31310 .
+    cpa:16.10.32  skos:closeMatch  cpc:31320 .
+    cpa:16.10.39  skos:closeMatch  cpc:31330 .
+    cpa:16.10.91  skos:closeMatch  cpc:88311 .
+    cpa:16.10.99  skos:closeMatch  cpc:88311 .
+    cpa:16.21.11  skos:closeMatch  cpc:31450 .
+    cpa:16.21.12  skos:closeMatch  cpc:31431 .
+    cpa:16.21.13  skos:closeMatch  cpc:31432 .
+    cpa:16.21.14  skos:closeMatch  cpc:31439 .
+    cpa:16.21.15  skos:closeMatch  cpc:31441 ;
+            skos:closeMatch  cpc:31442 ;
+            skos:closeMatch  cpc:31449 .
+    cpa:16.21.16  skos:closeMatch  cpc:31411 ;
+            skos:closeMatch  cpc:31421 .
+    cpa:16.21.17  skos:closeMatch  cpc:31412 .
+    cpa:16.21.18  skos:closeMatch  cpc:31412 ;
+            skos:closeMatch  cpc:31422 .
+    cpa:16.21.21  skos:closeMatch  cpc:31520 .
+    cpa:16.21.22  skos:closeMatch  cpc:31511 .
+    cpa:16.21.23  skos:closeMatch  cpc:31512 .
+    cpa:16.21.24  skos:closeMatch  cpc:31512 .
+    cpa:16.21.91  skos:closeMatch  cpc:88312 .
+    cpa:16.21.99  skos:closeMatch  cpc:88312 .
+    cpa:16.22.10  skos:closeMatch  cpc:31600 .
+    cpa:16.22.99  skos:closeMatch  cpc:88313 .
+    cpa:16.23.11  skos:closeMatch  cpc:31600 .
+    cpa:16.23.12  skos:closeMatch  cpc:31600 .
+    cpa:16.23.19  skos:closeMatch  cpc:31600 .
+    cpa:16.23.20  skos:closeMatch  cpc:38701 .
+    cpa:16.23.99  skos:closeMatch  cpc:88313 .
+    cpa:16.24.11  skos:closeMatch  cpc:31700 .
+    cpa:16.24.12  skos:closeMatch  cpc:31700 .
+    cpa:16.24.13  skos:closeMatch  cpc:31700 .
+    cpa:16.24.99  skos:closeMatch  cpc:88314 .
+    cpa:16.29.11  skos:closeMatch  cpc:31911 ;
+            skos:closeMatch  cpc:38994 .
+    cpa:16.29.12  skos:closeMatch  cpc:31912 .
+    cpa:16.29.13  skos:closeMatch  cpc:31913 .
+    cpa:16.29.14  skos:closeMatch  cpc:31914 ;
+            skos:closeMatch  cpc:38922 .
+    cpa:16.29.15  skos:closeMatch  cpc:39281 ;
+            skos:closeMatch  cpc:39282 .
+    cpa:16.29.21  skos:closeMatch  cpc:31921 .
+    cpa:16.29.22  skos:closeMatch  cpc:31922 .
+    cpa:16.29.23  skos:closeMatch  cpc:31922 .
+    cpa:16.29.24  skos:closeMatch  cpc:31922 .
+    cpa:16.29.25  skos:closeMatch  cpc:31923 .
+    cpa:16.29.91  skos:closeMatch  cpc:88319 .
+    cpa:16.29.99  skos:closeMatch  cpc:88319 .
+    cpa:17.11.11  skos:closeMatch  cpc:32111 .
+    cpa:17.11.12  skos:closeMatch  cpc:32112 .
+    cpa:17.11.13  skos:closeMatch  cpc:32112 .
+    cpa:17.11.14  skos:closeMatch  cpc:32113 .
+    cpa:17.11.99  skos:closeMatch  cpc:88321 .
+    cpa:17.12.11  skos:closeMatch  cpc:32121 .
+    cpa:17.12.12  skos:closeMatch  cpc:32122 .
+    cpa:17.12.13  skos:closeMatch  cpc:32129 .
+    cpa:17.12.14  skos:closeMatch  cpc:32129 .
+    cpa:17.12.20  skos:closeMatch  cpc:32131 .
+    cpa:17.12.31  skos:closeMatch  cpc:32132 .
+    cpa:17.12.32  skos:closeMatch  cpc:32132 .
+    cpa:17.12.33  skos:closeMatch  cpc:32134 .
+    cpa:17.12.34  skos:closeMatch  cpc:32134 .
+    cpa:17.12.35  skos:closeMatch  cpc:32135 .
+    cpa:17.12.41  skos:closeMatch  cpc:32133 .
+    cpa:17.12.42  skos:closeMatch  cpc:32136 .
+    cpa:17.12.43  skos:closeMatch  cpc:32136 .
+    cpa:17.12.44  skos:closeMatch  cpc:32136 .
+    cpa:17.12.51  skos:closeMatch  cpc:32133 .
+    cpa:17.12.59  skos:closeMatch  cpc:32133 .
+    cpa:17.12.60  skos:closeMatch  cpc:32137 .
+    cpa:17.12.71  skos:closeMatch  cpc:32141 .
+    cpa:17.12.72  skos:closeMatch  cpc:32142 .
+    cpa:17.12.73  skos:closeMatch  cpc:32143 .
+    cpa:17.12.74  skos:closeMatch  cpc:32143 .
+    cpa:17.12.75  skos:closeMatch  cpc:32143 .
+    cpa:17.12.76  skos:closeMatch  cpc:32149 .
+    cpa:17.12.77  skos:closeMatch  cpc:32149 .
+    cpa:17.12.78  skos:closeMatch  cpc:32143 .
+    cpa:17.12.79  skos:closeMatch  cpc:32143 .
+    cpa:17.12.99  skos:closeMatch  cpc:88321 .
+    cpa:17.21.11  skos:closeMatch  cpc:32151 .
+    cpa:17.21.12  skos:closeMatch  cpc:32152 .
+    cpa:17.21.13  skos:closeMatch  cpc:32153 .
+    cpa:17.21.14  skos:closeMatch  cpc:32153 .
+    cpa:17.21.15  skos:closeMatch  cpc:32153 .
+    cpa:17.21.99  skos:closeMatch  cpc:88322 ;
+            skos:closeMatch  cpc:88329 .
+    cpa:17.22.11  skos:closeMatch  cpc:32193 .
+    cpa:17.22.12  skos:closeMatch  cpc:27991 ;
+            skos:closeMatch  cpc:32193 ;
+            skos:closeMatch  cpc:32196 .
+    cpa:17.22.13  skos:closeMatch  cpc:32199 .
+    cpa:17.22.99  skos:closeMatch  cpc:88329 .
+    cpa:17.23.11  skos:closeMatch  cpc:32191 .
+    cpa:17.23.12  skos:closeMatch  cpc:32192 .
+    cpa:17.23.13  skos:closeMatch  cpc:32700 .
+    cpa:17.23.14  skos:closeMatch  cpc:32199 .
+    cpa:17.23.99  skos:closeMatch  cpc:88329 .
+    cpa:17.24.11  skos:closeMatch  cpc:32194 .
+    cpa:17.24.12  skos:closeMatch  cpc:32195 .
+    cpa:17.24.99  skos:closeMatch  cpc:88329 .
+    cpa:17.29.11  skos:closeMatch  cpc:32197 .
+    cpa:17.29.12  skos:closeMatch  cpc:32198 .
+    cpa:17.29.19  skos:closeMatch  cpc:32199 .
+    cpa:17.29.99  skos:closeMatch  cpc:88329 .
+    cpa:18.11.10  skos:closeMatch  cpc:89121 .
+    cpa:18.12.11  skos:closeMatch  cpc:89121 .
+    cpa:18.12.12  skos:closeMatch  cpc:89121 .
+    cpa:18.12.13  skos:closeMatch  cpc:89121 .
+    cpa:18.12.14  skos:closeMatch  cpc:89121 .
+    cpa:18.12.15  skos:closeMatch  cpc:89121 .
+    cpa:18.12.16  skos:closeMatch  cpc:89121 .
+    cpa:18.12.19  skos:closeMatch  cpc:89121 .
+    cpa:18.13.10  skos:closeMatch  cpc:89122 .
+    cpa:18.13.20  skos:closeMatch  cpc:32800 .
+    cpa:18.13.30  skos:closeMatch  cpc:89122 .
+    cpa:18.14.10  skos:closeMatch  cpc:89122 .
+    cpa:18.20.10  skos:closeMatch  cpc:89123 .
+    cpa:18.20.20  skos:closeMatch  cpc:89123 .
+    cpa:18.20.30  skos:closeMatch  cpc:89123 .
+    cpa:19.10.10  skos:closeMatch  cpc:33100 .
+    cpa:19.10.20  skos:closeMatch  cpc:33200 .
+    cpa:19.10.30  skos:closeMatch  cpc:34540 .
+    cpa:19.10.99  skos:closeMatch  cpc:88411 .
+    cpa:19.20.11  skos:closeMatch  cpc:11020 .
+    cpa:19.20.12  skos:closeMatch  cpc:11040 .
+    cpa:19.20.13  skos:closeMatch  cpc:11050 .
+    cpa:19.20.21  skos:closeMatch  cpc:33311 .
+    cpa:19.20.22  skos:closeMatch  cpc:33312 .
+    cpa:19.20.23  skos:closeMatch  cpc:33350 .
+    cpa:19.20.24  skos:closeMatch  cpc:33320 ;
+            skos:closeMatch  cpc:33342 .
+    cpa:19.20.25  skos:closeMatch  cpc:33330 .
+    cpa:19.20.26  skos:closeMatch  cpc:33360 .
+    cpa:19.20.27  skos:closeMatch  cpc:33349 ;
+            skos:closeMatch  cpc:33350 ;
+            skos:closeMatch  cpc:33390 .
+    cpa:19.20.28  skos:closeMatch  cpc:33370 .
+    cpa:19.20.29  skos:closeMatch  cpc:33380 .
+    cpa:19.20.31  skos:closeMatch  cpc:33410 .
+    cpa:19.20.32  skos:closeMatch  cpc:33421 .
+    cpa:19.20.39  skos:closeMatch  cpc:33429 .
+    cpa:19.20.41  skos:closeMatch  cpc:33500 .
+    cpa:19.20.42  skos:closeMatch  cpc:33500 .
+    cpa:19.20.99  skos:closeMatch  cpc:88412 .
+    cpa:20.11.11  skos:closeMatch  cpc:34210 .
+    cpa:20.11.12  skos:closeMatch  cpc:34210 .
+    cpa:20.11.13  skos:closeMatch  cpc:34250 .
+    cpa:20.11.99  skos:closeMatch  cpc:88421 .
+    cpa:20.12.11  skos:closeMatch  cpc:34220 .
+    cpa:20.12.12  skos:closeMatch  cpc:34220 .
+    cpa:20.12.19  skos:closeMatch  cpc:34220 .
+    cpa:20.12.21  skos:closeMatch  cpc:34310 .
+    cpa:20.12.22  skos:closeMatch  cpc:34320 .
+    cpa:20.12.23  skos:closeMatch  cpc:34330 .
+    cpa:20.12.24  skos:closeMatch  cpc:34340 .
+    cpa:20.12.99  skos:closeMatch  cpc:88421 .
+    cpa:20.13.11  skos:closeMatch  cpc:33620 .
+    cpa:20.13.12  skos:closeMatch  cpc:33630 .
+    cpa:20.13.13  skos:closeMatch  cpc:33690 .
+    cpa:20.13.14  skos:closeMatch  cpc:33710 .
+    cpa:20.13.21  skos:closeMatch  cpc:34231 .
+    cpa:20.13.22  skos:closeMatch  cpc:34231 .
+    cpa:20.13.23  skos:closeMatch  cpc:34231 .
+    cpa:20.13.24  skos:closeMatch  cpc:34231 ;
+            skos:closeMatch  cpc:34232 .
+    cpa:20.13.25  skos:closeMatch  cpc:34231 .
+    cpa:20.13.31  skos:closeMatch  cpc:34240 .
+    cpa:20.13.32  skos:closeMatch  cpc:34240 .
+    cpa:20.13.41  skos:closeMatch  cpc:34240 .
+    cpa:20.13.42  skos:closeMatch  cpc:34240 .
+    cpa:20.13.43  skos:closeMatch  cpc:34240 .
+    cpa:20.13.51  skos:closeMatch  cpc:34250 .
+    cpa:20.13.52  skos:closeMatch  cpc:34250 .
+    cpa:20.13.61  skos:closeMatch  cpc:34260 .
+    cpa:20.13.62  skos:closeMatch  cpc:34270 .
+    cpa:20.13.63  skos:closeMatch  cpc:34280 .
+    cpa:20.13.64  skos:closeMatch  cpc:34280 .
+    cpa:20.13.65  skos:closeMatch  cpc:34290 .
+    cpa:20.13.66  skos:closeMatch  cpc:34520 .
+    cpa:20.13.67  skos:closeMatch  cpc:34530 .
+    cpa:20.13.68  skos:closeMatch  cpc:34560 .
+    cpa:20.13.99  skos:closeMatch  cpc:88421 .
+    cpa:20.14.11  skos:closeMatch  cpc:34110 .
+    cpa:20.14.12  skos:closeMatch  cpc:34110 .
+    cpa:20.14.13  skos:closeMatch  cpc:34110 .
+    cpa:20.14.14  skos:closeMatch  cpc:34110 .
+    cpa:20.14.19  skos:closeMatch  cpc:34110 .
+    cpa:20.14.21  skos:closeMatch  cpc:34139 .
+    cpa:20.14.22  skos:closeMatch  cpc:34139 .
+    cpa:20.14.23  skos:closeMatch  cpc:34139 ;
+            skos:closeMatch  cpc:34570 .
+    cpa:20.14.24  skos:closeMatch  cpc:34139 .
+    cpa:20.14.31  skos:closeMatch  cpc:34120 .
+    cpa:20.14.32  skos:closeMatch  cpc:34140 .
+    cpa:20.14.33  skos:closeMatch  cpc:34140 .
+    cpa:20.14.34  skos:closeMatch  cpc:34140 .
+    cpa:20.14.41  skos:closeMatch  cpc:34150 .
+    cpa:20.14.42  skos:closeMatch  cpc:34150 .
+    cpa:20.14.43  skos:closeMatch  cpc:34150 .
+    cpa:20.14.44  skos:closeMatch  cpc:34150 .
+    cpa:20.14.51  skos:closeMatch  cpc:34160 .
+    cpa:20.14.52  skos:closeMatch  cpc:34160 .
+    cpa:20.14.53  skos:closeMatch  cpc:34180 .
+    cpa:20.14.61  skos:closeMatch  cpc:34170 .
+    cpa:20.14.62  skos:closeMatch  cpc:34170 .
+    cpa:20.14.63  skos:closeMatch  cpc:34170 .
+    cpa:20.14.64  skos:closeMatch  cpc:34170 .
+    cpa:20.14.71  skos:closeMatch  cpc:34400 .
+    cpa:20.14.72  skos:closeMatch  cpc:34510 .
+    cpa:20.14.73  skos:closeMatch  cpc:34540 .
+    cpa:20.14.74  skos:closeMatch  cpc:24110 .
+    cpa:20.14.75  skos:closeMatch  cpc:34131 .
+    cpa:20.14.80  skos:closeMatch  cpc:39230 .
+    cpa:20.14.99  skos:closeMatch  cpc:88421 .
+    cpa:20.15.10  skos:closeMatch  cpc:34233 ;
+            skos:closeMatch  cpc:34651 ;
+            skos:closeMatch  cpc:34652 .
+    cpa:20.15.20  skos:closeMatch  cpc:34653 .
+    cpa:20.15.31  skos:closeMatch  cpc:34611 .
+    cpa:20.15.32  skos:closeMatch  cpc:34612 .
+    cpa:20.15.33  skos:closeMatch  cpc:34613 .
+    cpa:20.15.34  skos:closeMatch  cpc:34614 .
+    cpa:20.15.35  skos:closeMatch  cpc:34615 .
+    cpa:20.15.36  skos:closeMatch  cpc:34616 .
+    cpa:20.15.39  skos:closeMatch  cpc:34619 .
+    cpa:20.15.41  skos:closeMatch  cpc:34621 .
+    cpa:20.15.49  skos:closeMatch  cpc:34629 .
+    cpa:20.15.51  skos:closeMatch  cpc:34631 .
+    cpa:20.15.52  skos:closeMatch  cpc:34632 .
+    cpa:20.15.59  skos:closeMatch  cpc:34639 .
+    cpa:20.15.60  skos:closeMatch  cpc:34150 .
+    cpa:20.15.71  skos:closeMatch  cpc:34641 .
+    cpa:20.15.72  skos:closeMatch  cpc:34642 .
+    cpa:20.15.73  skos:closeMatch  cpc:34643 .
+    cpa:20.15.74  skos:closeMatch  cpc:34644 .
+    cpa:20.15.75  skos:closeMatch  cpc:34645 .
+    cpa:20.15.76  skos:closeMatch  cpc:34646 .
+    cpa:20.15.79  skos:closeMatch  cpc:34649 ;
+            skos:closeMatch  cpc:34659 .
+    cpa:20.15.80  skos:closeMatch  cpc:34654 .
+    cpa:20.15.99  skos:closeMatch  cpc:88422 .
+    cpa:20.16.10  skos:closeMatch  cpc:34710 .
+    cpa:20.16.20  skos:closeMatch  cpc:34720 .
+    cpa:20.16.30  skos:closeMatch  cpc:34730 .
+    cpa:20.16.40  skos:closeMatch  cpc:34740 .
+    cpa:20.16.51  skos:closeMatch  cpc:34790 .
+    cpa:20.16.52  skos:closeMatch  cpc:34790 .
+    cpa:20.16.53  skos:closeMatch  cpc:34790 .
+    cpa:20.16.54  skos:closeMatch  cpc:34790 .
+    cpa:20.16.55  skos:closeMatch  cpc:34790 .
+    cpa:20.16.56  skos:closeMatch  cpc:34790 .
+    cpa:20.16.57  skos:closeMatch  cpc:34790 .
+    cpa:20.16.59  skos:closeMatch  cpc:34790 .
+    cpa:20.16.99  skos:closeMatch  cpc:88423 .
+    cpa:20.17.10  skos:closeMatch  cpc:34800 .
+    cpa:20.17.99  skos:closeMatch  cpc:88423 .
+    cpa:20.20.11  skos:closeMatch  cpc:34661 .
+    cpa:20.20.12  skos:closeMatch  cpc:34663 .
+    cpa:20.20.13  skos:closeMatch  cpc:34663 .
+    cpa:20.20.14  skos:closeMatch  cpc:34664 .
+    cpa:20.20.15  skos:closeMatch  cpc:34662 .
+    cpa:20.20.16  skos:closeMatch  cpc:34666 .
+    cpa:20.20.19  skos:closeMatch  cpc:34669 .
+    cpa:20.20.99  skos:closeMatch  cpc:88424 .
+    cpa:20.30.11  skos:closeMatch  cpc:35110 .
+    cpa:20.30.12  skos:closeMatch  cpc:35110 .
+    cpa:20.30.21  skos:closeMatch  cpc:35110 .
+    cpa:20.30.22  skos:closeMatch  cpc:35110 .
+    cpa:20.30.23  skos:closeMatch  cpc:35120 .
+    cpa:20.30.24  skos:closeMatch  cpc:35130 .
+    cpa:20.30.99  skos:closeMatch  cpc:88425 .
+    cpa:20.41.10  skos:closeMatch  cpc:34570 .
+    cpa:20.41.20  skos:closeMatch  cpc:35310 .
+    cpa:20.41.31  skos:closeMatch  cpc:35321 .
+    cpa:20.41.32  skos:closeMatch  cpc:35322 .
+    cpa:20.41.41  skos:closeMatch  cpc:35331 .
+    cpa:20.41.42  skos:closeMatch  cpc:35332 .
+    cpa:20.41.43  skos:closeMatch  cpc:35333 .
+    cpa:20.41.44  skos:closeMatch  cpc:35334 .
+    cpa:20.41.99  skos:closeMatch  cpc:88426 .
+    cpa:20.42.11  skos:closeMatch  cpc:35323 .
+    cpa:20.42.12  skos:closeMatch  cpc:35323 .
+    cpa:20.42.13  skos:closeMatch  cpc:35323 .
+    cpa:20.42.14  skos:closeMatch  cpc:35323 .
+    cpa:20.42.15  skos:closeMatch  cpc:35323 .
+    cpa:20.42.16  skos:closeMatch  cpc:35323 .
+    cpa:20.42.17  skos:closeMatch  cpc:35323 .
+    cpa:20.42.18  skos:closeMatch  cpc:35323 .
+    cpa:20.42.19  skos:closeMatch  cpc:35321 ;
+            skos:closeMatch  cpc:35323 .
+    cpa:20.42.99  skos:closeMatch  cpc:88426 .
+    cpa:20.51.11  skos:closeMatch  cpc:35450 .
+    cpa:20.51.12  skos:closeMatch  cpc:35450 .
+    cpa:20.51.13  skos:closeMatch  cpc:35460 .
+    cpa:20.51.14  skos:closeMatch  cpc:35460 .
+    cpa:20.51.20  skos:closeMatch  cpc:38998 .
+    cpa:20.51.99  skos:closeMatch  cpc:88427 .
+    cpa:20.52.10  skos:closeMatch  cpc:35420 .
+    cpa:20.52.99  skos:closeMatch  cpc:88427 .
+    cpa:20.53.10  skos:closeMatch  cpc:35410 .
+    cpa:20.53.99  skos:closeMatch  cpc:88427 .
+    cpa:20.59.11  skos:closeMatch  cpc:48341 .
+    cpa:20.59.12  skos:closeMatch  cpc:48342 .
+    cpa:20.59.20  skos:closeMatch  cpc:34550 .
+    cpa:20.59.30  skos:closeMatch  cpc:35140 .
+    cpa:20.59.41  skos:closeMatch  cpc:35430 .
+    cpa:20.59.42  skos:closeMatch  cpc:35430 .
+    cpa:20.59.43  skos:closeMatch  cpc:35430 .
+    cpa:20.59.51  skos:closeMatch  cpc:35420 .
+    cpa:20.59.52  skos:closeMatch  cpc:35440 .
+    cpa:20.59.53  skos:closeMatch  cpc:35470 .
+    cpa:20.59.54  skos:closeMatch  cpc:35499 .
+    cpa:20.59.55  skos:closeMatch  cpc:35499 .
+    cpa:20.59.56  skos:closeMatch  cpc:35499 .
+    cpa:20.59.57  skos:closeMatch  cpc:35499 .
+    cpa:20.59.58  skos:closeMatch  cpc:35491 .
+    cpa:20.59.59  skos:closeMatch  cpc:35499 .
+    cpa:20.59.60  skos:closeMatch  cpc:35420 .
+    cpa:20.59.99  skos:closeMatch  cpc:88427 .
+    cpa:20.60.11  skos:closeMatch  cpc:35510 .
+    cpa:20.60.12  skos:closeMatch  cpc:35520 .
+    cpa:20.60.13  skos:closeMatch  cpc:35520 .
+    cpa:20.60.14  skos:closeMatch  cpc:35530 .
+    cpa:20.60.21  skos:closeMatch  cpc:35540 .
+    cpa:20.60.22  skos:closeMatch  cpc:35550 .
+    cpa:20.60.23  skos:closeMatch  cpc:35550 .
+    cpa:20.60.24  skos:closeMatch  cpc:35560 .
+    cpa:20.60.99  skos:closeMatch  cpc:88429 .
+    cpa:21.10.10  skos:closeMatch  cpc:35210 .
+    cpa:21.10.20  skos:closeMatch  cpc:35220 .
+    cpa:21.10.31  skos:closeMatch  cpc:35230 .
+    cpa:21.10.32  skos:closeMatch  cpc:35230 .
+    cpa:21.10.40  skos:closeMatch  cpc:35240 .
+    cpa:21.10.51  skos:closeMatch  cpc:35250 .
+    cpa:21.10.52  skos:closeMatch  cpc:35250 .
+    cpa:21.10.53  skos:closeMatch  cpc:35250 .
+    cpa:21.10.54  skos:closeMatch  cpc:35250 .
+    cpa:21.10.60  skos:closeMatch  cpc:35270 .
+    cpa:21.10.99  skos:closeMatch  cpc:88430 .
+    cpa:21.20.11  skos:closeMatch  cpc:35260 .
+    cpa:21.20.12  skos:closeMatch  cpc:35260 .
+    cpa:21.20.13  skos:closeMatch  cpc:35260 .
+    cpa:21.20.21  skos:closeMatch  cpc:35270 .
+    cpa:21.20.22  skos:closeMatch  cpc:35270 .
+    cpa:21.20.23  skos:closeMatch  cpc:35270 .
+    cpa:21.20.24  skos:closeMatch  cpc:35270 ;
+            skos:closeMatch  cpc:35290 .
+    cpa:21.20.99  skos:closeMatch  cpc:88430 .
+    cpa:22.11.11  skos:closeMatch  cpc:36111 .
+    cpa:22.11.12  skos:closeMatch  cpc:36112 .
+    cpa:22.11.13  skos:closeMatch  cpc:36113 .
+    cpa:22.11.14  skos:closeMatch  cpc:36113 .
+    cpa:22.11.15  skos:closeMatch  cpc:36114 .
+    cpa:22.11.16  skos:closeMatch  cpc:36115 .
+    cpa:22.11.20  skos:closeMatch  cpc:36120 .
+    cpa:22.11.99  skos:closeMatch  cpc:88511 .
+    cpa:22.19.10  skos:closeMatch  cpc:36210 .
+    cpa:22.19.20  skos:closeMatch  cpc:36220 .
+    cpa:22.19.30  skos:closeMatch  cpc:36230 .
+    cpa:22.19.40  skos:closeMatch  cpc:36240 .
+    cpa:22.19.50  skos:closeMatch  cpc:36250 .
+    cpa:22.19.60  skos:closeMatch  cpc:36260 .
+    cpa:22.19.71  skos:closeMatch  cpc:36270 .
+    cpa:22.19.72  skos:closeMatch  cpc:36270 .
+    cpa:22.19.73  skos:closeMatch  cpc:29600 ;
+            skos:closeMatch  cpc:36270 .
+    cpa:22.19.99  skos:closeMatch  cpc:88512 .
+    cpa:22.21.10  skos:closeMatch  cpc:36310 .
+    cpa:22.21.21  skos:closeMatch  cpc:36320 .
+    cpa:22.21.29  skos:closeMatch  cpc:36320 .
+    cpa:22.21.30  skos:closeMatch  cpc:36330 .
+    cpa:22.21.41  skos:closeMatch  cpc:36390 .
+    cpa:22.21.42  skos:closeMatch  cpc:36390 .
+    cpa:22.21.99  skos:closeMatch  cpc:88520 .
+    cpa:22.22.11  skos:closeMatch  cpc:36410 .
+    cpa:22.22.12  skos:closeMatch  cpc:36410 .
+    cpa:22.22.13  skos:closeMatch  cpc:36490 .
+    cpa:22.22.14  skos:closeMatch  cpc:36490 .
+    cpa:22.22.19  skos:closeMatch  cpc:36490 .
+    cpa:22.22.99  skos:closeMatch  cpc:88520 .
+    cpa:22.23.11  skos:closeMatch  cpc:36910 .
+    cpa:22.23.12  skos:closeMatch  cpc:36930 .
+    cpa:22.23.13  skos:closeMatch  cpc:36950 .
+    cpa:22.23.14  skos:closeMatch  cpc:36950 .
+    cpa:22.23.15  skos:closeMatch  cpc:38930 .
+    cpa:22.23.19  skos:closeMatch  cpc:36950 .
+    cpa:22.23.20  skos:closeMatch  cpc:38703 .
+    cpa:22.23.99  skos:closeMatch  cpc:88520 .
+    cpa:22.29.10  skos:closeMatch  cpc:28243 ;
+            skos:closeMatch  cpc:36972 .
+    cpa:22.29.21  skos:closeMatch  cpc:36920 .
+    cpa:22.29.22  skos:closeMatch  cpc:36920 .
+    cpa:22.29.23  skos:closeMatch  cpc:36940 .
+    cpa:22.29.24  skos:closeMatch  cpc:36960 .
+    cpa:22.29.25  skos:closeMatch  cpc:36990 .
+    cpa:22.29.26  skos:closeMatch  cpc:36990 .
+    cpa:22.29.29  skos:closeMatch  cpc:29600 ;
+            skos:closeMatch  cpc:36990 ;
+            skos:closeMatch  cpc:38994 .
+    cpa:22.29.91  skos:closeMatch  cpc:88520 .
+    cpa:22.29.99  skos:closeMatch  cpc:89200 .
+    cpa:23.11.11  skos:closeMatch  cpc:37112 .
+    cpa:23.11.12  skos:closeMatch  cpc:37113 .
+    cpa:23.11.99  skos:closeMatch  cpc:88531 .
+    cpa:23.12.11  skos:closeMatch  cpc:37114 .
+    cpa:23.12.12  skos:closeMatch  cpc:37115 .
+    cpa:23.12.13  skos:closeMatch  cpc:37116 .
+    cpa:23.12.99  skos:closeMatch  cpc:88531 .
+    cpa:23.13.11  skos:closeMatch  cpc:37191 .
+    cpa:23.13.12  skos:closeMatch  cpc:37193 .
+    cpa:23.13.13  skos:closeMatch  cpc:37193 .
+    cpa:23.13.14  skos:closeMatch  cpc:37199 .
+    cpa:23.13.91  skos:closeMatch  cpc:88531 .
+    cpa:23.13.92  skos:closeMatch  cpc:88531 .
+    cpa:23.13.99  skos:closeMatch  cpc:88531 .
+    cpa:23.14.11  skos:closeMatch  cpc:37121 .
+    cpa:23.14.12  skos:closeMatch  cpc:37129 .
+    cpa:23.14.99  skos:closeMatch  cpc:88531 .
+    cpa:23.19.11  skos:closeMatch  cpc:37111 .
+    cpa:23.19.12  skos:closeMatch  cpc:37117 .
+    cpa:23.19.21  skos:closeMatch  cpc:37192 .
+    cpa:23.19.22  skos:closeMatch  cpc:37194 .
+    cpa:23.19.23  skos:closeMatch  cpc:37195 .
+    cpa:23.19.24  skos:closeMatch  cpc:37196 .
+    cpa:23.19.25  skos:closeMatch  cpc:37197 .
+    cpa:23.19.26  skos:closeMatch  cpc:37199 .
+    cpa:23.19.91  skos:closeMatch  cpc:88531 .
+    cpa:23.19.99  skos:closeMatch  cpc:88531 .
+    cpa:23.20.11  skos:closeMatch  cpc:37310 .
+    cpa:23.20.12  skos:closeMatch  cpc:37320 .
+    cpa:23.20.13  skos:closeMatch  cpc:37330 .
+    cpa:23.20.14  skos:closeMatch  cpc:37340 .
+    cpa:23.20.99  skos:closeMatch  cpc:88532 .
+    cpa:23.31.10  skos:closeMatch  cpc:37370 .
+    cpa:23.31.99  skos:closeMatch  cpc:88533 .
+    cpa:23.32.11  skos:closeMatch  cpc:37350 .
+    cpa:23.32.12  skos:closeMatch  cpc:37350 .
+    cpa:23.32.13  skos:closeMatch  cpc:37360 .
+    cpa:23.32.99  skos:closeMatch  cpc:88533 .
+    cpa:23.41.11  skos:closeMatch  cpc:37221 .
+    cpa:23.41.12  skos:closeMatch  cpc:37221 .
+    cpa:23.41.13  skos:closeMatch  cpc:37222 .
+    cpa:23.41.99  skos:closeMatch  cpc:88534 .
+    cpa:23.42.10  skos:closeMatch  cpc:37210 .
+    cpa:23.42.99  skos:closeMatch  cpc:88534 .
+    cpa:23.43.10  skos:closeMatch  cpc:37292 .
+    cpa:23.43.99  skos:closeMatch  cpc:88534 .
+    cpa:23.44.11  skos:closeMatch  cpc:37291 .
+    cpa:23.44.12  skos:closeMatch  cpc:37291 ;
+            skos:closeMatch  cpc:46932 .
+    cpa:23.44.99  skos:closeMatch  cpc:88534 .
+    cpa:23.49.11  skos:closeMatch  cpc:37291 .
+    cpa:23.49.12  skos:closeMatch  cpc:37299 .
+    cpa:23.49.99  skos:closeMatch  cpc:88534 .
+    cpa:23.51.11  skos:closeMatch  cpc:37430 .
+    cpa:23.51.12  skos:closeMatch  cpc:37440 .
+    cpa:23.51.99  skos:closeMatch  cpc:88535 .
+    cpa:23.52.10  skos:closeMatch  cpc:37420 .
+    cpa:23.52.20  skos:closeMatch  cpc:37410 .
+    cpa:23.52.30  skos:closeMatch  cpc:37450 .
+    cpa:23.52.99  skos:closeMatch  cpc:88535 .
+    cpa:23.61.11  skos:closeMatch  cpc:37540 .
+    cpa:23.61.12  skos:closeMatch  cpc:37550 .
+    cpa:23.61.20  skos:closeMatch  cpc:38704 .
+    cpa:23.61.99  skos:closeMatch  cpc:88536 .
+    cpa:23.62.10  skos:closeMatch  cpc:37530 .
+    cpa:23.62.99  skos:closeMatch  cpc:88536 .
+    cpa:23.63.10  skos:closeMatch  cpc:37510 .
+    cpa:23.63.99  skos:closeMatch  cpc:88536 .
+    cpa:23.64.10  skos:closeMatch  cpc:37510 .
+    cpa:23.64.99  skos:closeMatch  cpc:88536 .
+    cpa:23.65.11  skos:closeMatch  cpc:37520 .
+    cpa:23.65.12  skos:closeMatch  cpc:37570 .
+    cpa:23.65.99  skos:closeMatch  cpc:88536 .
+    cpa:23.69.11  skos:closeMatch  cpc:37530 .
+    cpa:23.69.19  skos:closeMatch  cpc:37560 .
+    cpa:23.69.99  skos:closeMatch  cpc:88536 .
+    cpa:23.70.11  skos:closeMatch  cpc:37610 .
+    cpa:23.70.12  skos:closeMatch  cpc:37690 .
+    cpa:23.70.99  skos:closeMatch  cpc:88537 .
+    cpa:23.91.11  skos:closeMatch  cpc:37910 .
+    cpa:23.91.12  skos:closeMatch  cpc:37910 .
+    cpa:23.91.99  skos:closeMatch  cpc:88539 .
+    cpa:23.99.11  skos:closeMatch  cpc:37920 .
+    cpa:23.99.12  skos:closeMatch  cpc:37930 .
+    cpa:23.99.13  skos:closeMatch  cpc:37940 .
+    cpa:23.99.14  skos:closeMatch  cpc:37950 .
+    cpa:23.99.15  skos:closeMatch  cpc:37960 .
+    cpa:23.99.19  skos:closeMatch  cpc:37990 .
+    cpa:23.99.99  skos:closeMatch  cpc:88539 .
+    cpa:24.10.11  skos:closeMatch  cpc:41111 .
+    cpa:24.10.12  skos:closeMatch  cpc:41112 ;
+            skos:closeMatch  cpc:41113 ;
+            skos:closeMatch  cpc:41114 ;
+            skos:closeMatch  cpc:41115 .
+    cpa:24.10.13  skos:closeMatch  cpc:41116 .
+    cpa:24.10.14  skos:closeMatch  cpc:39350 ;
+            skos:closeMatch  cpc:41117 .
+    cpa:24.10.21  skos:closeMatch  cpc:41121 .
+    cpa:24.10.22  skos:closeMatch  cpc:41122 .
+    cpa:24.10.23  skos:closeMatch  cpc:41122 .
+    cpa:24.10.31  skos:closeMatch  cpc:41211 ;
+            skos:closeMatch  cpc:41231 .
+    cpa:24.10.32  skos:closeMatch  cpc:41212 .
+    cpa:24.10.33  skos:closeMatch  cpc:41213 .
+    cpa:24.10.34  skos:closeMatch  cpc:41214 .
+    cpa:24.10.35  skos:closeMatch  cpc:41213 ;
+            skos:closeMatch  cpc:41239 .
+    cpa:24.10.36  skos:closeMatch  cpc:41214 .
+    cpa:24.10.41  skos:closeMatch  cpc:41221 ;
+            skos:closeMatch  cpc:41231 .
+    cpa:24.10.42  skos:closeMatch  cpc:41223 ;
+            skos:closeMatch  cpc:41232 .
+    cpa:24.10.43  skos:closeMatch  cpc:41223 .
+    cpa:24.10.51  skos:closeMatch  cpc:41231 .
+    cpa:24.10.52  skos:closeMatch  cpc:41239 .
+    cpa:24.10.53  skos:closeMatch  cpc:41233 .
+    cpa:24.10.54  skos:closeMatch  cpc:41233 .
+    cpa:24.10.55  skos:closeMatch  cpc:41234 .
+    cpa:24.10.61  skos:closeMatch  cpc:41241 .
+    cpa:24.10.62  skos:closeMatch  cpc:41242 .
+    cpa:24.10.63  skos:closeMatch  cpc:41243 .
+    cpa:24.10.64  skos:closeMatch  cpc:41244 ;
+            skos:closeMatch  cpc:41265 .
+    cpa:24.10.65  skos:closeMatch  cpc:41243 .
+    cpa:24.10.66  skos:closeMatch  cpc:41244 ;
+            skos:closeMatch  cpc:41265 ;
+            skos:closeMatch  cpc:41271 ;
+            skos:closeMatch  cpc:41272 .
+    cpa:24.10.67  skos:closeMatch  cpc:41273 .
+    cpa:24.10.71  skos:closeMatch  cpc:41251 .
+    cpa:24.10.72  skos:closeMatch  cpc:41266 .
+    cpa:24.10.73  skos:closeMatch  cpc:41266 .
+    cpa:24.10.74  skos:closeMatch  cpc:41252 .
+    cpa:24.10.75  skos:closeMatch  cpc:41253 .
+    cpa:24.10.99  skos:closeMatch  cpc:88601 .
+    cpa:24.20.11  skos:closeMatch  cpc:41281 .
+    cpa:24.20.12  skos:closeMatch  cpc:41282 .
+    cpa:24.20.13  skos:closeMatch  cpc:41283 .
+    cpa:24.20.14  skos:closeMatch  cpc:41284 .
+    cpa:24.20.21  skos:closeMatch  cpc:41285 .
+    cpa:24.20.22  skos:closeMatch  cpc:41286 .
+    cpa:24.20.23  skos:closeMatch  cpc:41287 .
+    cpa:24.20.24  skos:closeMatch  cpc:41289 .
+    cpa:24.20.31  skos:closeMatch  cpc:41285 .
+    cpa:24.20.32  skos:closeMatch  cpc:41286 .
+    cpa:24.20.33  skos:closeMatch  cpc:41287 .
+    cpa:24.20.34  skos:closeMatch  cpc:41288 .
+    cpa:24.20.35  skos:closeMatch  cpc:41289 .
+    cpa:24.20.40  skos:closeMatch  cpc:41293 .
+    cpa:24.20.99  skos:closeMatch  cpc:88601 .
+    cpa:24.31.10  skos:closeMatch  cpc:41261 ;
+            skos:closeMatch  cpc:41262 .
+    cpa:24.31.20  skos:closeMatch  cpc:41264 ;
+            skos:closeMatch  cpc:41266 ;
+            skos:closeMatch  cpc:41271 ;
+            skos:closeMatch  cpc:41272 .
+    cpa:24.31.30  skos:closeMatch  cpc:41264 .
+    cpa:24.31.99  skos:closeMatch  cpc:88601 .
+    cpa:24.32.10  skos:closeMatch  cpc:41222 ;
+            skos:closeMatch  cpc:41224 ;
+            skos:closeMatch  cpc:41231 ;
+            skos:closeMatch  cpc:41232 ;
+            skos:closeMatch  cpc:41239 .
+    cpa:24.32.20  skos:closeMatch  cpc:41231 .
+    cpa:24.32.99  skos:closeMatch  cpc:88601 .
+    cpa:24.33.11  skos:closeMatch  cpc:41262 .
+    cpa:24.33.12  skos:closeMatch  cpc:41266 .
+    cpa:24.33.20  skos:closeMatch  cpc:41262 .
+    cpa:24.33.30  skos:closeMatch  cpc:42190 .
+    cpa:24.33.99  skos:closeMatch  cpc:88601 .
+    cpa:24.34.11  skos:closeMatch  cpc:41263 .
+    cpa:24.34.12  skos:closeMatch  cpc:41267 .
+    cpa:24.34.13  skos:closeMatch  cpc:41267 .
+    cpa:24.34.99  skos:closeMatch  cpc:88601 .
+    cpa:24.41.10  skos:closeMatch  cpc:41310 .
+    cpa:24.41.20  skos:closeMatch  cpc:41320 .
+    cpa:24.41.30  skos:closeMatch  cpc:41330 .
+    cpa:24.41.40  skos:closeMatch  cpc:41340 .
+    cpa:24.41.50  skos:closeMatch  cpc:41350 .
+    cpa:24.41.99  skos:closeMatch  cpc:88602 .
+    cpa:24.42.11  skos:closeMatch  cpc:41431 .
+    cpa:24.42.12  skos:closeMatch  cpc:41432 .
+    cpa:24.42.21  skos:closeMatch  cpc:41531 .
+    cpa:24.42.22  skos:closeMatch  cpc:41532 .
+    cpa:24.42.23  skos:closeMatch  cpc:41533 .
+    cpa:24.42.24  skos:closeMatch  cpc:41534 .
+    cpa:24.42.25  skos:closeMatch  cpc:41535 .
+    cpa:24.42.26  skos:closeMatch  cpc:41536 .
+    cpa:24.42.99  skos:closeMatch  cpc:88602 .
+    cpa:24.43.11  skos:closeMatch  cpc:41441 .
+    cpa:24.43.12  skos:closeMatch  cpc:41442 .
+    cpa:24.43.13  skos:closeMatch  cpc:41443 .
+    cpa:24.43.21  skos:closeMatch  cpc:41542 .
+    cpa:24.43.22  skos:closeMatch  cpc:41544 .
+    cpa:24.43.23  skos:closeMatch  cpc:41545 .
+    cpa:24.43.24  skos:closeMatch  cpc:41547 .
+    cpa:24.43.99  skos:closeMatch  cpc:88602 .
+    cpa:24.44.11  skos:closeMatch  cpc:41411 .
+    cpa:24.44.12  skos:closeMatch  cpc:41412 .
+    cpa:24.44.13  skos:closeMatch  cpc:41413 .
+    cpa:24.44.21  skos:closeMatch  cpc:41511 .
+    cpa:24.44.22  skos:closeMatch  cpc:41512 .
+    cpa:24.44.23  skos:closeMatch  cpc:41513 .
+    cpa:24.44.24  skos:closeMatch  cpc:41514 .
+    cpa:24.44.25  skos:closeMatch  cpc:41515 .
+    cpa:24.44.26  skos:closeMatch  cpc:41516 .
+    cpa:24.44.99  skos:closeMatch  cpc:88602 .
+    cpa:24.45.11  skos:closeMatch  cpc:41422 .
+    cpa:24.45.12  skos:closeMatch  cpc:41421 .
+    cpa:24.45.21  skos:closeMatch  cpc:41521 .
+    cpa:24.45.22  skos:closeMatch  cpc:41522 .
+    cpa:24.45.23  skos:closeMatch  cpc:41523 .
+    cpa:24.45.24  skos:closeMatch  cpc:41524 .
+    cpa:24.45.30  skos:closeMatch  cpc:41601 ;
+            skos:closeMatch  cpc:41602 ;
+            skos:closeMatch  cpc:41603 ;
+            skos:closeMatch  cpc:41604 .
+    cpa:24.45.99  skos:closeMatch  cpc:88602 .
+    cpa:24.46.10  skos:closeMatch  cpc:33610 .
+    cpa:24.46.99  skos:closeMatch  cpc:88602 .
+    cpa:24.51.11  skos:closeMatch  cpc:89310 .
+    cpa:24.51.12  skos:closeMatch  cpc:89310 .
+    cpa:24.51.13  skos:closeMatch  cpc:89310 .
+    cpa:24.51.20  skos:closeMatch  cpc:41291 .
+    cpa:24.51.30  skos:closeMatch  cpc:41292 .
+    cpa:24.51.99  skos:closeMatch  cpc:89310 .
+    cpa:24.52.10  skos:closeMatch  cpc:89310 .
+    cpa:24.52.20  skos:closeMatch  cpc:41291 .
+    cpa:24.52.30  skos:closeMatch  cpc:41292 .
+    cpa:24.53.10  skos:closeMatch  cpc:89320 .
+    cpa:24.54.10  skos:closeMatch  cpc:89320 .
+    cpa:25.11.10  skos:closeMatch  cpc:38702 .
+    cpa:25.11.21  skos:closeMatch  cpc:42110 .
+    cpa:25.11.22  skos:closeMatch  cpc:42110 .
+    cpa:25.11.23  skos:closeMatch  cpc:42190 .
+    cpa:25.11.99  skos:closeMatch  cpc:88711 .
+    cpa:25.12.10  skos:closeMatch  cpc:42120 .
+    cpa:25.12.99  skos:closeMatch  cpc:88711 .
+    cpa:25.21.11  skos:closeMatch  cpc:44823 .
+    cpa:25.21.12  skos:closeMatch  cpc:44825 .
+    cpa:25.21.13  skos:closeMatch  cpc:44833 .
+    cpa:25.21.99  skos:closeMatch  cpc:88712 .
+    cpa:25.29.11  skos:closeMatch  cpc:42210 .
+    cpa:25.29.12  skos:closeMatch  cpc:42220 .
+    cpa:25.29.99  skos:closeMatch  cpc:88712 .
+    cpa:25.30.11  skos:closeMatch  cpc:42320 .
+    cpa:25.30.12  skos:closeMatch  cpc:42330 .
+    cpa:25.30.13  skos:closeMatch  cpc:42342 .
+    cpa:25.30.21  skos:closeMatch  cpc:42310 .
+    cpa:25.30.22  skos:closeMatch  cpc:42341 .
+    cpa:25.30.99  skos:closeMatch  cpc:88713 .
+    cpa:25.40.11  skos:closeMatch  cpc:44720 .
+    cpa:25.40.12  skos:closeMatch  cpc:44730 .
+    cpa:25.40.13  skos:closeMatch  cpc:44740 .
+    cpa:25.40.14  skos:closeMatch  cpc:44760 .
+    cpa:25.40.99  skos:closeMatch  cpc:88720 .
+    cpa:25.50.11  skos:closeMatch  cpc:89330 .
+    cpa:25.50.12  skos:closeMatch  cpc:89330 .
+    cpa:25.50.13  skos:closeMatch  cpc:89330 .
+    cpa:25.50.20  skos:closeMatch  cpc:89330 .
+    cpa:25.61.11  skos:closeMatch  cpc:88731 .
+    cpa:25.61.12  skos:closeMatch  cpc:88731 .
+    cpa:25.61.21  skos:closeMatch  cpc:88731 .
+    cpa:25.61.22  skos:closeMatch  cpc:88731 .
+    cpa:25.62.10  skos:closeMatch  cpc:88732 .
+    cpa:25.62.20  skos:closeMatch  cpc:88732 .
+    cpa:25.71.11  skos:closeMatch  cpc:42913 .
+    cpa:25.71.12  skos:closeMatch  cpc:42914 .
+    cpa:25.71.13  skos:closeMatch  cpc:42915 .
+    cpa:25.71.14  skos:closeMatch  cpc:42916 .
+    cpa:25.71.15  skos:closeMatch  cpc:44750 .
+    cpa:25.71.99  skos:closeMatch  cpc:88733 .
+    cpa:25.72.11  skos:closeMatch  cpc:42992 .
+    cpa:25.72.12  skos:closeMatch  cpc:42992 .
+    cpa:25.72.13  skos:closeMatch  cpc:42992 .
+    cpa:25.72.14  skos:closeMatch  cpc:42992 .
+    cpa:25.72.99  skos:closeMatch  cpc:88733 .
+    cpa:25.73.10  skos:closeMatch  cpc:42921 .
+    cpa:25.73.20  skos:closeMatch  cpc:42921 .
+    cpa:25.73.30  skos:closeMatch  cpc:42921 .
+    cpa:25.73.40  skos:closeMatch  cpc:42922 .
+    cpa:25.73.50  skos:closeMatch  cpc:44916 .
+    cpa:25.73.60  skos:closeMatch  cpc:42922 .
+    cpa:25.73.99  skos:closeMatch  cpc:88733 .
+    cpa:25.91.11  skos:closeMatch  cpc:42931 .
+    cpa:25.91.12  skos:closeMatch  cpc:42931 .
+    cpa:25.91.99  skos:closeMatch  cpc:88739 .
+    cpa:25.92.11  skos:closeMatch  cpc:42931 .
+    cpa:25.92.12  skos:closeMatch  cpc:42931 .
+    cpa:25.92.13  skos:closeMatch  cpc:42932 .
+    cpa:25.92.99  skos:closeMatch  cpc:88739 .
+    cpa:25.93.11  skos:closeMatch  cpc:42941 .
+    cpa:25.93.12  skos:closeMatch  cpc:42942 ;
+            skos:closeMatch  cpc:42946 .
+    cpa:25.93.13  skos:closeMatch  cpc:42943 .
+    cpa:25.93.14  skos:closeMatch  cpc:42944 .
+    cpa:25.93.15  skos:closeMatch  cpc:42950 .
+    cpa:25.93.16  skos:closeMatch  cpc:42945 ;
+            skos:closeMatch  cpc:42999 .
+    cpa:25.93.17  skos:closeMatch  cpc:42991 .
+    cpa:25.93.18  skos:closeMatch  cpc:42997 .
+    cpa:25.93.99  skos:closeMatch  cpc:88739 .
+    cpa:25.94.11  skos:closeMatch  cpc:42944 .
+    cpa:25.94.12  skos:closeMatch  cpc:42944 .
+    cpa:25.94.13  skos:closeMatch  cpc:42944 .
+    cpa:25.94.99  skos:closeMatch  cpc:88739 .
+    cpa:25.99.11  skos:closeMatch  cpc:42911 .
+    cpa:25.99.12  skos:closeMatch  cpc:42912 .
+    cpa:25.99.21  skos:closeMatch  cpc:42993 .
+    cpa:25.99.22  skos:closeMatch  cpc:42994 .
+    cpa:25.99.23  skos:closeMatch  cpc:42995 .
+    cpa:25.99.24  skos:closeMatch  cpc:42996 .
+    cpa:25.99.25  skos:closeMatch  cpc:42997 .
+    cpa:25.99.26  skos:closeMatch  cpc:42998 .
+    cpa:25.99.29  skos:closeMatch  cpc:38994 ;
+            skos:closeMatch  cpc:42999 ;
+            skos:closeMatch  cpc:46931 .
+    cpa:25.99.99  skos:closeMatch  cpc:88739 .
+    cpa:26.11.11  skos:closeMatch  cpc:47140 .
+    cpa:26.11.12  skos:closeMatch  cpc:47140 .
+    cpa:26.11.21  skos:closeMatch  cpc:47150 .
+    cpa:26.11.22  skos:closeMatch  cpc:47150 .
+    cpa:26.11.30  skos:closeMatch  cpc:47160 .
+    cpa:26.11.40  skos:closeMatch  cpc:47173 ;
+            skos:closeMatch  cpc:47402 .
+    cpa:26.11.50  skos:closeMatch  cpc:47130 .
+    cpa:26.11.91  skos:closeMatch  cpc:88741 .
+    cpa:26.11.99  skos:closeMatch  cpc:88741 .
+    cpa:26.12.10  skos:closeMatch  cpc:47130 .
+    cpa:26.12.20  skos:closeMatch  cpc:45281 .
+    cpa:26.12.30  skos:closeMatch  cpc:47920 .
+    cpa:26.12.91  skos:closeMatch  cpc:88741 .
+    cpa:26.12.99  skos:closeMatch  cpc:88741 .
+    cpa:26.20.11  skos:closeMatch  cpc:45220 .
+    cpa:26.20.12  skos:closeMatch  cpc:45142 .
+    cpa:26.20.13  skos:closeMatch  cpc:45230 .
+    cpa:26.20.14  skos:closeMatch  cpc:45240 .
+    cpa:26.20.15  skos:closeMatch  cpc:45250 .
+    cpa:26.20.16  skos:closeMatch  cpc:45261 ;
+            skos:closeMatch  cpc:45262 ;
+            skos:closeMatch  cpc:45263 ;
+            skos:closeMatch  cpc:45264 ;
+            skos:closeMatch  cpc:45265 ;
+            skos:closeMatch  cpc:45269 .
+    cpa:26.20.17  skos:closeMatch  cpc:47315 .
+    cpa:26.20.18  skos:closeMatch  cpc:45266 .
+    cpa:26.20.21  skos:closeMatch  cpc:45271 ;
+            skos:closeMatch  cpc:45272 .
+    cpa:26.20.22  skos:closeMatch  cpc:47550 .
+    cpa:26.20.30  skos:closeMatch  cpc:45289 .
+    cpa:26.20.40  skos:closeMatch  cpc:45290 .
+    cpa:26.20.91  skos:closeMatch  cpc:88742 .
+    cpa:26.20.99  skos:closeMatch  cpc:88742 .
+    cpa:26.30.11  skos:closeMatch  cpc:47211 .
+    cpa:26.30.12  skos:closeMatch  cpc:47212 .
+    cpa:26.30.13  skos:closeMatch  cpc:47213 .
+    cpa:26.30.21  skos:closeMatch  cpc:47221 .
+    cpa:26.30.22  skos:closeMatch  cpc:47222 .
+    cpa:26.30.23  skos:closeMatch  cpc:47223 .
+    cpa:26.30.30  skos:closeMatch  cpc:47401 .
+    cpa:26.30.40  skos:closeMatch  cpc:47403 .
+    cpa:26.30.50  skos:closeMatch  cpc:46921 .
+    cpa:26.30.60  skos:closeMatch  cpc:46960 .
+    cpa:26.30.99  skos:closeMatch  cpc:88743 .
+    cpa:26.40.11  skos:closeMatch  cpc:47311 .
+    cpa:26.40.12  skos:closeMatch  cpc:47312 .
+    cpa:26.40.20  skos:closeMatch  cpc:47313 .
+    cpa:26.40.31  skos:closeMatch  cpc:47321 .
+    cpa:26.40.32  skos:closeMatch  cpc:47321 .
+    cpa:26.40.33  skos:closeMatch  cpc:47214 ;
+            skos:closeMatch  cpc:47323 .
+    cpa:26.40.34  skos:closeMatch  cpc:47314 .
+    cpa:26.40.41  skos:closeMatch  cpc:47330 .
+    cpa:26.40.42  skos:closeMatch  cpc:47330 .
+    cpa:26.40.43  skos:closeMatch  cpc:47330 .
+    cpa:26.40.44  skos:closeMatch  cpc:47223 .
+    cpa:26.40.51  skos:closeMatch  cpc:47402 .
+    cpa:26.40.52  skos:closeMatch  cpc:47403 .
+    cpa:26.40.60  skos:closeMatch  cpc:38581 .
+    cpa:26.40.99  skos:closeMatch  cpc:88744 .
+    cpa:26.51.11  skos:closeMatch  cpc:48211 .
+    cpa:26.51.12  skos:closeMatch  cpc:48212 ;
+            skos:closeMatch  cpc:48219 .
+    cpa:26.51.20  skos:closeMatch  cpc:48220 .
+    cpa:26.51.31  skos:closeMatch  cpc:48231 .
+    cpa:26.51.32  skos:closeMatch  cpc:48232 .
+    cpa:26.51.33  skos:closeMatch  cpc:48233 .
+    cpa:26.51.41  skos:closeMatch  cpc:48241 .
+    cpa:26.51.42  skos:closeMatch  cpc:48242 .
+    cpa:26.51.43  skos:closeMatch  cpc:48243 .
+    cpa:26.51.44  skos:closeMatch  cpc:48244 .
+    cpa:26.51.45  skos:closeMatch  cpc:48249 .
+    cpa:26.51.51  skos:closeMatch  cpc:48251 .
+    cpa:26.51.52  skos:closeMatch  cpc:48252 .
+    cpa:26.51.53  skos:closeMatch  cpc:48253 .
+    cpa:26.51.61  skos:closeMatch  cpc:48261 .
+    cpa:26.51.62  skos:closeMatch  cpc:48262 .
+    cpa:26.51.63  skos:closeMatch  cpc:48263 .
+    cpa:26.51.64  skos:closeMatch  cpc:48264 .
+    cpa:26.51.65  skos:closeMatch  cpc:48266 .
+    cpa:26.51.66  skos:closeMatch  cpc:48269 .
+    cpa:26.51.70  skos:closeMatch  cpc:48269 .
+    cpa:26.51.81  skos:closeMatch  cpc:47403 .
+    cpa:26.51.82  skos:closeMatch  cpc:48281 .
+    cpa:26.51.83  skos:closeMatch  cpc:48282 .
+    cpa:26.51.84  skos:closeMatch  cpc:48283 .
+    cpa:26.51.85  skos:closeMatch  cpc:48284 .
+    cpa:26.51.86  skos:closeMatch  cpc:48281 ;
+            skos:closeMatch  cpc:48285 .
+    cpa:26.51.99  skos:closeMatch  cpc:88745 .
+    cpa:26.52.11  skos:closeMatch  cpc:48410 .
+    cpa:26.52.12  skos:closeMatch  cpc:48410 .
+    cpa:26.52.13  skos:closeMatch  cpc:48420 .
+    cpa:26.52.14  skos:closeMatch  cpc:48420 .
+    cpa:26.52.21  skos:closeMatch  cpc:48440 .
+    cpa:26.52.22  skos:closeMatch  cpc:48490 .
+    cpa:26.52.23  skos:closeMatch  cpc:48490 .
+    cpa:26.52.24  skos:closeMatch  cpc:48430 .
+    cpa:26.52.99  skos:closeMatch  cpc:88746 .
+    cpa:26.60.11  skos:closeMatch  cpc:48110 .
+    cpa:26.60.12  skos:closeMatch  cpc:48121 .
+    cpa:26.60.13  skos:closeMatch  cpc:48122 .
+    cpa:26.60.14  skos:closeMatch  cpc:48172 .
+    cpa:26.60.91  skos:closeMatch  cpc:88747 .
+    cpa:26.60.99  skos:closeMatch  cpc:88747 .
+    cpa:26.70.11  skos:closeMatch  cpc:48321 .
+    cpa:26.70.12  skos:closeMatch  cpc:48322 .
+    cpa:26.70.13  skos:closeMatch  cpc:47215 .
+    cpa:26.70.14  skos:closeMatch  cpc:48322 .
+    cpa:26.70.15  skos:closeMatch  cpc:48322 .
+    cpa:26.70.16  skos:closeMatch  cpc:48323 .
+    cpa:26.70.19  skos:closeMatch  cpc:48329 ;
+            skos:closeMatch  cpc:48353 .
+    cpa:26.70.21  skos:closeMatch  cpc:48311 .
+    cpa:26.70.22  skos:closeMatch  cpc:48314 .
+    cpa:26.70.23  skos:closeMatch  cpc:48315 .
+    cpa:26.70.24  skos:closeMatch  cpc:48212 ;
+            skos:closeMatch  cpc:48253 ;
+            skos:closeMatch  cpc:48264 ;
+            skos:closeMatch  cpc:48269 .
+    cpa:26.70.25  skos:closeMatch  cpc:48351 .
+    cpa:26.70.26  skos:closeMatch  cpc:48354 .
+    cpa:26.70.99  skos:closeMatch  cpc:88748 .
+    cpa:26.80.11  skos:closeMatch  cpc:47530 .
+    cpa:26.80.12  skos:closeMatch  cpc:47540 .
+    cpa:26.80.13  skos:closeMatch  cpc:47590 .
+    cpa:26.80.14  skos:closeMatch  cpc:47910 .
+    cpa:26.80.99  skos:closeMatch  cpc:88749 .
+    cpa:27.11.10  skos:closeMatch  cpc:46111 .
+    cpa:27.11.21  skos:closeMatch  cpc:46112 .
+    cpa:27.11.22  skos:closeMatch  cpc:46112 .
+    cpa:27.11.23  skos:closeMatch  cpc:46112 .
+    cpa:27.11.24  skos:closeMatch  cpc:46112 .
+    cpa:27.11.25  skos:closeMatch  cpc:46112 .
+    cpa:27.11.26  skos:closeMatch  cpc:46112 .
+    cpa:27.11.31  skos:closeMatch  cpc:46113 .
+    cpa:27.11.32  skos:closeMatch  cpc:46113 .
+    cpa:27.11.41  skos:closeMatch  cpc:46121 .
+    cpa:27.11.42  skos:closeMatch  cpc:46121 .
+    cpa:27.11.43  skos:closeMatch  cpc:46121 .
+    cpa:27.11.50  skos:closeMatch  cpc:46122 .
+    cpa:27.11.61  skos:closeMatch  cpc:46131 .
+    cpa:27.11.62  skos:closeMatch  cpc:46132 .
+    cpa:27.11.99  skos:closeMatch  cpc:88751 .
+    cpa:27.12.10  skos:closeMatch  cpc:46211 .
+    cpa:27.12.21  skos:closeMatch  cpc:46212 .
+    cpa:27.12.22  skos:closeMatch  cpc:46212 .
+    cpa:27.12.23  skos:closeMatch  cpc:46212 .
+    cpa:27.12.24  skos:closeMatch  cpc:46212 .
+    cpa:27.12.31  skos:closeMatch  cpc:46213 .
+    cpa:27.12.32  skos:closeMatch  cpc:46214 .
+    cpa:27.12.40  skos:closeMatch  cpc:46220 .
+    cpa:27.12.99  skos:closeMatch  cpc:88751 .
+    cpa:27.20.11  skos:closeMatch  cpc:46410 .
+    cpa:27.20.12  skos:closeMatch  cpc:46430 .
+    cpa:27.20.21  skos:closeMatch  cpc:46420 .
+    cpa:27.20.22  skos:closeMatch  cpc:46420 .
+    cpa:27.20.23  skos:closeMatch  cpc:46420 .
+    cpa:27.20.24  skos:closeMatch  cpc:46430 .
+    cpa:27.20.99  skos:closeMatch  cpc:88752 .
+    cpa:27.31.11  skos:closeMatch  cpc:46360 .
+    cpa:27.31.12  skos:closeMatch  cpc:48311 .
+    cpa:27.31.99  skos:closeMatch  cpc:88753 .
+    cpa:27.32.11  skos:closeMatch  cpc:46310 .
+    cpa:27.32.12  skos:closeMatch  cpc:46320 .
+    cpa:27.32.13  skos:closeMatch  cpc:46340 .
+    cpa:27.32.14  skos:closeMatch  cpc:46350 .
+    cpa:27.32.99  skos:closeMatch  cpc:88754 .
+    cpa:27.33.11  skos:closeMatch  cpc:46212 .
+    cpa:27.33.12  skos:closeMatch  cpc:46212 .
+    cpa:27.33.13  skos:closeMatch  cpc:46212 ;
+            skos:closeMatch  cpc:46215 .
+    cpa:27.33.14  skos:closeMatch  cpc:36950 ;
+            skos:closeMatch  cpc:36980 .
+    cpa:27.33.99  skos:closeMatch  cpc:88755 .
+    cpa:27.40.11  skos:closeMatch  cpc:46510 .
+    cpa:27.40.12  skos:closeMatch  cpc:46510 .
+    cpa:27.40.13  skos:closeMatch  cpc:46510 .
+    cpa:27.40.14  skos:closeMatch  cpc:46510 .
+    cpa:27.40.15  skos:closeMatch  cpc:46510 .
+    cpa:27.40.21  skos:closeMatch  cpc:46531 .
+    cpa:27.40.22  skos:closeMatch  cpc:46531 .
+    cpa:27.40.23  skos:closeMatch  cpc:46531 .
+    cpa:27.40.24  skos:closeMatch  cpc:46531 .
+    cpa:27.40.25  skos:closeMatch  cpc:46531 .
+    cpa:27.40.30  skos:closeMatch  cpc:46532 ;
+            skos:closeMatch  cpc:46539 ;
+            skos:closeMatch  cpc:46910 .
+    cpa:27.40.41  skos:closeMatch  cpc:46541 .
+    cpa:27.40.42  skos:closeMatch  cpc:46542 .
+    cpa:27.40.99  skos:closeMatch  cpc:88756 .
+    cpa:27.51.11  skos:closeMatch  cpc:44811 .
+    cpa:27.51.12  skos:closeMatch  cpc:44812 .
+    cpa:27.51.13  skos:closeMatch  cpc:44812 .
+    cpa:27.51.14  skos:closeMatch  cpc:44813 .
+    cpa:27.51.15  skos:closeMatch  cpc:44815 .
+    cpa:27.51.21  skos:closeMatch  cpc:44816 ;
+            skos:closeMatch  cpc:44919 .
+    cpa:27.51.22  skos:closeMatch  cpc:44816 .
+    cpa:27.51.23  skos:closeMatch  cpc:44816 .
+    cpa:27.51.24  skos:closeMatch  cpc:44816 .
+    cpa:27.51.25  skos:closeMatch  cpc:44817 .
+    cpa:27.51.26  skos:closeMatch  cpc:44817 .
+    cpa:27.51.27  skos:closeMatch  cpc:44817 .
+    cpa:27.51.28  skos:closeMatch  cpc:44817 .
+    cpa:27.51.29  skos:closeMatch  cpc:44818 .
+    cpa:27.51.30  skos:closeMatch  cpc:44831 .
+    cpa:27.51.99  skos:closeMatch  cpc:88757 .
+    cpa:27.52.11  skos:closeMatch  cpc:44821 .
+    cpa:27.52.12  skos:closeMatch  cpc:44822 .
+    cpa:27.52.13  skos:closeMatch  cpc:44824 .
+    cpa:27.52.14  skos:closeMatch  cpc:44826 .
+    cpa:27.52.20  skos:closeMatch  cpc:44832 .
+    cpa:27.52.99  skos:closeMatch  cpc:88757 .
+    cpa:27.90.11  skos:closeMatch  cpc:46939 .
+    cpa:27.90.12  skos:closeMatch  cpc:46940 .
+    cpa:27.90.13  skos:closeMatch  cpc:46950 .
+    cpa:27.90.20  skos:closeMatch  cpc:46929 .
+    cpa:27.90.31  skos:closeMatch  cpc:44241 .
+    cpa:27.90.32  skos:closeMatch  cpc:44255 .
+    cpa:27.90.33  skos:closeMatch  cpc:46960 .
+    cpa:27.90.41  skos:closeMatch  cpc:46122 ;
+            skos:closeMatch  cpc:46132 .
+    cpa:27.90.42  skos:closeMatch  cpc:46131 .
+    cpa:27.90.43  skos:closeMatch  cpc:46211 .
+    cpa:27.90.44  skos:closeMatch  cpc:46340 .
+    cpa:27.90.45  skos:closeMatch  cpc:46939 .
+    cpa:27.90.51  skos:closeMatch  cpc:47110 .
+    cpa:27.90.52  skos:closeMatch  cpc:47110 .
+    cpa:27.90.53  skos:closeMatch  cpc:47110 .
+    cpa:27.90.60  skos:closeMatch  cpc:47120 .
+    cpa:27.90.70  skos:closeMatch  cpc:46929 .
+    cpa:27.90.81  skos:closeMatch  cpc:47171 .
+    cpa:27.90.82  skos:closeMatch  cpc:47172 .
+    cpa:27.90.99  skos:closeMatch  cpc:88759 .
+    cpa:28.11.11  skos:closeMatch  cpc:43110 .
+    cpa:28.11.12  skos:closeMatch  cpc:43110 .
+    cpa:28.11.13  skos:closeMatch  cpc:43110 .
+    cpa:28.11.21  skos:closeMatch  cpc:43141 .
+    cpa:28.11.22  skos:closeMatch  cpc:43142 .
+    cpa:28.11.23  skos:closeMatch  cpc:43143 .
+    cpa:28.11.24  skos:closeMatch  cpc:46113 .
+    cpa:28.11.31  skos:closeMatch  cpc:43153 .
+    cpa:28.11.32  skos:closeMatch  cpc:43154 .
+    cpa:28.11.33  skos:closeMatch  cpc:43156 .
+    cpa:28.11.41  skos:closeMatch  cpc:43151 .
+    cpa:28.11.42  skos:closeMatch  cpc:43151 .
+    cpa:28.11.99  skos:closeMatch  cpc:88761 .
+    cpa:28.12.11  skos:closeMatch  cpc:43211 .
+    cpa:28.12.12  skos:closeMatch  cpc:43219 .
+    cpa:28.12.13  skos:closeMatch  cpc:43220 .
+    cpa:28.12.14  skos:closeMatch  cpc:43240 .
+    cpa:28.12.15  skos:closeMatch  cpc:43220 .
+    cpa:28.12.16  skos:closeMatch  cpc:43211 ;
+            skos:closeMatch  cpc:43219 .
+    cpa:28.12.20  skos:closeMatch  cpc:43251 .
+    cpa:28.12.99  skos:closeMatch  cpc:88762 .
+    cpa:28.13.11  skos:closeMatch  cpc:43220 .
+    cpa:28.13.12  skos:closeMatch  cpc:43220 .
+    cpa:28.13.13  skos:closeMatch  cpc:43220 .
+    cpa:28.13.14  skos:closeMatch  cpc:43220 .
+    cpa:28.13.21  skos:closeMatch  cpc:43230 .
+    cpa:28.13.22  skos:closeMatch  cpc:43230 .
+    cpa:28.13.23  skos:closeMatch  cpc:43230 .
+    cpa:28.13.24  skos:closeMatch  cpc:43230 .
+    cpa:28.13.25  skos:closeMatch  cpc:43230 .
+    cpa:28.13.26  skos:closeMatch  cpc:43230 .
+    cpa:28.13.27  skos:closeMatch  cpc:43230 .
+    cpa:28.13.28  skos:closeMatch  cpc:43230 .
+    cpa:28.13.31  skos:closeMatch  cpc:43252 .
+    cpa:28.13.32  skos:closeMatch  cpc:43253 .
+    cpa:28.13.99  skos:closeMatch  cpc:88763 .
+    cpa:28.14.11  skos:closeMatch  cpc:43240 .
+    cpa:28.14.12  skos:closeMatch  cpc:43240 .
+    cpa:28.14.13  skos:closeMatch  cpc:43240 .
+    cpa:28.14.20  skos:closeMatch  cpc:43254 .
+    cpa:28.14.99  skos:closeMatch  cpc:88763 .
+    cpa:28.15.10  skos:closeMatch  cpc:43310 .
+    cpa:28.15.21  skos:closeMatch  cpc:43320 .
+    cpa:28.15.22  skos:closeMatch  cpc:43320 .
+    cpa:28.15.23  skos:closeMatch  cpc:43320 .
+    cpa:28.15.24  skos:closeMatch  cpc:43320 .
+    cpa:28.15.25  skos:closeMatch  cpc:43320 .
+    cpa:28.15.26  skos:closeMatch  cpc:43320 .
+    cpa:28.15.31  skos:closeMatch  cpc:43331 .
+    cpa:28.15.32  skos:closeMatch  cpc:43332 .
+    cpa:28.15.39  skos:closeMatch  cpc:43332 .
+    cpa:28.15.99  skos:closeMatch  cpc:88764 .
+    cpa:28.21.11  skos:closeMatch  cpc:43410 .
+    cpa:28.21.12  skos:closeMatch  cpc:43420 .
+    cpa:28.21.13  skos:closeMatch  cpc:43420 .
+    cpa:28.21.14  skos:closeMatch  cpc:43430 .
+    cpa:28.21.99  skos:closeMatch  cpc:88765 .
+    cpa:28.22.11  skos:closeMatch  cpc:43510 .
+    cpa:28.22.12  skos:closeMatch  cpc:43510 .
+    cpa:28.22.13  skos:closeMatch  cpc:43510 .
+    cpa:28.22.14  skos:closeMatch  cpc:43520 .
+    cpa:28.22.15  skos:closeMatch  cpc:43530 .
+    cpa:28.22.16  skos:closeMatch  cpc:43540 .
+    cpa:28.22.17  skos:closeMatch  cpc:43550 .
+    cpa:28.22.18  skos:closeMatch  cpc:43560 .
+    cpa:28.22.19  skos:closeMatch  cpc:43570 .
+    cpa:28.22.20  skos:closeMatch  cpc:43580 .
+    cpa:28.22.99  skos:closeMatch  cpc:88766 .
+    cpa:28.23.10  skos:closeMatch  cpc:45130 ;
+            skos:closeMatch  cpc:45141 .
+    cpa:28.23.21  skos:closeMatch  cpc:44917 ;
+            skos:closeMatch  cpc:45110 ;
+            skos:closeMatch  cpc:45150 ;
+            skos:closeMatch  cpc:45160 .
+    cpa:28.23.22  skos:closeMatch  cpc:44922 ;
+            skos:closeMatch  cpc:45170 ;
+            skos:closeMatch  cpc:45180 .
+    cpa:28.23.91  skos:closeMatch  cpc:88767 .
+    cpa:28.23.99  skos:closeMatch  cpc:88767 .
+    cpa:28.24.11  skos:closeMatch  cpc:44232 .
+    cpa:28.24.12  skos:closeMatch  cpc:44231 .
+    cpa:28.24.21  skos:closeMatch  cpc:44253 .
+    cpa:28.24.22  skos:closeMatch  cpc:44253 .
+    cpa:28.24.99  skos:closeMatch  cpc:88768 .
+    cpa:28.25.11  skos:closeMatch  cpc:43911 .
+    cpa:28.25.12  skos:closeMatch  cpc:43912 .
+    cpa:28.25.13  skos:closeMatch  cpc:43913 .
+    cpa:28.25.14  skos:closeMatch  cpc:43914 .
+    cpa:28.25.20  skos:closeMatch  cpc:43931 .
+    cpa:28.25.30  skos:closeMatch  cpc:43941 .
+    cpa:28.25.99  skos:closeMatch  cpc:88769 .
+    cpa:28.29.11  skos:closeMatch  cpc:43911 .
+    cpa:28.29.12  skos:closeMatch  cpc:43914 .
+    cpa:28.29.13  skos:closeMatch  cpc:43915 .
+    cpa:28.29.21  skos:closeMatch  cpc:43921 .
+    cpa:28.29.22  skos:closeMatch  cpc:43923 .
+    cpa:28.29.23  skos:closeMatch  cpc:43924 .
+    cpa:28.29.31  skos:closeMatch  cpc:43922 .
+    cpa:28.29.32  skos:closeMatch  cpc:43922 .
+    cpa:28.29.39  skos:closeMatch  cpc:43922 ;
+            skos:closeMatch  cpc:48212 ;
+            skos:closeMatch  cpc:48233 .
+    cpa:28.29.41  skos:closeMatch  cpc:43931 .
+    cpa:28.29.42  skos:closeMatch  cpc:43933 .
+    cpa:28.29.43  skos:closeMatch  cpc:43934 .
+    cpa:28.29.50  skos:closeMatch  cpc:43935 .
+    cpa:28.29.60  skos:closeMatch  cpc:43932 .
+    cpa:28.29.70  skos:closeMatch  cpc:44242 .
+    cpa:28.29.81  skos:closeMatch  cpc:43941 .
+    cpa:28.29.82  skos:closeMatch  cpc:43942 .
+    cpa:28.29.83  skos:closeMatch  cpc:43943 .
+    cpa:28.29.84  skos:closeMatch  cpc:43949 .
+    cpa:28.29.85  skos:closeMatch  cpc:43944 .
+    cpa:28.29.86  skos:closeMatch  cpc:44256 .
+    cpa:28.29.99  skos:closeMatch  cpc:88769 .
+    cpa:28.30.10  skos:closeMatch  cpc:44141 .
+    cpa:28.30.21  skos:closeMatch  cpc:44149 .
+    cpa:28.30.22  skos:closeMatch  cpc:44149 .
+    cpa:28.30.23  skos:closeMatch  cpc:44149 .
+    cpa:28.30.31  skos:closeMatch  cpc:44111 .
+    cpa:28.30.32  skos:closeMatch  cpc:44112 .
+    cpa:28.30.33  skos:closeMatch  cpc:44113 .
+    cpa:28.30.34  skos:closeMatch  cpc:44114 .
+    cpa:28.30.39  skos:closeMatch  cpc:44119 .
+    cpa:28.30.40  skos:closeMatch  cpc:44121 .
+    cpa:28.30.51  skos:closeMatch  cpc:44123 .
+    cpa:28.30.52  skos:closeMatch  cpc:44124 .
+    cpa:28.30.53  skos:closeMatch  cpc:44125 .
+    cpa:28.30.54  skos:closeMatch  cpc:44126 .
+    cpa:28.30.59  skos:closeMatch  cpc:44122 ;
+            skos:closeMatch  cpc:44129 .
+    cpa:28.30.60  skos:closeMatch  cpc:44150 .
+    cpa:28.30.70  skos:closeMatch  cpc:44160 .
+    cpa:28.30.81  skos:closeMatch  cpc:44127 .
+    cpa:28.30.82  skos:closeMatch  cpc:44131 .
+    cpa:28.30.83  skos:closeMatch  cpc:44192 .
+    cpa:28.30.84  skos:closeMatch  cpc:44193 .
+    cpa:28.30.85  skos:closeMatch  cpc:44194 .
+    cpa:28.30.86  skos:closeMatch  cpc:44198 .
+    cpa:28.30.91  skos:closeMatch  cpc:44129 .
+    cpa:28.30.92  skos:closeMatch  cpc:44115 .
+    cpa:28.30.93  skos:closeMatch  cpc:44199 .
+    cpa:28.30.94  skos:closeMatch  cpc:44139 .
+    cpa:28.30.99  skos:closeMatch  cpc:88771 .
+    cpa:28.41.11  skos:closeMatch  cpc:44211 .
+    cpa:28.41.12  skos:closeMatch  cpc:44212 .
+    cpa:28.41.21  skos:closeMatch  cpc:44213 .
+    cpa:28.41.22  skos:closeMatch  cpc:44214 ;
+            skos:closeMatch  cpc:44215 .
+    cpa:28.41.23  skos:closeMatch  cpc:44216 .
+    cpa:28.41.24  skos:closeMatch  cpc:44216 .
+    cpa:28.41.31  skos:closeMatch  cpc:44217 .
+    cpa:28.41.32  skos:closeMatch  cpc:44217 .
+    cpa:28.41.33  skos:closeMatch  cpc:44217 .
+    cpa:28.41.34  skos:closeMatch  cpc:44218 .
+    cpa:28.41.40  skos:closeMatch  cpc:44251 .
+    cpa:28.41.99  skos:closeMatch  cpc:88772 .
+    cpa:28.49.11  skos:closeMatch  cpc:44221 .
+    cpa:28.49.12  skos:closeMatch  cpc:44222 ;
+            skos:closeMatch  cpc:46939 .
+    cpa:28.49.13  skos:closeMatch  cpc:44214 ;
+            skos:closeMatch  cpc:44217 .
+    cpa:28.49.21  skos:closeMatch  cpc:44251 .
+    cpa:28.49.22  skos:closeMatch  cpc:44251 .
+    cpa:28.49.23  skos:closeMatch  cpc:44251 .
+    cpa:28.49.24  skos:closeMatch  cpc:44252 .
+    cpa:28.49.99  skos:closeMatch  cpc:88772 .
+    cpa:28.91.11  skos:closeMatch  cpc:44310 .
+    cpa:28.91.12  skos:closeMatch  cpc:44320 .
+    cpa:28.91.99  skos:closeMatch  cpc:88773 .
+    cpa:28.92.11  skos:closeMatch  cpc:44411 .
+    cpa:28.92.12  skos:closeMatch  cpc:44412 .
+    cpa:28.92.21  skos:closeMatch  cpc:44421 .
+    cpa:28.92.22  skos:closeMatch  cpc:44422 ;
+            skos:closeMatch  cpc:44423 .
+    cpa:28.92.23  skos:closeMatch  cpc:44424 .
+    cpa:28.92.24  skos:closeMatch  cpc:44425 .
+    cpa:28.92.25  skos:closeMatch  cpc:44426 .
+    cpa:28.92.26  skos:closeMatch  cpc:44427 .
+    cpa:28.92.27  skos:closeMatch  cpc:44429 .
+    cpa:28.92.28  skos:closeMatch  cpc:44428 .
+    cpa:28.92.30  skos:closeMatch  cpc:44430 .
+    cpa:28.92.40  skos:closeMatch  cpc:44440 .
+    cpa:28.92.50  skos:closeMatch  cpc:44142 .
+    cpa:28.92.61  skos:closeMatch  cpc:44461 .
+    cpa:28.92.62  skos:closeMatch  cpc:44462 .
+    cpa:28.92.99  skos:closeMatch  cpc:88774 .
+    cpa:28.93.11  skos:closeMatch  cpc:44511 .
+    cpa:28.93.12  skos:closeMatch  cpc:44132 .
+    cpa:28.93.13  skos:closeMatch  cpc:44513 .
+    cpa:28.93.14  skos:closeMatch  cpc:44191 .
+    cpa:28.93.15  skos:closeMatch  cpc:44515 .
+    cpa:28.93.16  skos:closeMatch  cpc:44518 .
+    cpa:28.93.17  skos:closeMatch  cpc:44516 .
+    cpa:28.93.18  skos:closeMatch  cpc:44517 .
+    cpa:28.93.20  skos:closeMatch  cpc:44128 .
+    cpa:28.93.31  skos:closeMatch  cpc:44199 .
+    cpa:28.93.32  skos:closeMatch  cpc:44522 .
+    cpa:28.93.33  skos:closeMatch  cpc:44523 .
+    cpa:28.93.34  skos:closeMatch  cpc:44522 .
+    cpa:28.93.99  skos:closeMatch  cpc:88775 .
+    cpa:28.94.11  skos:closeMatch  cpc:44611 .
+    cpa:28.94.12  skos:closeMatch  cpc:44611 .
+    cpa:28.94.13  skos:closeMatch  cpc:44612 .
+    cpa:28.94.14  skos:closeMatch  cpc:44613 .
+    cpa:28.94.15  skos:closeMatch  cpc:44614 ;
+            skos:closeMatch  cpc:44629 ;
+            skos:closeMatch  cpc:44914 .
+    cpa:28.94.21  skos:closeMatch  cpc:44629 .
+    cpa:28.94.22  skos:closeMatch  cpc:44622 .
+    cpa:28.94.23  skos:closeMatch  cpc:44911 .
+    cpa:28.94.24  skos:closeMatch  cpc:44621 .
+    cpa:28.94.30  skos:closeMatch  cpc:44630 .
+    cpa:28.94.40  skos:closeMatch  cpc:44814 .
+    cpa:28.94.51  skos:closeMatch  cpc:44640 .
+    cpa:28.94.52  skos:closeMatch  cpc:44640 .
+    cpa:28.94.99  skos:closeMatch  cpc:88776 .
+    cpa:28.95.11  skos:closeMatch  cpc:44913 .
+    cpa:28.95.12  skos:closeMatch  cpc:44921 .
+    cpa:28.95.99  skos:closeMatch  cpc:88779 .
+    cpa:28.96.10  skos:closeMatch  cpc:44915 .
+    cpa:28.96.20  skos:closeMatch  cpc:44929 .
+    cpa:28.96.99  skos:closeMatch  cpc:88779 .
+    cpa:28.99.11  skos:closeMatch  cpc:44914 .
+    cpa:28.99.12  skos:closeMatch  cpc:44914 .
+    cpa:28.99.13  skos:closeMatch  cpc:44914 .
+    cpa:28.99.14  skos:closeMatch  cpc:44629 ;
+            skos:closeMatch  cpc:44914 .
+    cpa:28.99.20  skos:closeMatch  cpc:44918 .
+    cpa:28.99.31  skos:closeMatch  cpc:44912 .
+    cpa:28.99.32  skos:closeMatch  cpc:38600 .
+    cpa:28.99.39  skos:closeMatch  cpc:43134 ;
+            skos:closeMatch  cpc:44440 ;
+            skos:closeMatch  cpc:44918 ;
+            skos:closeMatch  cpc:44919 ;
+            skos:closeMatch  cpc:48269 .
+    cpa:28.99.40  skos:closeMatch  cpc:44922 .
+    cpa:28.99.51  skos:closeMatch  cpc:44923 .
+    cpa:28.99.52  skos:closeMatch  cpc:44251 ;
+            skos:closeMatch  cpc:44929 .
+    cpa:28.99.99  skos:closeMatch  cpc:88779 .
+    cpa:29.10.11  skos:closeMatch  cpc:43121 .
+    cpa:29.10.12  skos:closeMatch  cpc:43122 .
+    cpa:29.10.13  skos:closeMatch  cpc:43123 .
+    cpa:29.10.21  skos:closeMatch  cpc:49113 .
+    cpa:29.10.22  skos:closeMatch  cpc:49113 .
+    cpa:29.10.23  skos:closeMatch  cpc:49113 .
+    cpa:29.10.24  skos:closeMatch  cpc:49113 .
+    cpa:29.10.30  skos:closeMatch  cpc:49112 .
+    cpa:29.10.41  skos:closeMatch  cpc:49114 .
+    cpa:29.10.42  skos:closeMatch  cpc:49114 .
+    cpa:29.10.43  skos:closeMatch  cpc:49111 .
+    cpa:29.10.44  skos:closeMatch  cpc:49121 .
+    cpa:29.10.51  skos:closeMatch  cpc:49115 .
+    cpa:29.10.52  skos:closeMatch  cpc:49116 .
+    cpa:29.10.59  skos:closeMatch  cpc:49119 .
+    cpa:29.10.99  skos:closeMatch  cpc:88811 .
+    cpa:29.20.10  skos:closeMatch  cpc:49210 .
+    cpa:29.20.21  skos:closeMatch  cpc:49221 .
+    cpa:29.20.22  skos:closeMatch  cpc:49222 .
+    cpa:29.20.23  skos:closeMatch  cpc:49229 .
+    cpa:29.20.30  skos:closeMatch  cpc:49232 .
+    cpa:29.20.40  skos:closeMatch  cpc:88812 .
+    cpa:29.20.50  skos:closeMatch  cpc:88812 .
+    cpa:29.20.99  skos:closeMatch  cpc:88812 .
+    cpa:29.31.10  skos:closeMatch  cpc:46330 .
+    cpa:29.31.21  skos:closeMatch  cpc:46910 .
+    cpa:29.31.22  skos:closeMatch  cpc:46910 .
+    cpa:29.31.23  skos:closeMatch  cpc:46910 .
+    cpa:29.31.30  skos:closeMatch  cpc:46960 .
+    cpa:29.31.99  skos:closeMatch  cpc:88813 .
+    cpa:29.32.10  skos:closeMatch  cpc:38111 .
+    cpa:29.32.20  skos:closeMatch  cpc:49129 ;
+            skos:closeMatch  cpc:49231 .
+    cpa:29.32.30  skos:closeMatch  cpc:49129 .
+    cpa:29.32.91  skos:closeMatch  cpc:88813 .
+    cpa:29.32.92  skos:closeMatch  cpc:88813 .
+    cpa:29.32.99  skos:closeMatch  cpc:88813 .
+    cpa:30.11.10  skos:closeMatch  cpc:49319 .
+    cpa:30.11.21  skos:closeMatch  cpc:49311 .
+    cpa:30.11.22  skos:closeMatch  cpc:49312 .
+    cpa:30.11.23  skos:closeMatch  cpc:49313 .
+    cpa:30.11.24  skos:closeMatch  cpc:49314 .
+    cpa:30.11.31  skos:closeMatch  cpc:49315 .
+    cpa:30.11.32  skos:closeMatch  cpc:49316 .
+    cpa:30.11.33  skos:closeMatch  cpc:49319 .
+    cpa:30.11.40  skos:closeMatch  cpc:49320 .
+    cpa:30.11.50  skos:closeMatch  cpc:49390 .
+    cpa:30.11.91  skos:closeMatch  cpc:88821 .
+    cpa:30.11.92  skos:closeMatch  cpc:88821 .
+    cpa:30.11.99  skos:closeMatch  cpc:88821 .
+    cpa:30.12.11  skos:closeMatch  cpc:49410 .
+    cpa:30.12.12  skos:closeMatch  cpc:49490 .
+    cpa:30.12.19  skos:closeMatch  cpc:49490 .
+    cpa:30.12.99  skos:closeMatch  cpc:88822 .
+    cpa:30.20.11  skos:closeMatch  cpc:49511 .
+    cpa:30.20.12  skos:closeMatch  cpc:49512 .
+    cpa:30.20.13  skos:closeMatch  cpc:49519 .
+    cpa:30.20.20  skos:closeMatch  cpc:49520 .
+    cpa:30.20.31  skos:closeMatch  cpc:49531 .
+    cpa:30.20.32  skos:closeMatch  cpc:49532 .
+    cpa:30.20.33  skos:closeMatch  cpc:49533 .
+    cpa:30.20.40  skos:closeMatch  cpc:49540 .
+    cpa:30.20.91  skos:closeMatch  cpc:88823 .
+    cpa:30.20.99  skos:closeMatch  cpc:88823 .
+    cpa:30.30.11  skos:closeMatch  cpc:43131 .
+    cpa:30.30.12  skos:closeMatch  cpc:43132 .
+    cpa:30.30.13  skos:closeMatch  cpc:43133 .
+    cpa:30.30.14  skos:closeMatch  cpc:43134 .
+    cpa:30.30.15  skos:closeMatch  cpc:43152 .
+    cpa:30.30.16  skos:closeMatch  cpc:43155 .
+    cpa:30.30.20  skos:closeMatch  cpc:49610 .
+    cpa:30.30.31  skos:closeMatch  cpc:49621 .
+    cpa:30.30.32  skos:closeMatch  cpc:49622 .
+    cpa:30.30.33  skos:closeMatch  cpc:49623 .
+    cpa:30.30.34  skos:closeMatch  cpc:49623 .
+    cpa:30.30.40  skos:closeMatch  cpc:49630 .
+    cpa:30.30.50  skos:closeMatch  cpc:38111 ;
+            skos:closeMatch  cpc:38160 ;
+            skos:closeMatch  cpc:49640 .
+    cpa:30.30.60  skos:closeMatch  cpc:87149 .
+    cpa:30.30.99  skos:closeMatch  cpc:88824 .
+    cpa:30.40.10  skos:closeMatch  cpc:44710 .
+    cpa:30.40.99  skos:closeMatch  cpc:88825 .
+    cpa:30.91.11  skos:closeMatch  cpc:49911 .
+    cpa:30.91.12  skos:closeMatch  cpc:49912 .
+    cpa:30.91.13  skos:closeMatch  cpc:49913 .
+    cpa:30.91.20  skos:closeMatch  cpc:49941 .
+    cpa:30.91.31  skos:closeMatch  cpc:43121 .
+    cpa:30.91.32  skos:closeMatch  cpc:43122 .
+    cpa:30.91.99  skos:closeMatch  cpc:88826 .
+    cpa:30.92.10  skos:closeMatch  cpc:49921 .
+    cpa:30.92.20  skos:closeMatch  cpc:49922 .
+    cpa:30.92.30  skos:closeMatch  cpc:46910 ;
+            skos:closeMatch  cpc:49942 .
+    cpa:30.92.40  skos:closeMatch  cpc:38992 .
+    cpa:30.92.99  skos:closeMatch  cpc:88827 .
+    cpa:30.99.10  skos:closeMatch  cpc:49930 .
+    cpa:30.99.99  skos:closeMatch  cpc:88829 .
+    cpa:31.00.11  skos:closeMatch  cpc:38111 .
+    cpa:31.00.12  skos:closeMatch  cpc:38112 .
+    cpa:31.00.13  skos:closeMatch  cpc:38119 .
+    cpa:31.00.14  skos:closeMatch  cpc:38160 .
+    cpa:31.00.20  skos:closeMatch  cpc:38160 .
+    cpa:31.00.91  skos:closeMatch  cpc:88901 .
+    cpa:31.00.99  skos:closeMatch  cpc:88901 .
+    cpa:31.01.11  skos:closeMatch  cpc:38121 .
+    cpa:31.01.12  skos:closeMatch  cpc:38122 .
+    cpa:31.01.13  skos:closeMatch  cpc:38140 .
+    cpa:31.01.99  skos:closeMatch  cpc:88901 .
+    cpa:31.02.10  skos:closeMatch  cpc:38130 .
+    cpa:31.02.99  skos:closeMatch  cpc:88901 .
+    cpa:31.03.11  skos:closeMatch  cpc:38150 .
+    cpa:31.03.12  skos:closeMatch  cpc:38150 .
+    cpa:31.03.99  skos:closeMatch  cpc:88901 .
+    cpa:31.09.11  skos:closeMatch  cpc:38140 .
+    cpa:31.09.12  skos:closeMatch  cpc:38140 .
+    cpa:31.09.13  skos:closeMatch  cpc:38140 .
+    cpa:31.09.14  skos:closeMatch  cpc:38140 .
+    cpa:31.09.91  skos:closeMatch  cpc:88901 .
+    cpa:31.09.99  skos:closeMatch  cpc:88901 .
+    cpa:32.11.10  skos:closeMatch  cpc:38250 .
+    cpa:32.11.99  skos:closeMatch  cpc:88909 .
+    cpa:32.12.11  skos:closeMatch  cpc:38220 .
+    cpa:32.12.12  skos:closeMatch  cpc:38230 .
+    cpa:32.12.13  skos:closeMatch  cpc:38240 .
+    cpa:32.12.14  skos:closeMatch  cpc:38240 ;
+            skos:closeMatch  cpc:48490 .
+    cpa:32.12.99  skos:closeMatch  cpc:88902 .
+    cpa:32.13.10  skos:closeMatch  cpc:38997 ;
+            skos:closeMatch  cpc:48490 .
+    cpa:32.13.99  skos:closeMatch  cpc:88903 .
+    cpa:32.20.11  skos:closeMatch  cpc:38310 .
+    cpa:32.20.12  skos:closeMatch  cpc:38320 .
+    cpa:32.20.13  skos:closeMatch  cpc:38330 .
+    cpa:32.20.14  skos:closeMatch  cpc:38340 .
+    cpa:32.20.15  skos:closeMatch  cpc:38350 .
+    cpa:32.20.16  skos:closeMatch  cpc:38360 .
+    cpa:32.20.20  skos:closeMatch  cpc:38360 .
+    cpa:32.20.99  skos:closeMatch  cpc:88904 .
+    cpa:32.30.11  skos:closeMatch  cpc:38410 .
+    cpa:32.30.12  skos:closeMatch  cpc:29410 .
+    cpa:32.30.13  skos:closeMatch  cpc:38420 .
+    cpa:32.30.14  skos:closeMatch  cpc:38430 .
+    cpa:32.30.15  skos:closeMatch  cpc:38440 .
+    cpa:32.30.16  skos:closeMatch  cpc:38450 .
+    cpa:32.30.99  skos:closeMatch  cpc:88905 .
+    cpa:32.40.11  skos:closeMatch  cpc:38520 .
+    cpa:32.40.12  skos:closeMatch  cpc:38520 .
+    cpa:32.40.13  skos:closeMatch  cpc:38530 .
+    cpa:32.40.20  skos:closeMatch  cpc:38540 .
+    cpa:32.40.31  skos:closeMatch  cpc:38510 .
+    cpa:32.40.32  skos:closeMatch  cpc:38550 .
+    cpa:32.40.39  skos:closeMatch  cpc:38560 .
+    cpa:32.40.41  skos:closeMatch  cpc:38570 .
+    cpa:32.40.42  skos:closeMatch  cpc:38590 .
+    cpa:32.40.99  skos:closeMatch  cpc:88906 .
+    cpa:32.50.11  skos:closeMatch  cpc:48130 .
+    cpa:32.50.12  skos:closeMatch  cpc:48140 .
+    cpa:32.50.13  skos:closeMatch  cpc:43931 ;
+            skos:closeMatch  cpc:48150 .
+    cpa:32.50.21  skos:closeMatch  cpc:48160 .
+    cpa:32.50.22  skos:closeMatch  cpc:48171 .
+    cpa:32.50.23  skos:closeMatch  cpc:48172 .
+    cpa:32.50.30  skos:closeMatch  cpc:48180 .
+    cpa:32.50.41  skos:closeMatch  cpc:48311 .
+    cpa:32.50.42  skos:closeMatch  cpc:48312 .
+    cpa:32.50.43  skos:closeMatch  cpc:48313 .
+    cpa:32.50.44  skos:closeMatch  cpc:48352 .
+    cpa:32.50.50  skos:closeMatch  cpc:35290 ;
+            skos:closeMatch  cpc:36990 .
+    cpa:32.50.99  skos:closeMatch  cpc:88907 .
+    cpa:32.91.11  skos:closeMatch  cpc:38993 .
+    cpa:32.91.12  skos:closeMatch  cpc:38993 .
+    cpa:32.91.19  skos:closeMatch  cpc:38993 .
+    cpa:32.91.99  skos:closeMatch  cpc:88909 .
+    cpa:32.99.11  skos:closeMatch  cpc:27190 ;
+            skos:closeMatch  cpc:28242 ;
+            skos:closeMatch  cpc:36971 ;
+            skos:closeMatch  cpc:36990 ;
+            skos:closeMatch  cpc:48160 .
+    cpa:32.99.12  skos:closeMatch  cpc:38911 .
+    cpa:32.99.13  skos:closeMatch  cpc:38911 .
+    cpa:32.99.14  skos:closeMatch  cpc:38911 .
+    cpa:32.99.15  skos:closeMatch  cpc:38911 .
+    cpa:32.99.16  skos:closeMatch  cpc:38140 ;
+            skos:closeMatch  cpc:38912 .
+    cpa:32.99.21  skos:closeMatch  cpc:38921 .
+    cpa:32.99.22  skos:closeMatch  cpc:38922 .
+    cpa:32.99.23  skos:closeMatch  cpc:38923 .
+    cpa:32.99.24  skos:closeMatch  cpc:38924 .
+    cpa:32.99.30  skos:closeMatch  cpc:38972 .
+    cpa:32.99.41  skos:closeMatch  cpc:38994 .
+    cpa:32.99.42  skos:closeMatch  cpc:38995 .
+    cpa:32.99.43  skos:closeMatch  cpc:38999 .
+    cpa:32.99.51  skos:closeMatch  cpc:38991 .
+    cpa:32.99.52  skos:closeMatch  cpc:38994 .
+    cpa:32.99.53  skos:closeMatch  cpc:38996 .
+    cpa:32.99.54  skos:closeMatch  cpc:38999 .
+    cpa:32.99.55  skos:closeMatch  cpc:38999 .
+    cpa:32.99.59  skos:closeMatch  cpc:32512 ;
+            skos:closeMatch  cpc:38999 .
+    cpa:32.99.60  skos:closeMatch  cpc:88909 .
+    cpa:32.99.99  skos:closeMatch  cpc:88909 .
+    cpa:33.11.11  skos:closeMatch  cpc:87110 .
+    cpa:33.11.12  skos:closeMatch  cpc:87110 .
+    cpa:33.11.13  skos:closeMatch  cpc:87110 .
+    cpa:33.11.14  skos:closeMatch  cpc:87110 .
+    cpa:33.11.19  skos:closeMatch  cpc:87110 .
+    cpa:33.12.11  skos:closeMatch  cpc:87156 .
+    cpa:33.12.12  skos:closeMatch  cpc:87156 .
+    cpa:33.12.13  skos:closeMatch  cpc:87156 .
+    cpa:33.12.14  skos:closeMatch  cpc:87156 .
+    cpa:33.12.15  skos:closeMatch  cpc:87156 .
+    cpa:33.12.16  skos:closeMatch  cpc:87120 .
+    cpa:33.12.17  skos:closeMatch  cpc:87156 .
+    cpa:33.12.18  skos:closeMatch  cpc:87156 .
+    cpa:33.12.19  skos:closeMatch  cpc:87156 .
+    cpa:33.12.21  skos:closeMatch  cpc:87156 .
+    cpa:33.12.22  skos:closeMatch  cpc:87156 .
+    cpa:33.12.23  skos:closeMatch  cpc:87156 .
+    cpa:33.12.24  skos:closeMatch  cpc:87156 .
+    cpa:33.12.25  skos:closeMatch  cpc:87156 .
+    cpa:33.12.26  skos:closeMatch  cpc:87156 .
+    cpa:33.12.27  skos:closeMatch  cpc:87156 .
+    cpa:33.12.28  skos:closeMatch  cpc:87156 .
+    cpa:33.12.29  skos:closeMatch  cpc:87156 .
+    cpa:33.13.11  skos:closeMatch  cpc:87154 .
+    cpa:33.13.12  skos:closeMatch  cpc:87154 .
+    cpa:33.13.13  skos:closeMatch  cpc:87154 .
+    cpa:33.13.19  skos:closeMatch  cpc:87154 .
+    cpa:33.14.11  skos:closeMatch  cpc:87152 .
+    cpa:33.14.19  skos:closeMatch  cpc:87152 .
+    cpa:33.15.10  skos:closeMatch  cpc:87149 .
+    cpa:33.16.10  skos:closeMatch  cpc:87149 .
+    cpa:33.17.11  skos:closeMatch  cpc:87149 .
+    cpa:33.17.19  skos:closeMatch  cpc:87149 .
+    cpa:33.19.10  skos:closeMatch  cpc:87159 ;
+            skos:closeMatch  cpc:87290 .
+    cpa:33.20.11  skos:closeMatch  cpc:87310 .
+    cpa:33.20.12  skos:closeMatch  cpc:87310 .
+    cpa:33.20.21  skos:closeMatch  cpc:87333 .
+    cpa:33.20.29  skos:closeMatch  cpc:87320 .
+    cpa:33.20.31  skos:closeMatch  cpc:87320 .
+    cpa:33.20.32  skos:closeMatch  cpc:87320 .
+    cpa:33.20.33  skos:closeMatch  cpc:87320 .
+    cpa:33.20.34  skos:closeMatch  cpc:87320 .
+    cpa:33.20.35  skos:closeMatch  cpc:87320 .
+    cpa:33.20.36  skos:closeMatch  cpc:87320 .
+    cpa:33.20.37  skos:closeMatch  cpc:87320 .
+    cpa:33.20.38  skos:closeMatch  cpc:87320 .
+    cpa:33.20.39  skos:closeMatch  cpc:87320 ;
+            skos:closeMatch  cpc:87331 .
+    cpa:33.20.41  skos:closeMatch  cpc:87350 .
+    cpa:33.20.42  skos:closeMatch  cpc:87340 .
+    cpa:33.20.50  skos:closeMatch  cpc:87360 .
+    cpa:33.20.60  skos:closeMatch  cpc:87320 .
+    cpa:33.20.70  skos:closeMatch  cpc:87390 .
+    cpa:35.11.10  skos:closeMatch  cpc:17100 .
+    cpa:35.12.10  skos:closeMatch  cpc:69111 ;
+            skos:closeMatch  cpc:86311 .
+    cpa:35.13.10  skos:closeMatch  cpc:69112 ;
+            skos:closeMatch  cpc:86312 .
+    cpa:35.14.10  skos:closeMatch  cpc:61197 ;
+            skos:closeMatch  cpc:61297 ;
+            skos:closeMatch  cpc:62497 ;
+            skos:closeMatch  cpc:62597 .
+    cpa:35.21.10  skos:closeMatch  cpc:17200 .
+    cpa:35.22.10  skos:closeMatch  cpc:69120 ;
+            skos:closeMatch  cpc:86320 .
+    cpa:35.23.10  skos:closeMatch  cpc:61191 ;
+            skos:closeMatch  cpc:61291 .
+    cpa:35.30.11  skos:closeMatch  cpc:17300 .
+    cpa:35.30.12  skos:closeMatch  cpc:69220 ;
+            skos:closeMatch  cpc:86340 .
+    cpa:35.30.21  skos:closeMatch  cpc:17400 .
+    cpa:35.30.22  skos:closeMatch  cpc:69220 ;
+            skos:closeMatch  cpc:86340 .
+    cpa:36.00.11  skos:closeMatch  cpc:18000 .
+    cpa:36.00.12  skos:closeMatch  cpc:18000 .
+    cpa:36.00.20  skos:closeMatch  cpc:69210 ;
+            skos:closeMatch  cpc:69230 ;
+            skos:closeMatch  cpc:86330 ;
+            skos:closeMatch  cpc:86350 .
+    cpa:36.00.30  skos:closeMatch  cpc:61198 ;
+            skos:closeMatch  cpc:62498 ;
+            skos:closeMatch  cpc:62598 .
+    cpa:37.00.11  skos:closeMatch  cpc:94110 .
+    cpa:37.00.12  skos:closeMatch  cpc:94120 .
+    cpa:37.00.20  skos:closeMatch  cpc:39920 .
+    cpa:38.11.11  skos:closeMatch  cpc:94221 .
+    cpa:38.11.19  skos:closeMatch  cpc:94229 .
+    cpa:38.11.21  skos:closeMatch  cpc:94231 .
+    cpa:38.11.29  skos:closeMatch  cpc:94239 .
+    cpa:38.11.31  skos:closeMatch  cpc:39910 .
+    cpa:38.11.39  skos:closeMatch  cpc:39990 .
+    cpa:38.11.41  skos:closeMatch  cpc:39370 .
+    cpa:38.11.49  skos:closeMatch  cpc:39910 .
+    cpa:38.11.51  skos:closeMatch  cpc:37111 .
+    cpa:38.11.52  skos:closeMatch  cpc:39240 .
+    cpa:38.11.53  skos:closeMatch  cpc:39260 .
+    cpa:38.11.54  skos:closeMatch  cpc:39250 .
+    cpa:38.11.55  skos:closeMatch  cpc:39270 .
+    cpa:38.11.56  skos:closeMatch  cpc:39211 ;
+            skos:closeMatch  cpc:39212 ;
+            skos:closeMatch  cpc:39214 ;
+            skos:closeMatch  cpc:39216 .
+    cpa:38.11.57  skos:closeMatch  cpc:39220 .
+    cpa:38.11.58  skos:closeMatch  cpc:39310 ;
+            skos:closeMatch  cpc:39320 ;
+            skos:closeMatch  cpc:39331 ;
+            skos:closeMatch  cpc:39332 ;
+            skos:closeMatch  cpc:39333 ;
+            skos:closeMatch  cpc:39340 ;
+            skos:closeMatch  cpc:39361 ;
+            skos:closeMatch  cpc:39362 ;
+            skos:closeMatch  cpc:39363 ;
+            skos:closeMatch  cpc:39364 ;
+            skos:closeMatch  cpc:39365 ;
+            skos:closeMatch  cpc:39366 ;
+            skos:closeMatch  cpc:39367 .
+    cpa:38.11.59  skos:closeMatch  cpc:39282 ;
+            skos:closeMatch  cpc:39283 .
+    cpa:38.11.61  skos:closeMatch  cpc:94313 .
+    cpa:38.11.69  skos:closeMatch  cpc:94319 .
+    cpa:38.12.11  skos:closeMatch  cpc:94211 .
+    cpa:38.12.12  skos:closeMatch  cpc:94212 .
+    cpa:38.12.13  skos:closeMatch  cpc:94219 .
+    cpa:38.12.21  skos:closeMatch  cpc:33720 .
+    cpa:38.12.22  skos:closeMatch  cpc:39931 .
+    cpa:38.12.23  skos:closeMatch  cpc:39939 .
+    cpa:38.12.24  skos:closeMatch  cpc:39950 .
+    cpa:38.12.25  skos:closeMatch  cpc:39950 .
+    cpa:38.12.26  skos:closeMatch  cpc:39365 ;
+            skos:closeMatch  cpc:39366 .
+    cpa:38.12.27  skos:closeMatch  cpc:39380 .
+    cpa:38.12.29  skos:closeMatch  cpc:39380 ;
+            skos:closeMatch  cpc:39990 .
+    cpa:38.12.30  skos:closeMatch  cpc:94311 .
+    cpa:38.21.10  skos:closeMatch  cpc:94319 .
+    cpa:38.21.21  skos:closeMatch  cpc:94331 .
+    cpa:38.21.22  skos:closeMatch  cpc:94332 .
+    cpa:38.21.23  skos:closeMatch  cpc:94333 .
+    cpa:38.21.29  skos:closeMatch  cpc:94339 .
+    cpa:38.21.30  skos:closeMatch  cpc:39940 .
+    cpa:38.21.40  skos:closeMatch  cpc:39290 .
+    cpa:38.21.50  skos:closeMatch  cpc:39910 .
+    cpa:38.22.11  skos:closeMatch  cpc:94321 .
+    cpa:38.22.19  skos:closeMatch  cpc:94321 .
+    cpa:38.22.21  skos:closeMatch  cpc:94322 .
+    cpa:38.22.29  skos:closeMatch  cpc:94322 .
+    cpa:38.31.11  skos:closeMatch  cpc:94312 .
+    cpa:38.31.12  skos:closeMatch  cpc:94312 .
+    cpa:38.32.11  skos:closeMatch  cpc:89410 .
+    cpa:38.32.12  skos:closeMatch  cpc:89420 .
+    cpa:38.32.13  skos:closeMatch  cpc:89410 ;
+            skos:closeMatch  cpc:89420 .
+    cpa:38.32.21  skos:closeMatch  cpc:39331 ;
+            skos:closeMatch  cpc:39332 ;
+            skos:closeMatch  cpc:39333 .
+    cpa:38.32.22  skos:closeMatch  cpc:39340 .
+    cpa:38.32.23  skos:closeMatch  cpc:39361 .
+    cpa:38.32.24  skos:closeMatch  cpc:39362 .
+    cpa:38.32.25  skos:closeMatch  cpc:39363 .
+    cpa:38.32.29  skos:closeMatch  cpc:39364 ;
+            skos:closeMatch  cpc:39368 .
+    cpa:38.32.31  skos:closeMatch  cpc:39290 .
+    cpa:38.32.32  skos:closeMatch  cpc:39240 .
+    cpa:38.32.33  skos:closeMatch  cpc:39270 .
+    cpa:38.32.34  skos:closeMatch  cpc:39250 .
+    cpa:38.32.35  skos:closeMatch  cpc:39211 ;
+            skos:closeMatch  cpc:39212 ;
+            skos:closeMatch  cpc:39213 ;
+            skos:closeMatch  cpc:39214 ;
+            skos:closeMatch  cpc:39215 ;
+            skos:closeMatch  cpc:39216 ;
+            skos:closeMatch  cpc:39217 ;
+            skos:closeMatch  cpc:39218 .
+    cpa:38.32.39  skos:closeMatch  cpc:39220 ;
+            skos:closeMatch  cpc:39281 ;
+            skos:closeMatch  cpc:39282 ;
+            skos:closeMatch  cpc:39283 ;
+            skos:closeMatch  cpc:39290 .
+    cpa:39.00.11  skos:closeMatch  cpc:94413 .
+    cpa:39.00.12  skos:closeMatch  cpc:94412 .
+    cpa:39.00.13  skos:closeMatch  cpc:94411 .
+    cpa:39.00.14  skos:closeMatch  cpc:94430 .
+    cpa:39.00.21  skos:closeMatch  cpc:94420 .
+    cpa:39.00.22  skos:closeMatch  cpc:94490 .
+    cpa:39.00.23  skos:closeMatch  cpc:94900 .
+    cpa:41.00.11  skos:closeMatch  cpc:53111 .
+    cpa:41.00.12  skos:closeMatch  cpc:53111 .
+    cpa:41.00.13  skos:closeMatch  cpc:53112 .
+    cpa:41.00.14  skos:closeMatch  cpc:53112 .
+    cpa:41.00.21  skos:closeMatch  cpc:53121 .
+    cpa:41.00.22  skos:closeMatch  cpc:53121 .
+    cpa:41.00.23  skos:closeMatch  cpc:53122 .
+    cpa:41.00.24  skos:closeMatch  cpc:53122 .
+    cpa:41.00.25  skos:closeMatch  cpc:53122 ;
+            skos:closeMatch  cpc:53129 .
+    cpa:41.00.26  skos:closeMatch  cpc:53121 ;
+            skos:closeMatch  cpc:53122 .
+    cpa:41.00.27  skos:closeMatch  cpc:53129 .
+    cpa:41.00.28  skos:closeMatch  cpc:53129 .
+    cpa:41.00.29  skos:closeMatch  cpc:53129 .
+    cpa:41.00.31  skos:closeMatch  cpc:54111 .
+    cpa:41.00.32  skos:closeMatch  cpc:54111 .
+    cpa:41.00.33  skos:closeMatch  cpc:54112 .
+    cpa:41.00.34  skos:closeMatch  cpc:54112 .
+    cpa:41.00.41  skos:closeMatch  cpc:54121 .
+    cpa:41.00.42  skos:closeMatch  cpc:54121 .
+    cpa:41.00.43  skos:closeMatch  cpc:54122 .
+    cpa:41.00.44  skos:closeMatch  cpc:54122 .
+    cpa:41.00.45  skos:closeMatch  cpc:54122 ;
+            skos:closeMatch  cpc:54129 .
+    cpa:41.00.46  skos:closeMatch  cpc:54121 ;
+            skos:closeMatch  cpc:54122 .
+    cpa:41.00.47  skos:closeMatch  cpc:54129 .
+    cpa:41.00.48  skos:closeMatch  cpc:54129 .
+    cpa:41.00.49  skos:closeMatch  cpc:54129 .
+    cpa:42.11.10  skos:closeMatch  cpc:53211 ;
+            skos:closeMatch  cpc:53213 .
+    cpa:42.11.20  skos:closeMatch  cpc:54211 ;
+            skos:closeMatch  cpc:54213 .
+    cpa:42.12.10  skos:closeMatch  cpc:53212 .
+    cpa:42.12.20  skos:closeMatch  cpc:54212 .
+    cpa:42.13.10  skos:closeMatch  cpc:53221 ;
+            skos:closeMatch  cpc:53222 .
+    cpa:42.13.20  skos:closeMatch  cpc:54221 ;
+            skos:closeMatch  cpc:54222 .
+    cpa:42.21.11  skos:closeMatch  cpc:53241 .
+    cpa:42.21.12  skos:closeMatch  cpc:53251 .
+    cpa:42.21.13  skos:closeMatch  cpc:53231 ;
+            skos:closeMatch  cpc:53234 ;
+            skos:closeMatch  cpc:53253 .
+    cpa:42.21.21  skos:closeMatch  cpc:54241 .
+    cpa:42.21.22  skos:closeMatch  cpc:54251 .
+    cpa:42.21.23  skos:closeMatch  cpc:54231 ;
+            skos:closeMatch  cpc:54234 ;
+            skos:closeMatch  cpc:54253 .
+    cpa:42.21.24  skos:closeMatch  cpc:54341 ;
+            skos:closeMatch  cpc:54342 .
+    cpa:42.22.11  skos:closeMatch  cpc:53242 .
+    cpa:42.22.12  skos:closeMatch  cpc:53252 .
+    cpa:42.22.13  skos:closeMatch  cpc:53262 .
+    cpa:42.22.21  skos:closeMatch  cpc:54242 .
+    cpa:42.22.22  skos:closeMatch  cpc:54252 .
+    cpa:42.22.23  skos:closeMatch  cpc:54262 .
+    cpa:42.91.10  skos:closeMatch  cpc:53232 ;
+            skos:closeMatch  cpc:53233 .
+    cpa:42.91.20  skos:closeMatch  cpc:54232 ;
+            skos:closeMatch  cpc:54233 .
+    cpa:42.99.11  skos:closeMatch  cpc:53261 ;
+            skos:closeMatch  cpc:53269 .
+    cpa:42.99.12  skos:closeMatch  cpc:53270 .
+    cpa:42.99.19  skos:closeMatch  cpc:53290 .
+    cpa:42.99.21  skos:closeMatch  cpc:54261 ;
+            skos:closeMatch  cpc:54269 .
+    cpa:42.99.22  skos:closeMatch  cpc:54270 .
+    cpa:42.99.29  skos:closeMatch  cpc:54290 .
+    cpa:43.11.10  skos:closeMatch  cpc:54310 .
+    cpa:43.12.11  skos:closeMatch  cpc:54320 .
+    cpa:43.12.12  skos:closeMatch  cpc:54330 .
+    cpa:43.13.10  skos:closeMatch  cpc:54320 .
+    cpa:43.21.10  skos:closeMatch  cpc:54611 ;
+            skos:closeMatch  cpc:54612 ;
+            skos:closeMatch  cpc:54613 ;
+            skos:closeMatch  cpc:54614 ;
+            skos:closeMatch  cpc:54619 .
+    cpa:43.22.11  skos:closeMatch  cpc:54621 ;
+            skos:closeMatch  cpc:54622 .
+    cpa:43.22.12  skos:closeMatch  cpc:54631 ;
+            skos:closeMatch  cpc:54632 .
+    cpa:43.22.20  skos:closeMatch  cpc:54640 .
+    cpa:43.29.11  skos:closeMatch  cpc:54650 .
+    cpa:43.29.12  skos:closeMatch  cpc:54770 .
+    cpa:43.29.19  skos:closeMatch  cpc:54691 ;
+            skos:closeMatch  cpc:54699 ;
+            skos:closeMatch  cpc:87157 .
+    cpa:43.31.10  skos:closeMatch  cpc:54720 .
+    cpa:43.32.10  skos:closeMatch  cpc:54760 .
+    cpa:43.33.10  skos:closeMatch  cpc:54740 .
+    cpa:43.33.21  skos:closeMatch  cpc:54790 .
+    cpa:43.33.29  skos:closeMatch  cpc:54750 .
+    cpa:43.34.10  skos:closeMatch  cpc:54730 .
+    cpa:43.34.20  skos:closeMatch  cpc:54710 .
+    cpa:43.39.11  skos:closeMatch  cpc:54760 .
+    cpa:43.39.19  skos:closeMatch  cpc:54790 .
+    cpa:43.91.11  skos:closeMatch  cpc:54522 .
+    cpa:43.91.19  skos:closeMatch  cpc:54530 .
+    cpa:43.99.10  skos:closeMatch  cpc:54530 .
+    cpa:43.99.20  skos:closeMatch  cpc:54570 .
+    cpa:43.99.30  skos:closeMatch  cpc:54511 ;
+            skos:closeMatch  cpc:54512 .
+    cpa:43.99.40  skos:closeMatch  cpc:54540 .
+    cpa:43.99.50  skos:closeMatch  cpc:54550 .
+    cpa:43.99.60  skos:closeMatch  cpc:54560 .
+    cpa:43.99.70  skos:closeMatch  cpc:54400 .
+    cpa:43.99.90  skos:closeMatch  cpc:54521 ;
+            skos:closeMatch  cpc:54590 .
+    cpa:45.11.11  skos:closeMatch  cpc:61181 .
+    cpa:45.11.12  skos:closeMatch  cpc:61181 .
+    cpa:45.11.21  skos:closeMatch  cpc:62281 .
+    cpa:45.11.22  skos:closeMatch  cpc:62281 .
+    cpa:45.11.23  skos:closeMatch  cpc:62281 .
+    cpa:45.11.24  skos:closeMatch  cpc:62281 .
+    cpa:45.11.31  skos:closeMatch  cpc:62381 .
+    cpa:45.11.39  skos:closeMatch  cpc:62381 ;
+            skos:closeMatch  cpc:62581 .
+    cpa:45.11.41  skos:closeMatch  cpc:61281 .
+    cpa:45.11.49  skos:closeMatch  cpc:61281 .
+    cpa:45.19.11  skos:closeMatch  cpc:61181 .
+    cpa:45.19.12  skos:closeMatch  cpc:61181 .
+    cpa:45.19.21  skos:closeMatch  cpc:62281 .
+    cpa:45.19.22  skos:closeMatch  cpc:62281 .
+    cpa:45.19.31  skos:closeMatch  cpc:62381 .
+    cpa:45.19.39  skos:closeMatch  cpc:62181 ;
+            skos:closeMatch  cpc:62381 .
+    cpa:45.19.41  skos:closeMatch  cpc:61281 .
+    cpa:45.19.49  skos:closeMatch  cpc:61281 .
+    cpa:45.20.11  skos:closeMatch  cpc:87141 .
+    cpa:45.20.12  skos:closeMatch  cpc:87141 .
+    cpa:45.20.13  skos:closeMatch  cpc:87141 .
+    cpa:45.20.14  skos:closeMatch  cpc:87141 .
+    cpa:45.20.21  skos:closeMatch  cpc:87143 .
+    cpa:45.20.22  skos:closeMatch  cpc:87143 .
+    cpa:45.20.23  skos:closeMatch  cpc:87143 .
+    cpa:45.20.30  skos:closeMatch  cpc:87141 .
+    cpa:45.31.11  skos:closeMatch  cpc:61181 .
+    cpa:45.31.12  skos:closeMatch  cpc:61181 .
+    cpa:45.31.20  skos:closeMatch  cpc:61281 .
+    cpa:45.32.11  skos:closeMatch  cpc:62281 .
+    cpa:45.32.12  skos:closeMatch  cpc:62281 .
+    cpa:45.32.21  skos:closeMatch  cpc:62381 .
+    cpa:45.32.22  skos:closeMatch  cpc:62381 .
+    cpa:45.32.29  skos:closeMatch  cpc:62181 ;
+            skos:closeMatch  cpc:62481 .
+    cpa:45.40.10  skos:closeMatch  cpc:61181 .
+    cpa:45.40.20  skos:closeMatch  cpc:62281 .
+    cpa:45.40.30  skos:closeMatch  cpc:62381 .
+    cpa:45.40.40  skos:closeMatch  cpc:61281 .
+    cpa:45.40.50  skos:closeMatch  cpc:87142 .
+    cpa:46.11.11  skos:closeMatch  cpc:61214 .
+    cpa:46.11.12  skos:closeMatch  cpc:61212 .
+    cpa:46.11.19  skos:closeMatch  cpc:61211 ;
+            skos:closeMatch  cpc:61213 ;
+            skos:closeMatch  cpc:61215 ;
+            skos:closeMatch  cpc:61219 .
+    cpa:46.12.11  skos:closeMatch  cpc:61291 .
+    cpa:46.12.12  skos:closeMatch  cpc:61292 .
+    cpa:46.12.13  skos:closeMatch  cpc:61271 ;
+            skos:closeMatch  cpc:61272 .
+    cpa:46.13.11  skos:closeMatch  cpc:61293 .
+    cpa:46.13.12  skos:closeMatch  cpc:61261 ;
+            skos:closeMatch  cpc:61262 ;
+            skos:closeMatch  cpc:61263 ;
+            skos:closeMatch  cpc:61264 .
+    cpa:46.14.11  skos:closeMatch  cpc:61283 ;
+            skos:closeMatch  cpc:61284 ;
+            skos:closeMatch  cpc:61285 .
+    cpa:46.14.12  skos:closeMatch  cpc:61282 .
+    cpa:46.14.19  skos:closeMatch  cpc:61286 ;
+            skos:closeMatch  cpc:61287 ;
+            skos:closeMatch  cpc:61288 ;
+            skos:closeMatch  cpc:61289 .
+    cpa:46.15.11  skos:closeMatch  cpc:61241 .
+    cpa:46.15.12  skos:closeMatch  cpc:61242 .
+    cpa:46.15.13  skos:closeMatch  cpc:61265 .
+    cpa:46.15.19  skos:closeMatch  cpc:61243 ;
+            skos:closeMatch  cpc:61244 ;
+            skos:closeMatch  cpc:61245 ;
+            skos:closeMatch  cpc:61246 .
+    cpa:46.16.11  skos:closeMatch  cpc:61231 ;
+            skos:closeMatch  cpc:61232 .
+    cpa:46.16.12  skos:closeMatch  cpc:61233 ;
+            skos:closeMatch  cpc:61234 .
+    cpa:46.16.13  skos:closeMatch  cpc:61256 .
+    cpa:46.17.11  skos:closeMatch  cpc:61221 ;
+            skos:closeMatch  cpc:61222 ;
+            skos:closeMatch  cpc:61223 ;
+            skos:closeMatch  cpc:61224 ;
+            skos:closeMatch  cpc:61225 ;
+            skos:closeMatch  cpc:61227 ;
+            skos:closeMatch  cpc:61229 .
+    cpa:46.17.12  skos:closeMatch  cpc:61226 .
+    cpa:46.17.13  skos:closeMatch  cpc:61228 .
+    cpa:46.18.11  skos:closeMatch  cpc:61273 ;
+            skos:closeMatch  cpc:61274 ;
+            skos:closeMatch  cpc:61275 ;
+            skos:closeMatch  cpc:61276 .
+    cpa:46.18.12  skos:closeMatch  cpc:61251 ;
+            skos:closeMatch  cpc:61252 ;
+            skos:closeMatch  cpc:61253 ;
+            skos:closeMatch  cpc:61254 ;
+            skos:closeMatch  cpc:61255 ;
+            skos:closeMatch  cpc:61259 .
+    cpa:46.18.19  skos:closeMatch  cpc:61293 ;
+            skos:closeMatch  cpc:61294 ;
+            skos:closeMatch  cpc:61295 ;
+            skos:closeMatch  cpc:61298 ;
+            skos:closeMatch  cpc:61299 .
+    cpa:46.19.10  skos:closeMatch  cpc:612 .
+    cpa:46.21.11  skos:closeMatch  cpc:61111 .
+    cpa:46.21.12  skos:closeMatch  cpc:61111 .
+    cpa:46.21.13  skos:closeMatch  cpc:61111 .
+    cpa:46.21.14  skos:closeMatch  cpc:61111 .
+    cpa:46.21.19  skos:closeMatch  cpc:61119 .
+    cpa:46.21.20  skos:closeMatch  cpc:61113 .
+    cpa:46.22.10  skos:closeMatch  cpc:61112 .
+    cpa:46.23.10  skos:closeMatch  cpc:61114 .
+    cpa:46.24.10  skos:closeMatch  cpc:61115 .
+    cpa:46.31.11  skos:closeMatch  cpc:61121 .
+    cpa:46.31.12  skos:closeMatch  cpc:61121 .
+    cpa:46.32.11  skos:closeMatch  cpc:61123 .
+    cpa:46.32.12  skos:closeMatch  cpc:61123 .
+    cpa:46.33.11  skos:closeMatch  cpc:61122 .
+    cpa:46.33.12  skos:closeMatch  cpc:61122 .
+    cpa:46.33.13  skos:closeMatch  cpc:61122 .
+    cpa:46.34.11  skos:closeMatch  cpc:61126 .
+    cpa:46.34.12  skos:closeMatch  cpc:61126 .
+    cpa:46.35.10  skos:closeMatch  cpc:61128 .
+    cpa:46.36.11  skos:closeMatch  cpc:61129 .
+    cpa:46.36.12  skos:closeMatch  cpc:61125 .
+    cpa:46.36.13  skos:closeMatch  cpc:61125 .
+    cpa:46.37.10  skos:closeMatch  cpc:61127 .
+    cpa:46.38.10  skos:closeMatch  cpc:61124 .
+    cpa:46.38.21  skos:closeMatch  cpc:61129 .
+    cpa:46.38.29  skos:closeMatch  cpc:61129 .
+    cpa:46.39.11  skos:closeMatch  cpc:6112 .
+    cpa:46.39.12  skos:closeMatch  cpc:6112 .
+    cpa:46.41.11  skos:closeMatch  cpc:61131 .
+    cpa:46.41.12  skos:closeMatch  cpc:61131 .
+    cpa:46.41.13  skos:closeMatch  cpc:61132 .
+    cpa:46.41.14  skos:closeMatch  cpc:61132 .
+    cpa:46.42.11  skos:closeMatch  cpc:61133 .
+    cpa:46.42.12  skos:closeMatch  cpc:61134 .
+    cpa:46.43.11  skos:closeMatch  cpc:61144 .
+    cpa:46.43.12  skos:closeMatch  cpc:61142 .
+    cpa:46.43.13  skos:closeMatch  cpc:61142 .
+    cpa:46.43.14  skos:closeMatch  cpc:61152 .
+    cpa:46.44.11  skos:closeMatch  cpc:61145 .
+    cpa:46.44.12  skos:closeMatch  cpc:61176 .
+    cpa:46.45.10  skos:closeMatch  cpc:61175 .
+    cpa:46.46.11  skos:closeMatch  cpc:61173 .
+    cpa:46.46.12  skos:closeMatch  cpc:61174 .
+    cpa:46.47.11  skos:closeMatch  cpc:61141 .
+    cpa:46.47.12  skos:closeMatch  cpc:61143 .
+    cpa:46.47.13  skos:closeMatch  cpc:61163 .
+    cpa:46.48.10  skos:closeMatch  cpc:61154 .
+    cpa:46.49.11  skos:closeMatch  cpc:61145 .
+    cpa:46.49.12  skos:closeMatch  cpc:61146 .
+    cpa:46.49.19  skos:closeMatch  cpc:61144 .
+    cpa:46.49.21  skos:closeMatch  cpc:61151 .
+    cpa:46.49.22  skos:closeMatch  cpc:61151 .
+    cpa:46.49.23  skos:closeMatch  cpc:61151 .
+    cpa:46.49.31  skos:closeMatch  cpc:61142 .
+    cpa:46.49.32  skos:closeMatch  cpc:61153 .
+    cpa:46.49.33  skos:closeMatch  cpc:61155 .
+    cpa:46.49.34  skos:closeMatch  cpc:61156 .
+    cpa:46.49.35  skos:closeMatch  cpc:61159 .
+    cpa:46.49.36  skos:closeMatch  cpc:61159 .
+    cpa:46.49.39  skos:closeMatch  cpc:61159 .
+    cpa:46.51.10  skos:closeMatch  cpc:61184 .
+    cpa:46.52.11  skos:closeMatch  cpc:61185 .
+    cpa:46.52.12  skos:closeMatch  cpc:61185 .
+    cpa:46.52.13  skos:closeMatch  cpc:61185 .
+    cpa:46.61.11  skos:closeMatch  cpc:61186 .
+    cpa:46.61.12  skos:closeMatch  cpc:61186 .
+    cpa:46.62.11  skos:closeMatch  cpc:61188 .
+    cpa:46.62.12  skos:closeMatch  cpc:61188 .
+    cpa:46.62.19  skos:closeMatch  cpc:61188 .
+    cpa:46.63.10  skos:closeMatch  cpc:61187 .
+    cpa:46.64.10  skos:closeMatch  cpc:61188 .
+    cpa:46.65.10  skos:closeMatch  cpc:61183 .
+    cpa:46.66.10  skos:closeMatch  cpc:61183 .
+    cpa:46.69.11  skos:closeMatch  cpc:61182 .
+    cpa:46.69.12  skos:closeMatch  cpc:61189 .
+    cpa:46.69.13  skos:closeMatch  cpc:61189 .
+    cpa:46.69.14  skos:closeMatch  cpc:61188 .
+    cpa:46.69.15  skos:closeMatch  cpc:61189 .
+    cpa:46.69.16  skos:closeMatch  cpc:61189 .
+    cpa:46.69.19  skos:closeMatch  cpc:61189 .
+    cpa:46.71.11  skos:closeMatch  cpc:61191 .
+    cpa:46.71.12  skos:closeMatch  cpc:61191 .
+    cpa:46.71.13  skos:closeMatch  cpc:61191 .
+    cpa:46.72.11  skos:closeMatch  cpc:61192 .
+    cpa:46.72.12  skos:closeMatch  cpc:61192 .
+    cpa:46.72.13  skos:closeMatch  cpc:61192 .
+    cpa:46.72.14  skos:closeMatch  cpc:61192 .
+    cpa:46.73.11  skos:closeMatch  cpc:61193 .
+    cpa:46.73.12  skos:closeMatch  cpc:61193 .
+    cpa:46.73.13  skos:closeMatch  cpc:61162 .
+    cpa:46.73.14  skos:closeMatch  cpc:61164 .
+    cpa:46.73.15  skos:closeMatch  cpc:61161 .
+    cpa:46.73.16  skos:closeMatch  cpc:61161 .
+    cpa:46.73.17  skos:closeMatch  cpc:61163 .
+    cpa:46.73.18  skos:closeMatch  cpc:61163 .
+    cpa:46.74.11  skos:closeMatch  cpc:61165 .
+    cpa:46.74.12  skos:closeMatch  cpc:61199 .
+    cpa:46.74.13  skos:closeMatch  cpc:61165 .
+    cpa:46.75.11  skos:closeMatch  cpc:61172 .
+    cpa:46.75.12  skos:closeMatch  cpc:61171 .
+    cpa:46.76.11  skos:closeMatch  cpc:61194 .
+    cpa:46.76.12  skos:closeMatch  cpc:61131 .
+    cpa:46.76.13  skos:closeMatch  cpc:61199 .
+    cpa:46.76.19  skos:closeMatch  cpc:61199 .
+    cpa:46.77.10  skos:closeMatch  cpc:61195 .
+    cpa:46.90.10  skos:closeMatch  cpc:61 .
+    cpa:47.00.11  skos:closeMatch  cpc:62121 ;
+            skos:closeMatch  cpc:62221 ;
+            skos:closeMatch  cpc:62321 ;
+            skos:closeMatch  cpc:62421 ;
+            skos:closeMatch  cpc:62521 .
+    cpa:47.00.12  skos:closeMatch  cpc:62121 ;
+            skos:closeMatch  cpc:62221 ;
+            skos:closeMatch  cpc:62321 ;
+            skos:closeMatch  cpc:62421 ;
+            skos:closeMatch  cpc:62521 .
+    cpa:47.00.13  skos:closeMatch  cpc:62123 ;
+            skos:closeMatch  cpc:62223 ;
+            skos:closeMatch  cpc:62323 ;
+            skos:closeMatch  cpc:62423 ;
+            skos:closeMatch  cpc:62523 .
+    cpa:47.00.14  skos:closeMatch  cpc:62123 ;
+            skos:closeMatch  cpc:62223 ;
+            skos:closeMatch  cpc:62323 ;
+            skos:closeMatch  cpc:62423 ;
+            skos:closeMatch  cpc:62523 .
+    cpa:47.00.15  skos:closeMatch  cpc:62124 ;
+            skos:closeMatch  cpc:62224 ;
+            skos:closeMatch  cpc:62324 ;
+            skos:closeMatch  cpc:62424 ;
+            skos:closeMatch  cpc:62524 .
+    cpa:47.00.16  skos:closeMatch  cpc:62125 ;
+            skos:closeMatch  cpc:62225 ;
+            skos:closeMatch  cpc:62325 ;
+            skos:closeMatch  cpc:62425 ;
+            skos:closeMatch  cpc:62525 .
+    cpa:47.00.17  skos:closeMatch  cpc:62125 ;
+            skos:closeMatch  cpc:62225 ;
+            skos:closeMatch  cpc:62325 ;
+            skos:closeMatch  cpc:62425 ;
+            skos:closeMatch  cpc:62525 .
+    cpa:47.00.18  skos:closeMatch  cpc:62122 ;
+            skos:closeMatch  cpc:62222 ;
+            skos:closeMatch  cpc:62322 ;
+            skos:closeMatch  cpc:62422 ;
+            skos:closeMatch  cpc:62522 .
+    cpa:47.00.19  skos:closeMatch  cpc:62119 ;
+            skos:closeMatch  cpc:62122 ;
+            skos:closeMatch  cpc:62219 ;
+            skos:closeMatch  cpc:62222 ;
+            skos:closeMatch  cpc:62319 ;
+            skos:closeMatch  cpc:62322 ;
+            skos:closeMatch  cpc:62419 ;
+            skos:closeMatch  cpc:62422 ;
+            skos:closeMatch  cpc:62519 ;
+            skos:closeMatch  cpc:62522 .
+    cpa:47.00.21  skos:closeMatch  cpc:62127 ;
+            skos:closeMatch  cpc:62227 ;
+            skos:closeMatch  cpc:62327 ;
+            skos:closeMatch  cpc:62427 ;
+            skos:closeMatch  cpc:62527 .
+    cpa:47.00.22  skos:closeMatch  cpc:62122 ;
+            skos:closeMatch  cpc:62222 ;
+            skos:closeMatch  cpc:62322 ;
+            skos:closeMatch  cpc:62422 ;
+            skos:closeMatch  cpc:62522 .
+    cpa:47.00.23  skos:closeMatch  cpc:62129 ;
+            skos:closeMatch  cpc:62229 ;
+            skos:closeMatch  cpc:62329 ;
+            skos:closeMatch  cpc:62429 ;
+            skos:closeMatch  cpc:62529 .
+    cpa:47.00.24  skos:closeMatch  cpc:62129 ;
+            skos:closeMatch  cpc:62229 ;
+            skos:closeMatch  cpc:62329 ;
+            skos:closeMatch  cpc:62429 ;
+            skos:closeMatch  cpc:62529 .
+    cpa:47.00.25  skos:closeMatch  cpc:62126 ;
+            skos:closeMatch  cpc:62226 ;
+            skos:closeMatch  cpc:62326 ;
+            skos:closeMatch  cpc:62426 ;
+            skos:closeMatch  cpc:62526 .
+    cpa:47.00.26  skos:closeMatch  cpc:62126 ;
+            skos:closeMatch  cpc:62226 ;
+            skos:closeMatch  cpc:62326 ;
+            skos:closeMatch  cpc:62426 ;
+            skos:closeMatch  cpc:62526 .
+    cpa:47.00.27  skos:closeMatch  cpc:62128 ;
+            skos:closeMatch  cpc:62228 ;
+            skos:closeMatch  cpc:62328 ;
+            skos:closeMatch  cpc:62428 ;
+            skos:closeMatch  cpc:62528 .
+    cpa:47.00.31  skos:closeMatch  cpc:62184 ;
+            skos:closeMatch  cpc:62284 ;
+            skos:closeMatch  cpc:62384 ;
+            skos:closeMatch  cpc:62484 ;
+            skos:closeMatch  cpc:62584 .
+    cpa:47.00.32  skos:closeMatch  cpc:62185 ;
+            skos:closeMatch  cpc:62285 ;
+            skos:closeMatch  cpc:62385 ;
+            skos:closeMatch  cpc:62485 ;
+            skos:closeMatch  cpc:62585 .
+    cpa:47.00.33  skos:closeMatch  cpc:62142 ;
+            skos:closeMatch  cpc:62242 ;
+            skos:closeMatch  cpc:62342 ;
+            skos:closeMatch  cpc:62442 ;
+            skos:closeMatch  cpc:62542 .
+    cpa:47.00.41  skos:closeMatch  cpc:62165 ;
+            skos:closeMatch  cpc:62265 ;
+            skos:closeMatch  cpc:62365 ;
+            skos:closeMatch  cpc:62465 ;
+            skos:closeMatch  cpc:62565 .
+    cpa:47.00.42  skos:closeMatch  cpc:62164 ;
+            skos:closeMatch  cpc:62264 ;
+            skos:closeMatch  cpc:62364 ;
+            skos:closeMatch  cpc:62464 ;
+            skos:closeMatch  cpc:62564 .
+    cpa:47.00.43  skos:closeMatch  cpc:62161 ;
+            skos:closeMatch  cpc:62261 ;
+            skos:closeMatch  cpc:62361 ;
+            skos:closeMatch  cpc:62461 ;
+            skos:closeMatch  cpc:62561 .
+    cpa:47.00.44  skos:closeMatch  cpc:62186 ;
+            skos:closeMatch  cpc:62286 ;
+            skos:closeMatch  cpc:62386 ;
+            skos:closeMatch  cpc:62486 ;
+            skos:closeMatch  cpc:62586 .
+    cpa:47.00.45  skos:closeMatch  cpc:62161 ;
+            skos:closeMatch  cpc:62261 ;
+            skos:closeMatch  cpc:62361 ;
+            skos:closeMatch  cpc:62461 ;
+            skos:closeMatch  cpc:62561 .
+    cpa:47.00.46  skos:closeMatch  cpc:62162 ;
+            skos:closeMatch  cpc:62262 ;
+            skos:closeMatch  cpc:62362 ;
+            skos:closeMatch  cpc:62462 ;
+            skos:closeMatch  cpc:62562 .
+    cpa:47.00.47  skos:closeMatch  cpc:62165 ;
+            skos:closeMatch  cpc:62265 ;
+            skos:closeMatch  cpc:62365 ;
+            skos:closeMatch  cpc:62465 ;
+            skos:closeMatch  cpc:62565 .
+    cpa:47.00.49  skos:closeMatch  cpc:62161 ;
+            skos:closeMatch  cpc:62261 ;
+            skos:closeMatch  cpc:62361 ;
+            skos:closeMatch  cpc:62461 ;
+            skos:closeMatch  cpc:62561 .
+    cpa:47.00.51  skos:closeMatch  cpc:62131 ;
+            skos:closeMatch  cpc:62231 ;
+            skos:closeMatch  cpc:62331 ;
+            skos:closeMatch  cpc:62431 ;
+            skos:closeMatch  cpc:62531 .
+    cpa:47.00.52  skos:closeMatch  cpc:62132 ;
+            skos:closeMatch  cpc:62232 ;
+            skos:closeMatch  cpc:62332 ;
+            skos:closeMatch  cpc:62432 ;
+            skos:closeMatch  cpc:62532 .
+    cpa:47.00.53  skos:closeMatch  cpc:62163 ;
+            skos:closeMatch  cpc:62263 ;
+            skos:closeMatch  cpc:62363 ;
+            skos:closeMatch  cpc:62463 ;
+            skos:closeMatch  cpc:62563 .
+    cpa:47.00.54  skos:closeMatch  cpc:62144 ;
+            skos:closeMatch  cpc:62244 ;
+            skos:closeMatch  cpc:62344 ;
+            skos:closeMatch  cpc:62444 ;
+            skos:closeMatch  cpc:62544 .
+    cpa:47.00.55  skos:closeMatch  cpc:62141 ;
+            skos:closeMatch  cpc:62183 ;
+            skos:closeMatch  cpc:62241 ;
+            skos:closeMatch  cpc:62283 ;
+            skos:closeMatch  cpc:62341 ;
+            skos:closeMatch  cpc:62383 ;
+            skos:closeMatch  cpc:62441 ;
+            skos:closeMatch  cpc:62483 ;
+            skos:closeMatch  cpc:62541 ;
+            skos:closeMatch  cpc:62583 .
+    cpa:47.00.56  skos:closeMatch  cpc:62143 ;
+            skos:closeMatch  cpc:62243 ;
+            skos:closeMatch  cpc:62343 ;
+            skos:closeMatch  cpc:62443 ;
+            skos:closeMatch  cpc:62543 .
+    cpa:47.00.57  skos:closeMatch  cpc:62146 ;
+            skos:closeMatch  cpc:62246 ;
+            skos:closeMatch  cpc:62346 ;
+            skos:closeMatch  cpc:62446 ;
+            skos:closeMatch  cpc:62546 .
+    cpa:47.00.58  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62159 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62259 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62359 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62459 ;
+            skos:closeMatch  cpc:62551 ;
+            skos:closeMatch  cpc:62559 .
+    cpa:47.00.59  skos:closeMatch  cpc:62145 ;
+            skos:closeMatch  cpc:62245 ;
+            skos:closeMatch  cpc:62345 ;
+            skos:closeMatch  cpc:62445 ;
+            skos:closeMatch  cpc:62545 .
+    cpa:47.00.61  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62551 .
+    cpa:47.00.62  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62551 .
+    cpa:47.00.63  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62551 .
+    cpa:47.00.64  skos:closeMatch  cpc:62142 ;
+            skos:closeMatch  cpc:62242 ;
+            skos:closeMatch  cpc:62342 ;
+            skos:closeMatch  cpc:62442 ;
+            skos:closeMatch  cpc:62542 .
+    cpa:47.00.65  skos:closeMatch  cpc:62155 ;
+            skos:closeMatch  cpc:62255 ;
+            skos:closeMatch  cpc:62355 ;
+            skos:closeMatch  cpc:62455 ;
+            skos:closeMatch  cpc:62555 .
+    cpa:47.00.66  skos:closeMatch  cpc:62155 ;
+            skos:closeMatch  cpc:62255 ;
+            skos:closeMatch  cpc:62355 ;
+            skos:closeMatch  cpc:62455 ;
+            skos:closeMatch  cpc:62555 .
+    cpa:47.00.67  skos:closeMatch  cpc:62153 ;
+            skos:closeMatch  cpc:62253 ;
+            skos:closeMatch  cpc:62353 ;
+            skos:closeMatch  cpc:62453 ;
+            skos:closeMatch  cpc:62553 .
+    cpa:47.00.68  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62154 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62254 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62354 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62454 ;
+            skos:closeMatch  cpc:62551 ;
+            skos:closeMatch  cpc:62554 .
+    cpa:47.00.69  skos:closeMatch  cpc:62159 ;
+            skos:closeMatch  cpc:62259 ;
+            skos:closeMatch  cpc:62359 ;
+            skos:closeMatch  cpc:62459 ;
+            skos:closeMatch  cpc:62559 .
+    cpa:47.00.71  skos:closeMatch  cpc:62133 ;
+            skos:closeMatch  cpc:62233 ;
+            skos:closeMatch  cpc:62333 ;
+            skos:closeMatch  cpc:62433 ;
+            skos:closeMatch  cpc:62533 .
+    cpa:47.00.72  skos:closeMatch  cpc:62134 ;
+            skos:closeMatch  cpc:62234 ;
+            skos:closeMatch  cpc:62334 ;
+            skos:closeMatch  cpc:62434 ;
+            skos:closeMatch  cpc:62534 .
+    cpa:47.00.73  skos:closeMatch  cpc:62156 ;
+            skos:closeMatch  cpc:62256 ;
+            skos:closeMatch  cpc:62356 ;
+            skos:closeMatch  cpc:62456 ;
+            skos:closeMatch  cpc:62556 .
+    cpa:47.00.74  skos:closeMatch  cpc:62173 ;
+            skos:closeMatch  cpc:62273 ;
+            skos:closeMatch  cpc:62373 ;
+            skos:closeMatch  cpc:62473 ;
+            skos:closeMatch  cpc:62573 .
+    cpa:47.00.75  skos:closeMatch  cpc:62174 ;
+            skos:closeMatch  cpc:62274 ;
+            skos:closeMatch  cpc:62374 ;
+            skos:closeMatch  cpc:62474 ;
+            skos:closeMatch  cpc:62574 .
+    cpa:47.00.76  skos:closeMatch  cpc:62175 ;
+            skos:closeMatch  cpc:62275 ;
+            skos:closeMatch  cpc:62375 ;
+            skos:closeMatch  cpc:62475 ;
+            skos:closeMatch  cpc:62575 .
+    cpa:47.00.77  skos:closeMatch  cpc:62112 ;
+            skos:closeMatch  cpc:62212 ;
+            skos:closeMatch  cpc:62312 ;
+            skos:closeMatch  cpc:62412 ;
+            skos:closeMatch  cpc:62512 .
+    cpa:47.00.78  skos:closeMatch  cpc:62172 ;
+            skos:closeMatch  cpc:62272 ;
+            skos:closeMatch  cpc:62372 ;
+            skos:closeMatch  cpc:62472 ;
+            skos:closeMatch  cpc:62572 .
+    cpa:47.00.79  skos:closeMatch  cpc:62114 ;
+            skos:closeMatch  cpc:62214 ;
+            skos:closeMatch  cpc:62314 ;
+            skos:closeMatch  cpc:62414 ;
+            skos:closeMatch  cpc:62514 .
+    cpa:47.00.81  skos:closeMatch  cpc:62191 ;
+            skos:closeMatch  cpc:62291 ;
+            skos:closeMatch  cpc:62391 ;
+            skos:closeMatch  cpc:62491 ;
+            skos:closeMatch  cpc:62591 .
+    cpa:47.00.82  skos:closeMatch  cpc:62154 ;
+            skos:closeMatch  cpc:62254 ;
+            skos:closeMatch  cpc:62354 ;
+            skos:closeMatch  cpc:62454 ;
+            skos:closeMatch  cpc:62554 .
+    cpa:47.00.83  skos:closeMatch  cpc:62152 ;
+            skos:closeMatch  cpc:62252 ;
+            skos:closeMatch  cpc:62352 ;
+            skos:closeMatch  cpc:62452 ;
+            skos:closeMatch  cpc:62552 .
+    cpa:47.00.84  skos:closeMatch  cpc:62176 ;
+            skos:closeMatch  cpc:62276 ;
+            skos:closeMatch  cpc:62376 ;
+            skos:closeMatch  cpc:62476 ;
+            skos:closeMatch  cpc:62576 .
+    cpa:47.00.85  skos:closeMatch  cpc:62191 ;
+            skos:closeMatch  cpc:62291 ;
+            skos:closeMatch  cpc:62391 ;
+            skos:closeMatch  cpc:62491 ;
+            skos:closeMatch  cpc:62591 .
+    cpa:47.00.86  skos:closeMatch  cpc:62159 ;
+            skos:closeMatch  cpc:62259 ;
+            skos:closeMatch  cpc:62359 ;
+            skos:closeMatch  cpc:62459 ;
+            skos:closeMatch  cpc:62559 .
+    cpa:47.00.87  skos:closeMatch  cpc:62111 ;
+            skos:closeMatch  cpc:62114 ;
+            skos:closeMatch  cpc:62115 ;
+            skos:closeMatch  cpc:62119 ;
+            skos:closeMatch  cpc:62211 ;
+            skos:closeMatch  cpc:62214 ;
+            skos:closeMatch  cpc:62215 ;
+            skos:closeMatch  cpc:62219 ;
+            skos:closeMatch  cpc:62311 ;
+            skos:closeMatch  cpc:62314 ;
+            skos:closeMatch  cpc:62315 ;
+            skos:closeMatch  cpc:62319 ;
+            skos:closeMatch  cpc:62411 ;
+            skos:closeMatch  cpc:62414 ;
+            skos:closeMatch  cpc:62415 ;
+            skos:closeMatch  cpc:62419 ;
+            skos:closeMatch  cpc:62511 ;
+            skos:closeMatch  cpc:62514 ;
+            skos:closeMatch  cpc:62515 ;
+            skos:closeMatch  cpc:62519 .
+    cpa:47.00.88  skos:closeMatch  cpc:62182 ;
+            skos:closeMatch  cpc:62183 ;
+            skos:closeMatch  cpc:62187 ;
+            skos:closeMatch  cpc:62188 ;
+            skos:closeMatch  cpc:62189 ;
+            skos:closeMatch  cpc:62282 ;
+            skos:closeMatch  cpc:62283 ;
+            skos:closeMatch  cpc:62287 ;
+            skos:closeMatch  cpc:62288 ;
+            skos:closeMatch  cpc:62289 ;
+            skos:closeMatch  cpc:62382 ;
+            skos:closeMatch  cpc:62383 ;
+            skos:closeMatch  cpc:62387 ;
+            skos:closeMatch  cpc:62388 ;
+            skos:closeMatch  cpc:62389 ;
+            skos:closeMatch  cpc:62482 ;
+            skos:closeMatch  cpc:62483 ;
+            skos:closeMatch  cpc:62487 ;
+            skos:closeMatch  cpc:62488 ;
+            skos:closeMatch  cpc:62489 ;
+            skos:closeMatch  cpc:62582 ;
+            skos:closeMatch  cpc:62583 ;
+            skos:closeMatch  cpc:62587 ;
+            skos:closeMatch  cpc:62588 ;
+            skos:closeMatch  cpc:62589 .
+    cpa:47.00.89  skos:closeMatch  cpc:62194 ;
+            skos:closeMatch  cpc:62199 ;
+            skos:closeMatch  cpc:62294 ;
+            skos:closeMatch  cpc:62299 ;
+            skos:closeMatch  cpc:62394 ;
+            skos:closeMatch  cpc:62399 ;
+            skos:closeMatch  cpc:62494 ;
+            skos:closeMatch  cpc:62499 ;
+            skos:closeMatch  cpc:62594 ;
+            skos:closeMatch  cpc:62599 .
+    cpa:47.00.91  skos:closeMatch  cpc:62199 ;
+            skos:closeMatch  cpc:62299 ;
+            skos:closeMatch  cpc:62399 ;
+            skos:closeMatch  cpc:62499 ;
+            skos:closeMatch  cpc:62599 .
+    cpa:47.00.92  skos:closeMatch  cpc:62151 ;
+            skos:closeMatch  cpc:62251 ;
+            skos:closeMatch  cpc:62351 ;
+            skos:closeMatch  cpc:62451 ;
+            skos:closeMatch  cpc:62551 .
+    cpa:47.00.99  skos:closeMatch  cpc:6213 ;
+            skos:closeMatch  cpc:6214 ;
+            skos:closeMatch  cpc:6215 ;
+            skos:closeMatch  cpc:6223 ;
+            skos:closeMatch  cpc:6224 ;
+            skos:closeMatch  cpc:6225 ;
+            skos:closeMatch  cpc:6233 ;
+            skos:closeMatch  cpc:6234 ;
+            skos:closeMatch  cpc:6235 ;
+            skos:closeMatch  cpc:6243 ;
+            skos:closeMatch  cpc:6244 ;
+            skos:closeMatch  cpc:6245 ;
+            skos:closeMatch  cpc:6253 ;
+            skos:closeMatch  cpc:6254 ;
+            skos:closeMatch  cpc:6255 .
+    cpa:49.10.11  skos:closeMatch  cpc:64131 .
+    cpa:49.10.19  skos:closeMatch  cpc:64210 .
+    cpa:49.20.11  skos:closeMatch  cpc:65121 .
+    cpa:49.20.12  skos:closeMatch  cpc:65122 .
+    cpa:49.20.13  skos:closeMatch  cpc:65122 .
+    cpa:49.20.14  skos:closeMatch  cpc:65123 .
+    cpa:49.20.15  skos:closeMatch  cpc:65124 .
+    cpa:49.20.16  skos:closeMatch  cpc:65125 .
+    cpa:49.20.19  skos:closeMatch  cpc:65126 ;
+            skos:closeMatch  cpc:65129 .
+    cpa:49.31.10  skos:closeMatch  cpc:64111 .
+    cpa:49.31.21  skos:closeMatch  cpc:64112 .
+    cpa:49.31.22  skos:closeMatch  cpc:64113 .
+    cpa:49.32.11  skos:closeMatch  cpc:64115 .
+    cpa:49.32.12  skos:closeMatch  cpc:64116 .
+    cpa:49.39.11  skos:closeMatch  cpc:64221 .
+    cpa:49.39.12  skos:closeMatch  cpc:64222 .
+    cpa:49.39.13  skos:closeMatch  cpc:64114 .
+    cpa:49.39.20  skos:closeMatch  cpc:64119 .
+    cpa:49.39.31  skos:closeMatch  cpc:66011 .
+    cpa:49.39.32  skos:closeMatch  cpc:64132 .
+    cpa:49.39.33  skos:closeMatch  cpc:64118 .
+    cpa:49.39.34  skos:closeMatch  cpc:64223 .
+    cpa:49.39.35  skos:closeMatch  cpc:64117 .
+    cpa:49.39.39  skos:closeMatch  cpc:64119 .
+    cpa:49.41.11  skos:closeMatch  cpc:65111 .
+    cpa:49.41.12  skos:closeMatch  cpc:65112 .
+    cpa:49.41.13  skos:closeMatch  cpc:65112 .
+    cpa:49.41.14  skos:closeMatch  cpc:65113 .
+    cpa:49.41.15  skos:closeMatch  cpc:65117 .
+    cpa:49.41.16  skos:closeMatch  cpc:65118 .
+    cpa:49.41.17  skos:closeMatch  cpc:65114 .
+    cpa:49.41.18  skos:closeMatch  cpc:65116 .
+    cpa:49.41.19  skos:closeMatch  cpc:65119 .
+    cpa:49.41.20  skos:closeMatch  cpc:66012 .
+    cpa:49.42.11  skos:closeMatch  cpc:65115 .
+    cpa:49.42.19  skos:closeMatch  cpc:65119 .
+    cpa:49.50.11  skos:closeMatch  cpc:65131 .
+    cpa:49.50.12  skos:closeMatch  cpc:65131 .
+    cpa:49.50.19  skos:closeMatch  cpc:65139 .
+    cpa:50.10.11  skos:closeMatch  cpc:64231 .
+    cpa:50.10.12  skos:closeMatch  cpc:64232 .
+    cpa:50.10.19  skos:closeMatch  cpc:64239 .
+    cpa:50.10.20  skos:closeMatch  cpc:66021 .
+    cpa:50.20.11  skos:closeMatch  cpc:65211 .
+    cpa:50.20.12  skos:closeMatch  cpc:65212 .
+    cpa:50.20.13  skos:closeMatch  cpc:65212 .
+    cpa:50.20.14  skos:closeMatch  cpc:65213 .
+    cpa:50.20.15  skos:closeMatch  cpc:65219 .
+    cpa:50.20.19  skos:closeMatch  cpc:65219 .
+    cpa:50.20.21  skos:closeMatch  cpc:66022 .
+    cpa:50.20.22  skos:closeMatch  cpc:65219 .
+    cpa:50.30.11  skos:closeMatch  cpc:64121 .
+    cpa:50.30.12  skos:closeMatch  cpc:64122 .
+    cpa:50.30.13  skos:closeMatch  cpc:64133 .
+    cpa:50.30.19  skos:closeMatch  cpc:64129 .
+    cpa:50.30.20  skos:closeMatch  cpc:66023 .
+    cpa:50.40.11  skos:closeMatch  cpc:65221 .
+    cpa:50.40.12  skos:closeMatch  cpc:65222 .
+    cpa:50.40.13  skos:closeMatch  cpc:65222 .
+    cpa:50.40.14  skos:closeMatch  cpc:65229 .
+    cpa:50.40.19  skos:closeMatch  cpc:65229 .
+    cpa:50.40.21  skos:closeMatch  cpc:66024 .
+    cpa:50.40.22  skos:closeMatch  cpc:65229 .
+    cpa:51.10.11  skos:closeMatch  cpc:64241 .
+    cpa:51.10.12  skos:closeMatch  cpc:64242 .
+    cpa:51.10.13  skos:closeMatch  cpc:64243 .
+    cpa:51.10.14  skos:closeMatch  cpc:64244 .
+    cpa:51.10.15  skos:closeMatch  cpc:64134 .
+    cpa:51.10.20  skos:closeMatch  cpc:66031 .
+    cpa:51.21.11  skos:closeMatch  cpc:65319 .
+    cpa:51.21.12  skos:closeMatch  cpc:65311 .
+    cpa:51.21.13  skos:closeMatch  cpc:65319 .
+    cpa:51.21.14  skos:closeMatch  cpc:65319 .
+    cpa:51.21.20  skos:closeMatch  cpc:66032 .
+    cpa:51.22.11  skos:closeMatch  cpc:64250 .
+    cpa:51.22.12  skos:closeMatch  cpc:65320 .
+    cpa:52.10.11  skos:closeMatch  cpc:67210 .
+    cpa:52.10.12  skos:closeMatch  cpc:67220 .
+    cpa:52.10.13  skos:closeMatch  cpc:67290 .
+    cpa:52.10.19  skos:closeMatch  cpc:67290 .
+    cpa:52.21.11  skos:closeMatch  cpc:67310 .
+    cpa:52.21.19  skos:closeMatch  cpc:67390 .
+    cpa:52.21.21  skos:closeMatch  cpc:67410 .
+    cpa:52.21.22  skos:closeMatch  cpc:67420 .
+    cpa:52.21.23  skos:closeMatch  cpc:67420 .
+    cpa:52.21.24  skos:closeMatch  cpc:67430 .
+    cpa:52.21.25  skos:closeMatch  cpc:67440 .
+    cpa:52.21.29  skos:closeMatch  cpc:67490 .
+    cpa:52.21.30  skos:closeMatch  cpc:67990 .
+    cpa:52.22.11  skos:closeMatch  cpc:67511 .
+    cpa:52.22.12  skos:closeMatch  cpc:67512 .
+    cpa:52.22.13  skos:closeMatch  cpc:67521 .
+    cpa:52.22.14  skos:closeMatch  cpc:67522 .
+    cpa:52.22.15  skos:closeMatch  cpc:67531 .
+    cpa:52.22.16  skos:closeMatch  cpc:67532 .
+    cpa:52.22.19  skos:closeMatch  cpc:67590 .
+    cpa:52.23.11  skos:closeMatch  cpc:67610 .
+    cpa:52.23.12  skos:closeMatch  cpc:67620 .
+    cpa:52.23.19  skos:closeMatch  cpc:67630 .
+    cpa:52.23.20  skos:closeMatch  cpc:67640 .
+    cpa:52.24.11  skos:closeMatch  cpc:67110 .
+    cpa:52.24.12  skos:closeMatch  cpc:67110 .
+    cpa:52.24.13  skos:closeMatch  cpc:67190 .
+    cpa:52.24.19  skos:closeMatch  cpc:67190 .
+    cpa:52.29.11  skos:closeMatch  cpc:67910 .
+    cpa:52.29.12  skos:closeMatch  cpc:67910 .
+    cpa:52.29.19  skos:closeMatch  cpc:67910 .
+    cpa:52.29.20  skos:closeMatch  cpc:67990 .
+    cpa:53.10.11  skos:closeMatch  cpc:68011 .
+    cpa:53.10.12  skos:closeMatch  cpc:68011 .
+    cpa:53.10.13  skos:closeMatch  cpc:68012 .
+    cpa:53.10.14  skos:closeMatch  cpc:68013 .
+    cpa:53.10.19  skos:closeMatch  cpc:68019 .
+    cpa:53.20.11  skos:closeMatch  cpc:68021 ;
+            skos:closeMatch  cpc:68022 .
+    cpa:53.20.12  skos:closeMatch  cpc:68030 .
+    cpa:53.20.19  skos:closeMatch  cpc:68030 .
+    cpa:55.10.10  skos:closeMatch  cpc:63111 .
+    cpa:55.20.11  skos:closeMatch  cpc:63114 .
+    cpa:55.20.12  skos:closeMatch  cpc:63113 .
+    cpa:55.20.19  skos:closeMatch  cpc:63112 .
+    cpa:55.30.11  skos:closeMatch  cpc:63120 .
+    cpa:55.30.12  skos:closeMatch  cpc:63130 .
+    cpa:55.90.11  skos:closeMatch  cpc:63210 .
+    cpa:55.90.12  skos:closeMatch  cpc:63220 .
+    cpa:55.90.13  skos:closeMatch  cpc:63290 .
+    cpa:55.90.19  skos:closeMatch  cpc:63290 .
+    cpa:56.10.11  skos:closeMatch  cpc:63310 .
+    cpa:56.10.12  skos:closeMatch  cpc:63310 .
+    cpa:56.10.13  skos:closeMatch  cpc:63320 .
+    cpa:56.10.19  skos:closeMatch  cpc:63399 .
+    cpa:56.21.11  skos:closeMatch  cpc:63391 .
+    cpa:56.21.19  skos:closeMatch  cpc:63391 .
+    cpa:56.29.11  skos:closeMatch  cpc:63392 .
+    cpa:56.29.19  skos:closeMatch  cpc:63393 .
+    cpa:56.29.20  skos:closeMatch  cpc:63393 .
+    cpa:56.30.10  skos:closeMatch  cpc:63400 .
+    cpa:58.11.11  skos:closeMatch  cpc:32210 .
+    cpa:58.11.12  skos:closeMatch  cpc:32291 .
+    cpa:58.11.13  skos:closeMatch  cpc:32292 .
+    cpa:58.11.14  skos:closeMatch  cpc:32220 .
+    cpa:58.11.15  skos:closeMatch  cpc:32220 .
+    cpa:58.11.16  skos:closeMatch  cpc:32511 .
+    cpa:58.11.19  skos:closeMatch  cpc:32299 .
+    cpa:58.11.20  skos:closeMatch  cpc:47691 ;
+            skos:closeMatch  cpc:47692 .
+    cpa:58.11.30  skos:closeMatch  cpc:84311 .
+    cpa:58.11.41  skos:closeMatch  cpc:83631 .
+    cpa:58.11.42  skos:closeMatch  cpc:83639 .
+    cpa:58.11.50  skos:closeMatch  cpc:89110 .
+    cpa:58.11.60  skos:closeMatch  cpc:73320 .
+    cpa:58.12.10  skos:closeMatch  cpc:32230 ;
+            skos:closeMatch  cpc:47692 .
+    cpa:58.12.20  skos:closeMatch  cpc:84313 .
+    cpa:58.12.30  skos:closeMatch  cpc:73312 .
+    cpa:58.12.40  skos:closeMatch  cpc:83631 .
+    cpa:58.13.10  skos:closeMatch  cpc:32300 .
+    cpa:58.13.20  skos:closeMatch  cpc:84312 .
+    cpa:58.13.31  skos:closeMatch  cpc:83631 .
+    cpa:58.13.32  skos:closeMatch  cpc:83639 .
+    cpa:58.14.11  skos:closeMatch  cpc:32410 .
+    cpa:58.14.12  skos:closeMatch  cpc:32420 .
+    cpa:58.14.19  skos:closeMatch  cpc:32490 .
+    cpa:58.14.20  skos:closeMatch  cpc:84312 .
+    cpa:58.14.31  skos:closeMatch  cpc:83631 .
+    cpa:58.14.32  skos:closeMatch  cpc:83639 .
+    cpa:58.14.40  skos:closeMatch  cpc:73320 .
+    cpa:58.19.11  skos:closeMatch  cpc:32530 .
+    cpa:58.19.12  skos:closeMatch  cpc:32540 .
+    cpa:58.19.13  skos:closeMatch  cpc:32630 .
+    cpa:58.19.14  skos:closeMatch  cpc:32610 .
+    cpa:58.19.15  skos:closeMatch  cpc:32620 .
+    cpa:58.19.19  skos:closeMatch  cpc:32690 .
+    cpa:58.19.21  skos:closeMatch  cpc:84393 .
+    cpa:58.19.29  skos:closeMatch  cpc:84399 .
+    cpa:58.19.30  skos:closeMatch  cpc:73320 .
+    cpa:58.21.10  skos:closeMatch  cpc:47822 .
+    cpa:58.21.20  skos:closeMatch  cpc:84342 .
+    cpa:58.21.30  skos:closeMatch  cpc:84391 .
+    cpa:58.21.40  skos:closeMatch  cpc:73311 .
+    cpa:58.29.11  skos:closeMatch  cpc:47811 .
+    cpa:58.29.12  skos:closeMatch  cpc:47812 .
+    cpa:58.29.13  skos:closeMatch  cpc:47813 .
+    cpa:58.29.14  skos:closeMatch  cpc:47814 .
+    cpa:58.29.21  skos:closeMatch  cpc:38582 ;
+            skos:closeMatch  cpc:47821 .
+    cpa:58.29.29  skos:closeMatch  cpc:47829 .
+    cpa:58.29.31  skos:closeMatch  cpc:84341 .
+    cpa:58.29.32  skos:closeMatch  cpc:84342 .
+    cpa:58.29.40  skos:closeMatch  cpc:84392 .
+    cpa:58.29.50  skos:closeMatch  cpc:73311 .
+    cpa:59.11.11  skos:closeMatch  cpc:96121 .
+    cpa:59.11.12  skos:closeMatch  cpc:96121 .
+    cpa:59.11.13  skos:closeMatch  cpc:96121 .
+    cpa:59.11.21  skos:closeMatch  cpc:96123 .
+    cpa:59.11.22  skos:closeMatch  cpc:38950 .
+    cpa:59.11.23  skos:closeMatch  cpc:47620 .
+    cpa:59.11.24  skos:closeMatch  cpc:84331 .
+    cpa:59.11.25  skos:closeMatch  cpc:84332 .
+    cpa:59.11.30  skos:closeMatch  cpc:83639 .
+    cpa:59.12.11  skos:closeMatch  cpc:96131 .
+    cpa:59.12.12  skos:closeMatch  cpc:96132 .
+    cpa:59.12.13  skos:closeMatch  cpc:96133 .
+    cpa:59.12.14  skos:closeMatch  cpc:96134 .
+    cpa:59.12.15  skos:closeMatch  cpc:96135 .
+    cpa:59.12.16  skos:closeMatch  cpc:96136 .
+    cpa:59.12.17  skos:closeMatch  cpc:96137 .
+    cpa:59.12.19  skos:closeMatch  cpc:96139 .
+    cpa:59.13.11  skos:closeMatch  cpc:73320 .
+    cpa:59.13.12  skos:closeMatch  cpc:96140 .
+    cpa:59.14.10  skos:closeMatch  cpc:96150 .
+    cpa:59.20.11  skos:closeMatch  cpc:96111 .
+    cpa:59.20.12  skos:closeMatch  cpc:96112 .
+    cpa:59.20.13  skos:closeMatch  cpc:96113 .
+    cpa:59.20.21  skos:closeMatch  cpc:96122 .
+    cpa:59.20.22  skos:closeMatch  cpc:96123 .
+    cpa:59.20.31  skos:closeMatch  cpc:32520 .
+    cpa:59.20.32  skos:closeMatch  cpc:32520 .
+    cpa:59.20.33  skos:closeMatch  cpc:47610 .
+    cpa:59.20.34  skos:closeMatch  cpc:47699 .
+    cpa:59.20.35  skos:closeMatch  cpc:84321 .
+    cpa:59.20.36  skos:closeMatch  cpc:84322 .
+    cpa:59.20.40  skos:closeMatch  cpc:73320 .
+    cpa:60.10.11  skos:closeMatch  cpc:84631 .
+    cpa:60.10.12  skos:closeMatch  cpc:84611 .
+    cpa:60.10.20  skos:closeMatch  cpc:84621 .
+    cpa:60.10.30  skos:closeMatch  cpc:83632 .
+    cpa:60.20.11  skos:closeMatch  cpc:84622 ;
+            skos:closeMatch  cpc:84631 .
+    cpa:60.20.12  skos:closeMatch  cpc:84631 .
+    cpa:60.20.13  skos:closeMatch  cpc:84631 .
+    cpa:60.20.20  skos:closeMatch  cpc:84612 .
+    cpa:60.20.30  skos:closeMatch  cpc:83632 .
+    cpa:61.10.11  skos:closeMatch  cpc:84120 .
+    cpa:61.10.12  skos:closeMatch  cpc:84120 .
+    cpa:61.10.13  skos:closeMatch  cpc:84140 .
+    cpa:61.10.20  skos:closeMatch  cpc:84110 .
+    cpa:61.10.30  skos:closeMatch  cpc:84150 .
+    cpa:61.10.41  skos:closeMatch  cpc:84210 .
+    cpa:61.10.42  skos:closeMatch  cpc:84221 .
+    cpa:61.10.43  skos:closeMatch  cpc:84222 .
+    cpa:61.10.49  skos:closeMatch  cpc:84290 .
+    cpa:61.10.51  skos:closeMatch  cpc:84632 .
+    cpa:61.10.52  skos:closeMatch  cpc:84633 .
+    cpa:61.10.53  skos:closeMatch  cpc:84634 .
+    cpa:61.20.11  skos:closeMatch  cpc:84140 .
+    cpa:61.20.12  skos:closeMatch  cpc:84131 .
+    cpa:61.20.13  skos:closeMatch  cpc:84132 .
+    cpa:61.20.14  skos:closeMatch  cpc:84133 .
+    cpa:61.20.20  skos:closeMatch  cpc:84110 .
+    cpa:61.20.30  skos:closeMatch  cpc:84150 .
+    cpa:61.20.41  skos:closeMatch  cpc:84221 .
+    cpa:61.20.42  skos:closeMatch  cpc:84222 .
+    cpa:61.20.49  skos:closeMatch  cpc:84290 .
+    cpa:61.20.50  skos:closeMatch  cpc:84632 ;
+            skos:closeMatch  cpc:84633 ;
+            skos:closeMatch  cpc:84634 .
+    cpa:61.30.10  skos:closeMatch  cpc:84190 .
+    cpa:61.30.20  skos:closeMatch  cpc:84632 ;
+            skos:closeMatch  cpc:84633 ;
+            skos:closeMatch  cpc:84634 .
+    cpa:61.90.10  skos:closeMatch  cpc:84190 .
+    cpa:62.01.11  skos:closeMatch  cpc:83141 .
+    cpa:62.01.12  skos:closeMatch  cpc:83142 .
+    cpa:62.01.21  skos:closeMatch  cpc:83143 .
+    cpa:62.01.29  skos:closeMatch  cpc:83143 .
+    cpa:62.02.10  skos:closeMatch  cpc:83131 .
+    cpa:62.02.20  skos:closeMatch  cpc:83131 .
+    cpa:62.02.30  skos:closeMatch  cpc:83132 .
+    cpa:62.03.11  skos:closeMatch  cpc:83161 .
+    cpa:62.03.12  skos:closeMatch  cpc:83162 .
+    cpa:62.09.10  skos:closeMatch  cpc:87332 .
+    cpa:62.09.20  skos:closeMatch  cpc:83132 .
+    cpa:63.11.11  skos:closeMatch  cpc:83990 .
+    cpa:63.11.12  skos:closeMatch  cpc:83151 .
+    cpa:63.11.13  skos:closeMatch  cpc:83152 .
+    cpa:63.11.19  skos:closeMatch  cpc:83159 .
+    cpa:63.11.20  skos:closeMatch  cpc:83633 .
+    cpa:63.12.10  skos:closeMatch  cpc:84394 .
+    cpa:63.12.20  skos:closeMatch  cpc:83633 .
+    cpa:63.91.11  skos:closeMatch  cpc:84410 .
+    cpa:63.91.12  skos:closeMatch  cpc:84420 .
+    cpa:63.99.10  skos:closeMatch  cpc:85991 .
+    cpa:63.99.20  skos:closeMatch  cpc:83940 .
+    cpa:64.11.10  skos:closeMatch  cpc:71110 .
+    cpa:64.19.11  skos:closeMatch  cpc:71121 .
+    cpa:64.19.12  skos:closeMatch  cpc:71122 .
+    cpa:64.19.21  skos:closeMatch  cpc:71135 .
+    cpa:64.19.22  skos:closeMatch  cpc:71133 .
+    cpa:64.19.23  skos:closeMatch  cpc:71131 .
+    cpa:64.19.24  skos:closeMatch  cpc:71132 .
+    cpa:64.19.25  skos:closeMatch  cpc:71135 .
+    cpa:64.19.26  skos:closeMatch  cpc:71134 .
+    cpa:64.19.29  skos:closeMatch  cpc:71139 .
+    cpa:64.19.30  skos:closeMatch  cpc:71190 .
+    cpa:64.20.10  skos:closeMatch  cpc:71701 .
+    cpa:64.30.10  skos:closeMatch  cpc:71702 .
+    cpa:64.91.10  skos:closeMatch  cpc:71140 .
+    cpa:64.92.11  skos:closeMatch  cpc:71135 .
+    cpa:64.92.12  skos:closeMatch  cpc:71133 .
+    cpa:64.92.13  skos:closeMatch  cpc:71131 .
+    cpa:64.92.14  skos:closeMatch  cpc:71132 .
+    cpa:64.92.15  skos:closeMatch  cpc:71135 .
+    cpa:64.92.16  skos:closeMatch  cpc:71134 .
+    cpa:64.92.19  skos:closeMatch  cpc:71139 .
+    cpa:64.99.11  skos:closeMatch  cpc:71200 .
+    cpa:64.99.19  skos:closeMatch  cpc:71190 .
+    cpa:65.11.10  skos:closeMatch  cpc:71311 .
+    cpa:65.12.11  skos:closeMatch  cpc:71321 .
+    cpa:65.12.12  skos:closeMatch  cpc:71322 .
+    cpa:65.12.21  skos:closeMatch  cpc:71331 .
+    cpa:65.12.29  skos:closeMatch  cpc:71331 .
+    cpa:65.12.31  skos:closeMatch  cpc:71332 .
+    cpa:65.12.32  skos:closeMatch  cpc:71332 .
+    cpa:65.12.33  skos:closeMatch  cpc:71332 .
+    cpa:65.12.34  skos:closeMatch  cpc:71332 .
+    cpa:65.12.35  skos:closeMatch  cpc:71332 .
+    cpa:65.12.36  skos:closeMatch  cpc:71333 .
+    cpa:65.12.41  skos:closeMatch  cpc:71334 .
+    cpa:65.12.49  skos:closeMatch  cpc:71334 .
+    cpa:65.12.50  skos:closeMatch  cpc:71335 .
+    cpa:65.12.61  skos:closeMatch  cpc:71336 .
+    cpa:65.12.62  skos:closeMatch  cpc:71336 .
+    cpa:65.12.71  skos:closeMatch  cpc:71337 .
+    cpa:65.12.72  skos:closeMatch  cpc:71339 .
+    cpa:65.12.73  skos:closeMatch  cpc:71339 .
+    cpa:65.12.90  skos:closeMatch  cpc:71339 .
+    cpa:65.20.11  skos:closeMatch  cpc:71410 .
+    cpa:65.20.12  skos:closeMatch  cpc:71420 .
+    cpa:65.20.13  skos:closeMatch  cpc:71420 .
+    cpa:65.20.21  skos:closeMatch  cpc:71431 .
+    cpa:65.20.22  skos:closeMatch  cpc:71431 .
+    cpa:65.20.23  skos:closeMatch  cpc:71432 .
+    cpa:65.20.24  skos:closeMatch  cpc:71433 .
+    cpa:65.20.25  skos:closeMatch  cpc:71434 .
+    cpa:65.20.31  skos:closeMatch  cpc:71435 .
+    cpa:65.20.32  skos:closeMatch  cpc:71436 .
+    cpa:65.20.41  skos:closeMatch  cpc:71439 .
+    cpa:65.20.42  skos:closeMatch  cpc:71439 .
+    cpa:65.20.50  skos:closeMatch  cpc:71439 .
+    cpa:65.20.60  skos:closeMatch  cpc:71439 .
+    cpa:65.30.11  skos:closeMatch  cpc:71312 .
+    cpa:65.30.12  skos:closeMatch  cpc:71313 .
+    cpa:66.11.11  skos:closeMatch  cpc:71551 .
+    cpa:66.11.12  skos:closeMatch  cpc:71552 .
+    cpa:66.11.19  skos:closeMatch  cpc:71559 .
+    cpa:66.12.11  skos:closeMatch  cpc:71521 .
+    cpa:66.12.12  skos:closeMatch  cpc:71522 .
+    cpa:66.12.13  skos:closeMatch  cpc:71592 .
+    cpa:66.19.10  skos:closeMatch  cpc:71523 .
+    cpa:66.19.21  skos:closeMatch  cpc:71511 .
+    cpa:66.19.22  skos:closeMatch  cpc:71512 .
+    cpa:66.19.29  skos:closeMatch  cpc:71519 .
+    cpa:66.19.31  skos:closeMatch  cpc:71541 .
+    cpa:66.19.32  skos:closeMatch  cpc:71542 .
+    cpa:66.19.91  skos:closeMatch  cpc:71591 .
+    cpa:66.19.92  skos:closeMatch  cpc:71593 .
+    cpa:66.19.99  skos:closeMatch  cpc:71599 .
+    cpa:66.21.10  skos:closeMatch  cpc:71620 .
+    cpa:66.22.10  skos:closeMatch  cpc:71610 .
+    cpa:66.29.11  skos:closeMatch  cpc:71630 .
+    cpa:66.29.19  skos:closeMatch  cpc:71690 .
+    cpa:66.30.11  skos:closeMatch  cpc:71530 .
+    cpa:66.30.12  skos:closeMatch  cpc:71640 .
+    cpa:68.10.11  skos:closeMatch  cpc:72121 .
+    cpa:68.10.12  skos:closeMatch  cpc:72123 .
+    cpa:68.10.13  skos:closeMatch  cpc:72130 .
+    cpa:68.10.14  skos:closeMatch  cpc:72122 .
+    cpa:68.10.15  skos:closeMatch  cpc:72130 .
+    cpa:68.20.11  skos:closeMatch  cpc:72111 .
+    cpa:68.20.12  skos:closeMatch  cpc:72112 .
+    cpa:68.31.11  skos:closeMatch  cpc:72221 .
+    cpa:68.31.12  skos:closeMatch  cpc:72223 .
+    cpa:68.31.13  skos:closeMatch  cpc:72230 .
+    cpa:68.31.14  skos:closeMatch  cpc:72222 .
+    cpa:68.31.15  skos:closeMatch  cpc:72230 .
+    cpa:68.31.16  skos:closeMatch  cpc:72240 .
+    cpa:68.32.11  skos:closeMatch  cpc:72211 .
+    cpa:68.32.12  skos:closeMatch  cpc:72213 .
+    cpa:68.32.13  skos:closeMatch  cpc:72212 .
+    cpa:69.10.11  skos:closeMatch  cpc:82110 .
+    cpa:69.10.12  skos:closeMatch  cpc:82120 .
+    cpa:69.10.13  skos:closeMatch  cpc:82120 .
+    cpa:69.10.14  skos:closeMatch  cpc:82120 .
+    cpa:69.10.15  skos:closeMatch  cpc:82130 .
+    cpa:69.10.16  skos:closeMatch  cpc:82130 .
+    cpa:69.10.17  skos:closeMatch  cpc:82191 .
+    cpa:69.10.18  skos:closeMatch  cpc:82199 .
+    cpa:69.10.19  skos:closeMatch  cpc:82199 .
+    cpa:69.20.10  skos:closeMatch  cpc:82210 .
+    cpa:69.20.21  skos:closeMatch  cpc:82221 .
+    cpa:69.20.22  skos:closeMatch  cpc:82221 .
+    cpa:69.20.23  skos:closeMatch  cpc:82222 .
+    cpa:69.20.24  skos:closeMatch  cpc:82223 .
+    cpa:69.20.29  skos:closeMatch  cpc:82221 .
+    cpa:69.20.31  skos:closeMatch  cpc:82310 .
+    cpa:69.20.32  skos:closeMatch  cpc:82320 .
+    cpa:69.20.40  skos:closeMatch  cpc:82400 .
+    cpa:70.10.10  skos:closeMatch  cpc:83118 .
+    cpa:70.21.10  skos:closeMatch  cpc:83121 .
+    cpa:70.22.11  skos:closeMatch  cpc:83111 .
+    cpa:70.22.12  skos:closeMatch  cpc:83112 .
+    cpa:70.22.13  skos:closeMatch  cpc:83114 .
+    cpa:70.22.14  skos:closeMatch  cpc:83113 .
+    cpa:70.22.15  skos:closeMatch  cpc:83115 .
+    cpa:70.22.16  skos:closeMatch  cpc:83116 .
+    cpa:70.22.17  skos:closeMatch  cpc:83117 .
+    cpa:70.22.20  skos:closeMatch  cpc:83190 .
+    cpa:70.22.30  skos:closeMatch  cpc:83129 .
+    cpa:71.11.10  skos:closeMatch  cpc:32550 .
+    cpa:71.11.21  skos:closeMatch  cpc:83212 .
+    cpa:71.11.22  skos:closeMatch  cpc:83213 .
+    cpa:71.11.23  skos:closeMatch  cpc:83214 .
+    cpa:71.11.24  skos:closeMatch  cpc:83211 .
+    cpa:71.11.31  skos:closeMatch  cpc:83221 .
+    cpa:71.11.32  skos:closeMatch  cpc:83222 .
+    cpa:71.11.33  skos:closeMatch  cpc:83223 .
+    cpa:71.11.41  skos:closeMatch  cpc:83232 .
+    cpa:71.11.42  skos:closeMatch  cpc:83231 .
+    cpa:71.12.11  skos:closeMatch  cpc:83310 .
+    cpa:71.12.12  skos:closeMatch  cpc:83321 .
+    cpa:71.12.13  skos:closeMatch  cpc:83324 .
+    cpa:71.12.14  skos:closeMatch  cpc:83323 .
+    cpa:71.12.15  skos:closeMatch  cpc:83326 .
+    cpa:71.12.16  skos:closeMatch  cpc:83327 .
+    cpa:71.12.17  skos:closeMatch  cpc:83322 .
+    cpa:71.12.18  skos:closeMatch  cpc:83325 .
+    cpa:71.12.19  skos:closeMatch  cpc:83329 .
+    cpa:71.12.20  skos:closeMatch  cpc:83330 .
+    cpa:71.12.31  skos:closeMatch  cpc:83411 .
+    cpa:71.12.32  skos:closeMatch  cpc:83412 .
+    cpa:71.12.33  skos:closeMatch  cpc:83413 .
+    cpa:71.12.34  skos:closeMatch  cpc:83421 .
+    cpa:71.12.35  skos:closeMatch  cpc:83422 .
+    cpa:71.20.11  skos:closeMatch  cpc:83441 .
+    cpa:71.20.12  skos:closeMatch  cpc:83442 .
+    cpa:71.20.13  skos:closeMatch  cpc:83443 .
+    cpa:71.20.14  skos:closeMatch  cpc:83444 .
+    cpa:71.20.19  skos:closeMatch  cpc:83449 .
+    cpa:72.00.11  skos:closeMatch  cpc:81301 .
+    cpa:72.00.12  skos:closeMatch  cpc:81302 .
+    cpa:72.00.13  skos:closeMatch  cpc:81303 .
+    cpa:72.00.20  skos:closeMatch  cpc:81400 .
+    cpa:72.11.11  skos:closeMatch  cpc:81113 .
+    cpa:72.11.12  skos:closeMatch  cpc:81123 .
+    cpa:72.11.13  skos:closeMatch  cpc:81133 .
+    cpa:72.11.21  skos:closeMatch  cpc:81113 .
+    cpa:72.11.22  skos:closeMatch  cpc:81123 .
+    cpa:72.11.23  skos:closeMatch  cpc:81133 .
+    cpa:72.11.31  skos:closeMatch  cpc:81113 .
+    cpa:72.11.32  skos:closeMatch  cpc:81123 .
+    cpa:72.11.33  skos:closeMatch  cpc:81133 .
+    cpa:72.11.40  skos:closeMatch  cpc:81400 .
+    cpa:72.19.11  skos:closeMatch  cpc:81111 .
+    cpa:72.19.12  skos:closeMatch  cpc:81121 .
+    cpa:72.19.13  skos:closeMatch  cpc:81131 .
+    cpa:72.19.21  skos:closeMatch  cpc:81112 .
+    cpa:72.19.22  skos:closeMatch  cpc:81122 .
+    cpa:72.19.23  skos:closeMatch  cpc:81132 .
+    cpa:72.19.31  skos:closeMatch  cpc:81114 .
+    cpa:72.19.32  skos:closeMatch  cpc:81124 .
+    cpa:72.19.33  skos:closeMatch  cpc:81134 .
+    cpa:72.19.41  skos:closeMatch  cpc:81115 .
+    cpa:72.19.42  skos:closeMatch  cpc:81125 .
+    cpa:72.19.43  skos:closeMatch  cpc:81135 .
+    cpa:72.19.51  skos:closeMatch  cpc:81116 .
+    cpa:72.19.52  skos:closeMatch  cpc:81126 .
+    cpa:72.19.53  skos:closeMatch  cpc:81136 .
+    cpa:72.19.61  skos:closeMatch  cpc:81119 .
+    cpa:72.19.62  skos:closeMatch  cpc:81129 .
+    cpa:72.19.63  skos:closeMatch  cpc:81139 .
+    cpa:72.19.70  skos:closeMatch  cpc:81400 .
+    cpa:72.20.11  skos:closeMatch  cpc:81211 .
+    cpa:72.20.12  skos:closeMatch  cpc:81221 .
+    cpa:72.20.13  skos:closeMatch  cpc:81231 .
+    cpa:72.20.21  skos:closeMatch  cpc:81213 .
+    cpa:72.20.22  skos:closeMatch  cpc:81223 .
+    cpa:72.20.23  skos:closeMatch  cpc:81233 .
+    cpa:72.20.31  skos:closeMatch  cpc:81214 .
+    cpa:72.20.32  skos:closeMatch  cpc:81224 .
+    cpa:72.20.33  skos:closeMatch  cpc:81234 .
+    cpa:72.20.41  skos:closeMatch  cpc:81219 .
+    cpa:72.20.42  skos:closeMatch  cpc:81229 .
+    cpa:72.20.43  skos:closeMatch  cpc:81239 .
+    cpa:72.20.51  skos:closeMatch  cpc:81212 .
+    cpa:72.20.52  skos:closeMatch  cpc:81222 .
+    cpa:72.20.53  skos:closeMatch  cpc:81232 .
+    cpa:72.20.60  skos:closeMatch  cpc:81400 .
+    cpa:73.11.11  skos:closeMatch  cpc:83611 .
+    cpa:73.11.12  skos:closeMatch  cpc:83612 .
+    cpa:73.11.13  skos:closeMatch  cpc:83611 .
+    cpa:73.11.19  skos:closeMatch  cpc:83619 .
+    cpa:73.12.11  skos:closeMatch  cpc:83620 .
+    cpa:73.12.12  skos:closeMatch  cpc:83620 .
+    cpa:73.12.13  skos:closeMatch  cpc:83620 .
+    cpa:73.12.14  skos:closeMatch  cpc:83620 .
+    cpa:73.12.19  skos:closeMatch  cpc:83620 .
+    cpa:73.12.20  skos:closeMatch  cpc:83620 .
+    cpa:73.20.11  skos:closeMatch  cpc:83700 .
+    cpa:73.20.12  skos:closeMatch  cpc:83700 .
+    cpa:73.20.13  skos:closeMatch  cpc:83700 .
+    cpa:73.20.14  skos:closeMatch  cpc:83700 .
+    cpa:73.20.19  skos:closeMatch  cpc:83700 .
+    cpa:73.20.20  skos:closeMatch  cpc:83700 .
+    cpa:74.10.11  skos:closeMatch  cpc:83911 .
+    cpa:74.10.12  skos:closeMatch  cpc:83912 .
+    cpa:74.10.19  skos:closeMatch  cpc:83919 .
+    cpa:74.10.20  skos:closeMatch  cpc:83920 .
+    cpa:74.20.11  skos:closeMatch  cpc:38941 .
+    cpa:74.20.12  skos:closeMatch  cpc:38942 .
+    cpa:74.20.19  skos:closeMatch  cpc:38942 .
+    cpa:74.20.21  skos:closeMatch  cpc:83811 .
+    cpa:74.20.22  skos:closeMatch  cpc:83812 .
+    cpa:74.20.23  skos:closeMatch  cpc:83813 .
+    cpa:74.20.24  skos:closeMatch  cpc:83814 .
+    cpa:74.20.29  skos:closeMatch  cpc:83814 .
+    cpa:74.20.31  skos:closeMatch  cpc:83820 .
+    cpa:74.20.32  skos:closeMatch  cpc:83815 .
+    cpa:74.20.39  skos:closeMatch  cpc:83819 .
+    cpa:74.30.11  skos:closeMatch  cpc:83950 .
+    cpa:74.30.12  skos:closeMatch  cpc:83950 .
+    cpa:74.90.11  skos:closeMatch  cpc:83990 .
+    cpa:74.90.12  skos:closeMatch  cpc:83990 .
+    cpa:74.90.13  skos:closeMatch  cpc:83931 .
+    cpa:74.90.14  skos:closeMatch  cpc:83430 .
+    cpa:74.90.15  skos:closeMatch  cpc:85220 .
+    cpa:74.90.19  skos:closeMatch  cpc:83939 .
+    cpa:74.90.20  skos:closeMatch  cpc:83990 .
+    cpa:75.00.11  skos:closeMatch  cpc:83510 .
+    cpa:75.00.12  skos:closeMatch  cpc:83520 .
+    cpa:75.00.19  skos:closeMatch  cpc:83590 .
+    cpa:77.11.10  skos:closeMatch  cpc:73111 .
+    cpa:77.12.11  skos:closeMatch  cpc:73112 .
+    cpa:77.12.19  skos:closeMatch  cpc:73114 .
+    cpa:77.21.10  skos:closeMatch  cpc:73240 .
+    cpa:77.22.10  skos:closeMatch  cpc:73210 ;
+            skos:closeMatch  cpc:73220 .
+    cpa:77.29.11  skos:closeMatch  cpc:73210 .
+    cpa:77.29.12  skos:closeMatch  cpc:73230 .
+    cpa:77.29.13  skos:closeMatch  cpc:73290 .
+    cpa:77.29.14  skos:closeMatch  cpc:73250 .
+    cpa:77.29.15  skos:closeMatch  cpc:73260 .
+    cpa:77.29.16  skos:closeMatch  cpc:73270 .
+    cpa:77.29.19  skos:closeMatch  cpc:73290 .
+    cpa:77.31.10  skos:closeMatch  cpc:73121 .
+    cpa:77.32.10  skos:closeMatch  cpc:73122 .
+    cpa:77.33.11  skos:closeMatch  cpc:73123 .
+    cpa:77.33.12  skos:closeMatch  cpc:73124 .
+    cpa:77.34.10  skos:closeMatch  cpc:73115 .
+    cpa:77.35.10  skos:closeMatch  cpc:73116 .
+    cpa:77.39.11  skos:closeMatch  cpc:73113 .
+    cpa:77.39.12  skos:closeMatch  cpc:73117 .
+    cpa:77.39.13  skos:closeMatch  cpc:73114 .
+    cpa:77.39.14  skos:closeMatch  cpc:73125 .
+    cpa:77.39.19  skos:closeMatch  cpc:73129 .
+    cpa:77.40.11  skos:closeMatch  cpc:73330 .
+    cpa:77.40.12  skos:closeMatch  cpc:73340 .
+    cpa:77.40.13  skos:closeMatch  cpc:73350 .
+    cpa:77.40.14  skos:closeMatch  cpc:83960 .
+    cpa:77.40.19  skos:closeMatch  cpc:73390 .
+    cpa:78.10.11  skos:closeMatch  cpc:85111 ;
+            skos:closeMatch  cpc:85121 .
+    cpa:78.10.12  skos:closeMatch  cpc:85112 ;
+            skos:closeMatch  cpc:85121 .
+    cpa:78.20.11  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.12  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.13  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.14  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.15  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.16  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.20.19  skos:closeMatch  cpc:85122 ;
+            skos:closeMatch  cpc:85124 .
+    cpa:78.30.11  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.12  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.13  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.14  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.15  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.16  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:78.30.19  skos:closeMatch  cpc:85123 ;
+            skos:closeMatch  cpc:85125 .
+    cpa:79.11.11  skos:closeMatch  cpc:85511 .
+    cpa:79.11.12  skos:closeMatch  cpc:85512 .
+    cpa:79.11.13  skos:closeMatch  cpc:85513 .
+    cpa:79.11.14  skos:closeMatch  cpc:85514 .
+    cpa:79.11.19  skos:closeMatch  cpc:85519 .
+    cpa:79.11.21  skos:closeMatch  cpc:85521 .
+    cpa:79.11.22  skos:closeMatch  cpc:85523 .
+    cpa:79.11.23  skos:closeMatch  cpc:85524 .
+    cpa:79.12.11  skos:closeMatch  cpc:85540 .
+    cpa:79.12.12  skos:closeMatch  cpc:85540 .
+    cpa:79.90.11  skos:closeMatch  cpc:85561 .
+    cpa:79.90.12  skos:closeMatch  cpc:85562 .
+    cpa:79.90.20  skos:closeMatch  cpc:85550 .
+    cpa:79.90.31  skos:closeMatch  cpc:85522 .
+    cpa:79.90.32  skos:closeMatch  cpc:85531 .
+    cpa:79.90.39  skos:closeMatch  cpc:85539 .
+    cpa:80.10.11  skos:closeMatch  cpc:85240 .
+    cpa:80.10.12  skos:closeMatch  cpc:85250 .
+    cpa:80.10.19  skos:closeMatch  cpc:85290 .
+    cpa:80.20.10  skos:closeMatch  cpc:85230 .
+    cpa:80.30.10  skos:closeMatch  cpc:85210 .
+    cpa:81.10.10  skos:closeMatch  cpc:85999 .
+    cpa:81.21.11  skos:closeMatch  cpc:85330 .
+    cpa:81.21.12  skos:closeMatch  cpc:85330 .
+    cpa:81.22.11  skos:closeMatch  cpc:85320 .
+    cpa:81.22.12  skos:closeMatch  cpc:85340 .
+    cpa:81.22.13  skos:closeMatch  cpc:85340 .
+    cpa:81.29.11  skos:closeMatch  cpc:85310 .
+    cpa:81.29.12  skos:closeMatch  cpc:94510 .
+    cpa:81.29.13  skos:closeMatch  cpc:94590 .
+    cpa:81.29.19  skos:closeMatch  cpc:85340 .
+    cpa:81.30.11  skos:closeMatch  cpc:85970 .
+    cpa:81.30.12  skos:closeMatch  cpc:85970 .
+    cpa:82.11.10  skos:closeMatch  cpc:85940 .
+    cpa:82.19.11  skos:closeMatch  cpc:85951 .
+    cpa:82.19.12  skos:closeMatch  cpc:85952 ;
+            skos:closeMatch  cpc:85953 .
+    cpa:82.19.13  skos:closeMatch  cpc:85954 .
+    cpa:82.20.10  skos:closeMatch  cpc:85931 .
+    cpa:82.30.11  skos:closeMatch  cpc:85961 .
+    cpa:82.30.12  skos:closeMatch  cpc:85962 .
+    cpa:82.91.11  skos:closeMatch  cpc:85910 .
+    cpa:82.91.12  skos:closeMatch  cpc:85920 .
+    cpa:82.92.10  skos:closeMatch  cpc:85400 .
+    cpa:82.99.11  skos:closeMatch  cpc:85999 .
+    cpa:82.99.12  skos:closeMatch  cpc:85939 .
+    cpa:82.99.19  skos:closeMatch  cpc:85999 .
+    cpa:84.11.11  skos:closeMatch  cpc:91111 .
+    cpa:84.11.12  skos:closeMatch  cpc:91112 .
+    cpa:84.11.13  skos:closeMatch  cpc:91113 .
+    cpa:84.11.14  skos:closeMatch  cpc:91114 .
+    cpa:84.11.19  skos:closeMatch  cpc:91119 .
+    cpa:84.11.21  skos:closeMatch  cpc:91191 .
+    cpa:84.11.29  skos:closeMatch  cpc:91199 .
+    cpa:84.12.11  skos:closeMatch  cpc:91121 .
+    cpa:84.12.12  skos:closeMatch  cpc:91122 .
+    cpa:84.12.13  skos:closeMatch  cpc:91123 .
+    cpa:84.12.14  skos:closeMatch  cpc:91124 .
+    cpa:84.13.11  skos:closeMatch  cpc:91131 .
+    cpa:84.13.12  skos:closeMatch  cpc:91132 .
+    cpa:84.13.13  skos:closeMatch  cpc:91133 .
+    cpa:84.13.14  skos:closeMatch  cpc:91134 .
+    cpa:84.13.15  skos:closeMatch  cpc:91135 .
+    cpa:84.13.16  skos:closeMatch  cpc:91136 .
+    cpa:84.13.17  skos:closeMatch  cpc:91137 .
+    cpa:84.13.18  skos:closeMatch  cpc:91138 .
+    cpa:84.21.11  skos:closeMatch  cpc:91210 .
+    cpa:84.21.12  skos:closeMatch  cpc:91220 .
+    cpa:84.21.13  skos:closeMatch  cpc:91230 .
+    cpa:84.22.11  skos:closeMatch  cpc:91240 .
+    cpa:84.22.12  skos:closeMatch  cpc:91250 .
+    cpa:84.23.11  skos:closeMatch  cpc:91270 .
+    cpa:84.23.12  skos:closeMatch  cpc:91280 .
+    cpa:84.24.11  skos:closeMatch  cpc:91260 .
+    cpa:84.24.19  skos:closeMatch  cpc:91290 .
+    cpa:84.25.11  skos:closeMatch  cpc:91260 .
+    cpa:84.25.19  skos:closeMatch  cpc:91260 .
+    cpa:84.30.11  skos:closeMatch  cpc:91310 .
+    cpa:84.30.12  skos:closeMatch  cpc:91320 .
+    cpa:84.30.13  skos:closeMatch  cpc:91330 .
+    cpa:84.30.14  skos:closeMatch  cpc:91340 .
+    cpa:85.10.10  skos:closeMatch  cpc:92100 .
+    cpa:85.20.11  skos:closeMatch  cpc:92200 .
+    cpa:85.20.12  skos:closeMatch  cpc:92200 .
+    cpa:85.31.11  skos:closeMatch  cpc:92310 .
+    cpa:85.31.12  skos:closeMatch  cpc:92310 .
+    cpa:85.31.21  skos:closeMatch  cpc:92330 .
+    cpa:85.31.22  skos:closeMatch  cpc:92330 .
+    cpa:85.32.11  skos:closeMatch  cpc:92320 .
+    cpa:85.32.12  skos:closeMatch  cpc:92320 .
+    cpa:85.32.21  skos:closeMatch  cpc:92340 .
+    cpa:85.32.22  skos:closeMatch  cpc:92340 .
+    cpa:85.41.11  skos:closeMatch  cpc:92410 .
+    cpa:85.41.12  skos:closeMatch  cpc:92410 .
+    cpa:85.41.13  skos:closeMatch  cpc:92420 .
+    cpa:85.41.14  skos:closeMatch  cpc:92420 .
+    cpa:85.42.11  skos:closeMatch  cpc:92510 .
+    cpa:85.42.12  skos:closeMatch  cpc:92510 .
+    cpa:85.42.21  skos:closeMatch  cpc:92510 .
+    cpa:85.42.22  skos:closeMatch  cpc:92510 .
+    cpa:85.42.31  skos:closeMatch  cpc:92520 .
+    cpa:85.42.32  skos:closeMatch  cpc:92520 .
+    cpa:85.42.41  skos:closeMatch  cpc:92520 .
+    cpa:85.42.42  skos:closeMatch  cpc:92520 .
+    cpa:85.51.10  skos:closeMatch  cpc:92912 .
+    cpa:85.52.11  skos:closeMatch  cpc:92911 .
+    cpa:85.52.12  skos:closeMatch  cpc:92911 .
+    cpa:85.52.13  skos:closeMatch  cpc:92911 .
+    cpa:85.52.19  skos:closeMatch  cpc:92911 .
+    cpa:85.53.11  skos:closeMatch  cpc:92919 .
+    cpa:85.53.12  skos:closeMatch  cpc:92919 .
+    cpa:85.59.11  skos:closeMatch  cpc:92919 .
+    cpa:85.59.12  skos:closeMatch  cpc:92919 .
+    cpa:85.59.13  skos:closeMatch  cpc:92919 .
+    cpa:85.59.14  skos:closeMatch  cpc:92919 .
+    cpa:85.59.19  skos:closeMatch  cpc:92919 .
+    cpa:85.60.10  skos:closeMatch  cpc:92920 .
+    cpa:86.10.11  skos:closeMatch  cpc:93111 .
+    cpa:86.10.12  skos:closeMatch  cpc:93112 .
+    cpa:86.10.13  skos:closeMatch  cpc:93119 .
+    cpa:86.10.14  skos:closeMatch  cpc:93113 .
+    cpa:86.10.15  skos:closeMatch  cpc:93119 .
+    cpa:86.10.19  skos:closeMatch  cpc:93119 .
+    cpa:86.21.10  skos:closeMatch  cpc:93121 .
+    cpa:86.22.11  skos:closeMatch  cpc:93122 .
+    cpa:86.22.19  skos:closeMatch  cpc:93122 .
+    cpa:86.23.11  skos:closeMatch  cpc:93123 .
+    cpa:86.23.19  skos:closeMatch  cpc:93123 .
+    cpa:86.90.11  skos:closeMatch  cpc:93191 .
+    cpa:86.90.12  skos:closeMatch  cpc:93192 .
+    cpa:86.90.13  skos:closeMatch  cpc:93193 .
+    cpa:86.90.14  skos:closeMatch  cpc:93194 .
+    cpa:86.90.15  skos:closeMatch  cpc:93195 .
+    cpa:86.90.16  skos:closeMatch  cpc:93197 .
+    cpa:86.90.17  skos:closeMatch  cpc:93196 .
+    cpa:86.90.18  skos:closeMatch  cpc:93199 .
+    cpa:86.90.19  skos:closeMatch  cpc:93199 .
+    cpa:87.10.10  skos:closeMatch  cpc:93210 .
+    cpa:87.20.11  skos:closeMatch  cpc:93301 .
+    cpa:87.20.12  skos:closeMatch  cpc:93303 .
+    cpa:87.30.11  skos:closeMatch  cpc:93221 .
+    cpa:87.30.12  skos:closeMatch  cpc:93222 .
+    cpa:87.30.13  skos:closeMatch  cpc:93223 .
+    cpa:87.90.11  skos:closeMatch  cpc:93302 .
+    cpa:87.90.12  skos:closeMatch  cpc:93304 .
+    cpa:87.90.13  skos:closeMatch  cpc:93304 .
+    cpa:88.10.11  skos:closeMatch  cpc:93491 .
+    cpa:88.10.12  skos:closeMatch  cpc:93491 .
+    cpa:88.10.13  skos:closeMatch  cpc:93411 .
+    cpa:88.10.14  skos:closeMatch  cpc:93493 .
+    cpa:88.10.15  skos:closeMatch  cpc:93493 .
+    cpa:88.91.11  skos:closeMatch  cpc:93510 .
+    cpa:88.91.12  skos:closeMatch  cpc:93492 .
+    cpa:88.91.13  skos:closeMatch  cpc:93510 .
+    cpa:88.99.11  skos:closeMatch  cpc:93520 .
+    cpa:88.99.12  skos:closeMatch  cpc:93530 .
+    cpa:88.99.13  skos:closeMatch  cpc:93412 .
+    cpa:88.99.19  skos:closeMatch  cpc:93590 .
+    cpa:90.01.10  skos:closeMatch  cpc:96310 .
+    cpa:90.02.11  skos:closeMatch  cpc:96220 .
+    cpa:90.02.12  skos:closeMatch  cpc:96210 .
+    cpa:90.02.19  skos:closeMatch  cpc:96290 .
+    cpa:90.03.11  skos:closeMatch  cpc:96320 .
+    cpa:90.03.12  skos:closeMatch  cpc:96330 .
+    cpa:90.03.13  skos:closeMatch  cpc:38961 .
+    cpa:90.04.10  skos:closeMatch  cpc:96230 .
+    cpa:91.01.11  skos:closeMatch  cpc:84510 .
+    cpa:91.01.12  skos:closeMatch  cpc:84520 .
+    cpa:91.02.10  skos:closeMatch  cpc:96411 .
+    cpa:91.02.20  skos:closeMatch  cpc:38962 ;
+            skos:closeMatch  cpc:38963 .
+    cpa:91.03.10  skos:closeMatch  cpc:96412 .
+    cpa:91.04.11  skos:closeMatch  cpc:96421 .
+    cpa:91.04.12  skos:closeMatch  cpc:96422 .
+    cpa:92.00.11  skos:closeMatch  cpc:96929 .
+    cpa:92.00.12  skos:closeMatch  cpc:96929 .
+    cpa:92.00.13  skos:closeMatch  cpc:96929 .
+    cpa:92.00.14  skos:closeMatch  cpc:96921 .
+    cpa:92.00.19  skos:closeMatch  cpc:96929 .
+    cpa:92.00.21  skos:closeMatch  cpc:96921 .
+    cpa:92.00.29  skos:closeMatch  cpc:96929 .
+    cpa:93.11.10  skos:closeMatch  cpc:96520 .
+    cpa:93.12.10  skos:closeMatch  cpc:96512 .
+    cpa:93.13.10  skos:closeMatch  cpc:97230 .
+    cpa:93.19.11  skos:closeMatch  cpc:96511 .
+    cpa:93.19.12  skos:closeMatch  cpc:96610 .
+    cpa:93.19.13  skos:closeMatch  cpc:96620 .
+    cpa:93.19.19  skos:closeMatch  cpc:96590 .
+    cpa:93.21.10  skos:closeMatch  cpc:96910 .
+    cpa:93.29.11  skos:closeMatch  cpc:96990 .
+    cpa:93.29.19  skos:closeMatch  cpc:96990 .
+    cpa:93.29.21  skos:closeMatch  cpc:96990 .
+    cpa:93.29.22  skos:closeMatch  cpc:96930 .
+    cpa:93.29.29  skos:closeMatch  cpc:96990 .
+    cpa:94.11.10  skos:closeMatch  cpc:95110 .
+    cpa:94.12.10  skos:closeMatch  cpc:95120 .
+    cpa:94.20.10  skos:closeMatch  cpc:95200 .
+    cpa:94.91.10  skos:closeMatch  cpc:95910 .
+    cpa:94.92.10  skos:closeMatch  cpc:95920 .
+    cpa:94.99.11  skos:closeMatch  cpc:95991 .
+    cpa:94.99.12  skos:closeMatch  cpc:95992 .
+    cpa:94.99.13  skos:closeMatch  cpc:95993 .
+    cpa:94.99.14  skos:closeMatch  cpc:95994 .
+    cpa:94.99.15  skos:closeMatch  cpc:95995 .
+    cpa:94.99.16  skos:closeMatch  cpc:95997 .
+    cpa:94.99.17  skos:closeMatch  cpc:95998 .
+    cpa:94.99.19  skos:closeMatch  cpc:95999 .
+    cpa:94.99.20  skos:closeMatch  cpc:95996 .
+    cpa:95.11.10  skos:closeMatch  cpc:87130 .
+    cpa:95.12.10  skos:closeMatch  cpc:87153 .
+    cpa:95.21.10  skos:closeMatch  cpc:87155 .
+    cpa:95.22.10  skos:closeMatch  cpc:87151 .
+    cpa:95.23.10  skos:closeMatch  cpc:87210 .
+    cpa:95.24.10  skos:closeMatch  cpc:87240 .
+    cpa:95.25.11  skos:closeMatch  cpc:87220 .
+    cpa:95.25.12  skos:closeMatch  cpc:87220 .
+    cpa:95.29.11  skos:closeMatch  cpc:87230 ;
+            skos:closeMatch  cpc:87290 .
+    cpa:95.29.12  skos:closeMatch  cpc:87290 .
+    cpa:95.29.13  skos:closeMatch  cpc:87290 .
+    cpa:95.29.14  skos:closeMatch  cpc:87290 .
+    cpa:95.29.19  skos:closeMatch  cpc:87290 .
+    cpa:96.01.11  skos:closeMatch  cpc:97110 .
+    cpa:96.01.12  skos:closeMatch  cpc:97120 .
+    cpa:96.01.13  skos:closeMatch  cpc:97140 .
+    cpa:96.01.14  skos:closeMatch  cpc:97150 .
+    cpa:96.01.15  skos:closeMatch  cpc:97130 ;
+            skos:closeMatch  cpc:97140 .
+    cpa:96.01.19  skos:closeMatch  cpc:97130 .
+    cpa:96.02.11  skos:closeMatch  cpc:97210 .
+    cpa:96.02.12  skos:closeMatch  cpc:97210 .
+    cpa:96.02.13  skos:closeMatch  cpc:97220 .
+    cpa:96.02.14  skos:closeMatch  cpc:97210 ;
+            skos:closeMatch  cpc:97220 .
+    cpa:96.02.19  skos:closeMatch  cpc:97290 .
+    cpa:96.02.20  skos:closeMatch  cpc:38971 .
+    cpa:96.03.11  skos:closeMatch  cpc:97310 .
+    cpa:96.03.12  skos:closeMatch  cpc:97320 .
+    cpa:96.04.10  skos:closeMatch  cpc:97230 .
+    cpa:96.09.11  skos:closeMatch  cpc:86129 .
+    cpa:96.09.12  skos:closeMatch  cpc:97910 .
+    cpa:96.09.13  skos:closeMatch  cpc:97990 .
+    cpa:96.09.19  skos:closeMatch  cpc:97990 .
+    cpa:97.00.11  skos:closeMatch  cpc:98000 .
+    cpa:97.00.12  skos:closeMatch  cpc:98000 .
+    cpa:97.00.13  skos:closeMatch  cpc:98000 .
+    cpa:97.00.14  skos:closeMatch  cpc:98000 .
+    cpa:97.00.19  skos:closeMatch  cpc:98000 .
+    cpa:99.00.10  skos:closeMatch  cpc:99000 .
+}
