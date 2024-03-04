@@ -14,7 +14,7 @@ PREFIX cpa: <https://data.coypu.org/classification/cpa2.1/>
 
 CONSTRUCT {
         ?s a skos:Concept ;
-                skos:inSchema cpa: ;
+                skos:inScheme cpa: ;
                 skos:prefLabel ?label ;
                 skos:notation ?code ;
                 skos:broader ?parent ;

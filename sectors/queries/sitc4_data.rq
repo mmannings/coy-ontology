@@ -13,7 +13,7 @@ PREFIX sitc: <https://data.coypu.org/classification/sitc_r4/>
 
 CONSTRUCT {
 	?s a skos:Concept ;
-		skos:inSchema sitc: ;
+		skos:inScheme sitc: ;
 		skos:prefLabel ?label ;
 		skos:notation ?code ;
 		skos:broader ?parent ;
