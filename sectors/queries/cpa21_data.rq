@@ -27,10 +27,12 @@ WHERE {
 
 	?csv csv:parse (?rowJsonObj "-h") .
 	BIND(json:path(?rowJsonObj, "$." + ?code_col) AS ?code)
-	BIND(json:path(?rowJsonObj, "$." + ?parent_col) AS ?parent)
 	BIND(json:path(?rowJsonObj, "$." + ?level_col) AS ?level)
 	BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
 
 	BIND(URI(CONCAT(STR(?ns), ?code)) AS ?s)
 	BIND(strlang(?label_txt, "en") AS ?label)
+
+	BIND(json:path(?rowJsonObj, "$." + ?parent_col) AS ?parent_code)
+	BIND(URI(CONCAT(STR(?ns), ?parent_code)) AS ?parent)
 }
