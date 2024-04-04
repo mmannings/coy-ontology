@@ -1,0 +1,33 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>
+PREFIX json: <http://jsa.aksw.org/fn/json/>
+PREFIX csv: <http://jsa.aksw.org/fn/csv/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX sitc: <https://data.coypu.org/classification/sitc_r4/>
+PREFIX wz: <https://data.coypu.org/classification/wz08/>
+
+CONSTRUCT {
+        ?s a skos:Concept ;
+                skos:inScheme wz: ;
+                skos:prefLabel ?label ;
+                skos:notation ?code ;
+		skos:broader ?parent ;
+		xkos:depth ?level ;
+}
+WHERE {
+	VALUES (?csv ?code_col ?level_col ?label_col ?parent_col ?ns) {
+	(<../data/wz_data.csv> "Code" "Ebene" "Titel" "Parent" wz:)
+	}
+
+	?csv csv:parse (?rowJsonObj "-h") .
+	BIND(json:path(?rowJsonObj, "$." + ?code_col) AS ?code)
+	BIND(json:path(?rowJsonObj, "$." + ?level_col) AS ?level)
+	BIND(json:path(?rowJsonObj, "$." + ?label_col) AS ?label_txt)
+	BIND(URI(CONCAT(STR(?ns), ?code)) AS ?s)
+	BIND(strlang(?label_txt, "en") AS ?label)
+	BIND(json:path(?rowJsonObj, "$." + ?parent_col) AS ?parent_code)
+	BIND(IF(STRLEN(?code) > 1, URI(CONCAT(STR(?ns), ?parent_code)), COALESCE()) AS ?parent)
+	
+}
