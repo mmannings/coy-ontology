@@ -6,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix def: <https://data.coypu.org/definitions> .
 @prefix genesis: <https://data.coypu.org/datasets/genesis/> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 
 # I. DimensionProperty
 
@@ -160,7 +161,7 @@
   rdfs:label "STD008" ;
   rdfs:comment "Working hours per employee (domestic)"@en ;
   rdfs:comment "Arbeitsstunden je Arbeitnehmer (Inlandskonzept)"@de ;
-  qb:attribute :hour
+  qb:attribute :hour .
 
 :trf005 a qb:MeasureProperty ;
   rdfs:label "TRF005" ;
@@ -172,7 +173,7 @@
   rdfs:label "type of income and expenses"@en .
 
 :typeOfIncomeAndExpensesCode a qb:DimensionProperty ;
-  rdfs:label "type of income and expenses code"@en .
+  rdfs:label "type of income and expenses code"@en ;
   rdfs:comment "The code used to represent the type of income and expenses in the Destatis Database"@en .
 
 :typeOfSocialContribution a qb:DimensionProperty ;
@@ -186,7 +187,7 @@
   rdfs:label "value (1000 €) €"@en ;
   rdfs:range xsd:decimal ;
   rdfs:comment "The measured value (money)"@en ;
-  qb:attribute :thousandEuro
+  qb:attribute :thousandEuro .
 
 :vgr032 a qb:MeasureProperty ;
   rdfs:label "VGR032" ;
@@ -216,7 +217,7 @@
   rdfs:label "VST006" ;
   rdfs:comment "Gross wages and salaries (residents)"@en ;
   rdfs:comment "Bruttolöhne und -gehälter (Inländerkonzept)"@de ;
-  rdfs:comment "vst006 = etg004 - soz002"
+  rdfs:comment "vst006 = etg004 - soz002" ;
   qb:attribute :billionEuro .
 
 :vst013 a qb:MeasureProperty ;
@@ -280,14 +281,6 @@
   rdfs:comment "Unit of measurement is billion euro"@en ;
   qb:attribute sdmx-attribute:unitMeasure .
 
-## re-used properties
-## just use in DataStructureDefinition to avoid highjacking
-
-# coy:hasYear a rdf:Property, qb:DimensionProperty .
-  # rdfs:range xsd:gYear ;
-  # rdfs:comment "The year in which the trade took place"@en .
-
-
 # IV. DataSets & DataStructureDefinitions
 
 genesis:51000-0034 a qb:DataSet ;
@@ -297,7 +290,7 @@ genesis:51000-0034 a qb:DataSet ;
 def:51000-0034 a qb:DataStructureDefinition ;
   # The dimnesion
   qb:component [ qb:dimension coy:hasYear ] ;
-  qb:component [ qb:dimension :state, qb:order 2 ] ;
+  qb:component [ qb:dimension :state ] ;
   qb:component [ qb:dimension :tradeGroup ] ;
   qb:component [ qb:dimension :tradeDirection ] ;
   # The measure(s)
@@ -335,13 +328,13 @@ def:51000-0037 a qb:DataStructureDefinition;
     qb:component [ qb:measure :value ];
     qb:component [ qb:measure :weight ] .
 
-genesis:81000-0009 a qb:DataSet
+genesis:81000-0009 a qb:DataSet ;
   rdfs:comment "National Accounting data from destatis for code 81000-0009"@en ;
   qb:structure def:81000-0009 .
 
 def:81000-0009 a qb:DataStructureDefinition ;
   # The dimensions
-  qb:component [ qb:dimension coy:hasYear , qb:order 1 ] ;
+  qb:component [ qb:dimension coy:hasYear ] ;
   # The mesure(s)
   qb:component [ qb:measure :etg004 ] ;
   qb:component [ qb:measure :soz002 ] ;
@@ -449,4 +442,4 @@ def:52111-099k a qb:DataStructureDefinition ;
   qb:component [ qb:dimension :evaluationDate ] ; # -> To-Do
   qb:component [ qb:dimension :district ] ; # -> To-Do
   qb:component [ qb:dimension :tradeGroup ] ;
-  qb:component [ qb:measure :unt ] # -> To-Do
+  qb:component [ qb:measure :unt ] .# -> To-Do
