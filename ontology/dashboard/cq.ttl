@@ -55,7 +55,7 @@
   rdfs:comment "Gross value added at manufacturing prices in current prices"@en ;
   rdfs:comment "Bruttowertschöpfung zu Herstellungspreisen in jeweiligen Preisen"@de ;
   rdfs:comment "If this property is empty, value will be included later"@en ;
-  qb:attribute cqa:millionEuro .
+  qb:attribute :millionEuro .
 
 :ekm003 a qb:MeasureProperty ;
   rdfs:label "EKM003" ;
@@ -81,13 +81,13 @@
   rdfs:label "EKM014" ;
   rdfs:comment "Disposable income of private households per inhabitant"@en ;
   rdfs:comment "Verfügbares Einkommen d. priv. Haush. je Einwohner"@de ;
-  qb:attribute cqa:millionEuro .
+  qb:attribute :millionEuro .
 
 :enm005 a qb:MeasureProperty ;
   rdfs:label "ENM005" ;
   rdfs:comment "Income and expenses rest of the world"@en ;
   rdfs:comment "Einnahmen und Ausgaben Übrige Welt"@de ;
-  qb:attribute cqa:billionEuro .
+  qb:attribute :billionEuro .
 
 :erw061 a qb:MeasureProperty ;
   rdfs:label "ERW061" ;
@@ -106,7 +106,7 @@
   rdfs:comment "Compensation of employees"@en ;
   rdfs:comment "Arbeitnehmerentgelt"@de ;
   rdfs:comment "If this property is empty, value will be included later"@en ;
-  qb:attribute cqa:billionEuro .
+  qb:attribute :billionEuro .
 
 :etg004 a qb:MeasureProperty ;
   rdfs:label "ETG004" ;
