@@ -1,0 +1,452 @@
+@prefix : <https://schema.coypu.org/coy-cube#> .
+@prefix coy: <https://schema.coypu.org/global#> .
+@prefix qb: <https://www.w3.org/TR/vocab-data-cube/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix def: <https://data.coypu.org/definitions> .
+@prefix genesis: <https://data.coypu.org/datasets/genesis/> .
+
+# I. DimensionProperty
+
+:state a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Federal state"@en ;
+  rdfs:range coy:AdministrativeRegion ;
+  rdfs:comment "The state that trading informations are observed"@en .
+
+:month a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "month"@en ;
+  rdfs:range xsd:int ;
+  rdfs:comment "The month in which the trade took place"@en .
+
+:tradeGroup a rdf:Property, qb:DimensionProperty ;
+  rdfs:comment "The trade group"@en .
+
+:tradeCountry a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Trade Country"@en ;
+  rdfs:range coy:Country ;
+  rdfs:comment "The country that was the passive part of trades (if direction it import this country sold products)."@en .
+
+:tradeDirection a rdf:Property, qb:DimensionProperty ;
+  rdfs:comment "A dimension to distinguish between import and export."@en .
+
+# II. MeasureProperty
+
+:abg003 a qb:MeasureProperty ;
+  rdfs:label "AG003" ;
+  rdfs:comment "Tax on social services, consumption-related taxes"@en ;
+  rdfs:comment "Abgaben auf soz.Leistungen, verbrauchsnahe Steuern"@de ;
+  qb:attribute :billionEuro .
+
+:abz002 a qb:MeasureProperty ;
+  rdfs:label "ABZ002" ;
+  rdfs:comment "Employee deductions"@en ;
+  rdfs:comment "Abzüge der Arbeitnehmer"@de ;
+  qb:attribute :billionEuro .
+
+:bip a qb:MeasureProperty ;
+  rdfs:label "BIP" ;
+  rdfs:comment "Gross domestic product at market prices in current prices"@en ;
+  rdfs:comment "Bruttoinlandsprodukt"@de ;
+  qb:attribute :millionEuro .
+
+:bws a qb:MeasureProperty ;
+  rdfs:label "BWS" ;
+  rdfs:comment "Gross value added at manufacturing prices in current prices"@en ;
+  rdfs:comment "Bruttowertschöpfung zu Herstellungspreisen in jeweiligen Preisen"@de ;
+  rdfs:comment "If this property is empty, value will be included later"@en ;
+  qb:attribute cqa:millionEuro .
+
+:ekm003 a qb:MeasureProperty ;
+  rdfs:label "EKM003" ;
+  rdfs:comment "Mass income (private households)"@en ;
+  rdfs:comment "Masseneinkommen (private Haushalte)"@de ;
+  rdfs:comment "ekm003 = vst013 + lst005 - abg003" ;
+  qb:attribute :billionEuro .
+
+:ekm006 a qb:MeasureProperty ;
+  rdfs:label "EKM006" ;
+  rdfs:comment "Disposable income of private households" ;
+  rdfs:comment "Verfügb.Einkommen d.priv.Haushalte (Ausgabenkzpt)"@de ;
+  rdfs:comment "ekm006 = ekm003 + vgr032 + trf005" ;
+  qb:attribute :billionEuro .
+
+:ekm012 a qb:MeasureProperty ;
+  rdfs:label "EKM012" ;
+  rdfs:comment "Available Income (consumption concept)"@en ;
+  rdfs:comment "Verfügb.Einkommen d.priv.Haush.(Verbrauchskonzept)"@de ;
+  qb:attribute :billionEuro .
+
+:ekm014 a qb:MeasureProperty ;
+  rdfs:label "EKM014" ;
+  rdfs:comment "Disposable income of private households per inhabitant"@en ;
+  rdfs:comment "Verfügbares Einkommen d. priv. Haush. je Einwohner"@de ;
+  qb:attribute cqa:millionEuro .
+
+:enm005 a qb:MeasureProperty ;
+  rdfs:label "ENM005" ;
+  rdfs:comment "Income and expenses rest of the world"@en ;
+  rdfs:comment "Einnahmen und Ausgaben Übrige Welt"@de ;
+  qb:attribute cqa:billionEuro .
+
+:erw061 a qb:MeasureProperty ;
+  rdfs:label "ERW061" ;
+  rdfs:comment "Employees (domestic)"@en ;
+  rdfs:comment "Arbeitnehmer (Inlandskonzept)"@de ;
+  qb:attribute :thousand .
+
+:erw063 a qb:MeasureProperty ;
+  rdfs:label "ERW063" ;
+  rdfs:comment "Employed (domestic)"@en ;
+  rdfs:comment "Erwerbstätige (Inlandskonzept)"@de ;
+  qb:attribute :thousand .
+
+:etg003 a qb:MeasureProperty ;
+  rdfs:label "ETG003" ;
+  rdfs:comment "Compensation of employees"@en ;
+  rdfs:comment "Arbeitnehmerentgelt"@de ;
+  rdfs:comment "If this property is empty, value will be included later"@en ;
+  qb:attribute cqa:billionEuro .
+
+:etg004 a qb:MeasureProperty ;
+  rdfs:label "ETG004" ;
+  rdfs:comment "Compensation of employees (resident concept)"@en ;
+  rdfs:comment "Arbeitnehmerentgelt (Inländerkonzept)"@de ;
+  qb:attribute :billionEuro .
+
+:etg005 a qb:MeasureProperty ;
+  rdfs:label "ETG005" ;
+  rdfs:comment "Compensation of employees (domestic)"@en ;
+  rdfs:comment "Arbeitnehmerentgelt (Inlandskonzept)"@de ;
+  qb:attribute :billionEuro .
+
+:lst005 a qb:MeasureProperty ;
+  rdfs:label "LST005" ;
+  rdfs:comment "Monetary social benefits"@en ;
+  rdfs:comment "Monetäre Sozialleistungen"@de ;
+  qb:attribute :billionEuro .
+
+:soz002 a qb:MeasureProperty ;
+  rdfs:label "SOZ002" ;
+  rdfs:comment "Social contributions from employers"@en ;
+  rdfs:comment "Sozialbeiträge der Arbeitgeber"@de ;
+  qb:attribute :billionEuro .
+
+:soz005 a qb:MeasureProperty ;
+  rdfs:label "SOZ005" ;
+  rdfs:comment "Social contributions"@en ;
+  rdfs:comment "Sozialbeiträge"@de ;
+  qb:attribute :billionEuro .
+
+:std002 a qb:MeasureProperty ;
+  rdfs:label "STD002" ;
+  rdfs:comment "Working hours of employed persons (domestic)"@en ;
+  rdfs:comment "Arbeitsstunden der Erwerbstätigen (Inlandskonzept)"@de ;
+  qb:attribute :millionHour .
+
+:std003 a qb:MeasureProperty ;
+  rdfs:label "STD003" ;
+  rdfs:comment "Working hours of employees (domestic)"@en ;
+  rdfs:comment "Arbeitsstunden der Arbeitnehmer (Inlandskonzept)"@de ;
+  qb:attribute :millionHour .
+
+:std007 a qb:MeasureProperty ;
+  rdfs:label "STD007" ;
+  rdfs:comment "Working hours per employed person (domestic)"@en ;
+  rdfs:comment "Arbeitsstunden je Erwerbstätigen (Inlandskonzept)"@de ;
+  qb:attribute :hour .
+
+:std008 a qb:MeasureProperty ;
+  rdfs:label "STD008" ;
+  rdfs:comment "Working hours per employee (domestic)"@en ;
+  rdfs:comment "Arbeitsstunden je Arbeitnehmer (Inlandskonzept)"@de ;
+  qb:attribute :hour
+
+:trf005 a qb:MeasureProperty ;
+  rdfs:label "TRF005" ;
+  rdfs:comment "Further transfers received minus transfers made"@en ;
+  rdfs:comment "Weitere empfangene abzgl. geleistete Transfers"@de ;
+  qb:sttribute :billionEuro .
+
+:typeOfIncomeAndExpenses a qb:DimensionProperty ;
+  rdfs:label "type of income and expenses"@en .
+
+:typeOfIncomeAndExpensesCode a qb:DimensionProperty ;
+  rdfs:label "type of income and expenses code"@en .
+  rdfs:comment "The code used to represent the type of income and expenses in the Destatis Database"@en .
+
+:typeOfSocialContribution a qb:DimensionProperty ;
+  rdfs:label "type of social contribution"@en .
+
+:typeOfSocialContributionCode a qb:DimensionProperty ;
+    rdfs:label "type of social contribution code"@en ;
+    rdfs:comment "The code used to represent the type of social contribution in the Destatis Database"@en .
+
+:value a rdf:Property, qb:MeasureProperty ;
+  rdfs:label "value (1000 €) €"@en ;
+  rdfs:range xsd:decimal ;
+  rdfs:comment "The measured value (money)"@en ;
+  qb:attribute :thousandEuro
+
+:vgr032 a qb:MeasureProperty ;
+  rdfs:label "VGR032" ;
+  rdfs:comment "Business surplus/self-employment-, investment income private households"@en ;
+  rdfs:comment "Betriebsübersch./Selbständ.-,Vermögenseink.priv.HH"@de ;
+  qb:attribute :billionEuro .
+
+:vgr037 a qb:MeasureProperty ;
+  rdfs:label "VGR037" ;
+  rdfs:comment "Savings by private households"@en ;
+  rdfs:comment "Sparen der privaten Haushalte"@de ;
+  qb:attribute :billionEuro .
+
+:vgr092 a qb:MeasureProperty ;
+  rdfs:label "VGR092" ;
+  rdfs:comment "Reference value for the savings rate"@en ;
+  rdfs:comment "Bezugsgröße für die Sparquote"@de ;
+  qb:attribute :billionEuro .
+
+:vgr093 a qb:MeasureProperty ;
+  rdfs:label "VGR093" ;
+  rdfs:comment "Savings rate of private households"@en ;
+  rdfs:comment "Sparquote der privaten Haushalte"@de ;
+  qb:attribute :percent .
+
+:vst006 a qb:MeasureProperty ;
+  rdfs:label "VST006" ;
+  rdfs:comment "Gross wages and salaries (residents)"@en ;
+  rdfs:comment "Bruttolöhne und -gehälter (Inländerkonzept)"@de ;
+  rdfs:comment "vst006 = etg004 - soz002"
+  qb:attribute :billionEuro .
+
+:vst013 a qb:MeasureProperty ;
+  rdfs:label "VST013" ;
+  rdfs:comment "Net wages and salaries (residents)"@en ;
+  rdfs:comment "Nettolöhne und -gehälter (Inländerkonzept)"@de ;
+  rdfs:comment "vst013 = vst006 - abz002" ;
+  qb:attribute :billionEuro .
+
+:vst020 a qb:MeasureProperty ;
+  rdfs:label "VST020" ;
+  rdfs:comment "Gross wages and salaries (domestic)"@en ;
+  rdfs:comment "Bruttolöhne und -gehälter (Inlandskonzept)"@de ;
+  qb:attribute :billionEuro .
+
+:weight a rdf:Property, qb:MeasureProperty ;
+  rdfs:label "weight (tons)"@en ;
+  rdfs:range xsd:decimal ;
+  rdfs:comment "The measured weight in tons."@en ;
+  qb:attribute :ton .
+
+# III. AttributeProperty
+
+:percent a qb:AttributeProperty ;
+  rdfs:label "percent" ;
+  rdfs:comment "Unit of measurement is percent"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:thousand a qb:AttributeProperty ;
+  rdfs:label "thousand" ;
+  rdfs:comment "Unit of measurement is thousand"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:thousandEuro a qb:AttributeProperty ;
+  rdfs:label "thousand euro" ;
+  rdfs:comment "Unit of measurement is thousand euros"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:ton a qb:AttributeProperty ;
+  rdfs:label "ton" ;
+  rdfs:commen "Unit of measurement is ton"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:hour a qb:AttributeProperty ;
+  rdfs:label "hour" ;
+  rdfs:comment "Unit of measurement is hour"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:millionHour a qb:AttributeProperty ;
+  rdfs:label "million hour" ;
+  rdfs:comment "Unit of measurement is million hour"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:millionEuro a qb:AttributeProperty ;
+  rdfs:label "million euro" ;
+  rdfs:comment "Unit of measurement is million euros"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+:billionEuro a qb:AttributeProperty ;
+  rdfs:label "billion euro"@en ;
+  rdfs:comment "Unit of measurement is billion euro"@en ;
+  qb:attribute sdmx-attribute:unitMeasure .
+
+## re-used properties
+## just use in DataStructureDefinition to avoid highjacking
+
+# coy:hasYear a rdf:Property, qb:DimensionProperty .
+  # rdfs:range xsd:gYear ;
+  # rdfs:comment "The year in which the trade took place"@en .
+
+
+# IV. DataSets & DataStructureDefinitions
+
+genesis:51000-0034 a qb:DataSet ;
+  rdfs:comment "Foreign Trade data from destatis for code 51000-0034"@en ;
+  qb:structure def:51000-0034 .
+
+def:51000-0034 a qb:DataStructureDefinition ;
+  # The dimnesion
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :state, qb:order 2 ] ;
+  qb:component [ qb:dimension :tradeGroup ] ;
+  qb:component [ qb:dimension :tradeDirection ] ;
+  # The measure(s)
+  qb:component [ qb:measure :value ] ;
+  qb:component [ qb:measure :weight ] .
+
+genesis:51000-0036 a qb:DataSet ;
+  rdfs:comment "Foreign Trade data from destatis for code 51000-0036"@en ;
+  qb:structure def:51000-0036 .
+
+def:51000-0036 a qb:DataStructureDefinition;
+    # The dimensions
+    qb:component [ qb:dimension coy:hasYear ];
+    qb:component [ qb:dimension :tradeCountry ];
+    qb:component [ qb:dimension :tradeDirection ];
+    qb:component [ qb:dimension :state ];
+    qb:component [ qb:dimension :tradeCountry ];
+    # The measure(s)
+    qb:component [ qb:measure :value ];
+    qb:component [ qb:measure :weight ] .
+
+genesis:51000-0037 a qb:DataSet ;
+  rdfs:comment "Foreign Trade data from destatis for code 51000-0037"@en ;
+  qb:structure def:51000-0037 .
+
+def:51000-0037 a qb:DataStructureDefinition;
+    # The dimensions
+    qb:component [ qb:dimension :month ];
+    qb:component [ qb:dimension coy:hasYear ];
+    qb:component [ qb:dimension :tradeCountry ];
+    qb:component [ qb:dimension :tradeDirection ];
+    qb:component [ qb:dimension :state ];
+    qb:component [ qb:dimension :tradeCountry ];
+    # The measure(s)
+    qb:component [ qb:measure :value ];
+    qb:component [ qb:measure :weight ] .
+
+genesis:81000-0009 a qb:DataSet
+  rdfs:comment "National Accounting data from destatis for code 81000-0009"@en ;
+  qb:structure def:81000-0009 .
+
+def:81000-0009 a qb:DataStructureDefinition ;
+  # The dimensions
+  qb:component [ qb:dimension coy:hasYear , qb:order 1 ] ;
+  # The mesure(s)
+  qb:component [ qb:measure :etg004 ] ;
+  qb:component [ qb:measure :soz002 ] ;
+  qb:component [ qb:measure :vst006 ] ;
+  qb:component [ qb:measure :abz002 ] ;
+  qb:component [ qb:measure :vst013 ] ;
+  qb:component [ qb:measure :lst005 ] ;
+  qb:component [ qb:measure :abg003 ] ;
+  qb:component [ qb:measure :ekm003 ] ;
+  qb:component [ qb:measure :vgr032 ] ;
+  qb:component [ qb:measure :trf005 ] ;
+  qb:component [ qb:measure :ekm006 ] ;
+  qb:component [ qb:measure :ekm012 ] ;
+  qb:component [ qb:measure :vgr091 ] ;
+  qb:component [ qb:measure :vgr037 ] ;
+  qb:component [ qb:measure :vgr092 ] ;
+  qb:component [ qb:measure :vgr093 ] .
+
+genesis:81000-0015 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 81000-0015"@en ;
+  qb:structure def:81000-0015 .
+
+def:81000-0015 a qb:DataStructureDefinition ;
+  # The dimensions
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :tradeGroup] ;
+  # The mesure(s)
+  qb:component [ qb:measure :etg005 ] ;
+  qb:component [ qb:measure :vst020 ] ;
+  qb:component [ qb:measure :erw063 ] ;
+  qb:component [ qb:measure :erw061 ] ;
+  qb:component [ qb:measure :std002 ] ;
+  qb:component [ qb:measure :std003 ] ;
+  qb:component [ qb:measure :std007 ] ;
+  qb:component [ qb:measure :std008 ] .
+
+genesis:81000-0110 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 81000-0110"@en ;
+  qb:structure def:81000-0110 .
+
+def:81000-0110 a qb:DataStructureDefinition ;
+  # The dimensions
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :tradeGroup ] ;
+  # The mesure(s)
+  qb:component [ qb:measure :etg003 ] .
+
+genesis:81000-0127 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 81000-0127"@en ;
+  qb:structure def:81000-0127 .
+
+def:81000-0127 a qb:DataStructureDefinition ;
+  # The dimensions
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :typeOfSocialContribution ] ;
+  qb:component [ qb:dimension :typeOfSocialContributionCode ] ;
+  # The mesure(s)
+  qb:component [ qb:measure :soz005 ] .
+
+genesis:81000-0127 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 81000-0130"@en ;
+  qb:structure def:81000-0130 .
+
+def:81000-0130 a qb:DataStructureDefinition ;
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :state ] ;
+  qb:component [ qb:dimension :typeOfIncomeAndExpenses ] ;
+  qb:component [ qb:dimension :typeOfIncomeAndExpensesCode ] ;
+  qb:component [ qb:measure :enm005 ] .
+
+genesis:82111-0001 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 82111-0001"@en ;
+  qb:structure def:82111-0001 .
+
+def:82111-0001 a qb:DataStructureDefinition ;
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :state ] ;
+  qb:component [ qb:measure :bip ] .
+
+genesis:82111-0002 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 82111-0002"@en ;
+  qb:structure def:82111-0002 .
+
+def:82111-0002 a qb:DataStructureDefinition ;
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :state ] ;
+  qb:component [ qb:dimension :tradeGroup ] ;
+  qb:component [ qb:measure :bws ] .
+
+genesis:82411-0001 a qb:DataSet ;
+  rdfs:comment "National Accounting data from destatis for code 82411-0001"@en ;
+  qb:structure def:824111-0001 .
+
+def:82411-0001 a qb:DataStructureDefinition ;
+  qb:component [ qb:dimension coy:hasYear ] ;
+  qb:component [ qb:dimension :state ] ;
+  qb:component [ qb:measure :ekm006 ] ;
+  qb:component [ qb:measure :ekm014 ] .
+
+genesis:52111-099k a qb:DataSet ;
+  rdfs:comment "Saxonian business register system data from the saxonian genesis database for code 52111-099k"@en ;
+  qb:structure def:52111-099k .
+
+def:52111-099k a qb:DataStructureDefinition ;
+  qb:component [ qb:dimension :evaluationDate ] ; # -> To-Do
+  qb:component [ qb:dimension :district ] ; # -> To-Do
+  qb:component [ qb:dimension :tradeGroup ] ;
+  qb:component [ qb:measure :unt ] # -> To-Do
