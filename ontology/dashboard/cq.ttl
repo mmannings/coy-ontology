@@ -7,6 +7,8 @@
 @prefix def: <https://data.coypu.org/definitions> .
 @prefix genesis: <https://data.coypu.org/datasets/genesis/> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 <https://schema.coypu.org/coy-cube> rdf:type owl:Ontology ;
                                 owl:versionIRI <https://schema.coypu.org/coy-cube/0.1> ;
