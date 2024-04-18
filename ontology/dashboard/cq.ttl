@@ -8,6 +8,17 @@
 @prefix genesis: <https://data.coypu.org/datasets/genesis/> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 
+<https://schema.coypu.org/coy-cube> rdf:type owl:Ontology ;
+                                owl:versionIRI <https://schema.coypu.org/coy-cube/0.1> ;
+                                <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                <http://purl.org/dc/terms/rights> "CC BY 4.0 - CoyPu Project" ;
+                                vann:preferredNamespacePrefix "coy-cube" ;
+                                vann:preferredNamespaceUri "https://schema.coypu.org/coy-cube#" ;
+                                rdfs:comment "An ontology for modeling statistical trade data in data cube format."@en ;
+                                rdfs:label "CoyPu data cube data ontology"@en ;
+                                owl:versionInfo 0.1 .
+
+
 # I. DimensionProperty
 
 :state a rdf:Property, qb:DimensionProperty ;
