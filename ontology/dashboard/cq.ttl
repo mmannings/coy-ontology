@@ -66,23 +66,20 @@
 
 :bws a qb:MeasureProperty ;
   rdfs:label "BWS" ;
-  rdfs:comment "Gross value added at manufacturing prices in current prices"@en ;
+  rdfs:comment "Gross value added at manufacturing prices in current prices. If this property is empty, value will be included later"@en ;
   rdfs:comment "Bruttowertschöpfung zu Herstellungspreisen in jeweiligen Preisen"@de ;
-  rdfs:comment "If this property is empty, value will be included later"@en ;
   qb:attribute :millionEuro .
 
 :ekm003 a qb:MeasureProperty ;
   rdfs:label "EKM003" ;
   rdfs:comment "Mass income (private households)"@en ;
   rdfs:comment "Masseneinkommen (private Haushalte)"@de ;
-  rdfs:comment "ekm003 = vst013 + lst005 - abg003" ;
   qb:attribute :billionEuro .
 
 :ekm006 a qb:MeasureProperty ;
   rdfs:label "EKM006" ;
   rdfs:comment "Disposable income of private households" ;
   rdfs:comment "Verfügb.Einkommen d.priv.Haushalte (Ausgabenkzpt)"@de ;
-  rdfs:comment "ekm006 = ekm003 + vgr032 + trf005" ;
   qb:attribute :billionEuro .
 
 :ekm012 a qb:MeasureProperty ;
@@ -117,9 +114,8 @@
 
 :etg003 a qb:MeasureProperty ;
   rdfs:label "ETG003" ;
-  rdfs:comment "Compensation of employees"@en ;
+  rdfs:comment "Compensation of employees. If this property is empty, value will be included later"@en ;
   rdfs:comment "Arbeitnehmerentgelt"@de ;
-  rdfs:comment "If this property is empty, value will be included later"@en ;
   qb:attribute :billionEuro .
 
 :etg004 a qb:MeasureProperty ;
@@ -180,7 +176,7 @@
   rdfs:label "TRF005" ;
   rdfs:comment "Further transfers received minus transfers made"@en ;
   rdfs:comment "Weitere empfangene abzgl. geleistete Transfers"@de ;
-  qb:sttribute :billionEuro .
+  qb:attribute :billionEuro .
 
 :typeOfIncomeAndExpenses a qb:DimensionProperty ;
   rdfs:label "type of income and expenses"@en .
@@ -197,7 +193,7 @@
     rdfs:comment "The code used to represent the type of social contribution in the Destatis Database"@en .
 
 :value a rdf:Property, qb:MeasureProperty ;
-  rdfs:label "value (1000 €) €"@en ;
+  rdfs:label "value (1000 €)"@en ;
   rdfs:range xsd:decimal ;
   rdfs:comment "The measured value (money)"@en ;
   qb:attribute :thousandEuro .
@@ -230,14 +226,12 @@
   rdfs:label "VST006" ;
   rdfs:comment "Gross wages and salaries (residents)"@en ;
   rdfs:comment "Bruttolöhne und -gehälter (Inländerkonzept)"@de ;
-  rdfs:comment "vst006 = etg004 - soz002" ;
   qb:attribute :billionEuro .
 
 :vst013 a qb:MeasureProperty ;
   rdfs:label "VST013" ;
   rdfs:comment "Net wages and salaries (residents)"@en ;
   rdfs:comment "Nettolöhne und -gehälter (Inländerkonzept)"@de ;
-  rdfs:comment "vst013 = vst006 - abz002" ;
   qb:attribute :billionEuro .
 
 :vst020 a qb:MeasureProperty ;
@@ -271,7 +265,7 @@
 
 :ton a qb:AttributeProperty ;
   rdfs:label "ton" ;
-  rdfs:commen "Unit of measurement is ton"@en ;
+  rdfs:comment "Unit of measurement is ton"@en ;
   qb:attribute sdmx-attribute:unitMeasure .
 
 :hour a qb:AttributeProperty ;
