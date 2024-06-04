@@ -4,175 +4,637 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
 @base <https://schema.coypu.org/mapping/coy_wikidata#> .
 
 <https://schema.coypu.org/mapping/coy_wikidata#> rdf:type owl:Ontology ;
-                                                  owl:versionIRI <https://schema.coypu.org/mapping/coy_wikidata/1.0.0> ;
+                                                  owl:versionIRI <https://schema.coypu.org/mapping/coy_wikidata/1.1.0> ;
                                                   owl:imports <https://schema.coypu.org/global/1.6> ,
                                                               <https://schema.coypu.org/wikidata/0.1> .
 
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.wikidata.org/entity/Q11822042
-<http://www.wikidata.org/entity/Q11822042> owl:equivalentClass <https://schema.coypu.org/global#TransportAccident> .
-
-
-###  http://www.wikidata.org/entity/Q121359
-<http://www.wikidata.org/entity/Q121359> owl:equivalentClass <https://schema.coypu.org/global#Infrastructure> .
-
-
-###  http://www.wikidata.org/entity/Q1248784
-<http://www.wikidata.org/entity/Q1248784> owl:equivalentClass <https://schema.coypu.org/global#Airport> .
-
-
-###  http://www.wikidata.org/entity/Q159719
-<http://www.wikidata.org/entity/Q159719> owl:equivalentClass <https://schema.coypu.org/global#Powerplant> .
-
-
-###  http://www.wikidata.org/entity/Q214609
-<http://www.wikidata.org/entity/Q214609> owl:equivalentClass <https://schema.coypu.org/global#Material> .
-
-
-###  http://www.wikidata.org/entity/Q317088
-<http://www.wikidata.org/entity/Q317088> owl:equivalentClass <https://schema.coypu.org/global#Commodity> .
-
-
-###  http://www.wikidata.org/entity/Q36516758
-<http://www.wikidata.org/entity/Q36516758> owl:equivalentClass <https://schema.coypu.org/global#Biological> .
-
-
-###  http://www.wikidata.org/entity/Q37282022
-<http://www.wikidata.org/entity/Q37282022> owl:equivalentClass <https://schema.coypu.org/global#TechnologicalDisaster> .
-
-
-###  http://www.wikidata.org/entity/Q3839081
-<http://www.wikidata.org/entity/Q3839081> owl:equivalentClass <https://schema.coypu.org/global#Disaster> .
-
-
-###  http://www.wikidata.org/entity/Q38926
-<http://www.wikidata.org/entity/Q38926> owl:equivalentClass <https://schema.coypu.org/global#News> .
-
-
-###  http://www.wikidata.org/entity/Q44782
-<http://www.wikidata.org/entity/Q44782> owl:equivalentClass <https://schema.coypu.org/global#Port> .
-
-
-###  http://www.wikidata.org/entity/Q5
-<http://www.wikidata.org/entity/Q5> owl:equivalentClass <https://schema.coypu.org/global#Person> .
-
-
-###  http://www.wikidata.org/entity/Q515
-<http://www.wikidata.org/entity/Q515> owl:equivalentClass <https://schema.coypu.org/global#City> .
-
-
-###  http://www.wikidata.org/entity/Q6823473
-<http://www.wikidata.org/entity/Q6823473> owl:equivalentClass <https://schema.coypu.org/global#Meteorological> .
-
-
-###  http://www.wikidata.org/entity/Q68800046
-<http://www.wikidata.org/entity/Q68800046> owl:equivalentClass <https://schema.coypu.org/global#IndustrialAccident> .
-
-
-###  http://www.wikidata.org/entity/Q7406919
-<http://www.wikidata.org/entity/Q7406919> owl:equivalentClass <https://schema.coypu.org/global#Service> .
-
-
-###  http://www.wikidata.org/entity/Q783794
-<http://www.wikidata.org/entity/Q783794> owl:equivalentClass <https://schema.coypu.org/global#Company> .
-
-
-###  http://www.wikidata.org/entity/Q8148
-<http://www.wikidata.org/entity/Q8148> owl:equivalentClass <https://schema.coypu.org/global#Industry> .
-
-
-###  http://www.wikidata.org/entity/Q82794
-<http://www.wikidata.org/entity/Q82794> owl:equivalentClass <https://schema.coypu.org/global#Region> .
-
-
-###  http://www.wikidata.org/entity/Q83405
-<http://www.wikidata.org/entity/Q83405> owl:equivalentClass <https://schema.coypu.org/global#Factory> .
-
-
-###  https://schema.coypu.org/global#Airport
-<https://schema.coypu.org/global#Airport> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Biological
-<https://schema.coypu.org/global#Biological> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#City
-<https://schema.coypu.org/global#City> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Commodity
-<https://schema.coypu.org/global#Commodity> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Company
-<https://schema.coypu.org/global#Company> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Disaster
-<https://schema.coypu.org/global#Disaster> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Factory
-<https://schema.coypu.org/global#Factory> rdf:type owl:Class .
-
-
 ###  https://schema.coypu.org/global#IndustrialAccident
-<https://schema.coypu.org/global#IndustrialAccident> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Industry
-<https://schema.coypu.org/global#Industry> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Infrastructure
-<https://schema.coypu.org/global#Infrastructure> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Material
-<https://schema.coypu.org/global#Material> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Meteorological
-<https://schema.coypu.org/global#Meteorological> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#News
-<https://schema.coypu.org/global#News> rdf:type owl:Class .
+<https://schema.coypu.org/global#IndustrialAccident> skos:closeMatch wikidata:Q68800046 .
+wikidata:Q68800046 skos:prefLabel "industrial disaster"@en .
 
 
 ###  https://schema.coypu.org/global#Person
-<https://schema.coypu.org/global#Person> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Port
-<https://schema.coypu.org/global#Port> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Powerplant
-<https://schema.coypu.org/global#Powerplant> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Region
-<https://schema.coypu.org/global#Region> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#Service
-<https://schema.coypu.org/global#Service> rdf:type owl:Class .
-
-
-###  https://schema.coypu.org/global#TechnologicalDisaster
-<https://schema.coypu.org/global#TechnologicalDisaster> rdf:type owl:Class .
+<https://schema.coypu.org/global#Person> skos:closeMatch wikidata:Q5 .
+wikidata:Q5 skos:prefLabel "human"@en .
 
 
 ###  https://schema.coypu.org/global#TransportAccident
-<https://schema.coypu.org/global#TransportAccident> rdf:type owl:Class .
+<https://schema.coypu.org/global#TransportAccident> skos:broadMatch wikidata:Q11822042 .
+wikidata:Q11822042 skos:prefLabel "transport accident"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://schema.coypu.org/global#AbductionOrForcedDisappearance
+<https://schema.coypu.org/global#AbductionOrForcedDisappearance> skos:narrrowMatch wikidata:Q318296 .
+wikidata:Q318296 skos:prefLabel "kidnapping"@en .
+
+
+###  https://schema.coypu.org/global#AdministrativeRegion
+<https://schema.coypu.org/global#AdministrativeRegion> skos:closeMatch wikidata:Q3455524 .
+wikidata:Q3455524 skos:prefLabel "administrative region"@en .
+
+
+###  https://schema.coypu.org/global#Agreement
+<https://schema.coypu.org/global#Agreement> skos:closeMatch wikidata:Q2006324 .
+wikidata:Q2006324 skos:prefLabel "agreement"@en .
+
+
+###  https://schema.coypu.org/global#AirOrDroneStrike
+<https://schema.coypu.org/global#AirOrDroneStrike> skos:narrrowMatch wikidata:Q2380335 .
+wikidata:Q2380335 skos:prefLabel "airstrike"@en .
+
+
+###  https://schema.coypu.org/global#Airport
+<https://schema.coypu.org/global#Airport> skos:closeMatch wikidata:Q1248784 .
+wikidata:Q1248784 skos:prefLabel "airport"@en .
+
+
+###  https://schema.coypu.org/global#Arrests
+<https://schema.coypu.org/global#Arrests> skos:closeMatch wikidata:Q1403016 .
+wikidata:Q1403016 skos:prefLabel "arrest"@en .
+
+
+###  https://schema.coypu.org/global#Attack
+<https://schema.coypu.org/global#Attack> skos:closeMatch wikidata:Q1174599 .
+wikidata:Q1174599 skos:prefLabel "attack"@en .
+
+
+###  https://schema.coypu.org/global#Battle
+<https://schema.coypu.org/global#Battle> skos:closeMatch wikidata:Q178561 .
+wikidata:Q178561 skos:prefLabel "battle"@en .
+
+
+###  https://schema.coypu.org/global#City
+<https://schema.coypu.org/global#City> skos:closeMatch wikidata:Q515 .
+wikidata:Q515 skos:prefLabel "city"@en .
+
+
+###  https://schema.coypu.org/global#Commodity
+<https://schema.coypu.org/global#Commodity> skos:closeMatch wikidata:Q317088 .
+wikidata:Q317088 skos:prefLabel "commodity"@en .
+
+
+###  https://schema.coypu.org/global#Company
+<https://schema.coypu.org/global#Company> skos:closeMatch wikidata:Q783794 .
+wikidata:Q783794 skos:prefLabel "company"@en .
+
+
+###  https://schema.coypu.org/global#Conflict
+<https://schema.coypu.org/global#Conflict> skos:closeMatch wikidata:Q180684 .
+wikidata:Q180684 skos:prefLabel "conflict"@en .
+
+
+###  https://schema.coypu.org/global#Continent
+<https://schema.coypu.org/global#Continent> skos:closeMatch wikidata:Q5107 .
+wikidata:Q5107 skos:prefLabel "continent"@en .
+
+
+###  https://schema.coypu.org/global#Country
+<https://schema.coypu.org/global#Country> skos:closeMatch wikidata:Q6256 .
+wikidata:Q6256 skos:prefLabel "country"@en .
+
+
+###  https://schema.coypu.org/global#Customer
+<https://schema.coypu.org/global#Customer> skos:closeMatch wikidata:Q852835 .
+wikidata:Q852835 skos:prefLabel "customer"@en .
+
+
+###  https://schema.coypu.org/global#Demonstration
+<https://schema.coypu.org/global#Demonstration> skos:closeMatch wikidata:Q175331 .
+wikidata:Q175331 skos:prefLabel "demonstration"@en .
+
+
+###  https://schema.coypu.org/global#Disaster
+<https://schema.coypu.org/global#Disaster> skos:closeMatch wikidata:Q3839081 . 
+wikidata:Q3839081 skos:prefLabel "disaster"@en .
+
+
+###  https://schema.coypu.org/global#Event
+<https://schema.coypu.org/global#Event> skos:closeMatch wikidata:Q1656682 .
+wikidata:Q1656682 skos:prefLabel "event"@en .
+
+
+###  https://schema.coypu.org/global#Factory
+<https://schema.coypu.org/global#Factory> skos:closeMatch wikidata:Q83405 .
+wikidata:Q83405 skos:prefLabel "factory"@en .
+
+
+###  https://schema.coypu.org/global#GovernmentRegainsTerritory
+<https://schema.coypu.org/global#GovernmentRegainsTerritory> skos:broadMatch wikidata:Q85029384 .
+wikidata:Q85029384 skos:prefLabel "recovery"@en .
+
+
+###  https://schema.coypu.org/global#Industry
+<https://schema.coypu.org/global#Industry> skos:narrrowMatch wikidata:Q3958441 .
+wikidata:Q3958441 skos:prefLabel "economic sector"@en .
+
+
+###  https://schema.coypu.org/global#Infrastructure
+<https://schema.coypu.org/global#Infrastructure> skos:closeMatch wikidata:Q121359 .
+wikidata:Q121359 skos:prefLabel "infrastructure"@en .
+
+
+###  https://schema.coypu.org/global#Location
+<https://schema.coypu.org/global#Location> skos:broadMatch wikidata:Q27096213 . 
+wikidata:Q27096213 skos:prefLabel "geographic entity"@en .
+
+
+###  https://schema.coypu.org/global#LootingOrPropertyDestruction
+<https://schema.coypu.org/global#LootingOrPropertyDestruction> skos:broadMatch [
+        owl:unionOf ( wikidata:Q192623 wikidata:Q554774 )
+] .
+wikidata:Q192623 skos:prefLabel "looting"@en .
+wikidata:Q554774 skos:prefLabel "property damage"@en .
+
+
+###  https://schema.coypu.org/global#Material
+<https://schema.coypu.org/global#Material> skos:closeMatch wikidata:Q214609 .
+wikidata:Q214609 skos:prefLabel "material"@en .
+
+
+###  https://schema.coypu.org/global#Mine
+<https://schema.coypu.org/global#Mine> skos:closeMatch wikidata:Q820477 .
+wikidata:Q820477 skos:prefLabel "mine"@en .
+
+
+###  https://schema.coypu.org/global#News
+<https://schema.coypu.org/global#News> skos:closeMatch wikidata:Q5707594 .
+wikidata:Q5707594 skos:prefLabel "news article"@en .
+
+
+###  https://schema.coypu.org/global#NewsSummary
+:NewsSummary rdf:type owl:Class ;
+             rdfs:subClassOf :WikiNews ;
+             rdfs:label "NewsSummary"@en .
+
+
+###  https://schema.coypu.org/global#NonStateActorOvertakesTerritory
+<https://schema.coypu.org/global#NonStateActorOvertakesTerritory> skos:broadMatch wikidata:Q5265556 .
+wikidata:Q5265556 skos:prefLabel "detachment"@en .
+
+
+###  https://schema.coypu.org/global#NonViolentAction
+<https://schema.coypu.org/global#NonViolentAction> skos:broadMatch wikidata:Q76611 .
+wikidata:Q76611 skos:prefLabel "nonviolence"@en .
+
+
+###  https://schema.coypu.org/global#OsmElement
+<https://schema.coypu.org/global#OsmElement> skos:closeMatch wikidata:Q114733246 .
+wikidata:Q114733246 skos:prefLabel "OpenStreetMap element"@en .
+
+
+###  https://schema.coypu.org/global#Pipeline
+<https://schema.coypu.org/global#Pipeline> skos:broadMatch wikidata:Q3679502 .
+wikidata:Q3679502 skos:prefLabel "piping" .
+
+
+###  https://schema.coypu.org/global#Port
+<https://schema.coypu.org/global#Port> skos:closeMatch wikidata:Q44782 .
+wikidata:Q44782 skos:prefLabel "port"@en .
+
+
+###  https://schema.coypu.org/global#Powerplant
+<https://schema.coypu.org/global#Powerplant> skos:closeMatch wikidata:Q159719 .
+wikidata:Q159719 skos:prefLabel "power station"@en .
+
+
+###  https://schema.coypu.org/global#Product
+<https://schema.coypu.org/global#Product> skos:broadMatch wikidata:Q15401930 .
+wikidata:Q15401930 skos:prefLabel "product"@en .
+
+
+###  https://schema.coypu.org/global#Protest
+<https://schema.coypu.org/global#Protest> skos:closeMatch wikidata:Q273120 . 
+wikidata:Q273120 skos:prefLabel "protest"@en .
+
+
+###  https://schema.coypu.org/global#Region
+<https://schema.coypu.org/global#Region> skos:narrrowMatch [
+        owl:unionOf ( wikidata:Q3455524 wikidata:Q2585959 )
+] .
+wikidata:Q3455524 skos:prefLabel "administrative region"@en .
+wikidata:Q2585959 skos:prefLabel "economic area"@en .
+
+
+### https://schema.coypu.org/global#Riot
+<https://schema.coypu.org/global#Riot> skos:closeMatch wikidata:Q124757 .
+wikidata:Q124757 skos:prefLabel "riot"@en .
+
+
+###  https://schema.coypu.org/global#River
+<https://schema.coypu.org/global#River> skos:closeMatch wikidata:Q4022 . 
+wikidata:Q4022 skos:prefLabel "river"@en .
+
+
+###  https://schema.coypu.org/global#Service
+<https://schema.coypu.org/global#Service> skos:closeMatch wikidata:Q7406919 .
+wikidata:Q7406919 skos:prefLabel "service"@en .
+
+
+###  https://schema.coypu.org/global#SexualViolence
+<https://schema.coypu.org/global#SexualViolence> skos:closeMatch wikidata:Q558075 .
+wikidata:Q558075 skos:prefLabel "sexual violence"@en .
+
+
+###  https://schema.coypu.org/global#ShellingOrArtilleryOrMissileAttack
+<https://schema.coypu.org/global#ShellingOrArtilleryOrMissileAttack> skos:narrrowMatch [
+        owl:unionOf ( wikidata:Q111034471 wikidata:Q678146 )
+] .
+wikidata:Q111034471 skos:prefLabel "missile strike"@en .
+wikidata:Q678146 skos:prefLabel "bombardement"@en .
+
+
+###  https://schema.coypu.org/global#SuicideBomb
+<https://schema.coypu.org/global#SuicideBomb> skos:closeMatch wikidata:Q18493502 .
+wikidata:Q18493502 skos:prefLabel "suicide bombing"@en .
+
+
+###  https://schema.coypu.org/global#Supplier
+<https://schema.coypu.org/global#Supplier> skos:closeMatch wikidata:Q112208033 .
+wikidata:Q112208033 skos:prefLabel "supplier"@en .
+
+
+###  https://schema.coypu.org/global#Timespan
+<https://schema.coypu.org/global#Timespan> skos:closeMatch wikidata:Q186081 .
+wikidata:Q186081 skos:prefLabel "time interval"@en .
+
+
+###  https://schema.coypu.org/global#TrainStation
+<https://schema.coypu.org/global#TrainStation> skos:closeMatch wikidata:Q55488 .
+wikidata:Q55488 skos:prefLabel "railway station"@en .
+
+
+###  https://schema.coypu.org/global#ViolentEvent
+<https://schema.coypu.org/global#ViolentEvent> skos:closeMatch wikidata:Q115431196 .
+wikidata:Q115431196 skos:prefLabel "violent conflict"@en .
+
+
+###  https://schema.coypu.org/global#WikiNews
+<https://schema.coypu.org/global#WikiNews> skos:closeMatch wikidata:Q17633526 .
+wikidata:Q17633526 skos:prefLabel "WikiNews article"@en .
+
+###  https://schema.coypu.org/global#Wildfire
+<https://schema.coypu.org/global#Wildfire> skos:broadMatch wikidata:Q169950 .
+wikidata:Q169950 skos:prefLabel "wildfire"@en .
+
+
+###  https://schema.coypu.org/gta#StateAct
+<https://schema.coypu.org/gta#StateAct> skos:broadMatch wikidata:Q820655 .
+wikidata:Q820655 skos:prefLabel "statute"@en .
+
+
+###  https://schema.coypu.org/ta#TradeAgreement
+<https://schema.coypu.org/ta#TradeAgreement> skos:closeMatch wikidata:Q252550 .
+wikidata:Q252550 skos:prefLabel "trade agreement"@en .
+
+
+###  https://schema.coypu.org/vtf#Trade
+<https://schema.coypu.org/vtf#Trade> skos:closeMatch wikidata:Q601401 .
+wikidata:Q601401 skos:prefLabel "trade"@en .
+
+
+###  https://schema.coypu.org/em-dat#NaturalDisaster
+<https://schema.coypu.org/em-dat#NaturalDisaster> skos:closeMatch wikidata:Q8065 .
+wikidata:Q8065 skos:prefLabel "natural disaster"@en .
+
+
+###  https://schema.coypu.org/em-dat#BiologicalDisaster
+<https://schema.coypu.org/em-dat#BiologicalDisaster> skos:closeMatch wikidata:Q864360 .
+wikidata:Q864360 skos:prefLabel "biological hazard"@en .
+
+
+###  https://schema.coypu.org/em-dat#AnimalAccident
+<https://schema.coypu.org/em-dat#AnimalAccident> skos:narrrowMatch wikidata:Q17450153 .
+wikidata:Q17450153 skos:prefLabel "animal attack"@en .
+
+
+###  https://schema.coypu.org/em-dat#Epidemic
+<https://schema.coypu.org/em-dat#Epidemic> skos:closeMatch wikidata:Q44512 .
+wikidata:Q44512 skos:prefLabel "epidemic"@en .
+
+
+###  https://schema.coypu.org/em-dat#BacterialDisease
+<https://schema.coypu.org/em-dat#BacterialDisease> skos:closeMatch wikidata:Q727028 .
+wikidata:Q727028 skos:prefLabel "bacterial infectious disease"@en .
+
+
+###  https://schema.coypu.org/em-dat#FungalDisease
+<https://schema.coypu.org/em-dat#FungalDisease> skos:closeMatch wikidata:Q464067 .
+wikidata:Q464067 skos:prefLabel "fungal infectuous disease"@en .
+
+
+###  https://schema.coypu.org/em-dat#ParasiticDisease
+<https://schema.coypu.org/em-dat#ParasiticDisease> skos:closeMatch wikidata:Q1601794 .
+wikidata:Q1601794 skos:prefLabel "parasitic infectious diseases"@en .
+
+
+###  https://schema.coypu.org/em-dat#PrionDisease
+<https://schema.coypu.org/em-dat#PrionDisease> skos:closeMatch wikidata:Q703961 .
+wikidata:Q703961 skos:prefLabel "transmissible spongiform encephalopathy"@en .
+
+
+###  https://schema.coypu.org/em-dat#ViralDisease
+<https://schema.coypu.org/em-dat#ViralDisease> skos:closeMatch wikidata:Q1928978 .
+wikidata:Q1928978 skos:prefix "viral infectious disease"@en .
+
+
+###  https://schema.coypu.org/em-dat#Drought
+<https://schema.coypu.org/em-dat#Drought> skos:closeMatch wikidata:Q43059 .
+wikidata:Q43059 skos:prefLabel "drought"@en .
+
+
+###  https://schema.coypu.org/em-dat#ForestFire
+<https://schema.coypu.org/em-dat#ForestFire> skos:closeMatch wikidata:Q107434304 .
+wikidata:Q107434304 skos:prefLabel "forest fire"@en .
+
+
+###  https://schema.coypu.org/em-dat#Impact
+<https://schema.coypu.org/em-dat#Impact> skos:closeMatch wikidata:Q463796 .
+wikidata:Q463796 skos:prefLabel "impact event"@en .
+
+
+###  https://schema.coypu.org/em-dat#Airburst
+<https://schema.coypu.org/em-dat#Airburst> skos:narrrowMatch wikidata:Q109453853 .
+wikidata:Q109453853 skos:prefLabel "cosmic airburst"@en .
+
+
+###  https://schema.coypu.org/em-dat#SpaceWeather
+<https://schema.coypu.org/em-dat#SpaceWeather> skos:closeMatch wikidata:Q584093 .
+wikidata:Q584093 skos:prefLabel "space weather"@en .
+
+
+###  https://schema.coypu.org/em-dat#GeomagneticStorm
+<https://schema.coypu.org/em-dat#GeomagneticStorm> skos:closeMatch wikidata:Q130011 .
+wikidata:Q130011 skos:prefLabel "geomagnetic storm"@en .
+
+
+###  https://schema.coypu.org/em-dat#Shockwave
+<https://schema.coypu.org/em-dat#Shockwave> skos:closeMatch wikidata:Q190688 .
+wikidata:Q190688 skos:prefLabel "shock wave"@en .
+
+
+###  https://schema.coypu.org/em-dat#Earthquake
+<https://schema.coypu.org/em-dat#Earthquake> skos:closeMatch wikidata:Q7944 .
+wikidata:Q7944 skos:prefLabel "earthquake"@en .
+
+
+###  https://schema.coypu.org/em-dat#Tsunami
+<https://schema.coypu.org/em-dat#Tsunami> skos:closeMatch wikidata:Q8070 .
+wikidata:Q8070 skos:prefLabel "tsunami"@en .
+
+
+###  https://schema.coypu.org/em-dat#MassMovement
+<https://schema.coypu.org/em-dat#MassMovement> skos:closeMatch wikidata:Q3574985 .
+wikidata:Q3574985 skos:prefLabel "slide"@en .
+
+
+###  https://schema.coypu.org/em-dat#Landslide
+<https://schema.coypu.org/em-dat#Landslide> skos:closeMatch wikidata:Q167903 .
+wikidata:Q167903 skos:prefLabel "landslide"@en .
+
+
+###  https://schema.coypu.org/em-dat#Rockfall
+<https://schema.coypu.org/em-dat#Rockfall> skos:closeMatch wikidata:Q5654036 .
+wikidata:Q5654036 skos:prefLabel "rockfall"@en .
+
+
+###  https://schema.coypu.org/em-dat#VolcanicActivity
+<https://schema.coypu.org/em-dat#VolcanicActivity> skos:broadMatch wikidata:Q26254161 .
+wikidata:Q26254161 skos:prefLabel "volcanoc activity"@en .
+
+
+###  https://schema.coypu.org/em-dat#AshFall
+<https://schema.coypu.org/em-dat#AshFall> skos:closeMatch wikidata:Q3392608 .
+wikidata:Q3392608 skos:prefLabel "ash rain"@en .
+
+
+###  https://schema.coypu.org/em-dat#Lahar
+<https://schema.coypu.org/em-dat#Lahar> skos:closeMatch wikidata:Q47212 .
+wikidata:Q47212 skos:prefLabel "lahar"@en .
+
+
+###  https://schema.coypu.org/em-dat#LavaFlow
+<https://schema.coypu.org/em-dat#LavaFlow> skos:closeMatch wikidata:Q2512740 .
+wikidata:Q2512740 skos:prefLabel "lava flow"@en .
+
+
+###  https://schema.coypu.org/em-dat#PyroclasticFlow
+<https://schema.coypu.org/em-dat#PyroclasticFlow> skos:closeMatch wikidata:Q221616 .
+wikidata:Q221616 skos:prefLabel "pyroclastic flow"@en .
+
+
+###  https://schema.coypu.org/em-dat#Mudslide
+<https://schema.coypu.org/em-dat#Mudslide> skos:closeMatch wikidata:Q175768 .
+wikidata:Q175768 skos:prefLabel "mudflow"@en .
+
+
+###  https://schema.coypu.org/em-dat#SnowAvalanche
+<https://schema.coypu.org/em-dat#SnowAvalanche> skos:closeMatch wikidata:Q7935 .
+wikidata:Q7935 skos:prefLabel "avalanche"@en .
+
+
+###  https://schema.coypu.org/em-dat#Flood
+<https://schema.coypu.org/em-dat#Flood> skos:closeMatch wikidata:Q8068 .
+wikidata:Q8068 skos:prefLabel "flood"@en .
+
+
+###  https://schema.coypu.org/em-dat#CoastalFlood
+<https://schema.coypu.org/em-dat#CoastalFlood> skos:closeMatch wikidata:Q5138350 .
+wikidata:Q5138350 skos:prefLabel "coastal flood"@en .
+
+
+###  https://schema.coypu.org/em-dat#FlashFlood
+<https://schema.coypu.org/em-dat#FlashFlood> skos:closeMatch wikidata:Q860333 .
+wikidata:Q860333 skos:prefLabel "flash flood"@en .
+
+
+###  https://schema.coypu.org/em-dat#RiverineFlood
+<https://schema.coypu.org/em-dat#RiverineFlood> skos:closeMatch wikidata:Q2369493 .
+wikidata:Q2369493 skos:prefLabel "river overflow"@en .
+
+
+###  https://schema.coypu.org/em-dat#RogueWave
+<https://schema.coypu.org/em-dat#RogueWave> skos:broadMatch wikidata:Q110360 .
+wikidata:Q110360 skos:prefLabel "rogue wave"@en .
+
+
+###  https://schema.coypu.org/em-dat#Seiche
+<https://schema.coypu.org/em-dat#Seiche> skos:broadMatch wikidata:Q123300 .
+wikidata:Q123300 skos:prefLabel "standing wave"@en .
+
+
+###  https://schema.coypu.org/em-dat#MeteorologicalDisaster
+<https://schema.coypu.org/em-dat#MeteorologicalDisaster> skos:closeMatch wikidata:Q6823473 .
+wikidata:Q6823473 skos:prefLabel "meteorological disaster"@en .
+
+
+###  https://schema.coypu.org/em-dat#ExtremeTemperature
+<https://schema.coypu.org/em-dat#ExtremeTemperature> skos:closeMatch wikidata:Q66083875 .
+wikidata:Q66083875 skos:prefLabel "temperature anomaly"@en .
+
+
+###  https://schema.coypu.org/em-dat#ColdWave
+<https://schema.coypu.org/em-dat#ColdWave> skos:closeMatch wikidata:Q642683 .
+wikidata:Q642683 skos:prefLabel "cold wave"@en .
+
+
+###  https://schema.coypu.org/em-dat#HeatWave
+<https://schema.coypu.org/em-dat#HeatWave> skos:closeMatch wikidata:Q215864 .
+wikidata:Q215864 skos:prefLabel "heat wave"@en .
+
+
+###  https://schema.coypu.org/em-dat#FrostOrFreeze
+<https://schema.coypu.org/em-dat#FrostOrFreeze> skos:narrrowMatch wikidata:Q1135221 .
+wikidata:Q1135221 skos:prefLabel "freezing"@en .
+
+
+###  https://schema.coypu.org/em-dat#SnowOrIce
+<https://schema.coypu.org/em-dat#SnowOrIce> skos:narrrowMatch wikidata:Q66482111 .
+wikidata:Q66482111 skos:prefLabel "snowy weather"@en .
+
+
+###  https://schema.coypu.org/em-dat#Fog
+<https://schema.coypu.org/em-dat#Fog> skos:broadMatch wikidata:Q37477 .
+wikidata:Q37477 skos:prefLabel "fog"@en .
+
+
+###  https://schema.coypu.org/em-dat#Storm
+<https://schema.coypu.org/em-dat#Storm> skos:closeMatch wikidata:Q81054 .
+wikidata:Q81054 skos:prefLabel "storm"@en .
+
+
+###  https://schema.coypu.org/em-dat#ConvectiveStorm
+<https://schema.coypu.org/em-dat#ConvectiveStorm> skos:closeMatch wikidata:Q12030109 .
+wikidata:Q12030109 skos:prefLabel "convective storm"@en .
+
+
+###  https://schema.coypu.org/em-dat#Derecho
+<https://schema.coypu.org/em-dat#Derecho> skos:closeMatch wikidata:Q3023711 .
+wikidata:Q3023711 skos:prefLabel "derecho"@en .
+
+
+###  https://schema.coypu.org/em-dat#Hail
+<https://schema.coypu.org/em-dat#Hail> skos:closeMatch wikidata:Q61071643 .
+wikidata:Q61071643 skos:prefLabel "hail storm"@en .
+
+
+###  https://schema.coypu.org/em-dat#LightningOrThunderstorm
+<https://schema.coypu.org/em-dat#LightningOrThunderstorm> skos:closeMatch wikidata:Q2857578 .
+wikidata:Q2857578 skos:prefLabel "thunderstorm"@en .
+
+
+###  https://schema.coypu.org/em-dat#SandOrDustStorm
+<https://schema.coypu.org/em-dat#SandOrDustStorm> skos:narrrowMatch wikidata:Q182878 .
+wikidata:Q182878 skos:prefLabel "dust storm"@en .
+
+
+###  https://schema.coypu.org/em-dat#Tornado
+<https://schema.coypu.org/em-dat#Tornado> skos:closeMatch wikidata:Q8081 .
+wikidata:Q8081 skos:prefLabel "tornado"@en .
+
+
+###  https://schema.coypu.org/em-dat#WinterStormOrBlizzard
+<https://schema.coypu.org/em-dat#WinterStormOrBlizzard> skos:narrrowMatch wikidata:Q205418 .
+wikidata:Q205418 skos:prefLabel "blizzard"@en .
+
+
+###  https://schema.coypu.org/em-dat#Extra-tropicalStorm
+<https://schema.coypu.org/em-dat#Extra-tropicalStorm> skos:closeMatch wikidata:Q1063457 .
+wikidata:Q1063457 skos:prefLabel "extratropical cyclone"@en .
+
+
+###  https://schema.coypu.org/em-dat#TropicalCyclone
+<https://schema.coypu.org/em-dat#TropicalCyclone> skos:closeMatch wikidata:Q8092 .
+wikidata:Q8092 skos:prefLabel "tropical cyclone"@en .
+
+
+###  https://schema.coypu.org/em-dat#ChemicalSpill
+<https://schema.coypu.org/em-dat#ChemicalSpill> skos:broadMatch wikidata:Q977367 .
+wikidata:Q977367 skos:prefLabel "chemical accident"@en .
+
+
+###  https://schema.coypu.org/em-dat#Collapse
+<https://schema.coypu.org/em-dat#Collapse> skos:broadMatch wikidata:Q1309431 .
+wikidata:Q1309431 skos:prefLabel "structural failure"@en .
+
+
+###  https://schema.coypu.org/em-dat#Fire
+<https://schema.coypu.org/em-dat#Fire> skos:closeMatch wikidata:Q17094485 .
+wikidata:Q17094485 skos:prefLabel "industrial fire"@en .
+
+
+###  https://schema.coypu.org/em-dat#GasLeak
+<https://schema.coypu.org/em-dat#GasLeak> skos:broadMatch wikidata:Q5526351 .
+wikidata:Q5526351 skos:prefLabel "gas leak"@en .
+
+
+###  https://schema.coypu.org/em-dat#OilSpill
+<https://schema.coypu.org/em-dat#OilSpill> skos:closeMatch wikidata:Q220187 .
+wikidata:Q220187 skos:prefLabel "oil spill"@en .
+
+
+###  https://schema.coypu.org/em-dat#Air
+<https://schema.coypu.org/em-dat#Air> skos:closeMatch wikidata:Q744913 .
+wikidata:Q744913 skos:prefLabel "aviation accident"@en .
+
+
+###  https://schema.coypu.org/em-dat#Rail
+<https://schema.coypu.org/em-dat#Rail> skos:closeMatch wikidata:Q19403959 .
+wikidata:Q19403959 skos:prefLabel "railway accident"@en .
+
+
+###  https://schema.coypu.org/em-dat#Water
+<https://schema.coypu.org/em-dat#Water> skos:closeMatch wikidata:Q2235325 .
+wikidata:Q2235325 skos:prefLabel "ship accident"@en .
+
+
+###  https://schema.coypu.org/ta#FreeTradeAgreement
+<https://schema.coypu.org/ta#FreeTradeAgreement> skos:closeMatch wikidata:Q3536928 .
+wikidata:Q3536928 skos:prefLabel "free trade agreement"@en .
+
+
+###  https://schema.coypu.org/ta#CustomsUnion
+<https://schema.coypu.org/ta#CustomsUnion> skos:broadMatch wikidata:Q218541 .
+wikidata:Q218541 skos:prefLabel "customs agreement"@en .
+
+
+###  https://schema.coypu.org/gta#Intervention
+<https://schema.coypu.org/gta#Intervention> skos:closeMatch wikidata:Q1168287 .
+wikidata:Q1168287 skos:prefLabel "intervention"@en .
+
+
+###  https://schema.coypu.org/gta#CapitalControlsAndExchangeRatePolicy
+<https://schema.coypu.org/gta#CapitalControlsAndExchangeRatePolicy> skos:broadMatch [
+        owl:unionOf ( wikidata:Q1946428 wikidata:Q1363350 )
+] .
+wikidata:Q1946428 skos:prefLabel "capital control"@en .
+wikidata:Q1363350 skos:prefLabel "exchange rate policy"@en .
+
+
+###  https://schema.coypu.org/gta#SubsidiesAndStateAid
+<https://schema.coypu.org/gta#SubsidiesAndStateAid> skos:broadMatch wikidata:Q193219 .
+wikidata:Q193219 skos:prefLabel "subsidy"@en .
+
+
+###  https://schema.coypu.org/gta#Jurisdiction
+<https://schema.coypu.org/gta#Jurisdiction> skos:closeMatch wikidata:Q5982983 .
+wikidata:Q5982983 skos:prefLabel "jurisdiction"@en .
+
+
+###  https://schema.coypu.org/gta#Sector
+<https://schema.coypu.org/gta#Sector> skos:closeMatch wikidata:Q3958441 .
+wikidata:Q3958441 skos:prefLabel "economic sector"@en .
+
+
+###  https://schema.coypu.org/world-port-index#NaturalPort
+<https://schema.coypu.org/world-port-index#NaturalPort> skos:closeMatch wikidata:Q13424466 .
+wikidata:Q13424466 skos:prefLabel "natural harbour"@en .
+
+
+###  https://schema.coypu.org/world-port-index#RiverPort
+<https://schema.coypu.org/world-port-index#RiverPort> skos:closeMatch wikidata:Q58816330 .
+wikidata:Q58816330 skos:prefLabel "river harbour"@en .
