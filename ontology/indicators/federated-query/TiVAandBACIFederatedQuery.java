@@ -11,7 +11,11 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
-
+/**
+* 
+* This class perfroms federated query against TiVA and BACI knowledge graphs (KG)
+*
+**/
 public class TiVAandBACIFederatedQuery {
 
     public static void main(String[] argv) throws IOException {
