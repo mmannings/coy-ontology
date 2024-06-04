@@ -18,7 +18,7 @@ The workflow consists of the following steps:
 5. Mapping graph validation
 ---
 
-#### Step1: Create SKOS vocabulary from ISIC rev 4 csv file
+#### Step1: Create SKOS thesaurus from ISIC Rev. 4 csv industry codes
 The ISIC Rev 4 classification schema is downloaded as a csv file from [this](https://www.fao.org/statistics/caliper/tools/download/en) page. 
 The **ISIC4-core.csv** file is available in **isic-rev4-data** folder within this git repository.
  The [RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool is used to generate ttl file from the **ISIC4-core.csv** csv file. 
@@ -37,9 +37,9 @@ in the graph before using it in producing mappings between ISIC Rev 4 and TIVA c
 |:--:| 
 | *Figure 1. Mapping between ISIC rev 4 and TIVA 21 classifications workflow* |
 
-#### Step 2: Create SKOS vocabulary from TIVA-21 classification
+#### Step 2: Create SKOS thesaurus from OECD TIVA industry codes
 
-To prepare the TIVA classification for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
+To prepare the OECD TIVA industry codes for mappings as а starting point we use [Guide to OECD TiVA Indicators, 2021 edition](https://www.oecd-ilibrary.org/science-and-technology/guide-to-oecd-tiva-indicators-2021-edition_58aa22b1-en).
 Similar to the fist step, TIVA classification schema is created by using **Table A.3. Industry coverage** from page 53 of the TIVA guide. 
 Created **tiva-21.ttl** file of that classification is available in **mapping** folder of this git repository.  
 SHACL engine is here also used to validate generated TIVA graph against skos shapes by running the following command:
@@ -48,7 +48,7 @@ SHACL engine is here also used to validate generated TIVA graph against skos sha
 ```
 As in Step 1, if TIVA graph does not pass validation then all issues should be resolved before using TIVA graph in producing mappings between TIVA and ISIC Rev 4 classifications.
 
-#### Step 3: Produce mappings between TIVA 21 and ISIC rev 4 (csv file)
+#### Step 3: Produce CSV file that contains mappings between OECD TIVA and ISIC Rev. 4 thesauruses
 
 To produce semantic mappings between ISIC Rev 4 and TIVA SKOS classifications the [LogMap](https://git.tib.eu/terminology/sandbox/logmap-matcher) matcher tool is used. 
 Java code that runs LogMap is available within the LogMap project. Input ontologies for the mapping are ttl files created in Step 1 and Step 2, i.e. input files are **isic4_data.ttl** and **tiva-21.ttl** files respectively.
@@ -64,7 +64,7 @@ In this case type of mapping is equal to number 3. It denotes mappings between i
 
 Result of mapping is saved in **mappings-between-isic4-and-tiva-21.csv** file that is available in **logmap-mappings** folder of this git repository.
 
-#### Step 4: Generate TTL file of mappings between TIVA 21 to ISIC rev 4
+#### Step 4: Generate TTL file from CSV that contains mappings between OECD TiVA and ISIC Rev. 4 thesauruses
 
 RDFizer is used to transform **mappings-between-isic4-and-tiva-21.csv** file into corresponding ttl file. The **mappings-between-isic4-and-tiva-21.ttl** file is available in 
 **logmap-mappings** folder of this git repository. 
